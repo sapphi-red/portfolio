@@ -19,6 +19,7 @@
   "homepage": "https://github.com/sapphi-red/portfolio#readme",
   "private": true,
   "devDependencies": {
+    "@iconify/json": "^1.1.226",
     "@typescript-eslint/eslint-plugin": "^4.1.1",
     "@typescript-eslint/parser": "^4.1.1",
     "@vue/compiler-sfc": "^3.0.0-rc.12",
@@ -29,9 +30,11 @@
     "prettier": "^2.1.2",
     "sass": "^1.26.10",
     "typescript": "^4.0.2",
-    "vite": "^1.0.0-rc.4"
+    "vite": "^1.0.0-rc.4",
+    "vite-plugin-purge-icons": "^0.4.1"
   },
   "dependencies": {
+    "@iconify/iconify": "^2.0.0-rc.1",
     "vue": "^3.0.0-rc.12",
     "vue-router": "^4.0.0-beta.9"
   }
