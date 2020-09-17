@@ -1,6 +1,6 @@
 <template>
   <routes />
-  <div>Hello</div>
+  <div>Skills</div>
   <HelloWorld msg="Hello Vue 3.0 + Vite" />
 </template>
 
