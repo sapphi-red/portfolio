@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "esnext",
+    "strict": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "skipLibCheck": true,
+    "noEmit": true,
+    "incremental": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "src/types"
+    ],
+    "paths": {
+      "/@/*": [
+        "src/*"
+      ]
+    }
+  }
+}
