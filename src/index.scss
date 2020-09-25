@@ -6,3 +6,23 @@
   color: #2c3e50;
   margin-top: 60px;
 }
+
+$min-font-size: 16px;
+$max-font-size: 24px;
+$min-font-size-width: 860px;
+$max-font-size-width: 1280px;
+$font-size-diff: $max-font-size - $min-font-size;
+$width-diff: $max-font-size-width - $min-font-size-width;
+$font-size-width-ratio: $font-size-diff / $width-diff;
+
+html {
+  font-size: $min-font-size;
+  @media (min-width: $min-font-size-width) {
+    font-size: calc(
+      1rem + ((100vw - #{$min-font-size-width}) * #{$font-size-width-ratio})
+    );
+  }
+  @media (min-width: $max-font-size-width) {
+    font-size: $max-font-size;
+  }
+}
