@@ -13,5 +13,6 @@ export default defineComponent({
 <style lang="scss" module>
 .pageTitle {
   font-size: 3rem;
+  font-family: 'Atma', cursive;
 }
 </style>
