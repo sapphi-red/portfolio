@@ -1,16 +1,15 @@
 <template>
-  <div>Works</div>
-  <HelloWorld msg="Hello Vue 3.0 + Vite" />
+  <page-title>Works</page-title>
 </template>
 
 <script lang="ts">
-import HelloWorld from '/@/components/HelloWorld.vue'
 import { defineComponent } from 'vue'
+import PageTitle from '/@/components/PageTitle.vue'
 
 export default defineComponent({
-  name: 'Hello',
+  name: 'Works',
   components: {
-    HelloWorld
+    PageTitle
   }
 })
 </script>
