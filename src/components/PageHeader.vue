@@ -1,18 +1,17 @@
 <template>
-  <page-header />
-  <main>
-    <router-view />
-  </main>
+  <header>
+    <routes />
+  </header>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import PageHeader from '/@/components/PageHeader.vue'
+import Routes from '/@/components/Routes.vue'
 
 export default defineComponent({
-  name: 'App',
+  name: 'PageHeader',
   components: {
-    PageHeader
+    Routes
   }
 })
 </script>
