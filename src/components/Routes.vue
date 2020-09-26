@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="$style.container">
     <router-link
       v-for="r in routeData"
       :key="r.name"
@@ -15,17 +15,15 @@
 import { defineComponent } from 'vue'
 import { routes } from '/@/router'
 
-const getTitle = (name: string) => {
-  return name[0].toUpperCase() + name.slice(1)
-}
-
 export default defineComponent({
   name: 'Routes',
   setup() {
-    const routeData = routes.map(route => ({
-      name: route.name,
-      title: getTitle(route.name)
-    }))
+    const routeData = routes
+      .filter(route => route.name !== 'index')
+      .map(route => ({
+        name: route.name,
+        title: route.name
+      }))
 
     return { routeData }
   }
@@ -33,9 +31,16 @@ export default defineComponent({
 </script>
 
 <style lang="scss" module>
-.link + .link {
-  margin-left: 0.5ch;
-  padding-left: 0.5ch;
-  border-left: solid 0.1ch black;
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  padding: 0.25em 0.5em;
+}
+.link {
+  @include curly-font;
+  color: $default-font-theme;
+  text-decoration: none;
+  margin: 0 1em;
 }
 </style>
