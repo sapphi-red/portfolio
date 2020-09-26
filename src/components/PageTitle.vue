@@ -12,7 +12,7 @@ export default defineComponent({
 
 <style lang="scss" module>
 .pageTitle {
+  @include curly-font;
   font-size: 3rem;
-  font-family: 'Atma', cursive;
 }
 </style>

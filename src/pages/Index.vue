@@ -13,6 +13,12 @@ export default defineComponent({
 </script>
 
 <style lang="scss" module>
+.green,
+.sapphire,
+.red {
+  @include curly-font;
+  color: #ffffff;
+}
 .green {
   background-color: $primary-theme-green;
 }
