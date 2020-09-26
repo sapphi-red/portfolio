@@ -1,7 +1,7 @@
 <template>
-  <div>Index Page</div>
-  <span class="iconify" data-icon="fa:home" data-inline="false" />
-  <img alt="Vue logo" src="/@/assets/logo.png" />
+  <div :class="$style.green">green</div>
+  <div :class="$style.sapphire">sapphire</div>
+  <div :class="$style.red">red</div>
 </template>
 
 <script lang="ts">
@@ -11,3 +11,15 @@ export default defineComponent({
   name: 'Index'
 })
 </script>
+
+<style lang="scss" module>
+.green {
+  background-color: $primary-theme-green;
+}
+.sapphire {
+  background-color: $primary-theme-blue;
+}
+.red {
+  background-color: $primary-theme-red;
+}
+</style>
