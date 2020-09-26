@@ -1,6 +1,6 @@
 <template>
   <page-header />
-  <main>
+  <main :class="$style.main">
     <router-view />
   </main>
 </template>
@@ -19,4 +19,17 @@ export default defineComponent({
 
 <style lang="scss">
 @import './styles/global';
+
+#app {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+</style>
+
+<style lang="scss" module>
+.main {
+  flex: 1 1;
+  overflow: hidden auto;
+}
 </style>

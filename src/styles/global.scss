@@ -24,3 +24,8 @@ html {
 html {
   color: $default-font-theme;
 }
+
+html,
+body {
+  height: 100%;
+}
