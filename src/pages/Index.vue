@@ -1,16 +1,26 @@
 <template>
   <div :class="$style.wrapper">
-    <div :class="$style.green">green</div>
-    <div :class="$style.sapphire">sapphire</div>
-    <div :class="$style.red">red</div>
+    <div :class="$style.green">
+      <fit-height-text>green</fit-height-text>
+    </div>
+    <div :class="$style.sapphire">
+      <fit-height-text>sapphire</fit-height-text>
+    </div>
+    <div :class="$style.red">
+      <fit-height-text>red</fit-height-text>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import FitHeightText from '/@/components/FitHeightText.vue'
 
 export default defineComponent({
-  name: 'Index'
+  name: 'Index',
+  components: {
+    FitHeightText
+  }
 })
 </script>
 
