@@ -1,11 +1,4 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import '_variables';
 
 $min-font-size: 16px;
 $max-font-size: 24px;
@@ -25,4 +18,8 @@ html {
   @media (min-width: $max-font-size-width) {
     font-size: $max-font-size;
   }
+}
+
+html {
+  color: $default-font-theme;
 }
