@@ -1,18 +1,27 @@
 <template>
   <page-header />
+  <header-h-r v-if="!isIndex" />
   <main :class="$style.main">
     <router-view />
   </main>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { computed, defineComponent } from 'vue'
+import { useRoute } from 'vue-router'
 import PageHeader from '/@/components/PageHeader.vue'
+import HeaderHR from '/@/components/HeaderHR.vue'
 
 export default defineComponent({
   name: 'App',
   components: {
-    PageHeader
+    PageHeader,
+    HeaderHR
+  },
+  setup() {
+    const route = useRoute()
+    const isIndex = computed(() => route.name === 'index')
+    return { isIndex }
   }
 })
 </script>
