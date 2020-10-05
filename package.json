@@ -6,7 +6,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint --ext .ts,.vue src",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "update-pr-data": "node ./scripts/fetch-prs.js",
+    "create-pr-data": "node ./scripts/fetch-prs.js withoutCache"
   },
   "repository": {
     "type": "git",
@@ -28,6 +30,7 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-vue": "^7.0.0-beta.3",
+    "node-fetch": "^2.6.1",
     "prettier": "^2.1.2",
     "sass": "^1.26.11",
     "typescript": "^4.0.2",
