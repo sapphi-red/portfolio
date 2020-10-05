@@ -26,7 +26,10 @@ const contests: Data[] = [
     name: '学生向けN-ISUCON 1位',
     href: 'https://nttcom.connpass.com/event/163460/'
   },
-  { name: 'ISUCON10 チーム「がんもどき」 本選3位' }
+  {
+    name: 'ISUCON10 チーム「がんもどき」 本選3位',
+    href: 'http://isucon.net/archives/55076348.html'
+  }
 ]
 
 const internships: Data[] = [
