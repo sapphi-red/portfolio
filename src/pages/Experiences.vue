@@ -7,6 +7,7 @@
   <section-title>Books</section-title>
   <list :data="books" />
   <section-title>OSS Contributions</section-title>
+  <contributions />
 </template>
 
 <script lang="ts">
@@ -14,6 +15,7 @@ import { defineComponent } from 'vue'
 import PageTitle from '/@/components/PageTitle.vue'
 import SectionTitle from '/@/components/SectionTitle.vue'
 import List, { Data } from '../components/List.vue'
+import Contributions from '/@/components/Contributions.vue'
 
 const contests: Data[] = [
   {
@@ -71,7 +73,8 @@ export default defineComponent({
   components: {
     PageTitle,
     SectionTitle,
-    List
+    List,
+    Contributions
   },
   setup() {
     return { contests, internships, books }
