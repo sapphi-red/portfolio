@@ -2,7 +2,10 @@
   <ul>
     <li v-for="datum in data" :key="datum.name">
       {{ datum.name }}
-      <bar-list v-if="datum.children.length > 0" :data="datum.children" />
+      <bar-list
+        v-if="datum.children && datum.children.length > 0"
+        :data="datum.children"
+      />
     </li>
   </ul>
 </template>
@@ -12,7 +15,7 @@ import { defineComponent, PropType } from 'vue'
 
 export interface Data {
   name: string
-  children: Data[]
+  children?: Data[]
 }
 
 export default defineComponent({

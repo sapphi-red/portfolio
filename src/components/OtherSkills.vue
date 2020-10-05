@@ -7,9 +7,9 @@ import { defineComponent } from 'vue'
 import BarList, { Data } from './BarList.vue'
 
 const skills: Data[] = [
-  { name: 'Docker', children: [] },
-  { name: 'Ansible', children: [] },
-  { name: '英語 (TOEIC 910)', children: [] }
+  { name: 'Docker' },
+  { name: 'Ansible' },
+  { name: '英語 (TOEIC 910)' }
 ]
 
 export default defineComponent({

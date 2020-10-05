@@ -3,7 +3,10 @@
     <li v-for="datum in data" :key="datum.name">
       <a v-if="datum.href !== undefined" :href="datum.href">{{ datum.name }}</a>
       <template v-else>{{ datum.name }}</template>
-      <list v-if="datum.children.length > 0" :data="datum.children" />
+      <list
+        v-if="datum.children && datum.children.length > 0"
+        :data="datum.children"
+      />
     </li>
   </ul>
 </template>
@@ -14,7 +17,7 @@ import { defineComponent, PropType } from 'vue'
 export interface Data {
   name: string
   href?: string
-  children: Data[]
+  children?: Data[]
 }
 
 export default defineComponent({

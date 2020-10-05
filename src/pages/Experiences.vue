@@ -16,15 +16,14 @@ import List, { Data } from '../components/List.vue'
 const contests: Data[] = [
   {
     name: 'ICTトラブルシューティングコンテスト2019 チームstohm 本選9位',
-    href: 'https://icttoracon.net/archives/8369',
-    children: []
+    href: 'https://icttoracon.net/archives/8369'
   },
   {
     name: '学生向けN-ISUCON 1位',
-    href: 'https://nttcom.connpass.com/event/163460/',
-    children: []
+    href: 'https://nttcom.connpass.com/event/163460/'
   },
-  { name: 'ISUCON10 チーム「がんもどき」 本選3位', children: [] }
+  { name: 'ISUCON10 チーム「がんもどき」 本選3位' }
+]
 ]
 
 export default defineComponent({
