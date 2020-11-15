@@ -29,6 +29,11 @@ const contests: Data[] = [
   {
     name: 'ISUCON10 チーム「がんもどき」 本選3位',
     href: 'http://isucon.net/archives/55076348.html'
+  },
+  {
+    name:
+      'ICTトラブルシューティングコンテスト2020 チームk8s完全に理解したい 予選通過 (本選は2021/03)',
+    href: 'https://icttoracon.net/archives/8667'
   }
 ]
 
