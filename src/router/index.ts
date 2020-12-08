@@ -1,9 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Index from '/@/pages/Index.vue'
-import About from '/@/pages/About.vue'
-import Skills from '/@/pages/Skills.vue'
-import Experiences from '/@/pages/Experiences.vue'
-import Works from '/@/pages/Works.vue'
+import { defineAsyncComponent } from 'vue'
 
 const routerHistory = createWebHistory()
 
@@ -11,27 +7,27 @@ export const routes = [
   {
     path: '/',
     name: 'index',
-    component: Index
+    component: defineAsyncComponent(() => import('/@/pages/Index.vue'))
   },
   {
     path: '/about',
     name: 'about',
-    component: About
+    component: defineAsyncComponent(() => import('/@/pages/About.vue'))
   },
   {
     path: '/skills',
     name: 'skills',
-    component: Skills
+    component: defineAsyncComponent(() => import('/@/pages/Skills.vue'))
   },
   {
     path: '/experiences',
     name: 'experiences',
-    component: Experiences
+    component: defineAsyncComponent(() => import('/@/pages/Experiences.vue'))
   },
   {
     path: '/works',
     name: 'works',
-    component: Works
+    component: defineAsyncComponent(() => import('/@/pages/Works.vue'))
   }
 ]
 
