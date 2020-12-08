@@ -25,7 +25,7 @@ export const routes = [
     component: defineAsyncComponent(() => import('/@/pages/Experiences.vue'))
   },
   {
-    path: '/works',
+    path: '/works/:workSlug?',
     name: 'works',
     component: defineAsyncComponent(() => import('/@/pages/Works.vue'))
   }

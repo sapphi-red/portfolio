@@ -1,13 +1,16 @@
 <template>
   <page-title>Works</page-title>
-  <work-list :works="works" />
+  <work-list :works="works" :opened-modal-work-slug="workSlug" />
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { computed, defineComponent } from 'vue'
 import PageTitle from '/@/components/PageTitle.vue'
 import WorkList from '/@/components/WorkList.vue'
 import { works } from '/@/assets/works'
+import { useRoute } from 'vue-router'
+
+const getFirstIfArray = (a: string | string[]) => (Array.isArray(a) ? a[0] : a)
 
 export default defineComponent({
   name: 'Works',
@@ -16,7 +19,9 @@ export default defineComponent({
     WorkList
   },
   setup() {
-    return { works }
+    const route = useRoute()
+    const workSlug = computed(() => getFirstIfArray(route.params.workSlug))
+    return { works, workSlug }
   }
 })
 </script>
