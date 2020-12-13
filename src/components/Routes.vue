@@ -35,6 +35,7 @@ export default defineComponent({
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
+  align-items: center;
   padding: 0.25em 0.5em;
 }
 .link {
