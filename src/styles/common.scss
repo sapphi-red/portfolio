@@ -33,3 +33,7 @@ $s: 'li';
   }
   $s: #{$s 'li'};
 }
+
+a {
+  color: $link-font-theme;
+}
