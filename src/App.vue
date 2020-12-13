@@ -10,7 +10,7 @@
 import { computed, defineComponent } from 'vue'
 import { useRoute } from 'vue-router'
 import PageHeader from '/@/components/PageHeader.vue'
-import HeaderHR from '/@/components/HeaderHR.vue'
+import HeaderHR from '/@/components/UI/HeaderHR.vue'
 
 export default defineComponent({
   name: 'App',

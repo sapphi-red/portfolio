@@ -4,7 +4,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import BarList, { Data } from './BarList.vue'
+import BarList, { Data } from '/@/components/UI/BarList.vue'
 
 const langs: Data[] = [
   {

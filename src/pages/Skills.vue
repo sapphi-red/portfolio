@@ -8,10 +8,10 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import PageTitle from '/@/components/PageTitle.vue'
-import SectionTitle from '/@/components/SectionTitle.vue'
-import Programming from '/@/components/Programming.vue'
-import OtherSkills from '/@/components/OtherSkills.vue'
+import PageTitle from '/@/components/UI/PageTitle.vue'
+import SectionTitle from '/@/components/UI/SectionTitle.vue'
+import Programming from '/@/components/Skills/Programming.vue'
+import OtherSkills from '/@/components/Skills/OtherSkills.vue'
 
 export default defineComponent({
   name: 'Skills',

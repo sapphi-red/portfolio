@@ -12,7 +12,7 @@
 <script lang="ts">
 import { defineComponent, PropType } from 'vue'
 import { Work as WorkI } from '/@/assets/works'
-import Work from '/@/components/Work.vue'
+import Work from '/@/components/Works/Work.vue'
 
 export default defineComponent({
   name: 'WorkList',

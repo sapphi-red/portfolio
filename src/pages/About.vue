@@ -8,9 +8,9 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import PageTitle from '/@/components/PageTitle.vue'
-import SectionTitle from '/@/components/SectionTitle.vue'
-import Profile from '/@/components/Profile.vue'
+import PageTitle from '/@/components/UI/PageTitle.vue'
+import SectionTitle from '/@/components/UI/SectionTitle.vue'
+import Profile from '/@/components/About/Profile.vue'
 
 export default defineComponent({
   name: 'About',

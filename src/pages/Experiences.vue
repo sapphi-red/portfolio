@@ -12,10 +12,10 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import PageTitle from '/@/components/PageTitle.vue'
-import SectionTitle from '/@/components/SectionTitle.vue'
-import List from '/@/components/List.vue'
-import Contributions from '/@/components/Contributions.vue'
+import PageTitle from '/@/components/UI/PageTitle.vue'
+import SectionTitle from '/@/components/UI/SectionTitle.vue'
+import List from '/@/components/UI/List.vue'
+import Contributions from '/@/components/Experiences/Contributions.vue'
 import { contests } from '/@/assets/contests'
 import { internships } from '/@/assets/internships'
 import { books } from '/@/assets/books'

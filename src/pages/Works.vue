@@ -5,8 +5,8 @@
 
 <script lang="ts">
 import { computed, defineComponent } from 'vue'
-import PageTitle from '/@/components/PageTitle.vue'
-import WorkList from '/@/components/WorkList.vue'
+import PageTitle from '/@/components/UI/PageTitle.vue'
+import WorkList from '/@/components/Works/WorkList.vue'
 import { works } from '/@/assets/works'
 import { useRoute } from 'vue-router'
 

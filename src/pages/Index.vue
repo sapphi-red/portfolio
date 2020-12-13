@@ -14,7 +14,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import FitHeightText from '/@/components/FitHeightText.vue'
+import FitHeightText from '/@/components/UI/FitHeightText.vue'
 
 export default defineComponent({
   name: 'Index',
