@@ -14,5 +14,9 @@ export default defineComponent({
 .pageTitle {
   @include curly-font;
   font-size: 3rem;
+  margin-top: 1rem;
+  &:first-child {
+    margin-top: 0;
+  }
 }
 </style>

@@ -38,7 +38,9 @@ export default defineComponent({
 
 <style lang="scss" module>
 .main {
+  position: relative;
   flex: 1 1;
   overflow: hidden auto;
+  padding: 1rem;
 }
 </style>

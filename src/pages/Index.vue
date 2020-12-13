@@ -26,9 +26,13 @@ export default defineComponent({
 
 <style lang="scss" module>
 .wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   display: flex;
   flex-flow: column nowrap;
-  height: 100%;
 }
 
 .green,
@@ -36,16 +40,20 @@ export default defineComponent({
 .red {
   @include curly-font;
   height: calc(100% / 3);
+  padding: 0 1rem;
   color: #ffffff;
   font-size: 100%;
 }
 .green {
+  text-align: left;
   background-color: $primary-theme-green;
 }
 .sapphire {
+  text-align: center;
   background-color: $primary-theme-blue;
 }
 .red {
+  text-align: right;
   background-color: $primary-theme-red;
 }
 </style>

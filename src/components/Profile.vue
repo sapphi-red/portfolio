@@ -36,8 +36,11 @@ export default defineComponent({
 .icon {
   flex: 1;
   max-width: 320px;
+  margin-right: 2em;
+  object-fit: contain;
 }
 .desc {
   flex: 1;
+  min-width: 15em;
 }
 </style>

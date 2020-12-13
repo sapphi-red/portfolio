@@ -13,7 +13,7 @@ import SectionTitle from '/@/components/SectionTitle.vue'
 import Profile from '/@/components/Profile.vue'
 
 export default defineComponent({
-  name: 'Hello',
+  name: 'About',
   components: {
     PageTitle,
     SectionTitle,
