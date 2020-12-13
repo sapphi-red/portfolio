@@ -1,5 +1,5 @@
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { createRouter, createWebHistory } from 'vue-router'
-import { defineAsyncComponent } from 'vue'
 
 const routerHistory = createWebHistory()
 
@@ -7,27 +7,27 @@ export const routes = [
   {
     path: '/',
     name: 'index',
-    component: defineAsyncComponent(() => import('/@/pages/Index.vue'))
+    component: () => import('/@/pages/Index.vue')
   },
   {
     path: '/about',
     name: 'about',
-    component: defineAsyncComponent(() => import('/@/pages/About.vue'))
+    component: () => import('/@/pages/About.vue')
   },
   {
     path: '/skills',
     name: 'skills',
-    component: defineAsyncComponent(() => import('/@/pages/Skills.vue'))
+    component: () => import('/@/pages/Skills.vue')
   },
   {
     path: '/experiences',
     name: 'experiences',
-    component: defineAsyncComponent(() => import('/@/pages/Experiences.vue'))
+    component: () => import('/@/pages/Experiences.vue')
   },
   {
     path: '/works/:workSlug?',
     name: 'works',
-    component: defineAsyncComponent(() => import('/@/pages/Works.vue'))
+    component: () => import('/@/pages/Works.vue')
   }
 ]
 
