@@ -19,7 +19,7 @@
 
 <script lang="ts">
 import { defineComponent, PropType } from 'vue'
-import { Work } from '../assets/works'
+import { Work } from '/@/assets/works'
 
 export default defineComponent({
   name: 'Work',

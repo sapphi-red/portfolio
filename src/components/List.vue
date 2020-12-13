@@ -13,12 +13,7 @@
 
 <script lang="ts">
 import { defineComponent, PropType } from 'vue'
-
-export interface Data {
-  name: string
-  href?: string
-  children?: Data[]
-}
+import { Data } from '/@/data'
 
 export default defineComponent({
   name: 'List',
