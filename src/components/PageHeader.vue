@@ -3,7 +3,7 @@
     <router-link to="/" :class="$style.siteTitle">
       green.sapphi.red
     </router-link>
-    <routes />
+    <routes :class="$style.routes" />
   </header>
 </template>
 
@@ -22,7 +22,6 @@ export default defineComponent({
 <style lang="scss" module>
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .siteTitle {
@@ -31,5 +30,11 @@ export default defineComponent({
   color: $default-font-theme;
   text-decoration: none;
   font-size: 1.2rem;
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+.routes {
+  margin-left: auto;
 }
 </style>
