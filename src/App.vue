@@ -2,7 +2,11 @@
   <page-header />
   <header-h-r v-if="!isIndex" />
   <main :class="$style.main">
-    <router-view />
+    <router-view v-slot="{ Component }">
+      <transition name="fade" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </router-view>
   </main>
 </template>
 

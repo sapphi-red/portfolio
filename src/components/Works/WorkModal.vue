@@ -1,15 +1,20 @@
 <template>
-  <div :class="$style.modalContainer">
-    <div :class="$style.modal">
-      <h2>{{ work.name }}</h2>
-      <work-tag-list :tags="work.tags" />
-      <!-- eslint-disable-next-line vue/no-v-html -->
-      <div v-html="work.desc" />
-      <router-link to="/works" :class="$style.close">
-        <button :class="$style.closeButton">閉じる</button>
-      </router-link>
+  <transition name="background-shadow">
+    <div v-if="show" :class="$style.modalBackground" />
+  </transition>
+  <transition name="zoom">
+    <div v-if="show" :class="$style.modalContainer">
+      <div :class="$style.modal">
+        <h2>{{ work.name }}</h2>
+        <work-tag-list :tags="work.tags" />
+        <!-- eslint-disable-next-line vue/no-v-html -->
+        <div v-html="work.desc" />
+        <router-link to="/works" :class="$style.close">
+          <button :class="$style.closeButton">閉じる</button>
+        </router-link>
+      </div>
     </div>
-  </div>
+  </transition>
 </template>
 
 <script lang="ts">
@@ -26,6 +31,10 @@ export default defineComponent({
     work: {
       type: Object as PropType<Work>,
       required: true
+    },
+    show: {
+      type: Boolean,
+      default: false
     }
   }
 })
@@ -40,6 +49,13 @@ export default defineComponent({
   height: 100%;
   width: 100%;
   padding: 3rem;
+}
+.modalBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
 .modal {
@@ -56,6 +72,7 @@ export default defineComponent({
     x: hidden;
     y: auto;
   }
+  z-index: 1;
 }
 .close {
   width: 5rem;

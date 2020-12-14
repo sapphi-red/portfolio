@@ -1,9 +1,11 @@
 <template>
-  <page-title>Skills</page-title>
-  <section-title>Programming</section-title>
-  <programming />
-  <section-title>Other</section-title>
-  <other-skills />
+  <div>
+    <page-title>Skills</page-title>
+    <section-title>Programming</section-title>
+    <programming />
+    <section-title>Other</section-title>
+    <other-skills />
+  </div>
 </template>
 
 <script lang="ts">

@@ -1,13 +1,15 @@
 <template>
-  <page-title>Experiences</page-title>
-  <section-title>Contests</section-title>
-  <list :data="contests" />
-  <section-title>Internships</section-title>
-  <list :data="internships" />
-  <section-title>Books</section-title>
-  <list :data="books" />
-  <section-title>OSS Contributions</section-title>
-  <contributions />
+  <div>
+    <page-title>Experiences</page-title>
+    <section-title>Contests</section-title>
+    <list :data="contests" />
+    <section-title>Internships</section-title>
+    <list :data="internships" />
+    <section-title>Books</section-title>
+    <list :data="books" />
+    <section-title>OSS Contributions</section-title>
+    <contributions />
+  </div>
 </template>
 
 <script lang="ts">

@@ -1,9 +1,11 @@
 <template>
-  <page-title>About</page-title>
-  <section-title>Profile</section-title>
-  <profile />
-  <section-title>Interest</section-title>
-  <p>興味～～～～～ある</p>
+  <div>
+    <page-title>About</page-title>
+    <section-title>Profile</section-title>
+    <profile />
+    <section-title>Interest</section-title>
+    <p>興味～～～～～ある</p>
+  </div>
 </template>
 
 <script lang="ts">

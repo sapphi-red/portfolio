@@ -1,13 +1,21 @@
 <template>
   <div :class="$style.wrapper">
     <div :class="$style.green">
-      <fit-height-text>green</fit-height-text>
+      <transition name="slide-from-right" appear>
+        <fit-height-text>green</fit-height-text>
+      </transition>
     </div>
     <div :class="$style.sapphire">
-      <fit-height-text>sapphire</fit-height-text>
+      <transition name="slide-from-right" appear>
+        <fit-height-text :class="$style.sapphireInner"
+          >sapphire</fit-height-text
+        >
+      </transition>
     </div>
     <div :class="$style.red">
-      <fit-height-text>red</fit-height-text>
+      <transition name="slide-from-right" appear>
+        <fit-height-text :class="$style.redInner">red</fit-height-text>
+      </transition>
     </div>
   </div>
 </template>
@@ -55,5 +63,12 @@ export default defineComponent({
 .red {
   text-align: right;
   background-color: $primary-theme-red;
+}
+
+.sapphireInner {
+  transition-delay: 0.2s;
+}
+.redInner {
+  transition-delay: 0.4s;
 }
 </style>

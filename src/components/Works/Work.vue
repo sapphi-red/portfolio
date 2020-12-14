@@ -7,8 +7,8 @@
       "
     />
     <p :class="$style.name">{{ work.name }}</p>
-    <teleport v-if="isModalOpen" to="#modal">
-      <work-modal :work="work" />
+    <teleport to="#modal">
+      <work-modal :show="isModalOpen" :work="work" />
     </teleport>
   </router-link>
 </template>
@@ -43,6 +43,8 @@ export default defineComponent({
   overflow: hidden;
   color: $default-font-theme;
   text-decoration: none;
+  // TODO: hover
+  // TODO: color change by count
 }
 .img {
   width: 100%;

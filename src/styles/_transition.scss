@@ -1,0 +1,51 @@
+$sfr: 'slide-from-right';
+.#{$sfr}-enter-active,
+.#{$sfr}-leave-active {
+  transition: transform 0.2s ease-in-out;
+}
+.#{$sfr}-enter-from {
+  transform: translateX(100vw);
+}
+.#{$sfr}-enter-to {
+  transform: translateX(0);
+}
+
+$f: 'fade';
+.#{$f}-enter-active,
+.#{$f}-leave-active {
+  transition: opacity 0.1s ease-in-out;
+}
+.#{$f}-enter-from,
+.#{$f}-leave-to {
+  opacity: 0;
+}
+.#{$f}-enter-to,
+.#{$f}-leave-from {
+  opacity: 1;
+}
+
+$bk: 'background-shadow';
+.#{$bk}-enter-active,
+.#{$bk}-leave-active {
+  transition: background-color 0.1s;
+}
+.#{$bk}-enter-from,
+.#{$bk}-leave-to {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+$z: 'zoom';
+.#{$z}-enter-active,
+.#{$z}-leave-active {
+  transition: all 0.1s ease-in;
+}
+.#{$z}-enter-from,
+.#{$z}-leave-to {
+  transform: scale(0.95);
+  opacity: 0;
+}
+.#{$z}-enter-to,
+.#{$z}-leave-from {
+  transform: scale(1);
+  opacity: 1;
+}

@@ -1,6 +1,8 @@
 <template>
-  <page-title>Works</page-title>
-  <work-list :works="works" :opened-modal-work-slug="workSlug" />
+  <div>
+    <page-title>Works</page-title>
+    <work-list :works="works" :opened-modal-work-slug="workSlug" />
+  </div>
 </template>
 
 <script lang="ts">
