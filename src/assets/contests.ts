@@ -21,7 +21,6 @@ export const contests: Data[] = [
   },
   {
     name: 'ISUCON10 チーム「がんもどき」',
-    href: 'http://isucon.net/archives/55076348.html',
     children: [
       {
         name: '予選 総合5位 学生2位',
@@ -47,10 +46,10 @@ export const contests: Data[] = [
   },
   {
     name: 'ICTトラブルシューティングコンテスト2020 チームk8s完全に理解したい',
-    href: 'https://icttoracon.net/archives/8667',
     children: [
       {
         name: '予選通過 (本選は2021/03)',
+        href: 'https://icttoracon.net/archives/8648',
         children: [
           {
             name:
