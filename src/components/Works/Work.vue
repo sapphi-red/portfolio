@@ -1,13 +1,16 @@
 <template>
-  <li>
-    <div :class="$style.imgContainer">
-      <img v-if="work.img" :src="`/@/assets/works-img/${work.img}`" />
-    </div>
-    <router-link :to="`/works/${work.slug}`">{{ work.name }}</router-link>
+  <router-link :to="`/works/${work.slug}`" :class="$style.container">
+    <img
+      :class="$style.img"
+      :src="
+        work.img ? `/@/assets/works-img/${work.img}` : '/@/assets/noimg.svg'
+      "
+    />
+    <p :class="$style.name">{{ work.name }}</p>
     <teleport v-if="isModalOpen" to="#modal">
       <work-modal :work="work" />
     </teleport>
-  </li>
+  </router-link>
 </template>
 
 <script lang="ts">
@@ -34,6 +37,17 @@ export default defineComponent({
 </script>
 
 <style lang="scss" module>
-.imgContainer {
+.container {
+  border: solid 2px $primary-theme-green;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  color: $default-font-theme;
+  text-decoration: none;
+}
+.img {
+  width: 100%;
+}
+.name {
+  font-weight: bold;
 }
 </style>

@@ -11,7 +11,7 @@ const tagsArr = [
 
 export const tags = new Set(tagsArr)
 
-type Tag = typeof tagsArr[number]
+export type Tag = typeof tagsArr[number]
 
 interface Article {
   title: string
@@ -22,6 +22,7 @@ export interface Work {
   slug: string
   name: string
   desc: string
+  img?: string
   tags: Set<Tag>
   articles: Article[]
 }
@@ -29,15 +30,16 @@ export interface Work {
 export const works: Work[] = [
   {
     slug: 'to-fix-workshop',
-    name: 'プログラムのミス(バグ含む)を修正するため',
+    name: 'プログラムを手懐ける講習会',
     desc: 'サークルで行った講習会です。',
     tags: new Set(['講習会', 'サークル']),
     articles: []
   },
   {
     slug: 'css-essence-workshop',
-    name: 'CSSの†本質情報†を知る',
+    name: 'CSSの†本質情報†を知る会',
     desc: 'サークルで行った講習会です。',
+    img: 'css-essence-workshop.png',
     tags: new Set(['講習会', 'サークル']),
     articles: []
   },
@@ -59,11 +61,16 @@ export const works: Work[] = [
   <li>パフォーマンス改善</li>
 </ul>
 `,
+    img: 'traq-r-frontend.png',
     tags: new Set(['JavaScript', 'Sass/SCSS', 'Pug', 'Vue.js', 'サークル']),
     articles: [
       {
         title: 'traQのmarkdownのパースをWeb Workerでやるようにした話',
         link: 'https://trap.jp/post/816/'
+      },
+      {
+        title: 'ソースコード',
+        link: 'https://github.com/traPtitech/traQ_S-UI'
       }
     ]
   },
