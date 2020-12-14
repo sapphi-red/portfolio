@@ -41,8 +41,15 @@ const additional: Record<
 > = {
   'tensorflow/tfjs': {
     2543: {
-      title: 'ブログ記事',
+      title:
+        '関連ブログ記事: TensorFlow.jsでwasmを使ってみるためにコントリビュートした',
       href: 'https://trap.jp/post/927/'
+    }
+  },
+  'protobufjs/protobuf.js': {
+    1446: {
+      title: '関連ブログ記事: 裏ハッカソン参加記「Emoine」',
+      href: 'https://trap.jp/post/1093/'
     }
   }
 }
