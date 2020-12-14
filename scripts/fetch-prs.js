@@ -95,9 +95,9 @@ const groupByRepo = prs => {
     repos[repo].push(pr)
   }
   for (const repo of Object.keys(repos)) {
-    repos[repo].sort((a, b) => a.prId - b.prId)
+    repos[repo].sort((a, b) => b.prId - a.prId)
   }
-  return Object.entries(repos).sort(([a], [b]) => a - b)
+  return Object.entries(repos)
 }
 
 const rawToData = rawData => {
