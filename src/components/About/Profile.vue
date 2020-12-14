@@ -7,12 +7,20 @@
       <p>サークル: <a href="https://trap.jp">デジタル創作同好会traP</a></p>
       <p>フロントエンドを中心にバックエンドとインフラも触ってます。</p>
       <ul>
-        <li>GitHub: <a href="https://github.com/sapphi-red">@sapphi-red</a></li>
         <li>
-          Twitter: <a href="https://twitter.com/sapphi_red">@sapphi_red</a>
+          <icon name="github-alt" />
+          GitHub:
+          <a href="https://github.com/sapphi-red">@sapphi-red</a>
         </li>
         <li>
-          traPブログ: <a href="https://trap.jp/author/sappi_red">記事一覧</a>
+          <icon name="twitter-alt" />
+          Twitter:
+          <a href="https://twitter.com/sapphi_red">@sapphi_red</a>
+        </li>
+        <li>
+          <icon name="pen" />
+          traPブログ:
+          <a href="https://trap.jp/author/sappi_red">記事一覧</a>
         </li>
       </ul>
     </div>
@@ -21,9 +29,13 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import Icon from '/@/components/UI/Icon.vue'
 
 export default defineComponent({
-  name: 'Profile'
+  name: 'Profile',
+  components: {
+    Icon
+  }
 })
 </script>
 
