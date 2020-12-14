@@ -1,25 +1,28 @@
 <template>
-  <ul v-for="[repoName, repo] in PRData.repos" :key="repo">
-    <li>
+  <ul>
+    <li v-for="[repoName, repo] in PRData.repos" :key="repo">
       {{ repoName }}
-      <ul v-for="pr in repo" :key="pr">
-        <li>
+      <ul>
+        <li v-for="pr in repo" :key="pr">
           <a :href="pr.url">#{{ pr.prId }}: {{ pr.title }}</a>
-          <template v-if="additional[repoName]?.[pr.prId]">
-            <a :href="additional[repoName][pr.prId].href">
-              {{ additional[repoName][pr.prId].title }}
-            </a>
-          </template>
+          <ul v-if="additional[repoName]?.[pr.prId]">
+            <li>
+              <a :href="additional[repoName][pr.prId].href">
+                {{ additional[repoName][pr.prId].title }}
+              </a>
+            </li>
+          </ul>
         </li>
       </ul>
     </li>
   </ul>
-  <p>最終取得: {{ PRData.fetchedAt }}</p>
+  <p :class="$style.lastFetched">最終取得: {{ lastFetched }}</p>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, computed } from 'vue'
 import PRData from '/@/assets/prs.json'
+import { dateToDateTimeString } from '/@/util/date'
 
 type PRDataType = typeof PRData
 type CorrectPRDataType = {
@@ -47,12 +50,17 @@ const additional: Record<
 export default defineComponent({
   name: 'Contributions',
   setup() {
-    return { PRData: PRData as CorrectPRDataType, additional }
+    const lastFetched = computed(() =>
+      dateToDateTimeString(new Date(PRData.fetchedAt))
+    )
+    return { PRData: PRData as CorrectPRDataType, additional, lastFetched }
   }
 })
 </script>
 
 <style lang="scss" module>
-.container {
+.lastFetched {
+  margin-top: 1rem;
+  font-size: 0.8rem;
 }
 </style>
