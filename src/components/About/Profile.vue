@@ -49,6 +49,7 @@ export default defineComponent({
   flex: 1;
   max-width: 320px;
   margin-right: 2em;
+  border-radius: 0.3rem;
   object-fit: contain;
 }
 .desc {
