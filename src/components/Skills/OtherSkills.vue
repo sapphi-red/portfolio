@@ -7,9 +7,9 @@ import { defineComponent } from 'vue'
 import BarList, { Data } from '/@/components/UI/BarList.vue'
 
 const skills: Data[] = [
-  { name: 'Docker' },
-  { name: 'Ansible' },
-  { name: '英語 (TOEIC 910)' }
+  { name: 'Docker', percentage: 65 },
+  { name: 'Ansible', percentage: 45 },
+  { name: '英語 (TOEIC 910)', percentage: 70 }
 ]
 
 export default defineComponent({

@@ -9,14 +9,19 @@ import BarList, { Data } from '/@/components/UI/BarList.vue'
 const langs: Data[] = [
   {
     name: 'JavaScript/TypeScript',
-    children: [{ name: 'Vue.js' }, { name: 'React' }, { name: 'Tensorflow.js' }]
+    percentage: 100,
+    children: [
+      { name: 'Vue.js', percentage: 85 },
+      { name: 'React', percentage: 60 },
+      { name: 'Tensorflow.js', percentage: 20 }
+    ]
   },
-  { name: 'Go' },
-  { name: 'Rust' },
-  { name: 'CoffeeScript' },
-  { name: 'Java' },
-  { name: 'C/C++' },
-  { name: 'Python' }
+  { name: 'Go', percentage: 60 },
+  { name: 'Rust', percentage: 20 },
+  { name: 'CoffeeScript', percentage: 85 },
+  { name: 'Java', percentage: 20 },
+  { name: 'C/C++', percentage: 25 },
+  { name: 'Python', percentage: 20 }
 ]
 
 export default defineComponent({
