@@ -49,3 +49,56 @@ $z: 'zoom';
   transform: scale(1);
   opacity: 1;
 }
+
+$ie: 'index-enter';
+.#{$ie}-enter-active,
+.#{$ie}-leave-active {
+  transition: opacity 0.1s ease-in-out, transform 0.3s ease-in-out;
+  transform-origin: top;
+}
+.#{$ie}-leave-from {
+  opacity: 1;
+}
+.#{$ie}-leave-to {
+  opacity: 0;
+}
+.#{$ie}-enter-from {
+  transform: scaleY(0);
+}
+.#{$ie}-enter-to {
+  transform: scaleY(1);
+}
+
+$il: 'index-leave';
+.#{$il}-enter-active,
+.#{$il}-leave-active {
+  transition: opacity 0.1s ease-in-out, transform 0.3s ease-in-out;
+  transform-origin: top;
+}
+.#{$il}-leave-from {
+  transform: scaleY(1);
+}
+.#{$il}-leave-to {
+  transform: scaleY(0);
+}
+.#{$il}-enter-from {
+  opacity: 0;
+}
+.#{$il}-enter-to {
+  opacity: 1;
+}
+
+$hhr: 'header-hr';
+.#{$hhr}-enter-active,
+.#{$hhr}-leave-active {
+  transition: opacity 0.3s step-end;
+  height: 0;
+}
+.#{$hhr}-enter-from,
+.#{$hhr}-leave-to {
+  opacity: 0;
+}
+.#{$hhr}-enter-to,
+.#{$hhr}-leave-from {
+  opacity: 1;
+}

@@ -1,9 +1,14 @@
 <template>
   <page-header />
-  <header-h-r v-if="!isIndex" />
+  <transition name="header-hr">
+    <header-h-r v-if="!isIndex" />
+  </transition>
   <main :class="$style.main">
-    <router-view v-slot="{ Component }">
-      <transition name="fade" mode="out-in">
+    <router-view v-slot="{ Component, route }">
+      <transition
+        :name="route.meta.transition || 'fade'"
+        :mode="route.meta.transitionMode || 'out-in'"
+      >
         <component :is="Component" />
       </transition>
     </router-view>
@@ -24,7 +29,10 @@ export default defineComponent({
   },
   setup() {
     const route = useRoute()
-    const isIndex = computed(() => route.name === 'index')
+    const isIndex = computed(
+      // 初回表示はfrom.nameがundefined
+      () => route.name === undefined || route.name === 'index'
+    )
     return { isIndex }
   }
 })

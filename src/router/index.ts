@@ -31,7 +31,25 @@ export const routes = [
   }
 ]
 
-export default createRouter({
+const router = createRouter({
   history: routerHistory,
   routes
 })
+
+router.afterEach((to, from) => {
+  // 初回表示はfrom.nameがundefined
+  if (from.name === undefined) {
+    to.meta.transition = ''
+    return
+  }
+
+  if (to.name === 'index') {
+    to.meta.transition = 'index-enter'
+    to.meta.transitionMode = 'in-out'
+  }
+  if (from.name === 'index') {
+    to.meta.transition = 'index-leave'
+  }
+})
+
+export default router
