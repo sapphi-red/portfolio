@@ -1,8 +1,10 @@
 <template>
   <router-link :to="`/works/${work.slug}`" :class="$style.container">
     <aspect-image :src="img" />
-    <p :class="$style.name">{{ work.name }}</p>
-    <work-tag-list :tags="work.tags" />
+    <div :class="$style.innerContainer">
+      <p :class="$style.name">{{ work.name }}</p>
+      <work-tag-list :tags="work.tags" />
+    </div>
     <teleport to="#modal">
       <work-modal :show="isModalOpen" :work="work" />
     </teleport>
@@ -48,8 +50,19 @@ export default defineComponent({
   overflow: hidden;
   color: $default-font-theme;
   text-decoration: none;
-  // TODO: hover
   // TODO: color change by count
+
+  &:hover {
+    background-color: $primary-theme-green;
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    );
+    background-blend-mode: luminosity;
+  }
+}
+.innerContainer {
+  padding: 0.5rem;
 }
 .name {
   font-weight: bold;
