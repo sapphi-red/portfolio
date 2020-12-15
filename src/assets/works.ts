@@ -13,7 +13,7 @@ export const tags = new Set(tagsArr)
 
 export type Tag = typeof tagsArr[number]
 
-interface Article {
+export interface Article {
   title: string
   link: string
 }

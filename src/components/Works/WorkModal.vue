@@ -7,8 +7,10 @@
       <div :class="$style.modal">
         <h2>{{ work.name }}</h2>
         <work-tag-list :tags="work.tags" />
+        <img :src="img" :class="$style.img" />
         <!-- eslint-disable-next-line vue/no-v-html -->
         <div v-html="work.desc" />
+        <work-articles :articles="work.articles" />
         <router-link to="/works" :class="$style.close">
           <button :class="$style.closeButton">閉じる</button>
         </router-link>
@@ -21,11 +23,14 @@
 import { defineComponent, PropType } from 'vue'
 import { Work } from '/@/assets/works'
 import WorkTagList from '/@/components/Works/WorkTagList.vue'
+import WorkArticles from '/@/components/Works/WorkArticles.vue'
+import useWorksImageOrFallback from '/@/components/Works/use/img'
 
 export default defineComponent({
   name: 'WorkModal',
   components: {
-    WorkTagList
+    WorkTagList,
+    WorkArticles
   },
   props: {
     work: {
@@ -36,6 +41,10 @@ export default defineComponent({
       type: Boolean,
       default: false
     }
+  },
+  setup(props) {
+    const img = useWorksImageOrFallback(props.work)
+    return { img }
   }
 })
 </script>
@@ -49,6 +58,10 @@ export default defineComponent({
   height: 100%;
   width: 100%;
   padding: 3rem;
+  overflow: {
+    x: hidden;
+    y: auto;
+  }
 }
 .modalBackground {
   position: absolute;
@@ -68,11 +81,11 @@ export default defineComponent({
   background-color: #fff;
   border: solid 0.02rem $default-font-theme;
   border-radius: 0.3rem;
-  overflow: {
-    x: hidden;
-    y: auto;
-  }
   z-index: 1;
+}
+.img {
+  max-width: 480px;
+  margin: 0 auto;
 }
 .close {
   width: 5rem;

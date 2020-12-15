@@ -1,12 +1,8 @@
 <template>
   <router-link :to="`/works/${work.slug}`" :class="$style.container">
-    <img
-      :class="$style.img"
-      :src="
-        work.img ? `/@/assets/works-img/${work.img}` : '/@/assets/noimg.svg'
-      "
-    />
+    <aspect-image :src="img" />
     <p :class="$style.name">{{ work.name }}</p>
+    <work-tag-list :tags="work.tags" />
     <teleport to="#modal">
       <work-modal :show="isModalOpen" :work="work" />
     </teleport>
@@ -17,11 +13,16 @@
 import { defineComponent, PropType } from 'vue'
 import { Work } from '/@/assets/works'
 import WorkModal from '/@/components/Works/WorkModal.vue'
+import AspectImage from '/@/components/UI/AspectImage.vue'
+import WorkTagList from '/@/components/Works/WorkTagList.vue'
+import useWorksImageOrFallback from '/@/components/Works/use/img'
 
 export default defineComponent({
   name: 'Work',
   components: {
-    WorkModal
+    WorkModal,
+    AspectImage,
+    WorkTagList
   },
   props: {
     work: {
@@ -32,6 +33,10 @@ export default defineComponent({
       type: Boolean,
       default: false
     }
+  },
+  setup(props) {
+    const img = useWorksImageOrFallback(props.work)
+    return { img }
   }
 })
 </script>
@@ -45,9 +50,6 @@ export default defineComponent({
   text-decoration: none;
   // TODO: hover
   // TODO: color change by count
-}
-.img {
-  width: 100%;
 }
 .name {
   font-weight: bold;
