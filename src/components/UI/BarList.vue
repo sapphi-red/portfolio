@@ -16,10 +16,12 @@
 import { defineComponent, PropType } from 'vue'
 import BarListBar from '/@/components/UI/BarListBar.vue'
 
-export interface Data {
+export type BarListData = readonly BarListDataNode[]
+
+interface BarListDataNode {
   name: string
   percentage: number
-  children?: Data[]
+  children?: BarListData
 }
 
 export default defineComponent({
@@ -29,7 +31,7 @@ export default defineComponent({
   },
   props: {
     data: {
-      type: Array as PropType<Data[]>,
+      type: Array as PropType<BarListData>,
       required: true
     },
     count: {

@@ -4,9 +4,9 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import BarList, { Data } from '/@/components/UI/BarList.vue'
+import BarList, { BarListData } from '/@/components/UI/BarList.vue'
 
-const skills: Data[] = [
+const skills: BarListData = [
   { name: 'Docker', percentage: 65 },
   { name: 'Ansible', percentage: 45 },
   { name: '英語 (TOEIC 910)', percentage: 70 }

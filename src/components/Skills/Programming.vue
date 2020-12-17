@@ -4,9 +4,9 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import BarList, { Data } from '/@/components/UI/BarList.vue'
+import BarList, { BarListData } from '/@/components/UI/BarList.vue'
 
-const langs: Data[] = [
+const langs: BarListData = [
   {
     name: 'JavaScript/TypeScript',
     percentage: 100,
@@ -22,7 +22,7 @@ const langs: Data[] = [
   { name: 'Java', percentage: 20 },
   { name: 'C/C++', percentage: 25 },
   { name: 'Python', percentage: 20 }
-]
+] as const
 
 export default defineComponent({
   name: 'Programming',

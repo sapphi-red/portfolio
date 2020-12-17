@@ -14,7 +14,10 @@
     "noEmit": true,
     "incremental": true,
     "tsBuildInfoFile": "./node_modules/.tsbuildinfo",
-    "plugins": [{ "name": "@vuedx/typescript-plugin-vue" }],
+    "plugins": [
+      { "name": "@vuedx/typescript-plugin-vue" },
+      { "name": "typescript-plugin-toml" }
+    ],
     "typeRoots": [
       "node_modules/@types",
       "src/types"

@@ -1,5 +1,7 @@
-export interface Data {
+interface TreeDataNode {
   name: string
   href?: string
-  children?: Data[]
+  children?: TreeData
 }
+
+export type TreeData = readonly TreeDataNode[]

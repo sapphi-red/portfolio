@@ -13,13 +13,13 @@
 
 <script lang="ts">
 import { defineComponent, PropType } from 'vue'
-import { Data } from '/@/data'
+import { TreeData } from '/@/data'
 
 export default defineComponent({
   name: 'List',
   props: {
     data: {
-      type: Array as PropType<Data[]>,
+      type: Array as PropType<TreeData>,
       required: true
     }
   }
