@@ -37,7 +37,7 @@
     "typescript-plugin-toml": "^0.1.4",
     "vite": "^1.0.0-rc.13",
     "vite-plugin-purge-icons": "^0.4.5",
-    "vite-plugin-toml": "^0.1.0"
+    "vite-plugin-toml": "^0.1.1"
   },
   "dependencies": {
     "@iconify/iconify": "^2.0.0-rc.1",
