@@ -1,14 +1,23 @@
 [[works]]
   slug = 'to-fix-workshop'
   name = 'プログラムを手懐ける講習会'
-  desc = 'サークルで行った講習会です。'
+  desc = '''
+サークルで行った講習会です。
+プログラムが動かなかったとき、意図しない動作が起きたときにどんな所を見るとよいか、
+どういう検索をするとよいか、どういった場合が考えられるかなど
+言語に限らないプログラミングをする上で知っておくとよさそうなことを話しました。
+'''
   tags = ['講習会', 'サークル']
   articles = []
 
 [[works]]
   slug = 'css-essence-workshop'
   name = 'CSSの†本質情報†を知る会'
-  desc = 'サークルで行った講習会です。'
+  desc = '''
+サークルで行った講習会です。
+CSSの機能をその例とともに紹介したあと、あるデザインが存在しているときに
+それをどのようにCSSに落としていくかを具体例を取り上げつつ話しました。
+'''
   img = 'css-essence-workshop.png'
   tags = ['講習会', 'サークル']
   articles = []
@@ -34,7 +43,7 @@
   img = 'traq-r-frontend.png'
   tags = ['JavaScript', 'Sass/SCSS', 'Pug', 'Vue.js', 'サークル']
   [[works.articles]]
-    title = 'traQのmarkdownのパースをWeb Workerでやるようにした話'
+    title = 'ブログ記事: traQのmarkdownのパースをWeb Workerでやるようにした話'
     link = 'https://trap.jp/post/816/'
   [[works.articles]]
     title = 'ソースコード'
@@ -57,5 +66,5 @@
       'サークル'
     ]
   [[works.articles]]
-    title = '裏ハッカソン参加記「Emoine」'
+    title = 'ブログ記事: 裏ハッカソン参加記「Emoine」'
     link = 'https://trap.jp/post/1093/'
