@@ -12,7 +12,7 @@ export default defineComponent({
   name: 'WorkTagList',
   props: {
     tags: {
-      type: Set as PropType<Set<Tag>>,
+      type: Array as PropType<ReadonlyArray<Tag>>,
       required: true
     }
   }

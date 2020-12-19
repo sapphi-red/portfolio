@@ -19,9 +19,12 @@ import { useRoute } from 'vue-router'
 import WorksTagFilter from '/@/components/Works/WorksTagFilter.vue'
 
 const getFirstIfArray = (a: string | string[]) => (Array.isArray(a) ? a[0] : a)
-const hasAny = <T extends unknown>(target: Set<T>, anyOf: Set<T>) => {
-  for (const t of anyOf) {
-    if (target.has(t)) {
+const hasAny = <T extends unknown>(
+  target: ReadonlyArray<T>,
+  anyOf: ReadonlySet<T>
+) => {
+  for (const t of target) {
+    if (anyOf.has(t)) {
       return true
     }
   }

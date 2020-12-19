@@ -11,7 +11,7 @@ const tagsArr = [
   'サークル'
 ] as const
 
-export const tags = new Set(tagsArr)
+export const tags = new Set(tagsArr) as ReadonlySet<Tag>
 
 export type Tag = typeof tagsArr[number]
 
