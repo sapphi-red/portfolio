@@ -4,14 +4,16 @@
     <header-h-r v-if="!isIndex" />
   </transition>
   <main :class="$style.main">
-    <router-view v-slot="{ Component, route }">
-      <transition
-        :name="route.meta.transition || 'fade'"
-        :mode="route.meta.transitionMode || 'out-in'"
-      >
-        <component :is="Component" />
-      </transition>
-    </router-view>
+    <div :class="$style.mainContainer">
+      <router-view v-slot="{ Component, route }">
+        <transition
+          :name="route.meta.transition || 'fade'"
+          :mode="route.meta.transitionMode || 'out-in'"
+        >
+          <component :is="Component" />
+        </transition>
+      </router-view>
+    </div>
   </main>
 </template>
 
@@ -54,5 +56,9 @@ export default defineComponent({
   flex: 1 1;
   overflow: hidden auto;
   padding: 1rem;
+}
+.mainContainer {
+  max-width: 1080px;
+  margin: 0 auto;
 }
 </style>

@@ -76,6 +76,7 @@ export default defineComponent({
   flex-direction: column;
   min-width: 50vw;
   min-height: 50vh;
+  max-width: 1080px;
   margin: auto;
   padding: 1rem;
   background-color: #fff;
