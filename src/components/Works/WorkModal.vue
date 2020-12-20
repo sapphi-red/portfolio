@@ -63,6 +63,10 @@ export default defineComponent({
     y: auto;
   }
 
+  @media (max-width: 600px) {
+    padding: 1rem;
+  }
+
   // アニメーション時にスクロールバーを透明化
   &:global(.zoom-enter-active),
   &:global(.zoom-leave-active) {
