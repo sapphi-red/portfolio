@@ -7,7 +7,7 @@
 どういう検索をするとよいか、どういった場合が考えられるかなど
 言語に限らないプログラミングをする上で知っておくとよさそうなことを話しました。
 '''
-  tags = ['講習会', 'サークル']
+  tags = ['サークル', '講習会']
   articles = []
 
 [[works]]
@@ -19,7 +19,7 @@ CSSの機能をその例とともに紹介したあと、あるデザインが�
 それをどのようにCSSに落としていくかを具体例を取り上げつつ話しました。
 '''
   img = 'css-essence-workshop.png'
-  tags = ['講習会', 'サークル']
+  tags = ['CSS', 'サークル', '講習会']
   articles = []
 
 [[works]]
@@ -46,8 +46,11 @@ CSSの機能をその例とともに紹介したあと、あるデザインが�
     title = 'ブログ記事: traQのmarkdownのパースをWeb Workerでやるようにした話'
     link = 'https://trap.jp/post/816/'
   [[works.articles]]
+    title = 'ブログ記事(執筆は別の方): 部内製チャットサービス「traQ」UIのこれまで'
+    link = 'https://trap.jp/post/886/'
+  [[works.articles]]
     title = 'ソースコード'
-    link = 'https://github.com/traPtitech/traQ_S-UI'
+    link = 'https://github.com/traPtitech/traQ_R-UI'
 
 [[works]]
   slug = 'emoine-2020'
@@ -57,8 +60,8 @@ CSSの機能をその例とともに紹介したあと、あるデザインが�
 例年ハッカソンは対面で行っていたのですが、2020年は新型コロナの影響でオンライン開催しました。
 その際に利用するためにライブ配信を埋め込んでコメント・リアクション機能と結果集計機能を実装しました。
 '''
+  img = 'emoine-2020.png'
   tags = [
-      'JavaScript',
       'TypeScript',
       'Vue.js',
       'Sass/SCSS',
@@ -68,3 +71,77 @@ CSSの機能をその例とともに紹介したあと、あるデザインが�
   [[works.articles]]
     title = 'ブログ記事: 裏ハッカソン参加記「Emoine」'
     link = 'https://trap.jp/post/1093/'
+
+[[works]]
+  slug = 'traq-s-frontend'
+  name = 'traQ-S フロントエンド'
+  desc = '''
+サークルで開発しているサークル内向けのコミュニケーションツールです。
+以前のtraQ-Rと呼ばれるバージョンを一から作り直したものです。
+TypeScriptで書かれています。
+Vue 2 + Composition API pluginからVue 3に移行しました。
+株式会社サポーターズが開催した技育展のチーム開発テーマにて優秀賞を獲得しました。
+このバージョンで自分は次のようなことをしました。
+
+<ul>
+  <li>カスタムテーマ機能</li>
+  <li>API通信の切り出し</li>
+  <li>Vue v3移行</li>
+  <li>画像リサイズ機能</li>
+  <li>マークダウンパーサの切り出しとその改善</li>
+  <li>設定の保存と設定画面の実装</li>
+  <li>Badging APIを利用した未読バッジ</li>
+  <li>通話機能での音声インジケータ</li>
+  <li>Web Speech APIを利用したメッセージ読み上げ機能</li>
+  <li>Web Share Target APIを利用した他アプリの共有ボタンから共有する機能</li>
+  <li>各種アニメーション</li>
+  <li>トースト表示</li>
+</ul>
+'''
+  img = 'traq-s-frontend.png'
+  tags = ['JavaScript', 'TypeScript', 'Sass/SCSS', 'Vue.js', 'サークル']
+  [[works.articles]]
+    title = 'ブログ記事(執筆は別の方): 部内製チャットサービス「traQ」UIのこれから'
+    link = 'https://trap.jp/post/918/'
+  [[works.articles]]
+    title = 'ブログ記事(執筆は別の方): 爆☆誕 traQ-S'
+    link = 'https://trap.jp/post/1051/'
+  [[works.articles]]
+    title = 'ブログ記事: traQ v3.1.0'
+    link = 'https://trap.jp/post/1090/'
+  [[works.articles]]
+    title = '技育展結果発表ツイート'
+    link = 'https://twitter.com/geek_pjt/status/1309745633499033601'
+  [[works.articles]]
+    title = 'ソースコード'
+    link = 'https://github.com/traPtitech/traQ_S-UI'
+  [[works.articles]]
+    title = 'ソースコード (API通信)'
+    link = 'https://github.com/traPtitech/node-traq'
+  [[works.articles]]
+    title = 'ソースコード (マークダウンパーサ)'
+    link = 'https://github.com/traPtitech/traq-markdown-it'
+
+[[works]]
+  slug = 'extract-background'
+  name = 'Extract Background'
+  desc = '''
+Tensorflow.jsを利用して与えた定点動画から背景を抽出するツールです。
+Tensorflowに含まれている学習済みモデルを利用しました。
+Tensorflow.jsのバックエンドで当時はWebAssemblyにほんの一部しか対応していなくモデルが動作しなかったため、
+モデルに利用されていた関数を実装したPRをTensorflow.jsに出しました。
+このツールの目的としてはツールそのものだけでなく、機械学習の処理をWebGLとWasmをマルチスレッドで動作させるのだと、
+どの程度の差が出るかということだったので、マルチスレッドでの実行も実装しました。
+結果は下記のブログ記事をご覧ください。
+'''
+  img = 'extract-background.png'
+  tags = ['TypeScript', 'React', 'Sass/SCSS']
+  [[works.articles]]
+    title = 'ツール本体'
+    link = 'https://extract-background.sapphi.red/'
+  [[works.articles]]
+    title = 'ブログ記事: TensorFlow.jsでwasmを使ってみるためにコントリビュートした'
+    link = 'https://trap.jp/post/927/'
+  [[works.articles]]
+    title = 'ソースコード'
+    link = 'https://github.com/sapphi-red/extract-background'

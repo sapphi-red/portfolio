@@ -1,14 +1,16 @@
 import _works from './data/works.const.toml'
 
 const tagsArr = [
-  '講習会',
   'JavaScript',
   'TypeScript',
+  'Vue.js',
+  'React',
+  'CSS',
   'Sass/SCSS',
   'Pug',
-  'Vue.js',
   'Protocol Buffers',
-  'サークル'
+  'サークル',
+  '講習会'
 ] as const
 
 export const tags = new Set(tagsArr) as ReadonlySet<Tag>
