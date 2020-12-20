@@ -12,7 +12,7 @@ const ignoreRepoUser = ['traPtitech', 'sapphi-red', 'FujishigeTemma']
 
 const fetchPRs = async page => {
   const params = new URLSearchParams()
-  params.set('q', 'author:sapphi-red is:pr state:closed')
+  params.set('q', 'author:sapphi-red is:pr is:merged')
   params.set('sort', 'created')
   params.set('per_page', 100)
   params.set('page', page)
