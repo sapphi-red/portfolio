@@ -62,6 +62,15 @@ export default defineComponent({
     x: hidden;
     y: auto;
   }
+
+  // アニメーション時にスクロールバーを透明化
+  &:global(.zoom-enter-active),
+  &:global(.zoom-leave-active) {
+    scrollbar-color: transparent transparent;
+    &::-webkit-scrollbar {
+      visibility: hidden;
+    }
+  }
 }
 .modalBackground {
   position: absolute;
