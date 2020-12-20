@@ -7,9 +7,7 @@
       <div :class="$style.modal">
         <h2>{{ work.name }}</h2>
         <work-tag-list :tags="work.tags" />
-        <div :class="$style.imgContainer">
-          <img :src="img" :class="$style.img" />
-        </div>
+        <img :src="img" :class="$style.img" />
         <!-- eslint-disable-next-line vue/no-v-html -->
         <div v-html="work.desc" />
         <work-articles :articles="work.articles" />
@@ -95,13 +93,11 @@ export default defineComponent({
   border-radius: 0.3rem;
   z-index: 1;
 }
-.imgContainer {
-  width: 100%;
-  max-width: 480px;
-  margin: 0 auto;
-}
 .img {
-  max-width: 100%;
+  max-height: 450px;
+  width: 100%;
+  margin: 1rem auto;
+  object-fit: contain;
 }
 .close {
   width: 5rem;
