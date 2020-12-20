@@ -1,7 +1,7 @@
 <template>
   <page-header />
   <transition name="header-hr">
-    <header-h-r v-if="!isIndex" />
+    <header-h-r v-show="!isIndex" />
   </transition>
   <main :class="$style.main">
     <div :class="$style.mainContainer">
@@ -33,7 +33,7 @@ export default defineComponent({
     const route = useRoute()
     const isIndex = computed(
       // 初回表示はfrom.nameがundefined
-      () => route.name === undefined || route.name === 'index'
+      () => route.name === 'index'
     )
     return { isIndex }
   }
