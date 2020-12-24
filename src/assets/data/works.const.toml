@@ -211,3 +211,22 @@ TypeScriptでjsonを読み込んだときのようにtomlファイルで型を�
   [[works.articles]]
     title = 'npm'
     link = 'https://www.npmjs.com/package/typescript-plugin-toml'
+
+[[works]]
+  slug = 'hubot-traq'
+  name = 'hubot-traq'
+  desc = '''
+BotフレームワークであるhubotのtraQ用アダプターです。
+traQで稼働している複数のBotが利用しています。
+これを用いて自分が開発したBotとしては575スタンプBotがあります。
+'''
+  tags = ['JavaScript']
+  [[works.articles]]
+    title = 'ブログ記事: traQを取り巻く「おみくじ」環境'
+    link = 'https://trap.jp/post/944/'
+  [[works.articles]]
+    title = 'ソースコード'
+    link = 'https://github.com/sapphi-red/hubot-traq'
+  [[works.articles]]
+    title = 'npm'
+    link = 'https://www.npmjs.com/package/hubot-traq'
