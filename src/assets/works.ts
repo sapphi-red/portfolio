@@ -9,6 +9,8 @@ const tagsArr = [
   'Sass/SCSS',
   'Pug',
   'Protocol Buffers',
+  'toml',
+  '静的解析',
   'サークル',
   '講習会'
 ] as const

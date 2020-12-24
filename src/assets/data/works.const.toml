@@ -145,3 +145,69 @@ Tensorflow.jsのバックエンドで当時はWebAssemblyにほんの一部し�
   [[works.articles]]
     title = 'ソースコード'
     link = 'https://github.com/sapphi-red/extract-background'
+
+[[works]]
+  slug = 'vue-routider'
+  name = 'vue-routider'
+  desc = '''
+vue-routerに、より厳密な型をつけるライブラリです。
+'''
+  img = 'vue-routider.png'
+  tags = ['TypeScript', 'Vue.js']
+  [[works.articles]]
+    title = '記事: Vue Routerに型をもたらすVue Routiderをつくった'
+    link = 'https://qiita.com/sapphi-red/items/2b9a948fd7f4f3fed8b8'
+  [[works.articles]]
+    title = 'ドキュメント'
+    link = 'https://vue-routider.sapphi.red/'
+  [[works.articles]]
+    title = 'ソースコード'
+    link = 'https://github.com/sapphi-red/vue-routider'
+  [[works.articles]]
+    title = 'npm'
+    link = 'https://www.npmjs.com/package/vue-routider'
+
+[[works]]
+  slug = 'ts-transformer-for-of'
+  name = 'ts-transformer-for-of'
+  desc = '''
+TypeScriptの配列のfor-ofとmapなどのメソッドをiを増やすような通常のforに書き換えるTypeScript transformerです。
+これを適用することで多少のパフォーマンスの改善ができます。
+'''
+  img = 'ts-transformer-for-of.png'
+  tags = ['TypeScript', '静的解析']
+  [[works.articles]]
+    title = 'ソースコード'
+    link = 'https://github.com/sapphi-red/ts-transformer-for-of'
+  [[works.articles]]
+    title = 'npm'
+    link = 'https://www.npmjs.com/package/@sapphi-red/ts-transformer-for-of'
+
+[[works]]
+  slug = 'vite-plugin-toml'
+  name = 'vite-plugin-toml'
+  desc = '''
+Viteというビルドツールでtomlファイルをロードするプラグインです。
+'''
+  tags = ['TypeScript', 'toml']
+  [[works.articles]]
+    title = 'ソースコード'
+    link = 'https://github.com/sapphi-red/vite-plugin-toml'
+  [[works.articles]]
+    title = 'npm'
+    link = 'https://www.npmjs.com/package/vite-plugin-toml'
+
+[[works]]
+  slug = 'typescript-plugin-toml'
+  name = 'typescript-plugin-toml'
+  desc = '''
+TypeScriptでjsonを読み込んだときのようにtomlファイルで型を利用できるようにするプラグインです。
+'''
+  img = 'typescript-plugin-toml.png'
+  tags = ['TypeScript', 'toml', '静的解析']
+  [[works.articles]]
+    title = 'ソースコード'
+    link = 'https://github.com/sapphi-red/typescript-plugin-toml'
+  [[works.articles]]
+    title = 'npm'
+    link = 'https://www.npmjs.com/package/typescript-plugin-toml'
