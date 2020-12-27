@@ -230,3 +230,21 @@ traQで稼働している複数のBotが利用しています。
   [[works.articles]]
     title = 'npm'
     link = 'https://www.npmjs.com/package/hubot-traq'
+
+[[works]]
+  slug = '575-stamp-bot'
+  name = '575スタンプBot'
+  desc = '''
+traQで稼働しているBotです。
+監視しているチャンネルに575の音になっているメッセージが投稿された際に
+特定のスタンプを押します。
+kuromoji.jsでIPA辞書を利用して形態素解析を行い、
+未知語はニコニコ大百科IME辞書とBilingual Emacspeak Projectの辞書を利用する、
+または、そのままの読み(pならピー)として読みを取得します。
+「柿食えば鐘が鳴るなり法隆寺」のような一般的なもの以外に
+「newtonよapple落とし行かないか」のように英単語を含んでいるものや
+「30個今年の梨の消費量」のように算用数字を含んだものの判定も可能です。
+'''
+  img = '575-stamp-bot.png'
+  tags = ['JavaScript']
+  articles = []
