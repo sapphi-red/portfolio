@@ -8,7 +8,8 @@
     "lint": "eslint --ext .ts,.vue src",
     "type-check": "tsc",
     "update-pr-data": "node ./scripts/fetch-prs.js",
-    "create-pr-data": "node ./scripts/fetch-prs.js withoutCache"
+    "create-pr-data": "node ./scripts/fetch-prs.js withoutCache",
+    "recreate-pr-data": "node ./scripts/fetch-prs.js fromCache"
   },
   "repository": {
     "type": "git",

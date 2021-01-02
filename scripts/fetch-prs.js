@@ -5,10 +5,15 @@ const fs = require('fs').promises
 const path = require('path')
 
 const URL_PATH = 'https://api.github.com/search/issues'
-const RAW_DATA_PATH = path.resolve(__dirname, '../public/prs_raw.json')
+const RAW_DATA_PATH = path.resolve(__dirname, '../bin/prs_raw.json')
 const DATA_PATH = path.resolve(__dirname, '../src/assets/prs.json')
 
 const ignoreRepoUser = ['traPtitech', 'sapphi-red', 'FujishigeTemma']
+const ignorePRs = [
+  'https://github.com/tensorflow/tfjs/pull/2527',
+  'https://github.com/hmsk/vite-plugin-markdown/pull/2',
+  'https://github.com/vitejs/awesome-vite/pull/38'
+]
 
 const fetchPRs = async page => {
   const params = new URLSearchParams()
@@ -103,7 +108,9 @@ const groupByRepo = prs => {
 const rawToData = rawData => {
   const transformedData = rawData.prs
     .map(pr => toPRSimpleData(pr))
-    .filter(pr => !ignoreRepoUser.includes(pr.repoUser))
+    .filter(
+      pr => !ignoreRepoUser.includes(pr.repoUser) && !ignorePRs.includes(pr.url)
+    )
 
   const groupedData = groupByRepo(transformedData)
 
@@ -125,11 +132,13 @@ const fetchAndWriteAllPRRawData = async () => {
   await fs.writeFile(RAW_DATA_PATH, JSON.stringify(rawData), 'utf-8')
 }
 
+const formatJson = json => JSON.stringify(json, undefined, 2)
+
 const readRawDataAndWriteData = async () => {
   const rawDataText = await fs.readFile(RAW_DATA_PATH, 'utf-8')
   const rawData = JSON.parse(rawDataText)
   const outputData = rawToData(rawData)
-  await fs.writeFile(DATA_PATH, JSON.stringify(outputData), 'utf-8')
+  await fs.writeFile(DATA_PATH, formatJson(outputData), 'utf-8')
 }
 
 const createDataWithCache = async () => {
@@ -154,7 +163,7 @@ const createDataWithoutCache = async () => {
       await createDataWithoutCache()
       break
     case 'fromCache':
-      await await readRawDataAndWriteData()
+      await readRawDataAndWriteData()
       break
   }
 })()
