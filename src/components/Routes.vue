@@ -19,7 +19,7 @@ export default defineComponent({
   name: 'Routes',
   setup() {
     const routeData = routes
-      .filter(route => route.name !== 'index')
+      .filter(route => route.meta?.showInRoutes)
       .map(route => ({
         name: route.name,
         title: route.name

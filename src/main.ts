@@ -1,9 +1,9 @@
-import { createApp } from 'vue'
-import router from './router'
+import { ViteSSG } from 'vite-ssg'
+import { routes, setRouterNavigationGuards } from './router'
 import App from './App.vue'
 
 import '@purge-icons/generated'
 
-const app = createApp(App)
-app.use(router)
-app.mount('#app')
+export const createApp = ViteSSG(App, { routes }, ({ router }) => {
+  setRouterNavigationGuards(router)
+})

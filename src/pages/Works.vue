@@ -40,7 +40,9 @@ export default defineComponent({
   },
   setup() {
     const route = useRoute()
-    const workSlug = computed(() => getFirstIfArray(route.params.workSlug))
+    const workSlug = computed((): string | undefined =>
+      getFirstIfArray(route.params.workSlug)
+    )
 
     const selectedTags = ref(new Set<Tag>())
     const onToggleTag = (tag: Tag) => {

@@ -1,55 +1,67 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
-import { createRouter, createWebHistory } from 'vue-router'
 
-const routerHistory = createWebHistory()
+import { Router, RouteRecordRaw } from 'vue-router'
 
-export const routes = [
+declare module 'vue-router' {
+  interface RouteMeta {
+    showInRoutes?: true
+  }
+}
+
+type Route = RouteRecordRaw & { meta?: { showInRoutes?: true } }
+
+export const routes: Route[] = [
   {
     path: '/',
     name: 'index',
-    component: () => import('/@/pages/Index.vue')
+    component: () => import('/@/pages/Index.vue'),
+    meta: { showInRoutes: true }
   },
   {
     path: '/about',
     name: 'about',
-    component: () => import('/@/pages/About.vue')
+    component: () => import('/@/pages/About.vue'),
+    meta: { showInRoutes: true }
   },
   {
     path: '/skills',
     name: 'skills',
-    component: () => import('/@/pages/Skills.vue')
+    component: () => import('/@/pages/Skills.vue'),
+    meta: { showInRoutes: true }
   },
   {
     path: '/experiences',
     name: 'experiences',
-    component: () => import('/@/pages/Experiences.vue')
+    component: () => import('/@/pages/Experiences.vue'),
+    meta: { showInRoutes: true }
   },
   {
-    path: '/works/:workSlug?',
+    path: '/works',
     name: 'works',
+    component: () => import('/@/pages/Works.vue'),
+    meta: { showInRoutes: true }
+  },
+  {
+    path: '/works/:workSlug',
+    name: 'work',
     component: () => import('/@/pages/Works.vue')
   }
 ]
 
-const router = createRouter({
-  history: routerHistory,
-  routes
-})
+export const setRouterNavigationGuards = (router: Router) => {
+  router.afterEach((to, from) => {
+    // 初回表示はfrom.nameがundefined
+    if (from.name === undefined) {
+      to.meta.transition = ''
+      return
+    }
 
-router.afterEach((to, from) => {
-  // 初回表示はfrom.nameがundefined
-  if (from.name === undefined) {
-    to.meta.transition = ''
-    return
-  }
-
-  if (to.name === 'index') {
-    to.meta.transition = 'index-enter'
-    to.meta.transitionMode = 'in-out'
-  }
-  if (from.name === 'index') {
-    to.meta.transition = 'index-leave'
-  }
-})
-
-export default router
+    if (to.name === 'index') {
+      to.meta.transition = 'index-enter'
+      to.meta.transitionMode = 'in-out'
+    }
+    if (from.name === 'index') {
+      to.meta.transition = 'index-leave'
+    }
+  })
+}
