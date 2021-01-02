@@ -14,8 +14,7 @@ export const routes: Route[] = [
   {
     path: '/',
     name: 'index',
-    component: () => import('/@/pages/Index.vue'),
-    meta: { showInRoutes: true }
+    component: () => import('/@/pages/Index.vue')
   },
   {
     path: '/about',
