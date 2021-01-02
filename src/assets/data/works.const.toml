@@ -248,3 +248,29 @@ kuromoji.jsでIPA辞書を利用して形態素解析を行い、
   img = '575-stamp-bot.png'
   tags = ['JavaScript']
   articles = []
+
+[[works]]
+  slug = 'json-constantiater'
+  name = 'json-constantiater'
+  desc = '''
+ISUCON用につくったGoのJSONエンコーダジェネレータです。
+エンコード時に強い仮定を置くことでより高速なエンコードが可能になっています。
+'''
+  img = 'json-constantiater.png'
+  tags = ['Go', '静的解析']
+  [[works.articles]]
+    title = '記事: Go制約付き高速JSONエンコーダージェネレータ'
+    link = 'https://qiita.com/sapphi-red/items/509bb39f45a7265e928f'
+
+[[works]]
+  slug = 'async-await-workshop'
+  name = '実装して理解するasync/await'
+  desc = '''
+サークルで行った講習会です。
+話の最初のほうではasync/awaitは何を解決してくれるか、
+どういった点がうれしいのか、それをどういう方法で解決したかについて触れました。
+その後、callbackとiteratorからスタートしてPromise、generatorをつくりつつ、
+async/awaitができあがるように話を進めました。
+'''
+  tags = ['JavaScript', 'サークル', '講習会']
+  articles = []

@@ -9,6 +9,7 @@ import BarList, { BarListData } from '/@/components/UI/BarList.vue'
 const skills: BarListData = [
   { name: 'Docker', percentage: 65 },
   { name: 'Ansible', percentage: 45 },
+  { name: 'GitHub Actions', percentage: 35 },
   { name: '英語 (TOEIC 910)', percentage: 70 }
 ]
 

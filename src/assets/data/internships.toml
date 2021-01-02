@@ -9,6 +9,9 @@
   href = 'https://mercan.mercari.com/articles/22800/'
   [[internships.children]]
     name = 'Go言語のLintツールを1週間で製作。'
+    [[internships.children.children]]
+      name = 'ソースコード'
+      href = 'https://github.com/sapphi-red/possibleerrors'
 
 [[internships]]
   name = '2020/09～: 株式会社マネーフォワード'

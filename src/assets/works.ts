@@ -8,6 +8,7 @@ const tagsArr = [
   'CSS',
   'Sass/SCSS',
   'Pug',
+  'Go',
   'Protocol Buffers',
   'toml',
   '静的解析',
