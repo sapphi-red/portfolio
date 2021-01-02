@@ -23,7 +23,10 @@ export default defineComponent({
 .tag {
   display: inline-block;
 }
-.tag + .tag {
-  margin-left: 0.3em;
+.tag {
+  margin-right: 0.3em;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 </style>
