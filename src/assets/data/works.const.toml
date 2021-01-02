@@ -274,3 +274,18 @@ async/awaitができあがるように話を進めました。
 '''
   tags = ['JavaScript', 'サークル', '講習会']
   articles = []
+
+[[works]]
+  slug = 'trap-dispel'
+  name = 'TrapDispel'
+  desc = '''
+サークルで製作したタワーディフェンスゲームです。
+'''
+  img = 'trap-dispel.png'
+  tags = ['Rust', 'サークル']
+  [[works.articles]]
+    title = 'ブログ記事(執筆は別の方): TrapDispel完成！'
+    link = 'https://trap.jp/post/1085/'
+  [[works.articles]]
+    title = 'TrapDispel'
+    link = 'https://trapdispel.trap.games/'
