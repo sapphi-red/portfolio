@@ -1,26 +1,52 @@
 [[works]]
-  slug = 'to-fix-workshop'
-  name = 'プログラムを手懐ける講習会'
+  slug = 'traq-s-frontend'
+  name = 'traQ-S フロントエンド'
   desc = '''
-サークルで行った講習会です。
-プログラムが動かなかったとき、意図しない動作が起きたときにどんな所を見るとよいか、
-どういう検索をするとよいか、どういった場合が考えられるかなど
-言語に限らないプログラミングをする上で知っておくとよさそうなことを話しました。
-'''
-  tags = ['サークル', '講習会']
-  articles = []
+サークルで開発しているサークル内向けのコミュニケーションツールです。
+以前のtraQ-Rと呼ばれるバージョンを一から作り直したものです。
+TypeScriptで書かれています。
+Vue 2 + Composition API pluginからVue 3に移行しました。
+株式会社サポーターズが開催した技育展のチーム開発テーマにて優秀賞を獲得しました。
+このバージョンで自分は次のようなことをしました。
 
-[[works]]
-  slug = 'css-essence-workshop'
-  name = 'CSSの†本質情報†を知る会'
-  desc = '''
-サークルで行った講習会です。
-CSSの機能をその例とともに紹介したあと、あるデザインが存在しているときに
-それをどのようにCSSに落としていくかを具体例を取り上げつつ話しました。
+<ul>
+  <li>カスタムテーマ機能</li>
+  <li>API通信の切り出し</li>
+  <li>Vue v3移行</li>
+  <li>画像リサイズ機能</li>
+  <li>マークダウンパーサの切り出しとその改善</li>
+  <li>設定の保存と設定画面の実装</li>
+  <li>Badging APIを利用した未読バッジ</li>
+  <li>通話機能での音声インジケータ</li>
+  <li>Web Speech APIを利用したメッセージ読み上げ機能</li>
+  <li>Web Share Target APIを利用した他アプリの共有ボタンから共有する機能</li>
+  <li>各種アニメーション</li>
+  <li>トースト表示</li>
+</ul>
 '''
-  img = 'css-essence-workshop.png'
-  tags = ['CSS', 'サークル', '講習会']
-  articles = []
+  img = 'traq-s-frontend.png'
+  tags = ['JavaScript', 'TypeScript', 'Sass/SCSS', 'Vue.js', 'サークル']
+  [[works.articles]]
+    title = 'ブログ記事(執筆は別の方): 部内製チャットサービス「traQ」UIのこれから'
+    link = 'https://trap.jp/post/918/'
+  [[works.articles]]
+    title = 'ブログ記事(執筆は別の方): 爆☆誕 traQ-S'
+    link = 'https://trap.jp/post/1051/'
+  [[works.articles]]
+    title = 'ブログ記事: traQ v3.1.0'
+    link = 'https://trap.jp/post/1090/'
+  [[works.articles]]
+    title = '技育展結果発表ツイート'
+    link = 'https://twitter.com/geek_pjt/status/1309745633499033601'
+  [[works.articles]]
+    title = 'ソースコード'
+    link = 'https://github.com/traPtitech/traQ_S-UI'
+  [[works.articles]]
+    title = 'ソースコード (API通信)'
+    link = 'https://github.com/traPtitech/node-traq'
+  [[works.articles]]
+    title = 'ソースコード (マークダウンパーサ)'
+    link = 'https://github.com/traPtitech/traq-markdown-it'
 
 [[works]]
   slug = 'traq-r-frontend'
@@ -71,56 +97,6 @@ CSSの機能をその例とともに紹介したあと、あるデザインが�
   [[works.articles]]
     title = 'ブログ記事: 裏ハッカソン参加記「Emoine」'
     link = 'https://trap.jp/post/1093/'
-
-[[works]]
-  slug = 'traq-s-frontend'
-  name = 'traQ-S フロントエンド'
-  desc = '''
-サークルで開発しているサークル内向けのコミュニケーションツールです。
-以前のtraQ-Rと呼ばれるバージョンを一から作り直したものです。
-TypeScriptで書かれています。
-Vue 2 + Composition API pluginからVue 3に移行しました。
-株式会社サポーターズが開催した技育展のチーム開発テーマにて優秀賞を獲得しました。
-このバージョンで自分は次のようなことをしました。
-
-<ul>
-  <li>カスタムテーマ機能</li>
-  <li>API通信の切り出し</li>
-  <li>Vue v3移行</li>
-  <li>画像リサイズ機能</li>
-  <li>マークダウンパーサの切り出しとその改善</li>
-  <li>設定の保存と設定画面の実装</li>
-  <li>Badging APIを利用した未読バッジ</li>
-  <li>通話機能での音声インジケータ</li>
-  <li>Web Speech APIを利用したメッセージ読み上げ機能</li>
-  <li>Web Share Target APIを利用した他アプリの共有ボタンから共有する機能</li>
-  <li>各種アニメーション</li>
-  <li>トースト表示</li>
-</ul>
-'''
-  img = 'traq-s-frontend.png'
-  tags = ['JavaScript', 'TypeScript', 'Sass/SCSS', 'Vue.js', 'サークル']
-  [[works.articles]]
-    title = 'ブログ記事(執筆は別の方): 部内製チャットサービス「traQ」UIのこれから'
-    link = 'https://trap.jp/post/918/'
-  [[works.articles]]
-    title = 'ブログ記事(執筆は別の方): 爆☆誕 traQ-S'
-    link = 'https://trap.jp/post/1051/'
-  [[works.articles]]
-    title = 'ブログ記事: traQ v3.1.0'
-    link = 'https://trap.jp/post/1090/'
-  [[works.articles]]
-    title = '技育展結果発表ツイート'
-    link = 'https://twitter.com/geek_pjt/status/1309745633499033601'
-  [[works.articles]]
-    title = 'ソースコード'
-    link = 'https://github.com/traPtitech/traQ_S-UI'
-  [[works.articles]]
-    title = 'ソースコード (API通信)'
-    link = 'https://github.com/traPtitech/node-traq'
-  [[works.articles]]
-    title = 'ソースコード (マークダウンパーサ)'
-    link = 'https://github.com/traPtitech/traq-markdown-it'
 
 [[works]]
   slug = 'extract-background'
@@ -199,6 +175,19 @@ TypeScriptでjsonを読み込んだときのようにtomlファイルで型を�
     link = 'https://www.npmjs.com/package/typescript-plugin-toml'
 
 [[works]]
+  slug = 'json-constantiater'
+  name = 'json-constantiater'
+  desc = '''
+ISUCON用につくったGoのJSONエンコーダジェネレータです。
+エンコード時に強い仮定を置くことでより高速なエンコードが可能になっています。
+'''
+  img = 'json-constantiater.png'
+  tags = ['Go', '静的解析']
+  [[works.articles]]
+    title = '記事: Go制約付き高速JSONエンコーダージェネレータ'
+    link = 'https://qiita.com/sapphi-red/items/509bb39f45a7265e928f'
+
+[[works]]
   slug = 'hubot-traq'
   name = 'hubot-traq'
   desc = '''
@@ -236,17 +225,20 @@ kuromoji.jsでIPA辞書を利用して形態素解析を行い、
   articles = []
 
 [[works]]
-  slug = 'json-constantiater'
-  name = 'json-constantiater'
+  slug = 'trap-dispel'
+  name = 'TrapDispel'
   desc = '''
-ISUCON用につくったGoのJSONエンコーダジェネレータです。
-エンコード時に強い仮定を置くことでより高速なエンコードが可能になっています。
+サークルで製作したタワーディフェンスゲームです。
+自分はRustでかかれたサーバーサイドの開発に携わりました。
 '''
-  img = 'json-constantiater.png'
-  tags = ['Go', '静的解析']
+  img = 'trap-dispel.png'
+  tags = ['Rust', 'サークル']
   [[works.articles]]
-    title = '記事: Go制約付き高速JSONエンコーダージェネレータ'
-    link = 'https://qiita.com/sapphi-red/items/509bb39f45a7265e928f'
+    title = 'ブログ記事(執筆は別の方): TrapDispel完成！'
+    link = 'https://trap.jp/post/1085/'
+  [[works.articles]]
+    title = 'TrapDispel'
+    link = 'https://trapdispel.trap.games/'
 
 [[works]]
   slug = 'async-await-workshop'
@@ -262,17 +254,25 @@ async/awaitができあがるように話を進めました。
   articles = []
 
 [[works]]
-  slug = 'trap-dispel'
-  name = 'TrapDispel'
+  slug = 'to-fix-workshop'
+  name = 'プログラムを手懐ける講習会'
   desc = '''
-サークルで製作したタワーディフェンスゲームです。
-自分はRustでかかれたサーバーサイドの開発に携わりました。
+サークルで行った講習会です。
+プログラムが動かなかったとき、意図しない動作が起きたときにどんな所を見るとよいか、
+どういう検索をするとよいか、どういった場合が考えられるかなど
+言語に限らないプログラミングをする上で知っておくとよさそうなことを話しました。
 '''
-  img = 'trap-dispel.png'
-  tags = ['Rust', 'サークル']
-  [[works.articles]]
-    title = 'ブログ記事(執筆は別の方): TrapDispel完成！'
-    link = 'https://trap.jp/post/1085/'
-  [[works.articles]]
-    title = 'TrapDispel'
-    link = 'https://trapdispel.trap.games/'
+  tags = ['サークル', '講習会']
+  articles = []
+
+[[works]]
+  slug = 'css-essence-workshop'
+  name = 'CSSの†本質情報†を知る会'
+  desc = '''
+サークルで行った講習会です。
+CSSの機能をその例とともに紹介したあと、あるデザインが存在しているときに
+それをどのようにCSSに落としていくかを具体例を取り上げつつ話しました。
+'''
+  img = 'css-essence-workshop.png'
+  tags = ['CSS', 'サークル', '講習会']
+  articles = []
