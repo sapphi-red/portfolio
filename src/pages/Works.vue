@@ -15,10 +15,8 @@ import { computed, defineComponent, ref } from 'vue'
 import PageTitle from '/@/components/UI/PageTitle.vue'
 import WorkList from '/@/components/Works/WorkList.vue'
 import { Tag, works } from '/@/assets/works'
-import { useRoute } from 'vue-router'
 import WorksTagFilter from '/@/components/Works/WorksTagFilter.vue'
 
-const getFirstIfArray = (a: string | string[]) => (Array.isArray(a) ? a[0] : a)
 const hasAny = <T extends unknown>(
   target: ReadonlyArray<T>,
   anyOf: ReadonlySet<T>
@@ -38,12 +36,13 @@ export default defineComponent({
     WorksTagFilter,
     WorkList
   },
+  props: {
+    workSlug: {
+      type: String,
+      default: undefined
+    }
+  },
   setup() {
-    const route = useRoute()
-    const workSlug = computed((): string | undefined =>
-      getFirstIfArray(route.params.workSlug)
-    )
-
     const selectedTags = ref(new Set<Tag>())
     const onToggleTag = (tag: Tag) => {
       if (selectedTags.value.has(tag)) {
@@ -60,7 +59,7 @@ export default defineComponent({
       )
     )
 
-    return { filteredWorks, workSlug, selectedTags, onToggleTag }
+    return { filteredWorks, selectedTags, onToggleTag }
   }
 })
 </script>

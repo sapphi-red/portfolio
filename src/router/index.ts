@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 
 import { Router, RouteRecordRaw } from 'vue-router'
+import { works } from '/@/assets/works'
 
 declare module 'vue-router' {
   interface RouteMeta {
@@ -9,6 +10,13 @@ declare module 'vue-router' {
 }
 
 type Route = RouteRecordRaw & { meta?: { showInRoutes?: true } }
+
+const worksRoutes: Route[] = works.map(work => ({
+  path: `/works/${work.slug}`,
+  name: `work-${work.slug}`,
+  component: () => import('/@/pages/Works.vue'),
+  props: { workSlug: work.slug }
+}))
 
 export const routes: Route[] = [
   {
@@ -40,11 +48,7 @@ export const routes: Route[] = [
     component: () => import('/@/pages/Works.vue'),
     meta: { showInRoutes: true }
   },
-  {
-    path: '/works/:workSlug',
-    name: 'work',
-    component: () => import('/@/pages/Works.vue')
-  }
+  ...worksRoutes
 ]
 
 export const setRouterNavigationGuards = (router: Router) => {
