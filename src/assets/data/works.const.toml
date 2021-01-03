@@ -184,20 +184,6 @@ TypeScriptの配列のfor-ofとmapなどのメソッドをiを増やすような
     link = 'https://www.npmjs.com/package/@sapphi-red/ts-transformer-for-of'
 
 [[works]]
-  slug = 'vite-plugin-toml'
-  name = 'vite-plugin-toml'
-  desc = '''
-Viteというビルドツールでtomlファイルをロードするプラグインです。
-'''
-  tags = ['TypeScript', 'toml']
-  [[works.articles]]
-    title = 'ソースコード'
-    link = 'https://github.com/sapphi-red/vite-plugin-toml'
-  [[works.articles]]
-    title = 'npm'
-    link = 'https://www.npmjs.com/package/vite-plugin-toml'
-
-[[works]]
   slug = 'typescript-plugin-toml'
   name = 'typescript-plugin-toml'
   desc = '''
