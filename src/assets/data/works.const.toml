@@ -166,7 +166,7 @@ TypeScriptの配列のfor-ofとmapなどのメソッドをiを増やすような
 TypeScriptでjsonを読み込んだときのようにtomlファイルで型を利用できるようにするプラグインです。
 '''
   img = 'typescript-plugin-toml.png'
-  tags = ['TypeScript', 'toml', '静的解析']
+  tags = ['TypeScript', 'toml']
   [[works.articles]]
     title = 'ソースコード'
     link = 'https://github.com/sapphi-red/typescript-plugin-toml'
