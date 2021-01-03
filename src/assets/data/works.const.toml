@@ -280,6 +280,7 @@ async/awaitができあがるように話を進めました。
   name = 'TrapDispel'
   desc = '''
 サークルで製作したタワーディフェンスゲームです。
+自分はRustでかかれたサーバーサイドの開発に携わりました。
 '''
   img = 'trap-dispel.png'
   tags = ['Rust', 'サークル']
