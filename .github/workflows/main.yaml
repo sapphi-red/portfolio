@@ -44,27 +44,6 @@ jobs:
         run: npm ci
       - name: run lint
         run: npm run lint -- --max-warnings=0
-  type-check:
-    name: run type check
-    runs-on: ubuntu-latest
-    needs: [packages]
-    steps:
-      - name: checkout
-        uses: actions/checkout@v2
-      - name: setup Node
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-      - uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-npm-
-      - name: npm ci
-        run: npm ci
-      - name: run type-check
-        run: npm run type-check
   build:
     name: run build
     runs-on: ubuntu-latest
