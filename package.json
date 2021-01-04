@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "vite-ssg build",
     "lint": "eslint --ext .ts,.vue src",
-    "type-check": "tsc",
+    "type-check": "vuedx-typecheck",
     "update-pr-data": "node ./scripts/fetch-prs.js",
     "create-pr-data": "node ./scripts/fetch-prs.js withoutCache",
     "recreate-pr-data": "node ./scripts/fetch-prs.js fromCache"
