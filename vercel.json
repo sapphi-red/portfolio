@@ -8,5 +8,8 @@
       "source": "/(.*)",
       "destination": "/index.html"
     }
-  ]
+  ],
+  "github": {
+    "enabled": false
+  }
 }
