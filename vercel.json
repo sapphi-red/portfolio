@@ -1,8 +1,8 @@
 {
   "version": 2,
   "routes": [
-    { "src": "^/.+(?<!\\..*)$", "dest": "/$1.html" },
     { "handle": "filesystem" },
+    { "src": "^/(.+)$", "dest": "/$1.html" },
     { "src": "/.*", "dest": "/index.html" }
   ]
 }
