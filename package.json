@@ -27,7 +27,7 @@
     "@typescript-eslint/parser": "^4.11.1",
     "@vue/compiler-sfc": "^3.0.5",
     "@vue/server-renderer": "^3.0.5",
-    "@vuedx/typescript-plugin-vue": "^0.4.1",
+    "@vuedx/typecheck": "^0.4.1",
     "eslint": "^7.17.0",
     "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-prettier": "^3.3.0",

@@ -15,7 +15,6 @@
     "incremental": true,
     "tsBuildInfoFile": "./node_modules/.tsbuildinfo",
     "plugins": [
-      { "name": "@vuedx/typescript-plugin-vue" },
       { "name": "typescript-plugin-toml" }
     ],
     "typeRoots": [
