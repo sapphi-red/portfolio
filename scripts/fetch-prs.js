@@ -18,7 +18,7 @@ const ignorePRs = [
 const fetchPRs = async page => {
   const params = new URLSearchParams()
   params.set('q', 'author:sapphi-red is:pr is:merged')
-  params.set('sort', 'created')
+  params.set('sort', 'updated')
   params.set('per_page', 100)
   params.set('page', page)
 
@@ -47,11 +47,18 @@ const fetchAllPRData = async () => {
   return { prs, fetchedAt }
 }
 
-const fetchDiffPRData = async (oldPRs, lastUrl) => {
+const prDataMapToPRs = prDataMap => {
+  const prs = [...prDataMap.values()]
+  prs.sort((a, b) => Date.parse(b.updated_at) - Date.parse(a.updated_at))
+  return prs
+}
+
+const fetchDiffPRData = async (oldPRs, lastFetchedAt) => {
   let i = 1
-  const prs = []
   let wasNotEmpty = true
   const fetchedAt = new Date()
+  const lastFetchedAtNum = Date.parse(lastFetchedAt)
+  const prDataMap = new Map(oldPRs.map(pr => [pr.pull_request.html_url, pr]))
 
   while (wasNotEmpty) {
     const data = await fetchPRs(i)
@@ -60,16 +67,16 @@ const fetchDiffPRData = async (oldPRs, lastUrl) => {
     }
 
     for (const pr of data.items) {
-      if (pr.pull_request.html_url === lastUrl) {
-        return { prs: prs.concat(oldPRs), fetchedAt }
+      if (Date.parse(pr.updated_at) < lastFetchedAtNum) {
+        return { prs: prDataMapToPRs(prDataMap), fetchedAt }
       }
-      prs.push(pr)
+      prDataMap.set(pr.pull_request.html_url, pr)
     }
 
     i++
   }
 
-  return { prs: prs.concat(oldPRs), fetchedAt }
+  return { prs: prDataMapToPRs(prDataMap), fetchedAt }
 }
 
 const toPRSimpleData = pr => {
@@ -122,8 +129,7 @@ const rawToData = rawData => {
 
 const fetchAndWriteDiffPRRawData = async () => {
   const oldRawData = JSON.parse(await fs.readFile(RAW_DATA_PATH, 'utf-8'))
-  const lastUrl = oldRawData.prs[0].pull_request.html_url
-  const newRawData = await fetchDiffPRData(oldRawData.prs, lastUrl)
+  const newRawData = await fetchDiffPRData(oldRawData.prs, oldRawData.fetchedAt)
   await fs.writeFile(RAW_DATA_PATH, JSON.stringify(newRawData), 'utf-8')
 }
 
