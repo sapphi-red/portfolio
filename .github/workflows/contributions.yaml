@@ -1,0 +1,34 @@
+name: update contributions
+
+on:
+  schedule:
+    # 二週間に一回、20時JST
+    - cron: '0 11 */14 * *'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
+      - name: check npm ci
+        run: npm ci
+      - name: update
+        run: npm run update-pr-data
+      - name: create pull request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          commit-message: 'Chore: update pr data'
+          delete-branch: true
+          branch-suffix: timestamp
+          title: 'Automatic pr data update'
+          reviewers: sapphi-red
