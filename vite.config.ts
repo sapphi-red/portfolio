@@ -1,20 +1,25 @@
 import { UserConfig } from 'vite'
+// @ts-expect-error: prevent installing @types/node
 import path from 'path'
+import Vue from '@vitejs/plugin-vue'
 import PurgeIcons from 'vite-plugin-purge-icons'
 import { ViteToml } from 'vite-plugin-toml'
 
+declare const __dirname: string
 const srcPath = path.resolve(__dirname, 'src').replace(/\\/g, '/')
 
 const config: UserConfig = {
   alias: {
-    '/@/': srcPath
+    '/@': srcPath
   },
-  cssPreprocessOptions: {
-    scss: {
-      additionalData: `@import "${srcPath}/styles/common.scss";`
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "${srcPath}/styles/common.scss";`
+      }
     }
   },
-  plugins: [PurgeIcons(), ViteToml()]
+  plugins: [Vue(), PurgeIcons(), ViteToml()]
 }
 
 export default config
