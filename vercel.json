@@ -20,7 +20,7 @@
       ]
     },
     {
-      "source": "/(sapphi-red.png|magatama-.+\\.svg)",
+      "source": "/(sapphi-red.png|magatama-.+\\.svg|noimg.svg)",
       "headers": [
         {
           "key": "Cache-Control",
