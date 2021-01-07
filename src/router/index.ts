@@ -48,7 +48,17 @@ export const routes: Route[] = [
     component: () => import('/@/pages/Works.vue'),
     meta: { showInRoutes: true }
   },
-  ...worksRoutes
+  ...worksRoutes,
+  {
+    path: '/:catchAll(.*)',
+    name: '404-catchall',
+    component: () => import('/@/pages/404.vue')
+  },
+  {
+    path: '/404',
+    name: '404',
+    component: () => import('/@/pages/404.vue')
+  }
 ]
 
 export const setRouterNavigationGuards = (router: Router) => {
