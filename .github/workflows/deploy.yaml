@@ -8,6 +8,8 @@ on:
 
 jobs:
   deploy:
+    # `Chore(deps-dev):`で始めるPRの場合はデプロイしない
+    if: github.event_name != 'pull_request' || startsWith(github.event.pull_request.title, 'Chore(deps-dev):')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
