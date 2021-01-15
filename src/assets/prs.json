@@ -1,6 +1,40 @@
 {
   "repos": [
     [
+      "antfu/vue-chemistry",
+      [
+        {
+          "url": "https://github.com/antfu/vue-chemistry/pull/2",
+          "title": "fix not able to import with 'vue-chemistry'",
+          "label": "antfu/vue-chemistry#2",
+          "repoUser": "antfu",
+          "repoName": "vue-chemistry",
+          "prId": 2
+        }
+      ]
+    ],
+    [
+      "vuejs/eslint-plugin-vue",
+      [
+        {
+          "url": "https://github.com/vuejs/eslint-plugin-vue/pull/1398",
+          "title": "Add composition api's computed function support to vue/no-async-in-computed-properties refs #1393",
+          "label": "vuejs/eslint-plugin-vue#1398",
+          "repoUser": "vuejs",
+          "repoName": "eslint-plugin-vue",
+          "prId": 1398
+        },
+        {
+          "url": "https://github.com/vuejs/eslint-plugin-vue/pull/1396",
+          "title": "Make no-ref-as-operand fixable close #1394",
+          "label": "vuejs/eslint-plugin-vue#1396",
+          "repoUser": "vuejs",
+          "repoName": "eslint-plugin-vue",
+          "prId": 1396
+        }
+      ]
+    ],
+    [
       "OpenAPITools/openapi-generator",
       [
         {
@@ -38,23 +72,15 @@
       ]
     ],
     [
-      "vuejs/eslint-plugin-vue",
+      "microsoft/vscode-html-languageservice",
       [
         {
-          "url": "https://github.com/vuejs/eslint-plugin-vue/pull/1398",
-          "title": "Add composition api's computed function support to vue/no-async-in-computed-properties refs #1393",
-          "label": "vuejs/eslint-plugin-vue#1398",
-          "repoUser": "vuejs",
-          "repoName": "eslint-plugin-vue",
-          "prId": 1398
-        },
-        {
-          "url": "https://github.com/vuejs/eslint-plugin-vue/pull/1396",
-          "title": "Make no-ref-as-operand fixable close #1394",
-          "label": "vuejs/eslint-plugin-vue#1396",
-          "repoUser": "vuejs",
-          "repoName": "eslint-plugin-vue",
-          "prId": 1396
+          "url": "https://github.com/microsoft/vscode-html-languageservice/pull/100",
+          "title": "add lacking backquote in README",
+          "label": "microsoft/vscode-html-languageservice#100",
+          "repoUser": "microsoft",
+          "repoName": "vscode-html-languageservice",
+          "prId": 100
         }
       ]
     ],
@@ -195,5 +221,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2021-01-04T08:34:19.116Z"
+  "fetchedAt": "2021-01-15T11:44:27.122Z"
 }
