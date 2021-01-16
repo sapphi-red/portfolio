@@ -12,7 +12,8 @@ const ignoreRepoUser = ['traPtitech', 'sapphi-red', 'FujishigeTemma']
 const ignorePRs = [
   'https://github.com/tensorflow/tfjs/pull/2527',
   'https://github.com/hmsk/vite-plugin-markdown/pull/2',
-  'https://github.com/vitejs/awesome-vite/pull/38'
+  'https://github.com/vitejs/awesome-vite/pull/38',
+  'https://github.com/microsoft/vscode-html-languageservice/pull/100'
 ]
 
 const fetchPRs = async page => {

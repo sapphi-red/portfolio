@@ -72,19 +72,6 @@
       ]
     ],
     [
-      "microsoft/vscode-html-languageservice",
-      [
-        {
-          "url": "https://github.com/microsoft/vscode-html-languageservice/pull/100",
-          "title": "add lacking backquote in README",
-          "label": "microsoft/vscode-html-languageservice#100",
-          "repoUser": "microsoft",
-          "repoName": "vscode-html-languageservice",
-          "prId": 100
-        }
-      ]
-    ],
-    [
       "vuejs/vetur",
       [
         {
