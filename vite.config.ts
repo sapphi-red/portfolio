@@ -1,19 +1,13 @@
 import { UserConfig, Plugin } from 'vite'
+// @ts-expect-error: prevent installing @types/node
+import path from 'path'
 import Vue from '@vitejs/plugin-vue'
 import PurgeIcons from 'vite-plugin-purge-icons'
 import { ViteToml } from 'vite-plugin-toml'
-// @ts-expect-error prevent installing @types/node
-import url from 'url'
 
 declare const process: { env: Record<string, string> }
-declare global {
-  interface ImportMeta {
-    url: string
-  }
-}
-const srcPath = url
-  .fileURLToPath(new URL('./src', import.meta.url))
-  .replace(/\\/g, '/')
+declare const __dirname: string
+const srcPath = path.resolve(__dirname, 'src').replace(/\\/g, '/')
 
 const preloadPlugin: Plugin = {
   name: 'preload',
