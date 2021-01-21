@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite-ssg build",
-    "lint": "eslint --ext .ts,.vue src",
+    "lint": "eslint --ext .js,.ts,.vue .",
     "update-pr-data": "node ./scripts/fetch-prs.js",
     "create-pr-data": "node ./scripts/fetch-prs.js withoutCache",
     "recreate-pr-data": "node ./scripts/fetch-prs.js fromCache"
