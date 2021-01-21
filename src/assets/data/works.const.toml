@@ -1,7 +1,7 @@
 [[works]]
-  slug = 'traq-s-frontend'
-  name = 'traQ-S フロントエンド'
-  desc = '''
+slug = 'traq-s-frontend'
+name = 'traQ-S フロントエンド'
+desc = '''
 サークルで開発しているサークル内向けのコミュニケーションツールです。
 以前のtraQ-Rと呼ばれるバージョンを一から作り直したものです。
 TypeScriptで書かれています。
@@ -24,34 +24,47 @@ Vue 2 + Composition API pluginからVue 3に移行しました。
   <li>トースト表示</li>
 </ul>
 '''
-  img = 'traq-s-frontend.png'
-  tags = ['JavaScript', 'TypeScript', 'Sass/SCSS', 'Vue.js', 'サークル']
+img = 'traq-s-frontend.png'
+tags = [
+  'JavaScript',
+  'TypeScript',
+  'Sass/SCSS',
+  'Vue.js',
+  'サークル'
+]
+
   [[works.articles]]
-    title = 'ブログ記事(執筆は別の方): 部内製チャットサービス「traQ」UIのこれから'
-    link = 'https://trap.jp/post/918/'
+  title = 'ブログ記事(執筆は別の方): 部内製チャットサービス「traQ」UIのこれから'
+  link = 'https://trap.jp/post/918/'
+
   [[works.articles]]
-    title = 'ブログ記事(執筆は別の方): 爆☆誕 traQ-S'
-    link = 'https://trap.jp/post/1051/'
+  title = 'ブログ記事(執筆は別の方): 爆☆誕 traQ-S'
+  link = 'https://trap.jp/post/1051/'
+
   [[works.articles]]
-    title = 'ブログ記事: traQ v3.1.0'
-    link = 'https://trap.jp/post/1090/'
+  title = 'ブログ記事: traQ v3.1.0'
+  link = 'https://trap.jp/post/1090/'
+
   [[works.articles]]
-    title = '技育展結果発表ツイート'
-    link = 'https://twitter.com/geek_pjt/status/1309745633499033601'
+  title = '技育展結果発表ツイート'
+  link = 'https://twitter.com/geek_pjt/status/1309745633499033601'
+
   [[works.articles]]
-    title = 'ソースコード'
-    link = 'https://github.com/traPtitech/traQ_S-UI'
+  title = 'ソースコード'
+  link = 'https://github.com/traPtitech/traQ_S-UI'
+
   [[works.articles]]
-    title = 'ソースコード (API通信)'
-    link = 'https://github.com/traPtitech/node-traq'
+  title = 'ソースコード (API通信)'
+  link = 'https://github.com/traPtitech/node-traq'
+
   [[works.articles]]
-    title = 'ソースコード (マークダウンパーサ)'
-    link = 'https://github.com/traPtitech/traq-markdown-it'
+  title = 'ソースコード (マークダウンパーサ)'
+  link = 'https://github.com/traPtitech/traq-markdown-it'
 
 [[works]]
-  slug = 'traq-r-frontend'
-  name = 'traQ-R フロントエンド'
-  desc = '''
+slug = 'traq-r-frontend'
+name = 'traQ-R フロントエンド'
+desc = '''
 サークルで開発しているサークル内向けのコミュニケーションツールです。
 現在はtraQ-Sと呼ばれるバージョンに移行しており、これはその前のバージョンです。
 このバージョンで自分は次のような機能を実装しました。
@@ -66,42 +79,52 @@ Vue 2 + Composition API pluginからVue 3に移行しました。
   <li>パフォーマンス改善</li>
 </ul>
 '''
-  img = 'traq-r-frontend.png'
-  tags = ['JavaScript', 'Sass/SCSS', 'Pug', 'Vue.js', 'サークル']
+img = 'traq-r-frontend.png'
+tags = [
+  'JavaScript',
+  'Sass/SCSS',
+  'Pug',
+  'Vue.js',
+  'サークル'
+]
+
   [[works.articles]]
-    title = 'ブログ記事: traQのmarkdownのパースをWeb Workerでやるようにした話'
-    link = 'https://trap.jp/post/816/'
+  title = 'ブログ記事: traQのmarkdownのパースをWeb Workerでやるようにした話'
+  link = 'https://trap.jp/post/816/'
+
   [[works.articles]]
-    title = 'ブログ記事(執筆は別の方): 部内製チャットサービス「traQ」UIのこれまで'
-    link = 'https://trap.jp/post/886/'
+  title = 'ブログ記事(執筆は別の方): 部内製チャットサービス「traQ」UIのこれまで'
+  link = 'https://trap.jp/post/886/'
+
   [[works.articles]]
-    title = 'ソースコード'
-    link = 'https://github.com/traPtitech/traQ_R-UI'
+  title = 'ソースコード'
+  link = 'https://github.com/traPtitech/traQ_R-UI'
 
 [[works]]
-  slug = 'emoine-2020'
-  name = 'Emoine'
-  desc = '''
+slug = 'emoine-2020'
+name = 'Emoine'
+desc = '''
 サークルで開催されたハッカソンで制作したハッカソン用の発表ツールです。
 例年ハッカソンは対面で行っていたのですが、2020年は新型コロナの影響でオンライン開催しました。
 その際に利用するためにライブ配信を埋め込んでコメント・リアクション機能と結果集計機能を実装しました。
 '''
-  img = 'emoine-2020.png'
-  tags = [
-      'TypeScript',
-      'Vue.js',
-      'Sass/SCSS',
-      'Protocol Buffers',
-      'サークル'
-    ]
+img = 'emoine-2020.png'
+tags = [
+  'TypeScript',
+  'Vue.js',
+  'Sass/SCSS',
+  'Protocol Buffers',
+  'サークル'
+]
+
   [[works.articles]]
-    title = 'ブログ記事: 裏ハッカソン参加記「Emoine」'
-    link = 'https://trap.jp/post/1093/'
+  title = 'ブログ記事: 裏ハッカソン参加記「Emoine」'
+  link = 'https://trap.jp/post/1093/'
 
 [[works]]
-  slug = 'extract-background'
-  name = 'Extract Background'
-  desc = '''
+slug = 'extract-background'
+name = 'Extract Background'
+desc = '''
 Tensorflow.jsを利用して与えた定点動画から背景を抽出するツールです。
 Tensorflowに含まれている学習済みモデルを利用しました。
 Tensorflow.jsのバックエンドで当時はWebAssemblyにほんの一部しか対応していなくモデルが動作しなかったため、
@@ -111,106 +134,137 @@ Tensorflow.jsのバックエンドで当時はWebAssemblyにほんの一部し�
 どの程度の差が出るかということもあったので、マルチスレッドでの実行も実装しました。
 結果は下記のブログ記事をご覧ください。
 '''
-  img = 'extract-background.png'
-  tags = ['TypeScript', 'React', 'Sass/SCSS']
+img = 'extract-background.png'
+tags = [
+  'TypeScript',
+  'React',
+  'Sass/SCSS'
+]
+
   [[works.articles]]
-    title = 'ツール本体'
-    link = 'https://extract-background.sapphi.red/'
+  title = 'ツール本体'
+  link = 'https://extract-background.sapphi.red/'
+
   [[works.articles]]
-    title = 'ブログ記事: TensorFlow.jsでwasmを使ってみるためにコントリビュートした'
-    link = 'https://trap.jp/post/927/'
+  title = 'ブログ記事: TensorFlow.jsでwasmを使ってみるためにコントリビュートした'
+  link = 'https://trap.jp/post/927/'
+
   [[works.articles]]
-    title = 'ソースコード'
-    link = 'https://github.com/sapphi-red/extract-background'
+  title = 'ソースコード'
+  link = 'https://github.com/sapphi-red/extract-background'
 
 [[works]]
-  slug = 'vue-routider'
-  name = 'vue-routider'
-  desc = '''
+slug = 'vue-routider'
+name = 'vue-routider'
+desc = '''
 vue-routerに、より厳密な型をつけるライブラリです。
 '''
-  img = 'vue-routider.png'
-  tags = ['TypeScript', 'Vue.js']
+img = 'vue-routider.png'
+tags = [
+  'TypeScript',
+  'Vue.js'
+]
+
   [[works.articles]]
-    title = '記事: Vue Routerに型をもたらすVue Routiderをつくった'
-    link = 'https://qiita.com/sapphi-red/items/2b9a948fd7f4f3fed8b8'
+  title = '記事: Vue Routerに型をもたらすVue Routiderをつくった'
+  link = 'https://qiita.com/sapphi-red/items/2b9a948fd7f4f3fed8b8'
+
   [[works.articles]]
-    title = 'ドキュメント'
-    link = 'https://vue-routider.sapphi.red/'
+  title = 'ドキュメント'
+  link = 'https://vue-routider.sapphi.red/'
+
   [[works.articles]]
-    title = 'ソースコード'
-    link = 'https://github.com/sapphi-red/vue-routider'
+  title = 'ソースコード'
+  link = 'https://github.com/sapphi-red/vue-routider'
+
   [[works.articles]]
-    title = 'npm'
-    link = 'https://www.npmjs.com/package/vue-routider'
+  title = 'npm'
+  link = 'https://www.npmjs.com/package/vue-routider'
 
 [[works]]
-  slug = 'ts-transformer-for-of'
-  name = 'ts-transformer-for-of'
-  desc = '''
+slug = 'ts-transformer-for-of'
+name = 'ts-transformer-for-of'
+desc = '''
 TypeScriptの配列のfor-ofとmapなどのメソッドをiを増やすような通常のforに書き換えるTypeScript transformerです。
 これを適用することで多少のパフォーマンスの改善ができます。
 '''
-  img = 'ts-transformer-for-of.png'
-  tags = ['TypeScript', '静的解析']
+img = 'ts-transformer-for-of.png'
+tags = [
+  'TypeScript',
+  '静的解析'
+]
+
   [[works.articles]]
-    title = 'ソースコード'
-    link = 'https://github.com/sapphi-red/ts-transformer-for-of'
+  title = 'ソースコード'
+  link = 'https://github.com/sapphi-red/ts-transformer-for-of'
+
   [[works.articles]]
-    title = 'npm'
-    link = 'https://www.npmjs.com/package/@sapphi-red/ts-transformer-for-of'
+  title = 'npm'
+  link = 'https://www.npmjs.com/package/@sapphi-red/ts-transformer-for-of'
 
 [[works]]
-  slug = 'typescript-plugin-toml'
-  name = 'typescript-plugin-toml'
-  desc = '''
+slug = 'typescript-plugin-toml'
+name = 'typescript-plugin-toml'
+desc = '''
 TypeScriptでjsonを読み込んだときのようにtomlファイルで型を利用できるようにするプラグインです。
 '''
-  img = 'typescript-plugin-toml.png'
-  tags = ['TypeScript', 'toml']
+img = 'typescript-plugin-toml.png'
+tags = [
+  'TypeScript',
+  'toml'
+]
+
   [[works.articles]]
-    title = 'ソースコード'
-    link = 'https://github.com/sapphi-red/typescript-plugin-toml'
+  title = 'ソースコード'
+  link = 'https://github.com/sapphi-red/typescript-plugin-toml'
+
   [[works.articles]]
-    title = 'npm'
-    link = 'https://www.npmjs.com/package/typescript-plugin-toml'
+  title = 'npm'
+  link = 'https://www.npmjs.com/package/typescript-plugin-toml'
 
 [[works]]
-  slug = 'json-constantiater'
-  name = 'json-constantiater'
-  desc = '''
+slug = 'json-constantiater'
+name = 'json-constantiater'
+desc = '''
 ISUCON用につくったGoのJSONエンコーダジェネレータです。
 エンコード時に強い仮定を置くことでより高速なエンコードが可能になっています。
 '''
-  img = 'json-constantiater.png'
-  tags = ['Go', '静的解析']
+img = 'json-constantiater.png'
+tags = [
+  'Go',
+  '静的解析'
+]
+
   [[works.articles]]
-    title = '記事: Go制約付き高速JSONエンコーダージェネレータ'
-    link = 'https://qiita.com/sapphi-red/items/509bb39f45a7265e928f'
+  title = '記事: Go制約付き高速JSONエンコーダージェネレータ'
+  link = 'https://qiita.com/sapphi-red/items/509bb39f45a7265e928f'
 
 [[works]]
-  slug = 'hubot-traq'
-  name = 'hubot-traq'
-  desc = '''
+slug = 'hubot-traq'
+name = 'hubot-traq'
+desc = '''
 BotフレームワークであるhubotのtraQ用アダプターです。
 traQで稼働している複数のBotが利用しています。
 これを用いて自分が開発したBotとしては575スタンプBotがあります。
 '''
-  tags = ['JavaScript']
+tags = [ 'JavaScript' ]
+
   [[works.articles]]
-    title = 'ブログ記事: traQを取り巻く「おみくじ」環境'
-    link = 'https://trap.jp/post/944/'
+  title = 'ブログ記事: traQを取り巻く「おみくじ」環境'
+  link = 'https://trap.jp/post/944/'
+
   [[works.articles]]
-    title = 'ソースコード'
-    link = 'https://github.com/sapphi-red/hubot-traq'
+  title = 'ソースコード'
+  link = 'https://github.com/sapphi-red/hubot-traq'
+
   [[works.articles]]
-    title = 'npm'
-    link = 'https://www.npmjs.com/package/hubot-traq'
+  title = 'npm'
+  link = 'https://www.npmjs.com/package/hubot-traq'
 
 [[works]]
-  slug = '575-stamp-bot'
-  name = '575スタンプBot'
-  desc = '''
+slug = '575-stamp-bot'
+name = '575スタンプBot'
+desc = '''
 traQで稼働しているBotです。
 監視しているチャンネルに575の音になっているメッセージが投稿された際に
 特定のスタンプを押します。
@@ -221,59 +275,75 @@ kuromoji.jsでIPA辞書を利用して形態素解析を行い、
 「newtonよapple落とし行かないか」のように英単語を含んでいるものや
 「30個今年の梨の消費量」のように算用数字を含んだものの判定も可能です。
 '''
-  img = '575-stamp-bot.png'
-  tags = ['JavaScript']
-  articles = []
+img = '575-stamp-bot.png'
+tags = [ 'JavaScript' ]
+articles = []
 
 [[works]]
-  slug = 'trap-dispel'
-  name = 'TrapDispel'
-  desc = '''
+slug = 'trap-dispel'
+name = 'TrapDispel'
+desc = '''
 サークルで製作したタワーディフェンスゲームです。
 自分はRustでかかれたサーバーサイドの開発に携わりました。
 '''
-  img = 'trap-dispel.png'
-  tags = ['Rust', 'サークル']
+img = 'trap-dispel.png'
+tags = [
+  'Rust',
+  'サークル'
+]
+
   [[works.articles]]
-    title = 'ブログ記事(執筆は別の方): TrapDispel完成！'
-    link = 'https://trap.jp/post/1085/'
+  title = 'ブログ記事(執筆は別の方): TrapDispel完成！'
+  link = 'https://trap.jp/post/1085/'
+
   [[works.articles]]
-    title = 'TrapDispel'
-    link = 'https://trapdispel.trap.games/'
+  title = 'TrapDispel'
+  link = 'https://trapdispel.trap.games/'
 
 [[works]]
-  slug = 'async-await-workshop'
-  name = '実装して理解するasync/await'
-  desc = '''
+slug = 'async-await-workshop'
+name = '実装して理解するasync/await'
+desc = '''
 サークルで行った講習会です。
 話の最初のほうではasync/awaitは何を解決してくれるか、
 どういった点がうれしいのか、それをどういう方法で解決したかについて触れました。
 その後、callbackとiteratorからスタートしてPromise、generatorをつくりつつ、
 async/awaitができあがるように話を進めました。
 '''
-  tags = ['JavaScript', 'サークル', '講習会']
-  articles = []
+tags = [
+  'JavaScript',
+  'サークル',
+  '講習会'
+]
+articles = []
 
 [[works]]
-  slug = 'to-fix-workshop'
-  name = 'プログラムを手懐ける講習会'
-  desc = '''
+slug = 'to-fix-workshop'
+name = 'プログラムを手懐ける講習会'
+desc = '''
 サークルで行った講習会です。
 プログラムが動かなかったとき、意図しない動作が起きたときにどんな所を見るとよいか、
 どういう検索をするとよいか、どういった場合が考えられるかなど
 言語に限らないプログラミングをする上で知っておくとよさそうなことを話しました。
 '''
-  tags = ['サークル', '講習会']
-  articles = []
+tags = [
+  'サークル',
+  '講習会'
+]
+articles = []
 
 [[works]]
-  slug = 'css-essence-workshop'
-  name = 'CSSの†本質情報†を知る会'
-  desc = '''
+slug = 'css-essence-workshop'
+name = 'CSSの†本質情報†を知る会'
+desc = '''
 サークルで行った講習会です。
 CSSの機能をその例とともに紹介したあと、あるデザインが存在しているときに
 それをどのようにCSSに落としていくかを具体例を取り上げつつ話しました。
 '''
-  img = 'css-essence-workshop.png'
-  tags = ['CSS', 'サークル', '講習会']
-  articles = []
+img = 'css-essence-workshop.png'
+tags = [
+  'CSS',
+  'サークル',
+  '講習会'
+]
+articles = []
