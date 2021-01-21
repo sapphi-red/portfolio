@@ -5,7 +5,11 @@ module.exports = {
     es2017: true
   },
   plugins: ['@typescript-eslint'],
-  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
+  extends: [
+    'eslint:recommended',
+    'plugin:toml/standard',
+    'plugin:prettier/recommended'
+  ],
   rules: {
     'no-console': 'warn',
     'no-debugger': 'warn'
@@ -40,6 +44,13 @@ module.exports = {
       ],
       parserOptions: {
         parser: '@typescript-eslint/parser'
+      }
+    },
+    {
+      files: ['*.toml'],
+      rules: {
+        'prettier/prettier': 'off',
+        'toml/indent': ['error', 2, { subTables: 1 }]
       }
     }
   ]
