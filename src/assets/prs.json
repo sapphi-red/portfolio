@@ -1,21 +1,24 @@
 {
   "repos": [
     [
-      "antfu/vue-chemistry",
-      [
-        {
-          "url": "https://github.com/antfu/vue-chemistry/pull/2",
-          "title": "fix not able to import with 'vue-chemistry'",
-          "label": "antfu/vue-chemistry#2",
-          "repoUser": "antfu",
-          "repoName": "vue-chemistry",
-          "prId": 2
-        }
-      ]
-    ],
-    [
       "vuejs/eslint-plugin-vue",
       [
+        {
+          "url": "https://github.com/vuejs/eslint-plugin-vue/pull/1407",
+          "title": "Add composition api's computed function support to vue/no-side-effects-in-computed-properties close #1393",
+          "label": "vuejs/eslint-plugin-vue#1407",
+          "repoUser": "vuejs",
+          "repoName": "eslint-plugin-vue",
+          "prId": 1407
+        },
+        {
+          "url": "https://github.com/vuejs/eslint-plugin-vue/pull/1406",
+          "title": "Add composition api's computed function support to vue/return-in-computed-property refs #1393",
+          "label": "vuejs/eslint-plugin-vue#1406",
+          "repoUser": "vuejs",
+          "repoName": "eslint-plugin-vue",
+          "prId": 1406
+        },
         {
           "url": "https://github.com/vuejs/eslint-plugin-vue/pull/1398",
           "title": "Add composition api's computed function support to vue/no-async-in-computed-properties refs #1393",
@@ -31,6 +34,82 @@
           "repoUser": "vuejs",
           "repoName": "eslint-plugin-vue",
           "prId": 1396
+        }
+      ]
+    ],
+    [
+      "vuejs/vetur",
+      [
+        {
+          "url": "https://github.com/vuejs/vetur/pull/2565",
+          "title": "Dont include used attributes in suggestions",
+          "label": "vuejs/vetur#2565",
+          "repoUser": "vuejs",
+          "repoName": "vetur",
+          "prId": 2565
+        },
+        {
+          "url": "https://github.com/vuejs/vetur/pull/2558",
+          "title": "Custom event auto complete",
+          "label": "vuejs/vetur#2558",
+          "repoUser": "vuejs",
+          "repoName": "vetur",
+          "prId": 2558
+        },
+        {
+          "url": "https://github.com/vuejs/vetur/pull/2557",
+          "title": "sort attribute suggestion without `:` or `@`",
+          "label": "vuejs/vetur#2557",
+          "repoUser": "vuejs",
+          "repoName": "vetur",
+          "prId": 2557
+        },
+        {
+          "url": "https://github.com/vuejs/vetur/pull/2214",
+          "title": "Add line break in JSDoc",
+          "label": "vuejs/vetur#2214",
+          "repoUser": "vuejs",
+          "repoName": "vetur",
+          "prId": 2214
+        }
+      ]
+    ],
+    [
+      "vueuse/vue-chemistry",
+      [
+        {
+          "url": "https://github.com/vueuse/vue-chemistry/pull/5",
+          "title": "refactor!: rename all to index and index to core",
+          "label": "vueuse/vue-chemistry#5",
+          "repoUser": "vueuse",
+          "repoName": "vue-chemistry",
+          "prId": 5
+        }
+      ]
+    ],
+    [
+      "antfu/purge-icons",
+      [
+        {
+          "url": "https://github.com/antfu/purge-icons/pull/12",
+          "title": "fix: add exports field in package.json",
+          "label": "antfu/purge-icons#12",
+          "repoUser": "antfu",
+          "repoName": "purge-icons",
+          "prId": 12
+        }
+      ]
+    ],
+    [
+      "antfu/vue-chemistry",
+      [
+        {
+          "url": "https://github.com/antfu/vue-chemistry/pull/2",
+          "title": "fix not able to import with 'vue-chemistry'",
+          "label": "antfu/vue-chemistry#2",
+          "repoUser": "antfu",
+          "repoName": "vue-chemistry",
+          "prId": 2
         }
       ]
     ],
@@ -68,27 +147,6 @@
           "repoUser": "OpenAPITools",
           "repoName": "openapi-generator",
           "prId": 6960
-        }
-      ]
-    ],
-    [
-      "vuejs/vetur",
-      [
-        {
-          "url": "https://github.com/vuejs/vetur/pull/2557",
-          "title": "sort attribute suggestion without `:` or `@`",
-          "label": "vuejs/vetur#2557",
-          "repoUser": "vuejs",
-          "repoName": "vetur",
-          "prId": 2557
-        },
-        {
-          "url": "https://github.com/vuejs/vetur/pull/2214",
-          "title": "Add line break in JSDoc",
-          "label": "vuejs/vetur#2214",
-          "repoUser": "vuejs",
-          "repoName": "vetur",
-          "prId": 2214
         }
       ]
     ],
@@ -208,5 +266,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2021-01-15T11:44:27.122Z"
+  "fetchedAt": "2021-01-23T07:16:02.684Z"
 }
