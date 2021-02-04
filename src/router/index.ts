@@ -9,16 +9,14 @@ declare module 'vue-router' {
   }
 }
 
-type Route = RouteRecordRaw & { meta?: { showInRoutes?: true } }
-
-const worksRoutes: Route[] = works.map(work => ({
+const worksRoutes: RouteRecordRaw[] = works.map(work => ({
   path: `/works/${work.slug}`,
   name: `work-${work.slug}`,
   component: () => import('/@/pages/Works.vue'),
   props: { workSlug: work.slug }
 }))
 
-export const routes: Route[] = [
+export const routes: RouteRecordRaw[] = [
   {
     path: '/',
     name: 'index',
