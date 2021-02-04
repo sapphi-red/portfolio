@@ -21,7 +21,7 @@
   "homepage": "https://github.com/sapphi-red/portfolio#readme",
   "private": true,
   "devDependencies": {
-    "@iconify/json": "^1.1.294",
+    "@iconify/json": "^1.1.297",
     "@typescript-eslint/eslint-plugin": "^4.14.2",
     "@typescript-eslint/parser": "^4.14.2",
     "@vitejs/plugin-vue": "^1.1.4",
