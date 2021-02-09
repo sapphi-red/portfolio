@@ -1,4 +1,4 @@
-import { UserConfig, Plugin } from 'vite'
+import { UserConfig } from 'vite'
 // @ts-expect-error: prevent installing @types/node
 import path from 'path'
 import Vue from '@vitejs/plugin-vue'
