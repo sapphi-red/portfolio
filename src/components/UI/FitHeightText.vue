@@ -5,18 +5,32 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, shallowRef } from 'vue'
+import { defineComponent, onMounted, onUnmounted, shallowRef } from 'vue'
+import { throttle } from 'throttle-debounce'
+
+const useWindowResize = (delay: number, handler: (e: UIEvent) => void) => {
+  const throttledHandler = throttle(delay, handler)
+  onMounted(() => {
+    window.addEventListener('resize', throttledHandler, { passive: true })
+  })
+  onUnmounted(() => {
+    window.removeEventListener('resize', throttledHandler)
+  })
+}
 
 export default defineComponent({
   name: 'FitHeightText',
   setup() {
     const element = shallowRef<HTMLDivElement>()
-    onMounted(() => {
+    const setSize = () => {
       if (!element.value) return
 
       element.value.style.fontSize = `${element.value.clientHeight * 0.5}px`
       element.value.style.lineHeight = `${element.value.clientHeight}px`
-    })
+    }
+
+    onMounted(setSize)
+    useWindowResize(100, setSize)
     return { element }
   }
 })
