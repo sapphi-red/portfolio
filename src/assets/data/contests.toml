@@ -45,3 +45,10 @@ name = 'ICTトラブルシューティングコンテスト2020 チームk8s完�
     [[contests.children.children]]
     name = 'ブログ記事: ICTSC予選「ダイエットしようぜ！」で極限ダイエットする (2)'
     href = 'https://trap.jp/post/1140/'
+
+[[contests]]
+name = "Web Speed Hackathon Vol.2"
+
+  [[contests.children]]
+  name = '1位'
+  href = 'https://www.cyberagent.co.jp/careers/students/career_event/detail/id=25556'

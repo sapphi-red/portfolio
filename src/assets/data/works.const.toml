@@ -46,6 +46,10 @@ tags = [
   link = 'https://trap.jp/post/1090/'
 
   [[works.articles]]
+  title = 'ブログ記事: traQをVue 3に移行しました'
+  link = 'https://trap.jp/post/1173/'
+
+  [[works.articles]]
   title = '技育展結果発表ツイート'
   link = 'https://twitter.com/geek_pjt/status/1309745633499033601'
 
