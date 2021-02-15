@@ -1,6 +1,32 @@
 {
   "repos": [
     [
+      "antfu/vite-ssg",
+      [
+        {
+          "url": "https://github.com/antfu/vite-ssg/pull/14",
+          "title": "fix: config was not applied",
+          "label": "antfu/vite-ssg#14",
+          "repoUser": "antfu",
+          "repoName": "vite-ssg",
+          "prId": 14
+        }
+      ]
+    ],
+    [
+      "microsoft/vscode-html-languageservice",
+      [
+        {
+          "url": "https://github.com/microsoft/vscode-html-languageservice/pull/99",
+          "title": "Remove existing attribute from autocomplete suggestions",
+          "label": "microsoft/vscode-html-languageservice#99",
+          "repoUser": "microsoft",
+          "repoName": "vscode-html-languageservice",
+          "prId": 99
+        }
+      ]
+    ],
+    [
       "OpenAPITools/openapi-generator",
       [
         {
@@ -287,5 +313,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2021-01-29T11:17:45.075Z"
+  "fetchedAt": "2021-02-15T11:14:11.267Z"
 }
