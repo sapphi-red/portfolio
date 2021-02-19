@@ -26,7 +26,10 @@ const config: UserConfig = {
     }),
     PurgeIcons(),
     ViteToml()
-  ]
+  ],
+  ssgOptions: {
+    script: 'defer'
+  }
 }
 
 export default config
