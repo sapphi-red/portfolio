@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.container">
     <page-title>404</page-title>
-    <img src="/magatama-green.svg" :class="$style.img" />
+    <img src="/magatama-green.svg" :class="$style.img" decoding="async" />
     <div :class="$style.link">
       <router-link to="/">Go to Top</router-link>
     </div>

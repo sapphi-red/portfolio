@@ -7,7 +7,7 @@
       <div :class="$style.modal">
         <h2>{{ work.name }}</h2>
         <work-tag-list :tags="work.tags" />
-        <img :src="img" :class="$style.img" />
+        <img :src="img" :class="$style.img" loading="lazy" />
         <!-- eslint-disable-next-line vue/no-v-html -->
         <div v-html="work.desc" />
         <work-articles :articles="work.articles" />

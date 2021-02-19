@@ -1,6 +1,6 @@
 <template>
   <div :class="$style.container">
-    <img :class="$style.icon" src="/sapphi-red.png" />
+    <img :class="$style.icon" src="/sapphi-red.png" decoding="async" />
     <div :class="$style.desc">
       <h3>翠 (みどり)</h3>
       <p>所属: 東京工業大学 工学院 情報通信系 B2</p>
