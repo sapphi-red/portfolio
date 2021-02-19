@@ -227,6 +227,23 @@ tags = [
   link = 'https://www.npmjs.com/package/typescript-plugin-toml'
 
 [[works]]
+slug = 'swagger-ui-plugin-enum-names'
+name = 'swagger-ui-plugin-enum-names'
+desc = '''
+Swagger UIで x-enum-varnames などのEnumの名前や説明を記述する独自拡張仕様の内容を表示するプラグインです。
+この x-enum-varnames などはOpenAPI GeneratorやNSwagで対応しています。
+'''
+img = 'swagger-ui-plugin-enum-names.png'
+tags = [
+  'JavaScript',
+  'React'
+]
+
+  [[works.articles]]
+  title = 'ソースコード'
+  link = 'https://github.com/sapphi-red/swagger-ui-plugin-enum-names'
+
+[[works]]
 slug = 'json-constantiater'
 name = 'json-constantiater'
 desc = '''
@@ -238,6 +255,10 @@ tags = [
   'Go',
   '静的解析'
 ]
+
+  [[works.articles]]
+  title = 'ソースコード'
+  link = 'https://github.com/sapphi-red/json-constantiater'
 
   [[works.articles]]
   title = '記事: Go制約付き高速JSONエンコーダージェネレータ'
