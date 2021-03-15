@@ -1,6 +1,19 @@
 {
   "repos": [
     [
+      "caarlos0/domain_exporter",
+      [
+        {
+          "url": "https://github.com/caarlos0/domain_exporter/pull/87",
+          "title": "feat: add .jp domain support",
+          "label": "caarlos0/domain_exporter#87",
+          "repoUser": "caarlos0",
+          "repoName": "domain_exporter",
+          "prId": 87
+        }
+      ]
+    ],
+    [
       "antfu/vite-ssg",
       [
         {
@@ -313,5 +326,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2021-02-15T11:14:11.267Z"
+  "fetchedAt": "2021-03-15T11:19:41.020Z"
 }
