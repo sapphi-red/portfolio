@@ -1,6 +1,19 @@
 {
   "repos": [
     [
+      "windicss/windicss",
+      [
+        {
+          "url": "https://github.com/windicss/windicss/pull/166",
+          "title": "fix: apply placeholder-opacity with placeholder-color",
+          "label": "windicss/windicss#166",
+          "repoUser": "windicss",
+          "repoName": "windicss",
+          "prId": 166
+        }
+      ]
+    ],
+    [
       "antfu/vite-ssg",
       [
         {
@@ -68,19 +81,6 @@
           "repoUser": "OpenAPITools",
           "repoName": "openapi-generator",
           "prId": 6960
-        }
-      ]
-    ],
-    [
-      "marcello3d/node-tosource",
-      [
-        {
-          "url": "https://github.com/marcello3d/node-tosource/pull/31",
-          "title": "fix typings field",
-          "label": "marcello3d/node-tosource#31",
-          "repoUser": "marcello3d",
-          "repoName": "node-tosource",
-          "prId": 31
         }
       ]
     ],
@@ -313,5 +313,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2021-02-15T11:14:11.267Z"
+  "fetchedAt": "2021-03-29T11:37:50.938Z"
 }
