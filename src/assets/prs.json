@@ -4,6 +4,14 @@
       "windicss/windicss",
       [
         {
+          "url": "https://github.com/windicss/windicss/pull/211",
+          "title": "fix: apply --tw-space-*-reverse to child",
+          "label": "windicss/windicss#211",
+          "repoUser": "windicss",
+          "repoName": "windicss",
+          "prId": 211
+        },
+        {
           "url": "https://github.com/windicss/windicss/pull/166",
           "title": "fix: apply placeholder-opacity with placeholder-color",
           "label": "windicss/windicss#166",
@@ -313,5 +321,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2021-03-29T11:37:50.938Z"
+  "fetchedAt": "2021-04-01T11:16:54.974Z"
 }
