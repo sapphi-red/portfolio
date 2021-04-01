@@ -17,4 +17,7 @@ href = 'https://mercan.mercari.com/articles/22800/'
     href = 'https://github.com/sapphi-red/possibleerrors'
 
 [[internships]]
-name = '2020/09～: 株式会社マネーフォワード'
+name = '2020/09～2021/03: 株式会社マネーフォワード 長期インターン'
+
+  [[internships.children]]
+  name = 'パフォーマンス改善。リファクタリング。DX改善。'
