@@ -105,6 +105,23 @@ tags = [
   link = 'https://github.com/traPtitech/traQ_R-UI'
 
 [[works]]
+slug = 'midec'
+name = 'midec'
+desc = '''
+Go言語で実装したアニメーションGIF、APNG、アニメーションWebP、アニメーションHEIF、アニメーションAVIFを判定するライブラリです。
+traQで利用するためにつくりました。
+通常のデコードでは行われる解凍処理を一切行わないため、省メモリで高速に動作します。
+'''
+tags = [
+  'Go',
+  'サークル'
+]
+
+  [[works.articles]]
+  title = 'ソースコード'
+  link = 'https://github.com/sapphi-red/midec'
+
+[[works]]
 slug = 'emoine-2020'
 name = 'Emoine'
 desc = '''
