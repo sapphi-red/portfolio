@@ -112,6 +112,7 @@ Go言語で実装したアニメーションGIF、APNG、アニメーションWe
 traQで利用するためにつくりました。
 通常のデコードでは行われる解凍処理を一切行わないため、省メモリで高速に動作します。
 '''
+img = 'midec.png'
 tags = [
   'Go',
   'サークル'
@@ -120,6 +121,10 @@ tags = [
   [[works.articles]]
   title = 'ソースコード'
   link = 'https://github.com/sapphi-red/midec'
+
+  [[works.articles]]
+  title = 'traP新歓LT動画'
+  link = 'https://youtu.be/0gAr8gRwW6U?t=4179'
 
 [[works]]
 slug = 'emoine-2020'
@@ -357,7 +362,10 @@ tags = [
   'サークル',
   '講習会'
 ]
-articles = []
+
+  [[works.articles]]
+  title = 'スライド'
+  link = 'https://md.trap.jp/s/mxkeVC82m'
 
 [[works]]
 slug = 'to-fix-workshop'
