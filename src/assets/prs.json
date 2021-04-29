@@ -1,6 +1,27 @@
 {
   "repos": [
     [
+      "vueuse/vueuse",
+      [
+        {
+          "url": "https://github.com/vueuse/vueuse/pull/468",
+          "title": "feat(toRefs): new function",
+          "label": "vueuse/vueuse#468",
+          "repoUser": "vueuse",
+          "repoName": "vueuse",
+          "prId": 468
+        },
+        {
+          "url": "https://github.com/vueuse/vueuse/pull/444",
+          "title": "feat(autoResetRef): new function",
+          "label": "vueuse/vueuse#444",
+          "repoUser": "vueuse",
+          "repoName": "vueuse",
+          "prId": 444
+        }
+      ]
+    ],
+    [
       "windicss/windicss",
       [
         {
@@ -321,5 +342,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2021-04-15T11:16:01.913Z"
+  "fetchedAt": "2021-04-29T11:15:00.162Z"
 }
