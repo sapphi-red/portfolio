@@ -15,14 +15,14 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: ${{ github.event.workflow_run.head_branch }}
-      - if: github.workflow_run.head_branch != 'refs/heads/master'
+      - if: github.workflow_run.head_branch != 'master'
         uses: amondnet/vercel-action@v20
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           vercel-org-id: ${{ secrets.ORG_ID}}
           vercel-project-id: ${{ secrets.PROJECT_ID}}
-      - if: github.workflow_run.head_branch == 'refs/heads/master'
+      - if: github.workflow_run.head_branch == 'master'
         uses: amondnet/vercel-action@v20
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
