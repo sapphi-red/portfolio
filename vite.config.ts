@@ -1,4 +1,4 @@
-import { UserConfig } from 'vite'
+import { defineConfig } from 'vite'
 import path from 'path'
 import Vue from '@vitejs/plugin-vue'
 import PurgeIcons from 'vite-plugin-purge-icons'
@@ -6,9 +6,11 @@ import { ViteToml } from 'vite-plugin-toml'
 
 const srcPath = path.resolve(__dirname, 'src').replace(/\\/g, '/')
 
-const config: UserConfig = {
-  alias: {
-    '/@': srcPath
+export default defineConfig({
+  resolve: {
+    alias: {
+      '/@': srcPath
+    }
   },
   css: {
     preprocessorOptions: {
@@ -27,6 +29,4 @@ const config: UserConfig = {
   ssgOptions: {
     script: 'defer'
   }
-}
-
-export default config
+})
