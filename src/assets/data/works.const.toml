@@ -74,6 +74,7 @@ desc = '''
 このバージョンで自分は次のような機能を実装しました。
 
 <ul>
+  <li>Markdownのインラインレンダリング</li>
   <li>OAuth Client管理画面</li>
   <li>通知から返信できる機能</li>
   <li>LaTeX対応</li>
@@ -123,8 +124,12 @@ tags = [
   link = 'https://github.com/sapphi-red/midec'
 
   [[works.articles]]
-  title = 'traP新歓LT動画'
+  title = 'traP新歓LT アーカイブ動画 (実装の概要の話)'
   link = 'https://youtu.be/0gAr8gRwW6U?t=4179'
+
+  [[works.articles]]
+  title = '東工大ホームカミングデー traP LT会 アーカイブ動画 (実装の詳しめの話)'
+  link = 'https://youtu.be/X5yRTIva-Zk?t=447'
 
 [[works]]
 slug = 'emoine-2020'
@@ -264,6 +269,10 @@ tags = [
   [[works.articles]]
   title = 'ソースコード'
   link = 'https://github.com/sapphi-red/swagger-ui-plugin-enum-names'
+
+  [[works.articles]]
+  title = 'npm'
+  link = 'https://www.npmjs.com/package/swagger-ui-plugin-enum-names'
 
 [[works]]
 slug = 'json-constantiater'
