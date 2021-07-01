@@ -27,8 +27,8 @@
     "@typescript-eslint/eslint-plugin": "^4.26.0",
     "@typescript-eslint/parser": "^4.26.0",
     "@vitejs/plugin-vue": "^1.2.2",
-    "@vue/compiler-sfc": "^3.0.6",
-    "@vue/server-renderer": "^3.0.6",
+    "@vue/compiler-sfc": "^3.1.2",
+    "@vue/server-renderer": "^3.1.2",
     "eslint": "^7.27.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
@@ -48,7 +48,7 @@
     "@iconify/iconify": "^2.0.1",
     "ress": "^4.0.0",
     "throttle-debounce": "^3.0.1",
-    "vue": "^3.0.6",
+    "vue": "^3.1.2",
     "vue-router": "^4.0.8"
   }
 }
