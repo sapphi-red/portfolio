@@ -37,7 +37,7 @@
     "node-fetch": "^2.6.1",
     "prettier": "^2.3.0",
     "sass": "^1.34.0",
-    "typescript": "^4.2.4",
+    "typescript": "^4.3.5",
     "typescript-plugin-toml": "^0.2.0",
     "vite": "^2.3.5",
     "vite-plugin-purge-icons": "^0.7.0",
