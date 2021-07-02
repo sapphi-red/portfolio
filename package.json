@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "dev": "vite",
-    "build": "vite-ssg build",
+    "build": "vite-ssg build --entry src/main",
     "lint": "eslint --ext .js,.ts,.vue,.toml .",
     "update-pr-data": "node ./scripts/fetch-prs.js",
     "create-pr-data": "node ./scripts/fetch-prs.js withoutCache",
@@ -42,10 +42,11 @@
     "vite": "^2.3.8",
     "vite-plugin-purge-icons": "^0.7.0",
     "vite-plugin-toml": "^0.3.1",
-    "vite-ssg": "^0.8.10"
+    "vite-ssg": "^0.11.4"
   },
   "dependencies": {
     "@iconify/iconify": "^2.0.3",
+    "@vueuse/head": "^0.6.0",
     "ress": "^4.0.0",
     "throttle-debounce": "^3.0.1",
     "vue": "^3.1.3",
