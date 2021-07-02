@@ -24,7 +24,7 @@
     "@iconify/json": "^1.1.368",
     "@types/node": "^14.17.4",
     "@types/throttle-debounce": "^2.1.0",
-    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
     "@typescript-eslint/parser": "^4.28.1",
     "@vitejs/plugin-vue": "^1.2.2",
     "@vue/compiler-sfc": "^3.1.3",
