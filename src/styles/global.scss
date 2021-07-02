@@ -1,3 +1,4 @@
+@use 'sass:math';
 @import '_variables';
 @import '_transition';
 @import '../node_modules/ress/ress.css';
@@ -8,7 +9,7 @@ $min-font-size-width: 860px;
 $max-font-size-width: 1280px;
 $font-size-diff: $max-font-size - $min-font-size;
 $width-diff: $max-font-size-width - $min-font-size-width;
-$font-size-width-ratio: $font-size-diff / $width-diff;
+$font-size-width-ratio: math.div($font-size-diff, $width-diff);
 
 html {
   font-size: $min-font-size;

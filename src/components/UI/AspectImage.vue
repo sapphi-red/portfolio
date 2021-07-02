@@ -19,7 +19,7 @@ export default defineComponent({
   &::before {
     content: '';
     display: block;
-    padding-top: 9/16 * 100%;
+    padding-top: math.div(9, 16) * 100%;
   }
 }
 .img {
