@@ -1,6 +1,27 @@
 {
   "repos": [
     [
+      "antfu/vite-ssg",
+      [
+        {
+          "url": "https://github.com/antfu/vite-ssg/pull/66",
+          "title": "feat: support alias with entry",
+          "label": "antfu/vite-ssg#66",
+          "repoUser": "antfu",
+          "repoName": "vite-ssg",
+          "prId": 66
+        },
+        {
+          "url": "https://github.com/antfu/vite-ssg/pull/14",
+          "title": "fix: config was not applied",
+          "label": "antfu/vite-ssg#14",
+          "repoUser": "antfu",
+          "repoName": "vite-ssg",
+          "prId": 14
+        }
+      ]
+    ],
+    [
       "vueuse/vueuse",
       [
         {
@@ -39,19 +60,6 @@
           "repoUser": "windicss",
           "repoName": "windicss",
           "prId": 166
-        }
-      ]
-    ],
-    [
-      "antfu/vite-ssg",
-      [
-        {
-          "url": "https://github.com/antfu/vite-ssg/pull/14",
-          "title": "fix: config was not applied",
-          "label": "antfu/vite-ssg#14",
-          "repoUser": "antfu",
-          "repoName": "vite-ssg",
-          "prId": 14
         }
       ]
     ],
@@ -342,5 +350,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2021-07-01T11:15:06.826Z"
+  "fetchedAt": "2021-07-29T11:12:19.972Z"
 }
