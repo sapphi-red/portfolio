@@ -41,6 +41,15 @@ module.exports = {
       ],
       parserOptions: {
         parser: '@typescript-eslint/parser'
+      },
+      rules: {
+        'vue/block-lang': [
+          'error',
+          {
+            script: { lang: 'ts' },
+            style: { lang: 'scss' }
+          }
+        ]
       }
     },
     {
