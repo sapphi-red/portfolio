@@ -21,10 +21,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
+          cache: 'npm'
       - name: check npm ci
         run: npm ci
       - name: update
