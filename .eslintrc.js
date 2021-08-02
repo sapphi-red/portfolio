@@ -2,14 +2,10 @@ module.exports = {
   root: true,
   env: {
     browser: true,
-    es2017: true
+    es2017: true,
+    es2020: true
   },
-  plugins: ['@typescript-eslint'],
-  extends: [
-    'eslint:recommended',
-    'plugin:toml/standard',
-    'plugin:prettier/recommended'
-  ],
+  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
   rules: {
     'no-console': 'warn',
     'no-debugger': 'warn'
@@ -20,6 +16,16 @@ module.exports = {
       env: {
         browser: false,
         node: true
+      }
+    },
+    {
+      files: ['./scripts/**/*.mjs', './*.mjs'],
+      env: {
+        browser: false,
+        node: true
+      },
+      parserOptions: {
+        sourceType: 'module'
       }
     },
     {
@@ -54,6 +60,7 @@ module.exports = {
     },
     {
       files: ['*.toml'],
+      extends: ['plugin:toml/standard'],
       rules: {
         'prettier/prettier': 'off',
         'toml/indent': ['error', 2, { subTables: 1 }]

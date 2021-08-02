@@ -6,9 +6,9 @@
     "dev": "vite",
     "build": "vite-ssg build",
     "lint": "eslint --cache --ext .js,.ts,.vue,.toml .",
-    "update-pr-data": "node ./scripts/fetch-prs.js",
-    "create-pr-data": "node ./scripts/fetch-prs.js withoutCache",
-    "recreate-pr-data": "node ./scripts/fetch-prs.js fromCache"
+    "update-pr-data": "node scripts/fetch-prs.mjs",
+    "create-pr-data": "node scripts/fetch-prs.mjs withoutCache",
+    "recreate-pr-data": "node scripts/fetch-prs.mjs fromCache"
   },
   "repository": {
     "type": "git",

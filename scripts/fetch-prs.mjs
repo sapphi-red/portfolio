@@ -1,10 +1,10 @@
-const fetch = require('node-fetch')
-const fs = require('fs').promises
-const path = require('path')
+import fetch from 'node-fetch'
+import fs from 'fs/promises'
 
 const URL_PATH = 'https://api.github.com/search/issues'
-const RAW_DATA_PATH = path.resolve(__dirname, '../bin/prs_raw.json')
-const DATA_PATH = path.resolve(__dirname, '../src/assets/prs.json')
+
+const RAW_DATA_PATH = new URL('../bin/prs_raw.json', import.meta.url)
+const DATA_PATH = new URL('../src/assets/prs.json', import.meta.url)
 
 const ignoreRepoUser = ['traPtitech', 'sapphi-red', 'FujishigeTemma']
 const ignorePRs = [
