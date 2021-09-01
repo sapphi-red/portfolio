@@ -205,6 +205,14 @@
           "repoUser": "vueuse",
           "repoName": "vue-chemistry",
           "prId": 5
+        },
+        {
+          "url": "https://github.com/vueuse/vue-chemistry/pull/2",
+          "title": "fix not able to import with 'vue-chemistry'",
+          "label": "vueuse/vue-chemistry#2",
+          "repoUser": "vueuse",
+          "repoName": "vue-chemistry",
+          "prId": 2
         }
       ]
     ],
@@ -218,19 +226,6 @@
           "repoUser": "antfu",
           "repoName": "purge-icons",
           "prId": 12
-        }
-      ]
-    ],
-    [
-      "antfu/vue-chemistry",
-      [
-        {
-          "url": "https://github.com/antfu/vue-chemistry/pull/2",
-          "title": "fix not able to import with 'vue-chemistry'",
-          "label": "antfu/vue-chemistry#2",
-          "repoUser": "antfu",
-          "repoName": "vue-chemistry",
-          "prId": 2
         }
       ]
     ],
@@ -350,5 +345,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2021-07-29T11:12:19.972Z"
+  "fetchedAt": "2021-09-01T11:39:21.718Z"
 }
