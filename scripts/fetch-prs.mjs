@@ -6,7 +6,7 @@ const URL_PATH = 'https://api.github.com/search/issues'
 const RAW_DATA_PATH = new URL('../bin/prs_raw.json', import.meta.url)
 const DATA_PATH = new URL('../src/assets/prs.json', import.meta.url)
 
-const ignoreRepoUser = ['traPtitech', 'sapphi-red', 'FujishigeTemma']
+const ignoreRepoUser = ['traPtitech', 'sapphi-red', 'FujishigeTemma', 'isucon']
 const ignorePRs = [
   'https://github.com/tensorflow/tfjs/pull/2527',
   'https://github.com/hmsk/vite-plugin-markdown/pull/2',
