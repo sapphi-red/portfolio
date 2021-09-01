@@ -1,6 +1,19 @@
 {
   "repos": [
     [
+      "isucon/isucon11-qualify",
+      [
+        {
+          "url": "https://github.com/isucon/isucon11-qualify/pull/1381",
+          "title": "Ruby: fix generate_isu_graph_response endtime condition",
+          "label": "isucon/isucon11-qualify#1381",
+          "repoUser": "isucon",
+          "repoName": "isucon11-qualify",
+          "prId": 1381
+        }
+      ]
+    ],
+    [
       "antfu/vite-ssg",
       [
         {
@@ -350,5 +363,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2021-07-29T11:12:19.972Z"
+  "fetchedAt": "2021-09-01T11:16:34.107Z"
 }
