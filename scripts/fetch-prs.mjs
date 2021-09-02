@@ -17,13 +17,14 @@ const ignorePRs = [
 ]
 
 const fetchPRs = async page => {
-  const params = new URLSearchParams()
+  const url = new URL(URL_PATH)
+  const params = url.searchParams
   params.set('q', 'author:sapphi-red is:pr is:merged')
   params.set('sort', 'updated')
   params.set('per_page', 100)
   params.set('page', page)
 
-  const res = await fetch(`${URL_PATH}?${params.toString()}`)
+  const res = await fetch(url)
   const data = await res.json()
   return data
 }
