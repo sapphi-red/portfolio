@@ -45,7 +45,7 @@
     "vite-ssg": "^0.14.7"
   },
   "dependencies": {
-    "@iconify/iconify": "^2.0.3",
+    "@iconify/iconify": "^2.0.4",
     "@vueuse/head": "^0.6.0",
     "ress": "^4.0.0",
     "throttle-debounce": "^3.0.1",
