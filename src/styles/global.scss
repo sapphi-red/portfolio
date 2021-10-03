@@ -1,7 +1,7 @@
 @use 'sass:math';
 @import '_variables';
 @import '_transition';
-@import '../node_modules/ress/ress.css';
+@import '../../node_modules/ress/ress';
 
 $min-font-size: 16px;
 $max-font-size: 22px;
