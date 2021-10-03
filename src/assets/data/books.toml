@@ -11,3 +11,10 @@ href = 'https://techbookfest.org/product/4883682603040768'
 
   [[books.children]]
   name = '第6章「通知でのインライン返信を実装した」、第7章「何もしてないのにtraQが重くなった」などを執筆。'
+
+[[books]]
+name = 'traP SysAd techbook3'
+href = 'https://techbookfest.org/product/5956916847050752'
+
+  [[books.children]]
+  name = '第5章「traQでの⾳楽波形表⽰について」、第6章「GoのライブラリをWasmビルドしてnpmに公開する」を執筆。'

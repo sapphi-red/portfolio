@@ -52,3 +52,11 @@ href = 'https://www.cyberagent.co.jp/careers/students/career_event/detail/id=255
 
   [[contests.children]]
   name = '1位'
+
+[[contests]]
+name = 'ISUCON11 運営'
+href = 'https://isucon.net/archives/55821036.html'
+
+  [[contests.children]]
+  name = '記事(CodeZine): 出題者になって分かったISUCON必勝法とは？ ISUCON初の学生運営メンバーに聞く'
+  href = 'https://codezine.jp/article/detail/14814'
