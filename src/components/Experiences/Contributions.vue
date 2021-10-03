@@ -1,9 +1,9 @@
 <template>
   <ul>
-    <li v-for="[repoName, repo] in PRData.repos" :key="repo">
+    <li v-for="[repoName, repo] in PRData.repos" :key="repoName">
       {{ repoName }}
       <ul>
-        <li v-for="pr in repo" :key="pr">
+        <li v-for="pr in repo" :key="pr.prId">
           <a :href="pr.url">#{{ pr.prId }}: {{ pr.title }}</a>
           <ul v-if="additional[repoName]?.[pr.prId]">
             <li>
