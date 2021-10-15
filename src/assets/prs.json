@@ -1,6 +1,32 @@
 {
   "repos": [
     [
+      "evanw/esbuild",
+      [
+        {
+          "url": "https://github.com/evanw/esbuild/pull/1660",
+          "title": "feat: drop catch binding when optional catch binding is supported",
+          "label": "evanw/esbuild#1660",
+          "repoUser": "evanw",
+          "repoName": "esbuild",
+          "prId": 1660
+        }
+      ]
+    ],
+    [
+      "johnsoncodehk/volar",
+      [
+        {
+          "url": "https://github.com/johnsoncodehk/volar/pull/546",
+          "title": "Improve v-for type",
+          "label": "johnsoncodehk/volar#546",
+          "repoUser": "johnsoncodehk",
+          "repoName": "volar",
+          "prId": 546
+        }
+      ]
+    ],
+    [
       "antfu/vite-ssg",
       [
         {
@@ -345,5 +371,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2021-10-01T11:12:44.095Z"
+  "fetchedAt": "2021-10-15T12:27:52.553Z"
 }
