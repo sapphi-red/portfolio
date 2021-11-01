@@ -14,6 +14,19 @@
       ]
     ],
     [
+      "reyu0722/koudaisai-homepage",
+      [
+        {
+          "url": "https://github.com/reyu0722/koudaisai-homepage/pull/65",
+          "title": "setIntervalが安定しない環境への対応",
+          "label": "reyu0722/koudaisai-homepage#65",
+          "repoUser": "reyu0722",
+          "repoName": "koudaisai-homepage",
+          "prId": 65
+        }
+      ]
+    ],
+    [
       "johnsoncodehk/volar",
       [
         {
@@ -371,5 +384,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2021-10-15T12:27:52.553Z"
+  "fetchedAt": "2021-11-01T11:15:43.535Z"
 }
