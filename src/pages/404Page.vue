@@ -13,7 +13,7 @@ import { defineComponent } from 'vue'
 import PageTitle from '/@/components/UI/PageTitle.vue'
 
 export default defineComponent({
-  name: 'About',
+  name: '404Page',
   components: {
     PageTitle
   }

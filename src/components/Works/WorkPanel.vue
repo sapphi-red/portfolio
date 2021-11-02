@@ -20,7 +20,7 @@ import WorkTagList from '/@/components/Works/WorkTagList.vue'
 import useWorksImageOrFallback from '/@/components/Works/use/img'
 
 export default defineComponent({
-  name: 'Work',
+  name: 'WorkPanel',
   components: {
     WorkModal,
     AspectImage,

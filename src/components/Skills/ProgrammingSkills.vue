@@ -25,7 +25,7 @@ const langs: BarListData = [
 ] as const
 
 export default defineComponent({
-  name: 'Programming',
+  name: 'ProgrammingSkills',
   components: {
     BarList
   },

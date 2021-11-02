@@ -2,14 +2,14 @@
   <div>
     <page-title>Experiences</page-title>
     <section-title>Contests</section-title>
-    <list :data="contests" />
+    <a-list :data="contests" />
     <section-title>Internships</section-title>
-    <list :data="internships" />
+    <a-list :data="internships" />
     <section-title>Books</section-title>
-    <list :data="books" />
+    <a-list :data="books" />
     <section-title>OSS Contributions</section-title>
     <p>マージされたPRの一覧</p>
-    <contributions />
+    <my-contributions />
   </div>
 </template>
 
@@ -17,19 +17,19 @@
 import { defineComponent } from 'vue'
 import PageTitle from '/@/components/UI/PageTitle.vue'
 import SectionTitle from '/@/components/UI/SectionTitle.vue'
-import List from '/@/components/UI/List.vue'
-import Contributions from '/@/components/Experiences/Contributions.vue'
+import AList from '/@/components/UI/AList.vue'
+import MyContributions from '/@/components/Experiences/MyContributions.vue'
 import { contests } from '/@/assets/contests'
 import { internships } from '/@/assets/internships'
 import { books } from '/@/assets/books'
 
 export default defineComponent({
-  name: 'Experiences',
+  name: 'ExperiencesPage',
   components: {
     PageTitle,
     SectionTitle,
-    List,
-    Contributions
+    AList,
+    MyContributions
   },
   setup() {
     return { contests, internships, books }

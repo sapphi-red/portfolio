@@ -16,7 +16,7 @@ import { defineComponent } from 'vue'
 import { routes } from '/@/router'
 
 export default defineComponent({
-  name: 'Routes',
+  name: 'RouteLinks',
   setup() {
     const routeData = routes
       .filter(route => route.meta?.showInRoutes)

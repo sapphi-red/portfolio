@@ -1,6 +1,6 @@
 <template>
   <div :class="$style.container">
-    <work
+    <work-panel
       v-for="work in works"
       :key="work.slug"
       :work="work"
@@ -12,17 +12,17 @@
 
 <script lang="ts">
 import { defineComponent, PropType } from 'vue'
-import { Work as WorkI } from '/@/assets/works'
-import Work from '/@/components/Works/Work.vue'
+import { Work } from '/@/assets/works'
+import WorkPanel from '/@/components/Works/WorkPanel.vue'
 
 export default defineComponent({
   name: 'WorkList',
   components: {
-    Work
+    WorkPanel
   },
   props: {
     works: {
-      type: Array as PropType<WorkI[]>,
+      type: Array as PropType<Work[]>,
       required: true
     },
     openedModalWorkSlug: {

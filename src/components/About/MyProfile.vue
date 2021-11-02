@@ -12,17 +12,17 @@
       <p>フロントエンドを中心にバックエンドとインフラも触ってます。</p>
       <ul>
         <li>
-          <icon name="github-alt" />
+          <a-icon name="github-alt" />
           GitHub:
           <a href="https://github.com/sapphi-red">@sapphi-red</a>
         </li>
         <li>
-          <icon name="twitter-alt" />
+          <a-icon name="twitter-alt" />
           Twitter:
           <a href="https://twitter.com/sapphi_red">@sapphi_red</a>
         </li>
         <li>
-          <icon name="pen" />
+          <a-icon name="pen" />
           traPブログ:
           <a href="https://trap.jp/author/sappi_red">記事一覧</a>
         </li>
@@ -33,12 +33,12 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import Icon from '/@/components/UI/Icon.vue'
+import AIcon from '/@/components/UI/AIcon.vue'
 
 export default defineComponent({
-  name: 'Profile',
+  name: 'MyProfile',
   components: {
-    Icon
+    AIcon
   }
 })
 </script>

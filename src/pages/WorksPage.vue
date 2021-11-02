@@ -17,10 +17,7 @@ import WorkList from '/@/components/Works/WorkList.vue'
 import { Tag, works } from '/@/assets/works'
 import WorksTagFilter from '/@/components/Works/WorksTagFilter.vue'
 
-const hasAny = <T extends unknown>(
-  target: ReadonlyArray<T>,
-  anyOf: ReadonlySet<T>
-) => {
+const hasAny = <T>(target: ReadonlyArray<T>, anyOf: ReadonlySet<T>) => {
   for (const t of target) {
     if (anyOf.has(t)) {
       return true
@@ -30,7 +27,7 @@ const hasAny = <T extends unknown>(
 }
 
 export default defineComponent({
-  name: 'Works',
+  name: 'WorksPage',
   components: {
     PageTitle,
     WorksTagFilter,

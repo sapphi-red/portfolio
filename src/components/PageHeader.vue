@@ -3,18 +3,18 @@
     <router-link to="/" :class="$style.siteTitle">
       green.sapphi.red
     </router-link>
-    <routes :class="$style.routes" />
+    <route-links :class="$style.routes" />
   </header>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import Routes from '/@/components/Routes.vue'
+import RouteLinks from '/@/components/RouteLinks.vue'
 
 export default defineComponent({
   name: 'PageHeader',
   components: {
-    Routes
+    RouteLinks
   }
 })
 </script>

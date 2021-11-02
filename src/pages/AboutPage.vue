@@ -2,9 +2,9 @@
   <div>
     <page-title>About</page-title>
     <section-title>Profile</section-title>
-    <profile />
+    <my-profile />
     <section-title>Interest</section-title>
-    <list :data="interest" />
+    <a-list :data="interest" />
   </div>
 </template>
 
@@ -12,8 +12,8 @@
 import { defineComponent } from 'vue'
 import PageTitle from '/@/components/UI/PageTitle.vue'
 import SectionTitle from '/@/components/UI/SectionTitle.vue'
-import Profile from '/@/components/About/Profile.vue'
-import List from '/@/components/UI/List.vue'
+import MyProfile from '/@/components/About/MyProfile.vue'
+import AList from '/@/components/UI/AList.vue'
 import { TreeData } from '../data'
 
 const interest: TreeData = [
@@ -24,12 +24,12 @@ const interest: TreeData = [
 ]
 
 export default defineComponent({
-  name: 'About',
+  name: 'AboutPage',
   components: {
     PageTitle,
     SectionTitle,
-    Profile,
-    List
+    MyProfile,
+    AList
   },
   setup() {
     return { interest }

@@ -2,7 +2,7 @@
   <div>
     <page-title>Skills</page-title>
     <section-title>Programming</section-title>
-    <programming />
+    <programming-skills />
     <section-title>Other</section-title>
     <other-skills />
   </div>
@@ -12,15 +12,15 @@
 import { defineComponent } from 'vue'
 import PageTitle from '/@/components/UI/PageTitle.vue'
 import SectionTitle from '/@/components/UI/SectionTitle.vue'
-import Programming from '/@/components/Skills/Programming.vue'
+import ProgrammingSkills from '/@/components/Skills/ProgrammingSkills.vue'
 import OtherSkills from '/@/components/Skills/OtherSkills.vue'
 
 export default defineComponent({
-  name: 'Skills',
+  name: 'SkillsPage',
   components: {
     PageTitle,
     SectionTitle,
-    Programming,
+    ProgrammingSkills,
     OtherSkills
   }
 })

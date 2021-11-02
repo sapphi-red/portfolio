@@ -55,7 +55,7 @@ const additional: Record<
 }
 
 export default defineComponent({
-  name: 'Contributions',
+  name: 'MyContributions',
   setup() {
     const lastFetched = computed(() =>
       dateToDateTimeString(new Date(PRData.fetchedAt))

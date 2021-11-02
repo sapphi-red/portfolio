@@ -12,7 +12,7 @@ declare module 'vue-router' {
 const worksRoutes: RouteRecordRaw[] = works.map(work => ({
   path: `/works/${work.slug}`,
   name: `work-${work.slug}`,
-  component: () => import('/@/pages/Works.vue'),
+  component: () => import('../pages/WorksPage.vue'),
   props: { workSlug: work.slug }
 }))
 
@@ -20,42 +20,42 @@ export const routes: RouteRecordRaw[] = [
   {
     path: '/',
     name: 'index',
-    component: () => import('/@/pages/Index.vue')
+    component: () => import('/@/pages/IndexPage.vue')
   },
   {
     path: '/about',
     name: 'about',
-    component: () => import('/@/pages/About.vue'),
+    component: () => import('/@/pages/AboutPage.vue'),
     meta: { showInRoutes: true }
   },
   {
     path: '/skills',
     name: 'skills',
-    component: () => import('/@/pages/Skills.vue'),
+    component: () => import('/@/pages/SkillsPage.vue'),
     meta: { showInRoutes: true }
   },
   {
     path: '/experiences',
     name: 'experiences',
-    component: () => import('/@/pages/Experiences.vue'),
+    component: () => import('/@/pages/ExperiencesPage.vue'),
     meta: { showInRoutes: true }
   },
   {
     path: '/works',
     name: 'works',
-    component: () => import('/@/pages/Works.vue'),
+    component: () => import('/@/pages/WorksPage.vue'),
     meta: { showInRoutes: true }
   },
   ...worksRoutes,
   {
     path: '/:catchAll(.*)',
     name: '404-catchall',
-    component: () => import('/@/pages/404.vue')
+    component: () => import('/@/pages/404Page.vue')
   },
   {
     path: '/404',
     name: '404',
-    component: () => import('/@/pages/404.vue')
+    component: () => import('/@/pages/404Page.vue')
   }
 ]
 
