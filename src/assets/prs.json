@@ -4,6 +4,14 @@
       "evanw/esbuild",
       [
         {
+          "url": "https://github.com/evanw/esbuild/pull/1758",
+          "title": "feat: Shorten \"top\", \"right\"... properties into \"inset\" property",
+          "label": "evanw/esbuild#1758",
+          "repoUser": "evanw",
+          "repoName": "esbuild",
+          "prId": 1758
+        },
+        {
           "url": "https://github.com/evanw/esbuild/pull/1660",
           "title": "feat: drop catch binding when optional catch binding is supported",
           "label": "evanw/esbuild#1660",
@@ -371,5 +379,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2021-11-02T00:58:49.630Z"
+  "fetchedAt": "2021-11-15T11:18:33.738Z"
 }
