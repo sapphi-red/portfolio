@@ -12,6 +12,14 @@
           "prId": 1758
         },
         {
+          "url": "https://github.com/evanw/esbuild/pull/1756",
+          "title": "feat: minify `font`/`font-family`/`font-weight` CSS property",
+          "label": "evanw/esbuild#1756",
+          "repoUser": "evanw",
+          "repoName": "esbuild",
+          "prId": 1756
+        },
+        {
           "url": "https://github.com/evanw/esbuild/pull/1660",
           "title": "feat: drop catch binding when optional catch binding is supported",
           "label": "evanw/esbuild#1660",
@@ -379,5 +387,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2021-11-15T11:18:33.738Z"
+  "fetchedAt": "2021-11-29T11:13:39.257Z"
 }
