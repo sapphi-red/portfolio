@@ -17,9 +17,8 @@
     "plugins": [
       { "name": "typescript-plugin-toml" }
     ],
-    "typeRoots": [
-      "node_modules/@types",
-      "src/types"
+    "types": [
+      "vite/client"
     ],
     "paths": {
       "/@/*": [
