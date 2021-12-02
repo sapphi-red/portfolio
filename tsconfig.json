@@ -9,7 +9,7 @@
     "isolatedModules": true,
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
-    "lib": ["esnext", "dom", "dom.iterable"],
+    "lib": ["esnext", "dom"],
     "skipLibCheck": true,
     "noEmit": true,
     "incremental": true,
