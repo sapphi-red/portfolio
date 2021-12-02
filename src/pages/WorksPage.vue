@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts">
-import { computed, defineComponent, ref, watchEffect } from 'vue'
+import { computed, defineComponent, ref } from 'vue'
 import PageTitle from '/@/components/UI/PageTitle.vue'
 import WorkList from '/@/components/Works/WorkList.vue'
 import { Tag, works } from '/@/assets/works'
