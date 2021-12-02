@@ -14,6 +14,7 @@ import PageTitle from '/@/components/UI/PageTitle.vue'
 import SectionTitle from '/@/components/UI/SectionTitle.vue'
 import MyProfile from '/@/components/About/MyProfile.vue'
 import AList from '/@/components/UI/AList.vue'
+import { useHead } from '/@/util/head'
 import { TreeData } from '../data'
 
 const interest: TreeData = [
@@ -32,6 +33,9 @@ export default defineComponent({
     AList
   },
   setup() {
+    useHead({
+      title: 'About'
+    })
     return { interest }
   }
 })

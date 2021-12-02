@@ -11,11 +11,12 @@
 </template>
 
 <script lang="ts">
-import { computed, defineComponent, ref } from 'vue'
+import { computed, defineComponent, ref, watchEffect } from 'vue'
 import PageTitle from '/@/components/UI/PageTitle.vue'
 import WorkList from '/@/components/Works/WorkList.vue'
 import { Tag, works } from '/@/assets/works'
 import WorksTagFilter from '/@/components/Works/WorksTagFilter.vue'
+import { useHead } from '/@/util/head'
 
 const hasAny = <T>(target: ReadonlyArray<T>, anyOf: ReadonlySet<T>) => {
   for (const t of target) {
@@ -39,7 +40,16 @@ export default defineComponent({
       default: undefined
     }
   },
-  setup() {
+  setup(props) {
+    const showingWork = computed(() =>
+      works.find(work => work.slug === props.workSlug)
+    )
+    useHead({
+      title: computed(() =>
+        showingWork.value ? showingWork.value.name : 'Work'
+      )
+    })
+
     const selectedTags = ref(new Set<Tag>())
     const onToggleTag = (tag: Tag) => {
       if (selectedTags.value.has(tag)) {

@@ -22,6 +22,7 @@ import MyContributions from '/@/components/Experiences/MyContributions.vue'
 import { contests } from '/@/assets/contests'
 import { internships } from '/@/assets/internships'
 import { books } from '/@/assets/books'
+import { useHead } from '/@/util/head'
 
 export default defineComponent({
   name: 'ExperiencesPage',
@@ -32,6 +33,10 @@ export default defineComponent({
     MyContributions
   },
   setup() {
+    useHead({
+      title: 'Experiences'
+    })
+
     return { contests, internships, books }
   }
 })

@@ -23,11 +23,16 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import FitHeightText from '/@/components/UI/FitHeightText.vue'
+import { useHead } from '/@/util/head'
 
 export default defineComponent({
   name: 'IndexPage',
   components: {
     FitHeightText
+  },
+  setup() {
+    useHead({ title: null })
+    return {}
   }
 })
 </script>
