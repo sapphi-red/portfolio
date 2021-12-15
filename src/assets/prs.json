@@ -1,6 +1,27 @@
 {
   "repos": [
     [
+      "DefinitelyTyped/DefinitelyTyped",
+      [
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/57684",
+          "title": "[styled-components] Fix union type of props being lost",
+          "label": "DefinitelyTyped/DefinitelyTyped#57684",
+          "repoUser": "DefinitelyTyped",
+          "repoName": "DefinitelyTyped",
+          "prId": 57684
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/40647",
+          "title": "Update KaTeX to v0.11.1",
+          "label": "DefinitelyTyped/DefinitelyTyped#40647",
+          "repoUser": "DefinitelyTyped",
+          "repoName": "DefinitelyTyped",
+          "prId": 40647
+        }
+      ]
+    ],
+    [
       "evanw/esbuild",
       [
         {
@@ -372,20 +393,7 @@
           "prId": 2528
         }
       ]
-    ],
-    [
-      "DefinitelyTyped/DefinitelyTyped",
-      [
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/40647",
-          "title": "Update KaTeX to v0.11.1",
-          "label": "DefinitelyTyped/DefinitelyTyped#40647",
-          "repoUser": "DefinitelyTyped",
-          "repoName": "DefinitelyTyped",
-          "prId": 40647
-        }
-      ]
     ]
   ],
-  "fetchedAt": "2021-11-29T11:13:39.257Z"
+  "fetchedAt": "2021-12-15T11:13:43.574Z"
 }
