@@ -50,7 +50,7 @@
     "@vueuse/head": "^0.7.2",
     "ress": "^4.0.0",
     "throttle-debounce": "^3.0.1",
-    "vue": "^3.2.19",
+    "vue": "^3.2.26",
     "vue-router": "^4.0.12"
   }
 }
