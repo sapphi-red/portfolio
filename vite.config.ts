@@ -21,13 +21,7 @@ export default defineConfig({
       }
     }
   },
-  plugins: [
-    Vue({
-      ssr: !!process.env.VITE_SSG
-    }),
-    PurgeIcons(),
-    ViteToml()
-  ],
+  plugins: [Vue(), PurgeIcons(), ViteToml()],
   ssgOptions: {
     script: 'defer'
   }
