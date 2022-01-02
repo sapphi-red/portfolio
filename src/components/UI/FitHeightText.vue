@@ -39,5 +39,6 @@ export default defineComponent({
 <style lang="scss" module>
 .container {
   height: 100%;
+  font-size: 0;
 }
 </style>

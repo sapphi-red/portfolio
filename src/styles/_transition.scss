@@ -1,7 +1,9 @@
 $sfr: 'slide-from-right';
 .#{$sfr}-enter-active,
 .#{$sfr}-leave-active {
-  transition: transform 0.2s ease-in-out;
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
 }
 .#{$sfr}-enter-from {
   transform: translateX(100vw);
