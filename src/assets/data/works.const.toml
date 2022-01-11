@@ -112,6 +112,7 @@ desc = '''
 Go言語で実装したアニメーションGIF、APNG、アニメーションWebP、アニメーションHEIF、アニメーションAVIFを判定するライブラリです。
 traQで利用するためにつくりました。
 通常のデコードでは行われる解凍処理を一切行わないため、省メモリで高速に動作します。
+また、node.jsから呼び出せるラッパーもつくりました。
 '''
 img = 'midec.png'
 tags = [
@@ -122,6 +123,10 @@ tags = [
   [[works.articles]]
   title = 'ソースコード'
   link = 'https://github.com/sapphi-red/midec'
+
+  [[works.articles]]
+  title = 'ソースコード (node.jsラッパー)'
+  link = 'https://github.com/sapphi-red/node-midec'
 
   [[works.articles]]
   title = 'traP新歓LT アーカイブ動画 (実装の概要の話)'
@@ -147,6 +152,10 @@ tags = [
   'Protocol Buffers',
   'サークル'
 ]
+
+  [[works.articles]]
+  title = 'ソースコード'
+  link = 'https://github.com/sapphi-red/Emoine'
 
   [[works.articles]]
   title = 'ブログ記事: 裏ハッカソン参加記「Emoine」'
