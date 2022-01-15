@@ -1,6 +1,19 @@
 {
   "repos": [
     [
+      "prettier/prettier",
+      [
+        {
+          "url": "https://github.com/prettier/prettier/pull/11696",
+          "title": "Improved performance with large HTML files",
+          "label": "prettier/prettier#11696",
+          "repoUser": "prettier",
+          "repoName": "prettier",
+          "prId": 11696
+        }
+      ]
+    ],
+    [
       "DefinitelyTyped/DefinitelyTyped",
       [
         {
@@ -395,5 +408,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2022-01-01T11:13:16.331Z"
+  "fetchedAt": "2022-01-15T11:13:17.647Z"
 }
