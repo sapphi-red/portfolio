@@ -1,21 +1,16 @@
 {
   "repos": [
     [
-      "prettier/prettier",
-      [
-        {
-          "url": "https://github.com/prettier/prettier/pull/11696",
-          "title": "Improved performance with large HTML files",
-          "label": "prettier/prettier#11696",
-          "repoUser": "prettier",
-          "repoName": "prettier",
-          "prId": 11696
-        }
-      ]
-    ],
-    [
       "DefinitelyTyped/DefinitelyTyped",
       [
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/58609",
+          "title": "pica: updated to v9",
+          "label": "DefinitelyTyped/DefinitelyTyped#58609",
+          "repoUser": "DefinitelyTyped",
+          "repoName": "DefinitelyTyped",
+          "prId": 58609
+        },
         {
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/57684",
           "title": "[styled-components] Fix union type of props being lost",
@@ -31,6 +26,19 @@
           "repoUser": "DefinitelyTyped",
           "repoName": "DefinitelyTyped",
           "prId": 40647
+        }
+      ]
+    ],
+    [
+      "prettier/prettier",
+      [
+        {
+          "url": "https://github.com/prettier/prettier/pull/11696",
+          "title": "Improved performance with large HTML files",
+          "label": "prettier/prettier#11696",
+          "repoUser": "prettier",
+          "repoName": "prettier",
+          "prId": 11696
         }
       ]
     ],
@@ -408,5 +416,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2022-02-01T11:17:39.542Z"
+  "fetchedAt": "2022-02-15T11:12:47.514Z"
 }
