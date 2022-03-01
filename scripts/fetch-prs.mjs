@@ -14,7 +14,8 @@ const ignorePRs = [
   'https://github.com/microsoft/vscode-html-languageservice/pull/100',
   'https://github.com/marcello3d/node-tosource/pull/31',
   'https://github.com/caarlos0/domain_exporter/pull/87',
-  'https://github.com/reyu0722/koudaisai-homepage/pull/65'
+  'https://github.com/reyu0722/koudaisai-homepage/pull/65',
+  'https://github.com/vitejs/awesome-vite/pull/383'
 ]
 
 const fetchPRs = async page => {

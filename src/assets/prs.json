@@ -51,19 +51,6 @@
       ]
     ],
     [
-      "vitejs/awesome-vite",
-      [
-        {
-          "url": "https://github.com/vitejs/awesome-vite/pull/383",
-          "title": "add: vite-plugin-static-copy",
-          "label": "vitejs/awesome-vite#383",
-          "repoUser": "vitejs",
-          "repoName": "awesome-vite",
-          "prId": 383
-        }
-      ]
-    ],
-    [
       "vitejs/vite",
       [
         {
