@@ -60,3 +60,9 @@ href = 'https://isucon.net/archives/55821036.html'
   [[contests.children]]
   name = '記事(CodeZine): 出題者になって分かったISUCON必勝法とは？ ISUCON初の学生運営メンバーに聞く'
   href = 'https://codezine.jp/article/detail/14814'
+
+[[contests]]
+name = 'ICTトラブルシューティングコンテスト2021 冬の陣 チーム「Windows 11へのアップグレードオファーは最終段階に入りました」'
+
+  [[contests.children]]
+  name = '3位'
