@@ -51,6 +51,12 @@ const additional: Record<
       title: '関連ブログ記事: 裏ハッカソン参加記「Emoine」',
       href: 'https://trap.jp/post/1093/'
     }
+  },
+  'vueuse/vueuse': {
+    468: {
+      title: '関連ブログ記事: CPCTF2021を実現させたスコアサーバー',
+      href: 'https://trap.jp/post/1308/'
+    }
   }
 }
 

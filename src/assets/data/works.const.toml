@@ -137,6 +137,25 @@ tags = [
   link = 'https://youtu.be/X5yRTIva-Zk?t=447'
 
 [[works]]
+slug = 'cpctf-2021'
+name = 'CPCTF2021スコアサーバー'
+desc = '''
+サークルで開催したCPCTFという競技プログラミングとCTFの大会のスコアサーバーです。
+自分はフロントエンドを一人で開発しました。
+'''
+img = 'cpctf2021.png'
+tags = [
+  'TypeScript',
+  'Vue.js',
+  'CSS',
+  'サークル'
+]
+
+  [[works.articles]]
+  title = 'CPCTF2021を実現させたスコアサーバー'
+  link = 'https://trap.jp/post/1308/'
+
+[[works]]
 slug = 'emoine-2020'
 name = 'Emoine'
 desc = '''
