@@ -4,20 +4,19 @@ import Vue from '@vitejs/plugin-vue'
 import PurgeIcons from 'vite-plugin-purge-icons'
 import { ViteToml } from 'vite-plugin-toml'
 
-const srcPath = path.resolve(__dirname, 'src').replace(/\\/g, '/')
-
 export default defineConfig({
   resolve: {
     alias: {
-      '/@': srcPath
+      '/@': path.resolve(__dirname, 'src')
     }
   },
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@use 'sass:math';
-@import "${srcPath}/styles/common.scss";
-`
+        additionalData: `
+          @use 'sass:math';
+          @import "/@/styles/common.scss";
+        `
       }
     }
   },
