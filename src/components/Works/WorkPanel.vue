@@ -1,6 +1,6 @@
 <template>
   <router-link :to="`/works/${work.slug}`" :class="$style.container">
-    <aspect-image :src="img" />
+    <aspect-image :src="img" loading="lazy" />
     <div :class="$style.innerContainer">
       <p :class="$style.name">{{ work.name }}</p>
       <work-tag-list :tags="work.tags" />
