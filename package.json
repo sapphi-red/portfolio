@@ -51,6 +51,6 @@
     "ress": "^4.0.0",
     "throttle-debounce": "^3.0.1",
     "vue": "^3.2.31",
-    "vue-router": "^4.0.12"
+    "vue-router": "^4.0.13"
   }
 }
