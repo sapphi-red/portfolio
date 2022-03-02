@@ -43,7 +43,7 @@
     "vite": "^2.8.6",
     "vite-plugin-purge-icons": "^0.8.1",
     "vite-plugin-toml": "^0.3.3",
-    "vite-ssg": "^0.17.9"
+    "vite-ssg": "^0.17.11"
   },
   "dependencies": {
     "@iconify/iconify": "^2.1.2",
