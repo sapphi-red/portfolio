@@ -1,8 +1,53 @@
 {
   "repos": [
     [
+      "vitejs/vite",
+      [
+        {
+          "url": "https://github.com/vitejs/vite/pull/7298",
+          "title": "test: fix server port conflict",
+          "label": "vitejs/vite#7298",
+          "repoUser": "vitejs",
+          "repoName": "vite",
+          "prId": 7298
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/7297",
+          "title": "test: fix suppressing vue experimental warning",
+          "label": "vitejs/vite#7297",
+          "repoUser": "vitejs",
+          "repoName": "vite",
+          "prId": 7297
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/7073",
+          "title": "fix: import with query with exports field",
+          "label": "vitejs/vite#7073",
+          "repoUser": "vitejs",
+          "repoName": "vite",
+          "prId": 7073
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/620",
+          "title": "fix(dev): replace config.define instead of inserting object",
+          "label": "vitejs/vite#620",
+          "repoUser": "vitejs",
+          "repoName": "vite",
+          "prId": 620
+        }
+      ]
+    ],
+    [
       "vitest-dev/vitest",
       [
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/879",
+          "title": "fix: export Vitest type from 'vitest', fix #877",
+          "label": "vitest-dev/vitest#879",
+          "repoUser": "vitest-dev",
+          "repoName": "vitest",
+          "prId": 879
+        },
         {
           "url": "https://github.com/vitest-dev/vitest/pull/878",
           "title": "fix: passing non array to reporters option did not effect",
@@ -47,27 +92,6 @@
           "repoUser": "antfu",
           "repoName": "vite-plugin-inspect",
           "prId": 19
-        }
-      ]
-    ],
-    [
-      "vitejs/vite",
-      [
-        {
-          "url": "https://github.com/vitejs/vite/pull/7073",
-          "title": "fix: import with query with exports field",
-          "label": "vitejs/vite#7073",
-          "repoUser": "vitejs",
-          "repoName": "vite",
-          "prId": 7073
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/620",
-          "title": "fix(dev): replace config.define instead of inserting object",
-          "label": "vitejs/vite#620",
-          "repoUser": "vitejs",
-          "repoName": "vite",
-          "prId": 620
         }
       ]
     ],
@@ -474,5 +498,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2022-03-01T11:13:54.325Z"
+  "fetchedAt": "2022-03-15T11:14:18.570Z"
 }
