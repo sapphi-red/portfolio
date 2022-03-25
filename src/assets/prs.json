@@ -4,6 +4,38 @@
       "vitejs/vite",
       [
         {
+          "url": "https://github.com/vitejs/vite/pull/7442",
+          "title": "fix: sourcemap missing source files warning with cached vue",
+          "label": "vitejs/vite#7442",
+          "repoUser": "vitejs",
+          "repoName": "vite",
+          "prId": 7442
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/7440",
+          "title": "fix: virtual html sourcemap warning",
+          "label": "vitejs/vite#7440",
+          "repoUser": "vitejs",
+          "repoName": "vite",
+          "prId": 7440
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/7434",
+          "title": "fix: inline style css sourcemap",
+          "label": "vitejs/vite#7434",
+          "repoUser": "vitejs",
+          "repoName": "vite",
+          "prId": 7434
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/7366",
+          "title": "fix(config): server restart on config dependencies changed on windows",
+          "label": "vitejs/vite#7366",
+          "repoUser": "vitejs",
+          "repoName": "vite",
+          "prId": 7366
+        },
+        {
           "url": "https://github.com/vitejs/vite/pull/7298",
           "title": "test: fix server port conflict",
           "label": "vitejs/vite#7298",
@@ -20,6 +52,14 @@
           "prId": 7297
         },
         {
+          "url": "https://github.com/vitejs/vite/pull/7173",
+          "title": "feat: css sourcemap support during dev",
+          "label": "vitejs/vite#7173",
+          "repoUser": "vitejs",
+          "repoName": "vite",
+          "prId": 7173
+        },
+        {
           "url": "https://github.com/vitejs/vite/pull/7073",
           "title": "fix: import with query with exports field",
           "label": "vitejs/vite#7073",
@@ -34,6 +74,35 @@
           "repoUser": "vitejs",
           "repoName": "vite",
           "prId": 620
+        }
+      ]
+    ],
+    [
+      "evanw/esbuild",
+      [
+        {
+          "url": "https://github.com/evanw/esbuild/pull/1758",
+          "title": "feat: Shorten \"top\", \"right\"... properties into \"inset\" property",
+          "label": "evanw/esbuild#1758",
+          "repoUser": "evanw",
+          "repoName": "esbuild",
+          "prId": 1758
+        },
+        {
+          "url": "https://github.com/evanw/esbuild/pull/1756",
+          "title": "feat: minify `font`/`font-family`/`font-weight` CSS property",
+          "label": "evanw/esbuild#1756",
+          "repoUser": "evanw",
+          "repoName": "esbuild",
+          "prId": 1756
+        },
+        {
+          "url": "https://github.com/evanw/esbuild/pull/1660",
+          "title": "feat: drop catch binding when optional catch binding is supported",
+          "label": "evanw/esbuild#1660",
+          "repoUser": "evanw",
+          "repoName": "esbuild",
+          "prId": 1660
         }
       ]
     ],
@@ -134,35 +203,6 @@
           "repoUser": "prettier",
           "repoName": "prettier",
           "prId": 11696
-        }
-      ]
-    ],
-    [
-      "evanw/esbuild",
-      [
-        {
-          "url": "https://github.com/evanw/esbuild/pull/1758",
-          "title": "feat: Shorten \"top\", \"right\"... properties into \"inset\" property",
-          "label": "evanw/esbuild#1758",
-          "repoUser": "evanw",
-          "repoName": "esbuild",
-          "prId": 1758
-        },
-        {
-          "url": "https://github.com/evanw/esbuild/pull/1756",
-          "title": "feat: minify `font`/`font-family`/`font-weight` CSS property",
-          "label": "evanw/esbuild#1756",
-          "repoUser": "evanw",
-          "repoName": "esbuild",
-          "prId": 1756
-        },
-        {
-          "url": "https://github.com/evanw/esbuild/pull/1660",
-          "title": "feat: drop catch binding when optional catch binding is supported",
-          "label": "evanw/esbuild#1660",
-          "repoUser": "evanw",
-          "repoName": "esbuild",
-          "prId": 1660
         }
       ]
     ],
@@ -498,5 +538,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2022-03-15T11:14:18.570Z"
+  "fetchedAt": "2022-03-25T08:34:20.094Z"
 }
