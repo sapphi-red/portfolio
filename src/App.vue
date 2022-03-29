@@ -3,7 +3,7 @@
   <transition name="header-hr">
     <header-h-r v-show="!isIndex" />
   </transition>
-  <main :class="$style.main">
+  <main ref="mainRef" :class="$style.main">
     <div :class="$style.mainContainer">
       <router-view v-slot="{ Component, route }">
         <transition
@@ -18,7 +18,7 @@
 </template>
 
 <script lang="ts" setup>
-import { computed } from 'vue'
+import { computed, shallowRef, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import PageHeader from '/@/components/PageHeader.vue'
 import HeaderHR from '/@/components/UI/HeaderHR.vue'
@@ -27,6 +27,15 @@ const routerRoute = useRoute()
 const isIndex = computed(
   // 初回表示はfrom.nameがundefined
   () => routerRoute.name === 'index'
+)
+
+const mainRef = shallowRef<HTMLElement | null>(null)
+watch(
+  () => routerRoute.name,
+  () => {
+    if (!mainRef.value) return
+    mainRef.value.scrollTop = 0
+  }
 )
 </script>
 
