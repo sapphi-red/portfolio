@@ -4,6 +4,38 @@
       "vitejs/vite",
       [
         {
+          "url": "https://github.com/vitejs/vite/pull/7494",
+          "title": "test: add js sourcemap tests",
+          "label": "vitejs/vite#7494",
+          "repoUser": "vitejs",
+          "repoName": "vite",
+          "prId": 7494
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/7480",
+          "title": "fix: tailwind css sourcemap warning",
+          "label": "vitejs/vite#7480",
+          "repoUser": "vitejs",
+          "repoName": "vite",
+          "prId": 7480
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/7478",
+          "title": "docs: add css.devSourcemap option",
+          "label": "vitejs/vite#7478",
+          "repoUser": "vitejs",
+          "repoName": "vite",
+          "prId": 7478
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/7471",
+          "title": "feat(css): css.devSourcemap option",
+          "label": "vitejs/vite#7471",
+          "repoUser": "vitejs",
+          "repoName": "vite",
+          "prId": 7471
+        },
+        {
           "url": "https://github.com/vitejs/vite/pull/7442",
           "title": "fix: sourcemap missing source files warning with cached vue",
           "label": "vitejs/vite#7442",
@@ -58,6 +90,14 @@
           "repoUser": "vitejs",
           "repoName": "vite",
           "prId": 7173
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/7098",
+          "title": "fix: import with query with exports/browser field",
+          "label": "vitejs/vite#7098",
+          "repoUser": "vitejs",
+          "repoName": "vite",
+          "prId": 7098
         },
         {
           "url": "https://github.com/vitejs/vite/pull/7073",
@@ -538,5 +578,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2022-03-25T08:34:20.094Z"
+  "fetchedAt": "2022-03-29T11:34:35.330Z"
 }
