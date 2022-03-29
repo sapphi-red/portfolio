@@ -10,27 +10,14 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent, PropType } from 'vue'
+<script lang="ts" setup>
 import { Work } from '/@/assets/works'
 import WorkPanel from '/@/components/Works/WorkPanel.vue'
 
-export default defineComponent({
-  name: 'WorkList',
-  components: {
-    WorkPanel
-  },
-  props: {
-    works: {
-      type: Array as PropType<Work[]>,
-      required: true
-    },
-    openedModalWorkSlug: {
-      type: String,
-      default: undefined
-    }
-  }
-})
+defineProps<{
+  works: Work[]
+  openedModalWorkSlug?: string
+}>()
 </script>
 
 <style lang="scss" module>

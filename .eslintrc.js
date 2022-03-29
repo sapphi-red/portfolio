@@ -50,13 +50,15 @@ module.exports = {
         parser: '@typescript-eslint/parser'
       },
       rules: {
+        'vue/require-default-prop': 'off',
         'vue/block-lang': [
           'error',
           {
             script: { lang: 'ts' },
             style: { lang: 'scss' }
           }
-        ]
+        ],
+        'vue/component-api-style': ['error', ['script-setup']]
       }
     },
     {

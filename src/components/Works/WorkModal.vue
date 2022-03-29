@@ -19,34 +19,24 @@
   </transition>
 </template>
 
-<script lang="ts">
-import { defineComponent, PropType } from 'vue'
+<script lang="ts" setup>
+import { toRef } from 'vue'
 import { Work } from '/@/assets/works'
 import WorkTagList from '/@/components/Works/WorkTagList.vue'
 import WorkArticles from '/@/components/Works/WorkArticles.vue'
-import useWorksImageOrFallback from '/@/components/Works/use/img'
+import useWorksImageOrFallback from './composables/useWorksImageOrFallback'
 
-export default defineComponent({
-  name: 'WorkModal',
-  components: {
-    WorkTagList,
-    WorkArticles
-  },
-  props: {
-    work: {
-      type: Object as PropType<Work>,
-      required: true
-    },
-    show: {
-      type: Boolean,
-      default: false
-    }
-  },
-  setup(props) {
-    const img = useWorksImageOrFallback(props.work)
-    return { img }
+const props = withDefaults(
+  defineProps<{
+    work: Work
+    show: boolean
+  }>(),
+  {
+    show: false
   }
-})
+)
+
+const img = useWorksImageOrFallback(toRef(props, 'work'))
 </script>
 
 <style lang="scss" module>

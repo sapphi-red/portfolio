@@ -9,19 +9,12 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent, PropType } from 'vue'
+<script lang="ts" setup>
 import { Article } from '/@/assets/works'
 
-export default defineComponent({
-  name: 'WorkArticles',
-  props: {
-    articles: {
-      type: Array as PropType<Article[]>,
-      required: true
-    }
-  }
-})
+defineProps<{
+  articles: Article[]
+}>()
 </script>
 
 <style lang="scss" module>

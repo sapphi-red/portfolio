@@ -4,35 +4,24 @@
   </div>
 </template>
 
-<script lang="ts">
-import { computed, defineComponent } from 'vue'
+<script lang="ts" setup>
+import { computed } from 'vue'
 
-export default defineComponent({
-  name: 'BarListBar',
-  props: {
-    percentage: {
-      type: Number,
-      required: true
-    },
-    count: {
-      type: Number,
-      required: true
-    }
-  },
-  setup(props) {
-    const color = computed(() => {
-      switch (props.count % 3) {
-        case 0:
-          return 'green'
-        case 1:
-          return 'blue'
-        case 2:
-          return 'red'
-      }
+const props = defineProps<{
+  percentage: number
+  count: number
+}>()
+
+const color = computed(() => {
+  switch (props.count % 3) {
+    case 0:
       return 'green'
-    })
-    return { color }
+    case 1:
+      return 'blue'
+    case 2:
+      return 'red'
   }
+  return 'green'
 })
 </script>
 

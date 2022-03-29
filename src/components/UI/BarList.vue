@@ -13,9 +13,6 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from 'vue'
-import BarListBar from '/@/components/UI/BarListBar.vue'
-
 export type BarListData = readonly BarListDataNode[]
 
 interface BarListDataNode {
@@ -23,26 +20,18 @@ interface BarListDataNode {
   percentage: number
   children?: BarListData
 }
-
-export default defineComponent({
-  name: 'BarList',
-  components: {
-    BarListBar
-  },
-  props: {
-    data: {
-      type: Array as PropType<BarListData>,
-      required: true
-    },
-    count: {
-      type: Number,
-      default: 0
-    }
-  }
-})
 </script>
 
-<style lang="scss" module>
-.container {
-}
-</style>
+<script lang="ts" setup>
+import BarListBar from '/@/components/UI/BarListBar.vue'
+
+withDefaults(
+  defineProps<{
+    data: BarListData
+    count?: number
+  }>(),
+  {
+    count: 0
+  }
+)
+</script>

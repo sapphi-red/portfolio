@@ -19,12 +19,12 @@
   <p :class="$style.lastFetched">最終取得: {{ lastFetched }}</p>
 </template>
 
-<script lang="ts">
-import { defineComponent, computed } from 'vue'
-import PRData from '/@/assets/prs.json'
+<script lang="ts" setup>
+import { computed } from 'vue'
+import PRDataRaw from '/@/assets/prs.json'
 import { dateToDateTimeString } from '/@/util/date'
 
-type PRDataType = typeof PRData
+type PRDataType = typeof PRDataRaw
 type CorrectPRDataType = {
   [K in keyof PRDataType]: K extends 'repos'
     ? CorrectPRsType<PRDataType[K]>
@@ -34,6 +34,8 @@ type CorrectPRsType<T extends unknown[][]> = [
   string,
   Exclude<T[number][number], string>
 ][]
+
+const PRData = PRDataRaw as CorrectPRDataType
 
 const additional: Record<
   string,
@@ -60,15 +62,9 @@ const additional: Record<
   }
 }
 
-export default defineComponent({
-  name: 'MyContributions',
-  setup() {
-    const lastFetched = computed(() =>
-      dateToDateTimeString(new Date(PRData.fetchedAt))
-    )
-    return { PRData: PRData as CorrectPRDataType, additional, lastFetched }
-  }
-})
+const lastFetched = computed(() =>
+  dateToDateTimeString(new Date(PRData.fetchedAt))
+)
 </script>
 
 <style lang="scss" module>

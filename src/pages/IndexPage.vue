@@ -20,21 +20,11 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script lang="ts" setup>
 import FitHeightText from '/@/components/UI/FitHeightText.vue'
 import { useHead } from '/@/util/head'
 
-export default defineComponent({
-  name: 'IndexPage',
-  components: {
-    FitHeightText
-  },
-  setup() {
-    useHead({ title: null })
-    return {}
-  }
-})
+useHead({ title: null })
 </script>
 
 <style lang="scss" module>

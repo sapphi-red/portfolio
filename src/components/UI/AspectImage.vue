@@ -4,14 +4,6 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'AspectImage'
-})
-</script>
-
 <style lang="scss" module>
 .imgContainer {
   position: relative;

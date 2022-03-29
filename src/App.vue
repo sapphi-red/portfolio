@@ -17,27 +17,17 @@
   </main>
 </template>
 
-<script lang="ts">
-import { computed, defineComponent } from 'vue'
+<script lang="ts" setup>
+import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import PageHeader from '/@/components/PageHeader.vue'
 import HeaderHR from '/@/components/UI/HeaderHR.vue'
 
-export default defineComponent({
-  name: 'App',
-  components: {
-    PageHeader,
-    HeaderHR
-  },
-  setup() {
-    const route = useRoute()
-    const isIndex = computed(
-      // 初回表示はfrom.nameがundefined
-      () => route.name === 'index'
-    )
-    return { isIndex }
-  }
-})
+const routerRoute = useRoute()
+const isIndex = computed(
+  // 初回表示はfrom.nameがundefined
+  () => routerRoute.name === 'index'
+)
 </script>
 
 <style lang="scss">

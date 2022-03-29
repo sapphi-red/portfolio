@@ -11,22 +11,10 @@
   </ul>
 </template>
 
-<script lang="ts">
-import { defineComponent, PropType } from 'vue'
+<script lang="ts" setup>
 import { TreeData } from '/@/data'
 
-export default defineComponent({
-  name: 'AList',
-  props: {
-    data: {
-      type: Array as PropType<TreeData>,
-      required: true
-    }
-  }
-})
+defineProps<{
+  data: TreeData
+}>()
 </script>
-
-<style lang="scss" module>
-.container {
-}
-</style>

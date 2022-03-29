@@ -2,8 +2,7 @@
   <bar-list :data="skills" />
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script lang="ts" setup>
 import BarList, { BarListData } from '/@/components/UI/BarList.vue'
 
 const skills: BarListData = [
@@ -14,19 +13,4 @@ const skills: BarListData = [
   { name: 'GitHub Actions', percentage: 35 },
   { name: '英語 (TOEIC L&R 910)', percentage: 70 }
 ]
-
-export default defineComponent({
-  name: 'OtherSkills',
-  components: {
-    BarList
-  },
-  setup() {
-    return { skills }
-  }
-})
 </script>
-
-<style lang="scss" module>
-.container {
-}
-</style>

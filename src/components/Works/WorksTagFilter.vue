@@ -13,26 +13,16 @@
   </ul>
 </template>
 
-<script lang="ts">
-import { defineComponent, PropType } from 'vue'
+<script lang="ts" setup>
 import { Tag, tags } from '/@/assets/works'
 
-export default defineComponent({
-  name: 'WorksTagFilter',
-  props: {
-    selected: {
-      type: Set as PropType<Set<Tag>>,
-      required: true
-    }
-  },
-  emits: {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    toggle: (_tag: Tag) => true
-  },
-  setup() {
-    return { tags }
-  }
-})
+defineProps<{
+  selected: Set<Tag>
+}>()
+
+defineEmits<{
+  (name: 'toggle', tag: Tag): void
+}>()
 </script>
 
 <style lang="scss" module>

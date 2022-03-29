@@ -4,19 +4,12 @@
   </ul>
 </template>
 
-<script lang="ts">
-import { defineComponent, PropType } from 'vue'
+<script lang="ts" setup>
 import { Tag } from '/@/assets/works'
 
-export default defineComponent({
-  name: 'WorkTagList',
-  props: {
-    tags: {
-      type: Array as PropType<ReadonlyArray<Tag>>,
-      required: true
-    }
-  }
-})
+defineProps<{
+  tags: ReadonlyArray<Tag>
+}>()
 </script>
 
 <style lang="scss" module>

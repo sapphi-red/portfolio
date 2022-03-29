@@ -8,23 +8,12 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script lang="ts" setup>
 import PageTitle from '/@/components/UI/PageTitle.vue'
 import { useHead } from '/@/util/head'
 
-export default defineComponent({
-  name: '404Page',
-  components: {
-    PageTitle
-  },
-  setup() {
-    useHead({
-      title: '404'
-    })
-
-    return {}
-  }
+useHead({
+  title: '404'
 })
 </script>
 

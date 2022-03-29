@@ -13,8 +13,7 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script lang="ts" setup>
 import PageTitle from '/@/components/UI/PageTitle.vue'
 import SectionTitle from '/@/components/UI/SectionTitle.vue'
 import AList from '/@/components/UI/AList.vue'
@@ -24,20 +23,7 @@ import { internships } from '/@/assets/internships'
 import { books } from '/@/assets/books'
 import { useHead } from '/@/util/head'
 
-export default defineComponent({
-  name: 'ExperiencesPage',
-  components: {
-    PageTitle,
-    SectionTitle,
-    AList,
-    MyContributions
-  },
-  setup() {
-    useHead({
-      title: 'Experiences'
-    })
-
-    return { contests, internships, books }
-  }
+useHead({
+  title: 'Experiences'
 })
 </script>

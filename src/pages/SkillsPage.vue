@@ -8,28 +8,14 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script lang="ts" setup>
 import PageTitle from '/@/components/UI/PageTitle.vue'
 import SectionTitle from '/@/components/UI/SectionTitle.vue'
 import ProgrammingSkills from '/@/components/Skills/ProgrammingSkills.vue'
 import OtherSkills from '/@/components/Skills/OtherSkills.vue'
 import { useHead } from '/@/util/head'
 
-export default defineComponent({
-  name: 'SkillsPage',
-  components: {
-    PageTitle,
-    SectionTitle,
-    ProgrammingSkills,
-    OtherSkills
-  },
-  setup() {
-    useHead({
-      title: 'Skills'
-    })
-
-    return {}
-  }
+useHead({
+  title: 'Skills'
 })
 </script>

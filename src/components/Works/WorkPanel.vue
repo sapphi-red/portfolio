@@ -11,36 +11,25 @@
   </router-link>
 </template>
 
-<script lang="ts">
-import { defineComponent, PropType } from 'vue'
+<script lang="ts" setup>
 import { Work } from '/@/assets/works'
 import WorkModal from '/@/components/Works/WorkModal.vue'
 import AspectImage from '/@/components/UI/AspectImage.vue'
 import WorkTagList from '/@/components/Works/WorkTagList.vue'
-import useWorksImageOrFallback from '/@/components/Works/use/img'
+import useWorksImageOrFallback from './composables/useWorksImageOrFallback'
+import { toRef } from 'vue'
 
-export default defineComponent({
-  name: 'WorkPanel',
-  components: {
-    WorkModal,
-    AspectImage,
-    WorkTagList
-  },
-  props: {
-    work: {
-      type: Object as PropType<Work>,
-      required: true
-    },
-    isModalOpen: {
-      type: Boolean,
-      default: false
-    }
-  },
-  setup(props) {
-    const img = useWorksImageOrFallback(props.work)
-    return { img }
+const props = withDefaults(
+  defineProps<{
+    work: Work
+    isModalOpen?: boolean
+  }>(),
+  {
+    isModalOpen: false
   }
-})
+)
+
+const img = useWorksImageOrFallback(toRef(props, 'work'))
 </script>
 
 <style lang="scss" module>

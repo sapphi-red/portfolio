@@ -8,8 +8,7 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script lang="ts" setup>
 import PageTitle from '/@/components/UI/PageTitle.vue'
 import SectionTitle from '/@/components/UI/SectionTitle.vue'
 import MyProfile from '/@/components/About/MyProfile.vue'
@@ -24,19 +23,7 @@ const interest: TreeData = [
   }
 ]
 
-export default defineComponent({
-  name: 'AboutPage',
-  components: {
-    PageTitle,
-    SectionTitle,
-    MyProfile,
-    AList
-  },
-  setup() {
-    useHead({
-      title: 'About'
-    })
-    return { interest }
-  }
+useHead({
+  title: 'About'
 })
 </script>

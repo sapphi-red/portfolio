@@ -11,23 +11,15 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script lang="ts" setup>
 import { routes } from '/@/router'
 
-export default defineComponent({
-  name: 'RouteLinks',
-  setup() {
-    const routeData = routes
-      .filter(route => route.meta?.showInRoutes)
-      .map(route => ({
-        name: route.name,
-        title: route.name
-      }))
-
-    return { routeData }
-  }
-})
+const routeData = routes
+  .filter(route => route.meta?.showInRoutes)
+  .map(route => ({
+    name: route.name,
+    title: route.name
+  }))
 </script>
 
 <style lang="scss" module>

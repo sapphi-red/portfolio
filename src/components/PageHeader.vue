@@ -7,16 +7,8 @@
   </header>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script lang="ts" setup>
 import RouteLinks from '/@/components/RouteLinks.vue'
-
-export default defineComponent({
-  name: 'PageHeader',
-  components: {
-    RouteLinks
-  }
-})
 </script>
 
 <style lang="scss" module>
