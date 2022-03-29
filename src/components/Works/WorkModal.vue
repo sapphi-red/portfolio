@@ -96,12 +96,12 @@ const img = useWorksImageOrFallback(toRef(props, 'work'))
 .close {
   width: 5rem;
   margin-top: 1rem;
-  color: white;
   background-color: $default-font-theme;
   border-radius: 0.15rem;
 }
 .closeButton {
   display: inline-block;
   width: 100%;
+  color: white;
 }
 </style>
