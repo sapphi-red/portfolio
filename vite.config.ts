@@ -18,7 +18,8 @@ export default defineConfig({
           @import "/@/styles/common.scss";
         `
       }
-    }
+    },
+    devSourcemap: true
   },
   plugins: [Vue(), PurgeIcons(), ViteToml()],
   ssgOptions: {
