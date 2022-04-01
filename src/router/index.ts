@@ -6,6 +6,7 @@ import { works } from '/@/assets/works'
 declare module 'vue-router' {
   interface RouteMeta {
     showInRoutes?: true
+    noScrollReset?: true
   }
 }
 
@@ -13,7 +14,8 @@ const worksRoutes: RouteRecordRaw[] = works.map(work => ({
   path: `/works/${work.slug}`,
   name: `work-${work.slug}`,
   component: () => import('../pages/WorksPage.vue'),
-  props: { workSlug: work.slug }
+  props: { workSlug: work.slug },
+  meta: { noScrollReset: true }
 }))
 
 export const routes: RouteRecordRaw[] = [

@@ -31,9 +31,11 @@ const isIndex = computed(
 
 const mainRef = shallowRef<HTMLElement | null>(null)
 watch(
-  () => routerRoute.name,
-  () => {
+  () => [routerRoute.name, routerRoute.meta.noScrollReset],
+  async ([, noScrollResetAfter], [, noScrollResetBefore]) => {
     if (!mainRef.value) return
+    if (noScrollResetBefore || noScrollResetAfter) return
+
     mainRef.value.scrollTop = 0
   }
 )
