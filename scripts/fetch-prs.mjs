@@ -19,7 +19,10 @@ const ignorePRs = [
   'https://github.com/vitejs/vite/pull/620',
   'https://github.com/vitejs/vite/pull/7297',
   'https://github.com/vitejs/vite/pull/7298',
-  'https://github.com/vitejs/vite/pull/7478'
+  'https://github.com/vitejs/vite/pull/7472',
+  'https://github.com/vitejs/vite/pull/7478',
+  'https://github.com/vitejs/vite/pull/7526',
+  'https://github.com/vitejs/vite/pull/7527'
 ]
 
 const fetchPRs = async page => {

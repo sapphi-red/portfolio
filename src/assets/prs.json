@@ -4,22 +4,6 @@
       "vitejs/vite",
       [
         {
-          "url": "https://github.com/vitejs/vite/pull/7527",
-          "title": "chore(plugin-vue): revert #7527, lower vite peer dep",
-          "label": "vitejs/vite#7527",
-          "repoUser": "vitejs",
-          "repoName": "vite",
-          "prId": 7527
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/7526",
-          "title": "test: fix rm fail",
-          "label": "vitejs/vite#7526",
-          "repoUser": "vitejs",
-          "repoName": "vite",
-          "prId": 7526
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/7514",
           "title": "fix(plugin-legacy): polyfill latest features",
           "label": "vitejs/vite#7514",
@@ -42,14 +26,6 @@
           "repoUser": "vitejs",
           "repoName": "vite",
           "prId": 7480
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/7472",
-          "title": "chore(plugin-vue): bump vite peer dep to 2.9.0",
-          "label": "vitejs/vite#7472",
-          "repoUser": "vitejs",
-          "repoName": "vite",
-          "prId": 7472
         },
         {
           "url": "https://github.com/vitejs/vite/pull/7471",
