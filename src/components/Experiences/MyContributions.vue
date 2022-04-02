@@ -7,8 +7,8 @@
           <a :href="pr.url">#{{ pr.prId }}: {{ pr.title }}</a>
           <ul v-if="additional[repoName]?.[pr.prId]">
             <li>
-              <a :href="additional[repoName][pr.prId].href">
-                {{ additional[repoName][pr.prId].title }}
+              <a :href="additional[repoName]![pr.prId]!.href">
+                {{ additional[repoName]![pr.prId]!.title }}
               </a>
             </li>
           </ul>

@@ -13,11 +13,6 @@
 import type { Article } from '/@/assets/works'
 
 defineProps<{
-  articles: Article[]
+  articles: readonly Article[]
 }>()
 </script>
-
-<style lang="scss" module>
-.container {
-}
-</style>

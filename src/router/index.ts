@@ -7,6 +7,9 @@ declare module 'vue-router' {
   interface RouteMeta {
     showInRoutes?: true
     noScrollReset?: true
+
+    transition?: string
+    transitionMode?: string
   }
 }
 
