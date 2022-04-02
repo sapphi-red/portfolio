@@ -1,4 +1,5 @@
-import { computed, Ref, unref } from 'vue'
+import type { Ref } from 'vue'
+import { computed, unref } from 'vue'
 import { useHead as useVueUseHead } from '@vueuse/head'
 
 type MaybeRef<T> = T | Ref<T>

@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 
-import { Router, RouteRecordRaw } from 'vue-router'
+import type { Router, RouteRecordRaw } from 'vue-router'
 import { works } from '/@/assets/works'
 
 declare module 'vue-router' {

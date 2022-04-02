@@ -14,7 +14,7 @@ import SectionTitle from '/@/components/UI/SectionTitle.vue'
 import MyProfile from '/@/components/About/MyProfile.vue'
 import AList from '/@/components/UI/AList.vue'
 import { useHead } from '/@/util/head'
-import { TreeData } from '../data'
+import type { TreeData } from '../data'
 
 const interest: TreeData = [
   { name: 'Developer Experienceを向上させること' },

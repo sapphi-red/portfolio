@@ -14,7 +14,8 @@
 import { computed, ref } from 'vue'
 import PageTitle from '/@/components/UI/PageTitle.vue'
 import WorkList from '/@/components/Works/WorkList.vue'
-import { Tag, works } from '/@/assets/works'
+import type { Tag } from '/@/assets/works'
+import { works } from '/@/assets/works'
 import WorksTagFilter from '/@/components/Works/WorksTagFilter.vue'
 import { useHead } from '/@/util/head'
 

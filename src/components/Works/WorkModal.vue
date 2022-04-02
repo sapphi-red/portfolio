@@ -21,7 +21,7 @@
 
 <script lang="ts" setup>
 import { toRef } from 'vue'
-import { Work } from '/@/assets/works'
+import type { Work } from '/@/assets/works'
 import WorkTagList from '/@/components/Works/WorkTagList.vue'
 import WorkArticles from '/@/components/Works/WorkArticles.vue'
 import useWorksImageOrFallback from './composables/useWorksImageOrFallback'

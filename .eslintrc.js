@@ -35,7 +35,10 @@ module.exports = {
         'plugin:@typescript-eslint/recommended',
         'plugin:prettier/recommended'
       ],
-      parser: '@typescript-eslint/parser'
+      parser: '@typescript-eslint/parser',
+      rules: {
+        '@typescript-eslint/consistent-type-imports': 'error'
+      }
     },
     {
       files: ['*.vue'],
@@ -50,6 +53,7 @@ module.exports = {
         parser: '@typescript-eslint/parser'
       },
       rules: {
+        '@typescript-eslint/consistent-type-imports': 'error',
         'vue/require-default-prop': 'off',
         'vue/block-lang': [
           'error',

@@ -12,7 +12,7 @@
 </template>
 
 <script lang="ts" setup>
-import { Work } from '/@/assets/works'
+import type { Work } from '/@/assets/works'
 import WorkModal from '/@/components/Works/WorkModal.vue'
 import AspectImage from '/@/components/UI/AspectImage.vue'
 import WorkTagList from '/@/components/Works/WorkTagList.vue'

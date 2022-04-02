@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts" setup>
-import { Tag } from '/@/assets/works'
+import type { Tag } from '/@/assets/works'
 
 defineProps<{
   tags: ReadonlyArray<Tag>

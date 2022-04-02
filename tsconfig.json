@@ -8,6 +8,7 @@
     "esModuleInterop": true,
     "isolatedModules": true,
     "allowSyntheticDefaultImports": true,
+    "importsNotUsedAsValues": "error",
     "baseUrl": ".",
     "lib": ["esnext", "dom"],
     "skipLibCheck": true,

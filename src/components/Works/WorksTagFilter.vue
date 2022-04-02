@@ -14,7 +14,8 @@
 </template>
 
 <script lang="ts" setup>
-import { Tag, tags } from '/@/assets/works'
+import type { Tag } from '/@/assets/works'
+import { tags } from '/@/assets/works'
 
 defineProps<{
   selected: Set<Tag>

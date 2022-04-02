@@ -3,7 +3,8 @@
 </template>
 
 <script lang="ts" setup>
-import BarList, { BarListData } from '/@/components/UI/BarList.vue'
+import type { BarListData } from '/@/components/UI/BarList.vue'
+import BarList from '/@/components/UI/BarList.vue'
 
 const langs: BarListData = [
   {

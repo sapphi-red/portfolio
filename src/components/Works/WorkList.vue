@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts" setup>
-import { Work } from '/@/assets/works'
+import type { Work } from '/@/assets/works'
 import WorkPanel from '/@/components/Works/WorkPanel.vue'
 
 defineProps<{

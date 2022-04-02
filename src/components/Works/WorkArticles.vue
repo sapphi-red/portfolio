@@ -10,7 +10,7 @@
 </template>
 
 <script lang="ts" setup>
-import { Article } from '/@/assets/works'
+import type { Article } from '/@/assets/works'
 
 defineProps<{
   articles: Article[]

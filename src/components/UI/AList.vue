@@ -12,7 +12,7 @@
 </template>
 
 <script lang="ts" setup>
-import { TreeData } from '/@/data'
+import type { TreeData } from '/@/data'
 
 defineProps<{
   data: TreeData
