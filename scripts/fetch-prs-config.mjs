@@ -14,11 +14,20 @@ export const ignorePRs = [
   'https://github.com/caarlos0/domain_exporter/pull/87',
   'https://github.com/reyu0722/koudaisai-homepage/pull/65',
   'https://github.com/vitejs/awesome-vite/pull/383',
+  'https://github.com/vitest-dev/vitest/pull/879',
   'https://github.com/vitejs/vite/pull/620',
   'https://github.com/vitejs/vite/pull/7297',
   'https://github.com/vitejs/vite/pull/7298',
+  'https://github.com/vitejs/vite/pull/7471',
   'https://github.com/vitejs/vite/pull/7472',
   'https://github.com/vitejs/vite/pull/7478',
+  'https://github.com/vitejs/vite/pull/7480',
+  'https://github.com/vitejs/vite/pull/7494',
+  'https://github.com/vitejs/vite/pull/7523',
   'https://github.com/vitejs/vite/pull/7526',
-  'https://github.com/vitejs/vite/pull/7527'
+  'https://github.com/vitejs/vite/pull/7527',
+  'https://github.com/vitejs/vite/pull/7697',
+  'https://github.com/vitejs/vite/pull/7731',
+  'https://github.com/vitejs/vite/pull/7744',
+  'https://github.com/evanw/esbuild/pull/2170'
 ]

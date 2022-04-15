@@ -1,32 +1,66 @@
 {
   "repos": [
     [
-      "vitejs/vite",
+      "hyrious/esbuild-repl",
       [
         {
-          "url": "https://github.com/vitejs/vite/pull/7744",
-          "title": "docs: mention `process.env` for config env vars",
-          "label": "vitejs/vite#7744",
-          "repoUser": "vitejs",
-          "repoName": "vite",
-          "prId": 7744
+          "url": "https://github.com/hyrious/esbuild-repl/pull/13",
+          "title": "show error when command is incorrect",
+          "label": "hyrious/esbuild-repl#13",
+          "repoUser": "hyrious",
+          "repoName": "esbuild-repl",
+          "prId": 13
+        }
+      ]
+    ],
+    [
+      "vitest-dev/vitest",
+      [
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/1116",
+          "title": "fix: hide ignored stacktrace on windows",
+          "label": "vitest-dev/vitest#1116",
+          "repoUser": "vitest-dev",
+          "repoName": "vitest",
+          "prId": 1116
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/7731",
-          "title": "chore: format css minify esbuild error",
-          "label": "vitejs/vite#7731",
-          "repoUser": "vitejs",
-          "repoName": "vite",
-          "prId": 7731
+          "url": "https://github.com/vitest-dev/vitest/pull/1070",
+          "title": "fix: inconsistency with globTestFiles and isTargetFile (fix #981, #982)",
+          "label": "vitest-dev/vitest#1070",
+          "repoUser": "vitest-dev",
+          "repoName": "vitest",
+          "prId": 1070
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/7697",
-          "title": "chore(create-vite): add isolatedModules",
-          "label": "vitejs/vite#7697",
-          "repoUser": "vitejs",
-          "repoName": "vite",
-          "prId": 7697
+          "url": "https://github.com/vitest-dev/vitest/pull/878",
+          "title": "fix: passing non array to reporters option did not effect",
+          "label": "vitest-dev/vitest#878",
+          "repoUser": "vitest-dev",
+          "repoName": "vitest",
+          "prId": 878
         },
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/876",
+          "title": "fix: unhandled error handler",
+          "label": "vitest-dev/vitest#876",
+          "repoUser": "vitest-dev",
+          "repoName": "vitest",
+          "prId": 876
+        },
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/875",
+          "title": "fix: handle error during global setup",
+          "label": "vitest-dev/vitest#875",
+          "repoUser": "vitest-dev",
+          "repoName": "vitest",
+          "prId": 875
+        }
+      ]
+    ],
+    [
+      "vitejs/vite",
+      [
         {
           "url": "https://github.com/vitejs/vite/pull/7591",
           "title": "fix(css): include inline css module in bundle (fix #6984,#7552)",
@@ -36,44 +70,12 @@
           "prId": 7591
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/7523",
-          "title": "test: fix server port conflict",
-          "label": "vitejs/vite#7523",
-          "repoUser": "vitejs",
-          "repoName": "vite",
-          "prId": 7523
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/7514",
           "title": "fix(plugin-legacy): polyfill latest features",
           "label": "vitejs/vite#7514",
           "repoUser": "vitejs",
           "repoName": "vite",
           "prId": 7514
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/7494",
-          "title": "test: add js sourcemap tests",
-          "label": "vitejs/vite#7494",
-          "repoUser": "vitejs",
-          "repoName": "vite",
-          "prId": 7494
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/7480",
-          "title": "fix: tailwind css sourcemap warning",
-          "label": "vitejs/vite#7480",
-          "repoUser": "vitejs",
-          "repoName": "vite",
-          "prId": 7480
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/7471",
-          "title": "feat(css): css.devSourcemap option",
-          "label": "vitejs/vite#7471",
-          "repoUser": "vitejs",
-          "repoName": "vite",
-          "prId": 7471
         },
         {
           "url": "https://github.com/vitejs/vite/pull/7442",
@@ -134,29 +136,8 @@
       ]
     ],
     [
-      "hyrious/esbuild-repl",
-      [
-        {
-          "url": "https://github.com/hyrious/esbuild-repl/pull/13",
-          "title": "show error when command is incorrect",
-          "label": "hyrious/esbuild-repl#13",
-          "repoUser": "hyrious",
-          "repoName": "esbuild-repl",
-          "prId": 13
-        }
-      ]
-    ],
-    [
       "evanw/esbuild",
       [
-        {
-          "url": "https://github.com/evanw/esbuild/pull/2170",
-          "title": "add opera/ie to css feature table",
-          "label": "evanw/esbuild#2170",
-          "repoUser": "evanw",
-          "repoName": "esbuild",
-          "prId": 2170
-        },
         {
           "url": "https://github.com/evanw/esbuild/pull/1758",
           "title": "feat: Shorten \"top\", \"right\"... properties into \"inset\" property",
@@ -180,59 +161,6 @@
           "repoUser": "evanw",
           "repoName": "esbuild",
           "prId": 1660
-        }
-      ]
-    ],
-    [
-      "vitest-dev/vitest",
-      [
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/1116",
-          "title": "fix: hide ignored stacktrace on windows",
-          "label": "vitest-dev/vitest#1116",
-          "repoUser": "vitest-dev",
-          "repoName": "vitest",
-          "prId": 1116
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/1070",
-          "title": "fix: inconsistency with globTestFiles and isTargetFile (fix #981, #982)",
-          "label": "vitest-dev/vitest#1070",
-          "repoUser": "vitest-dev",
-          "repoName": "vitest",
-          "prId": 1070
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/879",
-          "title": "fix: export Vitest type from 'vitest', fix #877",
-          "label": "vitest-dev/vitest#879",
-          "repoUser": "vitest-dev",
-          "repoName": "vitest",
-          "prId": 879
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/878",
-          "title": "fix: passing non array to reporters option did not effect",
-          "label": "vitest-dev/vitest#878",
-          "repoUser": "vitest-dev",
-          "repoName": "vitest",
-          "prId": 878
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/876",
-          "title": "fix: unhandled error handler",
-          "label": "vitest-dev/vitest#876",
-          "repoUser": "vitest-dev",
-          "repoName": "vitest",
-          "prId": 876
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/875",
-          "title": "fix: handle error during global setup",
-          "label": "vitest-dev/vitest#875",
-          "repoUser": "vitest-dev",
-          "repoName": "vitest",
-          "prId": 875
         }
       ]
     ],
