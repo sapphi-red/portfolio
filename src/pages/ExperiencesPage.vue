@@ -8,7 +8,7 @@
     <section-title>Books</section-title>
     <a-list :data="books" />
     <section-title>OSS Contributions</section-title>
-    <p>マージされたPRの一覧</p>
+    <p>細かな修正を除いたマージされたPRの一覧</p>
     <my-contributions />
   </div>
 </template>
