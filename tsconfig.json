@@ -12,6 +12,7 @@
     "noPropertyAccessFromIndexSignature": true,
     "noUncheckedIndexedAccess": true,
     "importsNotUsedAsValues": "error",
+    "jsx": "preserve",
     "baseUrl": ".",
     "lib": ["esnext", "dom"],
     "skipLibCheck": true,
