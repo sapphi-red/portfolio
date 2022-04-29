@@ -14,7 +14,9 @@ export const ignorePRs = [
   'https://github.com/caarlos0/domain_exporter/pull/87',
   'https://github.com/reyu0722/koudaisai-homepage/pull/65',
   'https://github.com/vitejs/awesome-vite/pull/383',
+  'https://github.com/vitest-dev/vitest/pull/876',
   'https://github.com/vitest-dev/vitest/pull/879',
+  'https://github.com/vitest-dev/vitest/pull/1116',
   'https://github.com/vitejs/vite/pull/620',
   'https://github.com/vitejs/vite/pull/7297',
   'https://github.com/vitejs/vite/pull/7298',
@@ -29,5 +31,15 @@ export const ignorePRs = [
   'https://github.com/vitejs/vite/pull/7697',
   'https://github.com/vitejs/vite/pull/7731',
   'https://github.com/vitejs/vite/pull/7744',
-  'https://github.com/evanw/esbuild/pull/2170'
+  'https://github.com/vitejs/vite/pull/7757',
+  'https://github.com/vitejs/vite/pull/7759',
+  'https://github.com/vitejs/vite/pull/7771',
+  'https://github.com/vitejs/vite/pull/7792',
+  'https://github.com/vitejs/vite/pull/7793',
+  'https://github.com/vitejs/vite/pull/7794',
+  'https://github.com/vitejs/vite/pull/7815',
+  'https://github.com/vitejs/vite/pull/7865',
+  'https://github.com/vitejs/vite/pull/7934',
+  'https://github.com/evanw/esbuild/pull/2170',
+  'https://github.com/hyrious/esbuild-repl/pull/13'
 ]
