@@ -1,66 +1,96 @@
 {
   "repos": [
     [
-      "hyrious/esbuild-repl",
-      [
-        {
-          "url": "https://github.com/hyrious/esbuild-repl/pull/13",
-          "title": "show error when command is incorrect",
-          "label": "hyrious/esbuild-repl#13",
-          "repoUser": "hyrious",
-          "repoName": "esbuild-repl",
-          "prId": 13
-        }
-      ]
-    ],
-    [
-      "vitest-dev/vitest",
-      [
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/1116",
-          "title": "fix: hide ignored stacktrace on windows",
-          "label": "vitest-dev/vitest#1116",
-          "repoUser": "vitest-dev",
-          "repoName": "vitest",
-          "prId": 1116
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/1070",
-          "title": "fix: inconsistency with globTestFiles and isTargetFile (fix #981, #982)",
-          "label": "vitest-dev/vitest#1070",
-          "repoUser": "vitest-dev",
-          "repoName": "vitest",
-          "prId": 1070
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/878",
-          "title": "fix: passing non array to reporters option did not effect",
-          "label": "vitest-dev/vitest#878",
-          "repoUser": "vitest-dev",
-          "repoName": "vitest",
-          "prId": 878
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/876",
-          "title": "fix: unhandled error handler",
-          "label": "vitest-dev/vitest#876",
-          "repoUser": "vitest-dev",
-          "repoName": "vitest",
-          "prId": 876
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/875",
-          "title": "fix: handle error during global setup",
-          "label": "vitest-dev/vitest#875",
-          "repoUser": "vitest-dev",
-          "repoName": "vitest",
-          "prId": 875
-        }
-      ]
-    ],
-    [
       "vitejs/vite",
       [
+        {
+          "url": "https://github.com/vitejs/vite/pull/7934",
+          "title": "chore(css): catch postcss config error (fix #2793)",
+          "label": "vitejs/vite#7934",
+          "repoUser": "vitejs",
+          "repoName": "vite",
+          "prId": 7934
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/7865",
+          "title": "docs: `server.origin` config trailing slash (fix #6622)",
+          "label": "vitejs/vite#7865",
+          "repoUser": "vitejs",
+          "repoName": "vite",
+          "prId": 7865
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/7825",
+          "title": "fix: update sourcemap in importAnalysisBuild",
+          "label": "vitejs/vite#7825",
+          "repoUser": "vitejs",
+          "repoName": "vite",
+          "prId": 7825
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/7816",
+          "title": "fix: modulepreload polyfill only during build (fix #4786)",
+          "label": "vitejs/vite#7816",
+          "repoUser": "vitejs",
+          "repoName": "vite",
+          "prId": 7816
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/7815",
+          "title": "docs: make it clear that only array format can be used for inline postcss config (fix #7808)",
+          "label": "vitejs/vite#7815",
+          "repoUser": "vitejs",
+          "repoName": "vite",
+          "prId": 7815
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/7794",
+          "title": "docs: import.meta.url is replaced even if ESM",
+          "label": "vitejs/vite#7794",
+          "repoUser": "vitejs",
+          "repoName": "vite",
+          "prId": 7794
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/7793",
+          "title": "docs: add link to \"Using Plugins\" from Plugins section",
+          "label": "vitejs/vite#7793",
+          "repoUser": "vitejs",
+          "repoName": "vite",
+          "prId": 7793
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/7792",
+          "title": "fix: correctly replace import.meta.url in config",
+          "label": "vitejs/vite#7792",
+          "repoUser": "vitejs",
+          "repoName": "vite",
+          "prId": 7792
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/7771",
+          "title": "test: fix properly use terser for preload test",
+          "label": "vitejs/vite#7771",
+          "repoUser": "vitejs",
+          "repoName": "vite",
+          "prId": 7771
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/7759",
+          "title": "refactor(legacy): remove unneeded dynamic import var init code",
+          "label": "vitejs/vite#7759",
+          "repoUser": "vitejs",
+          "repoName": "vite",
+          "prId": 7759
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/7757",
+          "title": "fix(ssr): rewrite dynamic class method name (fix #7751)",
+          "label": "vitejs/vite#7757",
+          "repoUser": "vitejs",
+          "repoName": "vite",
+          "prId": 7757
+        },
         {
           "url": "https://github.com/vitejs/vite/pull/7591",
           "title": "fix(css): include inline css module in bundle (fix #6984,#7552)",
@@ -132,6 +162,169 @@
           "repoUser": "vitejs",
           "repoName": "vite",
           "prId": 7073
+        }
+      ]
+    ],
+    [
+      "sindresorhus/log-update",
+      [
+        {
+          "url": "https://github.com/sindresorhus/log-update/pull/57",
+          "title": "Fix `fitTerminalHeight` is not working correctly with color text",
+          "label": "sindresorhus/log-update#57",
+          "repoUser": "sindresorhus",
+          "repoName": "log-update",
+          "prId": 57
+        }
+      ]
+    ],
+    [
+      "bcoe/c8",
+      [
+        {
+          "url": "https://github.com/bcoe/c8/pull/388",
+          "title": "fix(perf): cache `this.exclude.shouldInstrument` for improved performance",
+          "label": "bcoe/c8#388",
+          "repoUser": "bcoe",
+          "repoName": "c8",
+          "prId": 388
+        }
+      ]
+    ],
+    [
+      "antfu/vite-plugin-pwa",
+      [
+        {
+          "url": "https://github.com/antfu/vite-plugin-pwa/pull/244",
+          "title": "perf: lazy load workbox-build to reduce config loading time",
+          "label": "antfu/vite-plugin-pwa#244",
+          "repoUser": "antfu",
+          "repoName": "vite-plugin-pwa",
+          "prId": 244
+        }
+      ]
+    ],
+    [
+      "eslint/eslint-release",
+      [
+        {
+          "url": "https://github.com/eslint/eslint-release/pull/48",
+          "title": "Fix: env var names are case-insensitive in windows",
+          "label": "eslint/eslint-release#48",
+          "repoUser": "eslint",
+          "repoName": "eslint-release",
+          "prId": 48
+        },
+        {
+          "url": "https://github.com/eslint/eslint-release/pull/47",
+          "title": "Update: group commits by types in release log (fixes #46)",
+          "label": "eslint/eslint-release#47",
+          "repoUser": "eslint",
+          "repoName": "eslint-release",
+          "prId": 47
+        }
+      ]
+    ],
+    [
+      "OpenAPITools/openapi-generator",
+      [
+        {
+          "url": "https://github.com/OpenAPITools/openapi-generator/pull/8283",
+          "title": "[typescript-axios] reduce file size",
+          "label": "OpenAPITools/openapi-generator#8283",
+          "repoUser": "OpenAPITools",
+          "repoName": "openapi-generator",
+          "prId": 8283
+        },
+        {
+          "url": "https://github.com/OpenAPITools/openapi-generator/pull/7477",
+          "title": "[typescript-axios] support \"x-enum-descriptions\"",
+          "label": "OpenAPITools/openapi-generator#7477",
+          "repoUser": "OpenAPITools",
+          "repoName": "openapi-generator",
+          "prId": 7477
+        },
+        {
+          "url": "https://github.com/OpenAPITools/openapi-generator/pull/7476",
+          "title": "[typescript-axios] replace optional-chaining",
+          "label": "OpenAPITools/openapi-generator#7476",
+          "repoUser": "OpenAPITools",
+          "repoName": "openapi-generator",
+          "prId": 7476
+        },
+        {
+          "url": "https://github.com/OpenAPITools/openapi-generator/pull/7475",
+          "title": "[typescript-axios] rename query parameters to avoid collision",
+          "label": "OpenAPITools/openapi-generator#7475",
+          "repoUser": "OpenAPITools",
+          "repoName": "openapi-generator",
+          "prId": 7475
+        },
+        {
+          "url": "https://github.com/OpenAPITools/openapi-generator/pull/6960",
+          "title": "[typescript-axios] switched to new URL API",
+          "label": "OpenAPITools/openapi-generator#6960",
+          "repoUser": "OpenAPITools",
+          "repoName": "openapi-generator",
+          "prId": 6960
+        }
+      ]
+    ],
+    [
+      "hyrious/esbuild-repl",
+      [
+        {
+          "url": "https://github.com/hyrious/esbuild-repl/pull/13",
+          "title": "show error when command is incorrect",
+          "label": "hyrious/esbuild-repl#13",
+          "repoUser": "hyrious",
+          "repoName": "esbuild-repl",
+          "prId": 13
+        }
+      ]
+    ],
+    [
+      "vitest-dev/vitest",
+      [
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/1116",
+          "title": "fix: hide ignored stacktrace on windows",
+          "label": "vitest-dev/vitest#1116",
+          "repoUser": "vitest-dev",
+          "repoName": "vitest",
+          "prId": 1116
+        },
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/1070",
+          "title": "fix: inconsistency with globTestFiles and isTargetFile (fix #981, #982)",
+          "label": "vitest-dev/vitest#1070",
+          "repoUser": "vitest-dev",
+          "repoName": "vitest",
+          "prId": 1070
+        },
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/878",
+          "title": "fix: passing non array to reporters option did not effect",
+          "label": "vitest-dev/vitest#878",
+          "repoUser": "vitest-dev",
+          "repoName": "vitest",
+          "prId": 878
+        },
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/876",
+          "title": "fix: unhandled error handler",
+          "label": "vitest-dev/vitest#876",
+          "repoUser": "vitest-dev",
+          "repoName": "vitest",
+          "prId": 876
+        },
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/875",
+          "title": "fix: handle error during global setup",
+          "label": "vitest-dev/vitest#875",
+          "repoUser": "vitest-dev",
+          "repoName": "vitest",
+          "prId": 875
         }
       ]
     ],
@@ -317,51 +510,6 @@
       ]
     ],
     [
-      "OpenAPITools/openapi-generator",
-      [
-        {
-          "url": "https://github.com/OpenAPITools/openapi-generator/pull/8283",
-          "title": "[typescript-axios] reduce file size",
-          "label": "OpenAPITools/openapi-generator#8283",
-          "repoUser": "OpenAPITools",
-          "repoName": "openapi-generator",
-          "prId": 8283
-        },
-        {
-          "url": "https://github.com/OpenAPITools/openapi-generator/pull/7477",
-          "title": "[typescript-axios] support \"x-enum-descriptions\"",
-          "label": "OpenAPITools/openapi-generator#7477",
-          "repoUser": "OpenAPITools",
-          "repoName": "openapi-generator",
-          "prId": 7477
-        },
-        {
-          "url": "https://github.com/OpenAPITools/openapi-generator/pull/7476",
-          "title": "[typescript-axios] replace optional-chaining",
-          "label": "OpenAPITools/openapi-generator#7476",
-          "repoUser": "OpenAPITools",
-          "repoName": "openapi-generator",
-          "prId": 7476
-        },
-        {
-          "url": "https://github.com/OpenAPITools/openapi-generator/pull/7475",
-          "title": "[typescript-axios] rename query parameters to avoid collision",
-          "label": "OpenAPITools/openapi-generator#7475",
-          "repoUser": "OpenAPITools",
-          "repoName": "openapi-generator",
-          "prId": 7475
-        },
-        {
-          "url": "https://github.com/OpenAPITools/openapi-generator/pull/6960",
-          "title": "[typescript-axios] switched to new URL API",
-          "label": "OpenAPITools/openapi-generator#6960",
-          "repoUser": "OpenAPITools",
-          "repoName": "openapi-generator",
-          "prId": 6960
-        }
-      ]
-    ],
-    [
       "vuejs/eslint-plugin-vue",
       [
         {
@@ -470,27 +618,6 @@
       ]
     ],
     [
-      "eslint/eslint-release",
-      [
-        {
-          "url": "https://github.com/eslint/eslint-release/pull/48",
-          "title": "Fix: env var names are case-insensitive in windows",
-          "label": "eslint/eslint-release#48",
-          "repoUser": "eslint",
-          "repoName": "eslint-release",
-          "prId": 48
-        },
-        {
-          "url": "https://github.com/eslint/eslint-release/pull/47",
-          "title": "Update: group commits by types in release log (fixes #46)",
-          "label": "eslint/eslint-release#47",
-          "repoUser": "eslint",
-          "repoName": "eslint-release",
-          "prId": 47
-        }
-      ]
-    ],
-    [
       "vuejs/composition-api",
       [
         {
@@ -559,5 +686,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2022-04-15T11:14:18.760Z"
+  "fetchedAt": "2022-04-29T11:19:29.640Z"
 }
