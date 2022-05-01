@@ -23,7 +23,7 @@
   "private": true,
   "devDependencies": {
     "@iconify/json": "^2.1.34",
-    "@types/node": "^16.11.26",
+    "@types/node": "^16.11.32",
     "@types/throttle-debounce": "^2.1.0",
     "@typescript-eslint/eslint-plugin": "^5.17.0",
     "@typescript-eslint/parser": "^5.17.0",
