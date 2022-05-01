@@ -4,6 +4,22 @@
       "vitejs/vite",
       [
         {
+          "url": "https://github.com/vitejs/vite/pull/7965",
+          "title": "chore: bump vue in ssr-vue",
+          "label": "vitejs/vite#7965",
+          "repoUser": "vitejs",
+          "repoName": "vite",
+          "prId": 7965
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/7962",
+          "title": "chore: add core.symlinks description to CONTRIBUTING.md",
+          "label": "vitejs/vite#7962",
+          "repoUser": "vitejs",
+          "repoName": "vite",
+          "prId": 7962
+        },
+        {
           "url": "https://github.com/vitejs/vite/pull/7825",
           "title": "fix: update sourcemap in importAnalysisBuild",
           "label": "vitejs/vite#7825",
@@ -90,6 +106,35 @@
           "repoUser": "vitejs",
           "repoName": "vite",
           "prId": 7073
+        }
+      ]
+    ],
+    [
+      "DefinitelyTyped/DefinitelyTyped",
+      [
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/58609",
+          "title": "pica: updated to v9",
+          "label": "DefinitelyTyped/DefinitelyTyped#58609",
+          "repoUser": "DefinitelyTyped",
+          "repoName": "DefinitelyTyped",
+          "prId": 58609
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/57684",
+          "title": "[styled-components] Fix union type of props being lost",
+          "label": "DefinitelyTyped/DefinitelyTyped#57684",
+          "repoUser": "DefinitelyTyped",
+          "repoName": "DefinitelyTyped",
+          "prId": 57684
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/40647",
+          "title": "Update KaTeX to v0.11.1",
+          "label": "DefinitelyTyped/DefinitelyTyped#40647",
+          "repoUser": "DefinitelyTyped",
+          "repoName": "DefinitelyTyped",
+          "prId": 40647
         }
       ]
     ],
@@ -274,35 +319,6 @@
           "repoUser": "antfu",
           "repoName": "vite-plugin-inspect",
           "prId": 19
-        }
-      ]
-    ],
-    [
-      "DefinitelyTyped/DefinitelyTyped",
-      [
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/58609",
-          "title": "pica: updated to v9",
-          "label": "DefinitelyTyped/DefinitelyTyped#58609",
-          "repoUser": "DefinitelyTyped",
-          "repoName": "DefinitelyTyped",
-          "prId": 58609
-        },
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/57684",
-          "title": "[styled-components] Fix union type of props being lost",
-          "label": "DefinitelyTyped/DefinitelyTyped#57684",
-          "repoUser": "DefinitelyTyped",
-          "repoName": "DefinitelyTyped",
-          "prId": 57684
-        },
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/40647",
-          "title": "Update KaTeX to v0.11.1",
-          "label": "DefinitelyTyped/DefinitelyTyped#40647",
-          "repoUser": "DefinitelyTyped",
-          "repoName": "DefinitelyTyped",
-          "prId": 40647
         }
       ]
     ],
@@ -585,5 +601,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2022-04-29T11:19:29.640Z"
+  "fetchedAt": "2022-05-01T11:14:37.810Z"
 }
