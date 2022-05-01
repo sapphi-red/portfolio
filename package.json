@@ -47,7 +47,7 @@
   },
   "dependencies": {
     "@iconify/iconify": "^2.2.1",
-    "@vueuse/head": "^0.7.5",
+    "@vueuse/head": "^0.7.6",
     "ress": "^5.0.2",
     "throttle-debounce": "^3.0.1",
     "vue": "^3.2.31",
