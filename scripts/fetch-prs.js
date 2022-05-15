@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 import fs from 'fs/promises'
-import { ignoreRepoUser, ignorePRs } from './fetch-prs-config.mjs'
+import { ignoreRepoUser, ignorePRs } from './fetch-prs-config.js'
 
 const URL_PATH = 'https://api.github.com/search/issues'
 

@@ -12,14 +12,14 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['./scripts/**/*.js', './*.js'],
+      files: ['./*.cjs'],
       env: {
         browser: false,
         node: true
       }
     },
     {
-      files: ['./scripts/**/*.mjs', './*.mjs'],
+      files: ['./scripts/**/*.js', './*.js'],
       env: {
         browser: false,
         node: true
@@ -44,7 +44,7 @@ module.exports = {
       files: ['*.vue'],
       extends: [
         'eslint:recommended',
-        './eslint-vue-ts-recommended.js',
+        './eslint-vue-ts-recommended.cjs',
         'plugin:@typescript-eslint/recommended',
         'plugin:vue/vue3-recommended',
         'plugin:prettier/recommended'
