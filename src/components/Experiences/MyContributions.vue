@@ -4,7 +4,10 @@
       {{ repoName }}
       <ul>
         <li v-for="pr in repo" :key="pr.prId">
-          <a :href="pr.url">#{{ pr.prId }}: {{ pr.title }}</a>
+          <a :href="pr.url"
+            ><i>#{{ pr.prId }}</i
+            >: {{ pr.title }}</a
+          >
           <ul v-if="additional[repoName]?.[pr.prId]">
             <li>
               <a :href="additional[repoName]![pr.prId]!.href">
