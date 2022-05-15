@@ -8,7 +8,10 @@
         サークル:
         <a href="https://trap.jp">デジタル創作同好会traP</a>
       </p>
-      <p>フロントエンドを中心にバックエンドとインフラも触ってます。</p>
+      <p>
+        フロントエンドを中心にバックエンドとインフラも少し触ってます。
+        <a href="https://github.com/vitejs/vite">Vite</a>のチームメンバーです。
+      </p>
       <ul>
         <li>
           <a-icon name="github-alt" />
