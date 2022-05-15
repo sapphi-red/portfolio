@@ -90,19 +90,27 @@ const toPRSimpleData = pr => {
   }
 }
 
-const groupByRepo = prs => {
+const groupByRepo = (prs, each) => {
   const repos = {}
   for (const pr of prs) {
     const repo = `${pr.repoUser}/${pr.repoName}`
     if (repos[repo] === undefined) {
       repos[repo] = []
     }
-    repos[repo].push(pr)
+    repos[repo].push(each(pr))
   }
   for (const repo of Object.keys(repos)) {
     repos[repo].sort((a, b) => b.prId - a.prId)
   }
   return Object.entries(repos)
+}
+
+const shrinkData = pr => {
+  return {
+    url: pr.url,
+    title: pr.title,
+    prId: pr.prId
+  }
 }
 
 const rawToData = rawData => {
@@ -112,7 +120,7 @@ const rawToData = rawData => {
       pr => !ignoreRepoUser.includes(pr.repoUser) && !ignorePRs.includes(pr.url)
     )
 
-  const groupedData = groupByRepo(transformedData)
+  const groupedData = groupByRepo(transformedData, shrinkData)
 
   return {
     repos: groupedData,

@@ -6,145 +6,91 @@
         {
           "url": "https://github.com/vitejs/vite/pull/8155",
           "title": "chore(plugin-vue): replace source-map with gen/trace-mapping",
-          "label": "vitejs/vite#8155",
-          "repoUser": "vitejs",
-          "repoName": "vite",
           "prId": 8155
         },
         {
           "url": "https://github.com/vitejs/vite/pull/8110",
           "title": "perf(lib): reduce backtrack when injecting esbuild helpers (fixes #8099)",
-          "label": "vitejs/vite#8110",
-          "repoUser": "vitejs",
-          "repoName": "vite",
           "prId": 8110
         },
         {
           "url": "https://github.com/vitejs/vite/pull/8094",
           "title": "fix: add direct query to html-proxy css (fixes #8091)",
-          "label": "vitejs/vite#8094",
-          "repoUser": "vitejs",
-          "repoName": "vite",
           "prId": 8094
         },
         {
           "url": "https://github.com/vitejs/vite/pull/8022",
           "title": "fix(css): hoist external @import for non-split css",
-          "label": "vitejs/vite#8022",
-          "repoUser": "vitejs",
-          "repoName": "vite",
           "prId": 8022
         },
         {
           "url": "https://github.com/vitejs/vite/pull/7969",
           "title": "fix(css): dynamic import css in package fetches removed js (fixes #7955, #6823)",
-          "label": "vitejs/vite#7969",
-          "repoUser": "vitejs",
-          "repoName": "vite",
           "prId": 7969
         },
         {
           "url": "https://github.com/vitejs/vite/pull/7825",
           "title": "fix: update sourcemap in importAnalysisBuild",
-          "label": "vitejs/vite#7825",
-          "repoUser": "vitejs",
-          "repoName": "vite",
           "prId": 7825
         },
         {
           "url": "https://github.com/vitejs/vite/pull/7816",
           "title": "fix: modulepreload polyfill only during build (fix #4786)",
-          "label": "vitejs/vite#7816",
-          "repoUser": "vitejs",
-          "repoName": "vite",
           "prId": 7816
         },
         {
           "url": "https://github.com/vitejs/vite/pull/7807",
           "title": "fix(css): inline css module when ssr, minify issue (fix #5471)",
-          "label": "vitejs/vite#7807",
-          "repoUser": "vitejs",
-          "repoName": "vite",
           "prId": 7807
         },
         {
           "url": "https://github.com/vitejs/vite/pull/7746",
           "title": "fix(css): preserve dynamic import css code (fix #5348)",
-          "label": "vitejs/vite#7746",
-          "repoUser": "vitejs",
-          "repoName": "vite",
           "prId": 7746
         },
         {
           "url": "https://github.com/vitejs/vite/pull/7591",
           "title": "fix(css): include inline css module in bundle (fix #6984,#7552)",
-          "label": "vitejs/vite#7591",
-          "repoUser": "vitejs",
-          "repoName": "vite",
           "prId": 7591
         },
         {
           "url": "https://github.com/vitejs/vite/pull/7514",
           "title": "fix(plugin-legacy): polyfill latest features",
-          "label": "vitejs/vite#7514",
-          "repoUser": "vitejs",
-          "repoName": "vite",
           "prId": 7514
         },
         {
           "url": "https://github.com/vitejs/vite/pull/7442",
           "title": "fix: sourcemap missing source files warning with cached vue",
-          "label": "vitejs/vite#7442",
-          "repoUser": "vitejs",
-          "repoName": "vite",
           "prId": 7442
         },
         {
           "url": "https://github.com/vitejs/vite/pull/7440",
           "title": "fix: virtual html sourcemap warning",
-          "label": "vitejs/vite#7440",
-          "repoUser": "vitejs",
-          "repoName": "vite",
           "prId": 7440
         },
         {
           "url": "https://github.com/vitejs/vite/pull/7434",
           "title": "fix: inline style css sourcemap",
-          "label": "vitejs/vite#7434",
-          "repoUser": "vitejs",
-          "repoName": "vite",
           "prId": 7434
         },
         {
           "url": "https://github.com/vitejs/vite/pull/7366",
           "title": "fix(config): server restart on config dependencies changed on windows",
-          "label": "vitejs/vite#7366",
-          "repoUser": "vitejs",
-          "repoName": "vite",
           "prId": 7366
         },
         {
           "url": "https://github.com/vitejs/vite/pull/7173",
           "title": "feat: css sourcemap support during dev",
-          "label": "vitejs/vite#7173",
-          "repoUser": "vitejs",
-          "repoName": "vite",
           "prId": 7173
         },
         {
           "url": "https://github.com/vitejs/vite/pull/7098",
           "title": "fix: import with query with exports/browser field",
-          "label": "vitejs/vite#7098",
-          "repoUser": "vitejs",
-          "repoName": "vite",
           "prId": 7098
         },
         {
           "url": "https://github.com/vitejs/vite/pull/7073",
           "title": "fix: import with query with exports field",
-          "label": "vitejs/vite#7073",
-          "repoUser": "vitejs",
-          "repoName": "vite",
           "prId": 7073
         }
       ]
@@ -155,25 +101,16 @@
         {
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/58609",
           "title": "pica: updated to v9",
-          "label": "DefinitelyTyped/DefinitelyTyped#58609",
-          "repoUser": "DefinitelyTyped",
-          "repoName": "DefinitelyTyped",
           "prId": 58609
         },
         {
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/57684",
           "title": "[styled-components] Fix union type of props being lost",
-          "label": "DefinitelyTyped/DefinitelyTyped#57684",
-          "repoUser": "DefinitelyTyped",
-          "repoName": "DefinitelyTyped",
           "prId": 57684
         },
         {
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/40647",
           "title": "Update KaTeX to v0.11.1",
-          "label": "DefinitelyTyped/DefinitelyTyped#40647",
-          "repoUser": "DefinitelyTyped",
-          "repoName": "DefinitelyTyped",
           "prId": 40647
         }
       ]
@@ -184,9 +121,6 @@
         {
           "url": "https://github.com/sindresorhus/log-update/pull/57",
           "title": "Fix `fitTerminalHeight` is not working correctly with color text",
-          "label": "sindresorhus/log-update#57",
-          "repoUser": "sindresorhus",
-          "repoName": "log-update",
           "prId": 57
         }
       ]
@@ -197,9 +131,6 @@
         {
           "url": "https://github.com/bcoe/c8/pull/388",
           "title": "fix(perf): cache `this.exclude.shouldInstrument` for improved performance",
-          "label": "bcoe/c8#388",
-          "repoUser": "bcoe",
-          "repoName": "c8",
           "prId": 388
         }
       ]
@@ -210,9 +141,6 @@
         {
           "url": "https://github.com/antfu/vite-plugin-pwa/pull/244",
           "title": "perf: lazy load workbox-build to reduce config loading time",
-          "label": "antfu/vite-plugin-pwa#244",
-          "repoUser": "antfu",
-          "repoName": "vite-plugin-pwa",
           "prId": 244
         }
       ]
@@ -223,17 +151,11 @@
         {
           "url": "https://github.com/eslint/eslint-release/pull/48",
           "title": "Fix: env var names are case-insensitive in windows",
-          "label": "eslint/eslint-release#48",
-          "repoUser": "eslint",
-          "repoName": "eslint-release",
           "prId": 48
         },
         {
           "url": "https://github.com/eslint/eslint-release/pull/47",
           "title": "Update: group commits by types in release log (fixes #46)",
-          "label": "eslint/eslint-release#47",
-          "repoUser": "eslint",
-          "repoName": "eslint-release",
           "prId": 47
         }
       ]
@@ -244,41 +166,26 @@
         {
           "url": "https://github.com/OpenAPITools/openapi-generator/pull/8283",
           "title": "[typescript-axios] reduce file size",
-          "label": "OpenAPITools/openapi-generator#8283",
-          "repoUser": "OpenAPITools",
-          "repoName": "openapi-generator",
           "prId": 8283
         },
         {
           "url": "https://github.com/OpenAPITools/openapi-generator/pull/7477",
           "title": "[typescript-axios] support \"x-enum-descriptions\"",
-          "label": "OpenAPITools/openapi-generator#7477",
-          "repoUser": "OpenAPITools",
-          "repoName": "openapi-generator",
           "prId": 7477
         },
         {
           "url": "https://github.com/OpenAPITools/openapi-generator/pull/7476",
           "title": "[typescript-axios] replace optional-chaining",
-          "label": "OpenAPITools/openapi-generator#7476",
-          "repoUser": "OpenAPITools",
-          "repoName": "openapi-generator",
           "prId": 7476
         },
         {
           "url": "https://github.com/OpenAPITools/openapi-generator/pull/7475",
           "title": "[typescript-axios] rename query parameters to avoid collision",
-          "label": "OpenAPITools/openapi-generator#7475",
-          "repoUser": "OpenAPITools",
-          "repoName": "openapi-generator",
           "prId": 7475
         },
         {
           "url": "https://github.com/OpenAPITools/openapi-generator/pull/6960",
           "title": "[typescript-axios] switched to new URL API",
-          "label": "OpenAPITools/openapi-generator#6960",
-          "repoUser": "OpenAPITools",
-          "repoName": "openapi-generator",
           "prId": 6960
         }
       ]
@@ -289,25 +196,16 @@
         {
           "url": "https://github.com/vitest-dev/vitest/pull/1070",
           "title": "fix: inconsistency with globTestFiles and isTargetFile (fix #981, #982)",
-          "label": "vitest-dev/vitest#1070",
-          "repoUser": "vitest-dev",
-          "repoName": "vitest",
           "prId": 1070
         },
         {
           "url": "https://github.com/vitest-dev/vitest/pull/878",
           "title": "fix: passing non array to reporters option did not effect",
-          "label": "vitest-dev/vitest#878",
-          "repoUser": "vitest-dev",
-          "repoName": "vitest",
           "prId": 878
         },
         {
           "url": "https://github.com/vitest-dev/vitest/pull/875",
           "title": "fix: handle error during global setup",
-          "label": "vitest-dev/vitest#875",
-          "repoUser": "vitest-dev",
-          "repoName": "vitest",
           "prId": 875
         }
       ]
@@ -318,25 +216,16 @@
         {
           "url": "https://github.com/evanw/esbuild/pull/1758",
           "title": "feat: Shorten \"top\", \"right\"... properties into \"inset\" property",
-          "label": "evanw/esbuild#1758",
-          "repoUser": "evanw",
-          "repoName": "esbuild",
           "prId": 1758
         },
         {
           "url": "https://github.com/evanw/esbuild/pull/1756",
           "title": "feat: minify `font`/`font-family`/`font-weight` CSS property",
-          "label": "evanw/esbuild#1756",
-          "repoUser": "evanw",
-          "repoName": "esbuild",
           "prId": 1756
         },
         {
           "url": "https://github.com/evanw/esbuild/pull/1660",
           "title": "feat: drop catch binding when optional catch binding is supported",
-          "label": "evanw/esbuild#1660",
-          "repoUser": "evanw",
-          "repoName": "esbuild",
           "prId": 1660
         }
       ]
@@ -347,17 +236,11 @@
         {
           "url": "https://github.com/antfu/vite-plugin-inspect/pull/21",
           "title": "feat: show total latency of each plugins",
-          "label": "antfu/vite-plugin-inspect#21",
-          "repoUser": "antfu",
-          "repoName": "vite-plugin-inspect",
           "prId": 21
         },
         {
           "url": "https://github.com/antfu/vite-plugin-inspect/pull/19",
           "title": "perf: Improve diff performance",
-          "label": "antfu/vite-plugin-inspect#19",
-          "repoUser": "antfu",
-          "repoName": "vite-plugin-inspect",
           "prId": 19
         }
       ]
@@ -368,9 +251,6 @@
         {
           "url": "https://github.com/prettier/prettier/pull/11696",
           "title": "Improved performance with large HTML files",
-          "label": "prettier/prettier#11696",
-          "repoUser": "prettier",
-          "repoName": "prettier",
           "prId": 11696
         }
       ]
@@ -381,9 +261,6 @@
         {
           "url": "https://github.com/johnsoncodehk/volar/pull/546",
           "title": "Improve v-for type",
-          "label": "johnsoncodehk/volar#546",
-          "repoUser": "johnsoncodehk",
-          "repoName": "volar",
           "prId": 546
         }
       ]
@@ -394,17 +271,11 @@
         {
           "url": "https://github.com/antfu/vite-ssg/pull/66",
           "title": "feat: support alias with entry",
-          "label": "antfu/vite-ssg#66",
-          "repoUser": "antfu",
-          "repoName": "vite-ssg",
           "prId": 66
         },
         {
           "url": "https://github.com/antfu/vite-ssg/pull/14",
           "title": "fix: config was not applied",
-          "label": "antfu/vite-ssg#14",
-          "repoUser": "antfu",
-          "repoName": "vite-ssg",
           "prId": 14
         }
       ]
@@ -415,17 +286,11 @@
         {
           "url": "https://github.com/vueuse/vueuse/pull/468",
           "title": "feat(toRefs): new function",
-          "label": "vueuse/vueuse#468",
-          "repoUser": "vueuse",
-          "repoName": "vueuse",
           "prId": 468
         },
         {
           "url": "https://github.com/vueuse/vueuse/pull/444",
           "title": "feat(autoResetRef): new function",
-          "label": "vueuse/vueuse#444",
-          "repoUser": "vueuse",
-          "repoName": "vueuse",
           "prId": 444
         }
       ]
@@ -436,17 +301,11 @@
         {
           "url": "https://github.com/windicss/windicss/pull/211",
           "title": "fix: apply --tw-space-*-reverse to child",
-          "label": "windicss/windicss#211",
-          "repoUser": "windicss",
-          "repoName": "windicss",
           "prId": 211
         },
         {
           "url": "https://github.com/windicss/windicss/pull/166",
           "title": "fix: apply placeholder-opacity with placeholder-color",
-          "label": "windicss/windicss#166",
-          "repoUser": "windicss",
-          "repoName": "windicss",
           "prId": 166
         }
       ]
@@ -457,9 +316,6 @@
         {
           "url": "https://github.com/microsoft/vscode-html-languageservice/pull/99",
           "title": "Remove existing attribute from autocomplete suggestions",
-          "label": "microsoft/vscode-html-languageservice#99",
-          "repoUser": "microsoft",
-          "repoName": "vscode-html-languageservice",
           "prId": 99
         }
       ]
@@ -470,33 +326,21 @@
         {
           "url": "https://github.com/vuejs/eslint-plugin-vue/pull/1407",
           "title": "Add composition api's computed function support to vue/no-side-effects-in-computed-properties close #1393",
-          "label": "vuejs/eslint-plugin-vue#1407",
-          "repoUser": "vuejs",
-          "repoName": "eslint-plugin-vue",
           "prId": 1407
         },
         {
           "url": "https://github.com/vuejs/eslint-plugin-vue/pull/1406",
           "title": "Add composition api's computed function support to vue/return-in-computed-property refs #1393",
-          "label": "vuejs/eslint-plugin-vue#1406",
-          "repoUser": "vuejs",
-          "repoName": "eslint-plugin-vue",
           "prId": 1406
         },
         {
           "url": "https://github.com/vuejs/eslint-plugin-vue/pull/1398",
           "title": "Add composition api's computed function support to vue/no-async-in-computed-properties refs #1393",
-          "label": "vuejs/eslint-plugin-vue#1398",
-          "repoUser": "vuejs",
-          "repoName": "eslint-plugin-vue",
           "prId": 1398
         },
         {
           "url": "https://github.com/vuejs/eslint-plugin-vue/pull/1396",
           "title": "Make no-ref-as-operand fixable close #1394",
-          "label": "vuejs/eslint-plugin-vue#1396",
-          "repoUser": "vuejs",
-          "repoName": "eslint-plugin-vue",
           "prId": 1396
         }
       ]
@@ -507,33 +351,21 @@
         {
           "url": "https://github.com/vuejs/vetur/pull/2565",
           "title": "Dont include used attributes in suggestions",
-          "label": "vuejs/vetur#2565",
-          "repoUser": "vuejs",
-          "repoName": "vetur",
           "prId": 2565
         },
         {
           "url": "https://github.com/vuejs/vetur/pull/2558",
           "title": "Custom event auto complete",
-          "label": "vuejs/vetur#2558",
-          "repoUser": "vuejs",
-          "repoName": "vetur",
           "prId": 2558
         },
         {
           "url": "https://github.com/vuejs/vetur/pull/2557",
           "title": "sort attribute suggestion without `:` or `@`",
-          "label": "vuejs/vetur#2557",
-          "repoUser": "vuejs",
-          "repoName": "vetur",
           "prId": 2557
         },
         {
           "url": "https://github.com/vuejs/vetur/pull/2214",
           "title": "Add line break in JSDoc",
-          "label": "vuejs/vetur#2214",
-          "repoUser": "vuejs",
-          "repoName": "vetur",
           "prId": 2214
         }
       ]
@@ -544,17 +376,11 @@
         {
           "url": "https://github.com/vueuse/vue-chemistry/pull/5",
           "title": "refactor!: rename all to index and index to core",
-          "label": "vueuse/vue-chemistry#5",
-          "repoUser": "vueuse",
-          "repoName": "vue-chemistry",
           "prId": 5
         },
         {
           "url": "https://github.com/vueuse/vue-chemistry/pull/2",
           "title": "fix not able to import with 'vue-chemistry'",
-          "label": "vueuse/vue-chemistry#2",
-          "repoUser": "vueuse",
-          "repoName": "vue-chemistry",
           "prId": 2
         }
       ]
@@ -565,9 +391,6 @@
         {
           "url": "https://github.com/antfu/purge-icons/pull/12",
           "title": "fix: add exports field in package.json",
-          "label": "antfu/purge-icons#12",
-          "repoUser": "antfu",
-          "repoName": "purge-icons",
           "prId": 12
         }
       ]
@@ -578,17 +401,11 @@
         {
           "url": "https://github.com/vuejs/composition-api/pull/446",
           "title": "fix PropType",
-          "label": "vuejs/composition-api#446",
-          "repoUser": "vuejs",
-          "repoName": "composition-api",
           "prId": 446
         },
         {
           "url": "https://github.com/vuejs/composition-api/pull/371",
           "title": "reapply #352 and fix test: Remove Function type from PropType type",
-          "label": "vuejs/composition-api#371",
-          "repoUser": "vuejs",
-          "repoName": "composition-api",
           "prId": 371
         }
       ]
@@ -599,9 +416,6 @@
         {
           "url": "https://github.com/protobufjs/protobuf.js/pull/1446",
           "title": "fix: es6 export enum",
-          "label": "protobufjs/protobuf.js#1446",
-          "repoUser": "protobufjs",
-          "repoName": "protobuf.js",
           "prId": 1446
         }
       ]
@@ -612,9 +426,6 @@
         {
           "url": "https://github.com/paroi-tech/direct-vuex/pull/53",
           "title": "Changed state and getters to readonly",
-          "label": "paroi-tech/direct-vuex#53",
-          "repoUser": "paroi-tech",
-          "repoName": "direct-vuex",
           "prId": 53
         }
       ]
@@ -625,17 +436,11 @@
         {
           "url": "https://github.com/tensorflow/tfjs/pull/2543",
           "title": "[WASM] Add Greater, GreaterEqual kernels",
-          "label": "tensorflow/tfjs#2543",
-          "repoUser": "tensorflow",
-          "repoName": "tfjs",
           "prId": 2543
         },
         {
           "url": "https://github.com/tensorflow/tfjs/pull/2528",
           "title": "[wasm] Add Minimum, Maximum kernels",
-          "label": "tensorflow/tfjs#2528",
-          "repoUser": "tensorflow",
-          "repoName": "tfjs",
           "prId": 2528
         }
       ]
