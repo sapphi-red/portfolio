@@ -4,44 +4,12 @@
       "vitejs/vite",
       [
         {
-          "url": "https://github.com/vitejs/vite/pull/8176",
-          "title": "ci: remove mac node18",
-          "label": "vitejs/vite#8176",
-          "repoUser": "vitejs",
-          "repoName": "vite",
-          "prId": 8176
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/8155",
           "title": "chore(plugin-vue): replace source-map with gen/trace-mapping",
           "label": "vitejs/vite#8155",
           "repoUser": "vitejs",
           "repoName": "vite",
           "prId": 8155
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/8154",
-          "title": "chore(plugin-vue): change @rollup/pluginutils to dep from devDep",
-          "label": "vitejs/vite#8154",
-          "repoUser": "vitejs",
-          "repoName": "vite",
-          "prId": 8154
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/8153",
-          "title": "chore: fix repeated error message",
-          "label": "vitejs/vite#8153",
-          "repoUser": "vitejs",
-          "repoName": "vite",
-          "prId": 8153
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/8136",
-          "title": "chore: move mistakenly left playground files",
-          "label": "vitejs/vite#8136",
-          "repoUser": "vitejs",
-          "repoName": "vite",
-          "prId": 8136
         },
         {
           "url": "https://github.com/vitejs/vite/pull/8110",
@@ -52,36 +20,12 @@
           "prId": 8110
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/8108",
-          "title": "test: fix flaky lib test",
-          "label": "vitejs/vite#8108",
-          "repoUser": "vitejs",
-          "repoName": "vite",
-          "prId": 8108
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/8094",
           "title": "fix: add direct query to html-proxy css (fixes #8091)",
           "label": "vitejs/vite#8094",
           "repoUser": "vitejs",
           "repoName": "vite",
           "prId": 8094
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/8087",
-          "title": "test: suppress @vue/reactivity-transform warning",
-          "label": "vitejs/vite#8087",
-          "repoUser": "vitejs",
-          "repoName": "vite",
-          "prId": 8087
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/8086",
-          "title": "chore(plugin-vue-jsx): add peer deps",
-          "label": "vitejs/vite#8086",
-          "repoUser": "vitejs",
-          "repoName": "vite",
-          "prId": 8086
         },
         {
           "url": "https://github.com/vitejs/vite/pull/8022",
@@ -92,68 +36,12 @@
           "prId": 8022
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/8013",
-          "title": "test(css): fix postcss cleanid test",
-          "label": "vitejs/vite#8013",
-          "repoUser": "vitejs",
-          "repoName": "vite",
-          "prId": 8013
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/8010",
-          "title": "chore: remove maybeVirtualHtmlSet",
-          "label": "vitejs/vite#8010",
-          "repoUser": "vitejs",
-          "repoName": "vite",
-          "prId": 8010
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/8007",
-          "title": "docs(plugin-legacy): remove regenerator-runtime note",
-          "label": "vitejs/vite#8007",
-          "repoUser": "vitejs",
-          "repoName": "vite",
-          "prId": 8007
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/7982",
-          "title": "fix(css): sourcemap crash with postcss (fix #7978)",
-          "label": "vitejs/vite#7982",
-          "repoUser": "vitejs",
-          "repoName": "vite",
-          "prId": 7982
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/7969",
           "title": "fix(css): dynamic import css in package fetches removed js (fixes #7955, #6823)",
           "label": "vitejs/vite#7969",
           "repoUser": "vitejs",
           "repoName": "vite",
           "prId": 7969
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/7965",
-          "title": "chore: bump vue in ssr-vue",
-          "label": "vitejs/vite#7965",
-          "repoUser": "vitejs",
-          "repoName": "vite",
-          "prId": 7965
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/7962",
-          "title": "chore: add core.symlinks description to CONTRIBUTING.md",
-          "label": "vitejs/vite#7962",
-          "repoUser": "vitejs",
-          "repoName": "vite",
-          "prId": 7962
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/7827",
-          "title": "fix(css): do not clean id when passing to postcss (fix #7822)",
-          "label": "vitejs/vite#7827",
-          "repoUser": "vitejs",
-          "repoName": "vite",
-          "prId": 7827
         },
         {
           "url": "https://github.com/vitejs/vite/pull/7825",
