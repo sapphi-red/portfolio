@@ -11,7 +11,7 @@ const skills: BarListData = [
   { name: 'Docker', percentage: 65 },
   { name: 'Ansible', percentage: 45 },
   { name: 'Figma', percentage: 45 },
-  { name: 'GitHub Actions', percentage: 35 },
-  { name: '英語 (TOEIC L&R 910)', percentage: 70 }
+  { name: 'GitHub Actions', percentage: 45 },
+  { name: '英語 (TOEIC L&R 925)', percentage: 70 }
 ]
 </script>
