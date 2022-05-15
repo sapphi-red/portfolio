@@ -18,6 +18,7 @@ Vue 2 + Composition API pluginからVue 3に移行しました。
   <li>設定の保存と設定画面の実装</li>
   <li>Badging APIを利用した未読バッジ</li>
   <li>通話機能での音声インジケータ</li>
+  <li>通話機能でのノイズ抑制</li>
   <li>Web Speech APIを利用したメッセージ読み上げ機能</li>
   <li>Web Share Target APIを利用した他アプリの共有ボタンから共有する機能</li>
   <li>各種アニメーション</li>
@@ -322,6 +323,31 @@ tags = [
   [[works.articles]]
   title = '記事: Go制約付き高速JSONエンコーダージェネレータ'
   link = 'https://qiita.com/sapphi-red/items/509bb39f45a7265e928f'
+
+[[works]]
+slug = 'web-noise-suppressor'
+name = 'web-noise-suppressor'
+desc = '''
+Web Audio APIを利用したノイズ抑制ライブラリです。
+traQのフロントエンドでの通話機能(Qall)のノイズ抑制に利用しています。
+'''
+tags = [ 'TypeScript' ]
+
+  [[works.articles]]
+  title = 'traP LT 2022 フロントエンドでのノイズ抑制 (発表アーカイブ)'
+  link = 'https://youtu.be/fUfObA0L9VI?t=2095'
+
+  [[works.articles]]
+  title = 'traP LT 2022 フロントエンドでのノイズ抑制 (スライド)'
+  link = 'https://noise-reduction-slide.sapphi.red/'
+
+  [[works.articles]]
+  title = 'ソースコード'
+  link = 'https://github.com/sapphi-red/web-noise-suppressor'
+
+  [[works.articles]]
+  title = 'npm'
+  link = 'https://www.npmjs.com/package/@sapphi-red/web-noise-suppressor'
 
 [[works]]
 slug = 'hubot-traq'
