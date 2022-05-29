@@ -4,34 +4,9 @@
       "vitejs/vite",
       [
         {
-          "url": "https://github.com/vitejs/vite/pull/8355",
-          "title": "refactor: `ExportData.imports` to `ExportData.hasImports`",
-          "prId": 8355
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/8352",
           "title": "fix: missing types for `es-module-lexer` (fixes #8349)",
           "prId": 8352
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/8346",
-          "title": "chore: remove unused dts from dist",
-          "prId": 8346
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/8343",
-          "title": "fix(optimizer): transpile before calling `transformGlobImport`",
-          "prId": 8343
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/8307",
-          "title": "dx: sourcemap combine debug utils",
-          "prId": 8307
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/8285",
-          "title": "fix(plugin-legacy): prevent failed to load module",
-          "prId": 8285
         },
         {
           "url": "https://github.com/vitejs/vite/pull/8278",
@@ -39,44 +14,14 @@
           "prId": 8278
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/8248",
-          "title": "docs: remove experimental from stabilized apis",
-          "prId": 8248
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/8247",
           "title": "fix(plugin-legacy): respect `entryFileNames` for polyfill chunks",
           "prId": 8247
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/8244",
-          "title": "fix(plugin-legacy): disable babel.compact when minify is disabled",
-          "prId": 8244
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/8227",
-          "title": "fix: rewrite CJS specific funcs/vars in plugins",
-          "prId": 8227
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/8223",
-          "title": "docs: update for default target change",
-          "prId": 8223
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/8219",
           "title": "feat(wasm): new wasm plugin (`.wasm?init`)",
           "prId": 8219
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/8209",
-          "title": "chore: show ws port conflict error",
-          "prId": 8209
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/8197",
-          "title": "test: fix server hmr port conflict",
-          "prId": 8197
         },
         {
           "url": "https://github.com/vitejs/vite/pull/8155",
@@ -97,11 +42,6 @@
           "url": "https://github.com/vitejs/vite/pull/8022",
           "title": "fix(css): hoist external @import for non-split css",
           "prId": 8022
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/7989",
-          "title": "fix(plugin-vue): regenerate scoped css in build watch, fix #7980",
-          "prId": 7989
         },
         {
           "url": "https://github.com/vitejs/vite/pull/7969",
@@ -142,21 +82,6 @@
           "url": "https://github.com/vitejs/vite/pull/7442",
           "title": "fix: sourcemap missing source files warning with cached vue",
           "prId": 7442
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/7440",
-          "title": "fix: virtual html sourcemap warning",
-          "prId": 7440
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/7434",
-          "title": "fix: inline style css sourcemap",
-          "prId": 7434
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/7366",
-          "title": "fix(config): server restart on config dependencies changed on windows",
-          "prId": 7366
         },
         {
           "url": "https://github.com/vitejs/vite/pull/7173",
