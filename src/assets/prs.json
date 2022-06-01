@@ -4,6 +4,46 @@
       "vitejs/vite",
       [
         {
+          "url": "https://github.com/vitejs/vite/pull/8423",
+          "title": "chore: reapply #5930",
+          "prId": 8423
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8422",
+          "title": "docs: add advanced section to migration from v2 guide",
+          "prId": 8422
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8417",
+          "title": "docs: improve migration from v2 guide",
+          "prId": 8417
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8415",
+          "title": "fix: make array `acornInjectPlugins` work (fixes #8410)",
+          "prId": 8415
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8408",
+          "title": "fix(plugin-legacy): modern polyfill latest features (fixes #8399)",
+          "prId": 8408
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8388",
+          "title": "chore: set node/no-unsupported-features version",
+          "prId": 8388
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8387",
+          "title": "fix(plugin-legacy): empty base makes import fail (fixes #4212)",
+          "prId": 8387
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8384",
+          "title": "chore: enable reportUnusedDisableDirectives",
+          "prId": 8384
+        },
+        {
           "url": "https://github.com/vitejs/vite/pull/8352",
           "title": "fix: missing types for `es-module-lexer` (fixes #8349)",
           "prId": 8352
@@ -456,5 +496,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2022-05-29T11:14:44.574Z"
+  "fetchedAt": "2022-06-01T11:16:07.851Z"
 }
