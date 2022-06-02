@@ -25,7 +25,7 @@
   "devDependencies": {
     "@iconify/json": "^2.1.55",
     "@types/node": "^16.11.38",
-    "@types/throttle-debounce": "^4.0.0",
+    "@types/throttle-debounce": "^5.0.0",
     "@typescript-eslint/eslint-plugin": "^5.21.0",
     "@typescript-eslint/parser": "^5.21.0",
     "@typescript/lib-dom": "npm:@types/web@^0.0.60",
@@ -50,7 +50,7 @@
     "@iconify/iconify": "^2.2.1",
     "@vueuse/head": "^0.7.6",
     "ress": "^5.0.2",
-    "throttle-debounce": "^4.0.1",
+    "throttle-debounce": "^5.0.0",
     "vue": "^3.2.36",
     "vue-router": "^4.0.15"
   }
