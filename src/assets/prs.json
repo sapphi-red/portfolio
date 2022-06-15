@@ -4,9 +4,129 @@
       "vitejs/vite",
       [
         {
+          "url": "https://github.com/vitejs/vite/pull/8591",
+          "title": "docs: add some changes to \"Migration from v2\"",
+          "prId": 8591
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8589",
+          "title": "ci: only install chromium for playwright",
+          "prId": 8589
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8585",
+          "title": "chore: enable eslint and prettier cache",
+          "prId": 8585
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8582",
+          "title": "chore: tweak server start output",
+          "prId": 8582
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8569",
+          "title": "chore: remove rollup `namespaceToStringTag`",
+          "prId": 8569
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8568",
+          "title": "fix: mime missing extensions",
+          "prId": 8568
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8543",
+          "title": "fix: default host to `localhost` instead of `127.0.0.1`",
+          "prId": 8543
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8535",
+          "title": "chore: include 2.9.10-2.9.12 changelog in main",
+          "prId": 8535
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8501",
+          "title": "chore(create-vite): add current directory description",
+          "prId": 8501
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8491",
+          "title": "refactor: remove hooks ssr param support",
+          "prId": 8491
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8471",
+          "title": "fix(css): remove `?used` hack (fixes #6421, #8245, #8461)",
+          "prId": 8471
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8459",
+          "title": "fix(optimizer): external require-import conversion (fixes #2492, #3409, #5308)",
+          "prId": 8459
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8453",
+          "title": "chore: generate vite sourcemap when not production",
+          "prId": 8453
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8451",
+          "title": "perf: disable postcss sourcemap when unused",
+          "prId": 8451
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8442",
+          "title": "feat: better config `__dirname` support",
+          "prId": 8442
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8423",
+          "title": "chore: reapply #5930",
+          "prId": 8423
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8422",
+          "title": "docs: add advanced section to migration from v2 guide",
+          "prId": 8422
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8417",
+          "title": "docs: improve migration from v2 guide",
+          "prId": 8417
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8415",
+          "title": "fix: make array `acornInjectPlugins` work (fixes #8410)",
+          "prId": 8415
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8408",
+          "title": "fix(plugin-legacy): modern polyfill latest features (fixes #8399)",
+          "prId": 8408
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8388",
+          "title": "chore: set node/no-unsupported-features version",
+          "prId": 8388
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8387",
+          "title": "fix(plugin-legacy): empty base makes import fail (fixes #4212)",
+          "prId": 8387
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8384",
+          "title": "chore: enable reportUnusedDisableDirectives",
+          "prId": 8384
+        },
+        {
           "url": "https://github.com/vitejs/vite/pull/8352",
           "title": "fix: missing types for `es-module-lexer` (fixes #8349)",
           "prId": 8352
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8312",
+          "title": "refactor(plugin-legacy): improve default polyfill",
+          "prId": 8312
         },
         {
           "url": "https://github.com/vitejs/vite/pull/8278",
@@ -37,6 +157,11 @@
           "url": "https://github.com/vitejs/vite/pull/8094",
           "title": "fix: add direct query to html-proxy css (fixes #8091)",
           "prId": 8094
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8049",
+          "title": "chore: make terser an optional dependency",
+          "prId": 8049
         },
         {
           "url": "https://github.com/vitejs/vite/pull/8022",
@@ -97,6 +222,26 @@
           "url": "https://github.com/vitejs/vite/pull/7073",
           "title": "fix: import with query with exports field",
           "prId": 7073
+        }
+      ]
+    ],
+    [
+      "Rich-Harris/magic-string",
+      [
+        {
+          "url": "https://github.com/Rich-Harris/magic-string/pull/216",
+          "title": "perf: delay guess encoded",
+          "prId": 216
+        }
+      ]
+    ],
+    [
+      "vitejs/docs-ja",
+      [
+        {
+          "url": "https://github.com/vitejs/docs-ja/pull/473",
+          "title": "fix: wasmの訳の修正",
+          "prId": 473
         }
       ]
     ],
@@ -456,5 +601,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2022-05-29T11:14:44.574Z"
+  "fetchedAt": "2022-06-15T11:20:29.138Z"
 }
