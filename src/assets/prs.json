@@ -4,6 +4,156 @@
       "vitejs/vite",
       [
         {
+          "url": "https://github.com/vitejs/vite/pull/8831",
+          "title": "test: fix tailwind playground `server.origin`",
+          "prId": 8831
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8830",
+          "title": "feat: accept AcceptedPlugin type for postcss plugin",
+          "prId": 8830
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8815",
+          "title": "chore: use tsconfig for client build",
+          "prId": 8815
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8808",
+          "title": "fix: incorrectly resolving `knownJsSrcRE` files from root (fixes #4161)",
+          "prId": 8808
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8805",
+          "title": "fix: backport #8804, /@fs/ dir traversal with escaped chars (fixes #8498)",
+          "prId": 8805
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8804",
+          "title": "fix: /@fs/ dir traversal with escaped chars (fixes #8498)",
+          "prId": 8804
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8798",
+          "title": "chore: add dark theme images",
+          "prId": 8798
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8795",
+          "title": "fix(optimizer): only run require-import conversion if require'd",
+          "prId": 8795
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8785",
+          "title": "fix: remove buildTimeImportMetaUrl",
+          "prId": 8785
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8782",
+          "title": "fix: always remove temp config",
+          "prId": 8782
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8761",
+          "title": "fix(hmr): __HMR_PORT__ should not be `'undefined'`",
+          "prId": 8761
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8741",
+          "title": "perf(lib): improve helper inject regex",
+          "prId": 8741
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8737",
+          "title": "feat: enable tree-shaking for lib es",
+          "prId": 8737
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8699",
+          "title": "chore: improve issue templates",
+          "prId": 8699
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8698",
+          "title": "docs: add #8626 to migration guide",
+          "prId": 8698
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8694",
+          "title": "chore: fix \"remove pending triage label\" action",
+          "prId": 8694
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8692",
+          "title": "docs: configure reverse proxy to proxy websocket",
+          "prId": 8692
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8675",
+          "title": "feat: export esbuildVersion and rollupVersion",
+          "prId": 8675
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8674",
+          "title": "fix(plugin-react): set `this-is-undefined-in-esm` to silent if classic runtime (fixes #8644)",
+          "prId": 8674
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8672",
+          "title": "docs: fix node version in \"Migration from v2\"",
+          "prId": 8672
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8660",
+          "title": "fix(plugin-legacy): prevent esbuild injecting arrow function (fixes #8651)",
+          "prId": 8660
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8658",
+          "title": "docs: tweak `voice.svg`",
+          "prId": 8658
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8655",
+          "title": "docs: fix broken links",
+          "prId": 8655
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8654",
+          "title": "fix: revert #5902, fix #8243",
+          "prId": 8654
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8650",
+          "title": "fix: infer hmr ws target by client location",
+          "prId": 8650
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8647",
+          "title": "feat: print resolved address for localhost",
+          "prId": 8647
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8641",
+          "title": "fix: disable inlineDynamicImports for ssr.target = node",
+          "prId": 8641
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8634",
+          "title": "docs: improve wildcard host note",
+          "prId": 8634
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8626",
+          "title": "refactor: type client maps",
+          "prId": 8626
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8599",
+          "title": "ci: cache playwright binary correctly",
+          "prId": 8599
+        },
+        {
           "url": "https://github.com/vitejs/vite/pull/8543",
           "title": "fix: default host to `localhost` instead of `127.0.0.1`",
           "prId": 8543
@@ -17,6 +167,11 @@
           "url": "https://github.com/vitejs/vite/pull/8442",
           "title": "feat: better config `__dirname` support",
           "prId": 8442
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8418",
+          "title": "refactor: rename `force` to `optimizeDeps.force`",
+          "prId": 8418
         },
         {
           "url": "https://github.com/vitejs/vite/pull/8352",
@@ -117,6 +272,76 @@
           "url": "https://github.com/vitejs/vite/pull/7073",
           "title": "fix: import with query with exports field",
           "prId": 7073
+        }
+      ]
+    ],
+    [
+      "preactjs/preset-vite",
+      [
+        {
+          "url": "https://github.com/preactjs/preset-vite/pull/50",
+          "title": "fix: support vite v3",
+          "prId": 50
+        }
+      ]
+    ],
+    [
+      "vitejs/docs-ja",
+      [
+        {
+          "url": "https://github.com/vitejs/docs-ja/pull/538",
+          "title": "fix: 「サーバサイドレンダリング」ページの翻訳の修正",
+          "prId": 538
+        },
+        {
+          "url": "https://github.com/vitejs/docs-ja/pull/537",
+          "title": "fix: 「依存関係の事前バンドル」ページの翻訳の修正",
+          "prId": 537
+        },
+        {
+          "url": "https://github.com/vitejs/docs-ja/pull/536",
+          "title": "fix: 「特徴」ページの翻訳の修正",
+          "prId": 536
+        },
+        {
+          "url": "https://github.com/vitejs/docs-ja/pull/535",
+          "title": "fix: 細かな翻訳の修正/変更",
+          "prId": 535
+        },
+        {
+          "url": "https://github.com/vitejs/docs-ja/pull/507",
+          "title": "docs: Glob Import Asの翻訳の変更",
+          "prId": 507
+        },
+        {
+          "url": "https://github.com/vitejs/docs-ja/pull/474",
+          "title": "docs: migration from v2 guide",
+          "prId": 474
+        }
+      ]
+    ],
+    [
+      "vitejs/vite-ecosystem-ci",
+      [
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/83",
+          "title": "feat: add vite-setup-catalogue",
+          "prId": 83
+        }
+      ]
+    ],
+    [
+      "vuejs/vitepress",
+      [
+        {
+          "url": "https://github.com/vuejs/vitepress/pull/855",
+          "title": "fix: ESM SSR",
+          "prId": 855
+        },
+        {
+          "url": "https://github.com/vuejs/vitepress/pull/831",
+          "title": "chore: handle undefined hmr",
+          "prId": 831
         }
       ]
     ],
@@ -486,5 +711,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2022-06-15T11:20:29.138Z"
+  "fetchedAt": "2022-06-29T11:15:15.447Z"
 }
