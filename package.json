@@ -31,7 +31,7 @@
     "@typescript/lib-dom": "npm:@types/web@^0.0.60",
     "@vitejs/plugin-vue": "^2.3.3",
     "critters": "^0.0.16",
-    "eslint": "^8.18.0",
+    "eslint": "^8.19.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-toml": "0.3.1",
