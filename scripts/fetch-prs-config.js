@@ -6,6 +6,15 @@ export const ignoreRepoUser = [
 ]
 
 export const ignorePRs = [
+  'https://github.com/paroi-tech/direct-vuex/pull/53',
+  'https://github.com/antfu/purge-icons/pull/12',
+  'https://github.com/vueuse/vue-chemistry/pull/2',
+  'https://github.com/vueuse/vue-chemistry/pull/5',
+  'https://github.com/vuejs/vetur/pull/2214',
+  'https://github.com/OpenAPITools/openapi-generator/pull/6960',
+  'https://github.com/OpenAPITools/openapi-generator/pull/7475',
+  'https://github.com/OpenAPITools/openapi-generator/pull/7476',
+  'https://github.com/eslint/eslint-release/pull/48',
   'https://github.com/tensorflow/tfjs/pull/2527',
   'https://github.com/hmsk/vite-plugin-markdown/pull/2',
   'https://github.com/vitejs/awesome-vite/pull/38',
@@ -18,6 +27,7 @@ export const ignorePRs = [
   'https://github.com/vitest-dev/vitest/pull/879',
   'https://github.com/vitest-dev/vitest/pull/1116',
   'https://github.com/vitejs/vite/pull/620',
+  'https://github.com/vitejs/vite/pull/7073',
   'https://github.com/vitejs/vite/pull/7297',
   'https://github.com/vitejs/vite/pull/7298',
   'https://github.com/vitejs/vite/pull/7366',

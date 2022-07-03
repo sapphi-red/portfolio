@@ -137,11 +137,6 @@
           "url": "https://github.com/vitejs/vite/pull/7098",
           "title": "fix: import with query with exports/browser field",
           "prId": 7098
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/7073",
-          "title": "fix: import with query with exports field",
-          "prId": 7073
         }
       ]
     ],
@@ -244,11 +239,6 @@
       "eslint/eslint-release",
       [
         {
-          "url": "https://github.com/eslint/eslint-release/pull/48",
-          "title": "Fix: env var names are case-insensitive in windows",
-          "prId": 48
-        },
-        {
           "url": "https://github.com/eslint/eslint-release/pull/47",
           "title": "Update: group commits by types in release log (fixes #46)",
           "prId": 47
@@ -267,21 +257,6 @@
           "url": "https://github.com/OpenAPITools/openapi-generator/pull/7477",
           "title": "[typescript-axios] support \"x-enum-descriptions\"",
           "prId": 7477
-        },
-        {
-          "url": "https://github.com/OpenAPITools/openapi-generator/pull/7476",
-          "title": "[typescript-axios] replace optional-chaining",
-          "prId": 7476
-        },
-        {
-          "url": "https://github.com/OpenAPITools/openapi-generator/pull/7475",
-          "title": "[typescript-axios] rename query parameters to avoid collision",
-          "prId": 7475
-        },
-        {
-          "url": "https://github.com/OpenAPITools/openapi-generator/pull/6960",
-          "title": "[typescript-axios] switched to new URL API",
-          "prId": 6960
         }
       ]
     ],
@@ -437,36 +412,6 @@
           "url": "https://github.com/vuejs/vetur/pull/2557",
           "title": "sort attribute suggestion without `:` or `@`",
           "prId": 2557
-        },
-        {
-          "url": "https://github.com/vuejs/vetur/pull/2214",
-          "title": "Add line break in JSDoc",
-          "prId": 2214
-        }
-      ]
-    ],
-    [
-      "vueuse/vue-chemistry",
-      [
-        {
-          "url": "https://github.com/vueuse/vue-chemistry/pull/5",
-          "title": "refactor!: rename all to index and index to core",
-          "prId": 5
-        },
-        {
-          "url": "https://github.com/vueuse/vue-chemistry/pull/2",
-          "title": "fix not able to import with 'vue-chemistry'",
-          "prId": 2
-        }
-      ]
-    ],
-    [
-      "antfu/purge-icons",
-      [
-        {
-          "url": "https://github.com/antfu/purge-icons/pull/12",
-          "title": "fix: add exports field in package.json",
-          "prId": 12
         }
       ]
     ],
@@ -492,16 +437,6 @@
           "url": "https://github.com/protobufjs/protobuf.js/pull/1446",
           "title": "fix: es6 export enum",
           "prId": 1446
-        }
-      ]
-    ],
-    [
-      "paroi-tech/direct-vuex",
-      [
-        {
-          "url": "https://github.com/paroi-tech/direct-vuex/pull/53",
-          "title": "Changed state and getters to readonly",
-          "prId": 53
         }
       ]
     ],
