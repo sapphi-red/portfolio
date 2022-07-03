@@ -4,10 +4,12 @@
       {{ repoName }}
       <ul>
         <li v-for="pr in repo" :key="pr.prId">
-          <a :href="pr.url"
-            ><i>#{{ pr.prId }}</i
-            >: {{ pr.title }}</a
-          >
+          <a :href="pr.url">
+            <i>#{{ pr.prId }}</i
+            >:
+            <!-- eslint-disable-next-line vue/no-v-html -->
+            <span v-html="pr.title"></span>
+          </a>
           <ul v-if="additional[repoName]?.[pr.prId]">
             <li>
               <a :href="additional[repoName]![pr.prId]!.href">

@@ -113,12 +113,53 @@ const shrinkData = pr => {
   }
 }
 
+const htmlReplaceRe = /[&<>"]/g
+const htmlReplaceMap = new Map([
+  ['&', '&amp;'],
+  ['<', '&lt;'],
+  ['>', '&gt;'],
+  ['"', '&quot;']
+])
+const escapeHtml = html => {
+  if (htmlReplaceRe.test(html)) {
+    return html.replace(htmlReplaceRe, ch => htmlReplaceMap.get(ch))
+  }
+  return html
+}
+
+const renderTitle = pr => {
+  const title = pr.title
+  let newTitle = ''
+  if (pr.title.includes('`')) {
+    let oldBacktickPos1 = 0 // `があった場所+1の位置
+    let newBacktickPos = title.indexOf('`')
+    let isClose = false
+    while (newBacktickPos !== -1) {
+      newTitle += escapeHtml(title.slice(oldBacktickPos1, newBacktickPos))
+      newTitle += isClose ? '</code>' : '<code>'
+
+      isClose = !isClose
+      oldBacktickPos1 = newBacktickPos + 1
+      newBacktickPos = title.indexOf('`', oldBacktickPos1)
+    }
+    newTitle += escapeHtml(title.slice(oldBacktickPos1))
+  } else {
+    newTitle = escapeHtml(title)
+  }
+
+  return {
+    ...pr,
+    title: newTitle
+  }
+}
+
 const rawToData = rawData => {
   const transformedData = rawData.prs
     .map(pr => toPRSimpleData(pr))
     .filter(
       pr => !ignoreRepoUser.includes(pr.repoUser) && !ignorePRs.includes(pr.url)
     )
+    .map(renderTitle)
 
   const groupedData = groupByRepo(transformedData, shrinkData)
 

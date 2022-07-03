@@ -40,7 +40,7 @@
         },
         {
           "url": "https://github.com/vitejs/vite/pull/8543",
-          "title": "fix: default host to `localhost` instead of `127.0.0.1`",
+          "title": "fix: default host to <code>localhost</code> instead of <code>127.0.0.1</code>",
           "prId": 8543
         },
         {
@@ -50,22 +50,22 @@
         },
         {
           "url": "https://github.com/vitejs/vite/pull/8442",
-          "title": "feat: better config `__dirname` support",
+          "title": "feat: better config <code>__dirname</code> support",
           "prId": 8442
         },
         {
           "url": "https://github.com/vitejs/vite/pull/8352",
-          "title": "fix: missing types for `es-module-lexer` (fixes #8349)",
+          "title": "fix: missing types for <code>es-module-lexer</code> (fixes #8349)",
           "prId": 8352
         },
         {
           "url": "https://github.com/vitejs/vite/pull/8247",
-          "title": "fix(plugin-legacy): respect `entryFileNames` for polyfill chunks",
+          "title": "fix(plugin-legacy): respect <code>entryFileNames</code> for polyfill chunks",
           "prId": 8247
         },
         {
           "url": "https://github.com/vitejs/vite/pull/8219",
-          "title": "feat(wasm): new wasm plugin (`.wasm?init`)",
+          "title": "feat(wasm): new wasm plugin (<code>.wasm?init</code>)",
           "prId": 8219
         },
         {
@@ -210,7 +210,7 @@
       [
         {
           "url": "https://github.com/sindresorhus/log-update/pull/57",
-          "title": "Fix `fitTerminalHeight` is not working correctly with color text",
+          "title": "Fix <code>fitTerminalHeight</code> is not working correctly with color text",
           "prId": 57
         }
       ]
@@ -220,7 +220,7 @@
       [
         {
           "url": "https://github.com/bcoe/c8/pull/388",
-          "title": "fix(perf): cache `this.exclude.shouldInstrument` for improved performance",
+          "title": "fix(perf): cache <code>this.exclude.shouldInstrument</code> for improved performance",
           "prId": 388
         }
       ]
@@ -255,7 +255,7 @@
         },
         {
           "url": "https://github.com/OpenAPITools/openapi-generator/pull/7477",
-          "title": "[typescript-axios] support \"x-enum-descriptions\"",
+          "title": "[typescript-axios] support &quot;x-enum-descriptions&quot;",
           "prId": 7477
         }
       ]
@@ -265,12 +265,12 @@
       [
         {
           "url": "https://github.com/evanw/esbuild/pull/1758",
-          "title": "feat: Shorten \"top\", \"right\"... properties into \"inset\" property",
+          "title": "feat: Shorten &quot;top&quot;, &quot;right&quot;... properties into &quot;inset&quot; property",
           "prId": 1758
         },
         {
           "url": "https://github.com/evanw/esbuild/pull/1756",
-          "title": "feat: minify `font`/`font-family`/`font-weight` CSS property",
+          "title": "feat: minify <code>font</code>/<code>font-family</code>/<code>font-weight</code> CSS property",
           "prId": 1756
         },
         {
@@ -410,7 +410,7 @@
         },
         {
           "url": "https://github.com/vuejs/vetur/pull/2557",
-          "title": "sort attribute suggestion without `:` or `@`",
+          "title": "sort attribute suggestion without <code>:</code> or <code>@</code>",
           "prId": 2557
         }
       ]
