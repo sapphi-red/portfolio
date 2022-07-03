@@ -5,7 +5,7 @@ module.exports = {
     es2017: true,
     es2020: true
   },
-  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
+  extends: ['eslint:recommended', 'prettier'],
   rules: {
     'no-console': 'warn',
     'no-debugger': 'warn'
@@ -33,7 +33,7 @@ module.exports = {
       extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
-        'plugin:prettier/recommended'
+        'prettier'
       ],
       parser: '@typescript-eslint/parser',
       rules: {
@@ -47,7 +47,7 @@ module.exports = {
         './eslint-vue-ts-recommended.cjs',
         'plugin:@typescript-eslint/recommended',
         'plugin:vue/vue3-recommended',
-        'plugin:prettier/recommended'
+        'prettier'
       ],
       parserOptions: {
         parser: '@typescript-eslint/parser'
@@ -69,7 +69,6 @@ module.exports = {
       files: ['*.toml'],
       extends: ['plugin:toml/standard'],
       rules: {
-        'prettier/prettier': 'off',
         'toml/indent': ['error', 2, { subTables: 1 }]
       }
     }

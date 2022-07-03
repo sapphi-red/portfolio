@@ -1,0 +1,7 @@
+.vercel
+.vscode
+/bin
+/dist
+node_modules
+/public
+/src/assets/prs.json

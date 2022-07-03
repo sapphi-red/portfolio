@@ -19,16 +19,10 @@
     "noEmit": true,
     "incremental": true,
     "tsBuildInfoFile": "./node_modules/.tsbuildinfo",
-    "plugins": [
-      { "name": "typescript-plugin-toml" }
-    ],
-    "types": [
-      "vite/client"
-    ],
+    "plugins": [{ "name": "typescript-plugin-toml" }],
+    "types": ["vite/client"],
     "paths": {
-      "/@/*": [
-        "src/*"
-      ]
+      "/@/*": ["src/*"]
     }
   }
 }

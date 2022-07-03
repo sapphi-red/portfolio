@@ -77,7 +77,7 @@ const toPRSimpleData = pr => {
   const url = pr.pull_request.html_url
   const title = pr.title
   const paths = new URL(url).pathname.split('/')
-  // eslint-disable-next-line prettier/prettier
+  // prettier-ignore
   const [, repoUser, repoName, /* pull */, prId] = paths
   const label = `${repoUser}/${repoName}#${prId}`
   return {
