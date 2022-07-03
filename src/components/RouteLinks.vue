@@ -3,6 +3,7 @@
     <router-link
       v-for="r in routeData"
       :key="r.name"
+      class="custom-decoration"
       :class="$style.link"
       :to="{ name: r.name }"
     >

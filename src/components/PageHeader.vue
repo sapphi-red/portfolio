@@ -1,6 +1,6 @@
 <template>
   <header :class="$style.header">
-    <router-link to="/" :class="$style.siteTitle">
+    <router-link to="/" class="custom-decoration" :class="$style.siteTitle">
       green.sapphi.red
     </router-link>
     <route-links :class="$style.routes" />

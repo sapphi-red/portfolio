@@ -71,6 +71,14 @@ $s: 'li';
 
 a {
   color: $link-font-theme;
+  &:not(.custom-decoration) {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline dotted 1.5px;
+      text-decoration-skip-ink: none;
+      text-underline-position: under;
+    }
+  }
 }
 
 code {
