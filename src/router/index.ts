@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 
 import type { Router, RouteRecordRaw } from 'vue-router'
-import { works } from '/@/assets/works'
 
 declare module 'vue-router' {
   interface RouteMeta {
@@ -12,14 +11,6 @@ declare module 'vue-router' {
     transitionMode?: string
   }
 }
-
-const worksRoutes: RouteRecordRaw[] = works.map(work => ({
-  path: `/works/${work.slug}`,
-  name: `work-${work.slug}`,
-  component: () => import('../pages/WorksPage.vue'),
-  props: { workSlug: work.slug },
-  meta: { noScrollReset: true }
-}))
 
 export const routes: RouteRecordRaw[] = [
   {
@@ -51,14 +42,15 @@ export const routes: RouteRecordRaw[] = [
     component: () => import('/@/pages/WorksPage.vue'),
     meta: { showInRoutes: true }
   },
-  ...worksRoutes,
   {
-    path: '/:catchAll(.*)',
-    name: '404-catchall',
-    component: () => import('/@/pages/404Page.vue')
+    path: `/works/:workSlug`,
+    name: `work`,
+    component: () => import('/@/pages/WorksPage.vue'),
+    props: true,
+    meta: { noScrollReset: true }
   },
   {
-    path: '/404',
+    path: '/:catchAll(.*)',
     name: '404',
     component: () => import('/@/pages/404Page.vue')
   }
