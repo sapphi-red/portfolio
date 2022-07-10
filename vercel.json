@@ -20,20 +20,11 @@
       ]
     },
     {
-      "source": "/(sapphi-red.png|magatama-.+\\.svg|noimg.svg)",
+      "source": "/sapphi-red.png",
       "headers": [
         {
           "key": "Cache-Control",
           "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    },
-    {
-      "source": "/works-img/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=3600"
         }
       ]
     }

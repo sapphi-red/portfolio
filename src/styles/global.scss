@@ -59,11 +59,11 @@ $s: 'li';
   #{$s}::before {
     $r: $i % 3;
     @if $r == 0 {
-      background-image: url(/magatama-green.svg);
+      background-image: url('/@/assets/img/magatama-green.svg');
     } @else if $r == 1 {
-      background-image: url(/magatama-blue.svg);
+      background-image: url('/@/assets/img/magatama-blue.svg');
     } @else {
-      background-image: url(/magatama-red.svg);
+      background-image: url('/@/assets/img/magatama-red.svg');
     }
   }
   $s: #{$s 'li'};

@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.container">
     <page-title>404</page-title>
-    <img src="/magatama-green.svg" :class="$style.img" decoding="async" />
+    <img :src="magatamaGreenSvgUrl" :class="$style.img" decoding="async" />
     <div :class="$style.link">
       <router-link to="/">Go to Top</router-link>
     </div>
@@ -11,6 +11,7 @@
 <script lang="ts" setup>
 import PageTitle from '/@/components/UI/PageTitle.vue'
 import { useHead } from '/@/util/head'
+import magatamaGreenSvgUrl from '/@/assets/img/magatama-green.svg'
 
 useHead({
   title: '404'
