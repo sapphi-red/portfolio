@@ -1,28 +1,118 @@
 {
   "repos": [
     [
-      "preactjs/preset-vite",
-      [
-        {
-          "url": "https://github.com/preactjs/preset-vite/pull/50",
-          "title": "fix: support vite v3",
-          "prId": 50
-        }
-      ]
-    ],
-    [
-      "vuejs/vitepress",
-      [
-        {
-          "url": "https://github.com/vuejs/vitepress/pull/855",
-          "title": "fix: ESM SSR",
-          "prId": 855
-        }
-      ]
-    ],
-    [
       "vitejs/vite",
       [
+        {
+          "url": "https://github.com/vitejs/vite/pull/9123",
+          "title": "fix: server.proxy ws error causes crash",
+          "prId": 9123
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9097",
+          "title": "fix: resolve drive relative path",
+          "prId": 9097
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9090",
+          "title": "chore: remove note about v3",
+          "prId": 9090
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9079",
+          "title": "docs: tweak ogp tags",
+          "prId": 9079
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9069",
+          "title": "docs: version toggle label",
+          "prId": 9069
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9053",
+          "title": "chore: include 2.9.13-2.9.14 changelog in main",
+          "prId": 9053
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9041",
+          "title": "fix: remove ws is already closed error",
+          "prId": 9041
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9040",
+          "title": "fix: reload on restart with middleware mode (fixes #9038)",
+          "prId": 9040
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9030",
+          "title": "docs: improve server.host desc in migration guide",
+          "prId": 9030
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9011",
+          "title": "fix(vue): handle undefined on import.meta.hot.accept (fixes #8625)",
+          "prId": 9011
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9007",
+          "title": "feat: show ws connection error and don't reload if ws connection did not success",
+          "prId": 9007
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9006",
+          "title": "fix(react): sourcemap incorrect warning and classic runtime sourcemap",
+          "prId": 9006
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8997",
+          "title": "fix(ssr): fix sourcemap content (fixes #8657)",
+          "prId": 8997
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8994",
+          "title": "refactor(vue): limit passable compilerOptions",
+          "prId": 8994
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8990",
+          "title": "fix: backport #8979, re-encode url to prevent fs.allow bypass (fixes #8498)",
+          "prId": 8990
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8979",
+          "title": "fix: re-encode url to prevent fs.allow bypass (fixes #8498)",
+          "prId": 8979
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8977",
+          "title": "fix(css): backport #8936",
+          "prId": 8977
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8938",
+          "title": "docs: fix <code>build.chunkSizeWarningLimit</code> heading level",
+          "prId": 8938
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8936",
+          "title": "fix(css): always use css module content",
+          "prId": 8936
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8900",
+          "title": "refactor: remove ?used inject in glob plugin",
+          "prId": 8900
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8898",
+          "title": "fix(hmr): set isSelfAccepting unless it is delayed",
+          "prId": 8898
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/8896",
+          "title": "fix: revert #8278",
+          "prId": 8896
+        },
         {
           "url": "https://github.com/vitejs/vite/pull/8741",
           "title": "perf(lib): improve helper inject regex",
@@ -141,6 +231,61 @@
       ]
     ],
     [
+      "vuejs/create-vue",
+      [
+        {
+          "url": "https://github.com/vuejs/create-vue/pull/121",
+          "title": "perf: exclude transpiled prompts code",
+          "prId": 121
+        }
+      ]
+    ],
+    [
+      "DefinitelyTyped/DefinitelyTyped",
+      [
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/60970",
+          "title": "fix(node): <code>fs.cp</code> accepts URL for src and dest",
+          "prId": 60970
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/58609",
+          "title": "pica: updated to v9",
+          "prId": 58609
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/57684",
+          "title": "[styled-components] Fix union type of props being lost",
+          "prId": 57684
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/40647",
+          "title": "Update KaTeX to v0.11.1",
+          "prId": 40647
+        }
+      ]
+    ],
+    [
+      "preactjs/preset-vite",
+      [
+        {
+          "url": "https://github.com/preactjs/preset-vite/pull/50",
+          "title": "fix: support vite v3",
+          "prId": 50
+        }
+      ]
+    ],
+    [
+      "vuejs/vitepress",
+      [
+        {
+          "url": "https://github.com/vuejs/vitepress/pull/855",
+          "title": "fix: ESM SSR",
+          "prId": 855
+        }
+      ]
+    ],
+    [
       "vitejs/docs-ja",
       [
         {
@@ -182,26 +327,6 @@
           "url": "https://github.com/vitest-dev/vitest/pull/875",
           "title": "fix: handle error during global setup",
           "prId": 875
-        }
-      ]
-    ],
-    [
-      "DefinitelyTyped/DefinitelyTyped",
-      [
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/58609",
-          "title": "pica: updated to v9",
-          "prId": 58609
-        },
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/57684",
-          "title": "[styled-components] Fix union type of props being lost",
-          "prId": 57684
-        },
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/40647",
-          "title": "Update KaTeX to v0.11.1",
-          "prId": 40647
         }
       ]
     ],
@@ -456,5 +581,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2022-07-01T11:14:21.264Z"
+  "fetchedAt": "2022-07-15T11:14:18.585Z"
 }
