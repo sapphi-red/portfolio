@@ -14,17 +14,17 @@
       </p>
       <ul>
         <li>
-          <a-icon name="github-alt" />
+          <icon-github-alt />
           GitHub:
           <a href="https://github.com/sapphi-red">@sapphi-red</a>
         </li>
         <li>
-          <a-icon name="twitter-alt" />
+          <icon-twitter-alt />
           Twitter:
           <a href="https://twitter.com/sapphi_red">@sapphi_red</a>
         </li>
         <li>
-          <a-icon name="pen" />
+          <icon-pen />
           traPブログ:
           <a href="https://trap.jp/author/sappi_red">記事一覧</a>
         </li>
@@ -34,7 +34,9 @@
 </template>
 
 <script lang="ts" setup>
-import AIcon from '/@/components/UI/AIcon.vue'
+import IconGithubAlt from '~icons/uil/github-alt'
+import IconTwitterAlt from '~icons/uil/twitter-alt'
+import IconPen from '~icons/uil/pen'
 </script>
 
 <style lang="scss" module>

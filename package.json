@@ -24,7 +24,7 @@
   "homepage": "https://github.com/sapphi-red/portfolio#readme",
   "private": true,
   "devDependencies": {
-    "@iconify/json": "^2.1.71",
+    "@iconify-json/uil": "^1.1.2",
     "@types/node": "^16.11.42",
     "@types/throttle-debounce": "^5.0.0",
     "@typescript-eslint/eslint-plugin": "^5.30.3",
@@ -41,13 +41,12 @@
     "sass": "^1.53.0",
     "typescript": "^4.7.4",
     "typescript-plugin-toml": "^0.2.0",
+    "unplugin-icons": "^0.14.7",
     "vite": "^2.9.13",
-    "vite-plugin-purge-icons": "^0.8.1",
     "vite-plugin-toml": "^0.3.3",
     "vite-ssg": "^0.20.2"
   },
   "dependencies": {
-    "@iconify/iconify": "^2.2.1",
     "@vueuse/head": "^0.7.6",
     "ress": "^5.0.2",
     "throttle-debounce": "^5.0.0",

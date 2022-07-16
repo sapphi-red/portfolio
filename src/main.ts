@@ -4,8 +4,6 @@ import App from './App.vue'
 import { works } from '/@/assets/works'
 import type { RouteRecordRaw } from 'vue-router'
 
-import '@purge-icons/generated'
-
 export const createApp = ViteSSG(App, { routes }, ({ router }) => {
   setRouterNavigationGuards(router)
 })

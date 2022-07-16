@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import path from 'path'
 import Vue from '@vitejs/plugin-vue'
-import PurgeIcons from 'vite-plugin-purge-icons'
+import Icons from 'unplugin-icons/vite'
 import { ViteToml } from 'vite-plugin-toml'
 
 export default defineConfig({
@@ -21,7 +21,14 @@ export default defineConfig({
     },
     devSourcemap: true
   },
-  plugins: [Vue(), PurgeIcons(), ViteToml()],
+  plugins: [
+    Vue(),
+    Icons({
+      scale: 1,
+      defaultClass: 'icon'
+    }),
+    ViteToml()
+  ],
   ssgOptions: {
     script: 'defer'
   }
