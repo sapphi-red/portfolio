@@ -1,117 +1,27 @@
 {
   "repos": [
     [
-      "vitejs/vite",
+      "vuejs/create-vue",
       [
         {
-          "url": "https://github.com/vitejs/vite/pull/9123",
-          "title": "fix: server.proxy ws error causes crash",
-          "prId": 9123
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/9097",
-          "title": "fix: resolve drive relative path",
-          "prId": 9097
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/9090",
-          "title": "chore: remove note about v3",
-          "prId": 9090
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/9079",
-          "title": "docs: tweak ogp tags",
-          "prId": 9079
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/9069",
-          "title": "docs: version toggle label",
-          "prId": 9069
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/9053",
-          "title": "chore: include 2.9.13-2.9.14 changelog in main",
-          "prId": 9053
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/9041",
-          "title": "fix: remove ws is already closed error",
-          "prId": 9041
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/9040",
-          "title": "fix: reload on restart with middleware mode (fixes #9038)",
-          "prId": 9040
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/9030",
-          "title": "docs: improve server.host desc in migration guide",
-          "prId": 9030
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/9011",
-          "title": "fix(vue): handle undefined on import.meta.hot.accept (fixes #8625)",
-          "prId": 9011
-        },
+          "url": "https://github.com/vuejs/create-vue/pull/121",
+          "title": "perf: exclude transpiled prompts code",
+          "prId": 121
+        }
+      ]
+    ],
+    [
+      "vitejs/vite",
+      [
         {
           "url": "https://github.com/vitejs/vite/pull/9007",
           "title": "feat: show ws connection error and don't reload if ws connection did not success",
           "prId": 9007
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/9006",
-          "title": "fix(react): sourcemap incorrect warning and classic runtime sourcemap",
-          "prId": 9006
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/8997",
-          "title": "fix(ssr): fix sourcemap content (fixes #8657)",
-          "prId": 8997
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/8994",
-          "title": "refactor(vue): limit passable compilerOptions",
-          "prId": 8994
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/8990",
-          "title": "fix: backport #8979, re-encode url to prevent fs.allow bypass (fixes #8498)",
-          "prId": 8990
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/8979",
-          "title": "fix: re-encode url to prevent fs.allow bypass (fixes #8498)",
-          "prId": 8979
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/8977",
-          "title": "fix(css): backport #8936",
-          "prId": 8977
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/8938",
-          "title": "docs: fix <code>build.chunkSizeWarningLimit</code> heading level",
-          "prId": 8938
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/8936",
-          "title": "fix(css): always use css module content",
-          "prId": 8936
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/8900",
-          "title": "refactor: remove ?used inject in glob plugin",
-          "prId": 8900
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/8898",
           "title": "fix(hmr): set isSelfAccepting unless it is delayed",
           "prId": 8898
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/8896",
-          "title": "fix: revert #8278",
-          "prId": 8896
         },
         {
           "url": "https://github.com/vitejs/vite/pull/8741",
@@ -227,16 +137,6 @@
           "url": "https://github.com/vitejs/vite/pull/7098",
           "title": "fix: import with query with exports/browser field",
           "prId": 7098
-        }
-      ]
-    ],
-    [
-      "vuejs/create-vue",
-      [
-        {
-          "url": "https://github.com/vuejs/create-vue/pull/121",
-          "title": "perf: exclude transpiled prompts code",
-          "prId": 121
         }
       ]
     ],
