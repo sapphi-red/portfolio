@@ -24,8 +24,5 @@ export default defineConfig({
   plugins: [Vue(), PurgeIcons(), ViteToml()],
   ssgOptions: {
     script: 'defer'
-  },
-  build: {
-    minify: false
   }
 })
