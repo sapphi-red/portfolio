@@ -1,18 +1,98 @@
 {
   "repos": [
     [
-      "vuejs/create-vue",
-      [
-        {
-          "url": "https://github.com/vuejs/create-vue/pull/121",
-          "title": "perf: exclude transpiled prompts code",
-          "prId": 121
-        }
-      ]
-    ],
-    [
       "vitejs/vite",
       [
+        {
+          "url": "https://github.com/vitejs/vite/pull/9401",
+          "title": "fix: inline dynamic imports for ssr-webworker (fixes #9385)",
+          "prId": 9401
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9379",
+          "title": "docs: add troubleshooting page",
+          "prId": 9379
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9337",
+          "title": "docs: <code>resolve.alias</code> for SSR externalized deps",
+          "prId": 9337
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9336",
+          "title": "docs: fix highlight lines",
+          "prId": 9336
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9293",
+          "title": "docs: fix deploy type var again",
+          "prId": 9293
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9290",
+          "title": "docs: fix deploy type var",
+          "prId": 9290
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9263",
+          "title": "docs: show deployed version",
+          "prId": 9263
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9257",
+          "title": "fix: scanner and optimizer should skip wasm",
+          "prId": 9257
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9210",
+          "title": "feat(css): use esbuild.log* options when minifying (fixes #9196)",
+          "prId": 9210
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9193",
+          "title": "fix: return 500 on proxy error only if possible (fixes #9172)",
+          "prId": 9193
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9188",
+          "title": "fix: prevent null pathname error",
+          "prId": 9188
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9175",
+          "title": "fix: return 500 on proxy error only if possible (fixes #9172)",
+          "prId": 9175
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9173",
+          "title": "fix: fs serve only edit pathname (fixes #9148)",
+          "prId": 9173
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9166",
+          "title": "fix: disable keepNames in <code>vite:esbuild</code> (fixes #9164)",
+          "prId": 9166
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9154",
+          "title": "feat: allow declaring <code>__dirname</code> in config",
+          "prId": 9154
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9128",
+          "title": "fix(vue): remove ssr.external config",
+          "prId": 9128
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9124",
+          "title": "fix(ssr): strip NULL_BYTE_PLACEHOLDER before import",
+          "prId": 9124
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9116",
+          "title": "fix: mention that Node.js 13/15 support is dropped (fixes #9113)",
+          "prId": 9116
+        },
         {
           "url": "https://github.com/vitejs/vite/pull/9007",
           "title": "feat: show ws connection error and don't reload if ws connection did not success",
@@ -141,6 +221,126 @@
       ]
     ],
     [
+      "vitejs/docs-ja",
+      [
+        {
+          "url": "https://github.com/vitejs/docs-ja/pull/621",
+          "title": "docs: add #8626 to migration guide",
+          "prId": 621
+        },
+        {
+          "url": "https://github.com/vitejs/docs-ja/pull/620",
+          "title": "fix: infer hmr ws target by client location",
+          "prId": 620
+        },
+        {
+          "url": "https://github.com/vitejs/docs-ja/pull/619",
+          "title": "feat: experimental.buildAdvancedBaseOptions",
+          "prId": 619
+        },
+        {
+          "url": "https://github.com/vitejs/docs-ja/pull/618",
+          "title": "refactor: type client maps",
+          "prId": 618
+        },
+        {
+          "url": "https://github.com/vitejs/docs-ja/pull/617",
+          "title": "feat: print resolved address for localhost",
+          "prId": 617
+        },
+        {
+          "url": "https://github.com/vitejs/docs-ja/pull/616",
+          "title": "fix: disable inlineDynamicImports for ssr.target = node",
+          "prId": 616
+        },
+        {
+          "url": "https://github.com/vitejs/docs-ja/pull/615",
+          "title": "docs: fix broken links",
+          "prId": 615
+        },
+        {
+          "url": "https://github.com/vitejs/docs-ja/pull/595",
+          "title": "docs: improve wildcard host note",
+          "prId": 595
+        },
+        {
+          "url": "https://github.com/vitejs/docs-ja/pull/591",
+          "title": "feat!: appType (spa, mpa, custom), boolean middlewareMode",
+          "prId": 591
+        },
+        {
+          "url": "https://github.com/vitejs/docs-ja/pull/590",
+          "title": "feat: support async plugins",
+          "prId": 590
+        },
+        {
+          "url": "https://github.com/vitejs/docs-ja/pull/474",
+          "title": "docs: migration from v2 guide",
+          "prId": 474
+        }
+      ]
+    ],
+    [
+      "vitejs/vite-ecosystem-ci",
+      [
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/111",
+          "title": "fix: getPermanentRef for refType=tag",
+          "prId": 111
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/110",
+          "title": "refactor: remove perm ref code from setupViteRepo",
+          "prId": 110
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/109",
+          "title": "fix: use abbrev for perm ref",
+          "prId": 109
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/107",
+          "title": "fix: marko test command",
+          "prId": 107
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/106",
+          "title": "chore: use same syntax for list",
+          "prId": 106
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/105",
+          "title": "fix: don't run getPermanentRef when refType is release",
+          "prId": 105
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/102",
+          "title": "Custom discord integration ",
+          "prId": 102
+        }
+      ]
+    ],
+    [
+      "brillout/vite-plugin-ssr",
+      [
+        {
+          "url": "https://github.com/brillout/vite-plugin-ssr/pull/371",
+          "title": "Some changes to make vite-ecosystem-ci pass",
+          "prId": 371
+        }
+      ]
+    ],
+    [
+      "vuejs/create-vue",
+      [
+        {
+          "url": "https://github.com/vuejs/create-vue/pull/121",
+          "title": "perf: exclude transpiled prompts code",
+          "prId": 121
+        }
+      ]
+    ],
+    [
       "DefinitelyTyped/DefinitelyTyped",
       [
         {
@@ -182,16 +382,6 @@
           "url": "https://github.com/vuejs/vitepress/pull/855",
           "title": "fix: ESM SSR",
           "prId": 855
-        }
-      ]
-    ],
-    [
-      "vitejs/docs-ja",
-      [
-        {
-          "url": "https://github.com/vitejs/docs-ja/pull/474",
-          "title": "docs: migration from v2 guide",
-          "prId": 474
         }
       ]
     ],
@@ -481,5 +671,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2022-07-15T11:14:18.585Z"
+  "fetchedAt": "2022-07-29T11:14:42.722Z"
 }
