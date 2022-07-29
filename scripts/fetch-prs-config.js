@@ -5,9 +5,7 @@ export const ignoreRepoUser = [
   'isucon'
 ]
 
-export const ignoreRepo = [
-  'vitejs/docs-ja'
-]
+export const ignoreRepo = ['vitejs/docs-ja']
 
 export const ignorePRs = [
   'https://github.com/paroi-tech/direct-vuex/pull/53',
@@ -156,9 +154,33 @@ export const ignorePRs = [
   'https://github.com/vitejs/vite/pull/9079',
   'https://github.com/vitejs/vite/pull/9090',
   'https://github.com/vitejs/vite/pull/9097',
+  'https://github.com/vitejs/vite/pull/9116',
   'https://github.com/vitejs/vite/pull/9123',
+  'https://github.com/vitejs/vite/pull/9124',
+  'https://github.com/vitejs/vite/pull/9128',
+  'https://github.com/vitejs/vite/pull/9166',
+  'https://github.com/vitejs/vite/pull/9173',
+  'https://github.com/vitejs/vite/pull/9175',
+  'https://github.com/vitejs/vite/pull/9188',
+  'https://github.com/vitejs/vite/pull/9193',
+  'https://github.com/vitejs/vite/pull/9210',
+  'https://github.com/vitejs/vite/pull/9257',
+  'https://github.com/vitejs/vite/pull/9263',
+  'https://github.com/vitejs/vite/pull/9290',
+  'https://github.com/vitejs/vite/pull/9293',
+  'https://github.com/vitejs/vite/pull/9336',
+  'https://github.com/vitejs/vite/pull/9337',
+  'https://github.com/vitejs/vite/pull/9379',
+  'https://github.com/vitejs/vite/pull/9401',
   'https://github.com/evanw/esbuild/pull/2170',
   'https://github.com/hyrious/esbuild-repl/pull/13',
   'https://github.com/vuejs/vitepress/pull/831',
-  'https://github.com/vitejs/vite-ecosystem-ci/pull/83'
+  'https://github.com/vitejs/vite-ecosystem-ci/pull/83',
+  'https://github.com/vitejs/vite-ecosystem-ci/pull/105',
+  'https://github.com/vitejs/vite-ecosystem-ci/pull/106',
+  'https://github.com/vitejs/vite-ecosystem-ci/pull/107',
+  'https://github.com/vitejs/vite-ecosystem-ci/pull/109',
+  'https://github.com/vitejs/vite-ecosystem-ci/pull/110',
+  'https://github.com/vitejs/vite-ecosystem-ci/pull/111',
+  'https://github.com/brillout/vite-plugin-ssr/pull/371'
 ]
