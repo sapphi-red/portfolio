@@ -2,8 +2,8 @@ name: update contributions
 
 on:
   schedule:
-    # 二週間に一回、20時JST
-    - cron: '0 11 */14 * *'
+    # 毎月1日と15日に、20時JST
+    - cron: '0 11 1,15 * *'
   workflow_dispatch:
 
 jobs:
