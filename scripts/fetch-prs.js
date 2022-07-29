@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 import fs from 'fs/promises'
-import { ignoreRepoUser, ignorePRs } from './fetch-prs-config.js'
+import { ignoreRepoUser, ignorePRs, ignoreRepo } from './fetch-prs-config.js'
 
 const URL_PATH = 'https://api.github.com/search/issues'
 
@@ -157,7 +157,10 @@ const rawToData = rawData => {
   const transformedData = rawData.prs
     .map(pr => toPRSimpleData(pr))
     .filter(
-      pr => !ignoreRepoUser.includes(pr.repoUser) && !ignorePRs.includes(pr.url)
+      pr =>
+        !ignoreRepoUser.includes(pr.repoUser) &&
+        !ignoreRepo.includes(`${pr.repoUser}/${pr.repoName}`) &&
+        !ignorePRs.includes(pr.url)
     )
     .map(renderTitle)
 

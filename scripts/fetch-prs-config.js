@@ -5,6 +5,10 @@ export const ignoreRepoUser = [
   'isucon'
 ]
 
+export const ignoreRepo = [
+  'vitejs/docs-ja'
+]
+
 export const ignorePRs = [
   'https://github.com/paroi-tech/direct-vuex/pull/53',
   'https://github.com/antfu/purge-icons/pull/12',
@@ -155,12 +159,6 @@ export const ignorePRs = [
   'https://github.com/vitejs/vite/pull/9123',
   'https://github.com/evanw/esbuild/pull/2170',
   'https://github.com/hyrious/esbuild-repl/pull/13',
-  'https://github.com/vitejs/docs-ja/pull/473',
-  'https://github.com/vitejs/docs-ja/pull/507',
-  'https://github.com/vitejs/docs-ja/pull/535',
-  'https://github.com/vitejs/docs-ja/pull/536',
-  'https://github.com/vitejs/docs-ja/pull/537',
-  'https://github.com/vitejs/docs-ja/pull/538',
   'https://github.com/vuejs/vitepress/pull/831',
   'https://github.com/vitejs/vite-ecosystem-ci/pull/83'
 ]
