@@ -38,7 +38,7 @@
     "eslint-plugin-vue": "^9.1.1",
     "node-fetch": "^3.2.10",
     "prettier": "^2.7.1",
-    "sass": "^1.53.0",
+    "sass": "^1.54.0",
     "typescript": "^4.7.4",
     "typescript-plugin-toml": "^0.2.0",
     "unplugin-icons": "^0.14.8",
