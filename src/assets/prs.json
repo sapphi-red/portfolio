@@ -4,6 +4,31 @@
       "vitejs/vite",
       [
         {
+          "url": "https://github.com/vitejs/vite/pull/9480",
+          "title": "chore: remove unused deps",
+          "prId": 9480
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9473",
+          "title": "fix(config): use file url for import path (fixes #9471)",
+          "prId": 9473
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9468",
+          "title": "chore: tidy up eslint config",
+          "prId": 9468
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9457",
+          "title": "fix: ignore tsconfig target when bundling config",
+          "prId": 9457
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9454",
+          "title": "docs: ESM is always strict mode",
+          "prId": 9454
+        },
+        {
           "url": "https://github.com/vitejs/vite/pull/9154",
           "title": "feat: allow declaring <code>__dirname</code> in config",
           "prId": 9154
@@ -136,8 +161,33 @@
       ]
     ],
     [
+      "histoire-dev/histoire",
+      [
+        {
+          "url": "https://github.com/histoire-dev/histoire/pull/218",
+          "title": "fix: resolve plugin correctly on windows",
+          "prId": 218
+        }
+      ]
+    ],
+    [
+      "Shinigami92/eslint-define-config",
+      [
+        {
+          "url": "https://github.com/Shinigami92/eslint-define-config/pull/120",
+          "title": "Add <code>override.excludedFiles</code>",
+          "prId": 120
+        }
+      ]
+    ],
+    [
       "vitejs/vite-ecosystem-ci",
       [
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/113",
+          "title": "feat: polish discord message",
+          "prId": 113
+        },
         {
           "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/102",
           "title": "Custom discord integration ",
@@ -486,5 +536,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2022-07-29T11:14:42.722Z"
+  "fetchedAt": "2022-08-01T11:02:27.274Z"
 }
