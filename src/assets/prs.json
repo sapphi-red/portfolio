@@ -1,52 +1,12 @@
 {
   "repos": [
     [
-      "madyankin/postcss-modules",
-      [
-        {
-          "url": "https://github.com/madyankin/postcss-modules/pull/135",
-          "title": "fix: composes on windows",
-          "prId": 135
-        },
-        {
-          "url": "https://github.com/madyankin/postcss-modules/pull/134",
-          "title": "chore: update babel to v7",
-          "prId": 134
-        }
-      ]
-    ],
-    [
       "vitejs/vite",
       [
-        {
-          "url": "https://github.com/vitejs/vite/pull/9654",
-          "title": "fix: fs serve only edit pathname (fixes #9148)",
-          "prId": 9654
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/9653",
-          "title": "fix: use browser field if likely esm (fixes #9652)",
-          "prId": 9653
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/9640",
-          "title": "refactor(legacy): remove code for Vite 2",
-          "prId": 9640
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/9610",
-          "title": "fix: json HMR (fixes #9521)",
-          "prId": 9610
-        },
         {
           "url": "https://github.com/vitejs/vite/pull/9609",
           "title": "fix(ssr): rename objectPattern dynamic key (fixes #9585)",
           "prId": 9609
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/9560",
-          "title": "docs: miscellaneous fixes",
-          "prId": 9560
         },
         {
           "url": "https://github.com/vitejs/vite/pull/9547",
@@ -54,34 +14,9 @@
           "prId": 9547
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/9516",
-          "title": "test: refactor test a bit",
-          "prId": 9516
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/9514",
           "title": "chore: node prefix lint",
           "prId": 9514
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/9509",
-          "title": "fix(optimizer): ignore EACCES errors while scanner (fixes #8916)",
-          "prId": 9509
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/9489",
-          "title": "fix: update dep types (fixes #9475)",
-          "prId": 9489
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/9488",
-          "title": "docs: override <code>vite/client</code> type",
-          "prId": 9488
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/9459",
-          "title": "fix: use browser field if it is not likely UMD or CJS (fixes #9445)",
-          "prId": 9459
         },
         {
           "url": "https://github.com/vitejs/vite/pull/9457",
@@ -94,11 +29,6 @@
           "prId": 9381
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/9324",
-          "title": "feat: show warning on 431 response",
-          "prId": 9324
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/9154",
           "title": "feat: allow declaring <code>__dirname</code> in config",
           "prId": 9154
@@ -107,11 +37,6 @@
           "url": "https://github.com/vitejs/vite/pull/9007",
           "title": "feat: show ws connection error and don't reload if ws connection did not success",
           "prId": 9007
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/8939",
-          "title": "docs: update WSL2 watch limitation explanation",
-          "prId": 8939
         },
         {
           "url": "https://github.com/vitejs/vite/pull/8898",
@@ -232,16 +157,6 @@
           "url": "https://github.com/vitejs/vite/pull/7098",
           "title": "fix: import with query with exports/browser field",
           "prId": 7098
-        }
-      ]
-    ],
-    [
-      "histoire-dev/histoire",
-      [
-        {
-          "url": "https://github.com/histoire-dev/histoire/pull/217",
-          "title": "chore: fix vendors windows build",
-          "prId": 217
         }
       ]
     ],
