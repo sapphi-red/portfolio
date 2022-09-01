@@ -4,6 +4,46 @@
       "vitejs/vite",
       [
         {
+          "url": "https://github.com/vitejs/vite/pull/9934",
+          "title": "chore!: bump esbuild to 0.15.6",
+          "prId": 9934
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9914",
+          "title": "fix(css): remove css-post plugin sourcemap",
+          "prId": 9914
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9909",
+          "title": "feat(css): format error",
+          "prId": 9909
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9887",
+          "title": "chore: trigger ecosystem-ci by comment",
+          "prId": 9887
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9881",
+          "title": "refactor(hmr): simplify fetchUpdate",
+          "prId": 9881
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9773",
+          "title": "fix(hmr): duplicated modules because of query params mismatch (fixes #2255)",
+          "prId": 9773
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9768",
+          "title": "chore: output tsconfck debug log",
+          "prId": 9768
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9639",
+          "title": "refactor(legacy): build polyfill chunk",
+          "prId": 9639
+        },
+        {
           "url": "https://github.com/vitejs/vite/pull/9609",
           "title": "fix(ssr): rename objectPattern dynamic key (fixes #9585)",
           "prId": 9609
@@ -32,6 +72,11 @@
           "url": "https://github.com/vitejs/vite/pull/9154",
           "title": "feat: allow declaring <code>__dirname</code> in config",
           "prId": 9154
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9034",
+          "title": "perf: bundle create-vite",
+          "prId": 9034
         },
         {
           "url": "https://github.com/vitejs/vite/pull/9007",
@@ -161,12 +206,17 @@
       ]
     ],
     [
-      "yyx990803/launch-editor",
+      "vitejs/vite-plugin-vue2",
       [
         {
-          "url": "https://github.com/yyx990803/launch-editor/pull/42",
-          "title": "perf: use <code>Get-CimInstance</code> to guess editor on windows",
-          "prId": 42
+          "url": "https://github.com/vitejs/vite-plugin-vue2/pull/30",
+          "title": "refactor: limit passable compilerOptions",
+          "prId": 30
+        },
+        {
+          "url": "https://github.com/vitejs/vite-plugin-vue2/pull/28",
+          "title": "feat!: vite 3",
+          "prId": 28
         }
       ]
     ],
@@ -174,9 +224,39 @@
       "vitejs/vite-ecosystem-ci",
       [
         {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/122",
+          "title": "feat: run from PR comment",
+          "prId": 122
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/120",
+          "title": "feat: vite repo",
+          "prId": 120
+        },
+        {
           "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/102",
           "title": "Custom discord integration ",
           "prId": 102
+        }
+      ]
+    ],
+    [
+      "fb55/entities",
+      [
+        {
+          "url": "https://github.com/fb55/entities/pull/909",
+          "title": "feat: Smaller encode/decode maps",
+          "prId": 909
+        }
+      ]
+    ],
+    [
+      "yyx990803/launch-editor",
+      [
+        {
+          "url": "https://github.com/yyx990803/launch-editor/pull/42",
+          "title": "perf: use <code>Get-CimInstance</code> to guess editor on windows",
+          "prId": 42
         }
       ]
     ],
@@ -521,5 +601,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2022-08-15T11:01:15.985Z"
+  "fetchedAt": "2022-09-01T11:01:14.406Z"
 }
