@@ -24,7 +24,10 @@ const props = defineProps<{
 }>()
 
 // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-constraint
-const hasAny = <T extends unknown>(target: ReadonlyArray<T>, anyOf: ReadonlySet<T>) => {
+const hasAny = <T extends unknown>(
+  target: ReadonlyArray<T>,
+  anyOf: ReadonlySet<T>
+) => {
   for (const t of target) {
     if (anyOf.has(t)) {
       return true
