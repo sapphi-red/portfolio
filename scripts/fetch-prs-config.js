@@ -188,6 +188,11 @@ export const ignorePRs = [
   'https://github.com/vitejs/vite/pull/9640',
   'https://github.com/vitejs/vite/pull/9653',
   'https://github.com/vitejs/vite/pull/9654',
+  'https://github.com/vitejs/vite/pull/9639',
+  'https://github.com/vitejs/vite/pull/9768',
+  'https://github.com/vitejs/vite/pull/9909',
+  'https://github.com/vitejs/vite/pull/9914',
+  'https://github.com/vitejs/vite/pull/9934',
   'https://github.com/evanw/esbuild/pull/2170',
   'https://github.com/hyrious/esbuild-repl/pull/13',
   'https://github.com/vuejs/vitepress/pull/831',
@@ -199,10 +204,13 @@ export const ignorePRs = [
   'https://github.com/vitejs/vite-ecosystem-ci/pull/110',
   'https://github.com/vitejs/vite-ecosystem-ci/pull/111',
   'https://github.com/vitejs/vite-ecosystem-ci/pull/113',
+  'https://github.com/vitejs/vite-ecosystem-ci/pull/122',
   'https://github.com/brillout/vite-plugin-ssr/pull/371',
   'https://github.com/Shinigami92/eslint-define-config/pull/120',
   'https://github.com/histoire-dev/histoire/pull/217',
   'https://github.com/histoire-dev/histoire/pull/218',
   'https://github.com/madyankin/postcss-modules/pull/134',
-  'https://github.com/madyankin/postcss-modules/pull/135'
+  'https://github.com/madyankin/postcss-modules/pull/135',
+  'https://github.com/vitejs/vite-plugin-vue2/pull/28',
+  'https://github.com/vitejs/vite-plugin-vue2/pull/30'
 ]
