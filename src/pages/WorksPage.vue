@@ -23,7 +23,7 @@ const props = defineProps<{
   workSlug?: string
 }>()
 
-const hasAny = <T>(target: ReadonlyArray<T>, anyOf: ReadonlySet<T>) => {
+const hasAny = <T,>(target: ReadonlyArray<T>, anyOf: ReadonlySet<T>) => {
   for (const t of target) {
     if (anyOf.has(t)) {
       return true

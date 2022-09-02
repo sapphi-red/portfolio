@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 
+import type { TransitionProps } from 'vue'
 import type { Router, RouteRecordRaw } from 'vue-router'
 
 declare module 'vue-router' {
@@ -8,7 +9,7 @@ declare module 'vue-router' {
     noScrollReset?: true
 
     transition?: string
-    transitionMode?: string
+    transitionMode?: TransitionProps['mode']
   }
 }
 
