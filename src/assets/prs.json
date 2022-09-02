@@ -4,21 +4,6 @@
       "vitejs/vite",
       [
         {
-          "url": "https://github.com/vitejs/vite/pull/9934",
-          "title": "chore!: bump esbuild to 0.15.6",
-          "prId": 9934
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/9914",
-          "title": "fix(css): remove css-post plugin sourcemap",
-          "prId": 9914
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/9909",
-          "title": "feat(css): format error",
-          "prId": 9909
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/9887",
           "title": "chore: trigger ecosystem-ci by comment",
           "prId": 9887
@@ -32,16 +17,6 @@
           "url": "https://github.com/vitejs/vite/pull/9773",
           "title": "fix(hmr): duplicated modules because of query params mismatch (fixes #2255)",
           "prId": 9773
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/9768",
-          "title": "chore: output tsconfck debug log",
-          "prId": 9768
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/9639",
-          "title": "refactor(legacy): build polyfill chunk",
-          "prId": 9639
         },
         {
           "url": "https://github.com/vitejs/vite/pull/9609",
@@ -206,28 +181,8 @@
       ]
     ],
     [
-      "vitejs/vite-plugin-vue2",
-      [
-        {
-          "url": "https://github.com/vitejs/vite-plugin-vue2/pull/30",
-          "title": "refactor: limit passable compilerOptions",
-          "prId": 30
-        },
-        {
-          "url": "https://github.com/vitejs/vite-plugin-vue2/pull/28",
-          "title": "feat!: vite 3",
-          "prId": 28
-        }
-      ]
-    ],
-    [
       "vitejs/vite-ecosystem-ci",
       [
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/122",
-          "title": "feat: run from PR comment",
-          "prId": 122
-        },
         {
           "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/120",
           "title": "feat: vite repo",
