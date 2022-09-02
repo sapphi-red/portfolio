@@ -11,8 +11,7 @@ const worksImgUrls = import.meta.glob<string>(
 const useWorksImageOrFallback = (work: Ref<Work>): ComputedRef<string> => {
   return computed(
     () =>
-      worksImgUrls[`../../../assets/img/works/${work.value.img}`] ??
-      noimgSvgUrl
+      worksImgUrls[`../../../assets/img/works/${work.value.img}`] ?? noimgSvgUrl
   )
 }
 
