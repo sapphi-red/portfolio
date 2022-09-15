@@ -1,8 +1,48 @@
 {
   "repos": [
     [
+      "antfu/strip-literal",
+      [
+        {
+          "url": "https://github.com/antfu/strip-literal/pull/2",
+          "title": "feat: introduce <code>createIsLiteralPositionAcorn</code> function",
+          "prId": 2
+        }
+      ]
+    ],
+    [
+      "rollup/plugins",
+      [
+        {
+          "url": "https://github.com/rollup/plugins/pull/1260",
+          "title": "chore(repo): correct READMEs, minimatch to picomatch",
+          "prId": 1260
+        }
+      ]
+    ],
+    [
       "vitejs/vite",
       [
+        {
+          "url": "https://github.com/vitejs/vite/pull/10056",
+          "title": "chore: cleanup old changelogs",
+          "prId": 10056
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9971",
+          "title": "fix: prevent error overlay style being overridden (fixes #9969)",
+          "prId": 9971
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9962",
+          "title": "fix(types): mark explicitImportRequired optional and experimental",
+          "prId": 9962
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/9941",
+          "title": "refactor(create-vite): migrate to TypeScript",
+          "prId": 9941
+        },
         {
           "url": "https://github.com/vitejs/vite/pull/9887",
           "title": "chore: trigger ecosystem-ci by comment",
@@ -181,6 +221,21 @@
       ]
     ],
     [
+      "preactjs/preset-vite",
+      [
+        {
+          "url": "https://github.com/preactjs/preset-vite/pull/51",
+          "title": "perf: add entries to optimizeDeps",
+          "prId": 51
+        },
+        {
+          "url": "https://github.com/preactjs/preset-vite/pull/50",
+          "title": "fix: support vite v3",
+          "prId": 50
+        }
+      ]
+    ],
+    [
       "vitejs/vite-ecosystem-ci",
       [
         {
@@ -247,16 +302,6 @@
           "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/40647",
           "title": "Update KaTeX to v0.11.1",
           "prId": 40647
-        }
-      ]
-    ],
-    [
-      "preactjs/preset-vite",
-      [
-        {
-          "url": "https://github.com/preactjs/preset-vite/pull/50",
-          "title": "fix: support vite v3",
-          "prId": 50
         }
       ]
     ],
@@ -556,5 +601,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2022-09-01T11:01:14.406Z"
+  "fetchedAt": "2022-09-15T11:01:27.062Z"
 }
