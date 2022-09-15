@@ -193,6 +193,10 @@ export const ignorePRs = [
   'https://github.com/vitejs/vite/pull/9909',
   'https://github.com/vitejs/vite/pull/9914',
   'https://github.com/vitejs/vite/pull/9934',
+  'https://github.com/vitejs/vite/pull/9941',
+  'https://github.com/vitejs/vite/pull/9962',
+  'https://github.com/vitejs/vite/pull/9971',
+  'https://github.com/vitejs/vite/pull/10056',
   'https://github.com/evanw/esbuild/pull/2170',
   'https://github.com/hyrious/esbuild-repl/pull/13',
   'https://github.com/vuejs/vitepress/pull/831',
@@ -212,5 +216,6 @@ export const ignorePRs = [
   'https://github.com/madyankin/postcss-modules/pull/134',
   'https://github.com/madyankin/postcss-modules/pull/135',
   'https://github.com/vitejs/vite-plugin-vue2/pull/28',
-  'https://github.com/vitejs/vite-plugin-vue2/pull/30'
+  'https://github.com/vitejs/vite-plugin-vue2/pull/30',
+  'https://github.com/rollup/plugins/pull/1260'
 ]

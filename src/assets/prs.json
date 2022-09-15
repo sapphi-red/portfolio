@@ -11,38 +11,23 @@
       ]
     ],
     [
-      "rollup/plugins",
+      "preactjs/preset-vite",
       [
         {
-          "url": "https://github.com/rollup/plugins/pull/1260",
-          "title": "chore(repo): correct READMEs, minimatch to picomatch",
-          "prId": 1260
+          "url": "https://github.com/preactjs/preset-vite/pull/51",
+          "title": "perf: add entries to optimizeDeps",
+          "prId": 51
+        },
+        {
+          "url": "https://github.com/preactjs/preset-vite/pull/50",
+          "title": "fix: support vite v3",
+          "prId": 50
         }
       ]
     ],
     [
       "vitejs/vite",
       [
-        {
-          "url": "https://github.com/vitejs/vite/pull/10056",
-          "title": "chore: cleanup old changelogs",
-          "prId": 10056
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/9971",
-          "title": "fix: prevent error overlay style being overridden (fixes #9969)",
-          "prId": 9971
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/9962",
-          "title": "fix(types): mark explicitImportRequired optional and experimental",
-          "prId": 9962
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/9941",
-          "title": "refactor(create-vite): migrate to TypeScript",
-          "prId": 9941
-        },
         {
           "url": "https://github.com/vitejs/vite/pull/9887",
           "title": "chore: trigger ecosystem-ci by comment",
@@ -217,21 +202,6 @@
           "url": "https://github.com/vitejs/vite/pull/7098",
           "title": "fix: import with query with exports/browser field",
           "prId": 7098
-        }
-      ]
-    ],
-    [
-      "preactjs/preset-vite",
-      [
-        {
-          "url": "https://github.com/preactjs/preset-vite/pull/51",
-          "title": "perf: add entries to optimizeDeps",
-          "prId": 51
-        },
-        {
-          "url": "https://github.com/preactjs/preset-vite/pull/50",
-          "title": "fix: support vite v3",
-          "prId": 50
         }
       ]
     ],
