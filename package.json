@@ -41,7 +41,7 @@
     "sass": "^1.54.8",
     "typescript": "^4.8.4",
     "typescript-plugin-toml": "^0.2.0",
-    "unplugin-icons": "^0.14.8",
+    "unplugin-icons": "^0.14.11",
     "vite": "^3.0.9",
     "vite-plugin-toml": "^0.4.0",
     "vite-ssg": "^0.20.2"
