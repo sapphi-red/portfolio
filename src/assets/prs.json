@@ -1,62 +1,37 @@
 {
   "repos": [
     [
-      "vitejs/vite",
+      "evanw/esbuild",
       [
         {
-          "url": "https://github.com/vitejs/vite/pull/10303",
-          "title": "test: add sugarss sourcemap test",
-          "prId": 10303
+          "url": "https://github.com/evanw/esbuild/pull/2568",
+          "title": "fix transform tsconfigRaw type",
+          "prId": 2568
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/10298",
-          "title": "fix(deps): update rollup to <code>^2.79.1</code>",
-          "prId": 10298
+          "url": "https://github.com/evanw/esbuild/pull/1758",
+          "title": "feat: Shorten &quot;top&quot;, &quot;right&quot;... properties into &quot;inset&quot; property",
+          "prId": 1758
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/10233",
-          "title": "refactor(vue-jsx): remove <code>@babel/plugin-syntax-import-meta</code>",
-          "prId": 10233
+          "url": "https://github.com/evanw/esbuild/pull/1756",
+          "title": "feat: minify <code>font</code>/<code>font-family</code>/<code>font-weight</code> CSS property",
+          "prId": 1756
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/10231",
-          "title": "docs: add trouble shooting section about file protocol",
-          "prId": 10231
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/10230",
-          "title": "docs: place <code>.nojekyll</code> when deploying to GitHub Pages",
-          "prId": 10230
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/10220",
-          "title": "fix(legacy): don't force set <code>build.target</code> when <code>renderLegacyChunks=false</code> (fixes #10201)",
-          "prId": 10220
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/10158",
-          "title": "docs(plugin-legacy): fix Vite default target",
-          "prId": 10158
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/10072",
-          "title": "fix(plugin-legacy): force set <code>build.target</code>",
-          "prId": 10072
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/10071",
-          "title": "fix: respect <code>mainFields</code> when resolving browser/module field (fixes #8659)",
-          "prId": 10071
-        },
+          "url": "https://github.com/evanw/esbuild/pull/1660",
+          "title": "feat: drop catch binding when optional catch binding is supported",
+          "prId": 1660
+        }
+      ]
+    ],
+    [
+      "vitejs/vite",
+      [
         {
           "url": "https://github.com/vitejs/vite/pull/10044",
           "title": "perf: cache compiled glob for <code>server.fs.deny</code>",
           "prId": 10044
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/9966",
-          "title": "refactor(types): bundle client types",
-          "prId": 9966
         },
         {
           "url": "https://github.com/vitejs/vite/pull/9887",
@@ -72,11 +47,6 @@
           "url": "https://github.com/vitejs/vite/pull/9773",
           "title": "fix(hmr): duplicated modules because of query params mismatch (fixes #2255)",
           "prId": 9773
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/9609",
-          "title": "fix(ssr): rename objectPattern dynamic key (fixes #9585)",
-          "prId": 9609
         },
         {
           "url": "https://github.com/vitejs/vite/pull/9547",
@@ -232,31 +202,6 @@
           "url": "https://github.com/vitejs/vite/pull/7098",
           "title": "fix: import with query with exports/browser field",
           "prId": 7098
-        }
-      ]
-    ],
-    [
-      "evanw/esbuild",
-      [
-        {
-          "url": "https://github.com/evanw/esbuild/pull/2568",
-          "title": "fix transform tsconfigRaw type",
-          "prId": 2568
-        },
-        {
-          "url": "https://github.com/evanw/esbuild/pull/1758",
-          "title": "feat: Shorten &quot;top&quot;, &quot;right&quot;... properties into &quot;inset&quot; property",
-          "prId": 1758
-        },
-        {
-          "url": "https://github.com/evanw/esbuild/pull/1756",
-          "title": "feat: minify <code>font</code>/<code>font-family</code>/<code>font-weight</code> CSS property",
-          "prId": 1756
-        },
-        {
-          "url": "https://github.com/evanw/esbuild/pull/1660",
-          "title": "feat: drop catch binding when optional catch binding is supported",
-          "prId": 1660
         }
       ]
     ],
