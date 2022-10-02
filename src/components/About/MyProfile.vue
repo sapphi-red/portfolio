@@ -10,7 +10,8 @@
       </p>
       <p>
         フロントエンドを中心にバックエンドとインフラも少し触ってます。
-        <a href="https://github.com/vitejs/vite">Vite</a>のコアチームメンバーです。
+        <a href="https://github.com/vitejs/vite">Vite</a
+        >のコアチームメンバーです。
       </p>
       <ul>
         <li>
