@@ -3,14 +3,14 @@
     <img :class="$style.icon" src="/sapphi-red.png" decoding="async" />
     <div :class="$style.desc">
       <h3>翠 (みどり)</h3>
-      <p>所属: 東京工業大学 工学院 情報通信系 B4</p>
+      <p>所属: 東京工業大学 工学院 情報通信系 M1</p>
       <p>
         サークル:
         <a href="https://trap.jp">デジタル創作同好会traP</a>
       </p>
       <p>
         フロントエンドを中心にバックエンドとインフラも少し触ってます。
-        <a href="https://github.com/vitejs/vite">Vite</a>のチームメンバーです。
+        <a href="https://github.com/vitejs/vite">Vite</a>のコアチームメンバーです。
       </p>
       <ul>
         <li>
