@@ -1,33 +1,38 @@
 {
   "repos": [
     [
-      "evanw/esbuild",
-      [
-        {
-          "url": "https://github.com/evanw/esbuild/pull/2568",
-          "title": "fix transform tsconfigRaw type",
-          "prId": 2568
-        },
-        {
-          "url": "https://github.com/evanw/esbuild/pull/1758",
-          "title": "feat: Shorten &quot;top&quot;, &quot;right&quot;... properties into &quot;inset&quot; property",
-          "prId": 1758
-        },
-        {
-          "url": "https://github.com/evanw/esbuild/pull/1756",
-          "title": "feat: minify <code>font</code>/<code>font-family</code>/<code>font-weight</code> CSS property",
-          "prId": 1756
-        },
-        {
-          "url": "https://github.com/evanw/esbuild/pull/1660",
-          "title": "feat: drop catch binding when optional catch binding is supported",
-          "prId": 1660
-        }
-      ]
-    ],
-    [
       "vitejs/vite",
       [
+        {
+          "url": "https://github.com/vitejs/vite/pull/10399",
+          "title": "chore: fix vue-ssr test warning",
+          "prId": 10399
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10381",
+          "title": "fix(html): handle attrs with prefix (fixes #10337)",
+          "prId": 10381
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10375",
+          "title": "fix: make client type work with <code>moduleResolution=node16</code>",
+          "prId": 10375
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10374",
+          "title": "feat: update esbuild compilation affecting fields",
+          "prId": 10374
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10347",
+          "title": "fix(config): don't resolve by module field",
+          "prId": 10347
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10299",
+          "title": "fix: add module types",
+          "prId": 10299
+        },
         {
           "url": "https://github.com/vitejs/vite/pull/10044",
           "title": "perf: cache compiled glob for <code>server.fs.deny</code>",
@@ -202,6 +207,31 @@
           "url": "https://github.com/vitejs/vite/pull/7098",
           "title": "fix: import with query with exports/browser field",
           "prId": 7098
+        }
+      ]
+    ],
+    [
+      "evanw/esbuild",
+      [
+        {
+          "url": "https://github.com/evanw/esbuild/pull/2568",
+          "title": "fix transform tsconfigRaw type",
+          "prId": 2568
+        },
+        {
+          "url": "https://github.com/evanw/esbuild/pull/1758",
+          "title": "feat: Shorten &quot;top&quot;, &quot;right&quot;... properties into &quot;inset&quot; property",
+          "prId": 1758
+        },
+        {
+          "url": "https://github.com/evanw/esbuild/pull/1756",
+          "title": "feat: minify <code>font</code>/<code>font-family</code>/<code>font-weight</code> CSS property",
+          "prId": 1756
+        },
+        {
+          "url": "https://github.com/evanw/esbuild/pull/1660",
+          "title": "feat: drop catch binding when optional catch binding is supported",
+          "prId": 1660
         }
       ]
     ],
@@ -576,5 +606,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2022-10-01T11:01:18.192Z"
+  "fetchedAt": "2022-10-15T11:01:07.715Z"
 }
