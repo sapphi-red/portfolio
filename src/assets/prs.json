@@ -1,33 +1,108 @@
 {
   "repos": [
     [
-      "evanw/esbuild",
-      [
-        {
-          "url": "https://github.com/evanw/esbuild/pull/2568",
-          "title": "fix transform tsconfigRaw type",
-          "prId": 2568
-        },
-        {
-          "url": "https://github.com/evanw/esbuild/pull/1758",
-          "title": "feat: Shorten &quot;top&quot;, &quot;right&quot;... properties into &quot;inset&quot; property",
-          "prId": 1758
-        },
-        {
-          "url": "https://github.com/evanw/esbuild/pull/1756",
-          "title": "feat: minify <code>font</code>/<code>font-family</code>/<code>font-weight</code> CSS property",
-          "prId": 1756
-        },
-        {
-          "url": "https://github.com/evanw/esbuild/pull/1660",
-          "title": "feat: drop catch binding when optional catch binding is supported",
-          "prId": 1660
-        }
-      ]
-    ],
-    [
       "vitejs/vite",
       [
+        {
+          "url": "https://github.com/vitejs/vite/pull/10741",
+          "title": "fix(css): url() with variable in sass/less (fixes #3644, #7651)",
+          "prId": 10741
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10740",
+          "title": "chore: fix dev build replacing undefined",
+          "prId": 10740
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10738",
+          "title": "chore: remove non used type definitions",
+          "prId": 10738
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10714",
+          "title": "fix: tsconfig <code>jsx</code> overrides esbuild options, reverts #10374",
+          "prId": 10714
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10705",
+          "title": "fix: remove loaded input sourcemap (fixes #8411)",
+          "prId": 10705
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10704",
+          "title": "test: remove console.log",
+          "prId": 10704
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10703",
+          "title": "chore: remove src/client from package",
+          "prId": 10703
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10684",
+          "title": "fix: prioritize existing env over .env (fixes #10676)",
+          "prId": 10684
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10683",
+          "title": "fix(config): resolve externalized specifier with internal resolver",
+          "prId": 10683
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10678",
+          "title": "fix: remove picomatch type import (fixes #10656)",
+          "prId": 10678
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10614",
+          "title": "fix: revert es-module-lexer version",
+          "prId": 10614
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10577",
+          "title": "fix(css): strip BOM (fixes #10043)",
+          "prId": 10577
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10528",
+          "title": "fix(config): don't use module condition (<code>import.meta.resolve</code>) (fixes #10430)",
+          "prId": 10528
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10496",
+          "title": "fix(legacy): restore entry chunk CSS inlining, reverts #9761",
+          "prId": 10496
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10399",
+          "title": "chore: fix vue-ssr test warning",
+          "prId": 10399
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10381",
+          "title": "fix(html): handle attrs with prefix (fixes #10337)",
+          "prId": 10381
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10375",
+          "title": "fix: make client type work with <code>moduleResolution=node16</code>",
+          "prId": 10375
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10374",
+          "title": "feat: update esbuild compilation affecting fields",
+          "prId": 10374
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10347",
+          "title": "fix(config): don't resolve by module field",
+          "prId": 10347
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10299",
+          "title": "fix: add module types",
+          "prId": 10299
+        },
         {
           "url": "https://github.com/vitejs/vite/pull/10044",
           "title": "perf: cache compiled glob for <code>server.fs.deny</code>",
@@ -206,6 +281,56 @@
       ]
     ],
     [
+      "vitejs/vite-ecosystem-ci",
+      [
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/140",
+          "title": "chore: switch to eslint-plugin-n",
+          "prId": 140
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/139",
+          "title": "feat: group command output in GitHub Actions",
+          "prId": 139
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/120",
+          "title": "feat: vite repo",
+          "prId": 120
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/102",
+          "title": "Custom discord integration ",
+          "prId": 102
+        }
+      ]
+    ],
+    [
+      "evanw/esbuild",
+      [
+        {
+          "url": "https://github.com/evanw/esbuild/pull/2568",
+          "title": "fix transform tsconfigRaw type",
+          "prId": 2568
+        },
+        {
+          "url": "https://github.com/evanw/esbuild/pull/1758",
+          "title": "feat: Shorten &quot;top&quot;, &quot;right&quot;... properties into &quot;inset&quot; property",
+          "prId": 1758
+        },
+        {
+          "url": "https://github.com/evanw/esbuild/pull/1756",
+          "title": "feat: minify <code>font</code>/<code>font-family</code>/<code>font-weight</code> CSS property",
+          "prId": 1756
+        },
+        {
+          "url": "https://github.com/evanw/esbuild/pull/1660",
+          "title": "feat: drop catch binding when optional catch binding is supported",
+          "prId": 1660
+        }
+      ]
+    ],
+    [
       "antfu/strip-literal",
       [
         {
@@ -227,21 +352,6 @@
           "url": "https://github.com/preactjs/preset-vite/pull/50",
           "title": "fix: support vite v3",
           "prId": 50
-        }
-      ]
-    ],
-    [
-      "vitejs/vite-ecosystem-ci",
-      [
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/120",
-          "title": "feat: vite repo",
-          "prId": 120
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/102",
-          "title": "Custom discord integration ",
-          "prId": 102
         }
       ]
     ],
@@ -576,5 +686,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2022-10-01T11:01:18.192Z"
+  "fetchedAt": "2022-11-01T11:02:06.299Z"
 }
