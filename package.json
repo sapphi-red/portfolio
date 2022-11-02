@@ -44,7 +44,7 @@
     "unplugin-icons": "^0.14.11",
     "vite": "^3.1.4",
     "vite-plugin-toml": "^0.4.0",
-    "vite-ssg": "^0.20.2"
+    "vite-ssg": "^0.21.2"
   },
   "dependencies": {
     "@vueuse/head": "^0.7.9",
