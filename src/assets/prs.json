@@ -4,6 +4,46 @@
       "vitejs/vite",
       [
         {
+          "url": "https://github.com/vitejs/vite/pull/10920",
+          "title": "fix(vue): skip url query request (fixes #10863)",
+          "prId": 10920
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10905",
+          "title": "perf: regexp perf issues, refactor regexp stylistic issues",
+          "prId": 10905
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10904",
+          "title": "fix(types): remove <code>null</code> from <code>CSSModulesOptions.localsConvention</code>",
+          "prId": 10904
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10903",
+          "title": "refactor(types)!: remove facade type files",
+          "prId": 10903
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10902",
+          "title": "chore: cleanup PluginContext Omit",
+          "prId": 10902
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10831",
+          "title": "docs: expand <code>server.proxy</code> description",
+          "prId": 10831
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10830",
+          "title": "docs(plugin-vue): add link to plugin-vue-jsx",
+          "prId": 10830
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10801",
+          "title": "refactor: change style.innerHTML to style.textContent",
+          "prId": 10801
+        },
+        {
           "url": "https://github.com/vitejs/vite/pull/10741",
           "title": "fix(css): url() with variable in sass/less (fixes #3644, #7651)",
           "prId": 10741
@@ -27,6 +67,11 @@
           "url": "https://github.com/vitejs/vite/pull/10678",
           "title": "fix: remove picomatch type import (fixes #10656)",
           "prId": 10678
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10554",
+          "title": "test: fix ssr-vue server.js / prerender.js",
+          "prId": 10554
         },
         {
           "url": "https://github.com/vitejs/vite/pull/10044",
@@ -202,6 +247,41 @@
           "url": "https://github.com/vitejs/vite/pull/7098",
           "title": "fix: import with query with exports/browser field",
           "prId": 7098
+        }
+      ]
+    ],
+    [
+      "vuejs/core",
+      [
+        {
+          "url": "https://github.com/vuejs/core/pull/2818",
+          "title": "fix(runtime-core): force evalutating SetupContext type (fix #2362)",
+          "prId": 2818
+        }
+      ]
+    ],
+    [
+      "kekee000/fonteditor-core",
+      [
+        {
+          "url": "https://github.com/kekee000/fonteditor-core/pull/47",
+          "title": "Fix parsing cmap subtable format 14",
+          "prId": 47
+        }
+      ]
+    ],
+    [
+      "bluwy/publint",
+      [
+        {
+          "url": "https://github.com/bluwy/publint/pull/8",
+          "title": "Support more repo URL formats",
+          "prId": 8
+        },
+        {
+          "url": "https://github.com/bluwy/publint/pull/7",
+          "title": "Fix publint dep version in site/package.json",
+          "prId": 7
         }
       ]
     ],
@@ -601,5 +681,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2022-11-01T11:02:06.299Z"
+  "fetchedAt": "2022-11-15T11:01:11.713Z"
 }
