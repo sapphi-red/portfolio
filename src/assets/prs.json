@@ -4,6 +4,61 @@
       "vitejs/vite",
       [
         {
+          "url": "https://github.com/vitejs/vite/pull/11128",
+          "title": "chore(create-vite): align vue template with create-vue",
+          "prId": 11128
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11123",
+          "title": "fix: Dev SSR dep optimization + respect optimizeDeps.include",
+          "prId": 11123
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11122",
+          "title": "fix(importGlob): preserve line count for sourcemap",
+          "prId": 11122
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11121",
+          "title": "fix(importGlob): don't warn when CSS default import is not used",
+          "prId": 11121
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11078",
+          "title": "test: extend react-env timeout",
+          "prId": 11078
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11077",
+          "title": "test: reduce ssr-react playground flakiness",
+          "prId": 11077
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11076",
+          "title": "test: reduce ssr-vue playground flakiness",
+          "prId": 11076
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11075",
+          "title": "test: reduce hmr test flakiness",
+          "prId": 11075
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11058",
+          "title": "fix(worker): disable build reporter plugin when bundling worker",
+          "prId": 11058
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11057",
+          "title": "fix(ssr): preserve require for external node",
+          "prId": 11057
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10964",
+          "title": "refactor: import version from rollup",
+          "prId": 10964
+        },
+        {
           "url": "https://github.com/vitejs/vite/pull/10920",
           "title": "fix(vue): skip url query request (fixes #10863)",
           "prId": 10920
@@ -37,6 +92,11 @@
           "url": "https://github.com/vitejs/vite/pull/10678",
           "title": "fix: remove picomatch type import (fixes #10656)",
           "prId": 10678
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10406",
+          "title": "fix: preserve default export from externalized packages (fixes #10258)",
+          "prId": 10406
         },
         {
           "url": "https://github.com/vitejs/vite/pull/10044",
@@ -212,6 +272,36 @@
           "url": "https://github.com/vitejs/vite/pull/7098",
           "title": "fix: import with query with exports/browser field",
           "prId": 7098
+        }
+      ]
+    ],
+    [
+      "nodejs/node",
+      [
+        {
+          "url": "https://github.com/nodejs/node/pull/45280",
+          "title": "doc: fix RESOLVE_ESM_MATCH in modules.md",
+          "prId": 45280
+        }
+      ]
+    ],
+    [
+      "rollup/plugins",
+      [
+        {
+          "url": "https://github.com/rollup/plugins/pull/1332",
+          "title": "docs(json): correct minimatch to picomatch",
+          "prId": 1332
+        }
+      ]
+    ],
+    [
+      "withastro/astro",
+      [
+        {
+          "url": "https://github.com/withastro/astro/pull/5480",
+          "title": "Fix astro preview not working on Windows",
+          "prId": 5480
         }
       ]
     ],
@@ -621,5 +711,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2022-11-15T11:01:11.713Z"
+  "fetchedAt": "2022-12-01T11:00:48.610Z"
 }
