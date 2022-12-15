@@ -4,19 +4,149 @@
       "vitejs/vite",
       [
         {
-          "url": "https://github.com/vitejs/vite/pull/11128",
-          "title": "chore(create-vite): align vue template with create-vue",
-          "prId": 11128
+          "url": "https://github.com/vitejs/vite/pull/11369",
+          "title": "test(css): improve test around deprecated default/named import",
+          "prId": 11369
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/11123",
-          "title": "fix: Dev SSR dep optimization + respect optimizeDeps.include",
-          "prId": 11123
+          "url": "https://github.com/vitejs/vite/pull/11337",
+          "title": "fix: respect base when using <code>/__open-in-editor</code>",
+          "prId": 11337
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/11122",
-          "title": "fix(importGlob): preserve line count for sourcemap",
-          "prId": 11122
+          "url": "https://github.com/vitejs/vite/pull/11334",
+          "title": "feat(html): clickable error position for html parse error",
+          "prId": 11334
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11326",
+          "title": "chore: enable <code>@typescript-eslint/ban-ts-comment</code>",
+          "prId": 11326
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11319",
+          "title": "feat: show server url by pressing <code>u</code>",
+          "prId": 11319
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11316",
+          "title": "test: fix custom serve teardown",
+          "prId": 11316
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11315",
+          "title": "test: run preview.headers test",
+          "prId": 11315
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11312",
+          "title": "fix: preview fallback",
+          "prId": 11312
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11311",
+          "title": "chore: fix format",
+          "prId": 11311
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11301",
+          "title": "fix: derive <code>useDefineForClassFields</code> value from <code>tsconfig.compilerOptions.target</code> (fixes #10296)",
+          "prId": 11301
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11265",
+          "title": "chore: update esbuild to 0.16.2",
+          "prId": 11265
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11261",
+          "title": "chore: add <code>\\0</code> to virtual files id",
+          "prId": 11261
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11255",
+          "title": "ci: use node18 for windows/mac",
+          "prId": 11255
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11254",
+          "title": "ci: fix playwright cache",
+          "prId": 11254
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11253",
+          "title": "test: fix postcss-caching test flakiness",
+          "prId": 11253
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11252",
+          "title": "test: fix preload flakiness",
+          "prId": 11252
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11251",
+          "title": "refactor(optimizer): await depsOptimizer.scanProcessing",
+          "prId": 11251
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11250",
+          "title": "fix(optimizer): escape entrypoints when running scanner",
+          "prId": 11250
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11242",
+          "title": "fix: await scanner",
+          "prId": 11242
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11239",
+          "title": "test: skip multiple-entrypoint playground for now",
+          "prId": 11239
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11235",
+          "title": "chore(deps)!: update esbuild to 0.16.1",
+          "prId": 11235
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11212",
+          "title": "chore: add .git-blame-ignore-revs",
+          "prId": 11212
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11196",
+          "title": "docs: add link to v3 docs",
+          "prId": 11196
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11195",
+          "title": "chore: update @types/node to v18",
+          "prId": 11195
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11177",
+          "title": "test: remove jsx plugin from worker playground",
+          "prId": 11177
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11176",
+          "title": "test: migrate file-delete-restore playground test to hmr playground",
+          "prId": 11176
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11174",
+          "title": "test: improve <code>css-dynamic-import</code> playground test code",
+          "prId": 11174
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11173",
+          "title": "test: fix <code>css-dynamic-import</code> playground flakiness",
+          "prId": 11173
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11172",
+          "title": "chore: rename test packages",
+          "prId": 11172
         },
         {
           "url": "https://github.com/vitejs/vite/pull/11121",
@@ -24,39 +154,14 @@
           "prId": 11121
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/11078",
-          "title": "test: extend react-env timeout",
-          "prId": 11078
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/11077",
-          "title": "test: reduce ssr-react playground flakiness",
-          "prId": 11077
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/11076",
-          "title": "test: reduce ssr-vue playground flakiness",
-          "prId": 11076
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/11075",
-          "title": "test: reduce hmr test flakiness",
-          "prId": 11075
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/11058",
-          "title": "fix(worker): disable build reporter plugin when bundling worker",
-          "prId": 11058
+          "url": "https://github.com/vitejs/vite/pull/11070",
+          "title": "fix(ssr): skip rewriting stack trace if it's already rewritten (fixes #11037)",
+          "prId": 11070
         },
         {
           "url": "https://github.com/vitejs/vite/pull/11057",
           "title": "fix(ssr): preserve require for external node",
           "prId": 11057
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/10964",
-          "title": "refactor: import version from rollup",
-          "prId": 10964
         },
         {
           "url": "https://github.com/vitejs/vite/pull/10920",
@@ -276,22 +381,137 @@
       ]
     ],
     [
+      "DefinitelyTyped/DefinitelyTyped",
+      [
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/63573",
+          "title": "update convert-source-map to v2",
+          "prId": 63573
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/60970",
+          "title": "fix(node): <code>fs.cp</code> accepts URL for src and dest",
+          "prId": 60970
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/58609",
+          "title": "pica: updated to v9",
+          "prId": 58609
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/57684",
+          "title": "[styled-components] Fix union type of props being lost",
+          "prId": 57684
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/40647",
+          "title": "Update KaTeX to v0.11.1",
+          "prId": 40647
+        }
+      ]
+    ],
+    [
+      "vuejs/vitepress",
+      [
+        {
+          "url": "https://github.com/vuejs/vitepress/pull/1693",
+          "title": "docs: remove <code>OutboundLink</code>",
+          "prId": 1693
+        },
+        {
+          "url": "https://github.com/vuejs/vitepress/pull/855",
+          "title": "fix: ESM SSR",
+          "prId": 855
+        }
+      ]
+    ],
+    [
+      "vitejs/vite-ecosystem-ci",
+      [
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/175",
+          "title": "fix: use pathToFileURL for windows",
+          "prId": 175
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/139",
+          "title": "feat: group command output in GitHub Actions",
+          "prId": 139
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/120",
+          "title": "feat: vite repo",
+          "prId": 120
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/102",
+          "title": "Custom discord integration ",
+          "prId": 102
+        }
+      ]
+    ],
+    [
+      "vitejs/vite-plugin-vue",
+      [
+        {
+          "url": "https://github.com/vitejs/vite-plugin-vue/pull/39",
+          "title": "chore: add .git-blame-ignore-revs",
+          "prId": 39
+        },
+        {
+          "url": "https://github.com/vitejs/vite-plugin-vue/pull/38",
+          "title": "chore: rename test packages",
+          "prId": 38
+        },
+        {
+          "url": "https://github.com/vitejs/vite-plugin-vue/pull/37",
+          "title": "chore: enable prettier trailing commas",
+          "prId": 37
+        },
+        {
+          "url": "https://github.com/vitejs/vite-plugin-vue/pull/20",
+          "title": "chore: update issue template",
+          "prId": 20
+        }
+      ]
+    ],
+    [
+      "vitejs/vite-plugin-react",
+      [
+        {
+          "url": "https://github.com/vitejs/vite-plugin-react/pull/39",
+          "title": "chore: rename test packages",
+          "prId": 39
+        },
+        {
+          "url": "https://github.com/vitejs/vite-plugin-react/pull/25",
+          "title": "chore: update issue template",
+          "prId": 25
+        }
+      ]
+    ],
+    [
+      "Rich-Harris/magic-string",
+      [
+        {
+          "url": "https://github.com/Rich-Harris/magic-string/pull/216",
+          "title": "perf: delay guess encoded",
+          "prId": 216
+        },
+        {
+          "url": "https://github.com/Rich-Harris/magic-string/pull/215",
+          "title": "perf: use <code>@jridgewell/sourcemap-codec</code>",
+          "prId": 215
+        }
+      ]
+    ],
+    [
       "nodejs/node",
       [
         {
           "url": "https://github.com/nodejs/node/pull/45280",
           "title": "doc: fix RESOLVE_ESM_MATCH in modules.md",
           "prId": 45280
-        }
-      ]
-    ],
-    [
-      "rollup/plugins",
-      [
-        {
-          "url": "https://github.com/rollup/plugins/pull/1332",
-          "title": "docs(json): correct minimatch to picomatch",
-          "prId": 1332
         }
       ]
     ],
@@ -312,26 +532,6 @@
           "url": "https://github.com/kekee000/fonteditor-core/pull/47",
           "title": "Fix parsing cmap subtable format 14",
           "prId": 47
-        }
-      ]
-    ],
-    [
-      "vitejs/vite-ecosystem-ci",
-      [
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/139",
-          "title": "feat: group command output in GitHub Actions",
-          "prId": 139
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/120",
-          "title": "feat: vite repo",
-          "prId": 120
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/102",
-          "title": "Custom discord integration ",
-          "prId": 102
         }
       ]
     ],
@@ -387,51 +587,6 @@
           "url": "https://github.com/vuejs/create-vue/pull/121",
           "title": "perf: exclude transpiled prompts code",
           "prId": 121
-        }
-      ]
-    ],
-    [
-      "DefinitelyTyped/DefinitelyTyped",
-      [
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/60970",
-          "title": "fix(node): <code>fs.cp</code> accepts URL for src and dest",
-          "prId": 60970
-        },
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/58609",
-          "title": "pica: updated to v9",
-          "prId": 58609
-        },
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/57684",
-          "title": "[styled-components] Fix union type of props being lost",
-          "prId": 57684
-        },
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/40647",
-          "title": "Update KaTeX to v0.11.1",
-          "prId": 40647
-        }
-      ]
-    ],
-    [
-      "vuejs/vitepress",
-      [
-        {
-          "url": "https://github.com/vuejs/vitepress/pull/855",
-          "title": "fix: ESM SSR",
-          "prId": 855
-        }
-      ]
-    ],
-    [
-      "Rich-Harris/magic-string",
-      [
-        {
-          "url": "https://github.com/Rich-Harris/magic-string/pull/216",
-          "title": "perf: delay guess encoded",
-          "prId": 216
         }
       ]
     ],
@@ -711,5 +866,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2022-12-01T11:00:48.610Z"
+  "fetchedAt": "2022-12-15T11:00:43.452Z"
 }
