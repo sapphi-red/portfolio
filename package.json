@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite-ssg build",
     "preview": "vite preview",
-    "lint": "eslint --cache --ext .js,.ts,.vue,.toml .",
+    "lint": "eslint --cache .",
     "format": "prettier --write --cache .",
     "update-pr-data": "node scripts/fetch-prs.js",
     "create-pr-data": "node scripts/fetch-prs.js withoutCache",

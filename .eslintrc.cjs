@@ -35,7 +35,6 @@ module.exports = {
         'plugin:@typescript-eslint/recommended',
         'prettier'
       ],
-      parser: '@typescript-eslint/parser',
       rules: {
         '@typescript-eslint/consistent-type-imports': 'error'
       }
