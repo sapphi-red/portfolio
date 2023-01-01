@@ -1,38 +1,28 @@
 {
   "repos": [
     [
-      "DefinitelyTyped/DefinitelyTyped",
+      "vitejs/vite-plugin-react",
       [
         {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/63573",
-          "title": "update convert-source-map to v2",
-          "prId": 63573
-        },
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/60970",
-          "title": "fix(node): <code>fs.cp</code> accepts URL for src and dest",
-          "prId": 60970
-        },
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/58609",
-          "title": "pica: updated to v9",
-          "prId": 58609
-        },
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/57684",
-          "title": "[styled-components] Fix union type of props being lost",
-          "prId": 57684
-        },
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/40647",
-          "title": "Update KaTeX to v0.11.1",
-          "prId": 40647
+          "url": "https://github.com/vitejs/vite-plugin-react/pull/67",
+          "title": "fix: don't invalidate when code is invalid",
+          "prId": 67
         }
       ]
     ],
     [
       "vitejs/vite",
       [
+        {
+          "url": "https://github.com/vitejs/vite/pull/11452",
+          "title": "test: remove vue plugin from optimize-deps playground",
+          "prId": 11452
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11451",
+          "title": "test: remove vue plugin from preload playground",
+          "prId": 11451
+        },
         {
           "url": "https://github.com/vitejs/vite/pull/11312",
           "title": "fix: preview fallback",
@@ -276,6 +266,101 @@
       ]
     ],
     [
+      "rollup/plugins",
+      [
+        {
+          "url": "https://github.com/rollup/plugins/pull/1373",
+          "title": "fix(commonjs,dynamic-import-vars,inject,replace,strip): update magic-string",
+          "prId": 1373
+        }
+      ]
+    ],
+    [
+      "antfu/vite-plugin-inspect",
+      [
+        {
+          "url": "https://github.com/antfu/vite-plugin-inspect/pull/55",
+          "title": "feat: redirect when accessed without slash",
+          "prId": 55
+        },
+        {
+          "url": "https://github.com/antfu/vite-plugin-inspect/pull/54",
+          "title": "fix: 404 error when unselecting module",
+          "prId": 54
+        },
+        {
+          "url": "https://github.com/antfu/vite-plugin-inspect/pull/21",
+          "title": "feat: show total latency of each plugins",
+          "prId": 21
+        },
+        {
+          "url": "https://github.com/antfu/vite-plugin-inspect/pull/19",
+          "title": "perf: Improve diff performance",
+          "prId": 19
+        }
+      ]
+    ],
+    [
+      "vuejs/vitepress",
+      [
+        {
+          "url": "https://github.com/vuejs/vitepress/pull/1715",
+          "title": "chore: add stackblitz link to bug report template",
+          "prId": 1715
+        },
+        {
+          "url": "https://github.com/vuejs/vitepress/pull/855",
+          "title": "fix: ESM SSR",
+          "prId": 855
+        }
+      ]
+    ],
+    [
+      "solidjs/solid-start",
+      [
+        {
+          "url": "https://github.com/solidjs/solid-start/pull/541",
+          "title": "Use <code>appType: 'custom'</code>",
+          "prId": 541
+        },
+        {
+          "url": "https://github.com/solidjs/solid-start/pull/540",
+          "title": "Add <code>@latest</code> to <code>npm init solid</code>",
+          "prId": 540
+        }
+      ]
+    ],
+    [
+      "DefinitelyTyped/DefinitelyTyped",
+      [
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/63573",
+          "title": "update convert-source-map to v2",
+          "prId": 63573
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/60970",
+          "title": "fix(node): <code>fs.cp</code> accepts URL for src and dest",
+          "prId": 60970
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/58609",
+          "title": "pica: updated to v9",
+          "prId": 58609
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/57684",
+          "title": "[styled-components] Fix union type of props being lost",
+          "prId": 57684
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/40647",
+          "title": "Update KaTeX to v0.11.1",
+          "prId": 40647
+        }
+      ]
+    ],
+    [
       "nodejs/node",
       [
         {
@@ -377,16 +462,6 @@
           "url": "https://github.com/vuejs/create-vue/pull/121",
           "title": "perf: exclude transpiled prompts code",
           "prId": 121
-        }
-      ]
-    ],
-    [
-      "vuejs/vitepress",
-      [
-        {
-          "url": "https://github.com/vuejs/vitepress/pull/855",
-          "title": "fix: ESM SSR",
-          "prId": 855
         }
       ]
     ],
@@ -497,21 +572,6 @@
           "url": "https://github.com/evanw/esbuild/pull/1660",
           "title": "feat: drop catch binding when optional catch binding is supported",
           "prId": 1660
-        }
-      ]
-    ],
-    [
-      "antfu/vite-plugin-inspect",
-      [
-        {
-          "url": "https://github.com/antfu/vite-plugin-inspect/pull/21",
-          "title": "feat: show total latency of each plugins",
-          "prId": 21
-        },
-        {
-          "url": "https://github.com/antfu/vite-plugin-inspect/pull/19",
-          "title": "perf: Improve diff performance",
-          "prId": 19
         }
       ]
     ],
@@ -676,5 +736,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2022-12-15T11:00:43.452Z"
+  "fetchedAt": "2023-01-01T11:00:51.120Z"
 }
