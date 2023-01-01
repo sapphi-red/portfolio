@@ -47,7 +47,7 @@
     "vite-ssg": "^0.21.2"
   },
   "dependencies": {
-    "@vueuse/head": "^0.9.8",
+    "@vueuse/head": "^1.0.22",
     "ress": "^5.0.2",
     "throttle-debounce": "^5.0.0",
     "vue": "^3.2.45",
