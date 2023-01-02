@@ -266,11 +266,14 @@ export const ignorePRs = [
   'https://github.com/vitejs/vite/pull/11334',
   'https://github.com/vitejs/vite/pull/11337',
   'https://github.com/vitejs/vite/pull/11369',
+  'https://github.com/vitejs/vite/pull/11451',
+  'https://github.com/vitejs/vite/pull/11452',
   'https://github.com/evanw/esbuild/pull/2170',
   'https://github.com/evanw/esbuild/pull/2568',
   'https://github.com/hyrious/esbuild-repl/pull/13',
   'https://github.com/vuejs/vitepress/pull/831',
   'https://github.com/vuejs/vitepress/pull/1693',
+  'https://github.com/vuejs/vitepress/pull/1715',
   'https://github.com/vitejs/vite-ecosystem-ci/pull/83',
   'https://github.com/vitejs/vite-ecosystem-ci/pull/105',
   'https://github.com/vitejs/vite-ecosystem-ci/pull/106',
@@ -292,6 +295,7 @@ export const ignorePRs = [
   'https://github.com/vitejs/vite-plugin-vue2/pull/30',
   'https://github.com/rollup/plugins/pull/1260',
   'https://github.com/rollup/plugins/pull/1332',
+  'https://github.com/rollup/plugins/pull/1373',
   'https://github.com/bluwy/publint/pull/7',
   'https://github.com/bluwy/publint/pull/8',
   'https://github.com/vuejs/core/pull/2818',
@@ -301,5 +305,9 @@ export const ignorePRs = [
   'https://github.com/vitejs/vite-plugin-vue/pull/39',
   'https://github.com/vitejs/vite-plugin-react/pull/25',
   'https://github.com/vitejs/vite-plugin-react/pull/39',
-  'https://github.com/Rich-Harris/magic-string/pull/215'
+  'https://github.com/Rich-Harris/magic-string/pull/215',
+  'https://github.com/antfu/vite-plugin-inspect/pull/54',
+  'https://github.com/antfu/vite-plugin-inspect/pull/55',
+  'https://github.com/solidjs/solid-start/pull/540',
+  'https://github.com/solidjs/solid-start/pull/541'
 ]
