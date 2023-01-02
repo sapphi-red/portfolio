@@ -1,28 +1,6 @@
 {
-  "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "strict": true,
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "isolatedModules": true,
-    "allowSyntheticDefaultImports": true,
-    "noFallthroughCasesInSwitch": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noUncheckedIndexedAccess": true,
-    "importsNotUsedAsValues": "error",
-    "jsx": "preserve",
-    "baseUrl": ".",
-    "lib": ["esnext", "dom"],
-    "skipLibCheck": true,
-    "noEmit": true,
-    "incremental": true,
-    "tsBuildInfoFile": "./node_modules/.tsbuildinfo",
-    "plugins": [{ "name": "typescript-plugin-toml" }],
-    "types": ["vite/client"],
-    "paths": {
-      "/@/*": ["src/*"]
-    }
-  }
+  "extends": "./tsconfig.vue-tsc.json",
+  "exclude": [
+    "src/types/vue-tsc.d.ts"
+  ]
 }

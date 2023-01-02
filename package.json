@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "lint": "eslint --cache .",
     "format": "prettier --write --cache .",
+    "type-check": "vue-tsc -p tsconfig.vue-tsc.json --noEmit",
     "update-pr-data": "node scripts/fetch-prs.js",
     "create-pr-data": "node scripts/fetch-prs.js withoutCache",
     "recreate-pr-data": "node scripts/fetch-prs.js fromCache"
@@ -44,7 +45,8 @@
     "unplugin-icons": "^0.14.15",
     "vite": "^4.0.3",
     "vite-plugin-toml": "^0.5.0",
-    "vite-ssg": "^0.22.1"
+    "vite-ssg": "^0.22.1",
+    "vue-tsc": "^1.0.19"
   },
   "dependencies": {
     "@vueuse/head": "^1.0.22",
