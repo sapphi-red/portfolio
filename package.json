@@ -44,10 +44,10 @@
     "unplugin-icons": "^0.14.15",
     "vite": "^3.2.4",
     "vite-plugin-toml": "^0.4.0",
-    "vite-ssg": "^0.21.2"
+    "vite-ssg": "^0.22.1"
   },
   "dependencies": {
-    "@vueuse/head": "^0.9.8",
+    "@vueuse/head": "^1.0.22",
     "ress": "^5.0.2",
     "throttle-debounce": "^5.0.0",
     "vue": "^3.2.45",
