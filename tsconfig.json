@@ -1,6 +1,4 @@
 {
   "extends": "./tsconfig.vue-tsc.json",
-  "exclude": [
-    "src/types/vue-tsc.d.ts"
-  ]
+  "exclude": ["src/types/vue-tsc.d.ts"]
 }
