@@ -29,7 +29,7 @@
     "@types/throttle-debounce": "^5.0.0",
     "@typescript-eslint/eslint-plugin": "^5.47.1",
     "@typescript-eslint/parser": "^5.47.1",
-    "@typescript/lib-dom": "npm:@types/web@^0.0.79",
+    "@typescript/lib-dom": "npm:@types/web@^0.0.86",
     "@vitejs/plugin-vue": "^3.2.0",
     "critters": "^0.0.16",
     "eslint": "^8.31.0",
