@@ -1,18 +1,33 @@
 {
   "repos": [
     [
-      "vitejs/vite-plugin-react",
+      "prettier/prettier",
       [
         {
-          "url": "https://github.com/vitejs/vite-plugin-react/pull/67",
-          "title": "fix: don't invalidate when code is invalid",
-          "prId": 67
+          "url": "https://github.com/prettier/prettier/pull/11696",
+          "title": "Improved performance with large HTML files",
+          "prId": 11696
         }
       ]
     ],
     [
       "vitejs/vite",
       [
+        {
+          "url": "https://github.com/vitejs/vite/pull/11673",
+          "title": "chore: fix type warning during building vite",
+          "prId": 11673
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11543",
+          "title": "test: use default import for fs-extra",
+          "prId": 11543
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11542",
+          "title": "feat: reproducible manifest",
+          "prId": 11542
+        },
         {
           "url": "https://github.com/vitejs/vite/pull/11312",
           "title": "fix: preview fallback",
@@ -256,6 +271,41 @@
       ]
     ],
     [
+      "vitejs/vite-ecosystem-ci",
+      [
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/184",
+          "title": "fix: use token for github api call",
+          "prId": 184
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/139",
+          "title": "feat: group command output in GitHub Actions",
+          "prId": 139
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/120",
+          "title": "feat: vite repo",
+          "prId": 120
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/102",
+          "title": "Custom discord integration ",
+          "prId": 102
+        }
+      ]
+    ],
+    [
+      "vitejs/vite-plugin-react",
+      [
+        {
+          "url": "https://github.com/vitejs/vite-plugin-react/pull/67",
+          "title": "fix: don't invalidate when code is invalid",
+          "prId": 67
+        }
+      ]
+    ],
+    [
       "DefinitelyTyped/DefinitelyTyped",
       [
         {
@@ -312,26 +362,6 @@
           "url": "https://github.com/kekee000/fonteditor-core/pull/47",
           "title": "Fix parsing cmap subtable format 14",
           "prId": 47
-        }
-      ]
-    ],
-    [
-      "vitejs/vite-ecosystem-ci",
-      [
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/139",
-          "title": "feat: group command output in GitHub Actions",
-          "prId": 139
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/120",
-          "title": "feat: vite repo",
-          "prId": 120
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/102",
-          "title": "Custom discord integration ",
-          "prId": 102
         }
       ]
     ],
@@ -526,16 +556,6 @@
       ]
     ],
     [
-      "prettier/prettier",
-      [
-        {
-          "url": "https://github.com/prettier/prettier/pull/11696",
-          "title": "Improved performance with large HTML files",
-          "prId": 11696
-        }
-      ]
-    ],
-    [
       "johnsoncodehk/volar",
       [
         {
@@ -686,5 +706,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2023-01-01T11:00:51.120Z"
+  "fetchedAt": "2023-01-15T11:00:37.878Z"
 }
