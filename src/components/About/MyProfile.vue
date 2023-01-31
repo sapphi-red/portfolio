@@ -27,7 +27,9 @@
         <li>
           <icon-mastodon />
           Mastodon:
-          <a href="https://elk.zone/m.webtoo.ls/@sapphi_red">@sapphi_red@webtoo.ls</a>
+          <a href="https://elk.zone/m.webtoo.ls/@sapphi_red"
+            >@sapphi_red@webtoo.ls</a
+          >
         </li>
         <li>
           <icon-pencil />
