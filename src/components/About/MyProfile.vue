@@ -15,17 +15,22 @@
       </p>
       <ul>
         <li>
-          <icon-github-alt />
+          <icon-github />
           GitHub:
           <a href="https://github.com/sapphi-red">@sapphi-red</a>
         </li>
         <li>
-          <icon-twitter-alt />
+          <icon-twitter />
           Twitter:
           <a href="https://twitter.com/sapphi_red">@sapphi_red</a>
         </li>
         <li>
-          <icon-pen />
+          <icon-mastodon />
+          Mastodon:
+          <a href="https://elk.zone/m.webtoo.ls/@sapphi_red">@sapphi_red@webtoo.ls</a>
+        </li>
+        <li>
+          <icon-pencil />
           traPブログ:
           <a href="https://trap.jp/author/sappi_red">記事一覧</a>
         </li>
@@ -35,9 +40,10 @@
 </template>
 
 <script lang="ts" setup>
-import IconGithubAlt from '~icons/uil/github-alt'
-import IconTwitterAlt from '~icons/uil/twitter-alt'
-import IconPen from '~icons/uil/pen'
+import IconGithub from '~icons/tabler/brand-github'
+import IconTwitter from '~icons/tabler/brand-twitter'
+import IconMastodon from '~icons/tabler/brand-mastodon'
+import IconPencil from '~icons/tabler/pencil'
 </script>
 
 <style lang="scss" module>
