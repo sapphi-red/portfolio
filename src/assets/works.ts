@@ -19,7 +19,7 @@ const tagsArr = [
 
 export const tags = new Set(tagsArr) as ReadonlySet<Tag>
 
-export type Tag = typeof tagsArr[number]
+export type Tag = (typeof tagsArr)[number]
 
 export interface Article {
   readonly title: string
