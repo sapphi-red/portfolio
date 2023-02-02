@@ -1,8 +1,12 @@
 <template>
   <div :class="$style.imgContainer">
-    <img v-bind="$attrs" :class="$style.img" />
+    <img v-bind="props" :class="$style.img" />
   </div>
 </template>
+
+<script lang="ts" setup>
+const props = defineProps<{ src: string; loading?: 'lazy' | 'eager' }>()
+</script>
 
 <style lang="scss" module>
 .imgContainer {
