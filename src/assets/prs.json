@@ -1,62 +1,32 @@
 {
   "repos": [
     [
-      "vitejs/vite",
+      "vuejs/vitepress",
       [
         {
-          "url": "https://github.com/vitejs/vite/pull/11877",
-          "title": "docs: add troubleshooting for browser compat",
-          "prId": 11877
+          "url": "https://github.com/vuejs/vitepress/pull/1851",
+          "title": "feat(theme): preconnect algolia when idle",
+          "prId": 1851
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/11819",
-          "title": "docs: restore locale links",
-          "prId": 11819
+          "url": "https://github.com/vuejs/vitepress/pull/1850",
+          "title": "fix: take &lt;a&gt; in SVG into account",
+          "prId": 1850
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/11809",
-          "title": "docs: update rollup docs links",
-          "prId": 11809
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/11768",
-          "title": "fix: make viteMetadata property of RenderedChunk optional",
-          "prId": 11768
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/11767",
-          "title": "docs: ssr manifest can be used for 103 early hints",
-          "prId": 11767
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/11766",
-          "title": "chore: revert &quot;chore: clear netlify cache (#11765)&quot;",
-          "prId": 11766
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/11765",
-          "title": "chore: clear netlify cache",
-          "prId": 11765
-        },
+          "url": "https://github.com/vuejs/vitepress/pull/855",
+          "title": "fix: ESM SSR",
+          "prId": 855
+        }
+      ]
+    ],
+    [
+      "vitejs/vite",
+      [
         {
           "url": "https://github.com/vitejs/vite/pull/11763",
           "title": "fix(css): insert styles in the same position",
           "prId": 11763
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/11759",
-          "title": "chore: revert &quot;chore(docs): workaround netlify pnpm build issue (#11477)&quot;",
-          "prId": 11759
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/11673",
-          "title": "chore: fix type warning during building vite",
-          "prId": 11673
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/11543",
-          "title": "test: use default import for fs-extra",
-          "prId": 11543
         },
         {
           "url": "https://github.com/vitejs/vite/pull/11542",
@@ -306,71 +276,6 @@
       ]
     ],
     [
-      "vuejs/vitepress",
-      [
-        {
-          "url": "https://github.com/vuejs/vitepress/pull/1851",
-          "title": "feat(theme): preconnect algolia when idle",
-          "prId": 1851
-        },
-        {
-          "url": "https://github.com/vuejs/vitepress/pull/1850",
-          "title": "fix: take &lt;a&gt; in SVG into account",
-          "prId": 1850
-        },
-        {
-          "url": "https://github.com/vuejs/vitepress/pull/855",
-          "title": "fix: ESM SSR",
-          "prId": 855
-        }
-      ]
-    ],
-    [
-      "vitejs/vite-plugin-react",
-      [
-        {
-          "url": "https://github.com/vitejs/vite-plugin-react/pull/98",
-          "title": "test: fix flaky test",
-          "prId": 98
-        },
-        {
-          "url": "https://github.com/vitejs/vite-plugin-react/pull/97",
-          "title": "fix: fast-refresh explain link",
-          "prId": 97
-        },
-        {
-          "url": "https://github.com/vitejs/vite-plugin-react/pull/67",
-          "title": "fix: don't invalidate when code is invalid",
-          "prId": 67
-        }
-      ]
-    ],
-    [
-      "rollup/rollup",
-      [
-        {
-          "url": "https://github.com/rollup/rollup/pull/4823",
-          "title": "Minor migration guide improvements",
-          "prId": 4823
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/4822",
-          "title": "Tweak document landing page",
-          "prId": 4822
-        }
-      ]
-    ],
-    [
-      "vitejs/vite-plugin-vue",
-      [
-        {
-          "url": "https://github.com/vitejs/vite-plugin-vue/pull/88",
-          "title": "chore: remove not used deps",
-          "prId": 88
-        }
-      ]
-    ],
-    [
       "prettier/prettier",
       [
         {
@@ -381,27 +286,12 @@
       ]
     ],
     [
-      "vitejs/vite-ecosystem-ci",
+      "vitejs/vite-plugin-react",
       [
         {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/184",
-          "title": "fix: use token for github api call",
-          "prId": 184
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/139",
-          "title": "feat: group command output in GitHub Actions",
-          "prId": 139
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/120",
-          "title": "feat: vite repo",
-          "prId": 120
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/102",
-          "title": "Custom discord integration ",
-          "prId": 102
+          "url": "https://github.com/vitejs/vite-plugin-react/pull/67",
+          "title": "fix: don't invalidate when code is invalid",
+          "prId": 67
         }
       ]
     ],
@@ -462,6 +352,26 @@
           "url": "https://github.com/kekee000/fonteditor-core/pull/47",
           "title": "Fix parsing cmap subtable format 14",
           "prId": 47
+        }
+      ]
+    ],
+    [
+      "vitejs/vite-ecosystem-ci",
+      [
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/139",
+          "title": "feat: group command output in GitHub Actions",
+          "prId": 139
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/120",
+          "title": "feat: vite repo",
+          "prId": 120
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/102",
+          "title": "Custom discord integration ",
+          "prId": 102
         }
       ]
     ],
