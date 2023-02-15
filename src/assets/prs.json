@@ -1,28 +1,38 @@
 {
   "repos": [
     [
-      "vuejs/vitepress",
-      [
-        {
-          "url": "https://github.com/vuejs/vitepress/pull/1851",
-          "title": "feat(theme): preconnect algolia when idle",
-          "prId": 1851
-        },
-        {
-          "url": "https://github.com/vuejs/vitepress/pull/1850",
-          "title": "fix: take &lt;a&gt; in SVG into account",
-          "prId": 1850
-        },
-        {
-          "url": "https://github.com/vuejs/vitepress/pull/855",
-          "title": "fix: ESM SSR",
-          "prId": 855
-        }
-      ]
-    ],
-    [
       "vitejs/vite",
       [
+        {
+          "url": "https://github.com/vitejs/vite/pull/12045",
+          "title": "chore: add issue template for docs",
+          "prId": 12045
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11909",
+          "title": "test: reduce flaky fails",
+          "prId": 11909
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11907",
+          "title": "fix: catch statSync error",
+          "prId": 11907
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11896",
+          "title": "feat(legacy)!: bump modern target to support async generator",
+          "prId": 11896
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11879",
+          "title": "docs: remove wrong vite command description",
+          "prId": 11879
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11876",
+          "title": "docs: tweak wording",
+          "prId": 11876
+        },
         {
           "url": "https://github.com/vitejs/vite/pull/11763",
           "title": "fix(css): insert styles in the same position",
@@ -272,6 +282,26 @@
           "url": "https://github.com/vitejs/vite/pull/7098",
           "title": "fix: import with query with exports/browser field",
           "prId": 7098
+        }
+      ]
+    ],
+    [
+      "vuejs/vitepress",
+      [
+        {
+          "url": "https://github.com/vuejs/vitepress/pull/1851",
+          "title": "feat(theme): preconnect algolia when idle",
+          "prId": 1851
+        },
+        {
+          "url": "https://github.com/vuejs/vitepress/pull/1850",
+          "title": "fix: take &lt;a&gt; in SVG into account",
+          "prId": 1850
+        },
+        {
+          "url": "https://github.com/vuejs/vitepress/pull/855",
+          "title": "fix: ESM SSR",
+          "prId": 855
         }
       ]
     ],
@@ -706,5 +736,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2023-02-01T11:01:04.496Z"
+  "fetchedAt": "2023-02-15T11:00:54.314Z"
 }
