@@ -1,22 +1,27 @@
 {
   "repos": [
     [
-      "vuejs/vitepress",
+      "vitejs/vite-plugin-react-swc",
       [
         {
-          "url": "https://github.com/vuejs/vitepress/pull/1851",
-          "title": "feat(theme): preconnect algolia when idle",
-          "prId": 1851
+          "url": "https://github.com/vitejs/vite-plugin-react-swc/pull/71",
+          "title": "chore: fix flaky test",
+          "prId": 71
         },
         {
-          "url": "https://github.com/vuejs/vitepress/pull/1850",
-          "title": "fix: take &lt;a&gt; in SVG into account",
-          "prId": 1850
-        },
+          "url": "https://github.com/vitejs/vite-plugin-react-swc/pull/70",
+          "title": "chore: fix build on windows",
+          "prId": 70
+        }
+      ]
+    ],
+    [
+      "vitejs/vite-plugin-vue",
+      [
         {
-          "url": "https://github.com/vuejs/vitepress/pull/855",
-          "title": "fix: ESM SSR",
-          "prId": 855
+          "url": "https://github.com/vitejs/vite-plugin-vue/pull/129",
+          "title": "chore: remove expect error message",
+          "prId": 129
         }
       ]
     ],
@@ -24,9 +29,59 @@
       "vitejs/vite",
       [
         {
+          "url": "https://github.com/vitejs/vite/pull/12392",
+          "title": "chore: fix test misc",
+          "prId": 12392
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/12391",
+          "title": "chore: remove build warn filter",
+          "prId": 12391
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/12233",
+          "title": "ci: allow collaborators to trigger ecosystem-ci",
+          "prId": 12233
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/12197",
+          "title": "feat: don't override <code>build.target</code> if terser is 5.16.0+",
+          "prId": 12197
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/12110",
+          "title": "chore(deps): update rollup to 3.17.2",
+          "prId": 12110
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/12078",
+          "title": "docs: fix svg type override",
+          "prId": 12078
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/12053",
+          "title": "feat: support <code>import.meta.hot?.accept</code>",
+          "prId": 12053
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11908",
+          "title": "feat: esbuild 0.17",
+          "prId": 11908
+        },
+        {
           "url": "https://github.com/vitejs/vite/pull/11896",
           "title": "feat(legacy)!: bump modern target to support async generator",
           "prId": 11896
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11818",
+          "title": "refactor: remove constructed sheet type style injection",
+          "prId": 11818
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11764",
+          "title": "fix(html): rewrite assets url in <code>&lt;noscript&gt;</code>",
+          "prId": 11764
         },
         {
           "url": "https://github.com/vitejs/vite/pull/11763",
@@ -277,6 +332,46 @@
           "url": "https://github.com/vitejs/vite/pull/7098",
           "title": "fix: import with query with exports/browser field",
           "prId": 7098
+        }
+      ]
+    ],
+    [
+      "rollup/rollup",
+      [
+        {
+          "url": "https://github.com/rollup/rollup/pull/4868",
+          "title": "Add <code>needsCodeReference</code> property to <code>EmittedAsset</code>",
+          "prId": 4868
+        }
+      ]
+    ],
+    [
+      "stackblitz/docs",
+      [
+        {
+          "url": "https://github.com/stackblitz/docs/pull/94",
+          "title": "Update docs/guides/integration/open-from-github.md",
+          "prId": 94
+        }
+      ]
+    ],
+    [
+      "vuejs/vitepress",
+      [
+        {
+          "url": "https://github.com/vuejs/vitepress/pull/1851",
+          "title": "feat(theme): preconnect algolia when idle",
+          "prId": 1851
+        },
+        {
+          "url": "https://github.com/vuejs/vitepress/pull/1850",
+          "title": "fix: take &lt;a&gt; in SVG into account",
+          "prId": 1850
+        },
+        {
+          "url": "https://github.com/vuejs/vitepress/pull/855",
+          "title": "fix: ESM SSR",
+          "prId": 855
         }
       ]
     ],
@@ -711,5 +806,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2023-02-15T11:00:54.314Z"
+  "fetchedAt": "2023-03-15T11:00:41.679Z"
 }
