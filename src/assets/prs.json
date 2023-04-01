@@ -1,53 +1,23 @@
 {
   "repos": [
     [
-      "vitejs/vite-plugin-react",
+      "unocss/unocss",
       [
         {
-          "url": "https://github.com/vitejs/vite-plugin-react/pull/134",
-          "title": "chore: remove <code>esbuild.logOverride['this-is-undefined-in-esm']</code>",
-          "prId": 134
+          "url": "https://github.com/unocss/unocss/pull/2409",
+          "title": "fix(preset-mini): order <code>-webkit-appearance</code> before",
+          "prId": 2409
         },
         {
-          "url": "https://github.com/vitejs/vite-plugin-react/pull/121",
-          "title": "chore: remove ssr execution order tests",
-          "prId": 121
-        },
-        {
-          "url": "https://github.com/vitejs/vite-plugin-react/pull/67",
-          "title": "fix: don't invalidate when code is invalid",
-          "prId": 67
+          "url": "https://github.com/unocss/unocss/pull/2408",
+          "title": "feat(preset-mini): add webkit vendor prefix to <code>user-select</code>",
+          "prId": 2408
         }
       ]
     ],
     [
       "vitejs/vite",
       [
-        {
-          "url": "https://github.com/vitejs/vite/pull/12647",
-          "title": "fix: await <code>buildStart</code> before server start",
-          "prId": 12647
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/12642",
-          "title": "fix: output combined sourcemap in importAnalysisBuild plugin",
-          "prId": 12642
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/12626",
-          "title": "test: fix flaky assets/url-base test fail",
-          "prId": 12626
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/12625",
-          "title": "test: don't share cacheDir among different configs",
-          "prId": 12625
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/12624",
-          "title": "fix: call <code>buildStart</code> only once when using next port",
-          "prId": 12624
-        },
         {
           "url": "https://github.com/vitejs/vite/pull/12609",
           "title": "perf(optimizer): bulk optimizer delay",
@@ -57,41 +27,6 @@
           "url": "https://github.com/vitejs/vite/pull/12601",
           "title": "perf: cache <code>depsCacheDirPrefix</code> value for <code>isOptimizedDepFile</code>",
           "prId": 12601
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/12574",
-          "title": "chore: disable reactivityTransform in vitepress",
-          "prId": 12574
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/12565",
-          "title": "fix(css): use <code>charset: 'utf8'</code> by default for css",
-          "prId": 12565
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/12564",
-          "title": "refactor: remove <code>idToPkgMap</code>",
-          "prId": 12564
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/12552",
-          "title": "fix: avoid crash because of no access permission",
-          "prId": 12552
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/12551",
-          "title": "perf: use <code>safeRealpath</code> in <code>getRealpath</code>",
-          "prId": 12551
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/12528",
-          "title": "test: move ssr tests from plugin-react",
-          "prId": 12528
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/12435",
-          "title": "feat: add status message for 504 caused by optimizer",
-          "prId": 12435
         },
         {
           "url": "https://github.com/vitejs/vite/pull/12078",
@@ -376,21 +311,6 @@
       ]
     ],
     [
-      "unocss/unocss",
-      [
-        {
-          "url": "https://github.com/unocss/unocss/pull/2409",
-          "title": "fix(preset-mini): order <code>-webkit-appearance</code> before",
-          "prId": 2409
-        },
-        {
-          "url": "https://github.com/unocss/unocss/pull/2408",
-          "title": "feat(preset-mini): add webkit vendor prefix to <code>user-select</code>",
-          "prId": 2408
-        }
-      ]
-    ],
-    [
       "rollup/rollup",
       [
         {
@@ -427,6 +347,16 @@
           "url": "https://github.com/prettier/prettier/pull/11696",
           "title": "Improved performance with large HTML files",
           "prId": 11696
+        }
+      ]
+    ],
+    [
+      "vitejs/vite-plugin-react",
+      [
+        {
+          "url": "https://github.com/vitejs/vite-plugin-react/pull/67",
+          "title": "fix: don't invalidate when code is invalid",
+          "prId": 67
         }
       ]
     ],
