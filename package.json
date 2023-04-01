@@ -25,7 +25,7 @@
   "homepage": "https://github.com/sapphi-red/portfolio#readme",
   "private": true,
   "devDependencies": {
-    "@iconify-json/tabler": "^1.1.63",
+    "@iconify-json/tabler": "^1.1.70",
     "@types/node": "^18.11.18",
     "@types/throttle-debounce": "^5.0.0",
     "@typescript-eslint/eslint-plugin": "^5.54.0",
