@@ -1,23 +1,63 @@
 {
   "repos": [
     [
-      "unocss/unocss",
-      [
-        {
-          "url": "https://github.com/unocss/unocss/pull/2409",
-          "title": "fix(preset-mini): order <code>-webkit-appearance</code> before",
-          "prId": 2409
-        },
-        {
-          "url": "https://github.com/unocss/unocss/pull/2408",
-          "title": "feat(preset-mini): add webkit vendor prefix to <code>user-select</code>",
-          "prId": 2408
-        }
-      ]
-    ],
-    [
       "vitejs/vite",
       [
+        {
+          "url": "https://github.com/vitejs/vite/pull/12721",
+          "title": "perf(css): cache lazy import",
+          "prId": 12721
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/12719",
+          "title": "fix: ignore pnp resolve error",
+          "prId": 12719
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/12716",
+          "title": "docs: add a note about duplicate style by <code>additionalData</code>",
+          "prId": 12716
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/12712",
+          "title": "refactor: use <code>resolvePackageData</code> in <code>requireResolveFromRootWithFallback</code>",
+          "prId": 12712
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/12709",
+          "title": "chore: revert custom license resolve",
+          "prId": 12709
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/12698",
+          "title": "feat: skip pinging the server when the tab is not shown",
+          "prId": 12698
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/12697",
+          "title": "fix(worker): asset in iife worker and relative base",
+          "prId": 12697
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/12696",
+          "title": "refactor: <code>import.meta.url</code> condition from renderChunk hook of worker plugin",
+          "prId": 12696
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/12695",
+          "title": "fix: take in relative assets path fixes from rollup",
+          "prId": 12695
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/12690",
+          "title": "refactor: remove <code>ensureVolumeInPath</code>",
+          "prId": 12690
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/12688",
+          "title": "fix(import-analysis): escape quotes correctly",
+          "prId": 12688
+        },
         {
           "url": "https://github.com/vitejs/vite/pull/12609",
           "title": "perf(optimizer): bulk optimizer delay",
@@ -32,6 +72,11 @@
           "url": "https://github.com/vitejs/vite/pull/12078",
           "title": "docs: fix svg type override",
           "prId": 12078
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/12057",
+          "title": "feat(create-vite): move TypeScript ones up",
+          "prId": 12057
         },
         {
           "url": "https://github.com/vitejs/vite/pull/12053",
@@ -52,6 +97,11 @@
           "url": "https://github.com/vitejs/vite/pull/11818",
           "title": "refactor: remove constructed sheet type style injection",
           "prId": 11818
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/11780",
+          "title": "fix(ssr): load sourcemaps alongside modules",
+          "prId": 11780
         },
         {
           "url": "https://github.com/vitejs/vite/pull/11764",
@@ -127,6 +177,11 @@
           "url": "https://github.com/vitejs/vite/pull/10678",
           "title": "fix: remove picomatch type import (fixes #10656)",
           "prId": 10678
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10549",
+          "title": "fix: leave fully dynamic import.meta.url asset (fixes #10306)",
+          "prId": 10549
         },
         {
           "url": "https://github.com/vitejs/vite/pull/10406",
@@ -311,6 +366,36 @@
       ]
     ],
     [
+      "vitejs/vite-plugin-react",
+      [
+        {
+          "url": "https://github.com/vitejs/vite-plugin-react/pull/141",
+          "title": "perf: cache load plugin",
+          "prId": 141
+        },
+        {
+          "url": "https://github.com/vitejs/vite-plugin-react/pull/67",
+          "title": "fix: don't invalidate when code is invalid",
+          "prId": 67
+        }
+      ]
+    ],
+    [
+      "unocss/unocss",
+      [
+        {
+          "url": "https://github.com/unocss/unocss/pull/2409",
+          "title": "fix(preset-mini): order <code>-webkit-appearance</code> before",
+          "prId": 2409
+        },
+        {
+          "url": "https://github.com/unocss/unocss/pull/2408",
+          "title": "feat(preset-mini): add webkit vendor prefix to <code>user-select</code>",
+          "prId": 2408
+        }
+      ]
+    ],
+    [
       "rollup/rollup",
       [
         {
@@ -347,16 +432,6 @@
           "url": "https://github.com/prettier/prettier/pull/11696",
           "title": "Improved performance with large HTML files",
           "prId": 11696
-        }
-      ]
-    ],
-    [
-      "vitejs/vite-plugin-react",
-      [
-        {
-          "url": "https://github.com/vitejs/vite-plugin-react/pull/67",
-          "title": "fix: don't invalidate when code is invalid",
-          "prId": 67
         }
       ]
     ],
@@ -771,5 +846,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2023-04-01T11:00:57.892Z"
+  "fetchedAt": "2023-04-15T11:00:58.492Z"
 }
