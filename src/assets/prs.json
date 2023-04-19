@@ -9,24 +9,9 @@
           "prId": 12721
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/12719",
-          "title": "fix: ignore pnp resolve error",
-          "prId": 12719
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/12716",
-          "title": "docs: add a note about duplicate style by <code>additionalData</code>",
-          "prId": 12716
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/12712",
           "title": "refactor: use <code>resolvePackageData</code> in <code>requireResolveFromRootWithFallback</code>",
           "prId": 12712
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/12709",
-          "title": "chore: revert custom license resolve",
-          "prId": 12709
         },
         {
           "url": "https://github.com/vitejs/vite/pull/12698",
@@ -37,26 +22,6 @@
           "url": "https://github.com/vitejs/vite/pull/12697",
           "title": "fix(worker): asset in iife worker and relative base",
           "prId": 12697
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/12696",
-          "title": "refactor: <code>import.meta.url</code> condition from renderChunk hook of worker plugin",
-          "prId": 12696
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/12695",
-          "title": "fix: take in relative assets path fixes from rollup",
-          "prId": 12695
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/12690",
-          "title": "refactor: remove <code>ensureVolumeInPath</code>",
-          "prId": 12690
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/12688",
-          "title": "fix(import-analysis): escape quotes correctly",
-          "prId": 12688
         },
         {
           "url": "https://github.com/vitejs/vite/pull/12609",
@@ -177,11 +142,6 @@
           "url": "https://github.com/vitejs/vite/pull/10678",
           "title": "fix: remove picomatch type import (fixes #10656)",
           "prId": 10678
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/10549",
-          "title": "fix: leave fully dynamic import.meta.url asset (fixes #10306)",
-          "prId": 10549
         },
         {
           "url": "https://github.com/vitejs/vite/pull/10406",
