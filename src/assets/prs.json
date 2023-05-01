@@ -1,8 +1,58 @@
 {
   "repos": [
     [
+      "veritem/eslint-plugin-vitest",
+      [
+        {
+          "url": "https://github.com/veritem/eslint-plugin-vitest/pull/160",
+          "title": "docs: fix typo",
+          "prId": 160
+        }
+      ]
+    ],
+    [
+      "vitest-dev/vitest",
+      [
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/3236",
+          "title": "chore: replace source-map with trace-mapping",
+          "prId": 3236
+        },
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/3235",
+          "title": "chore(browser): bump modern-node-polyfills",
+          "prId": 3235
+        },
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/1348",
+          "title": "fix: handle error from pool.run",
+          "prId": 1348
+        },
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/1070",
+          "title": "fix: inconsistency with globTestFiles and isTargetFile (fix #981, #982)",
+          "prId": 1070
+        },
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/878",
+          "title": "fix: passing non array to reporters option did not effect",
+          "prId": 878
+        },
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/875",
+          "title": "fix: handle error during global setup",
+          "prId": 875
+        }
+      ]
+    ],
+    [
       "vitejs/vite",
       [
+        {
+          "url": "https://github.com/vitejs/vite/pull/12907",
+          "title": "docs: correct glob import as example",
+          "prId": 12907
+        },
         {
           "url": "https://github.com/vitejs/vite/pull/12721",
           "title": "perf(css): cache lazy import",
@@ -112,6 +162,11 @@
           "url": "https://github.com/vitejs/vite/pull/10920",
           "title": "fix(vue): skip url query request (fixes #10863)",
           "prId": 10920
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/10917",
+          "title": "refactor: resolveExports",
+          "prId": 10917
         },
         {
           "url": "https://github.com/vitejs/vite/pull/10905",
@@ -541,31 +596,6 @@
       ]
     ],
     [
-      "vitest-dev/vitest",
-      [
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/1348",
-          "title": "fix: handle error from pool.run",
-          "prId": 1348
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/1070",
-          "title": "fix: inconsistency with globTestFiles and isTargetFile (fix #981, #982)",
-          "prId": 1070
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/878",
-          "title": "fix: passing non array to reporters option did not effect",
-          "prId": 878
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/875",
-          "title": "fix: handle error during global setup",
-          "prId": 875
-        }
-      ]
-    ],
-    [
       "sindresorhus/log-update",
       [
         {
@@ -806,5 +836,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2023-04-15T11:00:58.492Z"
+  "fetchedAt": "2023-05-01T11:00:47.168Z"
 }
