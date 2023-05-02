@@ -1,27 +1,12 @@
 {
   "repos": [
     [
-      "veritem/eslint-plugin-vitest",
-      [
-        {
-          "url": "https://github.com/veritem/eslint-plugin-vitest/pull/160",
-          "title": "docs: fix typo",
-          "prId": 160
-        }
-      ]
-    ],
-    [
       "vitest-dev/vitest",
       [
         {
           "url": "https://github.com/vitest-dev/vitest/pull/3236",
           "title": "chore: replace source-map with trace-mapping",
           "prId": 3236
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/3235",
-          "title": "chore(browser): bump modern-node-polyfills",
-          "prId": 3235
         },
         {
           "url": "https://github.com/vitest-dev/vitest/pull/1348",
@@ -48,11 +33,6 @@
     [
       "vitejs/vite",
       [
-        {
-          "url": "https://github.com/vitejs/vite/pull/12907",
-          "title": "docs: correct glob import as example",
-          "prId": 12907
-        },
         {
           "url": "https://github.com/vitejs/vite/pull/12721",
           "title": "perf(css): cache lazy import",
@@ -162,11 +142,6 @@
           "url": "https://github.com/vitejs/vite/pull/10920",
           "title": "fix(vue): skip url query request (fixes #10863)",
           "prId": 10920
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/10917",
-          "title": "refactor: resolveExports",
-          "prId": 10917
         },
         {
           "url": "https://github.com/vitejs/vite/pull/10905",
