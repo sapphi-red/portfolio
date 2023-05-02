@@ -28,8 +28,5 @@ export default defineConfig({
       defaultClass: 'icon'
     }),
     ViteToml()
-  ],
-  ssgOptions: {
-    script: 'defer'
-  }
+  ]
 })
