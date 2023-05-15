@@ -1,38 +1,48 @@
 {
   "repos": [
     [
-      "vitest-dev/vitest",
-      [
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/3236",
-          "title": "chore: replace source-map with trace-mapping",
-          "prId": 3236
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/1348",
-          "title": "fix: handle error from pool.run",
-          "prId": 1348
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/1070",
-          "title": "fix: inconsistency with globTestFiles and isTargetFile (fix #981, #982)",
-          "prId": 1070
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/878",
-          "title": "fix: passing non array to reporters option did not effect",
-          "prId": 878
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/875",
-          "title": "fix: handle error during global setup",
-          "prId": 875
-        }
-      ]
-    ],
-    [
       "vitejs/vite",
       [
+        {
+          "url": "https://github.com/vitejs/vite/pull/13194",
+          "title": "docs: tweak <code>build.cssCodeSplit</code> documentation",
+          "prId": 13194
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/13193",
+          "title": "docs: remove RFCs section",
+          "prId": 13193
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/13190",
+          "title": "fix(css): respect <code>esbuild.charset</code> when minify",
+          "prId": 13190
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/13162",
+          "title": "perf: skip windows absolute paths for node resolve",
+          "prId": 13162
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/13160",
+          "title": "fix: handle more yarn pnp load errors",
+          "prId": 13160
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/13142",
+          "title": "fix: call <code>tryFsResolve</code> for relative <code>new URL(foo, import.meta.url)</code>",
+          "prId": 13142
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/13069",
+          "title": "chore: cleanup hoist patterns",
+          "prId": 13069
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/13063",
+          "title": "docs: update Vue 2 plugins",
+          "prId": 13063
+        },
         {
           "url": "https://github.com/vitejs/vite/pull/12721",
           "title": "perf(css): cache lazy import",
@@ -356,8 +366,43 @@
       ]
     ],
     [
+      "mdit-vue/vite-plugin-vue-markdown",
+      [
+        {
+          "url": "https://github.com/mdit-vue/vite-plugin-vue-markdown/pull/18",
+          "title": "chore: migrate to @unhead/vue from @vueuse/head",
+          "prId": 18
+        }
+      ]
+    ],
+    [
+      "antfu/taze",
+      [
+        {
+          "url": "https://github.com/antfu/taze/pull/65",
+          "title": "feat: support aliased deps (<code>npm:</code>)",
+          "prId": 65
+        }
+      ]
+    ],
+    [
+      "veritem/eslint-plugin-vitest",
+      [
+        {
+          "url": "https://github.com/veritem/eslint-plugin-vitest/pull/159",
+          "title": "chore!: rename <code>preferMockPromiseShorthand</code> rule to <code>prefer-mock-promise-shorthand</code>",
+          "prId": 159
+        }
+      ]
+    ],
+    [
       "vitejs/vite-plugin-react",
       [
+        {
+          "url": "https://github.com/vitejs/vite-plugin-react/pull/157",
+          "title": "chore: cleanup hoist patterns",
+          "prId": 157
+        },
         {
           "url": "https://github.com/vitejs/vite-plugin-react/pull/141",
           "title": "perf: cache load plugin",
@@ -367,6 +412,46 @@
           "url": "https://github.com/vitejs/vite-plugin-react/pull/67",
           "title": "fix: don't invalidate when code is invalid",
           "prId": 67
+        }
+      ]
+    ],
+    [
+      "vuejs/language-tools",
+      [
+        {
+          "url": "https://github.com/vuejs/language-tools/pull/546",
+          "title": "Improve v-for type",
+          "prId": 546
+        }
+      ]
+    ],
+    [
+      "vitest-dev/vitest",
+      [
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/3236",
+          "title": "chore: replace source-map with trace-mapping",
+          "prId": 3236
+        },
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/1348",
+          "title": "fix: handle error from pool.run",
+          "prId": 1348
+        },
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/1070",
+          "title": "fix: inconsistency with globTestFiles and isTargetFile (fix #981, #982)",
+          "prId": 1070
+        },
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/878",
+          "title": "fix: passing non array to reporters option did not effect",
+          "prId": 878
+        },
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/875",
+          "title": "fix: handle error during global setup",
+          "prId": 875
         }
       ]
     ],
@@ -811,5 +896,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2023-05-01T11:00:47.168Z"
+  "fetchedAt": "2023-05-15T11:00:50.159Z"
 }
