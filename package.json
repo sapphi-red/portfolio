@@ -36,7 +36,7 @@
     "eslint": "^8.39.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-toml": "0.4.0",
-    "eslint-plugin-vue": "^9.11.0",
+    "eslint-plugin-vue": "^9.14.1",
     "node-fetch": "^3.3.1",
     "prettier": "^2.8.8",
     "sass": "^1.62.1",
