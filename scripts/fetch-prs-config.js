@@ -311,6 +311,11 @@ export const ignorePRs = [
   'https://github.com/vitejs/vite/pull/12716',
   'https://github.com/vitejs/vite/pull/12719',
   'https://github.com/vitejs/vite/pull/12907',
+  'https://github.com/vitejs/vite/pull/13063',
+  'https://github.com/vitejs/vite/pull/13069',
+  'https://github.com/vitejs/vite/pull/13190',
+  'https://github.com/vitejs/vite/pull/13193',
+  'https://github.com/vitejs/vite/pull/13194',
   'https://github.com/evanw/esbuild/pull/2170',
   'https://github.com/evanw/esbuild/pull/2568',
   'https://github.com/hyrious/esbuild-repl/pull/13',
@@ -355,6 +360,7 @@ export const ignorePRs = [
   'https://github.com/vitejs/vite-plugin-react/pull/98',
   'https://github.com/vitejs/vite-plugin-react/pull/121',
   'https://github.com/vitejs/vite-plugin-react/pull/134',
+  'https://github.com/vitejs/vite-plugin-react/pull/157',
   'https://github.com/Rich-Harris/magic-string/pull/215',
   'https://github.com/antfu/vite-plugin-inspect/pull/54',
   'https://github.com/antfu/vite-plugin-inspect/pull/55',
@@ -365,5 +371,10 @@ export const ignorePRs = [
   'https://github.com/vitejs/vite-plugin-react-swc/pull/70',
   'https://github.com/vitejs/vite-plugin-react-swc/pull/71',
   'https://github.com/stackblitz/docs/pull/94',
-  'https://github.com/veritem/eslint-plugin-vitest/pull/160'
+  'https://github.com/veritem/eslint-plugin-vitest/pull/159',
+  'https://github.com/veritem/eslint-plugin-vitest/pull/160',
+  'https://github.com/mdit-vue/vite-plugin-vue-markdown/pull/18',
+  'https://github.com/mdit-vue/vite-plugin-vue-markdown/pull/19',
+  'https://github.com/unocss/unocss/pull/2662',
+  'https://github.com/unocss/unocss/pull/2663'
 ]
