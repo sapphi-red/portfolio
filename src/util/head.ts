@@ -1,6 +1,6 @@
 import type { Ref } from 'vue'
 import { computed, unref } from 'vue'
-import { useHead as useVueUseHead } from '@vueuse/head'
+import { useHead as useUnhead } from '@unhead/vue'
 
 type MaybeRef<T> = T | Ref<T>
 
@@ -9,7 +9,7 @@ type Arg = {
 }
 
 export const useHead = ({ title }: Arg) => {
-  useVueUseHead({
+  useUnhead({
     title: computed(() => {
       const prefix = unref(title)
       if (prefix === null) {

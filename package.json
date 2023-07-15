@@ -31,6 +31,7 @@
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.1",
     "@typescript/lib-dom": "npm:@types/web@^0.0.99",
+    "@unhead/vue": "^1.1.30",
     "@vitejs/plugin-vue": "^4.2.3",
     "critters": "^0.0.16",
     "eslint": "^8.44.0",
@@ -45,11 +46,10 @@
     "unplugin-icons": "^0.16.3",
     "vite": "^4.3.9",
     "vite-plugin-toml": "^0.5.0",
-    "vite-ssg": "^0.22.2",
+    "vite-ssg": "^0.23.0",
     "vue-tsc": "^1.6.5"
   },
   "dependencies": {
-    "@vueuse/head": "^1.1.26",
     "ress": "^5.0.2",
     "throttle-debounce": "^5.0.0",
     "vue": "^3.3.4",
