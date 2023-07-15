@@ -55,7 +55,9 @@ $z: 'zoom';
 $ie: 'index-enter';
 .#{$ie}-enter-active,
 .#{$ie}-leave-active {
-  transition: opacity 0.1s ease-in-out, transform 0.3s ease-in-out;
+  transition:
+    opacity 0.1s ease-in-out,
+    transform 0.3s ease-in-out;
   transform-origin: top;
 }
 .#{$ie}-leave-from {
@@ -74,7 +76,9 @@ $ie: 'index-enter';
 $il: 'index-leave';
 .#{$il}-enter-active,
 .#{$il}-leave-active {
-  transition: opacity 0.1s ease-in-out, transform 0.3s ease-in-out;
+  transition:
+    opacity 0.1s ease-in-out,
+    transform 0.3s ease-in-out;
   transform-origin: top;
 }
 .#{$il}-leave-from {
