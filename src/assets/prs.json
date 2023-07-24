@@ -21,32 +21,27 @@
       ]
     ],
     [
-      "vitejs/vite",
+      "rollup/rollup",
       [
         {
-          "url": "https://github.com/vitejs/vite/pull/13644",
-          "title": "feat: update esbuild to 0.18.10",
-          "prId": 13644
+          "url": "https://github.com/rollup/rollup/pull/5045",
+          "title": "Fix <code>this.error</code> with <code>pos</code> in <code>transform</code> hook",
+          "prId": 5045
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/13623",
-          "title": "chore: show error position",
-          "prId": 13623
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/13585",
-          "title": "chore: add funding field",
-          "prId": 13585
-        },
+          "url": "https://github.com/rollup/rollup/pull/4868",
+          "title": "Add <code>needsCodeReference</code> property to <code>EmittedAsset</code>",
+          "prId": 4868
+        }
+      ]
+    ],
+    [
+      "vitejs/vite",
+      [
         {
           "url": "https://github.com/vitejs/vite/pull/13578",
           "title": "fix(proxy): forward SSE close event",
           "prId": 13578
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/13577",
-          "title": "feat: update esbuild to 0.18.6",
-          "prId": 13577
         },
         {
           "url": "https://github.com/vitejs/vite/pull/13525",
@@ -54,34 +49,9 @@
           "prId": 13525
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/13519",
-          "title": "fix(optimizer): include exports for css modules",
-          "prId": 13519
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/13516",
-          "title": "docs: using loadEnv for define should use <code>JSON.stringify</code>",
-          "prId": 13516
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/13438",
-          "title": "fix: show network URLs when <code>--host 0.0.0.0</code>",
-          "prId": 13438
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/13422",
           "title": "feat: import public non-asset URL",
           "prId": 13422
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/13413",
-          "title": "test: rewrite <code>waitForNavigation</code> to <code>waitForEvent('load')</code>",
-          "prId": 13413
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/13412",
-          "title": "fix: only show the listened IP when host is specified",
-          "prId": 13412
         },
         {
           "url": "https://github.com/vitejs/vite/pull/13393",
@@ -441,21 +411,6 @@
       ]
     ],
     [
-      "rollup/rollup",
-      [
-        {
-          "url": "https://github.com/rollup/rollup/pull/5045",
-          "title": "Fix <code>this.error</code> with <code>pos</code> in <code>transform</code> hook",
-          "prId": 5045
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/4868",
-          "title": "Add <code>needsCodeReference</code> property to <code>EmittedAsset</code>",
-          "prId": 4868
-        }
-      ]
-    ],
-    [
       "egoist/tsup",
       [
         {
@@ -487,16 +442,6 @@
           "url": "https://github.com/vuejs/language-tools/pull/546",
           "title": "Improve v-for type",
           "prId": 546
-        }
-      ]
-    ],
-    [
-      "vitejs/awesome-vite",
-      [
-        {
-          "url": "https://github.com/vitejs/awesome-vite/pull/723",
-          "title": "docs: update official plugins",
-          "prId": 723
         }
       ]
     ],
