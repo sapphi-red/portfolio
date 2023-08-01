@@ -1,43 +1,23 @@
 {
   "repos": [
     [
-      "antfu/vite-ssg",
-      [
-        {
-          "url": "https://github.com/antfu/vite-ssg/pull/348",
-          "title": "chore!: migrate to @unhead/vue from @vueuse/head",
-          "prId": 348
-        },
-        {
-          "url": "https://github.com/antfu/vite-ssg/pull/66",
-          "title": "feat: support alias with entry",
-          "prId": 66
-        },
-        {
-          "url": "https://github.com/antfu/vite-ssg/pull/14",
-          "title": "fix: config was not applied",
-          "prId": 14
-        }
-      ]
-    ],
-    [
-      "rollup/rollup",
-      [
-        {
-          "url": "https://github.com/rollup/rollup/pull/5045",
-          "title": "Fix <code>this.error</code> with <code>pos</code> in <code>transform</code> hook",
-          "prId": 5045
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/4868",
-          "title": "Add <code>needsCodeReference</code> property to <code>EmittedAsset</code>",
-          "prId": 4868
-        }
-      ]
-    ],
-    [
       "vitejs/vite",
       [
+        {
+          "url": "https://github.com/vitejs/vite/pull/13981",
+          "title": "fix(optimizer): enable experimentalDecorators by default",
+          "prId": 13981
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/13738",
+          "title": "fix(css): use single postcss instance",
+          "prId": 13738
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/13708",
+          "title": "fix(esbuild): use <code>useDefineForClassFields: false</code> when no <code>compilerOptions.target</code> is declared",
+          "prId": 13708
+        },
         {
           "url": "https://github.com/vitejs/vite/pull/13578",
           "title": "fix(proxy): forward SSE close event",
@@ -47,6 +27,11 @@
           "url": "https://github.com/vitejs/vite/pull/13525",
           "title": "feat!: update esbuild to 0.18.2",
           "prId": 13525
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/13425",
+          "title": "fix(html): support <code>import.meta.env</code> define replacement without quotes",
+          "prId": 13425
         },
         {
           "url": "https://github.com/vitejs/vite/pull/13422",
@@ -411,6 +396,91 @@
       ]
     ],
     [
+      "rollup/rollup",
+      [
+        {
+          "url": "https://github.com/rollup/rollup/pull/5072",
+          "title": "Add known globals",
+          "prId": 5072
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5045",
+          "title": "Fix <code>this.error</code> with <code>pos</code> in <code>transform</code> hook",
+          "prId": 5045
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/4868",
+          "title": "Add <code>needsCodeReference</code> property to <code>EmittedAsset</code>",
+          "prId": 4868
+        }
+      ]
+    ],
+    [
+      "vitest-dev/vitest-ecosystem-ci",
+      [
+        {
+          "url": "https://github.com/vitest-dev/vitest-ecosystem-ci/pull/4",
+          "title": "feat: add vitest-github-actions-reporter",
+          "prId": 4
+        }
+      ]
+    ],
+    [
+      "antfu/vite-ssg",
+      [
+        {
+          "url": "https://github.com/antfu/vite-ssg/pull/348",
+          "title": "chore!: migrate to @unhead/vue from @vueuse/head",
+          "prId": 348
+        },
+        {
+          "url": "https://github.com/antfu/vite-ssg/pull/66",
+          "title": "feat: support alias with entry",
+          "prId": 66
+        },
+        {
+          "url": "https://github.com/antfu/vite-ssg/pull/14",
+          "title": "fix: config was not applied",
+          "prId": 14
+        }
+      ]
+    ],
+    [
+      "vitejs/vite-ecosystem-ci",
+      [
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/226",
+          "title": "docs: setting up PR comment trigger feature",
+          "prId": 226
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/139",
+          "title": "feat: group command output in GitHub Actions",
+          "prId": 139
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/120",
+          "title": "feat: vite repo",
+          "prId": 120
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/102",
+          "title": "Custom discord integration ",
+          "prId": 102
+        }
+      ]
+    ],
+    [
+      "histoire-dev/histoire",
+      [
+        {
+          "url": "https://github.com/histoire-dev/histoire/pull/550",
+          "title": "chore: fix pnpm version inconsistency",
+          "prId": 550
+        }
+      ]
+    ],
+    [
       "egoist/tsup",
       [
         {
@@ -617,26 +687,6 @@
           "url": "https://github.com/kekee000/fonteditor-core/pull/47",
           "title": "Fix parsing cmap subtable format 14",
           "prId": 47
-        }
-      ]
-    ],
-    [
-      "vitejs/vite-ecosystem-ci",
-      [
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/139",
-          "title": "feat: group command output in GitHub Actions",
-          "prId": 139
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/120",
-          "title": "feat: vite repo",
-          "prId": 120
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/102",
-          "title": "Custom discord integration ",
-          "prId": 102
         }
       ]
     ],
@@ -931,5 +981,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2023-07-01T11:03:39.444Z"
+  "fetchedAt": "2023-08-01T11:03:32.007Z"
 }
