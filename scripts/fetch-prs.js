@@ -1,4 +1,3 @@
-import fetch from 'node-fetch'
 import fs from 'fs/promises'
 import { ignoreRepoUser, ignorePRs, ignoreRepo } from './fetch-prs-config.js'
 
