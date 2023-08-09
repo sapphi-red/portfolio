@@ -1,13 +1,28 @@
 {
   "repos": [
     [
-      "vitejs/vite",
+      "rollup/rollup",
       [
         {
-          "url": "https://github.com/vitejs/vite/pull/13981",
-          "title": "fix(optimizer): enable experimentalDecorators by default",
-          "prId": 13981
+          "url": "https://github.com/rollup/rollup/pull/5072",
+          "title": "Add known globals",
+          "prId": 5072
         },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5045",
+          "title": "Fix <code>this.error</code> with <code>pos</code> in <code>transform</code> hook",
+          "prId": 5045
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/4868",
+          "title": "Add <code>needsCodeReference</code> property to <code>EmittedAsset</code>",
+          "prId": 4868
+        }
+      ]
+    ],
+    [
+      "vitejs/vite",
+      [
         {
           "url": "https://github.com/vitejs/vite/pull/13738",
           "title": "fix(css): use single postcss instance",
@@ -396,36 +411,6 @@
       ]
     ],
     [
-      "rollup/rollup",
-      [
-        {
-          "url": "https://github.com/rollup/rollup/pull/5072",
-          "title": "Add known globals",
-          "prId": 5072
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5045",
-          "title": "Fix <code>this.error</code> with <code>pos</code> in <code>transform</code> hook",
-          "prId": 5045
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/4868",
-          "title": "Add <code>needsCodeReference</code> property to <code>EmittedAsset</code>",
-          "prId": 4868
-        }
-      ]
-    ],
-    [
-      "vitest-dev/vitest-ecosystem-ci",
-      [
-        {
-          "url": "https://github.com/vitest-dev/vitest-ecosystem-ci/pull/4",
-          "title": "feat: add vitest-github-actions-reporter",
-          "prId": 4
-        }
-      ]
-    ],
-    [
       "antfu/vite-ssg",
       [
         {
@@ -467,16 +452,6 @@
           "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/102",
           "title": "Custom discord integration ",
           "prId": 102
-        }
-      ]
-    ],
-    [
-      "histoire-dev/histoire",
-      [
-        {
-          "url": "https://github.com/histoire-dev/histoire/pull/550",
-          "title": "chore: fix pnpm version inconsistency",
-          "prId": 550
         }
       ]
     ],
