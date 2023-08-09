@@ -4,6 +4,7 @@ import type { TransitionProps } from 'vue'
 import type { Router, RouteRecordRaw } from 'vue-router'
 
 declare module 'vue-router' {
+  // eslint-disable-next-line @typescript-eslint/consistent-type-definitions
   interface RouteMeta {
     showInRoutes?: true
     noScrollReset?: true

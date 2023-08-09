@@ -1,4 +1,4 @@
-interface TreeDataNode {
+type TreeDataNode = {
   name: string
   href?: string
   children?: TreeData

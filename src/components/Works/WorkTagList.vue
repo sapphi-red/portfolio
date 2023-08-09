@@ -8,7 +8,7 @@
 import type { Tag } from '/@/assets/works'
 
 defineProps<{
-  tags: ReadonlyArray<Tag>
+  tags: readonly Tag[]
 }>()
 </script>
 

@@ -22,7 +22,7 @@ defineProps<{
 }>()
 
 defineEmits<{
-  (name: 'toggle', tag: Tag): void
+  toggle: [tag: Tag]
 }>()
 </script>
 

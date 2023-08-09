@@ -33,10 +33,12 @@ module.exports = {
       extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/stylistic',
         'prettier'
       ],
       rules: {
-        '@typescript-eslint/consistent-type-imports': 'error'
+        '@typescript-eslint/consistent-type-imports': 'error',
+        '@typescript-eslint/consistent-type-definitions': ['error', 'type']
       }
     },
     {
@@ -45,6 +47,7 @@ module.exports = {
         'eslint:recommended',
         './eslint-vue-ts-recommended.cjs',
         'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/stylistic',
         'plugin:vue/vue3-recommended',
         'prettier'
       ],
@@ -53,6 +56,7 @@ module.exports = {
       },
       rules: {
         '@typescript-eslint/consistent-type-imports': 'error',
+        '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
         'vue/require-default-prop': 'off',
         'vue/block-lang': [
           'error',

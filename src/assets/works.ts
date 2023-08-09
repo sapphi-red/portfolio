@@ -21,12 +21,12 @@ export const tags = new Set(tagsArr) as ReadonlySet<Tag>
 
 export type Tag = (typeof tagsArr)[number]
 
-export interface Article {
+export type Article = {
   readonly title: string
   readonly link: string
 }
 
-export interface Work {
+export type Work = {
   readonly slug: string
   readonly name: string
   readonly desc: string

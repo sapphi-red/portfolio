@@ -6,7 +6,9 @@
  * 適用されるようにするためにoverridesに'*.vue'を追加する
  */
 
-const typescriptEslintEslintRecommended = require('@typescript-eslint/eslint-plugin/dist/configs/eslint-recommended')
+const typescriptEslint = require('@typescript-eslint/eslint-plugin')
+const typescriptEslintEslintRecommended =
+  typescriptEslint.configs['eslint-recommended']
 
 module.exports = {
   ...typescriptEslintEslintRecommended,

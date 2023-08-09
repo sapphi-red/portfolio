@@ -15,7 +15,7 @@
 <script lang="ts">
 export type BarListData = readonly BarListDataNode[]
 
-interface BarListDataNode {
+type BarListDataNode = {
   name: string
   percentage: number
   children?: BarListData
