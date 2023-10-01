@@ -31,7 +31,7 @@
     "@typescript-eslint/eslint-plugin": "^6.5.0",
     "@typescript-eslint/parser": "^6.5.0",
     "@typescript/lib-dom": "npm:@types/web@^0.0.99",
-    "@unhead/vue": "^1.4.1",
+    "@unhead/vue": "^1.7.4",
     "@vitejs/plugin-vue": "^4.3.4",
     "critters": "^0.0.16",
     "eslint": "^8.48.0",
