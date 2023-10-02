@@ -4,29 +4,9 @@
       "vitejs/vite",
       [
         {
-          "url": "https://github.com/vitejs/vite/pull/14507",
-          "title": "ci: use Node 18.17 for Windows due to a bug in Node",
-          "prId": 14507
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14487",
-          "title": "fix: handle fs.realpath.native MAX_PATH issue for Node.js &lt;18.10",
-          "prId": 14487
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14476",
-          "title": "test: fix &quot;WebSocket server error: Port is already in use&quot; happening in json playground",
-          "prId": 14476
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/14464",
           "title": "fix: allow path ending with .html to fallback to index.html and allow preview to fallback . containing path",
           "prId": 14464
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14452",
-          "title": "test: tweak lib helpers inject to test &quot;use strict&quot;",
-          "prId": 14452
         },
         {
           "url": "https://github.com/vitejs/vite/pull/14447",
@@ -34,74 +14,14 @@
           "prId": 14447
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/14429",
-          "title": "refactor(legacy)!: remove <code>ignoreBrowserslistConfig</code> option",
-          "prId": 14429
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14428",
-          "title": "fix(legacy): modern polyfill autodetection was injecting more polyfills than needed",
-          "prId": 14428
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14403",
-          "title": "docs: use extends instead of spreading default theme",
-          "prId": 14403
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14394",
-          "title": "fix: handle errors during <code>hasWorkspacePackageJSON</code> function",
-          "prId": 14394
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14391",
-          "title": "fix(deps): update dependency dotenv-expand to v10",
-          "prId": 14391
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14377",
-          "title": "feat: use <code>import.meta.url</code> instead of <code>self.location</code>",
-          "prId": 14377
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/14343",
           "title": "docs: v4 to v5 migration guide",
           "prId": 14343
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/14310",
-          "title": "chore: remove unused packages",
-          "prId": 14310
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14247",
-          "title": "fix: use relative path for sources field",
-          "prId": 14247
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14240",
-          "title": "docs: remove npm@6 commands",
-          "prId": 14240
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14233",
-          "title": "docs(legacy): correct <code>modernPolyfills</code> description",
-          "prId": 14233
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/14232",
           "title": "fix: handle sourcemap correctly when multiple line import exists",
           "prId": 14232
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14231",
-          "title": "feat!: add extension to internal virtual modules",
-          "prId": 14231
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14230",
-          "title": "fix!: put manifest files in .vite directory by default",
-          "prId": 14230
         },
         {
           "url": "https://github.com/vitejs/vite/pull/14142",
@@ -119,29 +39,9 @@
           "prId": 14125
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/14124",
-          "title": "docs: clarify when <code>import.meta.env.PROD</code> is <code>true</code>",
-          "prId": 14124
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14119",
-          "title": "refactor!: merge <code>PreviewServerForHook</code> into <code>PreviewServer</code> type",
-          "prId": 14119
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14118",
-          "title": "refactor(glob)!: remove <code>import.meta.globEager</code>",
-          "prId": 14118
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/14117",
           "title": "fix(glob): trigger HMR for glob in a  package",
           "prId": 14117
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14107",
-          "title": "chore(deps): update miniflare to v3",
-          "prId": 14107
         },
         {
           "url": "https://github.com/vitejs/vite/pull/14073",
@@ -152,11 +52,6 @@
           "url": "https://github.com/vitejs/vite/pull/14068",
           "title": "perf: use <code>URL.canParse</code>",
           "prId": 14068
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14049",
-          "title": "feat(deps): upgrade rollup to 3.28.0",
-          "prId": 14049
         },
         {
           "url": "https://github.com/vitejs/vite/pull/13974",
@@ -559,11 +454,6 @@
       "Rich-Harris/magic-string",
       [
         {
-          "url": "https://github.com/Rich-Harris/magic-string/pull/262",
-          "title": "chore: remove mocha.opts",
-          "prId": 262
-        },
-        {
           "url": "https://github.com/Rich-Harris/magic-string/pull/261",
           "title": "fix: correct mappings for update containing new line",
           "prId": 261
@@ -572,101 +462,6 @@
           "url": "https://github.com/Rich-Harris/magic-string/pull/216",
           "title": "perf: delay guess encoded",
           "prId": 216
-        }
-      ]
-    ],
-    [
-      "laravel/vite-plugin",
-      [
-        {
-          "url": "https://github.com/laravel/vite-plugin/pull/246",
-          "title": "Upgrade vitest",
-          "prId": 246
-        }
-      ]
-    ],
-    [
-      "vitejs/vite-plugin-vue",
-      [
-        {
-          "url": "https://github.com/vitejs/vite-plugin-vue/pull/256",
-          "title": "chore: set ssr manifest path",
-          "prId": 256
-        },
-        {
-          "url": "https://github.com/vitejs/vite-plugin-vue/pull/255",
-          "title": "chore: add <code>@ts-ignore</code> when accessing <code>legacy?.buildSsrCjsExternalHeuristics</code>",
-          "prId": 255
-        },
-        {
-          "url": "https://github.com/vitejs/vite-plugin-vue/pull/224",
-          "title": "test: migrate tailwind + pug test from Vite repo",
-          "prId": 224
-        },
-        {
-          "url": "https://github.com/vitejs/vite-plugin-vue/pull/183",
-          "title": "chore: cleanup hoist patterns",
-          "prId": 183
-        }
-      ]
-    ],
-    [
-      "vitejs/vite-plugin-react-pages",
-      [
-        {
-          "url": "https://github.com/vitejs/vite-plugin-react-pages/pull/158",
-          "title": "chore: update rollup",
-          "prId": 158
-        }
-      ]
-    ],
-    [
-      "unocss/unocss",
-      [
-        {
-          "url": "https://github.com/unocss/unocss/pull/3136",
-          "title": "chore: update rollup to 3.29.2",
-          "prId": 3136
-        },
-        {
-          "url": "https://github.com/unocss/unocss/pull/2661",
-          "title": "fix(vscode): attributify auto complete",
-          "prId": 2661
-        },
-        {
-          "url": "https://github.com/unocss/unocss/pull/2643",
-          "title": "fix(preset-attributify): autocomplete with prefix",
-          "prId": 2643
-        },
-        {
-          "url": "https://github.com/unocss/unocss/pull/2409",
-          "title": "fix(preset-mini): order <code>-webkit-appearance</code> before",
-          "prId": 2409
-        },
-        {
-          "url": "https://github.com/unocss/unocss/pull/2408",
-          "title": "feat(preset-mini): add webkit vendor prefix to <code>user-select</code>",
-          "prId": 2408
-        }
-      ]
-    ],
-    [
-      "nuxt/nuxt",
-      [
-        {
-          "url": "https://github.com/nuxt/nuxt/pull/23230",
-          "title": "fix(nuxt): handle vite preload-helper id with extension",
-          "prId": 23230
-        }
-      ]
-    ],
-    [
-      "BuilderIO/qwik",
-      [
-        {
-          "url": "https://github.com/BuilderIO/qwik/pull/5161",
-          "title": "docs: use import .css?inline instead of .css",
-          "prId": 5161
         }
       ]
     ],
@@ -842,6 +637,31 @@
           "url": "https://github.com/vuejs/vitepress/pull/855",
           "title": "fix: ESM SSR",
           "prId": 855
+        }
+      ]
+    ],
+    [
+      "unocss/unocss",
+      [
+        {
+          "url": "https://github.com/unocss/unocss/pull/2661",
+          "title": "fix(vscode): attributify auto complete",
+          "prId": 2661
+        },
+        {
+          "url": "https://github.com/unocss/unocss/pull/2643",
+          "title": "fix(preset-attributify): autocomplete with prefix",
+          "prId": 2643
+        },
+        {
+          "url": "https://github.com/unocss/unocss/pull/2409",
+          "title": "fix(preset-mini): order <code>-webkit-appearance</code> before",
+          "prId": 2409
+        },
+        {
+          "url": "https://github.com/unocss/unocss/pull/2408",
+          "title": "feat(preset-mini): add webkit vendor prefix to <code>user-select</code>",
+          "prId": 2408
         }
       ]
     ],
