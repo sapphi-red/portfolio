@@ -4,6 +4,126 @@
       "vitejs/vite",
       [
         {
+          "url": "https://github.com/vitejs/vite/pull/14832",
+          "title": "docs: remove boolean from <code>server.https</code>",
+          "prId": 14832
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/14831",
+          "title": "docs: update stale <code>define</code> docs",
+          "prId": 14831
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/14830",
+          "title": "docs: add links to migration guide",
+          "prId": 14830
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/14827",
+          "title": "chore: revert &quot;feat: show warning to discourage putting process/global to <code>define</code> option (#14447)&quot;",
+          "prId": 14827
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/14821",
+          "title": "feat: upgrade rollup to 4.2.0 and use parseAstAsync",
+          "prId": 14821
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/14792",
+          "title": "refactor!: remove non boolean middleware mode",
+          "prId": 14792
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/14791",
+          "title": "feat: add a runtime warning for the old object type transformIndexHtml hook",
+          "prId": 14791
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/14684",
+          "title": "chore: reduce test flakiness",
+          "prId": 14684
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/14681",
+          "title": "refactor!: remove https flag",
+          "prId": 14681
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/14679",
+          "title": "ci: run CI on new Node LTS version (20)",
+          "prId": 14679
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/14663",
+          "title": "fix(html): srcset pointing image in public dir wasn't working during dev",
+          "prId": 14663
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/14662",
+          "title": "test: reduce ssr-conditions test flakiness",
+          "prId": 14662
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/14660",
+          "title": "feat: postcss config <code>.cts</code> support",
+          "prId": 14660
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/14600",
+          "title": "feat: show better parse error in build",
+          "prId": 14600
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/14595",
+          "title": "fix(html): import expression in classic script for dev",
+          "prId": 14595
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/14592",
+          "title": "fix(html): inline style attribute not working in dev",
+          "prId": 14592
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/14591",
+          "title": "fix(html): relative paths without leading dot wasn't rewritten",
+          "prId": 14591
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/14566",
+          "title": "chore: use <code>npm-run-all2</code>",
+          "prId": 14566
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/14539",
+          "title": "fix(lib): esbuild helper functions injection not working with named exports",
+          "prId": 14539
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/14533",
+          "title": "fix: esbuild glob resolve error",
+          "prId": 14533
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/14530",
+          "title": "refactor!: remove <code>server.force</code>",
+          "prId": 14530
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/14522",
+          "title": "test: fix flaky legacy structuredClone fail",
+          "prId": 14522
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/14508",
+          "title": "feat!: rollup v4",
+          "prId": 14508
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/14475",
+          "title": "test: cleanup <code>testConfig.baseRoute</code> and use <code>testConfig.previewBase</code>",
+          "prId": 14475
+        },
+        {
           "url": "https://github.com/vitejs/vite/pull/14464",
           "title": "fix: allow path ending with .html to fallback to index.html and allow preview to fallback . containing path",
           "prId": 14464
@@ -451,6 +571,196 @@
       ]
     ],
     [
+      "rollup/rollup",
+      [
+        {
+          "url": "https://github.com/rollup/rollup/pull/5204",
+          "title": "perf: shrink wasm size by avoid importing browserslist",
+          "prId": 5204
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5203",
+          "title": "fix: export xxhashBase64Url from wasm",
+          "prId": 5203
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5202",
+          "title": "perf: introduce <code>parseAstAsync</code> and parallelize parsing AST",
+          "prId": 5202
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5201",
+          "title": "perf: use mimalloc for bindings_napi",
+          "prId": 5201
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5072",
+          "title": "Add known globals",
+          "prId": 5072
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5045",
+          "title": "Fix <code>this.error</code> with <code>pos</code> in <code>transform</code> hook",
+          "prId": 5045
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/4868",
+          "title": "Add <code>needsCodeReference</code> property to <code>EmittedAsset</code>",
+          "prId": 4868
+        }
+      ]
+    ],
+    [
+      "unjs/unbuild",
+      [
+        {
+          "url": "https://github.com/unjs/unbuild/pull/327",
+          "title": "feat!: update to rollup 4",
+          "prId": 327
+        }
+      ]
+    ],
+    [
+      "nodejs/node",
+      [
+        {
+          "url": "https://github.com/nodejs/node/pull/50118",
+          "title": "tools: remove no-return-await lint rule",
+          "prId": 50118
+        },
+        {
+          "url": "https://github.com/nodejs/node/pull/49849",
+          "title": "fs: add stacktrace to fs/promises",
+          "prId": 49849
+        },
+        {
+          "url": "https://github.com/nodejs/node/pull/46391",
+          "title": "lib: add api to detect whether source-maps are enabled",
+          "prId": 46391
+        },
+        {
+          "url": "https://github.com/nodejs/node/pull/45280",
+          "title": "doc: fix RESOLVE_ESM_MATCH in modules.md",
+          "prId": 45280
+        }
+      ]
+    ],
+    [
+      "vitejs/vite-ecosystem-ci",
+      [
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/256",
+          "title": "Port changes from vue ecosystem ci",
+          "prId": 256
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/252",
+          "title": "fix: use non-truncated ref for links in discord",
+          "prId": 252
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/226",
+          "title": "docs: setting up PR comment trigger feature",
+          "prId": 226
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/139",
+          "title": "feat: group command output in GitHub Actions",
+          "prId": 139
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/120",
+          "title": "feat: vite repo",
+          "prId": 120
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/102",
+          "title": "Custom discord integration ",
+          "prId": 102
+        }
+      ]
+    ],
+    [
+      "vuejs/vitepress",
+      [
+        {
+          "url": "https://github.com/vuejs/vitepress/pull/3065",
+          "title": "chore: make it work with rollup v4",
+          "prId": 3065
+        },
+        {
+          "url": "https://github.com/vuejs/vitepress/pull/2400",
+          "title": "fix(theme): support custom target and rel in navbar links for mobile",
+          "prId": 2400
+        },
+        {
+          "url": "https://github.com/vuejs/vitepress/pull/1851",
+          "title": "feat(theme): preconnect algolia when idle",
+          "prId": 1851
+        },
+        {
+          "url": "https://github.com/vuejs/vitepress/pull/1850",
+          "title": "fix: take &lt;a&gt; in SVG into account",
+          "prId": 1850
+        },
+        {
+          "url": "https://github.com/vuejs/vitepress/pull/855",
+          "title": "fix: ESM SSR",
+          "prId": 855
+        }
+      ]
+    ],
+    [
+      "vitejs/vite-plugin-vue",
+      [
+        {
+          "url": "https://github.com/vitejs/vite-plugin-vue/pull/271",
+          "title": "chore: make tests pass with rollup4",
+          "prId": 271
+        },
+        {
+          "url": "https://github.com/vitejs/vite-plugin-vue/pull/266",
+          "title": "chore: restore sourcemap tests",
+          "prId": 266
+        },
+        {
+          "url": "https://github.com/vitejs/vite-plugin-vue/pull/263",
+          "title": "chore: use <code>import type</code> for type only file import",
+          "prId": 263
+        }
+      ]
+    ],
+    [
+      "egoist/tsup",
+      [
+        {
+          "url": "https://github.com/egoist/tsup/pull/1018",
+          "title": "feat!: update to rollup v4",
+          "prId": 1018
+        },
+        {
+          "url": "https://github.com/egoist/tsup/pull/900",
+          "title": "fix: preserve top-level when running terser for IIFE",
+          "prId": 900
+        },
+        {
+          "url": "https://github.com/egoist/tsup/pull/899",
+          "title": "fix: prefix terser log with name",
+          "prId": 899
+        }
+      ]
+    ],
+    [
+      "rollup/plugins",
+      [
+        {
+          "url": "https://github.com/rollup/plugins/pull/1596",
+          "title": "fix(commonjs,dynamic-import-vars,esm-shim,inject,replace,strip): bump magic-string version",
+          "prId": 1596
+        }
+      ]
+    ],
+    [
       "Rich-Harris/magic-string",
       [
         {
@@ -462,21 +772,6 @@
           "url": "https://github.com/Rich-Harris/magic-string/pull/216",
           "title": "perf: delay guess encoded",
           "prId": 216
-        }
-      ]
-    ],
-    [
-      "nodejs/node",
-      [
-        {
-          "url": "https://github.com/nodejs/node/pull/46391",
-          "title": "lib: add api to detect whether source-maps are enabled",
-          "prId": 46391
-        },
-        {
-          "url": "https://github.com/nodejs/node/pull/45280",
-          "title": "doc: fix RESOLVE_ESM_MATCH in modules.md",
-          "prId": 45280
         }
       ]
     ],
@@ -516,26 +811,6 @@
       ]
     ],
     [
-      "rollup/rollup",
-      [
-        {
-          "url": "https://github.com/rollup/rollup/pull/5072",
-          "title": "Add known globals",
-          "prId": 5072
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5045",
-          "title": "Fix <code>this.error</code> with <code>pos</code> in <code>transform</code> hook",
-          "prId": 5045
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/4868",
-          "title": "Add <code>needsCodeReference</code> property to <code>EmittedAsset</code>",
-          "prId": 4868
-        }
-      ]
-    ],
-    [
       "antfu/vite-ssg",
       [
         {
@@ -556,46 +831,6 @@
       ]
     ],
     [
-      "vitejs/vite-ecosystem-ci",
-      [
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/226",
-          "title": "docs: setting up PR comment trigger feature",
-          "prId": 226
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/139",
-          "title": "feat: group command output in GitHub Actions",
-          "prId": 139
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/120",
-          "title": "feat: vite repo",
-          "prId": 120
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/102",
-          "title": "Custom discord integration ",
-          "prId": 102
-        }
-      ]
-    ],
-    [
-      "egoist/tsup",
-      [
-        {
-          "url": "https://github.com/egoist/tsup/pull/900",
-          "title": "fix: preserve top-level when running terser for IIFE",
-          "prId": 900
-        },
-        {
-          "url": "https://github.com/egoist/tsup/pull/899",
-          "title": "fix: prefix terser log with name",
-          "prId": 899
-        }
-      ]
-    ],
-    [
       "vuejs/language-tools",
       [
         {
@@ -612,31 +847,6 @@
           "url": "https://github.com/vuejs/language-tools/pull/546",
           "title": "Improve v-for type",
           "prId": 546
-        }
-      ]
-    ],
-    [
-      "vuejs/vitepress",
-      [
-        {
-          "url": "https://github.com/vuejs/vitepress/pull/2400",
-          "title": "fix(theme): support custom target and rel in navbar links for mobile",
-          "prId": 2400
-        },
-        {
-          "url": "https://github.com/vuejs/vitepress/pull/1851",
-          "title": "feat(theme): preconnect algolia when idle",
-          "prId": 1851
-        },
-        {
-          "url": "https://github.com/vuejs/vitepress/pull/1850",
-          "title": "fix: take &lt;a&gt; in SVG into account",
-          "prId": 1850
-        },
-        {
-          "url": "https://github.com/vuejs/vitepress/pull/855",
-          "title": "fix: ESM SSR",
-          "prId": 855
         }
       ]
     ],
@@ -1046,5 +1256,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2023-10-01T11:02:54.403Z"
+  "fetchedAt": "2023-11-01T11:03:44.443Z"
 }
