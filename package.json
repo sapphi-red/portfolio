@@ -41,7 +41,7 @@
     "prettier": "^3.0.3",
     "sass": "^1.64.2",
     "typescript": "^5.2.2",
-    "typescript-plugin-toml": "^0.2.0",
+    "typescript-plugin-toml": "^0.3.1",
     "unplugin-icons": "^0.17.1",
     "vite": "^4.4.9",
     "vite-plugin-toml": "^0.5.0",
