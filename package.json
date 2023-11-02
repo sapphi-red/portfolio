@@ -43,7 +43,7 @@
     "typescript": "^5.2.2",
     "typescript-plugin-toml": "^0.2.0",
     "unplugin-icons": "^0.17.1",
-    "vite": "^4.4.9",
+    "vite": "^4.5.0",
     "vite-plugin-toml": "^0.5.0",
     "vite-ssg": "^0.23.4",
     "vue-tsc": "^1.8.15"
