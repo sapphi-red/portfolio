@@ -1,38 +1,58 @@
 {
   "repos": [
     [
-      "vitejs/vite",
+      "rollup/rollup",
       [
         {
-          "url": "https://github.com/vitejs/vite/pull/14832",
-          "title": "docs: remove boolean from <code>server.https</code>",
-          "prId": 14832
+          "url": "https://github.com/rollup/rollup/pull/5204",
+          "title": "perf: shrink wasm size by avoid importing browserslist",
+          "prId": 5204
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/14831",
-          "title": "docs: update stale <code>define</code> docs",
-          "prId": 14831
+          "url": "https://github.com/rollup/rollup/pull/5203",
+          "title": "fix: export xxhashBase64Url from wasm",
+          "prId": 5203
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/14830",
-          "title": "docs: add links to migration guide",
-          "prId": 14830
+          "url": "https://github.com/rollup/rollup/pull/5202",
+          "title": "perf: introduce <code>parseAstAsync</code> and parallelize parsing AST",
+          "prId": 5202
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/14827",
-          "title": "chore: revert &quot;feat: show warning to discourage putting process/global to <code>define</code> option (#14447)&quot;",
-          "prId": 14827
+          "url": "https://github.com/rollup/rollup/pull/5201",
+          "title": "perf: use mimalloc for bindings_napi",
+          "prId": 5201
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/14821",
-          "title": "feat: upgrade rollup to 4.2.0 and use parseAstAsync",
-          "prId": 14821
+          "url": "https://github.com/rollup/rollup/pull/5072",
+          "title": "Add known globals",
+          "prId": 5072
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/14792",
-          "title": "refactor!: remove non boolean middleware mode",
-          "prId": 14792
+          "url": "https://github.com/rollup/rollup/pull/5045",
+          "title": "Fix <code>this.error</code> with <code>pos</code> in <code>transform</code> hook",
+          "prId": 5045
         },
+        {
+          "url": "https://github.com/rollup/rollup/pull/4868",
+          "title": "Add <code>needsCodeReference</code> property to <code>EmittedAsset</code>",
+          "prId": 4868
+        }
+      ]
+    ],
+    [
+      "unjs/unbuild",
+      [
+        {
+          "url": "https://github.com/unjs/unbuild/pull/327",
+          "title": "feat!: update to rollup 4",
+          "prId": 327
+        }
+      ]
+    ],
+    [
+      "vitejs/vite",
+      [
         {
           "url": "https://github.com/vitejs/vite/pull/14791",
           "title": "feat: add a runtime warning for the old object type transformIndexHtml hook",
@@ -44,24 +64,9 @@
           "prId": 14684
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/14681",
-          "title": "refactor!: remove https flag",
-          "prId": 14681
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14679",
-          "title": "ci: run CI on new Node LTS version (20)",
-          "prId": 14679
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/14663",
           "title": "fix(html): srcset pointing image in public dir wasn't working during dev",
           "prId": 14663
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14662",
-          "title": "test: reduce ssr-conditions test flakiness",
-          "prId": 14662
         },
         {
           "url": "https://github.com/vitejs/vite/pull/14660",
@@ -89,11 +94,6 @@
           "prId": 14591
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/14566",
-          "title": "chore: use <code>npm-run-all2</code>",
-          "prId": 14566
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/14539",
           "title": "fix(lib): esbuild helper functions injection not working with named exports",
           "prId": 14539
@@ -104,11 +104,6 @@
           "prId": 14533
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/14530",
-          "title": "refactor!: remove <code>server.force</code>",
-          "prId": 14530
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/14522",
           "title": "test: fix flaky legacy structuredClone fail",
           "prId": 14522
@@ -117,11 +112,6 @@
           "url": "https://github.com/vitejs/vite/pull/14508",
           "title": "feat!: rollup v4",
           "prId": 14508
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14475",
-          "title": "test: cleanup <code>testConfig.baseRoute</code> and use <code>testConfig.previewBase</code>",
-          "prId": 14475
         },
         {
           "url": "https://github.com/vitejs/vite/pull/14464",
@@ -567,56 +557,6 @@
           "url": "https://github.com/vitejs/vite/pull/7098",
           "title": "fix: import with query with exports/browser field",
           "prId": 7098
-        }
-      ]
-    ],
-    [
-      "rollup/rollup",
-      [
-        {
-          "url": "https://github.com/rollup/rollup/pull/5204",
-          "title": "perf: shrink wasm size by avoid importing browserslist",
-          "prId": 5204
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5203",
-          "title": "fix: export xxhashBase64Url from wasm",
-          "prId": 5203
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5202",
-          "title": "perf: introduce <code>parseAstAsync</code> and parallelize parsing AST",
-          "prId": 5202
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5201",
-          "title": "perf: use mimalloc for bindings_napi",
-          "prId": 5201
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5072",
-          "title": "Add known globals",
-          "prId": 5072
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5045",
-          "title": "Fix <code>this.error</code> with <code>pos</code> in <code>transform</code> hook",
-          "prId": 5045
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/4868",
-          "title": "Add <code>needsCodeReference</code> property to <code>EmittedAsset</code>",
-          "prId": 4868
-        }
-      ]
-    ],
-    [
-      "unjs/unbuild",
-      [
-        {
-          "url": "https://github.com/unjs/unbuild/pull/327",
-          "title": "feat!: update to rollup 4",
-          "prId": 327
         }
       ]
     ],
