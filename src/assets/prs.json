@@ -104,11 +104,6 @@
           "prId": 14533
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/14522",
-          "title": "test: fix flaky legacy structuredClone fail",
-          "prId": 14522
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/14508",
           "title": "feat!: rollup v4",
           "prId": 14508
@@ -564,11 +559,6 @@
       "nodejs/node",
       [
         {
-          "url": "https://github.com/nodejs/node/pull/50118",
-          "title": "tools: remove no-return-await lint rule",
-          "prId": 50118
-        },
-        {
           "url": "https://github.com/nodejs/node/pull/49849",
           "title": "fs: add stacktrace to fs/promises",
           "prId": 49849
@@ -594,11 +584,6 @@
           "prId": 256
         },
         {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/252",
-          "title": "fix: use non-truncated ref for links in discord",
-          "prId": 252
-        },
-        {
           "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/226",
           "title": "docs: setting up PR comment trigger feature",
           "prId": 226
@@ -617,56 +602,6 @@
           "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/102",
           "title": "Custom discord integration ",
           "prId": 102
-        }
-      ]
-    ],
-    [
-      "vuejs/vitepress",
-      [
-        {
-          "url": "https://github.com/vuejs/vitepress/pull/3065",
-          "title": "chore: make it work with rollup v4",
-          "prId": 3065
-        },
-        {
-          "url": "https://github.com/vuejs/vitepress/pull/2400",
-          "title": "fix(theme): support custom target and rel in navbar links for mobile",
-          "prId": 2400
-        },
-        {
-          "url": "https://github.com/vuejs/vitepress/pull/1851",
-          "title": "feat(theme): preconnect algolia when idle",
-          "prId": 1851
-        },
-        {
-          "url": "https://github.com/vuejs/vitepress/pull/1850",
-          "title": "fix: take &lt;a&gt; in SVG into account",
-          "prId": 1850
-        },
-        {
-          "url": "https://github.com/vuejs/vitepress/pull/855",
-          "title": "fix: ESM SSR",
-          "prId": 855
-        }
-      ]
-    ],
-    [
-      "vitejs/vite-plugin-vue",
-      [
-        {
-          "url": "https://github.com/vitejs/vite-plugin-vue/pull/271",
-          "title": "chore: make tests pass with rollup4",
-          "prId": 271
-        },
-        {
-          "url": "https://github.com/vitejs/vite-plugin-vue/pull/266",
-          "title": "chore: restore sourcemap tests",
-          "prId": 266
-        },
-        {
-          "url": "https://github.com/vitejs/vite-plugin-vue/pull/263",
-          "title": "chore: use <code>import type</code> for type only file import",
-          "prId": 263
         }
       ]
     ],
@@ -691,12 +626,12 @@
       ]
     ],
     [
-      "rollup/plugins",
+      "vitejs/vite-plugin-vue",
       [
         {
-          "url": "https://github.com/rollup/plugins/pull/1596",
-          "title": "fix(commonjs,dynamic-import-vars,esm-shim,inject,replace,strip): bump magic-string version",
-          "prId": 1596
+          "url": "https://github.com/vitejs/vite-plugin-vue/pull/263",
+          "title": "chore: use <code>import type</code> for type only file import",
+          "prId": 263
         }
       ]
     ],
@@ -787,6 +722,31 @@
           "url": "https://github.com/vuejs/language-tools/pull/546",
           "title": "Improve v-for type",
           "prId": 546
+        }
+      ]
+    ],
+    [
+      "vuejs/vitepress",
+      [
+        {
+          "url": "https://github.com/vuejs/vitepress/pull/2400",
+          "title": "fix(theme): support custom target and rel in navbar links for mobile",
+          "prId": 2400
+        },
+        {
+          "url": "https://github.com/vuejs/vitepress/pull/1851",
+          "title": "feat(theme): preconnect algolia when idle",
+          "prId": 1851
+        },
+        {
+          "url": "https://github.com/vuejs/vitepress/pull/1850",
+          "title": "fix: take &lt;a&gt; in SVG into account",
+          "prId": 1850
+        },
+        {
+          "url": "https://github.com/vuejs/vitepress/pull/855",
+          "title": "fix: ESM SSR",
+          "prId": 855
         }
       ]
     ],
