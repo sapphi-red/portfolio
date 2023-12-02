@@ -4,11 +4,6 @@
       "vitejs/vite",
       [
         {
-          "url": "https://github.com/vitejs/vite/pull/15194",
-          "title": "chore: update vitest to 1.0.0-beta.6",
-          "prId": 15194
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/15155",
           "title": "fix(css): use non-nested chunk name if facadeModule is not CSS file",
           "prId": 15155
@@ -19,144 +14,14 @@
           "prId": 15154
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/15135",
-          "title": "fix: js fallback sourcemap content should be using original content",
-          "prId": 15135
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/15098",
-          "title": "test(legacy): add a test to checks all inline snippets are valid JS",
-          "prId": 15098
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/15096",
-          "title": "test: skip unicode test on windows instead of lowering the Node version",
-          "prId": 15096
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/15093",
-          "title": "fix: <code>generateCodeFrame</code> infinite loop",
-          "prId": 15093
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/15059",
-          "title": "fix: make htmlFallback more permissive",
-          "prId": 15059
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/15057",
-          "title": "docs(legacy): clarify that csp hashes could change between minors",
-          "prId": 15057
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/15040",
-          "title": "chore: add comment about crossorigin attribute for script module",
-          "prId": 15040
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/15025",
-          "title": "fix: run htmlFallbackMiddleware for no accept header requests",
-          "prId": 15025
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/15023",
-          "title": "docs: add a note about <code>moduleResolution</code> for rollup 4",
-          "prId": 15023
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14995",
-          "title": "fix: don't append <code>/@fs/</code> for bare imports",
-          "prId": 14995
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14986",
-          "title": "fix: code frame was not generated for postcss errors",
-          "prId": 14986
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/14984",
           "title": "fix: caret position was incorrect",
           "prId": 14984
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/14955",
-          "title": "fix: preload marker duplicate deps",
-          "prId": 14955
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14953",
-          "title": "fix: don't watch SPA fallback paths",
-          "prId": 14953
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/14945",
           "title": "fix(css): correctly set manifest source name and emit CSS file",
           "prId": 14945
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14940",
-          "title": "docs: add mastodon link to sapphi-red",
-          "prId": 14940
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14939",
-          "title": "docs: add v4.vitejs.dev link to nav bar",
-          "prId": 14939
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14938",
-          "title": "fix: add watch in fallback file load",
-          "prId": 14938
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14937",
-          "title": "refactor: update es-module-lexer to 1.4.0",
-          "prId": 14937
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14909",
-          "title": "feat: add invalid <code>rollupOptions</code> warnings",
-          "prId": 14909
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14907",
-          "title": "docs: clarify origin part of <code>base</code> is not used in dev",
-          "prId": 14907
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14906",
-          "title": "chore: add documentation update checkbox in PR template",
-          "prId": 14906
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14905",
-          "title": "fix: <code>server.headers</code> after restart in middleware mode",
-          "prId": 14905
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14889",
-          "title": "docs: add #14834 to migration guide",
-          "prId": 14889
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14879",
-          "title": "fix: file link in overlay with custom backend",
-          "prId": 14879
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14878",
-          "title": "test: use <code>isPreview</code> instead of <code>previewBase</code>",
-          "prId": 14878
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14866",
-          "title": "chore: revert &quot;fix: don't add <code>?import</code> for <code>@vite-ignore</code>ed import (#14851)&quot;",
-          "prId": 14866
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/14851",
-          "title": "fix: don't add <code>?import</code> for <code>@vite-ignore</code>ed import",
-          "prId": 14851
         },
         {
           "url": "https://github.com/vitejs/vite/pull/14828",
@@ -704,11 +569,6 @@
           "prId": 5204
         },
         {
-          "url": "https://github.com/rollup/rollup/pull/5203",
-          "title": "fix: export xxhashBase64Url from wasm",
-          "prId": 5203
-        },
-        {
           "url": "https://github.com/rollup/rollup/pull/5202",
           "title": "perf: introduce <code>parseAstAsync</code> and parallelize parsing AST",
           "prId": 5202
@@ -727,11 +587,6 @@
           "url": "https://github.com/rollup/rollup/pull/5045",
           "title": "Fix <code>this.error</code> with <code>pos</code> in <code>transform</code> hook",
           "prId": 5045
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/4868",
-          "title": "Add <code>needsCodeReference</code> property to <code>EmittedAsset</code>",
-          "prId": 4868
         }
       ]
     ],
@@ -776,16 +631,6 @@
       ]
     ],
     [
-      "kaz/pprotein",
-      [
-        {
-          "url": "https://github.com/kaz/pprotein/pull/35",
-          "title": "同じ種類のタブ同士を切り替えたときに内容が更新されていなかった",
-          "prId": 35
-        }
-      ]
-    ],
-    [
       "egoist/tsup",
       [
         {
@@ -809,34 +654,14 @@
       "guybedford/es-module-lexer",
       [
         {
-          "url": "https://github.com/guybedford/es-module-lexer/pull/164",
-          "title": "fix: ignore dynamic import for <code>hasModulesyntax</code>",
-          "prId": 164
-        },
-        {
           "url": "https://github.com/guybedford/es-module-lexer/pull/162",
           "title": "feat: skip trailing white space in dynamic import",
           "prId": 162
         },
         {
-          "url": "https://github.com/guybedford/es-module-lexer/pull/161",
-          "title": "types: add ParseError type",
-          "prId": 161
-        },
-        {
           "url": "https://github.com/guybedford/es-module-lexer/pull/160",
           "title": "feat: ESM detection support",
           "prId": 160
-        }
-      ]
-    ],
-    [
-      "vitejs/vite-plugin-react-pages",
-      [
-        {
-          "url": "https://github.com/vitejs/vite-plugin-react-pages/pull/165",
-          "title": "refactor: use <code>config.build.ssr</code> instead of <code>env.ssrBuild</code>",
-          "prId": 165
         }
       ]
     ],
@@ -857,81 +682,6 @@
           "url": "https://github.com/slidevjs/slidev/pull/1181",
           "title": "fix(export): use custom clicks count",
           "prId": 1181
-        }
-      ]
-    ],
-    [
-      "marko-js/vite",
-      [
-        {
-          "url": "https://github.com/marko-js/vite/pull/93",
-          "title": "test: change server type for vite 5 change",
-          "prId": 93
-        }
-      ]
-    ],
-    [
-      "vitejs/vite-plugin-vue",
-      [
-        {
-          "url": "https://github.com/vitejs/vite-plugin-vue/pull/286",
-          "title": "chore: fix tests for Vite 5",
-          "prId": 286
-        },
-        {
-          "url": "https://github.com/vitejs/vite-plugin-vue/pull/263",
-          "title": "chore: use <code>import type</code> for type only file import",
-          "prId": 263
-        }
-      ]
-    ],
-    [
-      "vite-pwa/vite-plugin-pwa",
-      [
-        {
-          "url": "https://github.com/vite-pwa/vite-plugin-pwa/pull/590",
-          "title": "refactor: use <code>order</code>/<code>handler</code> for transformIndexHtml",
-          "prId": 590
-        }
-      ]
-    ],
-    [
-      "vitejs/vite-ecosystem-ci",
-      [
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/261",
-          "title": "fix: fix typecheck and run it in CI",
-          "prId": 261
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/260",
-          "title": "fix(nx): skip rollup overrides",
-          "prId": 260
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/256",
-          "title": "Port changes from vue ecosystem ci",
-          "prId": 256
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/226",
-          "title": "docs: setting up PR comment trigger feature",
-          "prId": 226
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/139",
-          "title": "feat: group command output in GitHub Actions",
-          "prId": 139
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/120",
-          "title": "feat: vite repo",
-          "prId": 120
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/102",
-          "title": "Custom discord integration ",
-          "prId": 102
         }
       ]
     ],
@@ -962,6 +712,16 @@
           "url": "https://github.com/nodejs/node/pull/45280",
           "title": "doc: fix RESOLVE_ESM_MATCH in modules.md",
           "prId": 45280
+        }
+      ]
+    ],
+    [
+      "vitejs/vite-plugin-vue",
+      [
+        {
+          "url": "https://github.com/vitejs/vite-plugin-vue/pull/263",
+          "title": "chore: use <code>import type</code> for type only file import",
+          "prId": 263
         }
       ]
     ],
@@ -1032,6 +792,31 @@
           "url": "https://github.com/antfu/vite-ssg/pull/14",
           "title": "fix: config was not applied",
           "prId": 14
+        }
+      ]
+    ],
+    [
+      "vitejs/vite-ecosystem-ci",
+      [
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/226",
+          "title": "docs: setting up PR comment trigger feature",
+          "prId": 226
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/139",
+          "title": "feat: group command output in GitHub Actions",
+          "prId": 139
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/120",
+          "title": "feat: vite repo",
+          "prId": 120
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/102",
+          "title": "Custom discord integration ",
+          "prId": 102
         }
       ]
     ],
