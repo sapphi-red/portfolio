@@ -14,7 +14,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
       - name: setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '18'
           cache: 'npm'
@@ -28,7 +28,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
       - name: setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '18'
           cache: 'npm'
@@ -44,7 +44,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
       - name: setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '18'
           cache: 'npm'
@@ -60,7 +60,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
       - name: setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '18'
           cache: 'npm'
@@ -76,7 +76,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
       - name: setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '18'
           cache: 'npm'
