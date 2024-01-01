@@ -4,6 +4,46 @@
       "vitejs/vite",
       [
         {
+          "url": "https://github.com/vitejs/vite/pull/15361",
+          "title": "fix: don't pretransform classic script links",
+          "prId": 15361
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/15247",
+          "title": "chore: remove unneccessary eslint-disable-next-line regexp/no-unused-capturing-group",
+          "prId": 15247
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/15229",
+          "title": "fix(hmr): don't consider CSS dep as a circular dep",
+          "prId": 15229
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/15228",
+          "title": "refactor: use dedicated regex methods",
+          "prId": 15228
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/15225",
+          "title": "fix: json error with position",
+          "prId": 15225
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/15222",
+          "title": "docs: add about <code>vite:preloadError</code>",
+          "prId": 15222
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/15205",
+          "title": "test: reduce optimize-deps playground flaky fail",
+          "prId": 15205
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/15203",
+          "title": "fix: emit <code>vite:preloadError</code> for chunks without deps",
+          "prId": 15203
+        },
+        {
           "url": "https://github.com/vitejs/vite/pull/15155",
           "title": "fix(css): use non-nested chunk name if facadeModule is not CSS file",
           "prId": 15155
@@ -531,28 +571,13 @@
       ]
     ],
     [
-      "rollup/plugins",
-      [
-        {
-          "url": "https://github.com/rollup/plugins/pull/1636",
-          "title": "fix(dynamic-import-vars): escape special glob characters",
-          "prId": 1636
-        },
-        {
-          "url": "https://github.com/rollup/plugins/pull/1635",
-          "title": "feat(pluginutils): add <code>includeArbitraryNames: true</code> to <code>dataToEsm</code>",
-          "prId": 1635
-        },
-        {
-          "url": "https://github.com/rollup/plugins/pull/1634",
-          "title": "feat(alias): add warning to avoid unintended duplicate modules",
-          "prId": 1634
-        }
-      ]
-    ],
-    [
       "rollup/rollup",
       [
+        {
+          "url": "https://github.com/rollup/rollup/pull/5284",
+          "title": "Add friendly error for missing MSVC redistributable",
+          "prId": 5284
+        },
         {
           "url": "https://github.com/rollup/rollup/pull/5267",
           "title": "Add friendly error for npm bug",
@@ -587,6 +612,131 @@
           "url": "https://github.com/rollup/rollup/pull/5045",
           "title": "Fix <code>this.error</code> with <code>pos</code> in <code>transform</code> hook",
           "prId": 5045
+        }
+      ]
+    ],
+    [
+      "nodejs/node",
+      [
+        {
+          "url": "https://github.com/nodejs/node/pull/51032",
+          "title": "fs: fix fs.promises.realpath for long paths on Windows",
+          "prId": 51032
+        },
+        {
+          "url": "https://github.com/nodejs/node/pull/49849",
+          "title": "fs: add stacktrace to fs/promises",
+          "prId": 49849
+        },
+        {
+          "url": "https://github.com/nodejs/node/pull/46391",
+          "title": "lib: add api to detect whether source-maps are enabled",
+          "prId": 46391
+        },
+        {
+          "url": "https://github.com/nodejs/node/pull/45280",
+          "title": "doc: fix RESOLVE_ESM_MATCH in modules.md",
+          "prId": 45280
+        }
+      ]
+    ],
+    [
+      "evanw/esbuild",
+      [
+        {
+          "url": "https://github.com/evanw/esbuild/pull/3520",
+          "title": "add Safari compat data for arbitrary module namespace names",
+          "prId": 3520
+        },
+        {
+          "url": "https://github.com/evanw/esbuild/pull/1758",
+          "title": "feat: Shorten &quot;top&quot;, &quot;right&quot;... properties into &quot;inset&quot; property",
+          "prId": 1758
+        },
+        {
+          "url": "https://github.com/evanw/esbuild/pull/1756",
+          "title": "feat: minify <code>font</code>/<code>font-family</code>/<code>font-weight</code> CSS property",
+          "prId": 1756
+        },
+        {
+          "url": "https://github.com/evanw/esbuild/pull/1660",
+          "title": "feat: drop catch binding when optional catch binding is supported",
+          "prId": 1660
+        }
+      ]
+    ],
+    [
+      "rollup/plugins",
+      [
+        {
+          "url": "https://github.com/rollup/plugins/pull/1641",
+          "title": "feat(json): add <code>includeArbitraryNames</code> option",
+          "prId": 1641
+        },
+        {
+          "url": "https://github.com/rollup/plugins/pull/1636",
+          "title": "fix(dynamic-import-vars): escape special glob characters",
+          "prId": 1636
+        },
+        {
+          "url": "https://github.com/rollup/plugins/pull/1635",
+          "title": "feat(pluginutils): add <code>includeArbitraryNames: true</code> to <code>dataToEsm</code>",
+          "prId": 1635
+        },
+        {
+          "url": "https://github.com/rollup/plugins/pull/1634",
+          "title": "feat(alias): add warning to avoid unintended duplicate modules",
+          "prId": 1634
+        }
+      ]
+    ],
+    [
+      "vitejs/vite-ecosystem-ci",
+      [
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/269",
+          "title": "fix: place empty tsconfig for fallback",
+          "prId": 269
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/226",
+          "title": "docs: setting up PR comment trigger feature",
+          "prId": 226
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/139",
+          "title": "feat: group command output in GitHub Actions",
+          "prId": 139
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/120",
+          "title": "feat: vite repo",
+          "prId": 120
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/102",
+          "title": "Custom discord integration ",
+          "prId": 102
+        }
+      ]
+    ],
+    [
+      "bluwy/publint",
+      [
+        {
+          "url": "https://github.com/bluwy/publint/pull/85",
+          "title": "Add a warning for jsnext field",
+          "prId": 85
+        },
+        {
+          "url": "https://github.com/bluwy/publint/pull/60",
+          "title": "Lint typings field file existence",
+          "prId": 60
+        },
+        {
+          "url": "https://github.com/bluwy/publint/pull/59",
+          "title": "Improve browser field suggestion",
+          "prId": 59
         }
       ]
     ],
@@ -696,26 +846,6 @@
       ]
     ],
     [
-      "nodejs/node",
-      [
-        {
-          "url": "https://github.com/nodejs/node/pull/49849",
-          "title": "fs: add stacktrace to fs/promises",
-          "prId": 49849
-        },
-        {
-          "url": "https://github.com/nodejs/node/pull/46391",
-          "title": "lib: add api to detect whether source-maps are enabled",
-          "prId": 46391
-        },
-        {
-          "url": "https://github.com/nodejs/node/pull/45280",
-          "title": "doc: fix RESOLVE_ESM_MATCH in modules.md",
-          "prId": 45280
-        }
-      ]
-    ],
-    [
       "vitejs/vite-plugin-vue",
       [
         {
@@ -761,21 +891,6 @@
       ]
     ],
     [
-      "bluwy/publint",
-      [
-        {
-          "url": "https://github.com/bluwy/publint/pull/60",
-          "title": "Lint typings field file existence",
-          "prId": 60
-        },
-        {
-          "url": "https://github.com/bluwy/publint/pull/59",
-          "title": "Improve browser field suggestion",
-          "prId": 59
-        }
-      ]
-    ],
-    [
       "antfu/vite-ssg",
       [
         {
@@ -792,31 +907,6 @@
           "url": "https://github.com/antfu/vite-ssg/pull/14",
           "title": "fix: config was not applied",
           "prId": 14
-        }
-      ]
-    ],
-    [
-      "vitejs/vite-ecosystem-ci",
-      [
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/226",
-          "title": "docs: setting up PR comment trigger feature",
-          "prId": 226
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/139",
-          "title": "feat: group command output in GitHub Actions",
-          "prId": 139
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/120",
-          "title": "feat: vite repo",
-          "prId": 120
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/102",
-          "title": "Custom discord integration ",
-          "prId": 102
         }
       ]
     ],
@@ -1076,26 +1166,6 @@
       ]
     ],
     [
-      "evanw/esbuild",
-      [
-        {
-          "url": "https://github.com/evanw/esbuild/pull/1758",
-          "title": "feat: Shorten &quot;top&quot;, &quot;right&quot;... properties into &quot;inset&quot; property",
-          "prId": 1758
-        },
-        {
-          "url": "https://github.com/evanw/esbuild/pull/1756",
-          "title": "feat: minify <code>font</code>/<code>font-family</code>/<code>font-weight</code> CSS property",
-          "prId": 1756
-        },
-        {
-          "url": "https://github.com/evanw/esbuild/pull/1660",
-          "title": "feat: drop catch binding when optional catch binding is supported",
-          "prId": 1660
-        }
-      ]
-    ],
-    [
       "antfu/vite-plugin-inspect",
       [
         {
@@ -1246,5 +1316,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2023-12-01T11:04:05.495Z"
+  "fetchedAt": "2024-01-01T11:04:31.532Z"
 }
