@@ -7,23 +7,9 @@ on:
   pull_request:
 
 jobs:
-  packages:
-    name: check npm install
-    runs-on: ubuntu-latest
-    steps:
-      - name: checkout
-        uses: actions/checkout@v4
-      - name: setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-      - name: check npm ci
-        run: npm ci
   lint:
     name: run lint
     runs-on: ubuntu-latest
-    needs: [packages]
     steps:
       - name: checkout
         uses: actions/checkout@v4
@@ -39,7 +25,6 @@ jobs:
   format:
     name: run format
     runs-on: ubuntu-latest
-    needs: [packages]
     steps:
       - name: checkout
         uses: actions/checkout@v4
@@ -55,7 +40,6 @@ jobs:
   type-check:
     name: run type-check
     runs-on: ubuntu-latest
-    needs: [packages]
     steps:
       - name: checkout
         uses: actions/checkout@v4
@@ -71,7 +55,6 @@ jobs:
   build:
     name: run build
     runs-on: ubuntu-latest
-    needs: [packages]
     steps:
       - name: checkout
         uses: actions/checkout@v4
