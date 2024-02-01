@@ -1,103 +1,23 @@
 {
   "repos": [
     [
-      "rollup/rollup",
-      [
-        {
-          "url": "https://github.com/rollup/rollup/pull/5284",
-          "title": "Add friendly error for missing MSVC redistributable",
-          "prId": 5284
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5267",
-          "title": "Add friendly error for npm bug",
-          "prId": 5267
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5207",
-          "title": "perf: run lint while constructing nodes",
-          "prId": 5207
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5204",
-          "title": "perf: shrink wasm size by avoid importing browserslist",
-          "prId": 5204
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5202",
-          "title": "perf: introduce <code>parseAstAsync</code> and parallelize parsing AST",
-          "prId": 5202
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5201",
-          "title": "perf: use mimalloc for bindings_napi",
-          "prId": 5201
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5072",
-          "title": "Add known globals",
-          "prId": 5072
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5045",
-          "title": "Fix <code>this.error</code> with <code>pos</code> in <code>transform</code> hook",
-          "prId": 5045
-        }
-      ]
-    ],
-    [
-      "nodejs/node",
-      [
-        {
-          "url": "https://github.com/nodejs/node/pull/51032",
-          "title": "fs: fix fs.promises.realpath for long paths on Windows",
-          "prId": 51032
-        },
-        {
-          "url": "https://github.com/nodejs/node/pull/49849",
-          "title": "fs: add stacktrace to fs/promises",
-          "prId": 49849
-        },
-        {
-          "url": "https://github.com/nodejs/node/pull/46391",
-          "title": "lib: add api to detect whether source-maps are enabled",
-          "prId": 46391
-        },
-        {
-          "url": "https://github.com/nodejs/node/pull/45280",
-          "title": "doc: fix RESOLVE_ESM_MATCH in modules.md",
-          "prId": 45280
-        }
-      ]
-    ],
-    [
-      "rollup/plugins",
-      [
-        {
-          "url": "https://github.com/rollup/plugins/pull/1641",
-          "title": "feat(json): add <code>includeArbitraryNames</code> option",
-          "prId": 1641
-        },
-        {
-          "url": "https://github.com/rollup/plugins/pull/1636",
-          "title": "fix(dynamic-import-vars): escape special glob characters",
-          "prId": 1636
-        },
-        {
-          "url": "https://github.com/rollup/plugins/pull/1635",
-          "title": "feat(pluginutils): add <code>includeArbitraryNames: true</code> to <code>dataToEsm</code>",
-          "prId": 1635
-        },
-        {
-          "url": "https://github.com/rollup/plugins/pull/1634",
-          "title": "feat(alias): add warning to avoid unintended duplicate modules",
-          "prId": 1634
-        }
-      ]
-    ],
-    [
       "vitejs/vite",
       [
+        {
+          "url": "https://github.com/vitejs/vite/pull/15636",
+          "title": "docs: <code>build.minify</code> defaults to <code>false</code> for SSR",
+          "prId": 15636
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/15360",
+          "title": "refactor: normalize publicDir when resolving config",
+          "prId": 15360
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/15259",
+          "title": "fix(css): <code>.css?url</code> support",
+          "prId": 15259
+        },
         {
           "url": "https://github.com/vitejs/vite/pull/15225",
           "title": "fix: json error with position",
@@ -252,6 +172,11 @@
           "url": "https://github.com/vitejs/vite/pull/13708",
           "title": "fix(esbuild): use <code>useDefineForClassFields: false</code> when no <code>compilerOptions.target</code> is declared",
           "prId": 13708
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/13584",
+          "title": "perf: use thread for preprocessors",
+          "prId": 13584
         },
         {
           "url": "https://github.com/vitejs/vite/pull/13578",
@@ -632,6 +557,101 @@
           "url": "https://github.com/vitejs/vite/pull/7098",
           "title": "fix: import with query with exports/browser field",
           "prId": 7098
+        }
+      ]
+    ],
+    [
+      "rollup/rollup",
+      [
+        {
+          "url": "https://github.com/rollup/rollup/pull/5284",
+          "title": "Add friendly error for missing MSVC redistributable",
+          "prId": 5284
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5267",
+          "title": "Add friendly error for npm bug",
+          "prId": 5267
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5207",
+          "title": "perf: run lint while constructing nodes",
+          "prId": 5207
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5204",
+          "title": "perf: shrink wasm size by avoid importing browserslist",
+          "prId": 5204
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5202",
+          "title": "perf: introduce <code>parseAstAsync</code> and parallelize parsing AST",
+          "prId": 5202
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5201",
+          "title": "perf: use mimalloc for bindings_napi",
+          "prId": 5201
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5072",
+          "title": "Add known globals",
+          "prId": 5072
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5045",
+          "title": "Fix <code>this.error</code> with <code>pos</code> in <code>transform</code> hook",
+          "prId": 5045
+        }
+      ]
+    ],
+    [
+      "nodejs/node",
+      [
+        {
+          "url": "https://github.com/nodejs/node/pull/51032",
+          "title": "fs: fix fs.promises.realpath for long paths on Windows",
+          "prId": 51032
+        },
+        {
+          "url": "https://github.com/nodejs/node/pull/49849",
+          "title": "fs: add stacktrace to fs/promises",
+          "prId": 49849
+        },
+        {
+          "url": "https://github.com/nodejs/node/pull/46391",
+          "title": "lib: add api to detect whether source-maps are enabled",
+          "prId": 46391
+        },
+        {
+          "url": "https://github.com/nodejs/node/pull/45280",
+          "title": "doc: fix RESOLVE_ESM_MATCH in modules.md",
+          "prId": 45280
+        }
+      ]
+    ],
+    [
+      "rollup/plugins",
+      [
+        {
+          "url": "https://github.com/rollup/plugins/pull/1641",
+          "title": "feat(json): add <code>includeArbitraryNames</code> option",
+          "prId": 1641
+        },
+        {
+          "url": "https://github.com/rollup/plugins/pull/1636",
+          "title": "fix(dynamic-import-vars): escape special glob characters",
+          "prId": 1636
+        },
+        {
+          "url": "https://github.com/rollup/plugins/pull/1635",
+          "title": "feat(pluginutils): add <code>includeArbitraryNames: true</code> to <code>dataToEsm</code>",
+          "prId": 1635
+        },
+        {
+          "url": "https://github.com/rollup/plugins/pull/1634",
+          "title": "feat(alias): add warning to avoid unintended duplicate modules",
+          "prId": 1634
         }
       ]
     ],
@@ -1281,5 +1301,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2024-01-01T11:04:31.532Z"
+  "fetchedAt": "2024-02-01T11:04:41.026Z"
 }
