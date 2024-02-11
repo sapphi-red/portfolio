@@ -394,6 +394,8 @@ export const ignorePRs = [
   'https://github.com/vitejs/vite/pull/15229',
   'https://github.com/vitejs/vite/pull/15247',
   'https://github.com/vitejs/vite/pull/15361',
+  'https://github.com/vitejs/vite/pull/15360',
+  'https://github.com/vitejs/vite/pull/15636',
   'https://github.com/evanw/esbuild/pull/2170',
   'https://github.com/evanw/esbuild/pull/2568',
   'https://github.com/evanw/esbuild/pull/3520',
