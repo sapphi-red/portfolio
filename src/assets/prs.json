@@ -4,16 +4,6 @@
       "vitejs/vite",
       [
         {
-          "url": "https://github.com/vitejs/vite/pull/15636",
-          "title": "docs: <code>build.minify</code> defaults to <code>false</code> for SSR",
-          "prId": 15636
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/15360",
-          "title": "refactor: normalize publicDir when resolving config",
-          "prId": 15360
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/15259",
           "title": "fix(css): <code>.css?url</code> support",
           "prId": 15259
