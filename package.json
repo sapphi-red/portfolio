@@ -25,25 +25,25 @@
   "homepage": "https://github.com/sapphi-red/portfolio#readme",
   "private": true,
   "devDependencies": {
-    "@iconify-json/tabler": "^1.1.104",
-    "@types/node": "^20.11.16",
+    "@iconify-json/tabler": "^1.1.106",
+    "@types/node": "^20.11.24",
     "@types/throttle-debounce": "^5.0.2",
     "@typescript-eslint/eslint-plugin": "^6.20.0",
     "@typescript-eslint/parser": "^6.20.0",
     "@typescript/lib-dom": "npm:@types/web@^0.0.99",
     "@unhead/vue": "^1.8.10",
-    "@vitejs/plugin-vue": "^5.0.3",
-    "critters": "^0.0.20",
-    "eslint": "^8.56.0",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "critters": "^0.0.21",
+    "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-toml": "0.9.2",
-    "eslint-plugin-vue": "^9.21.1",
-    "prettier": "^3.2.4",
-    "sass": "^1.70.0",
+    "eslint-plugin-vue": "^9.22.0",
+    "prettier": "^3.2.5",
+    "sass": "^1.71.1",
     "typescript": "^5.3.3",
     "typescript-plugin-toml": "^0.3.1",
-    "unplugin-icons": "^0.18.3",
-    "vite": "^5.0.12",
+    "unplugin-icons": "^0.18.5",
+    "vite": "^5.1.4",
     "vite-plugin-toml": "^0.6.0",
     "vite-ssg": "^0.23.6",
     "vue-tsc": "^1.8.27"
@@ -51,7 +51,7 @@
   "dependencies": {
     "ress": "^5.0.2",
     "throttle-debounce": "^5.0.0",
-    "vue": "^3.4.15",
-    "vue-router": "^4.2.5"
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
   }
 }
