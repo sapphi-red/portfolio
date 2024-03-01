@@ -4,34 +4,9 @@
       "vitejs/vite",
       [
         {
-          "url": "https://github.com/vitejs/vite/pull/16061",
-          "title": "refactor(runtime): use functions from <code>pathe</code>",
-          "prId": 16061
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/16055",
-          "title": "fix: output correct error for empty import specifier",
-          "prId": 16055
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/15985",
-          "title": "fix(css): import using imports field in CS was not resolved",
-          "prId": 15985
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/15983",
           "title": "fix: resolve directory correctly when <code>fs.cachedChecks: true</code>",
           "prId": 15983
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/15982",
-          "title": "fix(create-vite): remove tsc command from qwik template",
-          "prId": 15982
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/15908",
-          "title": "fix(runtime): pass path instead of fileURL to <code>isFilePathESM</code>",
-          "prId": 15908
         },
         {
           "url": "https://github.com/vitejs/vite/pull/15907",
@@ -39,44 +14,9 @@
           "prId": 15907
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/15904",
-          "title": "refactor(runtime): minor tweaks",
-          "prId": 15904
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/15885",
-          "title": "chore: update license file",
-          "prId": 15885
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/15884",
-          "title": "docs: remove unneeded zero width space in titles",
-          "prId": 15884
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/15846",
           "title": "fix: empty CSS file was output when only .css?url is used",
           "prId": 15846
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/15845",
-          "title": "fix: <code>asset-import-meta-url</code> plugin errored with Maximum call stack size exceeded",
-          "prId": 15845
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/15838",
-          "title": "docs: discussions for experimental features",
-          "prId": 15838
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/15837",
-          "title": "refactor: remove <code>vite build --force</code>",
-          "prId": 15837
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/15836",
-          "title": "docs: add feedback discussion links for experimental features",
-          "prId": 15836
         },
         {
           "url": "https://github.com/vitejs/vite/pull/15259",
