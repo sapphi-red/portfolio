@@ -33,7 +33,7 @@
     "@typescript/lib-dom": "npm:@types/web@^0.0.99",
     "@unhead/vue": "^1.9.4",
     "@vitejs/plugin-vue": "^5.0.4",
-    "critters": "0.0.22",
+    "critters": "0.0.20",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-toml": "0.11.0",
