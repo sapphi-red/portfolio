@@ -9,54 +9,14 @@
           "prId": 16307
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/16306",
-          "title": "fix(css): unknown file error happened with lightningcss",
-          "prId": 16306
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/16305",
-          "title": "fix(scanner): duplicate modules for same id if glob is used in html-like types",
-          "prId": 16305
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/16304",
-          "title": "docs(css): duplicate <code>@import</code> behavior",
-          "prId": 16304
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/16303",
           "title": "fix(hmr): trigger hmr for missing file import errored module after file creation",
           "prId": 16303
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/16302",
-          "title": "fix(hmr): don't mutate module graph when collecting modules",
-          "prId": 16302
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/16288",
           "title": "feat(hmr): reload when HTML file is created/deleted",
           "prId": 16288
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/16273",
-          "title": "fix(sourcemap): don't warn even if the sourcesContent is an empty string",
-          "prId": 16273
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/16255",
-          "title": "chore: use @vitejs/release-scripts in v3",
-          "prId": 16255
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/16254",
-          "title": "fix: port #16250 to v2",
-          "prId": 16254
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/16253",
-          "title": "fix: port #16250 to v3",
-          "prId": 16253
         },
         {
           "url": "https://github.com/vitejs/vite/pull/16250",
@@ -69,44 +29,9 @@
           "prId": 16249
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/16244",
-          "title": "fix: dont resolve imports with malformed URI",
-          "prId": 16244
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/16223",
-          "title": "fix: handle warmup request error correctly",
-          "prId": 16223
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/16168",
-          "title": "docs: add <code>@shikiji/vitepress-twoslash</code>",
-          "prId": 16168
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/16162",
-          "title": "docs: remove <code>vue</code> from the example when <code>skipLibCheck</code> needs to be enabled",
-          "prId": 16162
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/16152",
           "title": "fix: <code>sideEffects: []</code> should work as <code>sideEffects: false</code>",
           "prId": 16152
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/16151",
-          "title": "fix(esbuild): preserve import.meta even if esbuild.target is set to lower versions",
-          "prId": 16151
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/16145",
-          "title": "docs: add docs about <code>vite serve</code> alias",
-          "prId": 16145
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/16144",
-          "title": "docs: replace <code>DEBUG=&quot;vite:foo&quot;</code> with <code>--debug foo</code>",
-          "prId": 16144
         },
         {
           "url": "https://github.com/vitejs/vite/pull/16103",
@@ -114,34 +39,9 @@
           "prId": 16103
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/16094",
-          "title": "fix(worker): hide &quot;The emitted file overwrites&quot; warning if the content is same",
-          "prId": 16094
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/16087",
           "title": "feat: accept assets to be specified as input",
           "prId": 16087
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/16085",
-          "title": "fix: import with query with imports field",
-          "prId": 16085
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/16080",
-          "title": "feat(optimizer): show a friendly warning with 404 instead of 504 outdated optimize dep",
-          "prId": 16080
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/16079",
-          "title": "fix: upgrade esbuild to 0.20.x",
-          "prId": 16079
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/16072",
-          "title": "revert: &quot;fix: upgrade esbuild to 0.20.x&quot;",
-          "prId": 16072
         },
         {
           "url": "https://github.com/vitejs/vite/pull/16063",
@@ -167,16 +67,6 @@
           "url": "https://github.com/vitejs/vite/pull/15907",
           "title": "refactor: share code with vite runtime",
           "prId": 15907
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/15888",
-          "title": "feat(config): <code>import.meta.filename</code>/<code>dirname</code> support",
-          "prId": 15888
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/15887",
-          "title": "feat(ssr): <code>import.meta.filename</code>/<code>dirname</code> support",
-          "prId": 15887
         },
         {
           "url": "https://github.com/vitejs/vite/pull/15846",
@@ -742,16 +632,6 @@
           "url": "https://github.com/twoslashes/twoslash/pull/33",
           "title": "feat: support spaces before cut comments",
           "prId": 33
-        }
-      ]
-    ],
-    [
-      "shikijs/shiki",
-      [
-        {
-          "url": "https://github.com/shikijs/shiki/pull/637",
-          "title": "fix(vitepress-twoslash): pass <code>options.twoslashOptions</code> to <code>createTwoslasher</code>",
-          "prId": 637
         }
       ]
     ],
