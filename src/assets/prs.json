@@ -4,29 +4,9 @@
       "rolldown/rolldown",
       [
         {
-          "url": "https://github.com/rolldown/rolldown/pull/986",
-          "title": "feat: parallel plugin handle error in worker",
-          "prId": 986
-        },
-        {
           "url": "https://github.com/rolldown/rolldown/pull/982",
           "title": "chore(rust/tracing): use async style by default and support <code>chrome-json-threaded</code>",
           "prId": 982
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/857",
-          "title": "chore: ci bench name was incorrect",
-          "prId": 857
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/856",
-          "title": "chore: rolldown bench was not running",
-          "prId": 856
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/855",
-          "title": "chore(tracing): fix LOG_OUTPUT comment",
-          "prId": 855
         },
         {
           "url": "https://github.com/rolldown/rolldown/pull/825",
@@ -42,11 +22,6 @@
           "url": "https://github.com/rollup/rollup/pull/5494",
           "title": "Use opt-level=z for browser wasm",
           "prId": 5494
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5479",
-          "title": "Add libc field to armv7 packages",
-          "prId": 5479
         },
         {
           "url": "https://github.com/rollup/rollup/pull/5471",
@@ -108,46 +83,6 @@
     [
       "vitejs/vite",
       [
-        {
-          "url": "https://github.com/vitejs/vite/pull/16476",
-          "title": "revert: perf: use workspace root for fs cache (#15712)",
-          "prId": 16476
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/16454",
-          "title": "feat: show warning if root is in build.outDir",
-          "prId": 16454
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/16453",
-          "title": "fix: don't add outDirs to watch.ignored if emptyOutDir is false",
-          "prId": 16453
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/16367",
-          "title": "fix(legacy): modern polyfill autodetection was not injecting enough polyfills",
-          "prId": 16367
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/16348",
-          "title": "ci: run publish in node 20",
-          "prId": 16348
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/16346",
-          "title": "chore: <code>pnpm audit --fix</code>",
-          "prId": 16346
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/16340",
-          "title": "refactor: use types from sass instead of @types/sass",
-          "prId": 16340
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/16338",
-          "title": "ci: run lint in node 20",
-          "prId": 16338
-        },
         {
           "url": "https://github.com/vitejs/vite/pull/16307",
           "title": "fix(hmr): multiple updates happened when invalidate is called while multiple tabs open",
@@ -779,29 +714,14 @@
           "prId": 2037
         },
         {
-          "url": "https://github.com/napi-rs/napi-rs/pull/2029",
-          "title": "docs: update platform support in README",
-          "prId": 2029
-        },
-        {
           "url": "https://github.com/napi-rs/napi-rs/pull/2028",
           "title": "feat(target): add support for s390x-unknown-linux-gnu",
           "prId": 2028
         },
         {
-          "url": "https://github.com/napi-rs/napi-rs/pull/2024",
-          "title": "fix: <code>create_bigint_from_*128</code> returned incorrect word_count",
-          "prId": 2024
-        },
-        {
           "url": "https://github.com/napi-rs/napi-rs/pull/2023",
           "title": "feat(target): add support for powerpc64le-unknown-linux-gnu",
           "prId": 2023
-        },
-        {
-          "url": "https://github.com/napi-rs/napi-rs/pull/2020",
-          "title": "feat(target): add support for armv7-unknown-linux-muslebihf",
-          "prId": 2020
         },
         {
           "url": "https://github.com/napi-rs/napi-rs/pull/2019",
