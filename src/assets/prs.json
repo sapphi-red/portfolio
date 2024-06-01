@@ -1,88 +1,33 @@
 {
   "repos": [
     [
-      "rolldown/rolldown",
-      [
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/982",
-          "title": "chore(rust/tracing): use async style by default and support <code>chrome-json-threaded</code>",
-          "prId": 982
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/825",
-          "title": "feat: support running Js plugin in parallel via Worker",
-          "prId": 825
-        }
-      ]
-    ],
-    [
-      "rollup/rollup",
-      [
-        {
-          "url": "https://github.com/rollup/rollup/pull/5494",
-          "title": "Use opt-level=z for browser wasm",
-          "prId": 5494
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5471",
-          "title": "Add linux arm musl build",
-          "prId": 5471
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5445",
-          "title": "docs: add <code>@shikiji/vitepress-twoslash</code>",
-          "prId": 5445
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5404",
-          "title": "fix: escape ids in <code>import.meta.ROLLUP_FILE_URL_referenceId</code> correctly",
-          "prId": 5404
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5284",
-          "title": "Add friendly error for missing MSVC redistributable",
-          "prId": 5284
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5267",
-          "title": "Add friendly error for npm bug",
-          "prId": 5267
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5207",
-          "title": "perf: run lint while constructing nodes",
-          "prId": 5207
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5204",
-          "title": "perf: shrink wasm size by avoid importing browserslist",
-          "prId": 5204
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5202",
-          "title": "perf: introduce <code>parseAstAsync</code> and parallelize parsing AST",
-          "prId": 5202
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5201",
-          "title": "perf: use mimalloc for bindings_napi",
-          "prId": 5201
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5072",
-          "title": "Add known globals",
-          "prId": 5072
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5045",
-          "title": "Fix <code>this.error</code> with <code>pos</code> in <code>transform</code> hook",
-          "prId": 5045
-        }
-      ]
-    ],
-    [
       "vitejs/vite",
       [
+        {
+          "url": "https://github.com/vitejs/vite/pull/16667",
+          "title": "test: fix flaky test fail",
+          "prId": 16667
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/16620",
+          "title": "docs: update manifest example",
+          "prId": 16620
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/16590",
+          "title": "feat(asset): support <code>/*@vite-ignore*/</code> for <code>new URL(, import.meta.url)</code>",
+          "prId": 16590
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/16455",
+          "title": "fix(css): page reload was not happening with .css?raw",
+          "prId": 16455
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/16339",
+          "title": "test: don't skip unicode related tests anymore",
+          "prId": 16339
+        },
         {
           "url": "https://github.com/vitejs/vite/pull/16307",
           "title": "fix(hmr): multiple updates happened when invalidate is called while multiple tabs open",
@@ -109,6 +54,11 @@
           "prId": 16249
         },
         {
+          "url": "https://github.com/vitejs/vite/pull/16238",
+          "title": "refactor: remove acorn",
+          "prId": 16238
+        },
+        {
           "url": "https://github.com/vitejs/vite/pull/16152",
           "title": "fix: <code>sideEffects: []</code> should work as <code>sideEffects: false</code>",
           "prId": 16152
@@ -122,6 +72,11 @@
           "url": "https://github.com/vitejs/vite/pull/16087",
           "title": "feat: accept assets to be specified as input",
           "prId": 16087
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/16078",
+          "title": "fix(css): avoid generating empty JS files when JS files becomes empty but has CSS files imported",
+          "prId": 16078
         },
         {
           "url": "https://github.com/vitejs/vite/pull/16063",
@@ -702,6 +657,156 @@
           "url": "https://github.com/vitejs/vite/pull/7098",
           "title": "fix: import with query with exports/browser field",
           "prId": 7098
+        }
+      ]
+    ],
+    [
+      "aquaproj/aqua-registry",
+      [
+        {
+          "url": "https://github.com/aquaproj/aqua-registry/pull/23381",
+          "title": "fix: <code>cmdx new</code> errored with illegal option",
+          "prId": 23381
+        },
+        {
+          "url": "https://github.com/aquaproj/aqua-registry/pull/23379",
+          "title": "chore: run prettier",
+          "prId": 23379
+        },
+        {
+          "url": "https://github.com/aquaproj/aqua-registry/pull/23378",
+          "title": "fix(authzed/zed): use gnu binary instead of musl binary",
+          "prId": 23378
+        },
+        {
+          "url": "https://github.com/aquaproj/aqua-registry/pull/23375",
+          "title": "feat: add authzed/zed",
+          "prId": 23375
+        },
+        {
+          "url": "https://github.com/aquaproj/aqua-registry/pull/23041",
+          "title": "feat: add rustsec/rustsec/cargo-audit",
+          "prId": 23041
+        },
+        {
+          "url": "https://github.com/aquaproj/aqua-registry/pull/22721",
+          "title": "fix: add slsa configs for ko-build/ko",
+          "prId": 22721
+        },
+        {
+          "url": "https://github.com/aquaproj/aqua-registry/pull/22719",
+          "title": "fix: remove duplicate dagu-dev/dagu alias",
+          "prId": 22719
+        },
+        {
+          "url": "https://github.com/aquaproj/aqua-registry/pull/22718",
+          "title": "fix(scripts): use user from host when running docker",
+          "prId": 22718
+        },
+        {
+          "url": "https://github.com/aquaproj/aqua-registry/pull/22717",
+          "title": "feat: add EmbarkStudios/cargo-deny",
+          "prId": 22717
+        },
+        {
+          "url": "https://github.com/aquaproj/aqua-registry/pull/22698",
+          "title": "feat: add mitsuhiko/insta",
+          "prId": 22698
+        },
+        {
+          "url": "https://github.com/aquaproj/aqua-registry/pull/22696",
+          "title": "feat: add cargo-bins/cargo-binstall",
+          "prId": 22696
+        }
+      ]
+    ],
+    [
+      "aquaproj/aqua",
+      [
+        {
+          "url": "https://github.com/aquaproj/aqua/pull/2902",
+          "title": "fix(info): mask username on Windows",
+          "prId": 2902
+        }
+      ]
+    ],
+    [
+      "rolldown/rolldown",
+      [
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/982",
+          "title": "chore(rust/tracing): use async style by default and support <code>chrome-json-threaded</code>",
+          "prId": 982
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/825",
+          "title": "feat: support running Js plugin in parallel via Worker",
+          "prId": 825
+        }
+      ]
+    ],
+    [
+      "rollup/rollup",
+      [
+        {
+          "url": "https://github.com/rollup/rollup/pull/5494",
+          "title": "Use opt-level=z for browser wasm",
+          "prId": 5494
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5471",
+          "title": "Add linux arm musl build",
+          "prId": 5471
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5445",
+          "title": "docs: add <code>@shikiji/vitepress-twoslash</code>",
+          "prId": 5445
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5404",
+          "title": "fix: escape ids in <code>import.meta.ROLLUP_FILE_URL_referenceId</code> correctly",
+          "prId": 5404
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5284",
+          "title": "Add friendly error for missing MSVC redistributable",
+          "prId": 5284
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5267",
+          "title": "Add friendly error for npm bug",
+          "prId": 5267
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5207",
+          "title": "perf: run lint while constructing nodes",
+          "prId": 5207
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5204",
+          "title": "perf: shrink wasm size by avoid importing browserslist",
+          "prId": 5204
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5202",
+          "title": "perf: introduce <code>parseAstAsync</code> and parallelize parsing AST",
+          "prId": 5202
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5201",
+          "title": "perf: use mimalloc for bindings_napi",
+          "prId": 5201
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5072",
+          "title": "Add known globals",
+          "prId": 5072
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5045",
+          "title": "Fix <code>this.error</code> with <code>pos</code> in <code>transform</code> hook",
+          "prId": 5045
         }
       ]
     ],
@@ -1446,5 +1551,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2024-05-01T11:04:21.544Z"
+  "fetchedAt": "2024-06-01T11:07:05.117Z"
 }
