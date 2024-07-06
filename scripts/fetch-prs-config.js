@@ -5,7 +5,7 @@ export const ignoreRepoUser = [
   'isucon'
 ]
 
-export const ignoreRepo = ['vitejs/docs-ja']
+export const ignoreRepo = ['vitejs/docs-ja', 'aquaproj/aqua-registry']
 
 export const ignorePRs = [
   'https://github.com/paroi-tech/direct-vuex/pull/53',
@@ -431,13 +431,17 @@ export const ignorePRs = [
   'https://github.com/vitejs/vite/pull/16305',
   'https://github.com/vitejs/vite/pull/16306',
   'https://github.com/vitejs/vite/pull/16338',
+  'https://github.com/vitejs/vite/pull/16339',
   'https://github.com/vitejs/vite/pull/16340',
   'https://github.com/vitejs/vite/pull/16346',
   'https://github.com/vitejs/vite/pull/16348',
   'https://github.com/vitejs/vite/pull/16367',
   'https://github.com/vitejs/vite/pull/16453',
   'https://github.com/vitejs/vite/pull/16454',
+  'https://github.com/vitejs/vite/pull/16455',
   'https://github.com/vitejs/vite/pull/16476',
+  'https://github.com/vitejs/vite/pull/16620',
+  'https://github.com/vitejs/vite/pull/16667',
   'https://github.com/evanw/esbuild/pull/2170',
   'https://github.com/evanw/esbuild/pull/2568',
   'https://github.com/evanw/esbuild/pull/3520',
