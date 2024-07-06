@@ -9,29 +9,9 @@
           "prId": 17371
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/16667",
-          "title": "test: fix flaky test fail",
-          "prId": 16667
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/16620",
-          "title": "docs: update manifest example",
-          "prId": 16620
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/16590",
           "title": "feat(asset): support <code>/*@vite-ignore*/</code> for <code>new URL(, import.meta.url)</code>",
           "prId": 16590
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/16455",
-          "title": "fix(css): page reload was not happening with .css?raw",
-          "prId": 16455
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/16339",
-          "title": "test: don't skip unicode related tests anymore",
-          "prId": 16339
         },
         {
           "url": "https://github.com/vitejs/vite/pull/16307",
@@ -662,66 +642,6 @@
           "url": "https://github.com/vitejs/vite/pull/7098",
           "title": "fix: import with query with exports/browser field",
           "prId": 7098
-        }
-      ]
-    ],
-    [
-      "aquaproj/aqua-registry",
-      [
-        {
-          "url": "https://github.com/aquaproj/aqua-registry/pull/23381",
-          "title": "fix: <code>cmdx new</code> errored with illegal option",
-          "prId": 23381
-        },
-        {
-          "url": "https://github.com/aquaproj/aqua-registry/pull/23379",
-          "title": "chore: run prettier",
-          "prId": 23379
-        },
-        {
-          "url": "https://github.com/aquaproj/aqua-registry/pull/23378",
-          "title": "fix(authzed/zed): use gnu binary instead of musl binary",
-          "prId": 23378
-        },
-        {
-          "url": "https://github.com/aquaproj/aqua-registry/pull/23375",
-          "title": "feat: add authzed/zed",
-          "prId": 23375
-        },
-        {
-          "url": "https://github.com/aquaproj/aqua-registry/pull/23041",
-          "title": "feat: add rustsec/rustsec/cargo-audit",
-          "prId": 23041
-        },
-        {
-          "url": "https://github.com/aquaproj/aqua-registry/pull/22721",
-          "title": "fix: add slsa configs for ko-build/ko",
-          "prId": 22721
-        },
-        {
-          "url": "https://github.com/aquaproj/aqua-registry/pull/22719",
-          "title": "fix: remove duplicate dagu-dev/dagu alias",
-          "prId": 22719
-        },
-        {
-          "url": "https://github.com/aquaproj/aqua-registry/pull/22718",
-          "title": "fix(scripts): use user from host when running docker",
-          "prId": 22718
-        },
-        {
-          "url": "https://github.com/aquaproj/aqua-registry/pull/22717",
-          "title": "feat: add EmbarkStudios/cargo-deny",
-          "prId": 22717
-        },
-        {
-          "url": "https://github.com/aquaproj/aqua-registry/pull/22698",
-          "title": "feat: add mitsuhiko/insta",
-          "prId": 22698
-        },
-        {
-          "url": "https://github.com/aquaproj/aqua-registry/pull/22696",
-          "title": "feat: add cargo-bins/cargo-binstall",
-          "prId": 22696
         }
       ]
     ],
