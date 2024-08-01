@@ -4,6 +4,11 @@
       "vitejs/vite",
       [
         {
+          "url": "https://github.com/vitejs/vite/pull/17623",
+          "title": "fix(css): include <code>.css?url</code> in assets field of manifest",
+          "prId": 17623
+        },
+        {
           "url": "https://github.com/vitejs/vite/pull/17371",
           "title": "fix(ssr): remove pure CSS dynamic import",
           "prId": 17371
@@ -642,6 +647,16 @@
           "url": "https://github.com/vitejs/vite/pull/7098",
           "title": "fix: import with query with exports/browser field",
           "prId": 7098
+        }
+      ]
+    ],
+    [
+      "antfu-collective/vite-ssg",
+      [
+        {
+          "url": "https://github.com/antfu-collective/vite-ssg/pull/399",
+          "title": "chore: update critters peerDep to 0.0.24",
+          "prId": 399
         }
       ]
     ],
@@ -1476,5 +1491,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2024-07-01T11:00:54.813Z"
+  "fetchedAt": "2024-08-01T11:01:17.597Z"
 }
