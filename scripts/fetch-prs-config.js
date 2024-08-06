@@ -542,5 +542,6 @@ export const ignorePRs = [
   'https://github.com/rolldown/rolldown/pull/855',
   'https://github.com/rolldown/rolldown/pull/856',
   'https://github.com/rolldown/rolldown/pull/857',
-  'https://github.com/rolldown/rolldown/pull/986'
+  'https://github.com/rolldown/rolldown/pull/986',
+  'https://github.com/antfu-collective/vite-ssg/pull/399'
 ]

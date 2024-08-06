@@ -651,16 +651,6 @@
       ]
     ],
     [
-      "antfu-collective/vite-ssg",
-      [
-        {
-          "url": "https://github.com/antfu-collective/vite-ssg/pull/399",
-          "title": "chore: update critters peerDep to 0.0.24",
-          "prId": 399
-        }
-      ]
-    ],
-    [
       "aquaproj/aqua",
       [
         {
