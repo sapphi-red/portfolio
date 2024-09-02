@@ -4,66 +4,6 @@
       "vitejs/vite",
       [
         {
-          "url": "https://github.com/vitejs/vite/pull/17969",
-          "title": "refactor: simplify some code and reduce diff",
-          "prId": 17969
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/17962",
-          "title": "fix: use <code>optimizeDeps.entries</code>",
-          "prId": 17962
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/17961",
-          "title": "test: fix flaky &quot;should reload&quot; test",
-          "prId": 17961
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/17947",
-          "title": "fix: backward compat for setting values in resolvedConfig hook",
-          "prId": 17947
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/17913",
-          "title": "test: fix backend-integration build test flaky fail",
-          "prId": 17913
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/17867",
-          "title": "feat: support originalFilename",
-          "prId": 17867
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/17866",
-          "title": "chore: remove stale TODOs",
-          "prId": 17866
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/17865",
-          "title": "refactor: remove <code>handleHotUpdate</code> from watch-package-data plugin",
-          "prId": 17865
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/17864",
-          "title": "refactor: use nanoid instead of copying it",
-          "prId": 17864
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/17863",
-          "title": "docs: update misc",
-          "prId": 17863
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/17862",
-          "title": "docs: reload after invalidate",
-          "prId": 17862
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/17861",
-          "title": "docs: reload after invalidate",
-          "prId": 17861
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/17623",
           "title": "fix(css): include <code>.css?url</code> in assets field of manifest",
           "prId": 17623
