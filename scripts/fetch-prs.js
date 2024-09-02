@@ -1,3 +1,4 @@
+/* global process */
 import fs from 'fs/promises'
 import { ignoreRepoUser, ignorePRs, ignoreRepo } from './fetch-prs-config.js'
 
