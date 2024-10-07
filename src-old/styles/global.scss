@@ -1,0 +1,22 @@
+html {
+  color: $default-font-theme;
+}
+
+a {
+  color: $link-font-theme;
+  &:not(.custom-decoration) {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline dotted 1.5px;
+      text-decoration-skip-ink: none;
+      text-underline-position: under;
+    }
+  }
+}
+
+code {
+  background-color: #e3e7e8;
+  font-size: 0.9em;
+  padding: 2px 4px;
+  border-radius: 6px;
+}

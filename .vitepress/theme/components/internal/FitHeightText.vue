@@ -1,12 +1,12 @@
 <template>
-  <div ref="element" :class="$style.container">
+  <div ref="element" class="container">
     <slot />
   </div>
 </template>
 
 <script lang="ts" setup>
 import { onMounted, shallowRef } from 'vue'
-import useWindowResize from './composables/useWindowResize'
+import useWindowResize from './useWindowResize'
 
 const element = shallowRef<HTMLDivElement>()
 const setSize = () => {
@@ -20,7 +20,7 @@ onMounted(setSize)
 useWindowResize(100, setSize)
 </script>
 
-<style lang="scss" module>
+<style scoped>
 .container {
   height: 100%;
   font-size: 0;

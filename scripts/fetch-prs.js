@@ -5,7 +5,7 @@ import { ignoreRepoUser, ignorePRs, ignoreRepo } from './fetch-prs-config.js'
 const URL_PATH = 'https://api.github.com/search/issues'
 
 const RAW_DATA_PATH = new URL('../bin/prs_raw.json', import.meta.url)
-const DATA_PATH = new URL('../src/assets/prs.json', import.meta.url)
+const DATA_PATH = new URL('../src-old/assets/prs.json', import.meta.url)
 
 const fetchPRs = async page => {
   const url = new URL(URL_PATH)

@@ -1,0 +1,59 @@
+:root {
+  --vp-font-family-base: 'Inter', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN',
+    'Arial', 'Yu Gothic', 'Meiryo', ui-sans-serif, system-ui, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-feature-settings: 'pwid' 1;
+}
+
+:root {
+  --s-curly-font: 'Atma', cursive;
+  --s-primary-theme-green: #4cd9aa;
+  --s-primary-theme-blue: #4cc2d9;
+  --s-primary-theme-red: #d94c5a;
+  --s-default-font-theme: #0d3f2f;
+  --s-link-font-theme: #1a6e7f;
+}
+
+.VPNavBarTitle > .title,
+.VPNav .VPLink {
+  font-family: var(--s-curly-font);
+  font-size: 1.2rem;
+}
+
+.home .VPContent {
+  display: flex;
+}
+
+ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+  ul {
+    padding-left: 1em !important;
+  }
+}
+
+li {
+  margin: 0.1em 0;
+  &::before {
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: -0.1em;
+  }
+}
+
+li::before,
+li li li li::before {
+  background-image: url('./assets/magatama-green.svg');
+}
+li li::before,
+li li li li li::before {
+  background-image: url('./assets/magatama-blue.svg');
+}
+li li li::before {
+  background-image: url('./assets/magatama-red.svg');
+}
