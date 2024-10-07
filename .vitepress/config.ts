@@ -32,6 +32,7 @@ export default defineConfig({
   ],
   cleanUrls: true,
   srcDir: './src',
+  outDir: './dist',
   // markdown: {},
   // vite: {},
   themeConfig: {
