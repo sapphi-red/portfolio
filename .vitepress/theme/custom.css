@@ -24,7 +24,24 @@
   display: flex;
 }
 
-ul:not(.no-style) {
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.vp-doc h4,
+.vp-doc h5,
+.vp-doc h6,
+h1.style,
+h2.style,
+h3.style,
+h4.style,
+h5.style,
+h6.style {
+  font-family: var(--s-curly-font);
+  letter-spacing: 0;
+}
+
+.vp-doc ul,
+ul.style {
   list-style: none !important;
   padding-left: 0 !important;
   ul {
@@ -56,4 +73,21 @@ ul:not(.no-style) {
   li li li::before {
     background-image: url('./assets/magatama-red.svg');
   }
+}
+
+figcaption {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.vp-doc a,
+a.style {
+  text-decoration: underline dotted 1.5px;
+  text-decoration-skip-ink: none;
+  text-underline-position: under;
+}
+
+.twitter-tweet {
+  border-radius: 12px;
+  overflow: hidden;
 }

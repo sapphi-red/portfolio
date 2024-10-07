@@ -32,6 +32,7 @@
     "@unhead/vue": "^1.11.7",
     "@vitejs/plugin-vue": "^5.1.4",
     "critters": "0.0.24",
+    "deepmerge": "^4.3.1",
     "eslint": "^9.11.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-toml": "0.11.1",
@@ -49,9 +50,11 @@
     "vue-tsc": "^2.1.6"
   },
   "dependencies": {
+    "chart.js": "^4.4.4",
     "ress": "^5.0.2",
     "throttle-debounce": "^5.0.2",
     "vue": "^3.5.10",
+    "vue-chartjs": "^5.3.1",
     "vue-router": "^4.4.5"
   }
 }
