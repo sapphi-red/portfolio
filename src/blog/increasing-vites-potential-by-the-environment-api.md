@@ -16,6 +16,7 @@ const LineChart = defineClientComponent(() => {
 
 // TODO: make an OGP image  
 // TODO: make images work with light theme  
+// TODO: fix unstable twitter widget
 
 This post is an translation of the original talk in Japanese. The slides for the original talk are available [here](https://pre-vue-fes-2024-environment-api-slide.sapphi.red/) (Japanese).
 
