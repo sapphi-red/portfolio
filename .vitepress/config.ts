@@ -29,9 +29,7 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: 'about', link: '/about' },
-      { text: 'skills', link: '/skills' },
-      { text: 'experiences', link: '/experiences' },
-      { text: 'works', link: '/works' }
+      { text: 'blog', link: '/blog' }
     ]
   }
 })

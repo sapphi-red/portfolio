@@ -24,36 +24,36 @@
   display: flex;
 }
 
-ul {
+ul:not(.no-style) {
   list-style: none !important;
   padding-left: 0 !important;
   ul {
     padding-left: 1em !important;
   }
-}
 
-li {
-  margin: 0.1em 0;
-  &::before {
-    content: '';
-    display: inline-block;
-    height: 1em;
-    width: 1em;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: -0.1em;
+  li {
+    margin: 0.1em 0;
+    &::before {
+      content: '';
+      display: inline-block;
+      height: 1em;
+      width: 1em;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-bottom: -0.1em;
+    }
   }
-}
 
-li::before,
-li li li li::before {
-  background-image: url('./assets/magatama-green.svg');
-}
-li li::before,
-li li li li li::before {
-  background-image: url('./assets/magatama-blue.svg');
-}
-li li li::before {
-  background-image: url('./assets/magatama-red.svg');
+  li::before,
+  li li li li::before {
+    background-image: url('./assets/magatama-green.svg');
+  }
+  li li::before,
+  li li li li li::before {
+    background-image: url('./assets/magatama-blue.svg');
+  }
+  li li li::before {
+    background-image: url('./assets/magatama-red.svg');
+  }
 }
