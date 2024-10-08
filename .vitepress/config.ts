@@ -34,7 +34,7 @@ export default defineConfig({
       {
         rel: 'alternate',
         type: 'application/rss+xml',
-        title: 'RSS2.0',
+        title: 'green.sapphi.red',
         href: '/feed.rss'
       }
     ]
