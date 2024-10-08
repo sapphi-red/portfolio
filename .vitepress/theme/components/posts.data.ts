@@ -1,3 +1,4 @@
+import { dateToDateString } from '../../../common/date'
 import { createContentLoader } from 'vitepress'
 
 interface Post {
@@ -33,7 +34,7 @@ function formatDate(raw: string): Post['date'] {
   date.setUTCHours(12)
   return {
     time: +date,
-    datetimeString: `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`,
+    datetimeString: dateToDateString(date),
     string: date.toLocaleDateString('en-US', {
       year: 'numeric',
       month: 'long',

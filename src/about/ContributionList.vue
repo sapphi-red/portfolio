@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import PRDataRaw from '../assets/prs.json'
-import { dateToDateTimeString } from '../util/date'
+import { dateToDateTimeString } from '../../common/date'
 
 type PRDataType = typeof PRDataRaw
 type CorrectPRDataType = {

@@ -1,6 +1,7 @@
 import { defineConfig, type HeadConfig } from 'vitepress'
 import Icons from 'unplugin-icons/vite'
 import { ViteToml } from 'vite-plugin-toml'
+import { dateToDateString } from '../common/date'
 
 const host = 'https://green.sapphi.red/'
 
@@ -65,7 +66,7 @@ export default defineConfig({
         'meta',
         {
           property: 'article:published_time',
-          content: `${published.getFullYear()}-${published.getMonth()}-${published.getDate()}`
+          content: dateToDateString(published)
         }
       ])
 
