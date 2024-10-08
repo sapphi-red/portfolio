@@ -94,10 +94,10 @@ h6.style {
 
 .vp-doc ul,
 ul.style {
-  list-style: none !important;
-  padding-left: 0 !important;
+  list-style: none;
+  padding-left: 0;
   ul {
-    padding-left: 1em !important;
+    padding-left: 1em;
   }
 
   li {
@@ -111,6 +111,7 @@ ul.style {
       background-position: center;
       background-repeat: no-repeat;
       margin-bottom: -0.1em;
+      margin-right: 0.2em;
     }
   }
 

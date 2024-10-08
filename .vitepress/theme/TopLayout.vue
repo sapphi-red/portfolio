@@ -6,7 +6,7 @@ import FitHeightText from './components/internal/FitHeightText.vue'
   <div class="wrapper">
     <div class="green">
       <transition name="slide-from-right" appear>
-        <FitHeightText>green</FitHeightText>
+        <FitHeightText class="greenInner">green</FitHeightText>
       </transition>
     </div>
     <div class="sapphire">
@@ -50,6 +50,13 @@ import FitHeightText from './components/internal/FitHeightText.vue'
 .red {
   text-align: right;
   background-color: var(--s-secondary-theme-red);
+}
+
+.greenInner,
+.sapphireInner,
+.redInner {
+  max-width: calc(var(--vp-layout-max-width) - 64px);
+  margin: 0 auto;
 }
 
 .sapphireInner {

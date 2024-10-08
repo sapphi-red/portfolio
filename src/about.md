@@ -11,7 +11,7 @@ import IconMastodon from '~icons/tabler/brand-mastodon'
 I'm sapphi-red. I'm a [Vite](https://vite.dev/) core team member. I work at [VoidZero](https://voidzero.dev/).
 
 I normally spend my time working on frontend related build toolchains.
-But I also had been working on writing backend code using Go.
+In past, I had been writing frontend code in Vue and backend code using Go.
 
 [The list of contributions](/about/contributions)
 

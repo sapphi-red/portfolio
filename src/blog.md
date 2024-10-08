@@ -11,4 +11,6 @@ import ArticleList from '../.vitepress/theme/components/ArticleList.vue'
 
 <ArticleList />
 
-[Blog posts I wrote in past in Japanese](https://trap.jp/author/sappi_red)
+## Links to posts outside this site
+
+- [traP blog (Japanese)](https://trap.jp/author/sappi_red)
