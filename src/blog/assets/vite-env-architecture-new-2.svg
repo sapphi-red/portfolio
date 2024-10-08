@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   viewBox="0 0 1004.8524475097656 407.1999816894531"
+   width="1004.8524475097656"
+   height="407.1999816894531"
+   filter="invert(93%) hue-rotate(180deg)"
+   id="svg8368"
+   sodipodi:docname="architecture-new-2.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata8372">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2560"
+     inkscape:window-height="1351"
+     id="namedview8370"
+     showgrid="false"
+     inkscape:zoom="1.2091328"
+     inkscape:cx="502.42621"
+     inkscape:cy="203.59999"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8368" />
+  <!-- svg-source:excalidraw -->
+  <defs
+     id="defs8092">
+    <style
+       class="style-fonts"
+       id="style8090">
+      @font-face {
+        font-family: Excalifont;
+        src: url(data:font/woff2;base64,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);
+          }
+    </style>
+  </defs>
+  <g
+     stroke-linecap="round"
+     transform="translate(732.4127982086052 208.38794875713398) rotate(0 117.60008021763383 56.90003967285156)"
+     id="g8104">
+    <path
+       d="M28.45 0 C94.06 2.01, 160.47 0.66, 206.75 0 M28.45 0 C95.13 0.24, 163.32 0.07, 206.75 0 M206.75 0 C227.61 -0.66, 233.6 9.53, 235.2 28.45 M206.75 0 C223.72 1.23, 235.21 8.03, 235.2 28.45 M235.2 28.45 C236.01 47.79, 233.27 68.05, 235.2 85.35 M235.2 28.45 C234.83 43.02, 235.06 57.27, 235.2 85.35 M235.2 85.35 C235.28 104.77, 225.46 115.51, 206.75 113.8 M235.2 85.35 C234.11 103.3, 227.71 113.71, 206.75 113.8 M206.75 113.8 C154.44 112.7, 103.13 111.56, 28.45 113.8 M206.75 113.8 C139.14 111.36, 71.18 112.28, 28.45 113.8 M28.45 113.8 C9.19 113.99, 0.21 104.83, 0 85.35 M28.45 113.8 C7.25 114.71, 1.62 104.27, 0 85.35 M0 85.35 C1.16 67.77, -0.68 48.75, 0 28.45 M0 85.35 C-0.17 72.82, -0.5 60.83, 0 28.45 M0 28.45 C0.53 10.17, 11.19 -0.41, 28.45 0 M0 28.45 C-1.08 7.73, 10.01 0.82, 28.45 0"
+       stroke="#1e1e1e"
+       stroke-width="2"
+       fill="none"
+       id="path8102" />
+  </g>
+  <g
+     transform="translate(796.0128784262388 220.28798842998555) rotate(0 54 45)"
+     id="g8110">
+    <text
+       x="54"
+       y="31.716"
+       font-family="Excalifont, Segoe UI Emoji"
+       font-size="36px"
+       fill="#1e1e1e"
+       text-anchor="middle"
+       style="white-space: pre;"
+       direction="ltr"
+       dominant-baseline="alphabetic"
+       id="text8106">Code</text>
+    <text
+       x="54"
+       y="76.71600000000001"
+       font-family="Excalifont, Segoe UI Emoji"
+       font-size="36px"
+       fill="#1e1e1e"
+       text-anchor="middle"
+       style="white-space: pre;"
+       direction="ltr"
+       dominant-baseline="alphabetic"
+       id="text8108">Transformer</text>
+  </g>
+  <mask
+     id="mask8126" />
+  <mask
+     id="mask8142" />
+  <mask
+     id="mask8172" />
+  <mask
+     id="mask8188" />
+  <g
+     stroke-linecap="round"
+     transform="translate(321.1999991280695 206.6999969482422) rotate(0 96.80006190708696 56.90003967285156)"
+     id="g8192">
+    <path
+       d="M28.45 0 C72.2 0.39, 113.4 -1.76, 165.15 0 M28.45 0 C57.98 0, 87.72 -0.04, 165.15 0 M165.15 0 C182.76 0.53, 192.28 10.41, 193.6 28.45 M165.15 0 C186.19 0.73, 193.54 8.16, 193.6 28.45 M193.6 28.45 C195.7 41.38, 193.26 57.74, 193.6 85.35 M193.6 28.45 C193.81 40.88, 194.65 53.97, 193.6 85.35 M193.6 85.35 C195.26 104.53, 184.06 115.77, 165.15 113.8 M193.6 85.35 C195.23 106.41, 186.05 113.12, 165.15 113.8 M165.15 113.8 C122.49 115.25, 79.78 114.31, 28.45 113.8 M165.15 113.8 C124.27 112.86, 83.16 114.31, 28.45 113.8 M28.45 113.8 C11.02 115.19, -0.96 102.33, 0 85.35 M28.45 113.8 C10.3 113.79, 1.27 104.48, 0 85.35 M0 85.35 C-0.61 66.76, 0.49 47.99, 0 28.45 M0 85.35 C1.11 63.84, 0.05 40.92, 0 28.45 M0 28.45 C-1.53 8.02, 10.26 -1.98, 28.45 0 M0 28.45 C1.01 8.15, 8.96 -0.29, 28.45 0"
+       stroke="#1e1e1e"
+       stroke-width="2"
+       fill="none"
+       id="path8190" />
+  </g>
+  <g
+     transform="translate(363.50006103515625 218.60003662109375) rotate(0 54.5 45)"
+     id="g8198">
+    <text
+       x="54.5"
+       y="31.716"
+       font-family="Excalifont, Segoe UI Emoji"
+       font-size="36px"
+       fill="#1e1e1e"
+       text-anchor="middle"
+       style="white-space: pre;"
+       direction="ltr"
+       dominant-baseline="alphabetic"
+       id="text8194">Code</text>
+    <text
+       x="54.5"
+       y="76.71600000000001"
+       font-family="Excalifont, Segoe UI Emoji"
+       font-size="36px"
+       fill="#1e1e1e"
+       text-anchor="middle"
+       style="white-space: pre;"
+       direction="ltr"
+       dominant-baseline="alphabetic"
+       id="text8196">Executor</text>
+  </g>
+  <g
+     stroke-linecap="round"
+     transform="translate(27.599962506975317 213.59997558593744) rotate(0 100.00004359654031 50)"
+     id="g8202">
+    <path
+       d="M25 0 C79.81 1.94, 136.23 0.81, 175 0 M25 0 C73.49 -1.48, 120.67 -0.78, 175 0 M175 0 C192.37 -1.8, 201.34 7.41, 200 25 M175 0 C189.49 -0.12, 201.04 8.64, 200 25 M200 25 C198.26 39.07, 199.09 50.55, 200 75 M200 25 C199.23 39.24, 198.89 53.2, 200 75 M200 75 C199.98 93.21, 192.16 99.21, 175 100 M200 75 C199.5 90.99, 192.25 100.5, 175 100 M175 100 C133.3 99.61, 90.16 101.77, 25 100 M175 100 C133.86 99.05, 95.63 97.86, 25 100 M25 100 C6.76 100.6, 1.56 89.83, 0 75 M25 100 C10.4 97.79, -0.96 89.43, 0 75 M0 75 C-0.82 58.98, -1.2 44.24, 0 25 M0 75 C-0.53 58.5, 0.24 42.21, 0 25 M0 25 C-1.51 9.05, 7.68 0.01, 25 0 M0 25 C-0.26 7.13, 8.02 -0.65, 25 0"
+       stroke="#1e1e1e"
+       stroke-width="2"
+       fill="none"
+       id="path8200" />
+  </g>
+  <g
+     transform="translate(46.063873291015625 218.59997558593744) rotate(0 81.5361328125 45)"
+     id="g1235">
+    <text
+       x="81.5361328125"
+       y="31.716"
+       font-family="Excalifont, Segoe UI Emoji"
+       font-size="36px"
+       fill="#1e1e1e"
+       text-anchor="middle"
+       style="white-space: pre;"
+       direction="ltr"
+       dominant-baseline="alphabetic"
+       id="text1231">Source</text>
+    <text
+       x="81.5361328125"
+       y="76.71600000000001"
+       font-family="Excalifont, Segoe UI Emoji"
+       font-size="36px"
+       fill="#1e1e1e"
+       text-anchor="middle"
+       style="white-space: pre;"
+       direction="ltr"
+       dominant-baseline="alphabetic"
+       id="text1233">code</text>
+  </g>
+  <g
+     stroke-linecap="round"
+     id="g8222">
+    <g
+       transform="translate(312.5274887717201 246.25516721263443) rotate(0 -40.699990408761096 -1.626975626544322)"
+       id="g8212">
+      <path
+         d="M0.02 -0.63 C-13.65 -1.09, -68.22 -3.17, -81.66 -3.57"
+         stroke="#1e1e1e"
+         stroke-width="2.5"
+         fill="none"
+         stroke-dasharray="8 10"
+         id="path8210" />
+    </g>
+    <g
+       transform="translate(312.5274887717201 246.25516721263443) rotate(0 -40.699990408761096 -1.626975626544322)"
+       id="g8216">
+      <path
+         d="M-57.89 -11.3 C-66.83 -9.18, -74.12 -4.93, -81.66 -3.57"
+         stroke="#1e1e1e"
+         stroke-width="2.5"
+         fill="none"
+         id="path8214" />
+    </g>
+    <g
+       transform="translate(312.5274887717201 246.25516721263443) rotate(0 -40.699990408761096 -1.626975626544322)"
+       id="g8220">
+      <path
+         d="M-58.47 5.79 C-67.1 2.28, -74.21 0.9, -81.66 -3.57"
+         stroke="#1e1e1e"
+         stroke-width="2.5"
+         fill="none"
+         id="path8218" />
+    </g>
+  </g>
+  <mask
+     id="mask8224" />
+  <g
+     stroke-linecap="round"
+     id="g8238">
+    <g
+       transform="translate(231.12750795419697 277.4012403736083) rotate(0 39.09998430524547 0.7990766292245866)"
+       id="g8228">
+      <path
+         d="M-0.26 -0.31 C12.9 0.1, 65.78 1.48, 78.96 1.84"
+         stroke="#1e1e1e"
+         stroke-width="2.5"
+         fill="none"
+         stroke-dasharray="8 10"
+         id="path8226" />
+    </g>
+    <g
+       transform="translate(231.12750795419697 277.4012403736083) rotate(0 39.09998430524547 0.7990766292245866)"
+       id="g8232">
+      <path
+         d="M55.25 9.76 C61.92 8.69, 69.99 6.05, 78.96 1.84"
+         stroke="#1e1e1e"
+         stroke-width="2.5"
+         fill="none"
+         id="path8230" />
+    </g>
+    <g
+       transform="translate(231.12750795419697 277.4012403736083) rotate(0 39.09998430524547 0.7990766292245866)"
+       id="g8236">
+      <path
+         d="M55.71 -7.33 C62.15 -3.25, 70.09 -0.74, 78.96 1.84"
+         stroke="#1e1e1e"
+         stroke-width="2.5"
+         fill="none"
+         id="path8234" />
+    </g>
+  </g>
+  <mask
+     id="mask8240" />
+  <mask
+     id="mask8256" />
+  <mask
+     id="mask8272" />
+  <g
+     stroke-linecap="round"
+     transform="translate(733.2001037597656 43.599945068359375) rotate(0 114 50)"
+     id="g8276">
+    <path
+       d="M25 0 C89.58 0.97, 157.31 1.04, 203 0 M25 0 C63.11 2.39, 99.66 2.14, 203 0 M203 0 C220.97 0.29, 227.73 8.15, 228 25 M203 0 C219.69 1.34, 228.79 9.1, 228 25 M228 25 C227.24 37.69, 226.83 47.78, 228 75 M228 25 C229.16 38.67, 227.6 49.97, 228 75 M228 75 C226.13 90.67, 218.88 99.59, 203 100 M228 75 C226.21 93.76, 219.15 101.1, 203 100 M203 100 C164.21 100.9, 123.06 100.19, 25 100 M203 100 C159.52 101.64, 115.23 100.98, 25 100 M25 100 C7.23 101.85, 0.33 89.67, 0 75 M25 100 C10.17 99.55, -1.3 93.51, 0 75 M0 75 C0.44 63.2, -2.07 51.65, 0 25 M0 75 C0.39 65.12, -0.23 53.4, 0 25 M0 25 C-0.64 7.3, 9.3 -1.81, 25 0 M0 25 C1.42 7.07, 8.39 0.54, 25 0"
+       stroke="#1e1e1e"
+       stroke-width="2"
+       fill="none"
+       id="path8274" />
+  </g>
+  <g
+     transform="translate(757.9559631347656 71.09994506835938) rotate(0 89.244140625 22.5)"
+     id="g8280">
+    <text
+       x="89.244140625"
+       y="31.716"
+       font-family="Excalifont, Segoe UI Emoji"
+       font-size="36px"
+       fill="#1e1e1e"
+       text-anchor="middle"
+       style="white-space: pre;"
+       direction="ltr"
+       dominant-baseline="alphabetic"
+       id="text8278">Framework</text>
+  </g>
+  <g
+     stroke-linecap="round"
+     id="g8294">
+    <g
+       transform="translate(770.7944875382636 148.4000244140625) rotate(0 -0.39722851034275664 26.399993896484375)"
+       id="g8284">
+      <path
+         d="M-0.82 1.08 C-1.15 9.92, -1.58 43.5, -1.75 51.92 M0.95 0.61 C0.97 9.67, 0.53 44.38, 0.47 53"
+         stroke="#1971c2"
+         stroke-width="2"
+         fill="none"
+         id="path8282" />
+    </g>
+    <g
+       transform="translate(770.7944875382636 148.4000244140625) rotate(0 -0.39722851034275664 26.399993896484375)"
+       id="g8288">
+      <path
+         d="M-7.84 29.42 C-3.6 35.43, -4.21 42.86, 0.47 53 M-7.84 29.42 C-5.42 34.07, -4.79 39.18, 0.47 53"
+         stroke="#1971c2"
+         stroke-width="2"
+         fill="none"
+         id="path8286" />
+    </g>
+    <g
+       transform="translate(770.7944875382636 148.4000244140625) rotate(0 -0.39722851034275664 26.399993896484375)"
+       id="g8292">
+      <path
+         d="M9.26 29.6 C8.04 35.43, 1.96 42.81, 0.47 53 M9.26 29.6 C8.19 34.36, 5.32 39.44, 0.47 53"
+         stroke="#1971c2"
+         stroke-width="2"
+         fill="none"
+         id="path8290" />
+    </g>
+  </g>
+  <mask
+     id="mask8296" />
+  <g
+     stroke-linecap="round"
+     id="g8310">
+    <g
+       transform="translate(751.2013823278949 199.59451526110058) rotate(0 0.7999267578125 -23.199996948242188)"
+       id="g8300">
+      <path
+         d="M0.03 0.22 C0.21 -7.5, 1.31 -38.15, 1.57 -45.95 M-0.62 -0.15 C-0.55 -8.04, 0.82 -39.03, 1.13 -46.68"
+         stroke="#1971c2"
+         stroke-width="2"
+         fill="none"
+         id="path8298" />
+    </g>
+    <g
+       transform="translate(751.2013823278949 199.59451526110058) rotate(0 0.7999267578125 -23.199996948242188)"
+       id="g8304">
+      <path
+         d="M8.15 -24.55 C5.78 -33.09, 3.52 -41.55, 1.13 -46.68 M8.15 -24.55 C5.85 -31, 4.42 -36.38, 1.13 -46.68"
+         stroke="#1971c2"
+         stroke-width="2"
+         fill="none"
+         id="path8302" />
+    </g>
+    <g
+       transform="translate(751.2013823278949 199.59451526110058) rotate(0 0.7999267578125 -23.199996948242188)"
+       id="g8308">
+      <path
+         d="M-7.72 -25.22 C-4 -33.5, -0.17 -41.71, 1.13 -46.68 M-7.72 -25.22 C-5.76 -31.46, -2.93 -36.66, 1.13 -46.68"
+         stroke="#1971c2"
+         stroke-width="2"
+         fill="none"
+         id="path8306" />
+    </g>
+  </g>
+  <mask
+     id="mask8312" />
+  <g
+     transform="translate(548.3999938964844 304.3999328613281) rotate(0 64.65234375 45)"
+     id="g8318">
+    <text
+       x="0"
+       y="31.716"
+       font-family="Excalifont, Segoe UI Emoji"
+       font-size="36px"
+       fill="#e03131"
+       text-anchor="start"
+       style="white-space: pre;"
+       direction="ltr"
+       dominant-baseline="alphabetic"
+       id="text8314">Some kind</text>
+    <text
+       x="0"
+       y="76.71600000000001"
+       font-family="Excalifont, Segoe UI Emoji"
+       font-size="36px"
+       fill="#e03131"
+       text-anchor="start"
+       style="white-space: pre;"
+       direction="ltr"
+       dominant-baseline="alphabetic"
+       id="text8316">of Call</text>
+  </g>
+  <g
+     stroke-linecap="round"
+     id="g8332">
+    <g
+       transform="translate(720.723325446892 257.2324942773662) rotate(0 -99.2000732421875 -2.4000396728515554)"
+       id="g8322">
+      <path
+         d="M0.25 -0.15 C-32.7 -0.74, -164.4 -3.37, -197.63 -3.97 M-1.09 -1.27 C-34.12 -2.16, -165.58 -4.94, -198.18 -5.66"
+         stroke="#e03131"
+         stroke-width="2"
+         fill="none"
+         id="path8320" />
+    </g>
+    <g
+       transform="translate(720.723325446892 257.2324942773662) rotate(0 -99.2000732421875 -2.4000396728515554)"
+       id="g8326">
+      <path
+         d="M-174.5 -13.7 C-181.95 -9.94, -187.5 -10.03, -198.18 -5.66 M-174.5 -13.7 C-184.32 -10.45, -193.05 -7.15, -198.18 -5.66"
+         stroke="#e03131"
+         stroke-width="2"
+         fill="none"
+         id="path8324" />
+    </g>
+    <g
+       transform="translate(720.723325446892 257.2324942773662) rotate(0 -99.2000732421875 -2.4000396728515554)"
+       id="g8330">
+      <path
+         d="M-174.87 3.4 C-182.15 1.98, -187.59 -3.29, -198.18 -5.66 M-174.87 3.4 C-184.72 0.05, -193.3 -3.27, -198.18 -5.66"
+         stroke="#e03131"
+         stroke-width="2"
+         fill="none"
+         id="path8328" />
+    </g>
+  </g>
+  <mask
+     id="mask8334" />
+  <g
+     stroke-linecap="round"
+     id="g8348">
+    <g
+       transform="translate(524.1656059681764 275.3040876695374) rotate(0 99.19989013671875 0.799957275390625)"
+       id="g8338">
+      <path
+         d="M0.9 0.8 C34.13 1.19, 166.38 2.44, 199.16 2.58 M-0.08 0.17 C33.07 0.23, 165.26 0.51, 198.62 0.98"
+         stroke="#e03131"
+         stroke-width="2"
+         fill="none"
+         id="path8336" />
+    </g>
+    <g
+       transform="translate(524.1656059681764 275.3040876695374) rotate(0 99.19989013671875 0.799957275390625)"
+       id="g8342">
+      <path
+         d="M175.06 9.36 C183.09 8.07, 190.11 3.05, 198.62 0.98 M175.06 9.36 C181.43 7.16, 188.45 3.74, 198.62 0.98"
+         stroke="#e03131"
+         stroke-width="2"
+         fill="none"
+         id="path8340" />
+    </g>
+    <g
+       transform="translate(524.1656059681764 275.3040876695374) rotate(0 99.19989013671875 0.799957275390625)"
+       id="g8346">
+      <path
+         d="M175.19 -7.74 C183.21 -4.16, 190.2 -4.3, 198.62 0.98 M175.19 -7.74 C181.61 -4.74, 188.59 -2.96, 198.62 0.98"
+         stroke="#e03131"
+         stroke-width="2"
+         fill="none"
+         id="path8344" />
+    </g>
+  </g>
+  <mask
+     id="mask8350" />
+  <g
+     transform="translate(782.5477600097656 154.60000610351562) rotate(0 101.15234375 22.5)"
+     id="g8354">
+    <text
+       x="0"
+       y="31.716"
+       font-family="Excalifont, Segoe UI Emoji"
+       font-size="36px"
+       fill="#1971c2"
+       text-anchor="start"
+       style="white-space: pre;"
+       direction="ltr"
+       dominant-baseline="alphabetic"
+       id="text8352">Function Call</text>
+  </g>
+</svg>

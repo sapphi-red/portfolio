@@ -1,0 +1,156 @@
+:root {
+  --s-curly-font: 'Atma', cursive;
+  --s-primary-theme-green: #69cea8; /* oklch(79.74% 0.1115 167.02) */
+  --s-primary-theme-blue: #63c5f0; /* oklch(77.98% 0.1107 229.51) */
+  --s-primary-theme-red: #f699a0; /* oklch(77.98% 0.1107 15.26) */
+  --s-secondary-theme-green: #009a6d; /* oklch(59.97% 0.1804 167.02) */
+  --s-secondary-theme-blue: #008fc0; /* oklch(59.97% 0.1804 229.51) */
+  --s-secondary-theme-red: #d6455c; /* oklch(59.97% 0.1804 15.26) */
+  --s-dark-bg: #1b1b1f;
+}
+
+:root {
+  --vp-font-family-base: 'Inter', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN',
+    'Arial', 'Yu Gothic', 'Meiryo', ui-sans-serif, system-ui, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-feature-settings: 'pwid' 1;
+
+  --vp-c-brand-1: var(--s-secondary-theme-green);
+  --vp-c-brand-2: var(--s-primary-theme-green);
+  --vp-c-brand-3: #00865e; /* oklch(53.98% 0.1899 167.02) */
+  --vp-c-brand-soft: #009d6f29; /* oklch(60.7% 0.2146 167.02 / 16.08%) */
+}
+:root.dark {
+  --vp-c-brand-1: var(--s-primary-theme-green);
+  --vp-c-brand-2: var(--s-secondary-theme-green);
+  --vp-c-bg: var(--s-dark-bg);
+}
+
+.VPNavBarTitle > .title,
+.VPNav .VPLink {
+  font-family: var(--s-curly-font);
+  font-size: 1.2rem;
+}
+
+.home .VPContent {
+  display: flex;
+}
+
+.Layout {
+  .VPNavBar {
+    .divider {
+      margin-top: -2px;
+      height: 3px;
+      &::before {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 100%;
+        background-color: transparent;
+        transition: background-color 0.5s;
+        z-index: 0;
+      }
+      &::after {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 100%;
+        background-color: transparent;
+        transition: background-color 0.5s;
+        z-index: 0;
+      }
+    }
+  }
+  &:not(.home) {
+    .VPNavBar {
+      .divider {
+        &::before {
+          background-color: var(--s-secondary-theme-green);
+        }
+        .divider-line {
+          background-color: var(--s-secondary-theme-blue);
+        }
+        &::after {
+          background-color: var(--s-secondary-theme-red);
+        }
+      }
+    }
+  }
+}
+
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.vp-doc h4,
+.vp-doc h5,
+.vp-doc h6,
+h1.style,
+h2.style,
+h3.style,
+h4.style,
+h5.style,
+h6.style {
+  font-family: var(--s-curly-font);
+  letter-spacing: 0;
+}
+
+.vp-doc ul,
+ul.style {
+  list-style: none;
+  padding-left: 0;
+  ul {
+    padding-left: 1em;
+  }
+
+  li {
+    margin: 0.1em 0;
+    &::before {
+      content: '';
+      display: inline-block;
+      height: 1em;
+      width: 1em;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-bottom: -0.1em;
+      margin-right: 0.2em;
+    }
+  }
+
+  li::before,
+  li li li li::before {
+    background-image: url('./assets/magatama-green.svg');
+  }
+  li li::before,
+  li li li li li::before {
+    background-image: url('./assets/magatama-blue.svg');
+  }
+  li li li::before {
+    background-image: url('./assets/magatama-red.svg');
+  }
+}
+
+figcaption {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.vp-doc a,
+a.style {
+  text-decoration: underline dotted 1px;
+  text-decoration-skip-ink: none;
+  text-underline-position: under;
+}
+
+.twitter-tweet {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+img.dark-bg {
+  background-color: var(--s-dark-bg);
+}
+
+.inline-block {
+  display: inline;
+}

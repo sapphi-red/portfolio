@@ -3,7 +3,8 @@
     "target": "esnext",
     "module": "esnext",
     "strict": true,
-    "moduleResolution": "node",
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "isolatedModules": true,
@@ -26,9 +27,10 @@
     }
   },
   "vueCompilerOptions": {
-    "narrowingTypesInInlineHandlers": true,
     "experimentalResolveStyleCssClasses": "always",
     "strictTemplates": true,
-    "dataAttributes": ["data-*"]
-  }
+    "dataAttributes": ["data-*"],
+    "vitePressExtensions": [".md"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.vue", "src/**/*.md"]
 }

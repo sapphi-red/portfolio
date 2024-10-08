@@ -5,12 +5,12 @@ name = 'ICTトラブルシューティングコンテスト2019 チーム「stoh
   name = '本選9位'
   href = 'https://icttoracon.net/archives/8369'
 
-[[contests]]
-name = '学生向けN-ISUCON'
-href = 'https://nttcom.connpass.com/event/163460/'
+# [[contests]]
+# name = '学生向けN-ISUCON'
+# href = 'https://nttcom.connpass.com/event/163460/'
 
-  [[contests.children]]
-  name = '1位'
+#   [[contests.children]]
+#   name = '1位'
 
 [[contests]]
 name = 'ISUCON10 チーム「がんもどき」'
@@ -31,20 +31,20 @@ name = 'ISUCON10 チーム「がんもどき」'
     name = 'ブログ記事: ISUCON10本選3位とりました'
     href = 'https://trap.jp/post/1131/'
 
-[[contests]]
-name = 'ICTトラブルシューティングコンテスト2020 チーム「k8s完全に理解したい」'
+# [[contests]]
+# name = 'ICTトラブルシューティングコンテスト2020 チーム「k8s完全に理解したい」'
 
-  [[contests.children]]
-  name = '本選 2位'
-  href = 'https://icttoracon.net/archives/8751'
+#   [[contests.children]]
+#   name = '本選 2位'
+#   href = 'https://icttoracon.net/archives/8751'
 
-    [[contests.children.children]]
-    name = 'ブログ記事: ICTSC予選「ダイエットしようぜ！」で極限ダイエットする (1)'
-    href = 'https://trap.jp/post/1139/'
+#     [[contests.children.children]]
+#     name = 'ブログ記事: ICTSC予選「ダイエットしようぜ！」で極限ダイエットする (1)'
+#     href = 'https://trap.jp/post/1139/'
 
-    [[contests.children.children]]
-    name = 'ブログ記事: ICTSC予選「ダイエットしようぜ！」で極限ダイエットする (2)'
-    href = 'https://trap.jp/post/1140/'
+#     [[contests.children.children]]
+#     name = 'ブログ記事: ICTSC予選「ダイエットしようぜ！」で極限ダイエットする (2)'
+#     href = 'https://trap.jp/post/1140/'
 
 [[contests]]
 name = "Web Speed Hackathon Vol.2"
@@ -61,9 +61,9 @@ href = 'https://isucon.net/archives/55821036.html'
   name = '記事(CodeZine): 出題者になって分かったISUCON必勝法とは？ ISUCON初の学生運営メンバーに聞く'
   href = 'https://codezine.jp/article/detail/14814'
 
-[[contests]]
-name = 'ICTトラブルシューティングコンテスト2021 冬の陣 チーム「Windows 11へのアップグレードオファーは最終段階に入りました」'
+  # [[contests]]
+  # name = 'ICTトラブルシューティングコンテスト2021 冬の陣 チーム「Windows 11へのアップグレードオファーは最終段階に入りました」'
 
-  [[contests.children]]
-  name = '3位'
-  href = 'https://icttoracon.net/archives/8962'
+  #   [[contests.children]]
+  #   name = '3位'
+  #   href = 'https://icttoracon.net/archives/8962'

@@ -5,3 +5,5 @@ dist
 
 .vercel
 .eslintcache
+
+.vitepress/cache
