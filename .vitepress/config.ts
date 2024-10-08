@@ -42,7 +42,6 @@ export default defineConfig({
   cleanUrls: true,
   srcDir: './src',
   outDir: './dist',
-  ignoreDeadLinks: ['/feed.rss'],
   // markdown: {},
   vite: {
     plugins: [
