@@ -1,24 +1,32 @@
 <script setup lang="ts">
+import { onBeforeMount, ref } from 'vue'
 import FitHeightText from './components/internal/FitHeightText.vue'
+
+const willMount = ref(false)
+onBeforeMount(() => {
+  willMount.value = true
+})
 </script>
 
 <template>
   <div class="wrapper">
-    <div class="green">
-      <transition name="slide-from-right" appear>
-        <FitHeightText class="greenInner">green</FitHeightText>
-      </transition>
-    </div>
-    <div class="sapphire">
-      <transition name="slide-from-right" appear>
-        <FitHeightText class="sapphireInner">sapphire</FitHeightText>
-      </transition>
-    </div>
-    <div class="red">
-      <transition name="slide-from-right" appear>
-        <FitHeightText class="redInner">red</FitHeightText>
-      </transition>
-    </div>
+    <template v-if="willMount">
+      <div class="green">
+        <transition name="slide-from-right" appear>
+          <FitHeightText class="greenInner">green</FitHeightText>
+        </transition>
+      </div>
+      <div class="sapphire">
+        <transition name="slide-from-right" appear>
+          <FitHeightText class="sapphireInner">sapphire</FitHeightText>
+        </transition>
+      </div>
+      <div class="red">
+        <transition name="slide-from-right" appear>
+          <FitHeightText class="redInner">red</FitHeightText>
+        </transition>
+      </div>
+    </template>
   </div>
 </template>
 

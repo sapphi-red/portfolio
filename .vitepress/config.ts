@@ -1,6 +1,8 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig, type HeadConfig } from 'vitepress'
 import Icons from 'unplugin-icons/vite'
 import { ViteToml } from 'vite-plugin-toml'
+
+const host = 'https://green.sapphi.red/'
 
 export default defineConfig({
   title: 'green.sapphi.red',
@@ -22,7 +24,9 @@ export default defineConfig({
         crossorigin: ''
       }
     ],
-    ['link', { rel: 'me', href: 'https://m.webtoo.ls/@sapphi_red' }]
+    ['link', { rel: 'me', href: 'https://m.webtoo.ls/@sapphi_red' }],
+    ['meta', { property: 'og:site_name', content: 'green.sapphi.red' }],
+    ['meta', { name: 'twitter:site', content: '@sapphi_red' }]
   ],
   cleanUrls: true,
   srcDir: './src',
@@ -36,6 +40,44 @@ export default defineConfig({
       }),
       ViteToml()
     ]
+  },
+  transformPageData(pageData) {
+    const head: HeadConfig[] = (pageData.frontmatter.head ??= [])
+
+    head.push(['meta', { property: 'og:title', content: pageData.title }])
+    head.push([
+      'meta',
+      { property: 'og:description', content: pageData.description }
+    ])
+    head.push([
+      'meta',
+      { property: 'og:url', content: host + pageData.relativePath }
+    ])
+
+    if (pageData.filePath.startsWith('blog/')) {
+      head.push(['meta', { property: 'og:type', content: 'article' }])
+      const published: Date = pageData.frontmatter.date
+      head.push([
+        'meta',
+        {
+          property: 'article:published_time',
+          content: `${published.getFullYear()}-${published.getMonth()}-${published.getDate()}`
+        }
+      ])
+
+      const image = pageData.frontmatter.ogpImage || '/ogp-image/fallback.png'
+      head.push([
+        'meta',
+        { name: 'twitter:card', content: 'summary_large_image' }
+      ])
+      head.push(['meta', { name: 'twitter:image', content: image }])
+      head.push(['meta', { property: 'og:image', content: image }])
+    } else {
+      const image = '/ogp-image/fallback.png'
+      head.push(['meta', { name: 'twitter:card', content: 'summary' }])
+      head.push(['meta', { name: 'twitter:image', content: image }])
+      head.push(['meta', { property: 'og:image', content: image }])
+    }
   },
   themeConfig: {
     nav: [

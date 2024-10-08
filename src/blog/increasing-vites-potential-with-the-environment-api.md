@@ -1,6 +1,7 @@
 ---
 title: Increasing Vite's potential with the Environment API
 date: 2024-10-07
+ogpImage: /ogp-image/increasing-vites-potential-with-the-environment-api.png
 ---
 
 <script setup lang="ts">
@@ -13,8 +14,6 @@ const LineChart = defineClientComponent(() => {
 </script>
 
 <ArticleTitle />
-
-// TODO: make an OGP image
 
 This post is a translation of the original talk in Japanese. The slides for the original talk are available [here](https://pre-vue-fes-2024-environment-api-slide.sapphi.red/) (Japanese).
 
