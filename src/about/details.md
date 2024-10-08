@@ -15,3 +15,9 @@ This page is written in Japanese for now.
 ## Books
 
 <TreeDataList :data="books" />
+
+<!-- work experiences -->
+
+<!-- education -->
+
+<!-- projects -->

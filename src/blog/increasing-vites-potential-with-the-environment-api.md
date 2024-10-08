@@ -15,8 +15,7 @@ const LineChart = defineClientComponent(() => {
 <ArticleTitle />
 
 // TODO: make an OGP image  
-// TODO: make images work with light theme  
-// TODO: fix unstable twitter widget
+// TODO: make images work with light theme
 
 This post is a translation of the original talk in Japanese. The slides for the original talk are available [here](https://pre-vue-fes-2024-environment-api-slide.sapphi.red/) (Japanese).
 
@@ -174,7 +173,9 @@ But it is also possible to use a different runtime for each endpoint.
 
 The Environment API has already been merged into the main branch and released in v6.0.0-beta.0.
 
-<blockquote class="twitter-tweet" :data-theme="isDark ? 'dark' : ''" data-cards="hidden"><p lang="en" dir="ltr">✋ vite@6.0.0-beta.0 is out!<br><br>If you&#39;re building on top of Vite, experiment with the new Module Runner and Environment API and give us feedback! As a user, test compatibility so the ecosystem can smoothly upgrade to v6. Check out the docs to learn more ⚡️<a href="https://t.co/tak8pz77Vc">https://t.co/tak8pz77Vc</a></p>&mdash; Vite ⚡ (@vite_js) <a href="https://twitter.com/vite_js/status/1834219516047294631?ref_src=twsrc%5Etfw">September 12, 2024</a></blockquote>
+<EmbedXPost id="1834219516047294631" hideCards>
+  <p lang="en" dir="ltr">✋ vite@6.0.0-beta.0 is out!<br><br>If you&#39;re building on top of Vite, experiment with the new Module Runner and Environment API and give us feedback! As a user, test compatibility so the ecosystem can smoothly upgrade to v6. Check out the docs to learn more ⚡️<a href="https://t.co/tak8pz77Vc">https://t.co/tak8pz77Vc</a></p>&mdash; Vite ⚡ (@vite_js) <a href="https://twitter.com/vite_js/status/1834219516047294631?ref_src=twsrc%5Etfw">September 12, 2024</a>
+</EmbedXPost>
 
 The ecosystem-ci (the CI that runs the tests in the ecosystem) that were run prior to the merge have passed mostly, and we are assuming that the existing code will continue to work.
 We want to make the transition from v5 to v6 as smooth as possible to encourage users to upgrade.

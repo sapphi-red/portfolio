@@ -22,15 +22,7 @@ export default defineConfig({
         crossorigin: ''
       }
     ],
-    ['link', { rel: 'me', href: 'https://m.webtoo.ls/@sapphi_red' }],
-    [
-      'script',
-      {
-        src: 'https://platform.twitter.com/widgets.js',
-        charset: 'utf-8',
-        async: ''
-      }
-    ]
+    ['link', { rel: 'me', href: 'https://m.webtoo.ls/@sapphi_red' }]
   ],
   cleanUrls: true,
   srcDir: './src',
