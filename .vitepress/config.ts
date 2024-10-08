@@ -51,7 +51,11 @@ export default defineConfig({
     ])
     head.push([
       'meta',
-      { property: 'og:url', content: host + pageData.relativePath }
+      {
+        property: 'og:url',
+        content:
+          host + pageData.relativePath.replace(/(?:(^|\/)index)?\.md$/, '$1')
+      }
     ])
 
     if (pageData.filePath.startsWith('blog/')) {
@@ -70,13 +74,13 @@ export default defineConfig({
         'meta',
         { name: 'twitter:card', content: 'summary_large_image' }
       ])
-      head.push(['meta', { name: 'twitter:image', content: image }])
-      head.push(['meta', { property: 'og:image', content: image }])
+      head.push(['meta', { name: 'twitter:image', content: host + image }])
+      head.push(['meta', { property: 'og:image', content: host + image }])
     } else {
       const image = '/ogp-image/fallback.png'
       head.push(['meta', { name: 'twitter:card', content: 'summary' }])
-      head.push(['meta', { name: 'twitter:image', content: image }])
-      head.push(['meta', { property: 'og:image', content: image }])
+      head.push(['meta', { name: 'twitter:image', content: host + image }])
+      head.push(['meta', { property: 'og:image', content: host + image }])
     }
   },
   themeConfig: {

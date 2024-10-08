@@ -6,7 +6,9 @@ import { data as posts } from './posts.data.ts'
   <ul>
     <li v-for="{ title, url, date, excerpt } of posts" :key="url">
       <article>
-        <time :datetime="date.datetimeString" class="date">{{ date.string }}</time>
+        <time :datetime="date.datetimeString" class="date">{{
+          date.string
+        }}</time>
         <div>
           <h2 class="title">
             <a :href="url">{{ title }}</a>
