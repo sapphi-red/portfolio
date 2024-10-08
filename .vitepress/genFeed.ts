@@ -32,13 +32,12 @@ export async function genFeed(config: SiteConfig) {
       +new Date(a.frontmatter.date as string)
   )
 
-  for (const { url, excerpt, frontmatter, html } of posts) {
+  for (const { url, excerpt, frontmatter } of posts) {
     feed.addItem({
       title: frontmatter.title,
       id: `${baseUrl}${url}`,
       link: `${baseUrl}${url}`,
       description: excerpt,
-      content: html?.replaceAll('&ZeroWidthSpace;', ''),
       date: frontmatter.date,
       image: baseUrl + frontmatter.ogpImage.replace(/^\//, '')
     })
