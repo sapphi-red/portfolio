@@ -69,7 +69,7 @@ export default defineConfig({
         }
       ])
 
-      const image = pageData.frontmatter.ogpImage || '/ogp-image/fallback.png'
+      const image = pageData.frontmatter.ogpImage || 'ogp-image/fallback.png'
       head.push([
         'meta',
         { name: 'twitter:card', content: 'summary_large_image' }
@@ -77,7 +77,7 @@ export default defineConfig({
       head.push(['meta', { name: 'twitter:image', content: host + image }])
       head.push(['meta', { property: 'og:image', content: host + image }])
     } else {
-      const image = '/ogp-image/fallback.png'
+      const image = 'ogp-image/fallback.png'
       head.push(['meta', { name: 'twitter:card', content: 'summary' }])
       head.push(['meta', { name: 'twitter:image', content: host + image }])
       head.push(['meta', { property: 'og:image', content: host + image }])
