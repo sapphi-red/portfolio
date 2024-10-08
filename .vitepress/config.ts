@@ -2,6 +2,7 @@ import { defineConfig, type HeadConfig } from 'vitepress'
 import Icons from 'unplugin-icons/vite'
 import { ViteToml } from 'vite-plugin-toml'
 import { dateToDateString } from '../common/date'
+import { genFeed } from './genFeed'
 
 const host = 'https://green.sapphi.red/'
 
@@ -27,7 +28,16 @@ export default defineConfig({
     ],
     ['link', { rel: 'me', href: 'https://m.webtoo.ls/@sapphi_red' }],
     ['meta', { property: 'og:site_name', content: 'green.sapphi.red' }],
-    ['meta', { name: 'twitter:site', content: '@sapphi_red' }]
+    ['meta', { name: 'twitter:site', content: '@sapphi_red' }],
+    [
+      'link',
+      {
+        rel: 'alternate',
+        type: 'application/rss+xml',
+        title: 'RSS2.0',
+        href: '/feed.rss'
+      }
+    ]
   ],
   cleanUrls: true,
   srcDir: './src',
@@ -86,6 +96,9 @@ export default defineConfig({
       head.push(['meta', { property: 'og:image', content: host + image }])
     }
   },
+  async buildEnd(siteConfig) {
+    await genFeed(siteConfig)
+  },
   themeConfig: {
     nav: [
       { text: 'about', link: '/about' },
@@ -93,7 +106,7 @@ export default defineConfig({
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/sapphi-red' },
-      { icon: 'twitter', link: 'https://twitter.com/sapphi_red' },
+      { icon: 'twitter', link: 'https://x.com/sapphi_red' },
       { icon: 'mastodon', link: 'https://elk.zone/m.webtoo.ls/@sapphi_red' }
     ]
   }

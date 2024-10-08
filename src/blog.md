@@ -5,9 +5,14 @@ markdownStyles: false
 
 <script setup lang="ts">
 import ArticleList from '../.vitepress/theme/components/ArticleList.vue'
+import IconRss from '~icons/tabler/rss'
 </script>
 
 # Blog posts
+
+[RSS <IconRss class="inline-block" />](/feed.rss)
+
+---
 
 <ArticleList />
 
