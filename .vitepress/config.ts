@@ -69,7 +69,9 @@ export default defineConfig({
         }
       ])
 
-      const image = pageData.frontmatter.ogpImage || 'ogp-image/fallback.png'
+      const image = (
+        pageData.frontmatter.ogpImage || '/ogp-image/fallback.png'
+      ).replace(/^\//, '')
       head.push([
         'meta',
         { name: 'twitter:card', content: 'summary_large_image' }
