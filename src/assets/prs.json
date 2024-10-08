@@ -1,107 +1,117 @@
 {
   "repos": [
     [
-      "vitejs/vite",
+      "twoslashes/twoslash",
       [
         {
-          "url": "https://github.com/vitejs/vite/pull/18247",
-          "title": "test: fix server-worker-runner flaky test",
-          "prId": 18247
+          "url": "https://github.com/twoslashes/twoslash/pull/56",
+          "title": "feat: add <code>fsCache</code> option to improve build performance",
+          "prId": 56
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/18241",
-          "title": "fix(data-uri): only match ids starting with <code>data:</code>",
-          "prId": 18241
+          "url": "https://github.com/twoslashes/twoslash/pull/33",
+          "title": "feat: support spaces before cut comments",
+          "prId": 33
+        }
+      ]
+    ],
+    [
+      "nodejs/node",
+      [
+        {
+          "url": "https://github.com/nodejs/node/pull/51032",
+          "title": "fs: fix fs.promises.realpath for long paths on Windows",
+          "prId": 51032
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/18237",
-          "title": "refactor: break circular dependencies to fix test-unit",
-          "prId": 18237
+          "url": "https://github.com/nodejs/node/pull/49849",
+          "title": "fs: add stacktrace to fs/promises",
+          "prId": 49849
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/18214",
-          "title": "fix(html): make build-html plugin work with <code>sharedPlugins</code>",
-          "prId": 18214
+          "url": "https://github.com/nodejs/node/pull/46391",
+          "title": "lib: add api to detect whether source-maps are enabled",
+          "prId": 46391
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/18212",
-          "title": "fix: call <code>this.hot.close</code> for non-ws HotChannel",
-          "prId": 18212
+          "url": "https://github.com/nodejs/node/pull/45280",
+          "title": "doc: fix RESOLVE_ESM_MATCH in modules.md",
+          "prId": 45280
+        }
+      ]
+    ],
+    [
+      "vitejs/vite-plugin-react-swc",
+      [
+        {
+          "url": "https://github.com/vitejs/vite-plugin-react-swc/pull/231",
+          "title": "fix: ignore directive sourcemap error",
+          "prId": 231
+        }
+      ]
+    ],
+    [
+      "vitejs/vite-plugin-react",
+      [
+        {
+          "url": "https://github.com/vitejs/vite-plugin-react/pull/369",
+          "title": "fix: ignore directive sourcemap error",
+          "prId": 369
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/18208",
-          "title": "refactor: use <code>resolvePackageData</code> to get rollup version",
-          "prId": 18208
+          "url": "https://github.com/vitejs/vite-plugin-react/pull/212",
+          "title": "perf: lazy load <code>@babel/core</code>",
+          "prId": 212
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/18207",
-          "title": "refactor: remove <code>_onCrawlEnd</code>",
-          "prId": 18207
+          "url": "https://github.com/vitejs/vite-plugin-react/pull/141",
+          "title": "perf: cache load plugin",
+          "prId": 141
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/18206",
-          "title": "fix: close HotChannel on environment close",
-          "prId": 18206
+          "url": "https://github.com/vitejs/vite-plugin-react/pull/67",
+          "title": "fix: don't invalidate when code is invalid",
+          "prId": 67
+        }
+      ]
+    ],
+    [
+      "rolldown/rolldown",
+      [
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/2316",
+          "title": "fix: extend PluginContext with MinimalPluginContext",
+          "prId": 2316
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/18200",
-          "title": "test: misc fixes",
-          "prId": 18200
+          "url": "https://github.com/rolldown/rolldown/pull/2217",
+          "title": "feat: expose <code>moduleType</code> type",
+          "prId": 2217
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/18184",
-          "title": "fix(css): backport #18128, ensure sass compiler initialized only once",
-          "prId": 18184
+          "url": "https://github.com/rolldown/rolldown/pull/982",
+          "title": "chore(rust/tracing): use async style by default and support <code>chrome-json-threaded</code>",
+          "prId": 982
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/18183",
-          "title": "fix(css): backport #18113, fix missing source file warning with sass modern api custom importer",
-          "prId": 18183
-        },
+          "url": "https://github.com/rolldown/rolldown/pull/825",
+          "title": "feat: support running Js plugin in parallel via Worker",
+          "prId": 825
+        }
+      ]
+    ],
+    [
+      "vitejs/vite",
+      [
         {
           "url": "https://github.com/vitejs/vite/pull/18142",
           "title": "feat: support <code>this.environment</code> in <code>options</code> and <code>onLog</code> hook",
           "prId": 18142
         },
         {
-          "url": "https://github.com/vitejs/vite/pull/18140",
-          "title": "fix: use <code>config.consumer</code> instead of <code>options?.ssr</code> / <code>config.build.ssr</code>",
-          "prId": 18140
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/18087",
-          "title": "test: remove not needed test",
-          "prId": 18087
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/18075",
           "title": "test: refactor hmr-ssr tests",
           "prId": 18075
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/18071",
-          "title": "fix(css): fallback to mainthread if logger or pkgImporter option is set for sass",
-          "prId": 18071
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/18053",
-          "title": "test: move glob test root to reduce snapshot change",
-          "prId": 18053
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/18052",
-          "title": "chore: silence unnecessary logs during test",
-          "prId": 18052
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/18041",
-          "title": "refactor: remove custom resolveOptions from pre-alias plugin",
-          "prId": 18041
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/18027",
-          "title": "docs: <code>createNodeDevEnvironment</code> requires <code>hot</code> option",
-          "prId": 18027
         },
         {
           "url": "https://github.com/vitejs/vite/pull/17916",
@@ -771,13 +781,63 @@
       ]
     ],
     [
-      "vitejs/vite-ecosystem-ci",
+      "DefinitelyTyped/DefinitelyTyped",
       [
         {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/328",
-          "title": "fix(vuepress): install playwright chromium before testing",
-          "prId": 328
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/70505",
+          "title": "[estree] ergonomic brand checks for private fields",
+          "prId": 70505
         },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/70504",
+          "title": "[estree] arbitrary module namespace identifier names",
+          "prId": 70504
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/63573",
+          "title": "update convert-source-map to v2",
+          "prId": 63573
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/60970",
+          "title": "fix(node): <code>fs.cp</code> accepts URL for src and dest",
+          "prId": 60970
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/58609",
+          "title": "pica: updated to v9",
+          "prId": 58609
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/57684",
+          "title": "[styled-components] Fix union type of props being lost",
+          "prId": 57684
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/40647",
+          "title": "Update KaTeX to v0.11.1",
+          "prId": 40647
+        }
+      ]
+    ],
+    [
+      "withastro/astro",
+      [
+        {
+          "url": "https://github.com/withastro/astro/pull/11917",
+          "title": "fix(css): fix inline query injection for CSS inlining",
+          "prId": 11917
+        },
+        {
+          "url": "https://github.com/withastro/astro/pull/5480",
+          "title": "Fix astro preview not working on Windows",
+          "prId": 5480
+        }
+      ]
+    ],
+    [
+      "vitejs/vite-ecosystem-ci",
+      [
         {
           "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/269",
           "title": "fix: place empty tsconfig for fallback",
@@ -806,28 +866,28 @@
       ]
     ],
     [
-      "twoslashes/twoslash",
+      "mdn/content",
       [
         {
-          "url": "https://github.com/twoslashes/twoslash/pull/56",
-          "title": "feat: add <code>fsCache</code> option to improve build performance",
-          "prId": 56
-        },
+          "url": "https://github.com/mdn/content/pull/35539",
+          "title": "Change the default value of <code>credential</code> option of <code>Worker</code> constructor",
+          "prId": 35539
+        }
+      ]
+    ],
+    [
+      "aquaproj/aqua",
+      [
         {
-          "url": "https://github.com/twoslashes/twoslash/pull/33",
-          "title": "feat: support spaces before cut comments",
-          "prId": 33
+          "url": "https://github.com/aquaproj/aqua/pull/2902",
+          "title": "fix(info): mask username on Windows",
+          "prId": 2902
         }
       ]
     ],
     [
       "rollup/rollup",
       [
-        {
-          "url": "https://github.com/rollup/rollup/pull/5674",
-          "title": "Fix panic with unicode characters",
-          "prId": 5674
-        },
         {
           "url": "https://github.com/rollup/rollup/pull/5494",
           "title": "Use opt-level=z for browser wasm",
@@ -887,166 +947,6 @@
           "url": "https://github.com/rollup/rollup/pull/5045",
           "title": "Fix <code>this.error</code> with <code>pos</code> in <code>transform</code> hook",
           "prId": 5045
-        }
-      ]
-    ],
-    [
-      "nodejs/node",
-      [
-        {
-          "url": "https://github.com/nodejs/node/pull/51032",
-          "title": "fs: fix fs.promises.realpath for long paths on Windows",
-          "prId": 51032
-        },
-        {
-          "url": "https://github.com/nodejs/node/pull/49849",
-          "title": "fs: add stacktrace to fs/promises",
-          "prId": 49849
-        },
-        {
-          "url": "https://github.com/nodejs/node/pull/46391",
-          "title": "lib: add api to detect whether source-maps are enabled",
-          "prId": 46391
-        },
-        {
-          "url": "https://github.com/nodejs/node/pull/45280",
-          "title": "doc: fix RESOLVE_ESM_MATCH in modules.md",
-          "prId": 45280
-        }
-      ]
-    ],
-    [
-      "vitejs/vite-plugin-react-swc",
-      [
-        {
-          "url": "https://github.com/vitejs/vite-plugin-react-swc/pull/231",
-          "title": "fix: ignore directive sourcemap error",
-          "prId": 231
-        }
-      ]
-    ],
-    [
-      "vitejs/vite-plugin-react",
-      [
-        {
-          "url": "https://github.com/vitejs/vite-plugin-react/pull/369",
-          "title": "fix: ignore directive sourcemap error",
-          "prId": 369
-        },
-        {
-          "url": "https://github.com/vitejs/vite-plugin-react/pull/212",
-          "title": "perf: lazy load <code>@babel/core</code>",
-          "prId": 212
-        },
-        {
-          "url": "https://github.com/vitejs/vite-plugin-react/pull/141",
-          "title": "perf: cache load plugin",
-          "prId": 141
-        },
-        {
-          "url": "https://github.com/vitejs/vite-plugin-react/pull/67",
-          "title": "fix: don't invalidate when code is invalid",
-          "prId": 67
-        }
-      ]
-    ],
-    [
-      "rolldown/rolldown",
-      [
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/2316",
-          "title": "fix: extend PluginContext with MinimalPluginContext",
-          "prId": 2316
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/2217",
-          "title": "feat: expose <code>moduleType</code> type",
-          "prId": 2217
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/982",
-          "title": "chore(rust/tracing): use async style by default and support <code>chrome-json-threaded</code>",
-          "prId": 982
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/825",
-          "title": "feat: support running Js plugin in parallel via Worker",
-          "prId": 825
-        }
-      ]
-    ],
-    [
-      "DefinitelyTyped/DefinitelyTyped",
-      [
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/70505",
-          "title": "[estree] ergonomic brand checks for private fields",
-          "prId": 70505
-        },
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/70504",
-          "title": "[estree] arbitrary module namespace identifier names",
-          "prId": 70504
-        },
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/63573",
-          "title": "update convert-source-map to v2",
-          "prId": 63573
-        },
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/60970",
-          "title": "fix(node): <code>fs.cp</code> accepts URL for src and dest",
-          "prId": 60970
-        },
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/58609",
-          "title": "pica: updated to v9",
-          "prId": 58609
-        },
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/57684",
-          "title": "[styled-components] Fix union type of props being lost",
-          "prId": 57684
-        },
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/40647",
-          "title": "Update KaTeX to v0.11.1",
-          "prId": 40647
-        }
-      ]
-    ],
-    [
-      "withastro/astro",
-      [
-        {
-          "url": "https://github.com/withastro/astro/pull/11917",
-          "title": "fix(css): fix inline query injection for CSS inlining",
-          "prId": 11917
-        },
-        {
-          "url": "https://github.com/withastro/astro/pull/5480",
-          "title": "Fix astro preview not working on Windows",
-          "prId": 5480
-        }
-      ]
-    ],
-    [
-      "mdn/content",
-      [
-        {
-          "url": "https://github.com/mdn/content/pull/35539",
-          "title": "Change the default value of <code>credential</code> option of <code>Worker</code> constructor",
-          "prId": 35539
-        }
-      ]
-    ],
-    [
-      "aquaproj/aqua",
-      [
-        {
-          "url": "https://github.com/aquaproj/aqua/pull/2902",
-          "title": "fix(info): mask username on Windows",
-          "prId": 2902
         }
       ]
     ],
