@@ -66,7 +66,7 @@ export default defineConfig({
         'meta',
         {
           property: 'article:published_time',
-          content: dateToDateString(published)
+          content: dateToDateString(published, '-')
         }
       ])
 
