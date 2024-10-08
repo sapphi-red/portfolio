@@ -19,10 +19,10 @@ export default createContentLoader('blog/*.md', {
   transform(raw): Post[] {
     return raw
       .map(({ url, frontmatter, excerpt }) => ({
-        title: frontmatter.title,
+        title: frontmatter['title'],
         url,
         excerpt,
-        date: formatDate(frontmatter.date)
+        date: formatDate(frontmatter['date'])
       }))
       .sort((a, b) => b.date.time - a.date.time)
   }
