@@ -18,7 +18,7 @@ In past, I had been writing frontend code in Vue and backend code using Go.
 ## Contacts
 
 - <IconGithub class="inline-block" /> GitHub: [sapphi-red](https://github.com/sapphi-red)
-- <IconX class="inline-block" /> X: [@sapphi_red](https://twitter.com/sapphi_red), Japanese alt [@sapphi_red_ja](https://twitter.com/sapphi_red_ja)
+- <IconX class="inline-block" /> X: [@sapphi_red](https://x.com/sapphi_red), Japanese alt [@sapphi_red_ja](https://x.com/sapphi_red_ja)
 - <IconMastodon class="inline-block" /> Mastodon: [@sapphi_red@webtoo.ls](https://elk.zone/m.webtoo.ls/@sapphi_red)
 
 ## More details

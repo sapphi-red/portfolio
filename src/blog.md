@@ -5,9 +5,14 @@ markdownStyles: false
 
 <script setup lang="ts">
 import ArticleList from '../.vitepress/theme/components/ArticleList.vue'
+import RssLink from './RssLink.vue'
 </script>
 
 # Blog posts
+
+<RssLink />
+
+---
 
 <ArticleList />
 
