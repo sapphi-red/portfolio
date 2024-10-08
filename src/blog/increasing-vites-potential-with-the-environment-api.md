@@ -14,8 +14,7 @@ const LineChart = defineClientComponent(() => {
 
 <ArticleTitle />
 
-// TODO: make an OGP image  
-// TODO: make images work with light theme
+// TODO: make an OGP image
 
 This post is a translation of the original talk in Japanese. The slides for the original talk are available [here](https://pre-vue-fes-2024-environment-api-slide.sapphi.red/) (Japanese).
 
@@ -95,37 +94,37 @@ To explain what it means that Vite only assumed them, I'll show you the current 
 
 To begin with, in the case where the code is to be executed only in the browser without SSR, the structure looks like this.
 
-![](./assets/vite-env-architecture-old-1.svg)
+![](./assets/vite-env-architecture-old-1.svg){.dark-bg}
 
 To execute the code for the browser, the browser sends an HTTP request to Vite's code transformer, and the transformed code is executed by the browser.
 
 Next, this is what happens when SSR is also performed.
 
-![](./assets/vite-env-architecture-old-2.svg)
+![](./assets/vite-env-architecture-old-2.svg){.dark-bg}
 
 When the framework receives an HTTP request from the browser, it calls a function exported from Vite.
 This invokes Vite's code transformer, which transforms the code for the server and then Vite's code executor executes the transformed code.
 It is important to note that both the code transformer and the code executor depend on Node.js.
 Therefore, Vite could not be executed outside of Node.js.
 
-![](./assets/vite-env-architecture-old-3.svg)
+![](./assets/vite-env-architecture-old-3.svg){.dark-bg}
 
 For this reason, the Environment API has separated this red part and is designed to allow that part to be swapped.
 In addition, it is now possible to have multiple red parts.
 
 In order to allow the code executor to be swapped, the communication between the code transformer and the code executor can now be changed to any method, not just function calls.
 
-![](./assets/vite-env-architecture-new-1.svg)
+![](./assets/vite-env-architecture-new-1.svg){.dark-bg}
 
 As a result of allowing the server side below to be swapped, we notice that the processing for the browser code is essentially the same as the server code.
 
 Therefore, it can be expressed in this concise form.
 
-![](./assets/vite-env-architecture-new-2.svg)
+![](./assets/vite-env-architecture-new-2.svg){.dark-bg}
 
 In the Environment API, the code executor is called "Module Runner" and the communication channel between the code transformer and the code executor is called "Runner Transport".
 
-![](./assets/vite-env-architecture-new-3.svg)
+![](./assets/vite-env-architecture-new-3.svg){.dark-bg}
 
 There are two things that are necessary to construct an Environment.
 First, dynamic code evaluation, such as `eval`, must be available for the Module Runner to be configured.
@@ -167,7 +166,7 @@ The build for all environments can be done in a single command (`vite build --ap
 In this demo, the service worker receives the request from the browser, calls the edge server, calls the origin server, and then returns the response, which is transformed by the edge and the service worker.
 But it is also possible to use a different runtime for each endpoint.
 
-![](./assets/vite-env-demo-architecture.svg)
+![](./assets/vite-env-demo-architecture.svg){.dark-bg}
 
 ## The current state of the Environment API
 

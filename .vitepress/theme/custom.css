@@ -6,6 +6,7 @@
   --s-secondary-theme-green: #009a6d; /* oklch(59.97% 0.1804 167.02) */
   --s-secondary-theme-blue: #008fc0; /* oklch(59.97% 0.1804 229.51) */
   --s-secondary-theme-red: #d6455c; /* oklch(59.97% 0.1804 15.26) */
+  --s-dark-bg: #1b1b1f;
 }
 
 :root {
@@ -22,6 +23,7 @@
 :root.dark {
   --vp-c-brand-1: var(--s-primary-theme-green);
   --vp-c-brand-2: var(--s-secondary-theme-green);
+  --vp-c-bg: var(--s-dark-bg);
 }
 
 .VPNavBarTitle > .title,
@@ -143,6 +145,10 @@ a.style {
 .twitter-tweet {
   border-radius: 12px;
   overflow: hidden;
+}
+
+img.dark-bg {
+  background-color: var(--s-dark-bg);
 }
 
 .inline-block {
