@@ -4,13 +4,14 @@ import { data as posts } from './posts.data.ts'
 
 <template>
   <ul class="no-style">
-    <li v-for="{ title, url, date, excerpt } of posts">
+    <li v-for="{ title, url, date, excerpt } of posts" :key="url">
       <article>
         <time :datetime="date.datetimeString">{{ date.string }}</time>
         <div>
           <h2>
             <a :href="url">{{ title }}</a>
           </h2>
+          <!-- eslint-disable-next-line vue/no-v-html -->
           <div v-if="excerpt" v-html="excerpt"></div>
         </div>
       </article>

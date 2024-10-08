@@ -53,11 +53,11 @@ export default tseslint.config(
       '@typescript-eslint/consistent-type-imports': 'error',
       '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
       'vue/require-default-prop': 'off',
+      'vue/enforce-style-attribute': 'error',
       'vue/block-lang': [
         'error',
         {
-          script: { lang: 'ts' },
-          style: { lang: 'scss' }
+          script: { lang: 'ts' }
         }
       ],
       'vue/component-api-style': ['error', ['script-setup']]
@@ -65,6 +65,6 @@ export default tseslint.config(
   },
   eslintConfigPrettier,
   {
-    ignores: ['dist/**', '.vercel/**', '.vscode/**']
+    ignores: ['dist/**', '.vercel/**', '.vscode/**', '.vitepress/cache/**']
   }
 )

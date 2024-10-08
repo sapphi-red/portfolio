@@ -29,6 +29,8 @@
     "narrowingTypesInInlineHandlers": true,
     "experimentalResolveStyleCssClasses": "always",
     "strictTemplates": true,
-    "dataAttributes": ["data-*"]
-  }
+    "dataAttributes": ["data-*"],
+    "vitePressExtensions": [".md"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.vue", "src/**/*.md"]
 }

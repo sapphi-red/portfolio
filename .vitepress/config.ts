@@ -1,4 +1,6 @@
 import { defineConfig } from 'vitepress'
+import Icons from 'unplugin-icons/vite'
+import { ViteToml } from 'vite-plugin-toml'
 
 export default defineConfig({
   title: 'green.sapphi.red',
@@ -34,11 +36,24 @@ export default defineConfig({
   srcDir: './src',
   outDir: './dist',
   // markdown: {},
-  // vite: {},
+  vite: {
+    plugins: [
+      Icons({
+        scale: 1,
+        defaultClass: 'icon'
+      }),
+      ViteToml()
+    ]
+  },
   themeConfig: {
     nav: [
       { text: 'about', link: '/about' },
       { text: 'blog', link: '/blog' }
+    ],
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/sapphi-red' },
+      { icon: 'twitter', link: 'https://twitter.com/sapphi_red' },
+      { icon: 'mastodon', link: 'https://elk.zone/m.webtoo.ls/@sapphi_red' }
     ]
   }
 })

@@ -1,17 +1,27 @@
 :root {
+  --s-curly-font: 'Atma', cursive;
+  --s-primary-theme-green: #69cea8; /* oklch(79.74% 0.1115 167.02) */
+  --s-primary-theme-blue: #63c5f0; /* oklch(77.98% 0.1107 229.51) */
+  --s-primary-theme-red: #f699a0; /* oklch(77.98% 0.1107 15.26) */
+  --s-secondary-theme-green: #009a6d; /* oklch(59.97% 0.1804 167.02) */
+  --s-secondary-theme-blue: #008fc0; /* oklch(59.97% 0.1804 229.51) */
+  --s-secondary-theme-red: #d6455c; /* oklch(59.97% 0.1804 15.26) */
+}
+
+:root {
   --vp-font-family-base: 'Inter', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN',
     'Arial', 'Yu Gothic', 'Meiryo', ui-sans-serif, system-ui, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-feature-settings: 'pwid' 1;
-}
 
-:root {
-  --s-curly-font: 'Atma', cursive;
-  --s-primary-theme-green: #4cd9aa;
-  --s-primary-theme-blue: #4cc2d9;
-  --s-primary-theme-red: #d94c5a;
-  --s-default-font-theme: #0d3f2f;
-  --s-link-font-theme: #1a6e7f;
+  --vp-c-brand-1: var(--s-secondary-theme-green);
+  --vp-c-brand-2: var(--s-primary-theme-green);
+  --vp-c-brand-3: #00865e; /* oklch(53.98% 0.1899 167.02) */
+  --vp-c-brand-soft: #009d6f29; /* oklch(60.7% 0.2146 167.02 / 16.08%) */
+}
+:root.dark {
+  --vp-c-brand-1: var(--s-primary-theme-green);
+  --vp-c-brand-2: var(--s-secondary-theme-green);
 }
 
 .VPNavBarTitle > .title,
@@ -22,6 +32,48 @@
 
 .home .VPContent {
   display: flex;
+}
+
+.Layout {
+  .VPNavBar {
+    .divider {
+      margin-top: -2px;
+      height: 3px;
+      &::before {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 100%;
+        background-color: transparent;
+        transition: background-color 0.5s;
+        z-index: 0;
+      }
+      &::after {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 100%;
+        background-color: transparent;
+        transition: background-color 0.5s;
+        z-index: 0;
+      }
+    }
+  }
+  &:not(.home) {
+    .VPNavBar {
+      .divider {
+        &::before {
+          background-color: var(--s-secondary-theme-green);
+        }
+        .divider-line {
+          background-color: var(--s-secondary-theme-blue);
+        }
+        &::after {
+          background-color: var(--s-secondary-theme-red);
+        }
+      }
+    }
+  }
 }
 
 .vp-doc h1,
@@ -82,7 +134,7 @@ figcaption {
 
 .vp-doc a,
 a.style {
-  text-decoration: underline dotted 1.5px;
+  text-decoration: underline dotted 1px;
   text-decoration-skip-ink: none;
   text-underline-position: under;
 }
@@ -90,4 +142,8 @@ a.style {
 .twitter-tweet {
   border-radius: 12px;
   overflow: hidden;
+}
+
+.inline-block {
+  display: inline;
 }

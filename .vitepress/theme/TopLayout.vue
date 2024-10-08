@@ -41,15 +41,15 @@ import FitHeightText from './components/internal/FitHeightText.vue'
 }
 .green {
   text-align: left;
-  background-color: var(--s-primary-theme-green);
+  background-color: var(--s-secondary-theme-green);
 }
 .sapphire {
   text-align: center;
-  background-color: var(--s-primary-theme-blue);
+  background-color: var(--s-secondary-theme-blue);
 }
 .red {
   text-align: right;
-  background-color: var(--s-primary-theme-red);
+  background-color: var(--s-secondary-theme-red);
 }
 
 .sapphireInner {
