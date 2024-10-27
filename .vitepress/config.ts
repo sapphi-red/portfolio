@@ -102,7 +102,8 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: 'about', link: '/about' },
-      { text: 'blog', link: '/blog' }
+      { text: 'blog', link: '/blog' },
+      { text: 'talks', link: '/talks' }
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/sapphi-red' },

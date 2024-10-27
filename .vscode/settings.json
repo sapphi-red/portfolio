@@ -1,4 +1,8 @@
 {
   "typescript.tsdk": "node_modules\\typescript\\lib",
-  "vue.server.includeLanguages": ["vue", "markdown"]
+  "vue.server.includeLanguages": [
+    "vue",
+    "markdown"
+  ],
+  "evenBetterToml.taplo.configFile.path": ".vscode/taplo.toml"
 }

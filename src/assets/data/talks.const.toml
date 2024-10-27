@@ -1,0 +1,51 @@
+[[talks]]
+title = "Vite Panel Discussion"
+date = 2023-02-09
+eventName = "VueJS Amsterdam 2023"
+tags = [
+  "Content: Vite",
+  "Type: Panel",
+  "Language: English",
+]
+
+  [[talks.links]]
+  type = "video"
+  url = "https://www.youtube.com/watch?v=im9GSGnkFDs"
+
+[[talks]]
+title = "マルチスレッドフレンドリーなJavaScriptを求めて"
+date = 2023-10-28
+eventName = "Vue Fes Japan 2023"
+tags = [
+  "Content: Other",
+  "Type: Talk",
+  "Language: Japanese",
+]
+
+  [[talks.links]]
+  type = "slides"
+  url = "https://vue-fes-japan-2023-multithread-slide.sapphi.red/"
+
+  [[talks.links]]
+  type = "video"
+  url = "https://www.youtube.com/watch?v=ojraqqNtVWk"
+
+[[talks]]
+title = "Environment API で広げる Vite の可能性"
+date = 2024-10-02
+eventName = "Vue Fes Japan × TSKaigi 合同イベント「次世代フロントエンドツールチェイン」"
+slides = "https://pre-vue-fes-2024-environment-api-slide.sapphi.red/"
+tags = [
+  "Content: Vite",
+  "Type: Talk",
+  "Language: Japanese",
+]
+
+  [[talks.links]]
+  type = "slides"
+  url = "https://pre-vue-fes-2024-environment-api-slide.sapphi.red/"
+
+  [[talks.links]]
+  type = "article"
+  title = "Article (English)"
+  url = "/blog/increasing-vites-potential-with-the-environment-api"
