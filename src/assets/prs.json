@@ -1,117 +1,362 @@
 {
   "repos": [
     [
-      "twoslashes/twoslash",
-      [
-        {
-          "url": "https://github.com/twoslashes/twoslash/pull/56",
-          "title": "feat: add <code>fsCache</code> option to improve build performance",
-          "prId": 56
-        },
-        {
-          "url": "https://github.com/twoslashes/twoslash/pull/33",
-          "title": "feat: support spaces before cut comments",
-          "prId": 33
-        }
-      ]
-    ],
-    [
-      "nodejs/node",
-      [
-        {
-          "url": "https://github.com/nodejs/node/pull/51032",
-          "title": "fs: fix fs.promises.realpath for long paths on Windows",
-          "prId": 51032
-        },
-        {
-          "url": "https://github.com/nodejs/node/pull/49849",
-          "title": "fs: add stacktrace to fs/promises",
-          "prId": 49849
-        },
-        {
-          "url": "https://github.com/nodejs/node/pull/46391",
-          "title": "lib: add api to detect whether source-maps are enabled",
-          "prId": 46391
-        },
-        {
-          "url": "https://github.com/nodejs/node/pull/45280",
-          "title": "doc: fix RESOLVE_ESM_MATCH in modules.md",
-          "prId": 45280
-        }
-      ]
-    ],
-    [
-      "vitejs/vite-plugin-react-swc",
-      [
-        {
-          "url": "https://github.com/vitejs/vite-plugin-react-swc/pull/231",
-          "title": "fix: ignore directive sourcemap error",
-          "prId": 231
-        }
-      ]
-    ],
-    [
-      "vitejs/vite-plugin-react",
-      [
-        {
-          "url": "https://github.com/vitejs/vite-plugin-react/pull/369",
-          "title": "fix: ignore directive sourcemap error",
-          "prId": 369
-        },
-        {
-          "url": "https://github.com/vitejs/vite-plugin-react/pull/212",
-          "title": "perf: lazy load <code>@babel/core</code>",
-          "prId": 212
-        },
-        {
-          "url": "https://github.com/vitejs/vite-plugin-react/pull/141",
-          "title": "perf: cache load plugin",
-          "prId": 141
-        },
-        {
-          "url": "https://github.com/vitejs/vite-plugin-react/pull/67",
-          "title": "fix: don't invalidate when code is invalid",
-          "prId": 67
-        }
-      ]
-    ],
-    [
-      "rolldown/rolldown",
-      [
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/2316",
-          "title": "fix: extend PluginContext with MinimalPluginContext",
-          "prId": 2316
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/2217",
-          "title": "feat: expose <code>moduleType</code> type",
-          "prId": 2217
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/982",
-          "title": "chore(rust/tracing): use async style by default and support <code>chrome-json-threaded</code>",
-          "prId": 982
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/825",
-          "title": "feat: support running Js plugin in parallel via Worker",
-          "prId": 825
-        }
-      ]
-    ],
-    [
       "vitejs/vite",
       [
+        {
+          "url": "https://github.com/vitejs/vite/pull/18549",
+          "title": "fix: use <code>server.perEnvironmentStartEndDuringDev</code>",
+          "prId": 18549
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18548",
+          "title": "fix(client): detect ws close correctly",
+          "prId": 18548
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18531",
+          "title": "ci: use Node 22 for macOS and Windows CI",
+          "prId": 18531
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18519",
+          "title": "docs: migration guide for #18070",
+          "prId": 18519
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18518",
+          "title": "chore: fix moduleSideEffects in build script on Windows",
+          "prId": 18518
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18516",
+          "title": "docs: add jsdocs to flags in BuilderOptions",
+          "prId": 18516
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18515",
+          "title": "fix: <code>define</code> in environment config was not working",
+          "prId": 18515
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18514",
+          "title": "docs: update fs.deny default in JSDoc",
+          "prId": 18514
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18506",
+          "title": "fix: allow nested dependency selector to be used for <code>optimizeDeps.include</code> for SSR",
+          "prId": 18506
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18503",
+          "title": "fix: use picomatch to align with tinyglobby",
+          "prId": 18503
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18460",
+          "title": "feat(css): add more stricter typing of lightningcss",
+          "prId": 18460
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18459",
+          "title": "fix(css): make sass types work with sass-embedded",
+          "prId": 18459
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18458",
+          "title": "refactor(css): hide internal preprocessor types and expose types used for options",
+          "prId": 18458
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18456",
+          "title": "docs: migration guide for plugin-commonjs upgrade",
+          "prId": 18456
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18455",
+          "title": "fix: return the same instance of ModuleNode for the same EnvironmentModuleNode",
+          "prId": 18455
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18449",
+          "title": "fix(ssr): inject identity function at the top",
+          "prId": 18449
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18446",
+          "title": "test: fix test conflict",
+          "prId": 18446
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18444",
+          "title": "docs: add some migration guide for v6",
+          "prId": 18444
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18432",
+          "title": "refactor: use builder in <code>build</code>",
+          "prId": 18432
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18414",
+          "title": "fix(css): don't transform sass function calls with namespace",
+          "prId": 18414
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18412",
+          "title": "fix: backport #18367,augment hash for CSS files to prevent chromium erroring by loading previous files",
+          "prId": 18412
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18411",
+          "title": "fix: set scripts imported by HTML moduleSideEffects=true",
+          "prId": 18411
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18407",
+          "title": "feat(create-vite): update to svelte 5",
+          "prId": 18407
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18406",
+          "title": "chore: specify TypeScript version with <code>~</code>",
+          "prId": 18406
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18395",
+          "title": "feat(resolve)!: allow removing conditions",
+          "prId": 18395
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18394",
+          "title": "refactor(resolve): remove <code>tryEsmOnly</code> flag",
+          "prId": 18394
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18391",
+          "title": "chore: unpin playwright",
+          "prId": 18391
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18390",
+          "title": "fix(cli): <code>--watch</code> should not override <code>build.watch</code> options",
+          "prId": 18390
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18377",
+          "title": "docs: clarify <code>target</code> in <code>tsconfig.json</code>",
+          "prId": 18377
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18376",
+          "title": "docs: mention pre-bundle uses esbuild in dev",
+          "prId": 18376
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18375",
+          "title": "docs: clarify where it applies for each config options",
+          "prId": 18375
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18373",
+          "title": "ci: show format diff",
+          "prId": 18373
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18368",
+          "title": "test: remove unnecessary logs from output",
+          "prId": 18368
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18367",
+          "title": "fix: augment hash for CSS files to prevent chromium erroring by loading previous files",
+          "prId": 18367
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18366",
+          "title": "chore(create-vite): mark template files as CC0",
+          "prId": 18366
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18364",
+          "title": "docs: add multiple entries lib mode example",
+          "prId": 18364
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18363",
+          "title": "docs: <code>server.proxy</code> has precedence over Vite's internal middlewares",
+          "prId": 18363
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18360",
+          "title": "refactor: use <code>verbatimModuleSyntax</code> instead of <code>importsNotUsedAsValues</code>",
+          "prId": 18360
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18355",
+          "title": "docs: relative base path",
+          "prId": 18355
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18354",
+          "title": "docs: env expand feature only works for variables in env files",
+          "prId": 18354
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18348",
+          "title": "fix: bump launch-editor-middleware to v2.9.1",
+          "prId": 18348
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18334",
+          "title": "docs: env api expand runtime agnostic SSR section",
+          "prId": 18334
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18333",
+          "title": "docs: misc env api docs",
+          "prId": 18333
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18329",
+          "title": "fix(ssr): <code>this</code> in exported function should be <code>undefined</code>",
+          "prId": 18329
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18323",
+          "title": "perf: call <code>module.enableCompileCache()</code>",
+          "prId": 18323
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18322",
+          "title": "fix(deps): bump tsconfck",
+          "prId": 18322
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18321",
+          "title": "chore: point deprecation error URLs to main branch docs",
+          "prId": 18321
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18320",
+          "title": "docs: try to decouple more information in env api docs",
+          "prId": 18320
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18318",
+          "title": "ci: add test-passed/failed job",
+          "prId": 18318
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18317",
+          "title": "perf: use <code>crypto.hash</code> when available",
+          "prId": 18317
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18308",
+          "title": "test(css): make &quot;duplicate CSS&quot; test to focus on what it's testing",
+          "prId": 18308
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18307",
+          "title": "fix(css): dont remove JS chunk for pure CSS chunk when the export is used",
+          "prId": 18307
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18303",
+          "title": "feat(json)!: add <code>json.stringify: 'auto'</code> and make that the default",
+          "prId": 18303
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18299",
+          "title": "fix(types): add more overload to <code>defineConfig</code>",
+          "prId": 18299
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18285",
+          "title": "fix(create-vite): update qwik URL",
+          "prId": 18285
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18263",
+          "title": "feat: add <code>environment::listen</code>",
+          "prId": 18263
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18261",
+          "title": "fix(middleware-mode): call all hot.listen when server restart",
+          "prId": 18261
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18255",
+          "title": "feat: restrict characters useable for environment name",
+          "prId": 18255
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18254",
+          "title": "chore(deps): bump TypeScript to 5.6",
+          "prId": 18254
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18252",
+          "title": "fix(hmr): don't try to rewrite imports for direct CSS soft invalidation",
+          "prId": 18252
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18250",
+          "title": "fix(legacy): generate sourcemap for polyfill chunks",
+          "prId": 18250
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18246",
+          "title": "fix: <code>injectQuery</code> double encoding",
+          "prId": 18246
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18240",
+          "title": "refactor: use <code>originalFileNames</code>/<code>names</code>",
+          "prId": 18240
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18236",
+          "title": "feat: support arbitrary module namespace identifier imports from cjs deps",
+          "prId": 18236
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18209",
+          "title": "refactor!: bump minimal terser version to 5.16.0",
+          "prId": 18209
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18194",
+          "title": "fix: asset <code>new URL(,import.meta.url)</code> match",
+          "prId": 18194
+        },
         {
           "url": "https://github.com/vitejs/vite/pull/18142",
           "title": "feat: support <code>this.environment</code> in <code>options</code> and <code>onLog</code> hook",
           "prId": 18142
         },
         {
+          "url": "https://github.com/vitejs/vite/pull/18141",
+          "title": "fix: handle yarn command fail when root does not exist",
+          "prId": 18141
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18133",
+          "title": "fix(manifest): non entry CSS chunk src was wrong",
+          "prId": 18133
+        },
+        {
           "url": "https://github.com/vitejs/vite/pull/18075",
           "title": "test: refactor hmr-ssr tests",
           "prId": 18075
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18070",
+          "title": "feat!: proxy bypass with WebSocket",
+          "prId": 18070
         },
         {
           "url": "https://github.com/vitejs/vite/pull/17916",
@@ -227,6 +472,11 @@
           "url": "https://github.com/vitejs/vite/pull/15846",
           "title": "fix: empty CSS file was output when only .css?url is used",
           "prId": 15846
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/15637",
+          "title": "fix!: default <code>build.cssMinify</code> to <code>'esbuild'</code> for SSR",
+          "prId": 15637
         },
         {
           "url": "https://github.com/vitejs/vite/pull/15259",
@@ -781,6 +1031,251 @@
       ]
     ],
     [
+      "vitejs/vite-ecosystem-ci",
+      [
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/331",
+          "title": "fix: use svelte 4 for sveltekit for now",
+          "prId": 331
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/269",
+          "title": "fix: place empty tsconfig for fallback",
+          "prId": 269
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/226",
+          "title": "docs: setting up PR comment trigger feature",
+          "prId": 226
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/139",
+          "title": "feat: group command output in GitHub Actions",
+          "prId": 139
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/120",
+          "title": "feat: vite repo",
+          "prId": 120
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/102",
+          "title": "Custom discord integration ",
+          "prId": 102
+        }
+      ]
+    ],
+    [
+      "nuxt/nuxt",
+      [
+        {
+          "url": "https://github.com/nuxt/nuxt/pull/29677",
+          "title": "test: add compat code for vite v6",
+          "prId": 29677
+        }
+      ]
+    ],
+    [
+      "rollup/plugins",
+      [
+        {
+          "url": "https://github.com/rollup/plugins/pull/1796",
+          "title": "fix(pluginutils): upgrade picomatch",
+          "prId": 1796
+        },
+        {
+          "url": "https://github.com/rollup/plugins/pull/1641",
+          "title": "feat(json): add <code>includeArbitraryNames</code> option",
+          "prId": 1641
+        },
+        {
+          "url": "https://github.com/rollup/plugins/pull/1636",
+          "title": "fix(dynamic-import-vars): escape special glob characters",
+          "prId": 1636
+        },
+        {
+          "url": "https://github.com/rollup/plugins/pull/1635",
+          "title": "feat(pluginutils): add <code>includeArbitraryNames: true</code> to <code>dataToEsm</code>",
+          "prId": 1635
+        },
+        {
+          "url": "https://github.com/rollup/plugins/pull/1634",
+          "title": "feat(alias): add warning to avoid unintended duplicate modules",
+          "prId": 1634
+        }
+      ]
+    ],
+    [
+      "unocss/unocss",
+      [
+        {
+          "url": "https://github.com/unocss/unocss/pull/4209",
+          "title": "chore: update snapshot",
+          "prId": 4209
+        },
+        {
+          "url": "https://github.com/unocss/unocss/pull/2661",
+          "title": "fix(vscode): attributify auto complete",
+          "prId": 2661
+        },
+        {
+          "url": "https://github.com/unocss/unocss/pull/2643",
+          "title": "fix(preset-attributify): autocomplete with prefix",
+          "prId": 2643
+        },
+        {
+          "url": "https://github.com/unocss/unocss/pull/2409",
+          "title": "fix(preset-mini): order <code>-webkit-appearance</code> before",
+          "prId": 2409
+        },
+        {
+          "url": "https://github.com/unocss/unocss/pull/2408",
+          "title": "feat(preset-mini): add webkit vendor prefix to <code>user-select</code>",
+          "prId": 2408
+        }
+      ]
+    ],
+    [
+      "honojs/hono",
+      [
+        {
+          "url": "https://github.com/honojs/hono/pull/3500",
+          "title": "fix(service-worker): bind fetch to <code>globalThis</code>",
+          "prId": 3500
+        }
+      ]
+    ],
+    [
+      "Rich-Harris/magic-string",
+      [
+        {
+          "url": "https://github.com/Rich-Harris/magic-string/pull/284",
+          "title": "perf: skip line break mappings",
+          "prId": 284
+        },
+        {
+          "url": "https://github.com/Rich-Harris/magic-string/pull/261",
+          "title": "fix: correct mappings for update containing new line",
+          "prId": 261
+        },
+        {
+          "url": "https://github.com/Rich-Harris/magic-string/pull/216",
+          "title": "perf: delay guess encoded",
+          "prId": 216
+        }
+      ]
+    ],
+    [
+      "histoire-dev/histoire",
+      [
+        {
+          "url": "https://github.com/histoire-dev/histoire/pull/756",
+          "title": "feat: disable optimizer in vite-node for vite 6 compat",
+          "prId": 756
+        }
+      ]
+    ],
+    [
+      "twoslashes/twoslash",
+      [
+        {
+          "url": "https://github.com/twoslashes/twoslash/pull/56",
+          "title": "feat: add <code>fsCache</code> option to improve build performance",
+          "prId": 56
+        },
+        {
+          "url": "https://github.com/twoslashes/twoslash/pull/33",
+          "title": "feat: support spaces before cut comments",
+          "prId": 33
+        }
+      ]
+    ],
+    [
+      "nodejs/node",
+      [
+        {
+          "url": "https://github.com/nodejs/node/pull/51032",
+          "title": "fs: fix fs.promises.realpath for long paths on Windows",
+          "prId": 51032
+        },
+        {
+          "url": "https://github.com/nodejs/node/pull/49849",
+          "title": "fs: add stacktrace to fs/promises",
+          "prId": 49849
+        },
+        {
+          "url": "https://github.com/nodejs/node/pull/46391",
+          "title": "lib: add api to detect whether source-maps are enabled",
+          "prId": 46391
+        },
+        {
+          "url": "https://github.com/nodejs/node/pull/45280",
+          "title": "doc: fix RESOLVE_ESM_MATCH in modules.md",
+          "prId": 45280
+        }
+      ]
+    ],
+    [
+      "vitejs/vite-plugin-react-swc",
+      [
+        {
+          "url": "https://github.com/vitejs/vite-plugin-react-swc/pull/231",
+          "title": "fix: ignore directive sourcemap error",
+          "prId": 231
+        }
+      ]
+    ],
+    [
+      "vitejs/vite-plugin-react",
+      [
+        {
+          "url": "https://github.com/vitejs/vite-plugin-react/pull/369",
+          "title": "fix: ignore directive sourcemap error",
+          "prId": 369
+        },
+        {
+          "url": "https://github.com/vitejs/vite-plugin-react/pull/212",
+          "title": "perf: lazy load <code>@babel/core</code>",
+          "prId": 212
+        },
+        {
+          "url": "https://github.com/vitejs/vite-plugin-react/pull/141",
+          "title": "perf: cache load plugin",
+          "prId": 141
+        },
+        {
+          "url": "https://github.com/vitejs/vite-plugin-react/pull/67",
+          "title": "fix: don't invalidate when code is invalid",
+          "prId": 67
+        }
+      ]
+    ],
+    [
+      "rolldown/rolldown",
+      [
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/2316",
+          "title": "fix: extend PluginContext with MinimalPluginContext",
+          "prId": 2316
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/2217",
+          "title": "feat: expose <code>moduleType</code> type",
+          "prId": 2217
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/982",
+          "title": "chore(rust/tracing): use async style by default and support <code>chrome-json-threaded</code>",
+          "prId": 982
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/825",
+          "title": "feat: support running Js plugin in parallel via Worker",
+          "prId": 825
+        }
+      ]
+    ],
+    [
       "DefinitelyTyped/DefinitelyTyped",
       [
         {
@@ -832,36 +1327,6 @@
           "url": "https://github.com/withastro/astro/pull/5480",
           "title": "Fix astro preview not working on Windows",
           "prId": 5480
-        }
-      ]
-    ],
-    [
-      "vitejs/vite-ecosystem-ci",
-      [
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/269",
-          "title": "fix: place empty tsconfig for fallback",
-          "prId": 269
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/226",
-          "title": "docs: setting up PR comment trigger feature",
-          "prId": 226
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/139",
-          "title": "feat: group command output in GitHub Actions",
-          "prId": 139
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/120",
-          "title": "feat: vite repo",
-          "prId": 120
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/102",
-          "title": "Custom discord integration ",
-          "prId": 102
         }
       ]
     ],
@@ -982,31 +1447,6 @@
           "url": "https://github.com/jridgewell/resolve-uri/pull/120",
           "title": "Use const enum for UrlType",
           "prId": 120
-        }
-      ]
-    ],
-    [
-      "rollup/plugins",
-      [
-        {
-          "url": "https://github.com/rollup/plugins/pull/1641",
-          "title": "feat(json): add <code>includeArbitraryNames</code> option",
-          "prId": 1641
-        },
-        {
-          "url": "https://github.com/rollup/plugins/pull/1636",
-          "title": "fix(dynamic-import-vars): escape special glob characters",
-          "prId": 1636
-        },
-        {
-          "url": "https://github.com/rollup/plugins/pull/1635",
-          "title": "feat(pluginutils): add <code>includeArbitraryNames: true</code> to <code>dataToEsm</code>",
-          "prId": 1635
-        },
-        {
-          "url": "https://github.com/rollup/plugins/pull/1634",
-          "title": "feat(alias): add warning to avoid unintended duplicate modules",
-          "prId": 1634
         }
       ]
     ],
@@ -1146,21 +1586,6 @@
       ]
     ],
     [
-      "Rich-Harris/magic-string",
-      [
-        {
-          "url": "https://github.com/Rich-Harris/magic-string/pull/261",
-          "title": "fix: correct mappings for update containing new line",
-          "prId": 261
-        },
-        {
-          "url": "https://github.com/Rich-Harris/magic-string/pull/216",
-          "title": "perf: delay guess encoded",
-          "prId": 216
-        }
-      ]
-    ],
-    [
       "antfu/vite-ssg",
       [
         {
@@ -1197,31 +1622,6 @@
           "url": "https://github.com/vuejs/language-tools/pull/546",
           "title": "Improve v-for type",
           "prId": 546
-        }
-      ]
-    ],
-    [
-      "unocss/unocss",
-      [
-        {
-          "url": "https://github.com/unocss/unocss/pull/2661",
-          "title": "fix(vscode): attributify auto complete",
-          "prId": 2661
-        },
-        {
-          "url": "https://github.com/unocss/unocss/pull/2643",
-          "title": "fix(preset-attributify): autocomplete with prefix",
-          "prId": 2643
-        },
-        {
-          "url": "https://github.com/unocss/unocss/pull/2409",
-          "title": "fix(preset-mini): order <code>-webkit-appearance</code> before",
-          "prId": 2409
-        },
-        {
-          "url": "https://github.com/unocss/unocss/pull/2408",
-          "title": "feat(preset-mini): add webkit vendor prefix to <code>user-select</code>",
-          "prId": 2408
         }
       ]
     ],
@@ -1566,5 +1966,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2024-10-01T11:01:11.320Z"
+  "fetchedAt": "2024-11-01T11:01:07.094Z"
 }
