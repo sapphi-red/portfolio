@@ -26,7 +26,7 @@
   "private": true,
   "devDependencies": {
     "@iconify-json/tabler": "^1.2.4",
-    "@types/node": "^20.14.9",
+    "@types/node": "^22.8.6",
     "@types/throttle-debounce": "^5.0.2",
     "@typescript/lib-dom": "npm:@types/web@^0.0.99",
     "deepmerge": "^4.3.1",
