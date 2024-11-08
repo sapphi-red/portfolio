@@ -1,99 +1,265 @@
 /* global process */
 import fs from 'fs/promises'
 import { ignoreRepoUser, ignorePRs, ignoreRepo } from './fetch-prs-config.js'
-
-const URL_PATH = 'https://api.github.com/search/issues'
+import { Octokit } from '@octokit/core'
+import { paginateGraphQL } from '@octokit/plugin-paginate-graphql'
 
 const RAW_DATA_PATH = new URL('../bin/prs_raw.json', import.meta.url)
 const DATA_PATH = new URL('../src/assets/prs.json', import.meta.url)
 
-const fetchPRs = async page => {
-  const url = new URL(URL_PATH)
-  const params = url.searchParams
-  params.set('q', 'author:sapphi-red is:pr is:merged')
-  params.set('sort', 'updated')
-  params.set('per_page', 100)
-  params.set('page', page)
+/**
+ * @typedef {{
+ *   title: string
+ *   repository: {
+ *     owner: {
+ *       login: string
+ *     }
+ *     name: string
+ *   }
+ *   number: number
+ *   additions: number
+ *   deletions: number
+ *   files: {
+ *     nodes: {
+ *       path: string
+ *     }[]
+ *   }
+ *   mergedAt: string
+ *   updatedAt: string
+ * }} RawPullRequest
+ */
 
-  const res = await fetch(url)
-  const data = await res.json()
-  return data
-}
+/**
+ * @typedef {{
+ *   title: string
+ *   repository: {
+ *     owner: string
+ *     name: string
+ *   }
+ *   number: number
+ *   additions: number
+ *   deletions: number
+ *   files: string[]
+ *   mergedAt: string
+ *   updatedAt: string
+ * }} PullRequest
+ */
 
-const fetchAllPRData = async () => {
-  let total = null
-  let i = 1
-  const prs = []
-  const fetchedAt = new Date()
+/**
+ * @typedef {{
+ *   title: string
+ *   url: string
+ *   prId: number
+ * }} SimplePullRequest
+ */
 
-  while (total > 0 || total === null) {
-    const data = await fetchPRs(i)
-    prs.push(...data.items)
+/**
+ * @param {RawPullRequest} rawPr
+ * @returns {PullRequest}
+ */
+const normalizePullRequest = rawPr => ({
+  title: rawPr.title,
+  repository: {
+    owner: rawPr.repository.owner.login,
+    name: rawPr.repository.name
+  },
+  number: rawPr.number,
+  additions: rawPr.additions,
+  deletions: rawPr.deletions,
+  files: rawPr.files.nodes.map(node => node.path),
+  mergedAt: rawPr.mergedAt,
+  updatedAt: rawPr.updatedAt
+})
 
-    i++
-    if (total === null) {
-      total = data.total_count
-    }
-    total -= data.items.length
-  }
+/**
+ * @param {PullRequest} pr
+ * @returns {string}
+ */
+const getPrKey = pr =>
+  `${pr.repository.owner}/${pr.repository.name}#${pr.number}`
 
-  return { prs, fetchedAt }
-}
-
-const prDataMapToPRs = prDataMap => {
-  const prs = [...prDataMap.values()]
-  prs.sort((a, b) => Date.parse(b.updated_at) - Date.parse(a.updated_at))
-  return prs
-}
-
-const fetchDiffPRData = async (oldPRs, lastFetchedAt) => {
-  let i = 1
-  let wasNotEmpty = true
-  const fetchedAt = new Date()
-  const lastFetchedAtNum = Date.parse(lastFetchedAt)
-  const prDataMap = new Map(oldPRs.map(pr => [pr.pull_request.html_url, pr]))
-
-  while (wasNotEmpty) {
-    const data = await fetchPRs(i)
-    if (data.items === 0) {
-      wasNotEmpty = false
-    }
-
-    for (const pr of data.items) {
-      if (Date.parse(pr.updated_at) < lastFetchedAtNum) {
-        return { prs: prDataMapToPRs(prDataMap), fetchedAt }
+/**
+ * @param {Octokit & import('@octokit/plugin-paginate-graphql').paginateGraphQLInterface} octokit
+ * @param {Date | undefined} updatedAtAfter
+ * @param {Date | undefined} updatedAtBefore
+ * @returns {AsyncGenerator<PullRequest>}
+ */
+const fetchPullRequests = async function* (
+  octokit,
+  updatedAtAfter,
+  updatedAtBefore
+) {
+  /** @type {AsyncIterable<{ search: { nodes: RawPullRequest[] } }>} */
+  const results = octokit.graphql.paginate.iterator(
+    `
+    query pullRequests($cursor: String, $q: String!) {
+      search(
+        first: 100
+        after: $cursor
+        query: $q
+        type: ISSUE
+      ) {
+        nodes {
+          ... on PullRequest {
+            title
+            repository {
+              owner {
+                login
+              }
+              name
+            }
+            number
+            additions
+            deletions
+            files(first: 20) {
+              nodes {
+                path
+              }
+            }
+            mergedAt
+            updatedAt
+          }
+        }
+        pageInfo {
+          hasNextPage
+          endCursor
+        }
       }
-      prDataMap.set(pr.pull_request.html_url, pr)
+    }
+  `,
+    {
+      q:
+        `author:sapphi-red is:public is:pr is:merged sort:updated` +
+        (updatedAtAfter
+          ? updatedAtBefore
+            ? ` updated:${updatedAtAfter.toISOString()}..${updatedAtBefore.toISOString()}`
+            : ` updated:>=${updatedAtAfter.toISOString()}`
+          : updatedAtBefore
+            ? ` updated:<=${updatedAtBefore.toISOString()}`
+            : '')
+    }
+  )
+
+  let i = 0
+  for await (const result of results) {
+    for (const node of result.search.nodes) {
+      yield normalizePullRequest(node)
     }
 
+    // GitHub is unstable when returning later pages
+    // give up on the third page even if the next page exists
+    if (i >= 3) return
     i++
   }
-
-  return { prs: prDataMapToPRs(prDataMap), fetchedAt }
 }
 
-const toPRSimpleData = pr => {
-  // cf. https://github.com/traPtitech/traPortfolio/pull/8
-  const url = pr.pull_request.html_url
-  const title = pr.title
-  const paths = new URL(url).pathname.split('/')
-  // prettier-ignore
-  const [, repoUser, repoName, /* pull */, prId] = paths
-  const label = `${repoUser}/${repoName}#${prId}`
-  return {
-    url,
-    title,
-    label,
-    repoUser,
-    repoName,
-    prId: +prId
+/**
+ * @param {Date | undefined} updatedAtAfter
+ * @returns {AsyncGenerator<PullRequest>}
+ */
+const fetchPullRequestsContinuous = async function* (updatedAtAfter) {
+  if (!process.env.GITHUB_TOKEN) {
+    throw new Error('GITHUB_TOKEN is not defined')
+  }
+
+  const OctokitWithGraphQLPaginate = Octokit.plugin(paginateGraphQL)
+  const octokit = new OctokitWithGraphQLPaginate({
+    auth: process.env.GITHUB_TOKEN
+  })
+
+  /** @type {Date | undefined} */
+  let updatedAtBefore
+  /** @type {string | undefined} */
+  let lastPrKey
+  while (true) {
+    const items = fetchPullRequests(octokit, updatedAtAfter, updatedAtBefore)
+
+    /** @type {PullRequest | undefined} */
+    let lastPr
+    for await (const pr of items) {
+      if (lastPrKey !== undefined) {
+        const prKey = getPrKey(pr)
+        if (lastPrKey === prKey) {
+          lastPrKey = undefined
+        }
+        continue
+      }
+
+      yield pr
+      lastPr = pr
+    }
+
+    if (!lastPr) {
+      return
+    }
+
+    updatedAtBefore = new Date(lastPr.updatedAt)
+    lastPrKey = getPrKey(lastPr)
   }
 }
 
+/**
+ * @template T
+ * @param {AsyncIterable<T>} asyncIterable
+ * @returns {Promise<T[]>}
+ */
+const arrayFromAsync = async function (asyncIterable) {
+  const array = []
+  for await (const item of asyncIterable) {
+    array.push(item)
+  }
+  return array
+}
+
+/**
+ * @param {PullRequest[]} oldPullRequests
+ * @param {PullRequest[]} newPullRequests
+ * @returns {PullRequest[]}
+ */
+const mergePullRequests = (oldPullRequests, newPullRequests) => {
+  const mergedPullRequests = [...oldPullRequests].reverse()
+  const mergedPullRequestKeys = new Set(
+    mergedPullRequests.map(pr => getPrKey(pr))
+  )
+  for (let i = newPullRequests.length - 1; i >= 0; i--) {
+    const newPullRequest = newPullRequests[i]
+    const prKey = getPrKey(newPullRequest)
+    if (mergedPullRequestKeys.has(prKey)) continue
+
+    mergedPullRequests.push(newPullRequest)
+    mergedPullRequestKeys.add(prKey)
+  }
+  return mergedPullRequests.reverse()
+}
+
+const fetchAndWriteDiffPRRawData = async () => {
+  /** @type {PullRequest[]} */
+  const oldPullRequests = JSON.parse(await fs.readFile(RAW_DATA_PATH, 'utf-8'))
+  if (oldPullRequests.length === 0) throw new Error('oldPullRequests is empty')
+
+  const knownUpdatedAt = new Date(oldPullRequests[0].updatedAt)
+  const fetchedPullRequests = await arrayFromAsync(
+    fetchPullRequestsContinuous(knownUpdatedAt)
+  )
+  const pullRequests = mergePullRequests(oldPullRequests, fetchedPullRequests)
+  await fs.writeFile(RAW_DATA_PATH, JSON.stringify(pullRequests), 'utf-8')
+}
+
+const fetchAndWriteAllPRRawData = async () => {
+  const pullRequests = await arrayFromAsync(fetchPullRequestsContinuous())
+  await fs.writeFile(RAW_DATA_PATH, JSON.stringify(pullRequests), 'utf-8')
+}
+
+/**
+ * @param {PullRequest[]} prs
+ * @param {(pr: PullRequest) => SimplePullRequest} each
+ * @returns {[string, SimplePullRequest[]][]}
+ */
 const groupByRepo = (prs, each) => {
+  /** @type {Record<string, SimplePullRequest[]>} */
   const repos = {}
   for (const pr of prs) {
-    const repo = `${pr.repoUser}/${pr.repoName}`
+    const repo = `${pr.repository.owner}/${pr.repository.name}`
     if (repos[repo] === undefined) {
       repos[repo] = []
     }
@@ -105,11 +271,15 @@ const groupByRepo = (prs, each) => {
   return Object.entries(repos)
 }
 
+/**
+ * @param {PullRequest} pr
+ * @returns {SimplePullRequest}
+ */
 const shrinkData = pr => {
   return {
-    url: pr.url,
+    url: `https://github.com/${pr.repository.owner}/${pr.repository.name}/pull/${pr.number}`,
     title: pr.title,
-    prId: pr.prId
+    prId: pr.number
   }
 }
 
@@ -127,6 +297,10 @@ const escapeHtml = html => {
   return html
 }
 
+/**
+ * @param {PullRequest} pr
+ * @returns {PullRequest}
+ */
 const renderTitle = pr => {
   const title = pr.title
   let newTitle = ''
@@ -153,34 +327,28 @@ const renderTitle = pr => {
   }
 }
 
-const rawToData = rawData => {
-  const transformedData = rawData.prs
-    .map(pr => toPRSimpleData(pr))
+/**
+ * @param {PullRequest[]} pullRequests
+ */
+const rawToData = pullRequests => {
+  const transformedData = pullRequests
     .filter(
       pr =>
-        !ignoreRepoUser.includes(pr.repoUser) &&
-        !ignoreRepo.includes(`${pr.repoUser}/${pr.repoName}`) &&
-        !ignorePRs.includes(pr.url)
+        !ignoreRepoUser.includes(pr.repository.owner) &&
+        !ignoreRepo.includes(`${pr.repository.owner}/${pr.repository.name}`) &&
+        !ignorePRs.includes(
+          `https://github.com/${pr.repository.owner}/${pr.repository.name}/pull/${pr.number}`
+        )
     )
     .map(renderTitle)
+    .sort((a, b) => Date.parse(b.mergedAt) - Date.parse(a.mergedAt))
 
   const groupedData = groupByRepo(transformedData, shrinkData)
 
   return {
     repos: groupedData,
-    fetchedAt: rawData.fetchedAt
+    fetchedAt: pullRequests[0].updatedAt
   }
-}
-
-const fetchAndWriteDiffPRRawData = async () => {
-  const oldRawData = JSON.parse(await fs.readFile(RAW_DATA_PATH, 'utf-8'))
-  const newRawData = await fetchDiffPRData(oldRawData.prs, oldRawData.fetchedAt)
-  await fs.writeFile(RAW_DATA_PATH, JSON.stringify(newRawData), 'utf-8')
-}
-
-const fetchAndWriteAllPRRawData = async () => {
-  const rawData = await fetchAllPRData()
-  await fs.writeFile(RAW_DATA_PATH, JSON.stringify(rawData), 'utf-8')
 }
 
 const formatJson = json => JSON.stringify(json, undefined, 2)
