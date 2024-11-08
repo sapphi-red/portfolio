@@ -1,6 +1,12 @@
 /* global process */
 import fs from 'fs/promises'
-import { ignoreRepoUser, ignorePRs, ignoreRepo } from './fetch-prs-config.js'
+import {
+  ignoreRepoUser,
+  ignorePRs,
+  ignoreRepo,
+  lineChangeThresholds,
+  forcedPrs
+} from './fetch-prs-config.js'
 import { Octokit } from '@octokit/core'
 import { paginateGraphQL } from '@octokit/plugin-paginate-graphql'
 
@@ -332,14 +338,62 @@ const renderTitle = pr => {
  */
 const rawToData = pullRequests => {
   const transformedData = pullRequests
-    .filter(
-      pr =>
-        !ignoreRepoUser.includes(pr.repository.owner) &&
-        !ignoreRepo.includes(`${pr.repository.owner}/${pr.repository.name}`) &&
-        !ignorePRs.includes(
+    .filter(pr => {
+      if (
+        ignoreRepoUser.has(pr.repository.owner) ||
+        ignoreRepo.has(`${pr.repository.owner}/${pr.repository.name}`) ||
+        ignorePRs.has(
           `https://github.com/${pr.repository.owner}/${pr.repository.name}/pull/${pr.number}`
         )
-    )
+      ) {
+        return false
+      }
+
+      if (pr.title.startsWith('revert')) {
+        return false
+      }
+
+      if (
+        `${pr.repository.owner}/${pr.repository.name}` === 'vitejs/vite' &&
+        (pr.title.startsWith('refactor') ||
+          pr.title.startsWith('chore') ||
+          pr.title.startsWith('test'))
+      ) {
+        return false
+      }
+
+      if (
+        forcedPrs.has(
+          `https://github.com/${pr.repository.owner}/${pr.repository.name}/pull/${pr.number}`
+        )
+      ) {
+        return true
+      }
+
+      if (
+        pr.files.every(
+          file =>
+            file.endsWith('package.json') ||
+            file.endsWith('package-lock.json') ||
+            file.endsWith('yarn.lock') ||
+            file.endsWith('pnpm-lock.yaml')
+        )
+      ) {
+        return false
+      }
+
+      if (pr.additions <= 0) {
+        return false
+      }
+
+      const lineChangeThreshold =
+        lineChangeThresholds[`${pr.repository.owner}/${pr.repository.name}`] ??
+        20
+
+      if (pr.additions + pr.deletions < lineChangeThreshold) return false
+
+      return true
+    })
     .map(renderTitle)
     .sort((a, b) => Date.parse(b.mergedAt) - Date.parse(a.mergedAt))
 
