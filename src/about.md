@@ -2,7 +2,8 @@
 
 <script lang="ts" setup>
 import IconGithub from '~icons/tabler/brand-github'
-import IconX from '~icons/tabler/brand-x'
+import IconBluesky from '~icons/tabler/brand-bluesky'
+import IconTwitter from '~icons/tabler/brand-twitter'
 import IconMastodon from '~icons/tabler/brand-mastodon'
 </script>
 
@@ -18,7 +19,8 @@ In past, I had been writing frontend code in Vue and backend code using Go.
 ## Contacts
 
 - <IconGithub class="inline-block" /> GitHub: [sapphi-red](https://github.com/sapphi-red)
-- <IconX class="inline-block" /> X: [@sapphi_red](https://x.com/sapphi_red), Japanese alt [@sapphi_red_ja](https://x.com/sapphi_red_ja)
+- <IconBluesky class="inline-block" /> Bluesky: [@sapphi.red](https://bsky.app/profile/sapphi.red)
+- <IconTwitter class="inline-block" /> X: [@sapphi_red](https://x.com/sapphi_red), Japanese alt [@sapphi_red_ja](https://x.com/sapphi_red_ja)
 - <IconMastodon class="inline-block" /> Mastodon: [@sapphi_red@webtoo.ls](https://elk.zone/m.webtoo.ls/@sapphi_red)
 
 ## More details

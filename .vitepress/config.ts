@@ -107,6 +107,7 @@ export default defineConfig({
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/sapphi-red' },
+      { icon: 'bluesky', link: 'https://bsky.app/profile/sapphi.red' },
       { icon: 'twitter', link: 'https://x.com/sapphi_red' },
       { icon: 'mastodon', link: 'https://elk.zone/m.webtoo.ls/@sapphi_red' }
     ]
