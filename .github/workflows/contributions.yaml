@@ -26,6 +26,8 @@ jobs:
         run: npm ci
       - name: update
         run: npm run update-pr-data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: create pull request
         uses: peter-evans/create-pull-request@v7
         with:

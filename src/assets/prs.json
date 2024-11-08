@@ -16,31 +16,6 @@
       ]
     ],
     [
-      "nodejs/node",
-      [
-        {
-          "url": "https://github.com/nodejs/node/pull/51032",
-          "title": "fs: fix fs.promises.realpath for long paths on Windows",
-          "prId": 51032
-        },
-        {
-          "url": "https://github.com/nodejs/node/pull/49849",
-          "title": "fs: add stacktrace to fs/promises",
-          "prId": 49849
-        },
-        {
-          "url": "https://github.com/nodejs/node/pull/46391",
-          "title": "lib: add api to detect whether source-maps are enabled",
-          "prId": 46391
-        },
-        {
-          "url": "https://github.com/nodejs/node/pull/45280",
-          "title": "doc: fix RESOLVE_ESM_MATCH in modules.md",
-          "prId": 45280
-        }
-      ]
-    ],
-    [
       "vitejs/vite-plugin-react-swc",
       [
         {
@@ -836,36 +811,6 @@
       ]
     ],
     [
-      "vitejs/vite-ecosystem-ci",
-      [
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/269",
-          "title": "fix: place empty tsconfig for fallback",
-          "prId": 269
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/226",
-          "title": "docs: setting up PR comment trigger feature",
-          "prId": 226
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/139",
-          "title": "feat: group command output in GitHub Actions",
-          "prId": 139
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/120",
-          "title": "feat: vite repo",
-          "prId": 120
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/102",
-          "title": "Custom discord integration ",
-          "prId": 102
-        }
-      ]
-    ],
-    [
       "mdn/content",
       [
         {
@@ -986,6 +931,31 @@
       ]
     ],
     [
+      "nodejs/node",
+      [
+        {
+          "url": "https://github.com/nodejs/node/pull/51032",
+          "title": "fs: fix fs.promises.realpath for long paths on Windows",
+          "prId": 51032
+        },
+        {
+          "url": "https://github.com/nodejs/node/pull/49849",
+          "title": "fs: add stacktrace to fs/promises",
+          "prId": 49849
+        },
+        {
+          "url": "https://github.com/nodejs/node/pull/46391",
+          "title": "lib: add api to detect whether source-maps are enabled",
+          "prId": 46391
+        },
+        {
+          "url": "https://github.com/nodejs/node/pull/45280",
+          "title": "doc: fix RESOLVE_ESM_MATCH in modules.md",
+          "prId": 45280
+        }
+      ]
+    ],
+    [
       "rollup/plugins",
       [
         {
@@ -1011,6 +981,36 @@
       ]
     ],
     [
+      "vitejs/vite-ecosystem-ci",
+      [
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/269",
+          "title": "fix: place empty tsconfig for fallback",
+          "prId": 269
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/226",
+          "title": "docs: setting up PR comment trigger feature",
+          "prId": 226
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/139",
+          "title": "feat: group command output in GitHub Actions",
+          "prId": 139
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/120",
+          "title": "feat: vite repo",
+          "prId": 120
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/102",
+          "title": "Custom discord integration ",
+          "prId": 102
+        }
+      ]
+    ],
+    [
       "bluwy/publint",
       [
         {
@@ -1027,16 +1027,6 @@
           "url": "https://github.com/bluwy/publint/pull/59",
           "title": "Improve browser field suggestion",
           "prId": 59
-        }
-      ]
-    ],
-    [
-      "postcss/postcss-load-config",
-      [
-        {
-          "url": "https://github.com/postcss/postcss-load-config/pull/252",
-          "title": "feat: support <code>.cts</code>",
-          "prId": 252
         }
       ]
     ],
@@ -1067,26 +1057,6 @@
           "url": "https://github.com/vuejs/vitepress/pull/855",
           "title": "fix: ESM SSR",
           "prId": 855
-        }
-      ]
-    ],
-    [
-      "egoist/tsup",
-      [
-        {
-          "url": "https://github.com/egoist/tsup/pull/1018",
-          "title": "feat!: update to rollup v4",
-          "prId": 1018
-        },
-        {
-          "url": "https://github.com/egoist/tsup/pull/900",
-          "title": "fix: preserve top-level when running terser for IIFE",
-          "prId": 900
-        },
-        {
-          "url": "https://github.com/egoist/tsup/pull/899",
-          "title": "fix: prefix terser log with name",
-          "prId": 899
         }
       ]
     ],
@@ -1126,12 +1096,42 @@
       ]
     ],
     [
+      "postcss/postcss-load-config",
+      [
+        {
+          "url": "https://github.com/postcss/postcss-load-config/pull/252",
+          "title": "feat: support <code>.cts</code>",
+          "prId": 252
+        }
+      ]
+    ],
+    [
       "unjs/unbuild",
       [
         {
           "url": "https://github.com/unjs/unbuild/pull/327",
           "title": "feat!: update to rollup 4",
           "prId": 327
+        }
+      ]
+    ],
+    [
+      "egoist/tsup",
+      [
+        {
+          "url": "https://github.com/egoist/tsup/pull/1018",
+          "title": "feat!: update to rollup v4",
+          "prId": 1018
+        },
+        {
+          "url": "https://github.com/egoist/tsup/pull/900",
+          "title": "fix: preserve top-level when running terser for IIFE",
+          "prId": 900
+        },
+        {
+          "url": "https://github.com/egoist/tsup/pull/899",
+          "title": "fix: prefix terser log with name",
+          "prId": 899
         }
       ]
     ],
@@ -1161,20 +1161,30 @@
       ]
     ],
     [
-      "antfu/vite-ssg",
+      "QwikDev/qwik",
       [
         {
-          "url": "https://github.com/antfu/vite-ssg/pull/348",
+          "url": "https://github.com/QwikDev/qwik/pull/5161",
+          "title": "docs: use import .css?inline instead of .css",
+          "prId": 5161
+        }
+      ]
+    ],
+    [
+      "antfu-collective/vite-ssg",
+      [
+        {
+          "url": "https://github.com/antfu-collective/vite-ssg/pull/348",
           "title": "chore!: migrate to @unhead/vue from @vueuse/head",
           "prId": 348
         },
         {
-          "url": "https://github.com/antfu/vite-ssg/pull/66",
+          "url": "https://github.com/antfu-collective/vite-ssg/pull/66",
           "title": "feat: support alias with entry",
           "prId": 66
         },
         {
-          "url": "https://github.com/antfu/vite-ssg/pull/14",
+          "url": "https://github.com/antfu-collective/vite-ssg/pull/14",
           "title": "fix: config was not applied",
           "prId": 14
         }
@@ -1226,10 +1236,40 @@
       ]
     ],
     [
-      "antfu/taze",
+      "unplugin/unplugin-vue-markdown",
       [
         {
-          "url": "https://github.com/antfu/taze/pull/65",
+          "url": "https://github.com/unplugin/unplugin-vue-markdown/pull/19",
+          "title": "fix: shim require for ESM",
+          "prId": 19
+        },
+        {
+          "url": "https://github.com/unplugin/unplugin-vue-markdown/pull/18",
+          "title": "chore: migrate to @unhead/vue from @vueuse/head",
+          "prId": 18
+        }
+      ]
+    ],
+    [
+      "vitest-dev/eslint-plugin-vitest",
+      [
+        {
+          "url": "https://github.com/vitest-dev/eslint-plugin-vitest/pull/160",
+          "title": "docs: fix typo",
+          "prId": 160
+        },
+        {
+          "url": "https://github.com/vitest-dev/eslint-plugin-vitest/pull/159",
+          "title": "chore!: rename <code>preferMockPromiseShorthand</code> rule to <code>prefer-mock-promise-shorthand</code>",
+          "prId": 159
+        }
+      ]
+    ],
+    [
+      "antfu-collective/taze",
+      [
+        {
+          "url": "https://github.com/antfu-collective/taze/pull/65",
           "title": "feat: support aliased deps (<code>npm:</code>)",
           "prId": 65
         }
@@ -1266,12 +1306,27 @@
       ]
     ],
     [
-      "prettier/prettier",
+      "antfu-collective/vite-plugin-inspect",
       [
         {
-          "url": "https://github.com/prettier/prettier/pull/11696",
-          "title": "Improved performance with large HTML files",
-          "prId": 11696
+          "url": "https://github.com/antfu-collective/vite-plugin-inspect/pull/55",
+          "title": "feat: redirect when accessed without slash",
+          "prId": 55
+        },
+        {
+          "url": "https://github.com/antfu-collective/vite-plugin-inspect/pull/54",
+          "title": "fix: 404 error when unselecting module",
+          "prId": 54
+        },
+        {
+          "url": "https://github.com/antfu-collective/vite-plugin-inspect/pull/21",
+          "title": "feat: show total latency of each plugins",
+          "prId": 21
+        },
+        {
+          "url": "https://github.com/antfu-collective/vite-plugin-inspect/pull/19",
+          "title": "perf: Improve diff performance",
+          "prId": 19
         }
       ]
     ],
@@ -1331,6 +1386,26 @@
       ]
     ],
     [
+      "eslint-types/eslint-define-config",
+      [
+        {
+          "url": "https://github.com/eslint-types/eslint-define-config/pull/120",
+          "title": "Add <code>override.excludedFiles</code>",
+          "prId": 120
+        }
+      ]
+    ],
+    [
+      "vikejs/vike",
+      [
+        {
+          "url": "https://github.com/vikejs/vike/pull/371",
+          "title": "Some changes to make vite-ecosystem-ci pass",
+          "prId": 371
+        }
+      ]
+    ],
+    [
       "vuejs/create-vue",
       [
         {
@@ -1361,37 +1436,22 @@
       ]
     ],
     [
-      "antfu/vite-plugin-pwa",
+      "vite-pwa/vite-plugin-pwa",
       [
         {
-          "url": "https://github.com/antfu/vite-plugin-pwa/pull/244",
+          "url": "https://github.com/vite-pwa/vite-plugin-pwa/pull/244",
           "title": "perf: lazy load workbox-build to reduce config loading time",
           "prId": 244
         }
       ]
     ],
     [
-      "eslint/eslint-release",
+      "prettier/prettier",
       [
         {
-          "url": "https://github.com/eslint/eslint-release/pull/47",
-          "title": "Update: group commits by types in release log (fixes #46)",
-          "prId": 47
-        }
-      ]
-    ],
-    [
-      "OpenAPITools/openapi-generator",
-      [
-        {
-          "url": "https://github.com/OpenAPITools/openapi-generator/pull/8283",
-          "title": "[typescript-axios] reduce file size",
-          "prId": 8283
-        },
-        {
-          "url": "https://github.com/OpenAPITools/openapi-generator/pull/7477",
-          "title": "[typescript-axios] support &quot;x-enum-descriptions&quot;",
-          "prId": 7477
+          "url": "https://github.com/prettier/prettier/pull/11696",
+          "title": "Improved performance with large HTML files",
+          "prId": 11696
         }
       ]
     ],
@@ -1412,31 +1472,6 @@
           "url": "https://github.com/evanw/esbuild/pull/1660",
           "title": "feat: drop catch binding when optional catch binding is supported",
           "prId": 1660
-        }
-      ]
-    ],
-    [
-      "antfu/vite-plugin-inspect",
-      [
-        {
-          "url": "https://github.com/antfu/vite-plugin-inspect/pull/21",
-          "title": "feat: show total latency of each plugins",
-          "prId": 21
-        },
-        {
-          "url": "https://github.com/antfu/vite-plugin-inspect/pull/19",
-          "title": "perf: Improve diff performance",
-          "prId": 19
-        }
-      ]
-    ],
-    [
-      "johnsoncodehk/volar",
-      [
-        {
-          "url": "https://github.com/johnsoncodehk/volar/pull/546",
-          "title": "Improve v-for type",
-          "prId": 546
         }
       ]
     ],
@@ -1481,6 +1516,41 @@
       ]
     ],
     [
+      "OpenAPITools/openapi-generator",
+      [
+        {
+          "url": "https://github.com/OpenAPITools/openapi-generator/pull/8283",
+          "title": "[typescript-axios] reduce file size",
+          "prId": 8283
+        },
+        {
+          "url": "https://github.com/OpenAPITools/openapi-generator/pull/7477",
+          "title": "[typescript-axios] support &quot;x-enum-descriptions&quot;",
+          "prId": 7477
+        }
+      ]
+    ],
+    [
+      "vuejs/vetur",
+      [
+        {
+          "url": "https://github.com/vuejs/vetur/pull/2565",
+          "title": "Dont include used attributes in suggestions",
+          "prId": 2565
+        },
+        {
+          "url": "https://github.com/vuejs/vetur/pull/2558",
+          "title": "Custom event auto complete",
+          "prId": 2558
+        },
+        {
+          "url": "https://github.com/vuejs/vetur/pull/2557",
+          "title": "sort attribute suggestion without <code>:</code> or <code>@</code>",
+          "prId": 2557
+        }
+      ]
+    ],
+    [
       "vuejs/eslint-plugin-vue",
       [
         {
@@ -1506,22 +1576,12 @@
       ]
     ],
     [
-      "vuejs/vetur",
+      "eslint/eslint-release",
       [
         {
-          "url": "https://github.com/vuejs/vetur/pull/2565",
-          "title": "Dont include used attributes in suggestions",
-          "prId": 2565
-        },
-        {
-          "url": "https://github.com/vuejs/vetur/pull/2558",
-          "title": "Custom event auto complete",
-          "prId": 2558
-        },
-        {
-          "url": "https://github.com/vuejs/vetur/pull/2557",
-          "title": "sort attribute suggestion without <code>:</code> or <code>@</code>",
-          "prId": 2557
+          "url": "https://github.com/eslint/eslint-release/pull/47",
+          "title": "Update: group commits by types in release log (fixes #46)",
+          "prId": 47
         }
       ]
     ],
@@ -1566,5 +1626,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2024-10-01T11:01:11.320Z"
+  "fetchedAt": "2024-09-30T10:01:23Z"
 }
