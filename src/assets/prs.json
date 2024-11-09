@@ -1,23 +1,58 @@
 {
   "repos": [
     [
-      "twoslashes/twoslash",
-      [
-        {
-          "url": "https://github.com/twoslashes/twoslash/pull/56",
-          "title": "feat: add <code>fsCache</code> option to improve build performance",
-          "prId": 56
-        },
-        {
-          "url": "https://github.com/twoslashes/twoslash/pull/33",
-          "title": "feat: support spaces before cut comments",
-          "prId": 33
-        }
-      ]
-    ],
-    [
       "vitejs/vite",
       [
+        {
+          "url": "https://github.com/vitejs/vite/pull/18506",
+          "title": "fix: allow nested dependency selector to be used for <code>optimizeDeps.include</code> for SSR",
+          "prId": 18506
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18503",
+          "title": "fix: use picomatch to align with tinyglobby",
+          "prId": 18503
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18395",
+          "title": "feat(resolve)!: allow removing conditions",
+          "prId": 18395
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18362",
+          "title": "feat: use a single transport for fetchModule and HMR support",
+          "prId": 18362
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18334",
+          "title": "docs: env api expand runtime agnostic SSR section",
+          "prId": 18334
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18329",
+          "title": "fix(ssr): <code>this</code> in exported function should be <code>undefined</code>",
+          "prId": 18329
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18320",
+          "title": "docs: try to decouple more information in env api docs",
+          "prId": 18320
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18303",
+          "title": "feat(json)!: add <code>json.stringify: 'auto'</code> and make that the default",
+          "prId": 18303
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18263",
+          "title": "feat: add <code>environment::listen</code>",
+          "prId": 18263
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18194",
+          "title": "fix: asset <code>new URL(,import.meta.url)</code> match",
+          "prId": 18194
+        },
         {
           "url": "https://github.com/vitejs/vite/pull/17867",
           "title": "feat: support originalFilename",
@@ -291,6 +326,51 @@
       ]
     ],
     [
+      "Rich-Harris/magic-string",
+      [
+        {
+          "url": "https://github.com/Rich-Harris/magic-string/pull/284",
+          "title": "perf: skip line break mappings",
+          "prId": 284
+        },
+        {
+          "url": "https://github.com/Rich-Harris/magic-string/pull/261",
+          "title": "fix: correct mappings for update containing new line",
+          "prId": 261
+        },
+        {
+          "url": "https://github.com/Rich-Harris/magic-string/pull/216",
+          "title": "perf: delay guess encoded",
+          "prId": 216
+        }
+      ]
+    ],
+    [
+      "honojs/hono",
+      [
+        {
+          "url": "https://github.com/honojs/hono/pull/3500",
+          "title": "fix(service-worker): bind fetch to <code>globalThis</code>",
+          "prId": 3500
+        }
+      ]
+    ],
+    [
+      "twoslashes/twoslash",
+      [
+        {
+          "url": "https://github.com/twoslashes/twoslash/pull/56",
+          "title": "feat: add <code>fsCache</code> option to improve build performance",
+          "prId": 56
+        },
+        {
+          "url": "https://github.com/twoslashes/twoslash/pull/33",
+          "title": "feat: support spaces before cut comments",
+          "prId": 33
+        }
+      ]
+    ],
+    [
       "aquaproj/aqua",
       [
         {
@@ -522,21 +602,6 @@
           "url": "https://github.com/egoist/tsup/pull/900",
           "title": "fix: preserve top-level when running terser for IIFE",
           "prId": 900
-        }
-      ]
-    ],
-    [
-      "Rich-Harris/magic-string",
-      [
-        {
-          "url": "https://github.com/Rich-Harris/magic-string/pull/261",
-          "title": "fix: correct mappings for update containing new line",
-          "prId": 261
-        },
-        {
-          "url": "https://github.com/Rich-Harris/magic-string/pull/216",
-          "title": "perf: delay guess encoded",
-          "prId": 216
         }
       ]
     ],
@@ -951,5 +1016,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2024-09-30T10:01:23Z"
+  "fetchedAt": "2024-11-09T06:40:23Z"
 }
