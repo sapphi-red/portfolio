@@ -29,7 +29,7 @@
     "@octokit/core": "^6.1.2",
     "@octokit/graphql": "^8.1.1",
     "@octokit/plugin-paginate-graphql": "^5.2.4",
-    "@types/node": "^20.14.9",
+    "@types/node": "^22.10.1",
     "@types/throttle-debounce": "^5.0.2",
     "@typescript/lib-dom": "npm:@types/web@^0.0.99",
     "deepmerge": "^4.3.1",
