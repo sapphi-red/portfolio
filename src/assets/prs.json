@@ -1,8 +1,78 @@
 {
   "repos": [
     [
+      "napi-rs/napi-rs",
+      [
+        {
+          "url": "https://github.com/napi-rs/napi-rs/pull/2376",
+          "title": "feat(napi-derive): implement <code>#[napi(transparent)]</code>",
+          "prId": 2376
+        },
+        {
+          "url": "https://github.com/napi-rs/napi-rs/pull/2037",
+          "title": "feat(napi): allow <code>&amp;External</code> to be created from napi value",
+          "prId": 2037
+        },
+        {
+          "url": "https://github.com/napi-rs/napi-rs/pull/2028",
+          "title": "feat(target): add support for s390x-unknown-linux-gnu",
+          "prId": 2028
+        },
+        {
+          "url": "https://github.com/napi-rs/napi-rs/pull/2023",
+          "title": "feat(target): add support for powerpc64le-unknown-linux-gnu",
+          "prId": 2023
+        },
+        {
+          "url": "https://github.com/napi-rs/napi-rs/pull/2019",
+          "title": "feat(target): add support for armv7-unknown-linux-muslebihf",
+          "prId": 2019
+        }
+      ]
+    ],
+    [
+      "rolldown/vite",
+      [
+        {
+          "url": "https://github.com/rolldown/vite/pull/70",
+          "title": "feat: use rolldown effectively for the optimizer",
+          "prId": 70
+        },
+        {
+          "url": "https://github.com/rolldown/vite/pull/69",
+          "title": "feat: use rolldown for config loader",
+          "prId": 69
+        },
+        {
+          "url": "https://github.com/rolldown/vite/pull/68",
+          "title": "feat: use native plugin for create id resolver",
+          "prId": 68
+        },
+        {
+          "url": "https://github.com/rolldown/vite/pull/65",
+          "title": "feat: use native Vite resolver",
+          "prId": 65
+        },
+        {
+          "url": "https://github.com/rolldown/vite/pull/64",
+          "title": "feat: enable lib mode tests",
+          "prId": 64
+        }
+      ]
+    ],
+    [
       "vitejs/vite",
       [
+        {
+          "url": "https://github.com/vitejs/vite/pull/18818",
+          "title": "feat(css): format lightningcss error",
+          "prId": 18818
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18618",
+          "title": "fix(html): externalize <code>rollup.external</code> scripts correctly",
+          "prId": 18618
+        },
         {
           "url": "https://github.com/vitejs/vite/pull/18506",
           "title": "fix: allow nested dependency selector to be used for <code>optimizeDeps.include</code> for SSR",
@@ -326,6 +396,126 @@
       ]
     ],
     [
+      "rolldown/rolldown",
+      [
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/2971",
+          "title": "perf: use fxhash for <code>DashMap</code>s",
+          "prId": 2971
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/2970",
+          "title": "refactor(plugin/vite-resolve): use oxc-resolver to resolve optional peer dep value from package.json",
+          "prId": 2970
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/2917",
+          "title": "refactor(node): make builtin plugin callable internally",
+          "prId": 2917
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/2907",
+          "title": "feat(node/rollup-compat): add properties used by Vite to <code>NormalizedOutputOptions</code>",
+          "prId": 2907
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/2869",
+          "title": "feat(plugin/vite-resolve): implement more logics for <code>createIdResolver</code>",
+          "prId": 2869
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/2739",
+          "title": "feat: vite-resolve-plugin dev support",
+          "prId": 2739
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/2688",
+          "title": "feat: allow runtime to load non JS configs",
+          "prId": 2688
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/2658",
+          "title": "feat: implement vite resolve plugin",
+          "prId": 2658
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/825",
+          "title": "feat: support running Js plugin in parallel via Worker",
+          "prId": 825
+        }
+      ]
+    ],
+    [
+      "vitejs/vite-plugin-vue",
+      [
+        {
+          "url": "https://github.com/vitejs/vite-plugin-vue/pull/481",
+          "title": "chore: add vite 6 peer dep",
+          "prId": 481
+        }
+      ]
+    ],
+    [
+      "oxc-project/oxc-resolver",
+      [
+        {
+          "url": "https://github.com/oxc-project/oxc-resolver/pull/310",
+          "title": "fix: don't panic when resolving <code>/</code> with <code>roots</code>",
+          "prId": 310
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc-resolver/pull/306",
+          "title": "fix: use same UNC path normalization logic with libuv",
+          "prId": 306
+        }
+      ]
+    ],
+    [
+      "vitest-dev/vitest",
+      [
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/6896",
+          "title": "chore: set <code>resolve.mainFields</code> and <code>resolve.conditions</code> for SSR environment",
+          "prId": 6896
+        },
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/3236",
+          "title": "chore: replace source-map with trace-mapping",
+          "prId": 3236
+        },
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/1348",
+          "title": "fix: handle error from pool.run",
+          "prId": 1348
+        },
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/878",
+          "title": "fix: passing non array to reporters option did not effect",
+          "prId": 878
+        },
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/876",
+          "title": "fix: unhandled error handler",
+          "prId": 876
+        },
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/875",
+          "title": "fix: handle error during global setup",
+          "prId": 875
+        }
+      ]
+    ],
+    [
+      "marko-js/vite",
+      [
+        {
+          "url": "https://github.com/marko-js/vite/pull/157",
+          "title": "chore: set <code>build.assetsInlineLimit: 0</code> for SSR tests in dev",
+          "prId": 157
+        }
+      ]
+    ],
+    [
       "Rich-Harris/magic-string",
       [
         {
@@ -381,31 +571,6 @@
       ]
     ],
     [
-      "napi-rs/napi-rs",
-      [
-        {
-          "url": "https://github.com/napi-rs/napi-rs/pull/2037",
-          "title": "feat(napi): allow <code>&amp;External</code> to be created from napi value",
-          "prId": 2037
-        },
-        {
-          "url": "https://github.com/napi-rs/napi-rs/pull/2028",
-          "title": "feat(target): add support for s390x-unknown-linux-gnu",
-          "prId": 2028
-        },
-        {
-          "url": "https://github.com/napi-rs/napi-rs/pull/2023",
-          "title": "feat(target): add support for powerpc64le-unknown-linux-gnu",
-          "prId": 2023
-        },
-        {
-          "url": "https://github.com/napi-rs/napi-rs/pull/2019",
-          "title": "feat(target): add support for armv7-unknown-linux-muslebihf",
-          "prId": 2019
-        }
-      ]
-    ],
-    [
       "rollup/rollup",
       [
         {
@@ -452,16 +617,6 @@
           "url": "https://github.com/rollup/rollup/pull/5072",
           "title": "Add known globals",
           "prId": 5072
-        }
-      ]
-    ],
-    [
-      "rolldown/rolldown",
-      [
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/825",
-          "title": "feat: support running Js plugin in parallel via Worker",
-          "prId": 825
         }
       ]
     ],
@@ -672,36 +827,6 @@
           "url": "https://github.com/antfu-collective/taze/pull/65",
           "title": "feat: support aliased deps (<code>npm:</code>)",
           "prId": 65
-        }
-      ]
-    ],
-    [
-      "vitest-dev/vitest",
-      [
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/3236",
-          "title": "chore: replace source-map with trace-mapping",
-          "prId": 3236
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/1348",
-          "title": "fix: handle error from pool.run",
-          "prId": 1348
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/878",
-          "title": "fix: passing non array to reporters option did not effect",
-          "prId": 878
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/876",
-          "title": "fix: unhandled error handler",
-          "prId": 876
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/875",
-          "title": "fix: handle error during global setup",
-          "prId": 875
         }
       ]
     ],
@@ -1016,5 +1141,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2024-11-09T06:40:23Z"
+  "fetchedAt": "2024-12-01T00:57:46Z"
 }
