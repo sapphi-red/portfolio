@@ -7,7 +7,8 @@ export const ignoreRepoUser = new Set([
 
 export const ignoreRepo = new Set([
   'aquaproj/aqua-registry',
-  'vitejs/vite-plugin-vue2'
+  'vitejs/vite-plugin-vue2',
+  'rolldown/vite'
 ])
 
 export const ignorePRs = new Set([
@@ -22,6 +23,7 @@ export const ignorePRs = new Set([
   'https://github.com/vitejs/vite/pull/9489',
   'https://github.com/vitejs/vite/pull/14821',
   'https://github.com/vitejs/vite/pull/15093',
+  'https://github.com/vitejs/vite/pull/18818',
   'https://github.com/vitejs/vite-ecosystem-ci/pull/256',
   'https://github.com/vitejs/vite-ecosystem-ci/pull/261',
   'https://github.com/madyankin/postcss-modules/pull/134',
@@ -31,6 +33,7 @@ export const ignorePRs = new Set([
   'https://github.com/vitejs/vite-plugin-vue/pull/37',
   'https://github.com/vitejs/vite-plugin-vue/pull/224',
   'https://github.com/vitejs/vite-plugin-vue/pull/286',
+  'https://github.com/vitejs/vite-plugin-vue/pull/481',
   'https://github.com/Rich-Harris/magic-string/pull/215',
   'https://github.com/antfu-collective/vite-plugin-inspect/pull/54',
   'https://github.com/bluwy/publint/pull/8',
@@ -40,7 +43,12 @@ export const ignorePRs = new Set([
   'https://github.com/vite-pwa/vite-plugin-pwa/pull/590',
   'https://github.com/rolldown/rolldown/pull/986',
   'https://github.com/antfu-collective/vite-ssg/pull/399',
-  'https://github.com/napi-rs/napi-rs/pull/2020'
+  'https://github.com/napi-rs/napi-rs/pull/2020',
+  'https://github.com/vitest-dev/vitest/pull/6896',
+  'https://github.com/rolldown/rolldown/pull/2688',
+  'https://github.com/rolldown/rolldown/pull/2907',
+  'https://github.com/rolldown/rolldown/pull/2917',
+  'https://github.com/rolldown/rolldown/pull/2971'
 ])
 
 export const forcedPrs = new Set([
