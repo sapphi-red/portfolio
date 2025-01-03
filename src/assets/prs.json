@@ -1,38 +1,158 @@
 {
   "repos": [
     [
-      "napi-rs/napi-rs",
+      "oxc-project/oxc",
       [
         {
-          "url": "https://github.com/napi-rs/napi-rs/pull/2376",
-          "title": "feat(napi-derive): implement <code>#[napi(transparent)]</code>",
-          "prId": 2376
+          "url": "https://github.com/oxc-project/oxc/pull/8177",
+          "title": "fix(minifier): minify string <code>PropertyKey</code>",
+          "prId": 8177
         },
         {
-          "url": "https://github.com/napi-rs/napi-rs/pull/2037",
-          "title": "feat(napi): allow <code>&amp;External</code> to be created from napi value",
-          "prId": 2037
+          "url": "https://github.com/oxc-project/oxc/pull/8176",
+          "title": "feat(minifier): change <code>foo?.['bar']</code> to <code>foo?.bar</code>",
+          "prId": 8176
         },
         {
-          "url": "https://github.com/napi-rs/napi-rs/pull/2028",
-          "title": "feat(target): add support for s390x-unknown-linux-gnu",
-          "prId": 2028
+          "url": "https://github.com/oxc-project/oxc/pull/8175",
+          "title": "test(minifier): port tests from ConvertToDottedPropertiesTest",
+          "prId": 8175
         },
         {
-          "url": "https://github.com/napi-rs/napi-rs/pull/2023",
-          "title": "feat(target): add support for powerpc64le-unknown-linux-gnu",
-          "prId": 2023
+          "url": "https://github.com/oxc-project/oxc/pull/8172",
+          "title": "feat(minifier): fold <code>string.length</code> / <code>array.length</code>",
+          "prId": 8172
         },
         {
-          "url": "https://github.com/napi-rs/napi-rs/pull/2019",
-          "title": "feat(target): add support for armv7-unknown-linux-muslebihf",
-          "prId": 2019
+          "url": "https://github.com/oxc-project/oxc/pull/8161",
+          "title": "chore(tasks): print diff for minify idempotency assertion",
+          "prId": 8161
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8160",
+          "title": "feat(minifier): fold <code>typeof foo == undefined</code> into <code>foo == undefined</code> when possible",
+          "prId": 8160
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8159",
+          "title": "feat(minifier): fold <code>typeof foo != &quot;undefined&quot;</code> into <code>typeof foo &lt; &quot;u&quot;</code>",
+          "prId": 8159
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8142",
+          "title": "feat(minifier): constant fold <code>instanceof</code>",
+          "prId": 8142
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8063",
+          "title": "feat(minifier): fold <code>foo === undefined || foo === null</code>",
+          "prId": 8063
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/7949",
+          "title": "fix(minifier): incorrect minification in <code>try_fold_left_child_op</code>",
+          "prId": 7949
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/7908",
+          "title": "feat(minifier): fold bitwise operation",
+          "prId": 7908
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/7907",
+          "title": "feat(mangler): mangle top level variables",
+          "prId": 7907
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/7601",
+          "title": "feat(napi/transform): add <code>TransformerOptions::assumptions</code>",
+          "prId": 7601
+        }
+      ]
+    ],
+    [
+      "sxzz/ast-explorer",
+      [
+        {
+          "url": "https://github.com/sxzz/ast-explorer/pull/110",
+          "title": "feat: add lightningcss",
+          "prId": 110
+        }
+      ]
+    ],
+    [
+      "Rich-Harris/magic-string",
+      [
+        {
+          "url": "https://github.com/Rich-Harris/magic-string/pull/298",
+          "title": "fix: missing mapping after a line break with <code>hires: 'boundary'</code>",
+          "prId": 298
+        },
+        {
+          "url": "https://github.com/Rich-Harris/magic-string/pull/284",
+          "title": "perf: skip line break mappings",
+          "prId": 284
+        },
+        {
+          "url": "https://github.com/Rich-Harris/magic-string/pull/261",
+          "title": "fix: correct mappings for update containing new line",
+          "prId": 261
+        },
+        {
+          "url": "https://github.com/Rich-Harris/magic-string/pull/216",
+          "title": "perf: delay guess encoded",
+          "prId": 216
+        }
+      ]
+    ],
+    [
+      "oxc-project/oxc-resolver",
+      [
+        {
+          "url": "https://github.com/oxc-project/oxc-resolver/pull/345",
+          "title": "fix: normalize resolved result on Windows for root",
+          "prId": 345
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc-resolver/pull/310",
+          "title": "fix: don't panic when resolving <code>/</code> with <code>roots</code>",
+          "prId": 310
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc-resolver/pull/306",
+          "title": "fix: use same UNC path normalization logic with libuv",
+          "prId": 306
         }
       ]
     ],
     [
       "rolldown/rolldown",
       [
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/3103",
+          "title": "feat(plugin/json): support <code>stringify: 'auto'</code>",
+          "prId": 3103
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/3040",
+          "title": "feat(plugin/vite-resolve): implement fileUrl properly",
+          "prId": 3040
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/3039",
+          "title": "feat(plugin/vite-resolve): support Regex in noExternal",
+          "prId": 3039
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/3024",
+          "title": "feat: <code>names</code> / <code>originalFileNames</code> support",
+          "prId": 3024
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/2988",
+          "title": "perf: use fxhash for <code>HashMap</code>s",
+          "prId": 2988
+        },
         {
           "url": "https://github.com/rolldown/rolldown/pull/2970",
           "title": "refactor(plugin/vite-resolve): use oxc-resolver to resolve optional peer dep value from package.json",
@@ -61,33 +181,18 @@
       ]
     ],
     [
-      "oxc-project/oxc-resolver",
-      [
-        {
-          "url": "https://github.com/oxc-project/oxc-resolver/pull/310",
-          "title": "fix: don't panic when resolving <code>/</code> with <code>roots</code>",
-          "prId": 310
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc-resolver/pull/306",
-          "title": "fix: use same UNC path normalization logic with libuv",
-          "prId": 306
-        }
-      ]
-    ],
-    [
-      "marko-js/vite",
-      [
-        {
-          "url": "https://github.com/marko-js/vite/pull/157",
-          "title": "chore: set <code>build.assetsInlineLimit: 0</code> for SSR tests in dev",
-          "prId": 157
-        }
-      ]
-    ],
-    [
       "vitejs/vite",
       [
+        {
+          "url": "https://github.com/vitejs/vite/pull/18927",
+          "title": "ci: fix ecosystem ci trigger",
+          "prId": 18927
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18903",
+          "title": "fix: <code>this.resolve</code> skipSelf should not skip for different <code>id</code> or <code>import</code>",
+          "prId": 18903
+        },
         {
           "url": "https://github.com/vitejs/vite/pull/18618",
           "title": "fix(html): externalize <code>rollup.external</code> scripts correctly",
@@ -416,22 +521,67 @@
       ]
     ],
     [
-      "Rich-Harris/magic-string",
+      "SchemaStore/schemastore",
       [
         {
-          "url": "https://github.com/Rich-Harris/magic-string/pull/284",
-          "title": "perf: skip line break mappings",
-          "prId": 284
+          "url": "https://github.com/SchemaStore/schemastore/pull/4259",
+          "title": "Add <code>pnpm.**</code> fields to <code>package.json</code> schema",
+          "prId": 4259
         },
         {
-          "url": "https://github.com/Rich-Harris/magic-string/pull/261",
-          "title": "fix: correct mappings for update containing new line",
-          "prId": 261
+          "url": "https://github.com/SchemaStore/schemastore/pull/4258",
+          "title": "Add <code>imports</code> field to <code>package.json</code> schema",
+          "prId": 4258
+        }
+      ]
+    ],
+    [
+      "napi-rs/napi-rs",
+      [
+        {
+          "url": "https://github.com/napi-rs/napi-rs/pull/2384",
+          "title": "fix(napi-derive): generate correct types for HashMap with RandomState argument",
+          "prId": 2384
         },
         {
-          "url": "https://github.com/Rich-Harris/magic-string/pull/216",
-          "title": "perf: delay guess encoded",
-          "prId": 216
+          "url": "https://github.com/napi-rs/napi-rs/pull/2382",
+          "title": "fix(napi-derive): object_from_js / object_to_js for transparent was swapped",
+          "prId": 2382
+        },
+        {
+          "url": "https://github.com/napi-rs/napi-rs/pull/2376",
+          "title": "feat(napi-derive): implement <code>#[napi(transparent)]</code>",
+          "prId": 2376
+        },
+        {
+          "url": "https://github.com/napi-rs/napi-rs/pull/2037",
+          "title": "feat(napi): allow <code>&amp;External</code> to be created from napi value",
+          "prId": 2037
+        },
+        {
+          "url": "https://github.com/napi-rs/napi-rs/pull/2028",
+          "title": "feat(target): add support for s390x-unknown-linux-gnu",
+          "prId": 2028
+        },
+        {
+          "url": "https://github.com/napi-rs/napi-rs/pull/2023",
+          "title": "feat(target): add support for powerpc64le-unknown-linux-gnu",
+          "prId": 2023
+        },
+        {
+          "url": "https://github.com/napi-rs/napi-rs/pull/2019",
+          "title": "feat(target): add support for armv7-unknown-linux-muslebihf",
+          "prId": 2019
+        }
+      ]
+    ],
+    [
+      "marko-js/vite",
+      [
+        {
+          "url": "https://github.com/marko-js/vite/pull/157",
+          "title": "chore: set <code>build.assetsInlineLimit: 0</code> for SSR tests in dev",
+          "prId": 157
         }
       ]
     ],
@@ -1071,5 +1221,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2024-12-01T00:57:46Z"
+  "fetchedAt": "2024-12-30T08:47:58Z"
 }
