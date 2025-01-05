@@ -54,7 +54,7 @@ href = 'https://www.cyberagent.co.jp/careers/students/career_event/detail/id=255
   name = '1位'
 
 [[contests]]
-name = 'ISUCON11 運営'
+name = 'ISUCON11 作問'
 href = 'https://isucon.net/archives/55821036.html'
 
   [[contests.children]]
@@ -67,3 +67,7 @@ href = 'https://isucon.net/archives/55821036.html'
   #   [[contests.children]]
   #   name = '3位'
   #   href = 'https://icttoracon.net/archives/8962'
+
+[[contests]]
+name = 'ISUCON14 作問'
+href = 'https://isucon.net/archives/58818382.html'

@@ -31,6 +31,20 @@ tags = [
   url = "https://www.youtube.com/watch?v=ojraqqNtVWk"
 
 [[talks]]
+title = "Tooling セッション"
+date = 2023-12-16
+eventName = "次世代 Web カンファレンス 2023"
+tags = [
+  "Content: Vite",
+  "Type: Panel",
+  "Language: Japanese",
+]
+
+  [[talks.links]]
+  type = "video"
+  url = "https://youtu.be/mVGz5-F7_hY?si=HBQBvr7yHY_N3vKQ&t=10805"
+
+[[talks]]
 title = "Environment API で広げる Vite の可能性"
 date = 2024-10-02
 eventName = "Vue Fes Japan × TSKaigi 合同イベント「次世代フロントエンドツールチェイン」"
