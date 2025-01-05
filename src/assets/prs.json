@@ -1,82 +1,27 @@
 {
   "repos": [
     [
-      "oxc-project/oxc",
-      [
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8177",
-          "title": "fix(minifier): minify string <code>PropertyKey</code>",
-          "prId": 8177
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8176",
-          "title": "feat(minifier): change <code>foo?.['bar']</code> to <code>foo?.bar</code>",
-          "prId": 8176
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8175",
-          "title": "test(minifier): port tests from ConvertToDottedPropertiesTest",
-          "prId": 8175
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8172",
-          "title": "feat(minifier): fold <code>string.length</code> / <code>array.length</code>",
-          "prId": 8172
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8161",
-          "title": "chore(tasks): print diff for minify idempotency assertion",
-          "prId": 8161
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8160",
-          "title": "feat(minifier): fold <code>typeof foo == undefined</code> into <code>foo == undefined</code> when possible",
-          "prId": 8160
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8159",
-          "title": "feat(minifier): fold <code>typeof foo != &quot;undefined&quot;</code> into <code>typeof foo &lt; &quot;u&quot;</code>",
-          "prId": 8159
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8142",
-          "title": "feat(minifier): constant fold <code>instanceof</code>",
-          "prId": 8142
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8063",
-          "title": "feat(minifier): fold <code>foo === undefined || foo === null</code>",
-          "prId": 8063
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/7949",
-          "title": "fix(minifier): incorrect minification in <code>try_fold_left_child_op</code>",
-          "prId": 7949
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/7908",
-          "title": "feat(minifier): fold bitwise operation",
-          "prId": 7908
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/7907",
-          "title": "feat(mangler): mangle top level variables",
-          "prId": 7907
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/7601",
-          "title": "feat(napi/transform): add <code>TransformerOptions::assumptions</code>",
-          "prId": 7601
-        }
-      ]
-    ],
-    [
       "sxzz/ast-explorer",
       [
         {
           "url": "https://github.com/sxzz/ast-explorer/pull/110",
           "title": "feat: add lightningcss",
           "prId": 110
+        }
+      ]
+    ],
+    [
+      "oxc-project/oxc",
+      [
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8063",
+          "title": "feat(minifier): fold <code>foo === undefined || foo === null</code>",
+          "prId": 8063
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/7908",
+          "title": "feat(minifier): fold bitwise operation",
+          "prId": 7908
         }
       ]
     ],
@@ -183,11 +128,6 @@
     [
       "vitejs/vite",
       [
-        {
-          "url": "https://github.com/vitejs/vite/pull/18927",
-          "title": "ci: fix ecosystem ci trigger",
-          "prId": 18927
-        },
         {
           "url": "https://github.com/vitejs/vite/pull/18903",
           "title": "fix: <code>this.resolve</code> skipSelf should not skip for different <code>id</code> or <code>import</code>",
@@ -542,11 +482,6 @@
           "url": "https://github.com/napi-rs/napi-rs/pull/2384",
           "title": "fix(napi-derive): generate correct types for HashMap with RandomState argument",
           "prId": 2384
-        },
-        {
-          "url": "https://github.com/napi-rs/napi-rs/pull/2382",
-          "title": "fix(napi-derive): object_from_js / object_to_js for transparent was swapped",
-          "prId": 2382
         },
         {
           "url": "https://github.com/napi-rs/napi-rs/pull/2376",
