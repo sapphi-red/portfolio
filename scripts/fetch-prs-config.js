@@ -24,6 +24,7 @@ export const ignorePRs = new Set([
   'https://github.com/vitejs/vite/pull/14821',
   'https://github.com/vitejs/vite/pull/15093',
   'https://github.com/vitejs/vite/pull/18818',
+  'https://github.com/vitejs/vite/pull/18927',
   'https://github.com/vitejs/vite-ecosystem-ci/pull/256',
   'https://github.com/vitejs/vite-ecosystem-ci/pull/261',
   'https://github.com/madyankin/postcss-modules/pull/134',
@@ -44,11 +45,13 @@ export const ignorePRs = new Set([
   'https://github.com/rolldown/rolldown/pull/986',
   'https://github.com/antfu-collective/vite-ssg/pull/399',
   'https://github.com/napi-rs/napi-rs/pull/2020',
+  'https://github.com/napi-rs/napi-rs/pull/2382',
   'https://github.com/vitest-dev/vitest/pull/6896',
   'https://github.com/rolldown/rolldown/pull/2688',
   'https://github.com/rolldown/rolldown/pull/2907',
   'https://github.com/rolldown/rolldown/pull/2917',
-  'https://github.com/rolldown/rolldown/pull/2971'
+  'https://github.com/rolldown/rolldown/pull/2971',
+  'https://github.com/oxc-project/oxc/pull/8175'
 ])
 
 export const forcedPrs = new Set([
@@ -74,6 +77,7 @@ export const lineChangeThresholds = {
   'vitest-dev/vitest-ecosystem-ci': 80,
   'rollup/rollup': 80,
   'rolldown/rolldown': 80,
+  'oxc-project/oxc': 80,
 
   'withastro/astro': 80,
   'solidjs/solid-start': 80,
