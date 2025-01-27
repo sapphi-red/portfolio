@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { onBeforeMount, ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import FitHeightText from './components/internal/FitHeightText.vue'
 
 const willMount = ref(false)
-onBeforeMount(() => {
+onMounted(() => {
   willMount.value = true
 })
 </script>
