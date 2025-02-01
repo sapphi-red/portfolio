@@ -1,18 +1,103 @@
 {
   "repos": [
     [
-      "sxzz/ast-explorer",
-      [
-        {
-          "url": "https://github.com/sxzz/ast-explorer/pull/110",
-          "title": "feat: add lightningcss",
-          "prId": 110
-        }
-      ]
-    ],
-    [
       "oxc-project/oxc",
       [
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8812",
+          "title": "feat(minifier): merge single var declarations without init into for-in",
+          "prId": 8812
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8802",
+          "title": "feat(minifier): compress <code>a != null ? a.b : undefined</code> to <code>a?.b</code>",
+          "prId": 8802
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8801",
+          "title": "feat(minifier): compress <code>a != null ? a : b</code> into <code>a ?? b</code>",
+          "prId": 8801
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8786",
+          "title": "feat(minifier): compress array of string literals to <code>'str1,str2'.split(',')</code>",
+          "prId": 8786
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8771",
+          "title": "feat(mangler): use characters in the order of their likely frequency",
+          "prId": 8771
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8768",
+          "title": "test(minifier): cleanup some tests in substitute_alternate_syntax",
+          "prId": 8768
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8749",
+          "title": "feat(minifier): compress <code>a == null &amp;&amp; b</code> to <code>a ?? b</code> when return value is ignored",
+          "prId": 8749
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8733",
+          "title": "feat(minifier): replace <code>const</code> with <code>let</code> for non-exported read-only variables",
+          "prId": 8733
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8729",
+          "title": "refactor(minifier): allow mutating arguments in methods called from <code>try_fold_known_string_methods</code>",
+          "prId": 8729
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8682",
+          "title": "feat(minifier): replace <code>Number.*_SAFE_INTEGER</code>/<code>Number.EPSILON</code>",
+          "prId": 8682
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8638",
+          "title": "feat(minifier): compress <code>typeof foo === 'object' &amp;&amp; foo !== null</code> to <code>typeof foo == 'object' &amp;&amp; !!foo</code>",
+          "prId": 8638
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8637",
+          "title": "feat(minifier): compress <code>(a = b) === null || a === undefined</code> to <code>(a = b) == null</code>",
+          "prId": 8637
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8562",
+          "title": "feat(mangler): reuse variable names",
+          "prId": 8562
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8442",
+          "title": "feat(minifier): fold <code>Array::concat</code> into literal",
+          "prId": 8442
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8440",
+          "title": "feat(minifier): fold array concat chaining",
+          "prId": 8440
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8367",
+          "title": "feat(minifier): compress <code>a.b = a.b + c</code> to <code>a.b += c</code>",
+          "prId": 8367
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8345",
+          "title": "feat(minifier): merge assign expression in conditional expression",
+          "prId": 8345
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8315",
+          "title": "feat(minifier): compress <code>a || (a = b)</code> to <code>a ||= b</code>",
+          "prId": 8315
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8314",
+          "title": "feat(minifier): compress <code>a = a + b</code> to <code>a += b</code>",
+          "prId": 8314
+        },
         {
           "url": "https://github.com/oxc-project/oxc/pull/8063",
           "title": "feat(minifier): fold <code>foo === undefined || foo === null</code>",
@@ -26,53 +111,23 @@
       ]
     ],
     [
-      "Rich-Harris/magic-string",
+      "withastro/astro",
       [
         {
-          "url": "https://github.com/Rich-Harris/magic-string/pull/298",
-          "title": "fix: missing mapping after a line break with <code>hires: 'boundary'</code>",
-          "prId": 298
-        },
-        {
-          "url": "https://github.com/Rich-Harris/magic-string/pull/284",
-          "title": "perf: skip line break mappings",
-          "prId": 284
-        },
-        {
-          "url": "https://github.com/Rich-Harris/magic-string/pull/261",
-          "title": "fix: correct mappings for update containing new line",
-          "prId": 261
-        },
-        {
-          "url": "https://github.com/Rich-Harris/magic-string/pull/216",
-          "title": "perf: delay guess encoded",
-          "prId": 216
-        }
-      ]
-    ],
-    [
-      "oxc-project/oxc-resolver",
-      [
-        {
-          "url": "https://github.com/oxc-project/oxc-resolver/pull/345",
-          "title": "fix: normalize resolved result on Windows for root",
-          "prId": 345
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc-resolver/pull/310",
-          "title": "fix: don't panic when resolving <code>/</code> with <code>roots</code>",
-          "prId": 310
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc-resolver/pull/306",
-          "title": "fix: use same UNC path normalization logic with libuv",
-          "prId": 306
+          "url": "https://github.com/withastro/astro/pull/13076",
+          "title": "chore: upgrade Vite and update tests",
+          "prId": 13076
         }
       ]
     ],
     [
       "rolldown/rolldown",
       [
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/3431",
+          "title": "fix: make default sanitizeFilename compatible with rollup",
+          "prId": 3431
+        },
         {
           "url": "https://github.com/rolldown/rolldown/pull/3103",
           "title": "feat(plugin/json): support <code>stringify: 'auto'</code>",
@@ -128,6 +183,41 @@
     [
       "vitejs/vite",
       [
+        {
+          "url": "https://github.com/vitejs/vite/pull/19236",
+          "title": "fix!: backport #19234, fix GHSA-vg6x-rcgg-rjx6",
+          "prId": 19236
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/19235",
+          "title": "fix!: backport #19234, fix GHSA-vg6x-rcgg-rjx6",
+          "prId": 19235
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/19234",
+          "title": "fix!: fix GHSA-vg6x-rcgg-rjx6",
+          "prId": 19234
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/19061",
+          "title": "perf(css): only run postcss when needed",
+          "prId": 19061
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/19016",
+          "title": "fix: skip the plugin if it has been called before with the same id and importer",
+          "prId": 19016
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18979",
+          "title": "fix(hmr): register inlined assets as a dependency of CSS file",
+          "prId": 18979
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18922",
+          "title": "feat: support log related functions in dev",
+          "prId": 18922
+        },
         {
           "url": "https://github.com/vitejs/vite/pull/18903",
           "title": "fix: <code>this.resolve</code> skipSelf should not skip for different <code>id</code> or <code>import</code>",
@@ -461,8 +551,38 @@
       ]
     ],
     [
+      "vuejs/vitepress",
+      [
+        {
+          "url": "https://github.com/vuejs/vitepress/pull/4505",
+          "title": "chore(deps): replace micromatch with picomatch",
+          "prId": 4505
+        },
+        {
+          "url": "https://github.com/vuejs/vitepress/pull/4504",
+          "title": "feat!: upgrade vite to v6",
+          "prId": 4504
+        },
+        {
+          "url": "https://github.com/vuejs/vitepress/pull/2400",
+          "title": "fix(theme): support custom target and rel in navbar links for mobile",
+          "prId": 2400
+        },
+        {
+          "url": "https://github.com/vuejs/vitepress/pull/1850",
+          "title": "fix: take &lt;a&gt; in SVG into account",
+          "prId": 1850
+        }
+      ]
+    ],
+    [
       "SchemaStore/schemastore",
       [
+        {
+          "url": "https://github.com/SchemaStore/schemastore/pull/4340",
+          "title": "Allow external package mappings in <code>imports</code> field in <code>package.json</code>",
+          "prId": 4340
+        },
         {
           "url": "https://github.com/SchemaStore/schemastore/pull/4259",
           "title": "Add <code>pnpm.**</code> fields to <code>package.json</code> schema",
@@ -472,6 +592,71 @@
           "url": "https://github.com/SchemaStore/schemastore/pull/4258",
           "title": "Add <code>imports</code> field to <code>package.json</code> schema",
           "prId": 4258
+        }
+      ]
+    ],
+    [
+      "parcel-bundler/lightningcss",
+      [
+        {
+          "url": "https://github.com/parcel-bundler/lightningcss/pull/875",
+          "title": "Call StyleSheet / StyleSheetExit / Rule.custom.* in visitors passed to composeVisitors",
+          "prId": 875
+        }
+      ]
+    ],
+    [
+      "sxzz/ast-explorer",
+      [
+        {
+          "url": "https://github.com/sxzz/ast-explorer/pull/110",
+          "title": "feat: add lightningcss",
+          "prId": 110
+        }
+      ]
+    ],
+    [
+      "Rich-Harris/magic-string",
+      [
+        {
+          "url": "https://github.com/Rich-Harris/magic-string/pull/298",
+          "title": "fix: missing mapping after a line break with <code>hires: 'boundary'</code>",
+          "prId": 298
+        },
+        {
+          "url": "https://github.com/Rich-Harris/magic-string/pull/284",
+          "title": "perf: skip line break mappings",
+          "prId": 284
+        },
+        {
+          "url": "https://github.com/Rich-Harris/magic-string/pull/261",
+          "title": "fix: correct mappings for update containing new line",
+          "prId": 261
+        },
+        {
+          "url": "https://github.com/Rich-Harris/magic-string/pull/216",
+          "title": "perf: delay guess encoded",
+          "prId": 216
+        }
+      ]
+    ],
+    [
+      "oxc-project/oxc-resolver",
+      [
+        {
+          "url": "https://github.com/oxc-project/oxc-resolver/pull/345",
+          "title": "fix: normalize resolved result on Windows for root",
+          "prId": 345
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc-resolver/pull/310",
+          "title": "fix: don't panic when resolving <code>/</code> with <code>roots</code>",
+          "prId": 310
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc-resolver/pull/306",
+          "title": "fix: use same UNC path normalization logic with libuv",
+          "prId": 306
         }
       ]
     ],
@@ -787,21 +972,6 @@
           "url": "https://github.com/unocss/unocss/pull/2408",
           "title": "feat(preset-mini): add webkit vendor prefix to <code>user-select</code>",
           "prId": 2408
-        }
-      ]
-    ],
-    [
-      "vuejs/vitepress",
-      [
-        {
-          "url": "https://github.com/vuejs/vitepress/pull/2400",
-          "title": "fix(theme): support custom target and rel in navbar links for mobile",
-          "prId": 2400
-        },
-        {
-          "url": "https://github.com/vuejs/vitepress/pull/1850",
-          "title": "fix: take &lt;a&gt; in SVG into account",
-          "prId": 1850
         }
       ]
     ],
@@ -1156,5 +1326,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2024-12-30T08:47:58Z"
+  "fetchedAt": "2025-01-31T15:52:35Z"
 }
