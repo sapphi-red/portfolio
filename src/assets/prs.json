@@ -29,11 +29,6 @@
           "prId": 8771
         },
         {
-          "url": "https://github.com/oxc-project/oxc/pull/8768",
-          "title": "test(minifier): cleanup some tests in substitute_alternate_syntax",
-          "prId": 8768
-        },
-        {
           "url": "https://github.com/oxc-project/oxc/pull/8749",
           "title": "feat(minifier): compress <code>a == null &amp;&amp; b</code> to <code>a ?? b</code> when return value is ignored",
           "prId": 8749
@@ -42,11 +37,6 @@
           "url": "https://github.com/oxc-project/oxc/pull/8733",
           "title": "feat(minifier): replace <code>const</code> with <code>let</code> for non-exported read-only variables",
           "prId": 8733
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8729",
-          "title": "refactor(minifier): allow mutating arguments in methods called from <code>try_fold_known_string_methods</code>",
-          "prId": 8729
         },
         {
           "url": "https://github.com/oxc-project/oxc/pull/8682",
@@ -111,97 +101,12 @@
       ]
     ],
     [
-      "withastro/astro",
-      [
-        {
-          "url": "https://github.com/withastro/astro/pull/13076",
-          "title": "chore: upgrade Vite and update tests",
-          "prId": 13076
-        }
-      ]
-    ],
-    [
-      "rolldown/rolldown",
-      [
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/3431",
-          "title": "fix: make default sanitizeFilename compatible with rollup",
-          "prId": 3431
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/3103",
-          "title": "feat(plugin/json): support <code>stringify: 'auto'</code>",
-          "prId": 3103
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/3040",
-          "title": "feat(plugin/vite-resolve): implement fileUrl properly",
-          "prId": 3040
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/3039",
-          "title": "feat(plugin/vite-resolve): support Regex in noExternal",
-          "prId": 3039
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/3024",
-          "title": "feat: <code>names</code> / <code>originalFileNames</code> support",
-          "prId": 3024
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/2988",
-          "title": "perf: use fxhash for <code>HashMap</code>s",
-          "prId": 2988
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/2970",
-          "title": "refactor(plugin/vite-resolve): use oxc-resolver to resolve optional peer dep value from package.json",
-          "prId": 2970
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/2869",
-          "title": "feat(plugin/vite-resolve): implement more logics for <code>createIdResolver</code>",
-          "prId": 2869
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/2739",
-          "title": "feat: vite-resolve-plugin dev support",
-          "prId": 2739
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/2658",
-          "title": "feat: implement vite resolve plugin",
-          "prId": 2658
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/825",
-          "title": "feat: support running Js plugin in parallel via Worker",
-          "prId": 825
-        }
-      ]
-    ],
-    [
       "vitejs/vite",
       [
-        {
-          "url": "https://github.com/vitejs/vite/pull/19236",
-          "title": "fix!: backport #19234, fix GHSA-vg6x-rcgg-rjx6",
-          "prId": 19236
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/19235",
-          "title": "fix!: backport #19234, fix GHSA-vg6x-rcgg-rjx6",
-          "prId": 19235
-        },
         {
           "url": "https://github.com/vitejs/vite/pull/19234",
           "title": "fix!: fix GHSA-vg6x-rcgg-rjx6",
           "prId": 19234
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/19061",
-          "title": "perf(css): only run postcss when needed",
-          "prId": 19061
         },
         {
           "url": "https://github.com/vitejs/vite/pull/19016",
@@ -554,11 +459,6 @@
       "vuejs/vitepress",
       [
         {
-          "url": "https://github.com/vuejs/vitepress/pull/4505",
-          "title": "chore(deps): replace micromatch with picomatch",
-          "prId": 4505
-        },
-        {
           "url": "https://github.com/vuejs/vitepress/pull/4504",
           "title": "feat!: upgrade vite to v6",
           "prId": 4504
@@ -657,6 +557,61 @@
           "url": "https://github.com/oxc-project/oxc-resolver/pull/306",
           "title": "fix: use same UNC path normalization logic with libuv",
           "prId": 306
+        }
+      ]
+    ],
+    [
+      "rolldown/rolldown",
+      [
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/3103",
+          "title": "feat(plugin/json): support <code>stringify: 'auto'</code>",
+          "prId": 3103
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/3040",
+          "title": "feat(plugin/vite-resolve): implement fileUrl properly",
+          "prId": 3040
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/3039",
+          "title": "feat(plugin/vite-resolve): support Regex in noExternal",
+          "prId": 3039
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/3024",
+          "title": "feat: <code>names</code> / <code>originalFileNames</code> support",
+          "prId": 3024
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/2988",
+          "title": "perf: use fxhash for <code>HashMap</code>s",
+          "prId": 2988
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/2970",
+          "title": "refactor(plugin/vite-resolve): use oxc-resolver to resolve optional peer dep value from package.json",
+          "prId": 2970
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/2869",
+          "title": "feat(plugin/vite-resolve): implement more logics for <code>createIdResolver</code>",
+          "prId": 2869
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/2739",
+          "title": "feat: vite-resolve-plugin dev support",
+          "prId": 2739
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/2658",
+          "title": "feat: implement vite resolve plugin",
+          "prId": 2658
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/825",
+          "title": "feat: support running Js plugin in parallel via Worker",
+          "prId": 825
         }
       ]
     ],

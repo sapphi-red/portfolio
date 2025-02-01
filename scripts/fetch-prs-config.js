@@ -25,6 +25,9 @@ export const ignorePRs = new Set([
   'https://github.com/vitejs/vite/pull/15093',
   'https://github.com/vitejs/vite/pull/18818',
   'https://github.com/vitejs/vite/pull/18927',
+  'https://github.com/vitejs/vite/pull/19061',
+  'https://github.com/vitejs/vite/pull/19235',
+  'https://github.com/vitejs/vite/pull/19236',
   'https://github.com/vitejs/vite-ecosystem-ci/pull/256',
   'https://github.com/vitejs/vite-ecosystem-ci/pull/261',
   'https://github.com/madyankin/postcss-modules/pull/134',
@@ -51,7 +54,12 @@ export const ignorePRs = new Set([
   'https://github.com/rolldown/rolldown/pull/2907',
   'https://github.com/rolldown/rolldown/pull/2917',
   'https://github.com/rolldown/rolldown/pull/2971',
-  'https://github.com/oxc-project/oxc/pull/8175'
+  'https://github.com/rolldown/rolldown/pull/3431',
+  'https://github.com/oxc-project/oxc/pull/8175',
+  'https://github.com/oxc-project/oxc/pull/8729',
+  'https://github.com/oxc-project/oxc/pull/8768',
+  'https://github.com/vuejs/vitepress/pull/4505',
+  'https://github.com/withastro/astro/pull/13076'
 ])
 
 export const forcedPrs = new Set([
