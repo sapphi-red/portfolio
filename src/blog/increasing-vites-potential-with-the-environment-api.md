@@ -13,8 +13,6 @@ const LineChart = defineClientComponent(() => {
 })
 </script>
 
-<ArticleTitle />
-
 This post is a translation of the original talk in Japanese. The slides for the original talk are available [here](https://pre-vue-fes-2024-environment-api-slide.sapphi.red/) (Japanese).
 
 This post describes what the Environment API is, a major feature that is going to be introduced in [Vite](https://vite.dev/) v6.

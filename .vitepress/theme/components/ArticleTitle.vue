@@ -17,8 +17,15 @@ const date = computed(() => posts[findCurrentIndex()].date)
 <template>
   <header>
     <time :datetime="date.datetimeString">{{ date.string }}</time>
-    <h1>
+    <h1 class="style article-title-text">
       {{ data.title }}
     </h1>
   </header>
 </template>
+
+<style scoped>
+.article-title-text {
+  font-size: 32px;
+  line-height: 40px;
+}
+</style>
