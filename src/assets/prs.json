@@ -4,6 +4,191 @@
       "oxc-project/oxc",
       [
         {
+          "url": "https://github.com/oxc-project/oxc/pull/9456",
+          "title": "feat(minifier): support binary expression in <code>remove_unused_expression</code>",
+          "prId": 9456
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9432",
+          "title": "feat(minifier): support conditional expression in <code>remove_unused_expression</code>",
+          "prId": 9432
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9430",
+          "title": "feat(minifier): support object expression in <code>remove_unused_expression</code>",
+          "prId": 9430
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9427",
+          "title": "feat(minifier): improve array expression handling in <code>remove_unused_expression</code>",
+          "prId": 9427
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9426",
+          "title": "feat(minifier): support template literals in <code>remove_unused_expression</code>",
+          "prId": 9426
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9413",
+          "title": "refactor(minifier): use <code>may_have_side_effects</code> in <code>remove_unused_expression</code>",
+          "prId": 9413
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9366",
+          "title": "feat(ecmascript): improve may_have_side_effects for <code>.length</code>",
+          "prId": 9366
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9365",
+          "title": "feat(ecmascript): improve may_have_side_effects for <code>instanceof</code>",
+          "prId": 9365
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9356",
+          "title": "feat(minifier): concatenate strings with template literals on right side",
+          "prId": 9356
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9355",
+          "title": "feat(minifier): concatenate strings with template literals",
+          "prId": 9355
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9352",
+          "title": "fix(minifier): do not remove <code>=== 0</code> if the lhs can be NaN",
+          "prId": 9352
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9201",
+          "title": "feat(minifier): inline constant values in template literals",
+          "prId": 9201
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9122",
+          "title": "refactor(ecmascript): don't check side effects in constant_evaluation",
+          "prId": 9122
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9121",
+          "title": "feat(ecmascript): support more string concatenation",
+          "prId": 9121
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9120",
+          "title": "refactor(ecmascript): merge constant evaluation logics",
+          "prId": 9120
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9111",
+          "title": "refactor(ecmascript): extract to_numeric",
+          "prId": 9111
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9109",
+          "title": "refactor(ecmascript): generalize ToPrimitive",
+          "prId": 9109
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9108",
+          "title": "refactor(ecmascript): use value_type in to_primitive",
+          "prId": 9108
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9107",
+          "title": "refactor(ecmascript): pass IsGlobalReference to DetermineValueType instead of extending it",
+          "prId": 9107
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9105",
+          "title": "fix(ecmascript): to_boolean for shadowed undefined",
+          "prId": 9105
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9103",
+          "title": "fix(ecmascript): to_string for shadowed undefined",
+          "prId": 9103
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9102",
+          "title": "refactor(ecmascript): extract ToPrimitive",
+          "prId": 9102
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9101",
+          "title": "refactor(ecmascript): pass IsGlobalReference to MayHaveSideEffects instead of extending it",
+          "prId": 9101
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9085",
+          "title": "fix(ecmascript): handle shadowed global variables in <code>ValueType</code>",
+          "prId": 9085
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9082",
+          "title": "feat(minifier): fold String::charAt / String::charCodeAt more precisely",
+          "prId": 9082
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9014",
+          "title": "feat(ecmascript): support BigInt comparison",
+          "prId": 9014
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9009",
+          "title": "refactor(minifier): move equality comparison to ConstantEvaluation",
+          "prId": 9009
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8991",
+          "title": "fix(ecmascript): fix may_have_side_effects for binary expressions",
+          "prId": 8991
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8989",
+          "title": "fix(ecmascript): fix may_have_side_effects for unary expressions",
+          "prId": 8989
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8957",
+          "title": "feat(minifier): remove unnecessary unary <code>+</code> inside numeric binary operators",
+          "prId": 8957
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8956",
+          "title": "fix(ecmascript): fix <code>ValueType::from</code> for numeric binary operators",
+          "prId": 8956
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8951",
+          "title": "test(ecmascript): add test for <code>ValueType</code> and update document",
+          "prId": 8951
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8941",
+          "title": "test(minifier): enable esbuild constant evaluation tests",
+          "prId": 8941
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8855",
+          "title": "feat(ecmascript): complete may_have_side_effects",
+          "prId": 8855
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8839",
+          "title": "feat(codegen): prefer backquotes over double / single quotes",
+          "prId": 8839
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8836",
+          "title": "test(minifier): fail tests when parse fails",
+          "prId": 8836
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8823",
+          "title": "feat(minifier): compress <code>(a = _a) != null ? a : b</code> and <code>(a = _a) != null ? a.b() : undefined</code>",
+          "prId": 8823
+        },
+        {
           "url": "https://github.com/oxc-project/oxc/pull/8812",
           "title": "feat(minifier): merge single var declarations without init into for-in",
           "prId": 8812
@@ -59,6 +244,11 @@
           "prId": 8562
         },
         {
+          "url": "https://github.com/oxc-project/oxc/pull/8443",
+          "title": "feat(minifier): minify <code>String::concat</code> into template literal",
+          "prId": 8443
+        },
+        {
           "url": "https://github.com/oxc-project/oxc/pull/8442",
           "title": "feat(minifier): fold <code>Array::concat</code> into literal",
           "prId": 8442
@@ -101,8 +291,28 @@
       ]
     ],
     [
+      "antfu/vscode-pnpm-catalog-lens",
+      [
+        {
+          "url": "https://github.com/antfu/vscode-pnpm-catalog-lens/pull/9",
+          "title": "feat: jump to workspace file with built-in go-to-definition feature",
+          "prId": 9
+        }
+      ]
+    ],
+    [
       "vitejs/vite",
       [
+        {
+          "url": "https://github.com/vitejs/vite/pull/19418",
+          "title": "feat(css): allow scoping css to importers exports",
+          "prId": 19418
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/19317",
+          "title": "feat: show hosts in cert in CLI",
+          "prId": 19317
+        },
         {
           "url": "https://github.com/vitejs/vite/pull/19234",
           "title": "fix!: fix GHSA-vg6x-rcgg-rjx6",
@@ -1281,5 +1491,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2025-01-31T15:52:35Z"
+  "fetchedAt": "2025-03-01T09:44:33Z"
 }
