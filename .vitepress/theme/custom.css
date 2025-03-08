@@ -10,9 +10,10 @@
 }
 
 :root {
-  --vp-font-family-base: 'Inter', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN',
-    'Arial', 'Yu Gothic', 'Meiryo', ui-sans-serif, system-ui, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --vp-font-family-base:
+    'Inter', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Arial', 'Yu Gothic',
+    'Meiryo', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-feature-settings: 'pwid' 1;
 
   --vp-c-brand-1: var(--s-secondary-theme-green);
