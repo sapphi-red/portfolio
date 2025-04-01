@@ -1,8 +1,118 @@
 {
   "repos": [
     [
+      "vitejs/vite-plugin-react",
+      [
+        {
+          "url": "https://github.com/vitejs/vite-plugin-react/pull/435",
+          "title": "chore: move to eslint flat config",
+          "prId": 435
+        },
+        {
+          "url": "https://github.com/vitejs/vite-plugin-react/pull/432",
+          "title": "chore: pull in changes from vite core repo",
+          "prId": 432
+        },
+        {
+          "url": "https://github.com/vitejs/vite-plugin-react/pull/423",
+          "title": "refactor: merge vite plugin react swc in",
+          "prId": 423
+        }
+      ]
+    ],
+    [
+      "vitejs/rolldown-vite",
+      [
+        {
+          "url": "https://github.com/vitejs/rolldown-vite/pull/94",
+          "title": "fix: accept worker iife format",
+          "prId": 94
+        }
+      ]
+    ],
+    [
       "oxc-project/oxc",
       [
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/10126",
+          "title": "refactor(ecmascript)!: introduce MayHaveSideEffectsContext",
+          "prId": 10126
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9898",
+          "title": "feat(mangler): support <code>keep_names</code> option",
+          "prId": 9898
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9897",
+          "title": "feat(mangler): collect symbols that is used to set <code>name</code> property",
+          "prId": 9897
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9867",
+          "title": "feat(minifier): support <code>keep_names</code> option",
+          "prId": 9867
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9604",
+          "title": "feat(minifier): compress constant integer index access",
+          "prId": 9604
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9603",
+          "title": "feat(ecmascript): support integer index access for array and string in <code>may_have_side_effects</code>",
+          "prId": 9603
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9594",
+          "title": "feat(minifier): allow compressing computed constructor/prototype keys precisely",
+          "prId": 9594
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9563",
+          "title": "fix(minifier): keep indirect access for <code>delete</code> and <code>typeof</code>",
+          "prId": 9563
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9562",
+          "title": "feat(minifier): keep indirect access more precisely",
+          "prId": 9562
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9543",
+          "title": "test(minifier): enable some tests in minimize_conditions",
+          "prId": 9543
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9540",
+          "title": "test(minifier): enable some esbuild tests",
+          "prId": 9540
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9539",
+          "title": "feat(minifier): merge throw statements at the end",
+          "prId": 9539
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9512",
+          "title": "feat(minifier): flatten spread args in new expressions",
+          "prId": 9512
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9468",
+          "title": "refactor(minifier): move <code>a != null &amp;&amp; b</code> -&gt; <code>a ?? b</code> compression to <code>remove_unused_expression</code>",
+          "prId": 9468
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9467",
+          "title": "feat(minifier): use <code>remove_unused_expression</code> in <code>try_fold_sequence_expression</code> in <code>remove_dead_code</code>",
+          "prId": 9467
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9463",
+          "title": "feat(minifier): support extracting arguments in pure calls in <code>remove_unused_expression</code>",
+          "prId": 9463
+        },
         {
           "url": "https://github.com/oxc-project/oxc/pull/9456",
           "title": "feat(minifier): support binary expression in <code>remove_unused_expression</code>",
@@ -181,18 +291,88 @@
       ]
     ],
     [
-      "antfu/vscode-pnpm-catalog-lens",
+      "vite-pwa/vite-plugin-pwa",
       [
         {
-          "url": "https://github.com/antfu/vscode-pnpm-catalog-lens/pull/9",
-          "title": "feat: jump to workspace file with built-in go-to-definition feature",
-          "prId": 9
+          "url": "https://github.com/vite-pwa/vite-plugin-pwa/pull/843",
+          "title": "fix: avoid assigning to bundle object",
+          "prId": 843
+        }
+      ]
+    ],
+    [
+      "rollup/rollup",
+      [
+        {
+          "url": "https://github.com/rollup/rollup/pull/5882",
+          "title": "Add support for hook filters",
+          "prId": 5882
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5471",
+          "title": "Add linux arm musl build",
+          "prId": 5471
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5445",
+          "title": "docs: add <code>@shikiji/vitepress-twoslash</code>",
+          "prId": 5445
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5404",
+          "title": "fix: escape ids in <code>import.meta.ROLLUP_FILE_URL_referenceId</code> correctly",
+          "prId": 5404
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5284",
+          "title": "Add friendly error for missing MSVC redistributable",
+          "prId": 5284
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5267",
+          "title": "Add friendly error for npm bug",
+          "prId": 5267
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5207",
+          "title": "perf: run lint while constructing nodes",
+          "prId": 5207
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5204",
+          "title": "perf: shrink wasm size by avoid importing browserslist",
+          "prId": 5204
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5202",
+          "title": "perf: introduce <code>parseAstAsync</code> and parallelize parsing AST",
+          "prId": 5202
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5072",
+          "title": "Add known globals",
+          "prId": 5072
         }
       ]
     ],
     [
       "vitejs/vite",
       [
+        {
+          "url": "https://github.com/vitejs/vite/pull/19678",
+          "title": "fix(css): scoped css order with non-scoped css",
+          "prId": 19678
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/19602",
+          "title": "feat: implement hook filters",
+          "prId": 19602
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/19557",
+          "title": "feat(types): expose <code>CustomPluginOptionsVite</code> type",
+          "prId": 19557
+        },
         {
           "url": "https://github.com/vitejs/vite/pull/19418",
           "title": "feat(css): allow scoping css to importers exports",
@@ -209,6 +389,11 @@
           "prId": 19234
         },
         {
+          "url": "https://github.com/vitejs/vite/pull/19071",
+          "title": "feat(css): support preprocessor with lightningcss",
+          "prId": 19071
+        },
+        {
           "url": "https://github.com/vitejs/vite/pull/19016",
           "title": "fix: skip the plugin if it has been called before with the same id and importer",
           "prId": 19016
@@ -217,6 +402,11 @@
           "url": "https://github.com/vitejs/vite/pull/18979",
           "title": "fix(hmr): register inlined assets as a dependency of CSS file",
           "prId": 18979
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/18971",
+          "title": "fix(sourcemap): combine sourcemaps with multiple sources without matched source",
+          "prId": 18971
         },
         {
           "url": "https://github.com/vitejs/vite/pull/18922",
@@ -556,6 +746,116 @@
       ]
     ],
     [
+      "rolldown/rolldown",
+      [
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/3954",
+          "title": "test: hook filter tests",
+          "prId": 3954
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/3802",
+          "title": "feat(node): split interface for PluginContext types",
+          "prId": 3802
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/3103",
+          "title": "feat(plugin/json): support <code>stringify: 'auto'</code>",
+          "prId": 3103
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/3040",
+          "title": "feat(plugin/vite-resolve): implement fileUrl properly",
+          "prId": 3040
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/3039",
+          "title": "feat(plugin/vite-resolve): support Regex in noExternal",
+          "prId": 3039
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/3024",
+          "title": "feat: <code>names</code> / <code>originalFileNames</code> support",
+          "prId": 3024
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/2988",
+          "title": "perf: use fxhash for <code>HashMap</code>s",
+          "prId": 2988
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/2970",
+          "title": "refactor(plugin/vite-resolve): use oxc-resolver to resolve optional peer dep value from package.json",
+          "prId": 2970
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/2869",
+          "title": "feat(plugin/vite-resolve): implement more logics for <code>createIdResolver</code>",
+          "prId": 2869
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/2739",
+          "title": "feat: vite-resolve-plugin dev support",
+          "prId": 2739
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/2658",
+          "title": "feat: implement vite resolve plugin",
+          "prId": 2658
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/825",
+          "title": "feat: support running Js plugin in parallel via Worker",
+          "prId": 825
+        }
+      ]
+    ],
+    [
+      "vitest-dev/vitest",
+      [
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/7613",
+          "title": "chore: remove hijackVitePluginInject",
+          "prId": 7613
+        },
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/3236",
+          "title": "chore: replace source-map with trace-mapping",
+          "prId": 3236
+        },
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/1348",
+          "title": "fix: handle error from pool.run",
+          "prId": 1348
+        },
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/878",
+          "title": "fix: passing non array to reporters option did not effect",
+          "prId": 878
+        },
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/876",
+          "title": "fix: unhandled error handler",
+          "prId": 876
+        },
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/875",
+          "title": "fix: handle error during global setup",
+          "prId": 875
+        }
+      ]
+    ],
+    [
+      "antfu/vscode-pnpm-catalog-lens",
+      [
+        {
+          "url": "https://github.com/antfu/vscode-pnpm-catalog-lens/pull/9",
+          "title": "feat: jump to workspace file with built-in go-to-definition feature",
+          "prId": 9
+        }
+      ]
+    ],
+    [
       "vuejs/vitepress",
       [
         {
@@ -661,61 +961,6 @@
       ]
     ],
     [
-      "rolldown/rolldown",
-      [
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/3103",
-          "title": "feat(plugin/json): support <code>stringify: 'auto'</code>",
-          "prId": 3103
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/3040",
-          "title": "feat(plugin/vite-resolve): implement fileUrl properly",
-          "prId": 3040
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/3039",
-          "title": "feat(plugin/vite-resolve): support Regex in noExternal",
-          "prId": 3039
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/3024",
-          "title": "feat: <code>names</code> / <code>originalFileNames</code> support",
-          "prId": 3024
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/2988",
-          "title": "perf: use fxhash for <code>HashMap</code>s",
-          "prId": 2988
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/2970",
-          "title": "refactor(plugin/vite-resolve): use oxc-resolver to resolve optional peer dep value from package.json",
-          "prId": 2970
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/2869",
-          "title": "feat(plugin/vite-resolve): implement more logics for <code>createIdResolver</code>",
-          "prId": 2869
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/2739",
-          "title": "feat: vite-resolve-plugin dev support",
-          "prId": 2739
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/2658",
-          "title": "feat: implement vite resolve plugin",
-          "prId": 2658
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/825",
-          "title": "feat: support running Js plugin in parallel via Worker",
-          "prId": 825
-        }
-      ]
-    ],
-    [
       "napi-rs/napi-rs",
       [
         {
@@ -792,56 +1037,6 @@
           "url": "https://github.com/aquaproj/aqua/pull/2902",
           "title": "fix(info): mask username on Windows",
           "prId": 2902
-        }
-      ]
-    ],
-    [
-      "rollup/rollup",
-      [
-        {
-          "url": "https://github.com/rollup/rollup/pull/5471",
-          "title": "Add linux arm musl build",
-          "prId": 5471
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5445",
-          "title": "docs: add <code>@shikiji/vitepress-twoslash</code>",
-          "prId": 5445
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5404",
-          "title": "fix: escape ids in <code>import.meta.ROLLUP_FILE_URL_referenceId</code> correctly",
-          "prId": 5404
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5284",
-          "title": "Add friendly error for missing MSVC redistributable",
-          "prId": 5284
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5267",
-          "title": "Add friendly error for npm bug",
-          "prId": 5267
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5207",
-          "title": "perf: run lint while constructing nodes",
-          "prId": 5207
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5204",
-          "title": "perf: shrink wasm size by avoid importing browserslist",
-          "prId": 5204
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5202",
-          "title": "perf: introduce <code>parseAstAsync</code> and parallelize parsing AST",
-          "prId": 5202
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5072",
-          "title": "Add known globals",
-          "prId": 5072
         }
       ]
     ],
@@ -1037,36 +1232,6 @@
           "url": "https://github.com/antfu-collective/taze/pull/65",
           "title": "feat: support aliased deps (<code>npm:</code>)",
           "prId": 65
-        }
-      ]
-    ],
-    [
-      "vitest-dev/vitest",
-      [
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/3236",
-          "title": "chore: replace source-map with trace-mapping",
-          "prId": 3236
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/1348",
-          "title": "fix: handle error from pool.run",
-          "prId": 1348
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/878",
-          "title": "fix: passing non array to reporters option did not effect",
-          "prId": 878
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/876",
-          "title": "fix: unhandled error handler",
-          "prId": 876
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/875",
-          "title": "fix: handle error during global setup",
-          "prId": 875
         }
       ]
     ],
@@ -1381,5 +1546,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2025-03-01T09:44:33Z"
+  "fetchedAt": "2025-04-01T08:59:25Z"
 }
