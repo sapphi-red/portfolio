@@ -25,9 +25,12 @@ export const ignorePRs = new Set([
   'https://github.com/vitejs/vite/pull/15093',
   'https://github.com/vitejs/vite/pull/18818',
   'https://github.com/vitejs/vite/pull/18927',
+  'https://github.com/vitejs/vite/pull/18971',
   'https://github.com/vitejs/vite/pull/19061',
   'https://github.com/vitejs/vite/pull/19235',
   'https://github.com/vitejs/vite/pull/19236',
+  'https://github.com/vitejs/vite/pull/19557',
+  'https://github.com/vitejs/vite/pull/19678',
   'https://github.com/vitejs/vite-ecosystem-ci/pull/256',
   'https://github.com/vitejs/vite-ecosystem-ci/pull/261',
   'https://github.com/madyankin/postcss-modules/pull/134',
@@ -45,16 +48,19 @@ export const ignorePRs = new Set([
   'https://github.com/unocss/unocss/pull/2662',
   'https://github.com/kaz/pprotein/pull/35',
   'https://github.com/vite-pwa/vite-plugin-pwa/pull/590',
+  'https://github.com/vite-pwa/vite-plugin-pwa/pull/843',
   'https://github.com/rolldown/rolldown/pull/986',
   'https://github.com/antfu-collective/vite-ssg/pull/399',
   'https://github.com/napi-rs/napi-rs/pull/2020',
   'https://github.com/napi-rs/napi-rs/pull/2382',
   'https://github.com/vitest-dev/vitest/pull/6896',
+  'https://github.com/vitest-dev/vitest/pull/7613',
   'https://github.com/rolldown/rolldown/pull/2688',
   'https://github.com/rolldown/rolldown/pull/2907',
   'https://github.com/rolldown/rolldown/pull/2917',
   'https://github.com/rolldown/rolldown/pull/2971',
   'https://github.com/rolldown/rolldown/pull/3431',
+  'https://github.com/rolldown/rolldown/pull/3802',
   'https://github.com/oxc-project/oxc/pull/8175',
   'https://github.com/oxc-project/oxc/pull/8729',
   'https://github.com/oxc-project/oxc/pull/8768',
@@ -80,8 +86,17 @@ export const ignorePRs = new Set([
   'https://github.com/oxc-project/oxc/pull/9366',
   'https://github.com/oxc-project/oxc/pull/9413',
   'https://github.com/oxc-project/oxc/pull/9427',
+  'https://github.com/oxc-project/oxc/pull/9467',
+  'https://github.com/oxc-project/oxc/pull/9468',
+  'https://github.com/oxc-project/oxc/pull/9512',
+  'https://github.com/oxc-project/oxc/pull/9539',
+  'https://github.com/oxc-project/oxc/pull/9540',
+  'https://github.com/oxc-project/oxc/pull/9543',
+  'https://github.com/oxc-project/oxc/pull/10126',
   'https://github.com/vuejs/vitepress/pull/4505',
-  'https://github.com/withastro/astro/pull/13076'
+  'https://github.com/withastro/astro/pull/13076',
+  'https://github.com/vitejs/vite-plugin-react/pull/435',
+  'https://github.com/vitejs/rolldown-vite/pull/94'
 ])
 
 export const forcedPrs = new Set([
@@ -98,6 +113,7 @@ export const forcedPrs = new Set([
 
 export const lineChangeThresholds = {
   'vitejs/vite': 80,
+  'vitejs/rolldown-vite': 80,
   'vitejs/vite-plugin-vue': 80,
   'vitejs/vite-plugin-react': 80,
 
