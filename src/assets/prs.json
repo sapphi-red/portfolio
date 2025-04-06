@@ -4,11 +4,6 @@
       "vitejs/vite-plugin-react",
       [
         {
-          "url": "https://github.com/vitejs/vite-plugin-react/pull/435",
-          "title": "chore: move to eslint flat config",
-          "prId": 435
-        },
-        {
           "url": "https://github.com/vitejs/vite-plugin-react/pull/432",
           "title": "chore: pull in changes from vite core repo",
           "prId": 432
@@ -17,286 +12,6 @@
           "url": "https://github.com/vitejs/vite-plugin-react/pull/423",
           "title": "refactor: merge vite plugin react swc in",
           "prId": 423
-        }
-      ]
-    ],
-    [
-      "vitejs/rolldown-vite",
-      [
-        {
-          "url": "https://github.com/vitejs/rolldown-vite/pull/94",
-          "title": "fix: accept worker iife format",
-          "prId": 94
-        }
-      ]
-    ],
-    [
-      "oxc-project/oxc",
-      [
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/10126",
-          "title": "refactor(ecmascript)!: introduce MayHaveSideEffectsContext",
-          "prId": 10126
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/9898",
-          "title": "feat(mangler): support <code>keep_names</code> option",
-          "prId": 9898
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/9897",
-          "title": "feat(mangler): collect symbols that is used to set <code>name</code> property",
-          "prId": 9897
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/9867",
-          "title": "feat(minifier): support <code>keep_names</code> option",
-          "prId": 9867
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/9604",
-          "title": "feat(minifier): compress constant integer index access",
-          "prId": 9604
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/9603",
-          "title": "feat(ecmascript): support integer index access for array and string in <code>may_have_side_effects</code>",
-          "prId": 9603
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/9594",
-          "title": "feat(minifier): allow compressing computed constructor/prototype keys precisely",
-          "prId": 9594
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/9563",
-          "title": "fix(minifier): keep indirect access for <code>delete</code> and <code>typeof</code>",
-          "prId": 9563
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/9562",
-          "title": "feat(minifier): keep indirect access more precisely",
-          "prId": 9562
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/9543",
-          "title": "test(minifier): enable some tests in minimize_conditions",
-          "prId": 9543
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/9540",
-          "title": "test(minifier): enable some esbuild tests",
-          "prId": 9540
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/9539",
-          "title": "feat(minifier): merge throw statements at the end",
-          "prId": 9539
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/9512",
-          "title": "feat(minifier): flatten spread args in new expressions",
-          "prId": 9512
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/9468",
-          "title": "refactor(minifier): move <code>a != null &amp;&amp; b</code> -&gt; <code>a ?? b</code> compression to <code>remove_unused_expression</code>",
-          "prId": 9468
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/9467",
-          "title": "feat(minifier): use <code>remove_unused_expression</code> in <code>try_fold_sequence_expression</code> in <code>remove_dead_code</code>",
-          "prId": 9467
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/9463",
-          "title": "feat(minifier): support extracting arguments in pure calls in <code>remove_unused_expression</code>",
-          "prId": 9463
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/9456",
-          "title": "feat(minifier): support binary expression in <code>remove_unused_expression</code>",
-          "prId": 9456
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/9432",
-          "title": "feat(minifier): support conditional expression in <code>remove_unused_expression</code>",
-          "prId": 9432
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/9430",
-          "title": "feat(minifier): support object expression in <code>remove_unused_expression</code>",
-          "prId": 9430
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/9426",
-          "title": "feat(minifier): support template literals in <code>remove_unused_expression</code>",
-          "prId": 9426
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/9355",
-          "title": "feat(minifier): concatenate strings with template literals",
-          "prId": 9355
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/9201",
-          "title": "feat(minifier): inline constant values in template literals",
-          "prId": 9201
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/9121",
-          "title": "feat(ecmascript): support more string concatenation",
-          "prId": 9121
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8991",
-          "title": "fix(ecmascript): fix may_have_side_effects for binary expressions",
-          "prId": 8991
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8989",
-          "title": "fix(ecmascript): fix may_have_side_effects for unary expressions",
-          "prId": 8989
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8957",
-          "title": "feat(minifier): remove unnecessary unary <code>+</code> inside numeric binary operators",
-          "prId": 8957
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8956",
-          "title": "fix(ecmascript): fix <code>ValueType::from</code> for numeric binary operators",
-          "prId": 8956
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8951",
-          "title": "test(ecmascript): add test for <code>ValueType</code> and update document",
-          "prId": 8951
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8855",
-          "title": "feat(ecmascript): complete may_have_side_effects",
-          "prId": 8855
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8839",
-          "title": "feat(codegen): prefer backquotes over double / single quotes",
-          "prId": 8839
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8823",
-          "title": "feat(minifier): compress <code>(a = _a) != null ? a : b</code> and <code>(a = _a) != null ? a.b() : undefined</code>",
-          "prId": 8823
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8812",
-          "title": "feat(minifier): merge single var declarations without init into for-in",
-          "prId": 8812
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8802",
-          "title": "feat(minifier): compress <code>a != null ? a.b : undefined</code> to <code>a?.b</code>",
-          "prId": 8802
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8801",
-          "title": "feat(minifier): compress <code>a != null ? a : b</code> into <code>a ?? b</code>",
-          "prId": 8801
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8786",
-          "title": "feat(minifier): compress array of string literals to <code>'str1,str2'.split(',')</code>",
-          "prId": 8786
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8771",
-          "title": "feat(mangler): use characters in the order of their likely frequency",
-          "prId": 8771
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8749",
-          "title": "feat(minifier): compress <code>a == null &amp;&amp; b</code> to <code>a ?? b</code> when return value is ignored",
-          "prId": 8749
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8733",
-          "title": "feat(minifier): replace <code>const</code> with <code>let</code> for non-exported read-only variables",
-          "prId": 8733
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8682",
-          "title": "feat(minifier): replace <code>Number.*_SAFE_INTEGER</code>/<code>Number.EPSILON</code>",
-          "prId": 8682
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8638",
-          "title": "feat(minifier): compress <code>typeof foo === 'object' &amp;&amp; foo !== null</code> to <code>typeof foo == 'object' &amp;&amp; !!foo</code>",
-          "prId": 8638
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8637",
-          "title": "feat(minifier): compress <code>(a = b) === null || a === undefined</code> to <code>(a = b) == null</code>",
-          "prId": 8637
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8562",
-          "title": "feat(mangler): reuse variable names",
-          "prId": 8562
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8443",
-          "title": "feat(minifier): minify <code>String::concat</code> into template literal",
-          "prId": 8443
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8442",
-          "title": "feat(minifier): fold <code>Array::concat</code> into literal",
-          "prId": 8442
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8440",
-          "title": "feat(minifier): fold array concat chaining",
-          "prId": 8440
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8367",
-          "title": "feat(minifier): compress <code>a.b = a.b + c</code> to <code>a.b += c</code>",
-          "prId": 8367
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8345",
-          "title": "feat(minifier): merge assign expression in conditional expression",
-          "prId": 8345
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8315",
-          "title": "feat(minifier): compress <code>a || (a = b)</code> to <code>a ||= b</code>",
-          "prId": 8315
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8314",
-          "title": "feat(minifier): compress <code>a = a + b</code> to <code>a += b</code>",
-          "prId": 8314
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/8063",
-          "title": "feat(minifier): fold <code>foo === undefined || foo === null</code>",
-          "prId": 8063
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/7908",
-          "title": "feat(minifier): fold bitwise operation",
-          "prId": 7908
-        }
-      ]
-    ],
-    [
-      "vite-pwa/vite-plugin-pwa",
-      [
-        {
-          "url": "https://github.com/vite-pwa/vite-plugin-pwa/pull/843",
-          "title": "fix: avoid assigning to bundle object",
-          "prId": 843
         }
       ]
     ],
@@ -359,19 +74,9 @@
       "vitejs/vite",
       [
         {
-          "url": "https://github.com/vitejs/vite/pull/19678",
-          "title": "fix(css): scoped css order with non-scoped css",
-          "prId": 19678
-        },
-        {
           "url": "https://github.com/vitejs/vite/pull/19602",
           "title": "feat: implement hook filters",
           "prId": 19602
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/19557",
-          "title": "feat(types): expose <code>CustomPluginOptionsVite</code> type",
-          "prId": 19557
         },
         {
           "url": "https://github.com/vitejs/vite/pull/19418",
@@ -402,11 +107,6 @@
           "url": "https://github.com/vitejs/vite/pull/18979",
           "title": "fix(hmr): register inlined assets as a dependency of CSS file",
           "prId": 18979
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/18971",
-          "title": "fix(sourcemap): combine sourcemaps with multiple sources without matched source",
-          "prId": 18971
         },
         {
           "url": "https://github.com/vitejs/vite/pull/18922",
@@ -754,11 +454,6 @@
           "prId": 3954
         },
         {
-          "url": "https://github.com/rolldown/rolldown/pull/3802",
-          "title": "feat(node): split interface for PluginContext types",
-          "prId": 3802
-        },
-        {
           "url": "https://github.com/rolldown/rolldown/pull/3103",
           "title": "feat(plugin/json): support <code>stringify: 'auto'</code>",
           "prId": 3103
@@ -811,37 +506,227 @@
       ]
     ],
     [
-      "vitest-dev/vitest",
+      "oxc-project/oxc",
       [
         {
-          "url": "https://github.com/vitest-dev/vitest/pull/7613",
-          "title": "chore: remove hijackVitePluginInject",
-          "prId": 7613
+          "url": "https://github.com/oxc-project/oxc/pull/9898",
+          "title": "feat(mangler): support <code>keep_names</code> option",
+          "prId": 9898
         },
         {
-          "url": "https://github.com/vitest-dev/vitest/pull/3236",
-          "title": "chore: replace source-map with trace-mapping",
-          "prId": 3236
+          "url": "https://github.com/oxc-project/oxc/pull/9897",
+          "title": "feat(mangler): collect symbols that is used to set <code>name</code> property",
+          "prId": 9897
         },
         {
-          "url": "https://github.com/vitest-dev/vitest/pull/1348",
-          "title": "fix: handle error from pool.run",
-          "prId": 1348
+          "url": "https://github.com/oxc-project/oxc/pull/9867",
+          "title": "feat(minifier): support <code>keep_names</code> option",
+          "prId": 9867
         },
         {
-          "url": "https://github.com/vitest-dev/vitest/pull/878",
-          "title": "fix: passing non array to reporters option did not effect",
-          "prId": 878
+          "url": "https://github.com/oxc-project/oxc/pull/9604",
+          "title": "feat(minifier): compress constant integer index access",
+          "prId": 9604
         },
         {
-          "url": "https://github.com/vitest-dev/vitest/pull/876",
-          "title": "fix: unhandled error handler",
-          "prId": 876
+          "url": "https://github.com/oxc-project/oxc/pull/9603",
+          "title": "feat(ecmascript): support integer index access for array and string in <code>may_have_side_effects</code>",
+          "prId": 9603
         },
         {
-          "url": "https://github.com/vitest-dev/vitest/pull/875",
-          "title": "fix: handle error during global setup",
-          "prId": 875
+          "url": "https://github.com/oxc-project/oxc/pull/9594",
+          "title": "feat(minifier): allow compressing computed constructor/prototype keys precisely",
+          "prId": 9594
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9563",
+          "title": "fix(minifier): keep indirect access for <code>delete</code> and <code>typeof</code>",
+          "prId": 9563
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9562",
+          "title": "feat(minifier): keep indirect access more precisely",
+          "prId": 9562
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9463",
+          "title": "feat(minifier): support extracting arguments in pure calls in <code>remove_unused_expression</code>",
+          "prId": 9463
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9456",
+          "title": "feat(minifier): support binary expression in <code>remove_unused_expression</code>",
+          "prId": 9456
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9432",
+          "title": "feat(minifier): support conditional expression in <code>remove_unused_expression</code>",
+          "prId": 9432
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9430",
+          "title": "feat(minifier): support object expression in <code>remove_unused_expression</code>",
+          "prId": 9430
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9426",
+          "title": "feat(minifier): support template literals in <code>remove_unused_expression</code>",
+          "prId": 9426
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9355",
+          "title": "feat(minifier): concatenate strings with template literals",
+          "prId": 9355
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9201",
+          "title": "feat(minifier): inline constant values in template literals",
+          "prId": 9201
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/9121",
+          "title": "feat(ecmascript): support more string concatenation",
+          "prId": 9121
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8991",
+          "title": "fix(ecmascript): fix may_have_side_effects for binary expressions",
+          "prId": 8991
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8989",
+          "title": "fix(ecmascript): fix may_have_side_effects for unary expressions",
+          "prId": 8989
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8957",
+          "title": "feat(minifier): remove unnecessary unary <code>+</code> inside numeric binary operators",
+          "prId": 8957
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8956",
+          "title": "fix(ecmascript): fix <code>ValueType::from</code> for numeric binary operators",
+          "prId": 8956
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8951",
+          "title": "test(ecmascript): add test for <code>ValueType</code> and update document",
+          "prId": 8951
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8855",
+          "title": "feat(ecmascript): complete may_have_side_effects",
+          "prId": 8855
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8839",
+          "title": "feat(codegen): prefer backquotes over double / single quotes",
+          "prId": 8839
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8823",
+          "title": "feat(minifier): compress <code>(a = _a) != null ? a : b</code> and <code>(a = _a) != null ? a.b() : undefined</code>",
+          "prId": 8823
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8812",
+          "title": "feat(minifier): merge single var declarations without init into for-in",
+          "prId": 8812
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8802",
+          "title": "feat(minifier): compress <code>a != null ? a.b : undefined</code> to <code>a?.b</code>",
+          "prId": 8802
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8801",
+          "title": "feat(minifier): compress <code>a != null ? a : b</code> into <code>a ?? b</code>",
+          "prId": 8801
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8786",
+          "title": "feat(minifier): compress array of string literals to <code>'str1,str2'.split(',')</code>",
+          "prId": 8786
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8771",
+          "title": "feat(mangler): use characters in the order of their likely frequency",
+          "prId": 8771
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8749",
+          "title": "feat(minifier): compress <code>a == null &amp;&amp; b</code> to <code>a ?? b</code> when return value is ignored",
+          "prId": 8749
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8733",
+          "title": "feat(minifier): replace <code>const</code> with <code>let</code> for non-exported read-only variables",
+          "prId": 8733
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8682",
+          "title": "feat(minifier): replace <code>Number.*_SAFE_INTEGER</code>/<code>Number.EPSILON</code>",
+          "prId": 8682
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8638",
+          "title": "feat(minifier): compress <code>typeof foo === 'object' &amp;&amp; foo !== null</code> to <code>typeof foo == 'object' &amp;&amp; !!foo</code>",
+          "prId": 8638
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8637",
+          "title": "feat(minifier): compress <code>(a = b) === null || a === undefined</code> to <code>(a = b) == null</code>",
+          "prId": 8637
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8562",
+          "title": "feat(mangler): reuse variable names",
+          "prId": 8562
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8443",
+          "title": "feat(minifier): minify <code>String::concat</code> into template literal",
+          "prId": 8443
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8442",
+          "title": "feat(minifier): fold <code>Array::concat</code> into literal",
+          "prId": 8442
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8440",
+          "title": "feat(minifier): fold array concat chaining",
+          "prId": 8440
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8367",
+          "title": "feat(minifier): compress <code>a.b = a.b + c</code> to <code>a.b += c</code>",
+          "prId": 8367
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8345",
+          "title": "feat(minifier): merge assign expression in conditional expression",
+          "prId": 8345
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8315",
+          "title": "feat(minifier): compress <code>a || (a = b)</code> to <code>a ||= b</code>",
+          "prId": 8315
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8314",
+          "title": "feat(minifier): compress <code>a = a + b</code> to <code>a += b</code>",
+          "prId": 8314
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/8063",
+          "title": "feat(minifier): fold <code>foo === undefined || foo === null</code>",
+          "prId": 8063
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/7908",
+          "title": "feat(minifier): fold bitwise operation",
+          "prId": 7908
         }
       ]
     ],
@@ -1232,6 +1117,36 @@
           "url": "https://github.com/antfu-collective/taze/pull/65",
           "title": "feat: support aliased deps (<code>npm:</code>)",
           "prId": 65
+        }
+      ]
+    ],
+    [
+      "vitest-dev/vitest",
+      [
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/3236",
+          "title": "chore: replace source-map with trace-mapping",
+          "prId": 3236
+        },
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/1348",
+          "title": "fix: handle error from pool.run",
+          "prId": 1348
+        },
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/878",
+          "title": "fix: passing non array to reporters option did not effect",
+          "prId": 878
+        },
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/876",
+          "title": "fix: unhandled error handler",
+          "prId": 876
+        },
+        {
+          "url": "https://github.com/vitest-dev/vitest/pull/875",
+          "title": "fix: handle error during global setup",
+          "prId": 875
         }
       ]
     ],
