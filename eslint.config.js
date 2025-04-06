@@ -3,11 +3,13 @@ import tseslint from 'typescript-eslint'
 import eslintConfigPrettier from 'eslint-config-prettier'
 import vue from 'eslint-plugin-vue'
 import toml from 'eslint-plugin-toml'
+import globals from 'globals'
 
 export default tseslint.config(
   {
     languageOptions: {
-      sourceType: 'module'
+      sourceType: 'module',
+      globals: { ...globals.browser }
     },
     linterOptions: {
       reportUnusedDisableDirectives: 'error'
