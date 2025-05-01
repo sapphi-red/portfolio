@@ -1,78 +1,83 @@
 {
   "repos": [
     [
-      "vitejs/vite-plugin-react",
+      "vitejs/rolldown-vite",
       [
         {
-          "url": "https://github.com/vitejs/vite-plugin-react/pull/432",
-          "title": "chore: pull in changes from vite core repo",
-          "prId": 432
+          "url": "https://github.com/vitejs/rolldown-vite/pull/135",
+          "title": "feat: add backward compat and warning for esbuild.banner/footer",
+          "prId": 135
         },
         {
-          "url": "https://github.com/vitejs/vite-plugin-react/pull/423",
-          "title": "refactor: merge vite plugin react swc in",
-          "prId": 423
-        }
-      ]
-    ],
-    [
-      "rollup/rollup",
-      [
-        {
-          "url": "https://github.com/rollup/rollup/pull/5882",
-          "title": "Add support for hook filters",
-          "prId": 5882
+          "url": "https://github.com/vitejs/rolldown-vite/pull/96",
+          "title": "feat: update rolldown",
+          "prId": 96
         },
         {
-          "url": "https://github.com/rollup/rollup/pull/5471",
-          "title": "Add linux arm musl build",
-          "prId": 5471
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5445",
-          "title": "docs: add <code>@shikiji/vitepress-twoslash</code>",
-          "prId": 5445
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5404",
-          "title": "fix: escape ids in <code>import.meta.ROLLUP_FILE_URL_referenceId</code> correctly",
-          "prId": 5404
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5284",
-          "title": "Add friendly error for missing MSVC redistributable",
-          "prId": 5284
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5267",
-          "title": "Add friendly error for npm bug",
-          "prId": 5267
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5207",
-          "title": "perf: run lint while constructing nodes",
-          "prId": 5207
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5204",
-          "title": "perf: shrink wasm size by avoid importing browserslist",
-          "prId": 5204
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5202",
-          "title": "perf: introduce <code>parseAstAsync</code> and parallelize parsing AST",
-          "prId": 5202
-        },
-        {
-          "url": "https://github.com/rollup/rollup/pull/5072",
-          "title": "Add known globals",
-          "prId": 5072
+          "url": "https://github.com/vitejs/rolldown-vite/pull/67",
+          "title": "feat: use Rolldown's watch API",
+          "prId": 67
         }
       ]
     ],
     [
       "vitejs/vite",
       [
+        {
+          "url": "https://github.com/vitejs/vite/pull/19967",
+          "title": "fix: backport #19965, check static serve file inside sirv",
+          "prId": 19967
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/19966",
+          "title": "fix: backport #19965, check static serve file inside sirv",
+          "prId": 19966
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/19965",
+          "title": "fix: check static serve file inside sirv",
+          "prId": 19965
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/19870",
+          "title": "fix(hmr): avoid infinite loop happening with <code>hot.invalidate</code> in circular deps",
+          "prId": 19870
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/19863",
+          "title": "docs(static-deploy): extract github workflow file for renovate",
+          "prId": 19863
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/19832",
+          "title": "fix: backport #19830, reject requests with <code>#</code> in request-target",
+          "prId": 19832
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/19831",
+          "title": "fix: backport #19830, reject requests with <code>#</code> in request-target",
+          "prId": 19831
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/19830",
+          "title": "fix: reject requests with <code>#</code> in request-target",
+          "prId": 19830
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/19818",
+          "title": "fix: correct the behavior when multiple transform filter options are specified",
+          "prId": 19818
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/19793",
+          "title": "fix(hmr): run HMR handler sequentially",
+          "prId": 19793
+        },
+        {
+          "url": "https://github.com/vitejs/vite/pull/19759",
+          "title": "docs: plugin authors guide for rolldown-vite",
+          "prId": 19759
+        },
         {
           "url": "https://github.com/vitejs/vite/pull/19602",
           "title": "feat: implement hook filters",
@@ -449,6 +454,26 @@
       "rolldown/rolldown",
       [
         {
+          "url": "https://github.com/rolldown/rolldown/pull/4355",
+          "title": "fix: consolidate log related types",
+          "prId": 4355
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/4270",
+          "title": "fix(plugin/vite-resolve): external was serialized incorrectly",
+          "prId": 4270
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/4269",
+          "title": "feat(plugin/vite-resolve): port changes after Vite 6",
+          "prId": 4269
+        },
+        {
+          "url": "https://github.com/rolldown/rolldown/pull/4265",
+          "title": "docs: add performance guide",
+          "prId": 4265
+        },
+        {
           "url": "https://github.com/rolldown/rolldown/pull/3954",
           "title": "test: hook filter tests",
           "prId": 3954
@@ -506,8 +531,178 @@
       ]
     ],
     [
+      "vitejs/vite-plugin-vue",
+      [
+        {
+          "url": "https://github.com/vitejs/vite-plugin-vue/pull/575",
+          "title": "chore: remove unused deps",
+          "prId": 575
+        }
+      ]
+    ],
+    [
+      "DefinitelyTyped/DefinitelyTyped",
+      [
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/72097",
+          "title": "[node] buffer: allow <code>ArrayBuffer | string</code> to be passed to <code>Buffer.from</code>",
+          "prId": 72097
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/63573",
+          "title": "update convert-source-map to v2",
+          "prId": 63573
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/58609",
+          "title": "pica: updated to v9",
+          "prId": 58609
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/57684",
+          "title": "[styled-components] Fix union type of props being lost",
+          "prId": 57684
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/40647",
+          "title": "Update KaTeX to v0.11.1",
+          "prId": 40647
+        }
+      ]
+    ],
+    [
+      "oxc-project/oxc-resolver",
+      [
+        {
+          "url": "https://github.com/oxc-project/oxc-resolver/pull/463",
+          "title": "fix: handle package.json and tsconfig.json with BOM",
+          "prId": 463
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc-resolver/pull/345",
+          "title": "fix: normalize resolved result on Windows for root",
+          "prId": 345
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc-resolver/pull/310",
+          "title": "fix: don't panic when resolving <code>/</code> with <code>roots</code>",
+          "prId": 310
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc-resolver/pull/306",
+          "title": "fix: use same UNC path normalization logic with libuv",
+          "prId": 306
+        }
+      ]
+    ],
+    [
+      "vitejs/vite-ecosystem-ci",
+      [
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/379",
+          "title": "feat: run with rolldown-vite regularly",
+          "prId": 379
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/139",
+          "title": "feat: group command output in GitHub Actions",
+          "prId": 139
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/122",
+          "title": "feat: run from PR comment",
+          "prId": 122
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/120",
+          "title": "feat: vite repo",
+          "prId": 120
+        },
+        {
+          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/102",
+          "title": "Custom discord integration ",
+          "prId": 102
+        }
+      ]
+    ],
+    [
+      "publint/publint",
+      [
+        {
+          "url": "https://github.com/publint/publint/pull/180",
+          "title": "Support warning fallback arrays in exports / imports",
+          "prId": 180
+        }
+      ]
+    ],
+    [
+      "vitejs/vite-plugin-react",
+      [
+        {
+          "url": "https://github.com/vitejs/vite-plugin-react/pull/443",
+          "title": "refactor: extract common code in common package",
+          "prId": 443
+        },
+        {
+          "url": "https://github.com/vitejs/vite-plugin-react/pull/441",
+          "title": "chore: align test setup with core",
+          "prId": 441
+        },
+        {
+          "url": "https://github.com/vitejs/vite-plugin-react/pull/439",
+          "title": "feat: add plugin-react-oxc",
+          "prId": 439
+        },
+        {
+          "url": "https://github.com/vitejs/vite-plugin-react/pull/432",
+          "title": "chore: pull in changes from vite core repo",
+          "prId": 432
+        },
+        {
+          "url": "https://github.com/vitejs/vite-plugin-react/pull/431",
+          "title": "chore: align package.json",
+          "prId": 431
+        },
+        {
+          "url": "https://github.com/vitejs/vite-plugin-react/pull/423",
+          "title": "refactor: merge vite plugin react swc in",
+          "prId": 423
+        }
+      ]
+    ],
+    [
+      "vitejs/vite-plugin-react-swc",
+      [
+        {
+          "url": "https://github.com/vitejs/vite-plugin-react-swc/pull/273",
+          "title": "chore: update README to add &quot;moved&quot; note",
+          "prId": 273
+        }
+      ]
+    ],
+    [
       "oxc-project/oxc",
       [
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/10262",
+          "title": "chore(tasks/e2e): separate e2e package from workspace",
+          "prId": 10262
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/10190",
+          "title": "feat(tasks/e2e): add graphics libraries",
+          "prId": 10190
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/10189",
+          "title": "feat(tasks/e2e): add utility libraries",
+          "prId": 10189
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc/pull/10188",
+          "title": "feat(tasks/e2e): add bundled frameworks",
+          "prId": 10188
+        },
         {
           "url": "https://github.com/oxc-project/oxc/pull/9898",
           "title": "feat(mangler): support <code>keep_names</code> option",
@@ -731,6 +926,91 @@
       ]
     ],
     [
+      "parcel-bundler/lightningcss",
+      [
+        {
+          "url": "https://github.com/parcel-bundler/lightningcss/pull/878",
+          "title": "Skip generating unnecessary <code>@supports</code>",
+          "prId": 878
+        },
+        {
+          "url": "https://github.com/parcel-bundler/lightningcss/pull/875",
+          "title": "Call StyleSheet / StyleSheetExit / Rule.custom.* in visitors passed to composeVisitors",
+          "prId": 875
+        }
+      ]
+    ],
+    [
+      "marko-js/vite",
+      [
+        {
+          "url": "https://github.com/marko-js/vite/pull/197",
+          "title": "fix: update options.input in options hook",
+          "prId": 197
+        },
+        {
+          "url": "https://github.com/marko-js/vite/pull/157",
+          "title": "chore: set <code>build.assetsInlineLimit: 0</code> for SSR tests in dev",
+          "prId": 157
+        }
+      ]
+    ],
+    [
+      "rollup/rollup",
+      [
+        {
+          "url": "https://github.com/rollup/rollup/pull/5882",
+          "title": "Add support for hook filters",
+          "prId": 5882
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5471",
+          "title": "Add linux arm musl build",
+          "prId": 5471
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5445",
+          "title": "docs: add <code>@shikiji/vitepress-twoslash</code>",
+          "prId": 5445
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5404",
+          "title": "fix: escape ids in <code>import.meta.ROLLUP_FILE_URL_referenceId</code> correctly",
+          "prId": 5404
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5284",
+          "title": "Add friendly error for missing MSVC redistributable",
+          "prId": 5284
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5267",
+          "title": "Add friendly error for npm bug",
+          "prId": 5267
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5207",
+          "title": "perf: run lint while constructing nodes",
+          "prId": 5207
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5204",
+          "title": "perf: shrink wasm size by avoid importing browserslist",
+          "prId": 5204
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5202",
+          "title": "perf: introduce <code>parseAstAsync</code> and parallelize parsing AST",
+          "prId": 5202
+        },
+        {
+          "url": "https://github.com/rollup/rollup/pull/5072",
+          "title": "Add known globals",
+          "prId": 5072
+        }
+      ]
+    ],
+    [
       "antfu/vscode-pnpm-catalog-lens",
       [
         {
@@ -781,16 +1061,6 @@
       ]
     ],
     [
-      "parcel-bundler/lightningcss",
-      [
-        {
-          "url": "https://github.com/parcel-bundler/lightningcss/pull/875",
-          "title": "Call StyleSheet / StyleSheetExit / Rule.custom.* in visitors passed to composeVisitors",
-          "prId": 875
-        }
-      ]
-    ],
-    [
       "sxzz/ast-explorer",
       [
         {
@@ -826,26 +1096,6 @@
       ]
     ],
     [
-      "oxc-project/oxc-resolver",
-      [
-        {
-          "url": "https://github.com/oxc-project/oxc-resolver/pull/345",
-          "title": "fix: normalize resolved result on Windows for root",
-          "prId": 345
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc-resolver/pull/310",
-          "title": "fix: don't panic when resolving <code>/</code> with <code>roots</code>",
-          "prId": 310
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc-resolver/pull/306",
-          "title": "fix: use same UNC path normalization logic with libuv",
-          "prId": 306
-        }
-      ]
-    ],
-    [
       "napi-rs/napi-rs",
       [
         {
@@ -877,16 +1127,6 @@
           "url": "https://github.com/napi-rs/napi-rs/pull/2019",
           "title": "feat(target): add support for armv7-unknown-linux-muslebihf",
           "prId": 2019
-        }
-      ]
-    ],
-    [
-      "marko-js/vite",
-      [
-        {
-          "url": "https://github.com/marko-js/vite/pull/157",
-          "title": "chore: set <code>build.assetsInlineLimit: 0</code> for SSR tests in dev",
-          "prId": 157
         }
       ]
     ],
@@ -1151,62 +1391,12 @@
       ]
     ],
     [
-      "DefinitelyTyped/DefinitelyTyped",
-      [
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/63573",
-          "title": "update convert-source-map to v2",
-          "prId": 63573
-        },
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/58609",
-          "title": "pica: updated to v9",
-          "prId": 58609
-        },
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/57684",
-          "title": "[styled-components] Fix union type of props being lost",
-          "prId": 57684
-        },
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/40647",
-          "title": "Update KaTeX to v0.11.1",
-          "prId": 40647
-        }
-      ]
-    ],
-    [
       "kekee000/fonteditor-core",
       [
         {
           "url": "https://github.com/kekee000/fonteditor-core/pull/47",
           "title": "Fix parsing cmap subtable format 14",
           "prId": 47
-        }
-      ]
-    ],
-    [
-      "vitejs/vite-ecosystem-ci",
-      [
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/139",
-          "title": "feat: group command output in GitHub Actions",
-          "prId": 139
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/122",
-          "title": "feat: run from PR comment",
-          "prId": 122
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/120",
-          "title": "feat: vite repo",
-          "prId": 120
-        },
-        {
-          "url": "https://github.com/vitejs/vite-ecosystem-ci/pull/102",
-          "title": "Custom discord integration ",
-          "prId": 102
         }
       ]
     ],
@@ -1461,5 +1651,5 @@
       ]
     ]
   ],
-  "fetchedAt": "2025-04-01T08:59:25Z"
+  "fetchedAt": "2025-05-01T05:24:52Z"
 }
