@@ -11,63 +11,47 @@ jobs:
     name: run lint
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
-      - name: setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '22'
           cache: 'pnpm'
-      - name: install dependencies
-        run: pnpm install --frozen-lockfile
-      - name: run lint
-        run: pnpm run lint --max-warnings=0
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run lint --max-warnings=0
   format:
     name: run format
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
-      - name: setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '22'
           cache: 'pnpm'
-      - name: install dependencies
-        run: pnpm install --frozen-lockfile
-      - name: run format
-        run: pnpm prettier --check .
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm prettier --check .
   type-check:
     name: run type-check
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
-      - name: setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '22'
           cache: 'pnpm'
-      - name: install dependencies
-        run: pnpm install --frozen-lockfile
-      - name: run type-check
-        run: pnpm run type-check
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run type-check
   build:
     name: run build
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
-      - name: setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '22'
           cache: 'pnpm'
-      - name: install dependencies
-        run: pnpm install --frozen-lockfile
-      - name: run build
-        run: pnpm run build
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run build
