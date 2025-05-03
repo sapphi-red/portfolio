@@ -37,7 +37,7 @@ jobs:
         with:
           accountId: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          command: versions upload --message "${{ github.ref_name }} (${{ github.sha }})"
+          command: versions upload --message "${{ github.head_ref || github.ref_name }} (${{ github.sha }})"
 
       - name: Create a check run
         if: github.ref_name != 'main'
@@ -51,7 +51,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               name: "Deployment",
-              head_sha: context.sha,
+              head_sha: context.payload.pull_request?.head.sha || context.sha,
               details_url: process.env.ENVIRONMENT_URL,
               status: "completed",
               conclusion: "success",
@@ -76,7 +76,7 @@ jobs:
             const { data: deployment } = await github.rest.repos.createDeployment({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              ref: context.sha,
+              ref: context.payload.pull_request?.head.sha || context.sha,
               required_contexts: [],
               auto_merge: false,
               environment: isProd ? "Production" : "Preview",
