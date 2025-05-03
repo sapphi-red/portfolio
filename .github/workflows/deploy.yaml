@@ -39,7 +39,7 @@ jobs:
               state: "pending",
               log_url: `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
             });
-            return { deploymentId: deployment.id };
+            return deployment.id;
 
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
@@ -76,7 +76,6 @@ jobs:
           DEPLOYMENT_ID: ${{ steps.create-deployment.outputs.result }}
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          result-encoding: string
           script: |
             const success = process.env.IS_SUCCESS === "true";
             await github.rest.repos.createDeploymentStatus({
