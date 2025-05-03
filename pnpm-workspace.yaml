@@ -1,6 +1,5 @@
 onlyBuiltDependencies:
   - esbuild
 
-
 publicHoistPattern:
   - vite # to allow importing vite/client
