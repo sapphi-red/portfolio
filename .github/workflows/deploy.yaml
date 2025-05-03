@@ -57,7 +57,7 @@ jobs:
               required_contexts: [],
               auto_merge: false,
               environment: isProd ? "Production" : "Preview",
-              description: process.env.COMMIT_MESSAGE,
+              description: "Deployment to Cloudflare Workers",
               production_environment: isProd,
             });
             console.log(`Created deployment ID: ${deployment.id}`);
