@@ -44,6 +44,8 @@ jobs:
             return deployment.id;
 
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # to obtain last blog update date
       - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
