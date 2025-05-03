@@ -2,10 +2,17 @@ import path from 'path'
 import { writeFileSync } from 'fs'
 import { Feed } from 'feed'
 import { createContentLoader, type SiteConfig } from 'vitepress'
+import { execSync } from 'node:child_process'
 
 const baseUrl = 'https://green.sapphi.red/'
 
 export async function genFeed(config: SiteConfig) {
+  const lastUpdatedTimestampString = execSync(
+    'git log -1 --pretty="format:%ct" src/blog',
+    { encoding: 'utf-8' }
+  ).trim()
+  const lastUpdated = new Date(parseInt(lastUpdatedTimestampString, 10) * 1000)
+
   const feed = new Feed({
     title: 'green.sapphi.red',
     description: 'A blog by sapphi-red.',
@@ -18,7 +25,8 @@ export async function genFeed(config: SiteConfig) {
     language: 'en',
     image: 'https://green.sapphi.red/sapphi-red.png',
     favicon: `${baseUrl}/favicon.ico`,
-    copyright: 'Copyright (c) 2024 sapphi-red'
+    copyright: 'Copyright (c) 2024 sapphi-red',
+    updated: lastUpdated
   })
 
   const posts = await createContentLoader('blog/*.md', {
