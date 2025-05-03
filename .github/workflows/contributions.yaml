@@ -10,27 +10,22 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
       - uses: actions/create-github-app-token@v2
         id: generate-token
         with:
           app-id: ${{ secrets.APP_ID }}
           private-key: ${{ secrets.APP_PRIVATE_KEY  }}
       - uses: pnpm/action-setup@v4
-      - name: setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '22'
           cache: 'pnpm'
-      - name: install dependencies
-        run: pnpm install --frozen-lockfile
-      - name: update
-        run: pnpm run update-pr-data
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run update-pr-data
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: create pull request
-        uses: peter-evans/create-pull-request@v7
+      - uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ steps.generate-token.outputs.token }}
           commit-message: 'chore: update pr data'
