@@ -20,7 +20,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           result-encoding: string
           script: |
-            const isProd = context.ref_name === "main";
+            const isProd = context.ref === "main";
             const envName = isProd ? "Production" : "Preview";
             const { data: deployment } = await github.rest.repos.createDeployment({
               owner: context.repo.owner,
