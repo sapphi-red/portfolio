@@ -13,57 +13,61 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
       - name: setup Node
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-          cache: 'npm'
-      - name: npm ci
-        run: npm ci
+          cache: 'pnpm'
+      - name: install dependencies
+        run: pnpm install --frozen-lockfile
       - name: run lint
-        run: npm run lint -- --max-warnings=0
+        run: pnpm run lint --max-warnings=0
   format:
     name: run format
     runs-on: ubuntu-latest
     steps:
       - name: checkout
         uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
       - name: setup Node
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-          cache: 'npm'
-      - name: npm ci
-        run: npm ci
+          cache: 'pnpm'
+      - name: install dependencies
+        run: pnpm install --frozen-lockfile
       - name: run format
-        run: npx prettier --check .
+        run: pnpm prettier --check .
   type-check:
     name: run type-check
     runs-on: ubuntu-latest
     steps:
       - name: checkout
         uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
       - name: setup Node
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-          cache: 'npm'
-      - name: npm ci
-        run: npm ci
+          cache: 'pnpm'
+      - name: install dependencies
+        run: pnpm install --frozen-lockfile
       - name: run type-check
-        run: npm run type-check
+        run: pnpm run type-check
   build:
     name: run build
     runs-on: ubuntu-latest
     steps:
       - name: checkout
         uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
       - name: setup Node
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-          cache: 'npm'
-      - name: npm ci
-        run: npm ci
+          cache: 'pnpm'
+      - name: install dependencies
+        run: pnpm install --frozen-lockfile
       - name: run build
-        run: npm run build
+        run: pnpm run build
