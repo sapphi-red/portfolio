@@ -5,3 +5,4 @@
 node_modules
 /public
 /src/assets/prs.json
+pnpm-lock.yaml

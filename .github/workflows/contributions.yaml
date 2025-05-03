@@ -21,11 +21,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-          cache: 'npm'
-      - name: check npm ci
-        run: npm ci
+          cache: 'pnpm'
+      - name: install dependencies
+        run: pnpm install --frozen-lockfile
       - name: update
-        run: npm run update-pr-data
+        run: pnpm run update-pr-data
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: create pull request
