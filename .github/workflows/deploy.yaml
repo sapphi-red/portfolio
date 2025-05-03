@@ -55,8 +55,10 @@ jobs:
               repo: context.repo.repo,
               ref: context.sha,
               required_contexts: [],
-              environment: isProd ? "production" : "preview",
-              production_environment: isProd
+              auto_merge: false,
+              environment: isProd ? "Production" : "Preview",
+              description: process.env.COMMIT_MESSAGE,
+              production_environment: isProd,
             });
             console.log(`Created deployment ID: ${deployment.id}`);
 
