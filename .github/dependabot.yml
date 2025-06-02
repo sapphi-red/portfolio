@@ -10,6 +10,11 @@ updates:
         update-types:
           - 'minor'
           - 'patch'
+      octokit:
+        update-types:
+          - 'major'
+        patterns:
+          - '@octokit/*'
   - package-ecosystem: github-actions
     directory: /
     schedule:
