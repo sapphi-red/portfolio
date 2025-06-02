@@ -43,8 +43,8 @@ export async function genFeed(config: SiteConfig) {
   for (const { url, excerpt, frontmatter } of posts) {
     feed.addItem({
       title: frontmatter.title,
-      id: `${baseUrl.replace(/^\//, '')}${url}`,
-      link: `${baseUrl.replace(/^\//, '')}${url}`,
+      id: `${baseUrl.replace(/\/$/, '')}${url}`,
+      link: `${baseUrl.replace(/\/$/, '')}${url}`,
       description: excerpt,
       date: frontmatter.date,
       image: baseUrl + frontmatter.ogpImage.replace(/^\//, '')
