@@ -1,103 +1,8 @@
 {
   "repos": [
     [
-      "vitest-dev/vitest",
-      [
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/8051",
-          "title": "chore(deps): update Vite to 6.3.5",
-          "prId": 8051
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/7951",
-          "title": "fix: replace <code>micromatch</code> with <code>picomatch</code>",
-          "prId": 7951
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/3236",
-          "title": "chore: replace source-map with trace-mapping",
-          "prId": 3236
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/1348",
-          "title": "fix: handle error from pool.run",
-          "prId": 1348
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/878",
-          "title": "fix: passing non array to reporters option did not effect",
-          "prId": 878
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/876",
-          "title": "fix: unhandled error handler",
-          "prId": 876
-        },
-        {
-          "url": "https://github.com/vitest-dev/vitest/pull/875",
-          "title": "fix: handle error during global setup",
-          "prId": 875
-        }
-      ]
-    ],
-    [
-      "QwikDev/qwik",
-      [
-        {
-          "url": "https://github.com/QwikDev/qwik/pull/7647",
-          "title": "test: pass context to config hook for Vite 7",
-          "prId": 7647
-        }
-      ]
-    ],
-    [
-      "mmkal/expect-type",
-      [
-        {
-          "url": "https://github.com/mmkal/expect-type/pull/154",
-          "title": "Update jsdoc",
-          "prId": 154
-        }
-      ]
-    ],
-    [
-      "vitejs/rolldown-vite",
-      [
-        {
-          "url": "https://github.com/vitejs/rolldown-vite/pull/190",
-          "title": "feat: update rolldown",
-          "prId": 190
-        },
-        {
-          "url": "https://github.com/vitejs/rolldown-vite/pull/172",
-          "title": "feat: moduleType support in dev",
-          "prId": 172
-        },
-        {
-          "url": "https://github.com/vitejs/rolldown-vite/pull/166",
-          "title": "refactor: use util functions from <code>@rolldown/pluginutils</code>",
-          "prId": 166
-        },
-        {
-          "url": "https://github.com/vitejs/rolldown-vite/pull/163",
-          "title": "ci: run tests with native resolver",
-          "prId": 163
-        }
-      ]
-    ],
-    [
       "vitejs/vite",
       [
-        {
-          "url": "https://github.com/vitejs/vite/pull/20100",
-          "title": "fix(css): remove alias exclude logic from rebaseUrl",
-          "prId": 20100
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/20088",
-          "title": "feat: add <code>this.meta.viteVersion</code>",
-          "prId": 20088
-        },
         {
           "url": "https://github.com/vitejs/vite/pull/20079",
           "title": "fix(optimizer): show error when <code>computeEntries</code> failed",
@@ -561,6 +466,16 @@
       ]
     ],
     [
+      "vitejs/rolldown-vite",
+      [
+        {
+          "url": "https://github.com/vitejs/rolldown-vite/pull/172",
+          "title": "feat: moduleType support in dev",
+          "prId": 172
+        }
+      ]
+    ],
+    [
       "vitejs/vite-plugin-react",
       [
         {
@@ -611,52 +526,37 @@
       ]
     ],
     [
-      "vuejs/vitepress",
+      "vitest-dev/vitest",
       [
         {
-          "url": "https://github.com/vuejs/vitepress/pull/4748",
-          "title": "feat: use <code>oxc-minify</code> instead of <code>transformWithEsbuild</code> when rolldown-vite is used",
-          "prId": 4748
+          "url": "https://github.com/vitest-dev/vitest/pull/7951",
+          "title": "fix: replace <code>micromatch</code> with <code>picomatch</code>",
+          "prId": 7951
         },
         {
-          "url": "https://github.com/vuejs/vitepress/pull/4747",
-          "title": "fix: skip fields not supported by rolldown for rolldown-vite",
-          "prId": 4747
+          "url": "https://github.com/vitest-dev/vitest/pull/3236",
+          "title": "chore: replace source-map with trace-mapping",
+          "prId": 3236
         },
         {
-          "url": "https://github.com/vuejs/vitepress/pull/4504",
-          "title": "feat!: upgrade vite to v6",
-          "prId": 4504
+          "url": "https://github.com/vitest-dev/vitest/pull/1348",
+          "title": "fix: handle error from pool.run",
+          "prId": 1348
         },
         {
-          "url": "https://github.com/vuejs/vitepress/pull/2400",
-          "title": "fix(theme): support custom target and rel in navbar links for mobile",
-          "prId": 2400
+          "url": "https://github.com/vitest-dev/vitest/pull/878",
+          "title": "fix: passing non array to reporters option did not effect",
+          "prId": 878
         },
         {
-          "url": "https://github.com/vuejs/vitepress/pull/1850",
-          "title": "fix: take &lt;a&gt; in SVG into account",
-          "prId": 1850
-        }
-      ]
-    ],
-    [
-      "withastro/astro",
-      [
+          "url": "https://github.com/vitest-dev/vitest/pull/876",
+          "title": "fix: unhandled error handler",
+          "prId": 876
+        },
         {
-          "url": "https://github.com/withastro/astro/pull/13668",
-          "title": "Replace internal cssScopeTo implementation to vite.cssScopeTo",
-          "prId": 13668
-        }
-      ]
-    ],
-    [
-      "microsoft/TypeScript-wiki",
-      [
-        {
-          "url": "https://github.com/microsoft/TypeScript-wiki/pull/347",
-          "title": "Update Node Target Mapping based on tsconfig bases",
-          "prId": 347
+          "url": "https://github.com/vitest-dev/vitest/pull/875",
+          "title": "fix: handle error during global setup",
+          "prId": 875
         }
       ]
     ],
@@ -737,41 +637,6 @@
           "url": "https://github.com/rolldown/rolldown/pull/825",
           "title": "feat: support running Js plugin in parallel via Worker",
           "prId": 825
-        }
-      ]
-    ],
-    [
-      "DefinitelyTyped/DefinitelyTyped",
-      [
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/72671",
-          "title": "[npm-registry-fetch] fix <code>retry</code> object option property names",
-          "prId": 72671
-        },
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/72097",
-          "title": "[node] buffer: allow <code>ArrayBuffer | string</code> to be passed to <code>Buffer.from</code>",
-          "prId": 72097
-        },
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/63573",
-          "title": "update convert-source-map to v2",
-          "prId": 63573
-        },
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/58609",
-          "title": "pica: updated to v9",
-          "prId": 58609
-        },
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/57684",
-          "title": "[styled-components] Fix union type of props being lost",
-          "prId": 57684
-        },
-        {
-          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/40647",
-          "title": "Update KaTeX to v0.11.1",
-          "prId": 40647
         }
       ]
     ],
@@ -1006,6 +871,36 @@
       ]
     ],
     [
+      "DefinitelyTyped/DefinitelyTyped",
+      [
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/72097",
+          "title": "[node] buffer: allow <code>ArrayBuffer | string</code> to be passed to <code>Buffer.from</code>",
+          "prId": 72097
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/63573",
+          "title": "update convert-source-map to v2",
+          "prId": 63573
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/58609",
+          "title": "pica: updated to v9",
+          "prId": 58609
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/57684",
+          "title": "[styled-components] Fix union type of props being lost",
+          "prId": 57684
+        },
+        {
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/40647",
+          "title": "Update KaTeX to v0.11.1",
+          "prId": 40647
+        }
+      ]
+    ],
+    [
       "vitejs/vite-ecosystem-ci",
       [
         {
@@ -1122,6 +1017,26 @@
           "url": "https://github.com/antfu/vscode-pnpm-catalog-lens/pull/9",
           "title": "feat: jump to workspace file with built-in go-to-definition feature",
           "prId": 9
+        }
+      ]
+    ],
+    [
+      "vuejs/vitepress",
+      [
+        {
+          "url": "https://github.com/vuejs/vitepress/pull/4504",
+          "title": "feat!: upgrade vite to v6",
+          "prId": 4504
+        },
+        {
+          "url": "https://github.com/vuejs/vitepress/pull/2400",
+          "title": "fix(theme): support custom target and rel in navbar links for mobile",
+          "prId": 2400
+        },
+        {
+          "url": "https://github.com/vuejs/vitepress/pull/1850",
+          "title": "fix: take &lt;a&gt; in SVG into account",
+          "prId": 1850
         }
       ]
     ],
