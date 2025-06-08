@@ -17,7 +17,7 @@ title = "マルチスレッドフレンドリーなJavaScriptを求めて"
 date = 2023-10-28
 eventName = "Vue Fes Japan 2023"
 tags = [
-  "Content: Other",
+  "Content: JavaScript",
   "Type: Talk",
   "Language: Japanese",
 ]
@@ -48,7 +48,6 @@ tags = [
 title = "Environment API で広げる Vite の可能性"
 date = 2024-10-02
 eventName = "Vue Fes Japan × TSKaigi 合同イベント「次世代フロントエンドツールチェイン」"
-slides = "https://pre-vue-fes-2024-environment-api-slide.sapphi.red/"
 tags = [
   "Content: Vite",
   "Type: Talk",
@@ -63,3 +62,18 @@ tags = [
   type = "article"
   title = "Article (English)"
   url = "/blog/increasing-vites-potential-with-the-environment-api"
+
+[[talks]]
+title = "JS Minify Error Puzzles"
+date = 2025-02-27
+eventName = "Meguro.es #29"
+slides = "https://slide.meguro-es-29-minification-puzzles.sapphi.red/"
+tags = [
+  "Content: JavaScript",
+  "Type: Talk",
+  "Language: Japanese",
+]
+
+  [[talks.links]]
+  type = "slides"
+  url = "https://slide.meguro-es-29-minification-puzzles.sapphi.red/"
