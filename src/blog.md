@@ -18,4 +18,4 @@ import RssLink from './RssLink.vue'
 
 ## Links to posts outside this site
 
-- [traP blog (Japanese)](https://trap.jp/author/sappi_red)
+- [traP blog (Japanese)](https://trap.jp/author/sappi_red) (old posts)
