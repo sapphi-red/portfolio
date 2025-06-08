@@ -37,6 +37,8 @@ export const ignorePRs = new Set([
   'https://github.com/vitejs/vite/pull/19863',
   'https://github.com/vitejs/vite/pull/19966',
   'https://github.com/vitejs/vite/pull/19967',
+  'https://github.com/vitejs/vite/pull/20088',
+  'https://github.com/vitejs/vite/pull/20100',
   'https://github.com/vitejs/vite-ecosystem-ci/pull/256',
   'https://github.com/vitejs/vite-ecosystem-ci/pull/261',
   'https://github.com/madyankin/postcss-modules/pull/134',
@@ -62,6 +64,7 @@ export const ignorePRs = new Set([
   'https://github.com/napi-rs/napi-rs/pull/2382',
   'https://github.com/vitest-dev/vitest/pull/6896',
   'https://github.com/vitest-dev/vitest/pull/7613',
+  'https://github.com/vitest-dev/vitest/pull/8051',
   'https://github.com/rolldown/rolldown/pull/2688',
   'https://github.com/rolldown/rolldown/pull/2907',
   'https://github.com/rolldown/rolldown/pull/2917',
@@ -107,6 +110,8 @@ export const ignorePRs = new Set([
   'https://github.com/oxc-project/oxc/pull/10190',
   'https://github.com/oxc-project/oxc/pull/10262',
   'https://github.com/vuejs/vitepress/pull/4505',
+  'https://github.com/vuejs/vitepress/pull/4747',
+  'https://github.com/vuejs/vitepress/pull/4748',
   'https://github.com/withastro/astro/pull/13076',
   'https://github.com/vitejs/vite-plugin-react/pull/431',
   'https://github.com/vitejs/vite-plugin-react/pull/432',
@@ -116,9 +121,17 @@ export const ignorePRs = new Set([
   'https://github.com/vitejs/rolldown-vite/pull/94',
   'https://github.com/vitejs/rolldown-vite/pull/96',
   'https://github.com/vitejs/rolldown-vite/pull/135',
+  'https://github.com/vitejs/rolldown-vite/pull/163',
+  'https://github.com/vitejs/rolldown-vite/pull/166',
+  'https://github.com/vitejs/rolldown-vite/pull/190',
   'https://github.com/oxc-project/oxc-resolver/pull/463',
   'https://github.com/vitejs/vite-plugin-react-swc/pull/273',
-  'https://github.com/marko-js/vite/pull/197'
+  'https://github.com/marko-js/vite/pull/197',
+  'https://github.com/QwikDev/qwik/pull/7647',
+  'https://github.com/mmkal/expect-type/pull/154',
+  'https://github.com/withastro/astro/pull/13668',
+  'https://github.com/microsoft/TypeScript-wiki/pull/347',
+  'https://github.com/DefinitelyTyped/DefinitelyTyped/pull/72671'
 ])
 
 export const forcedPrs = new Set([
