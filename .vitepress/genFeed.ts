@@ -9,7 +9,7 @@ const baseUrl = 'https://green.sapphi.red/'
 export async function genFeed(config: SiteConfig) {
   const lastUpdatedTimestampString = execSync(
     'git log -1 --pretty="format:%ct" src/blog',
-    { encoding: 'utf-8' }
+    { encoding: 'utf-8' },
   ).trim()
   const lastUpdated = new Date(parseInt(lastUpdatedTimestampString, 10) * 1000)
 
@@ -18,7 +18,7 @@ export async function genFeed(config: SiteConfig) {
     description: 'A blog by sapphi-red.',
     author: {
       name: 'sapphi-red',
-      link: 'https://x.com/sapphi_red'
+      link: 'https://x.com/sapphi_red',
     },
     id: baseUrl,
     link: baseUrl,
@@ -26,18 +26,18 @@ export async function genFeed(config: SiteConfig) {
     image: 'https://green.sapphi.red/sapphi-red.png',
     favicon: `${baseUrl}/favicon.ico`,
     copyright: 'Copyright (c) 2024 sapphi-red',
-    updated: lastUpdated
+    updated: lastUpdated,
   })
 
   const posts = await createContentLoader('blog/*.md', {
     excerpt: true,
-    render: true
+    render: true,
   }).load()
 
   posts.sort(
     (a, b) =>
       +new Date(b.frontmatter.date as string) -
-      +new Date(a.frontmatter.date as string)
+      +new Date(a.frontmatter.date as string),
   )
 
   for (const { url, excerpt, frontmatter } of posts) {
@@ -47,7 +47,7 @@ export async function genFeed(config: SiteConfig) {
       link: `${baseUrl.replace(/\/$/, '')}${url}`,
       description: excerpt,
       date: frontmatter.date,
-      image: baseUrl + frontmatter.ogpImage.replace(/^\//, '')
+      image: baseUrl + frontmatter.ogpImage.replace(/^\//, ''),
     })
   }
 

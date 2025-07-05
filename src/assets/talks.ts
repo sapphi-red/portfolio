@@ -20,6 +20,6 @@ export type Talk = Omit<RawTalk, 'date'> & {
 export const talks: DeepReadonly<Talk[]> = _talks.talks
   .map((t: DeepReadonly<RawTalk>) => ({
     ...t,
-    date: new Date(t.date)
+    date: new Date(t.date),
   }))
   .reverse()

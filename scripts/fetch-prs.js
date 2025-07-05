@@ -5,7 +5,7 @@ import {
   ignorePRs,
   ignoreRepo,
   lineChangeThresholds,
-  forcedPrs
+  forcedPrs,
 } from './fetch-prs-config.js'
 import { Octokit } from '@octokit/core'
 import { paginateGraphQL } from '@octokit/plugin-paginate-graphql'
@@ -63,25 +63,25 @@ const DATA_PATH = new URL('../src/assets/prs.json', import.meta.url)
  * @param {RawPullRequest} rawPr
  * @returns {PullRequest}
  */
-const normalizePullRequest = rawPr => ({
+const normalizePullRequest = (rawPr) => ({
   title: rawPr.title,
   repository: {
     owner: rawPr.repository.owner.login,
-    name: rawPr.repository.name
+    name: rawPr.repository.name,
   },
   number: rawPr.number,
   additions: rawPr.additions,
   deletions: rawPr.deletions,
-  files: rawPr.files.nodes.map(node => node.path),
+  files: rawPr.files.nodes.map((node) => node.path),
   mergedAt: rawPr.mergedAt,
-  updatedAt: rawPr.updatedAt
+  updatedAt: rawPr.updatedAt,
 })
 
 /**
  * @param {PullRequest} pr
  * @returns {string}
  */
-const getPrKey = pr =>
+const getPrKey = (pr) =>
   `${pr.repository.owner}/${pr.repository.name}#${pr.number}`
 
 /**
@@ -93,7 +93,7 @@ const getPrKey = pr =>
 const fetchPullRequests = async function* (
   octokit,
   updatedAtAfter,
-  updatedAtBefore
+  updatedAtBefore,
 ) {
   /** @type {AsyncIterable<{ search: { nodes: RawPullRequest[] } }>} */
   const results = octokit.graphql.paginate.iterator(
@@ -142,8 +142,8 @@ const fetchPullRequests = async function* (
             : ` updated:>=${updatedAtAfter.toISOString()}`
           : updatedAtBefore
             ? ` updated:<=${updatedAtBefore.toISOString()}`
-            : '')
-    }
+            : ''),
+    },
   )
 
   let i = 0
@@ -170,7 +170,7 @@ const fetchPullRequestsContinuous = async function* (updatedAtAfter) {
 
   const OctokitWithGraphQLPaginate = Octokit.plugin(paginateGraphQL)
   const octokit = new OctokitWithGraphQLPaginate({
-    auth: process.env.GITHUB_TOKEN
+    auth: process.env.GITHUB_TOKEN,
   })
 
   /** @type {Date | undefined} */
@@ -225,7 +225,7 @@ const arrayFromAsync = async function (asyncIterable) {
 const mergePullRequests = (oldPullRequests, newPullRequests) => {
   const mergedPullRequests = [...oldPullRequests].reverse()
   const mergedPullRequestKeys = new Set(
-    mergedPullRequests.map(pr => getPrKey(pr))
+    mergedPullRequests.map((pr) => getPrKey(pr)),
   )
   for (let i = newPullRequests.length - 1; i >= 0; i--) {
     const newPullRequest = newPullRequests[i]
@@ -245,7 +245,7 @@ const fetchAndWriteDiffPRRawData = async () => {
 
   const knownUpdatedAt = new Date(oldPullRequests[0].updatedAt)
   const fetchedPullRequests = await arrayFromAsync(
-    fetchPullRequestsContinuous(knownUpdatedAt)
+    fetchPullRequestsContinuous(knownUpdatedAt),
   )
   const pullRequests = mergePullRequests(oldPullRequests, fetchedPullRequests)
   await fs.writeFile(RAW_DATA_PATH, JSON.stringify(pullRequests), 'utf-8')
@@ -281,11 +281,11 @@ const groupByRepo = (prs, each) => {
  * @param {PullRequest} pr
  * @returns {SimplePullRequest}
  */
-const shrinkData = pr => {
+const shrinkData = (pr) => {
   return {
     url: `https://github.com/${pr.repository.owner}/${pr.repository.name}/pull/${pr.number}`,
     title: pr.title,
-    prId: pr.number
+    prId: pr.number,
   }
 }
 
@@ -294,11 +294,11 @@ const htmlReplaceMap = new Map([
   ['&', '&amp;'],
   ['<', '&lt;'],
   ['>', '&gt;'],
-  ['"', '&quot;']
+  ['"', '&quot;'],
 ])
-const escapeHtml = html => {
+const escapeHtml = (html) => {
   if (htmlReplaceRe.test(html)) {
-    return html.replace(htmlReplaceRe, ch => htmlReplaceMap.get(ch))
+    return html.replace(htmlReplaceRe, (ch) => htmlReplaceMap.get(ch))
   }
   return html
 }
@@ -307,7 +307,7 @@ const escapeHtml = html => {
  * @param {PullRequest} pr
  * @returns {PullRequest}
  */
-const renderTitle = pr => {
+const renderTitle = (pr) => {
   const title = pr.title
   let newTitle = ''
   if (pr.title.includes('`')) {
@@ -329,21 +329,21 @@ const renderTitle = pr => {
 
   return {
     ...pr,
-    title: newTitle
+    title: newTitle,
   }
 }
 
 /**
  * @param {PullRequest[]} pullRequests
  */
-const rawToData = pullRequests => {
+const rawToData = (pullRequests) => {
   const transformedData = pullRequests
-    .filter(pr => {
+    .filter((pr) => {
       if (
         ignoreRepoUser.has(pr.repository.owner) ||
         ignoreRepo.has(`${pr.repository.owner}/${pr.repository.name}`) ||
         ignorePRs.has(
-          `https://github.com/${pr.repository.owner}/${pr.repository.name}/pull/${pr.number}`
+          `https://github.com/${pr.repository.owner}/${pr.repository.name}/pull/${pr.number}`,
         )
       ) {
         return false
@@ -364,7 +364,7 @@ const rawToData = pullRequests => {
 
       if (
         forcedPrs.has(
-          `https://github.com/${pr.repository.owner}/${pr.repository.name}/pull/${pr.number}`
+          `https://github.com/${pr.repository.owner}/${pr.repository.name}/pull/${pr.number}`,
         )
       ) {
         return true
@@ -372,11 +372,11 @@ const rawToData = pullRequests => {
 
       if (
         pr.files.every(
-          file =>
+          (file) =>
             file.endsWith('package.json') ||
             file.endsWith('package-lock.json') ||
             file.endsWith('yarn.lock') ||
-            file.endsWith('pnpm-lock.yaml')
+            file.endsWith('pnpm-lock.yaml'),
         )
       ) {
         return false
@@ -401,11 +401,11 @@ const rawToData = pullRequests => {
 
   return {
     repos: groupedData,
-    fetchedAt: pullRequests[0].updatedAt
+    fetchedAt: pullRequests[0].updatedAt,
   }
 }
 
-const formatJson = json => JSON.stringify(json, undefined, 2)
+const formatJson = (json) => JSON.stringify(json, undefined, 2)
 
 const readRawDataAndWriteData = async () => {
   const rawDataText = await fs.readFile(RAW_DATA_PATH, 'utf-8')

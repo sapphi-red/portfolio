@@ -11,7 +11,7 @@ type CorrectPRDataType = {
 }
 type CorrectPRsType<T extends unknown[][]> = [
   string,
-  Exclude<T[number][number], string>
+  Exclude<T[number][number], string>,
 ][]
 
 const PRData = PRDataRaw as CorrectPRDataType
@@ -24,26 +24,26 @@ const additional: Record<
     2543: {
       title:
         'Related blog post (Japanese): TensorFlow.jsでwasmを使ってみるためにコントリビュートした',
-      href: 'https://trap.jp/post/927/'
-    }
+      href: 'https://trap.jp/post/927/',
+    },
   },
   'protobufjs/protobuf.js': {
     1446: {
       title: 'Related blog post (Japanese): 裏ハッカソン参加記「Emoine」',
-      href: 'https://trap.jp/post/1093/'
-    }
+      href: 'https://trap.jp/post/1093/',
+    },
   },
   'vueuse/vueuse': {
     468: {
       title:
         'Related blog post (Japanese): CPCTF2021を実現させたスコアサーバー',
-      href: 'https://trap.jp/post/1308/'
-    }
-  }
+      href: 'https://trap.jp/post/1308/',
+    },
+  },
 }
 
 const lastFetched = computed(() =>
-  dateToDateTimeString(new Date(PRData.fetchedAt))
+  dateToDateTimeString(new Date(PRData.fetchedAt)),
 )
 </script>
 

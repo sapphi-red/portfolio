@@ -10,7 +10,7 @@ import {
   Legend,
   type Point,
   type ChartData,
-  type ChartOptions
+  type ChartOptions,
 } from 'chart.js'
 import { computed } from 'vue'
 import { Line } from 'vue-chartjs'
@@ -24,7 +24,7 @@ Chart.register(
   LineElement,
   Title,
   Tooltip,
-  Legend
+  Legend,
 )
 
 const props = defineProps<{
@@ -42,42 +42,42 @@ const mergedOptions = computed(() =>
       maintainAspectRatio: false,
       color: isDark.value ? '#ffffff' : '#000000',
       elements: {
-        point: { borderWidth: 0 }
+        point: { borderWidth: 0 },
       },
       plugins: {
         legend: {
-          position: 'right'
-        }
+          position: 'right',
+        },
       },
       scales: {
         x: {
           grid: {
-            color: isDark.value ? '#737373' : '#d4d4d4'
+            color: isDark.value ? '#737373' : '#d4d4d4',
           },
           ticks: {
-            color: isDark.value ? '#d4d4d4' : '#737373'
-          }
+            color: isDark.value ? '#d4d4d4' : '#737373',
+          },
         },
         y: {
           title: {
-            color: isDark.value ? '#d4d4d4' : '#737373'
+            color: isDark.value ? '#d4d4d4' : '#737373',
           },
           grid: {
-            color: isDark.value ? '#737373' : '#d4d4d4'
+            color: isDark.value ? '#737373' : '#d4d4d4',
           },
           ticks: {
-            color: isDark.value ? '#d4d4d4' : '#737373'
-          }
-        }
-      }
+            color: isDark.value ? '#d4d4d4' : '#737373',
+          },
+        },
+      },
     },
-    props.options || {}
-  )
+    props.options || {},
+  ),
 )
 
 const style = computed(() => ({
   position: 'relative',
-  height: `${props.height}px`
+  height: `${props.height}px`,
 }))
 </script>
 

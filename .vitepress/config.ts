@@ -15,16 +15,16 @@ export default defineConfig({
       'link',
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Atma&display=block'
-      }
+        href: 'https://fonts.googleapis.com/css2?family=Atma&display=block',
+      },
     ],
     [
       'link',
       {
         rel: 'preconnect dns-prefetch',
         href: 'https://fonts.gstatic.com/',
-        crossorigin: ''
-      }
+        crossorigin: '',
+      },
     ],
     ['link', { rel: 'me', href: 'https://m.webtoo.ls/@sapphi_red' }],
     ['meta', { property: 'og:site_name', content: 'green.sapphi.red' }],
@@ -35,9 +35,9 @@ export default defineConfig({
         rel: 'alternate',
         type: 'application/rss+xml',
         title: 'green.sapphi.red',
-        href: '/feed.rss'
-      }
-    ]
+        href: '/feed.rss',
+      },
+    ],
   ],
   cleanUrls: true,
   srcDir: './src',
@@ -47,10 +47,10 @@ export default defineConfig({
     plugins: [
       Icons({
         scale: 1,
-        defaultClass: 'icon'
+        defaultClass: 'icon',
       }),
-      ViteToml()
-    ]
+      ViteToml(),
+    ],
   },
   transformPageData(pageData) {
     const head: HeadConfig[] = (pageData.frontmatter.head ??= [])
@@ -58,15 +58,15 @@ export default defineConfig({
     head.push(['meta', { property: 'og:title', content: pageData.title }])
     head.push([
       'meta',
-      { property: 'og:description', content: pageData.description }
+      { property: 'og:description', content: pageData.description },
     ])
     head.push([
       'meta',
       {
         property: 'og:url',
         content:
-          host + pageData.relativePath.replace(/(?:(^|\/)index)?\.md$/, '$1')
-      }
+          host + pageData.relativePath.replace(/(?:(^|\/)index)?\.md$/, '$1'),
+      },
     ])
 
     if (pageData.filePath.startsWith('blog/')) {
@@ -76,8 +76,8 @@ export default defineConfig({
         'meta',
         {
           property: 'article:published_time',
-          content: dateToDateString(published, '-')
-        }
+          content: dateToDateString(published, '-'),
+        },
       ])
 
       const image = (
@@ -85,7 +85,7 @@ export default defineConfig({
       ).replace(/^\//, '')
       head.push([
         'meta',
-        { name: 'twitter:card', content: 'summary_large_image' }
+        { name: 'twitter:card', content: 'summary_large_image' },
       ])
       head.push(['meta', { name: 'twitter:image', content: host + image }])
       head.push(['meta', { property: 'og:image', content: host + image }])
@@ -103,13 +103,13 @@ export default defineConfig({
     nav: [
       { text: 'about', link: '/about' },
       { text: 'blog', link: '/blog' },
-      { text: 'talks', link: '/talks' }
+      { text: 'talks', link: '/talks' },
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/sapphi-red' },
       { icon: 'bluesky', link: 'https://bsky.app/profile/sapphi.red' },
       { icon: 'twitter', link: 'https://x.com/sapphi_red' },
-      { icon: 'mastodon', link: 'https://elk.zone/m.webtoo.ls/@sapphi_red' }
-    ]
-  }
+      { icon: 'mastodon', link: 'https://elk.zone/m.webtoo.ls/@sapphi_red' },
+    ],
+  },
 })

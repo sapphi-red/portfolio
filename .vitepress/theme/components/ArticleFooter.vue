@@ -6,7 +6,7 @@ import { data as posts } from './posts.data.js'
 const route = useRoute()
 
 function findCurrentIndex() {
-  return posts.findIndex(p => p.url === route.path)
+  return posts.findIndex((p) => p.url === route.path)
 }
 
 const nextPost = computed(() => posts[findCurrentIndex() - 1])

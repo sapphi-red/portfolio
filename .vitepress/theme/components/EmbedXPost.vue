@@ -27,7 +27,7 @@ onBeforeMount(() => {
         isXWidgetLibLoaded.value = true
       })
     },
-    { once: true }
+    { once: true },
   )
   document.head.appendChild(script)
 })
@@ -40,7 +40,7 @@ watch(
     props.hideCards,
     isDark.value,
     isXWidgetLibLoaded.value,
-    targetRef.value
+    targetRef.value,
   ],
   async () => {
     if (isXWidgetLibLoaded.value && targetRef.value) {
@@ -51,13 +51,13 @@ watch(
       }
       await twttr.widgets.createTweet(props.id, targetRef.value, {
         theme: isDark.value ? 'dark' : '',
-        cards: props.hideCards ? 'hidden' : ''
+        cards: props.hideCards ? 'hidden' : '',
       })
       targetRef.value.style.height = ''
       loaded.value = true
     }
   },
-  { immediate: true }
+  { immediate: true },
 )
 </script>
 

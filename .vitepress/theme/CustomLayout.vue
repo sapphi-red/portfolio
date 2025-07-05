@@ -9,7 +9,7 @@ import { data as posts } from './components/posts.data.js'
 
 const route = useRoute()
 
-const isBlogPost = computed(() => posts.some(p => p.url === route.path))
+const isBlogPost = computed(() => posts.some((p) => p.url === route.path))
 </script>
 
 <template>

@@ -6,7 +6,7 @@ const dateToTimeString = (date: Date): string =>
 export const dateToDateString = (date: Date, separator = '/'): string =>
   `${pad0(date.getFullYear(), 4)}${separator}${pad0(date.getMonth() + 1, 2)}${separator}${pad0(
     date.getDate(),
-    2
+    2,
   )}`
 
 export const dateToDateTimeString = (date: Date, separator = '/'): string =>
