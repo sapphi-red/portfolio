@@ -63,7 +63,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0 # to obtain last blog update date
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # v4
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -74,14 +74,14 @@ jobs:
       - if: github.ref_name == 'main'
         name: Deploy production
         id: deploy-prod
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@da0e0dfe58b7a431659754fdf3f186c529afbe65 # v3
         with:
           accountId: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
       - if: github.ref_name != 'main'
         name: Deploy preview
         id: deploy-preview
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@da0e0dfe58b7a431659754fdf3f186c529afbe65 # v3
         with:
           accountId: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
