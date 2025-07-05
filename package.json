@@ -48,7 +48,7 @@
     "unplugin-icons": "^22.1.0",
     "vite-plugin-toml": "^0.7.0",
     "vitepress": "^1.6.3",
-    "vue-tsc": "^2.2.12",
+    "vue-tsc": "^3.0.1",
     "wrangler": "^4.23.0"
   },
   "dependencies": {
