@@ -9,5 +9,6 @@
       "groupName": "octokit monorepo",
       "separateMajorMinor": false
     }
-  ]
+  ],
+  "ignoreDeps": ["node"]
 }
