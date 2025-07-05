@@ -8,7 +8,7 @@ const { frontmatter: data } = useData()
 const route = useRoute()
 
 function findCurrentIndex() {
-  return posts.findIndex(p => p.url === route.path)
+  return posts.findIndex((p) => p.url === route.path)
 }
 
 const date = computed(() => posts[findCurrentIndex()].date)

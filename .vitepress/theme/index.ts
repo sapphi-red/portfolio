@@ -12,5 +12,5 @@ export default {
   enhanceApp({ app }) {
     app.component('TopLayout', TopLayout)
     app.component('EmbedXPost', EmbedXPost)
-  }
+  },
 } satisfies Theme

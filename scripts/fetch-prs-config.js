@@ -2,13 +2,13 @@ export const ignoreRepoUser = new Set([
   'traPtitech',
   'sapphi-red',
   'FujishigeTemma',
-  'isucon'
+  'isucon',
 ])
 
 export const ignoreRepo = new Set([
   'aquaproj/aqua-registry',
   'vitejs/vite-plugin-vue2',
-  'rolldown/vite'
+  'rolldown/vite',
 ])
 
 export const ignorePRs = new Set([
@@ -131,7 +131,7 @@ export const ignorePRs = new Set([
   'https://github.com/mmkal/expect-type/pull/154',
   'https://github.com/withastro/astro/pull/13668',
   'https://github.com/microsoft/TypeScript-wiki/pull/347',
-  'https://github.com/DefinitelyTyped/DefinitelyTyped/pull/72671'
+  'https://github.com/DefinitelyTyped/DefinitelyTyped/pull/72671',
 ])
 
 export const forcedPrs = new Set([
@@ -143,7 +143,7 @@ export const forcedPrs = new Set([
   'https://github.com/rollup/rollup/pull/5267',
   'https://github.com/vitejs/vite/pull/9007',
   'https://github.com/vitejs/vite/pull/8459',
-  'https://github.com/vitejs/vite/pull/7098'
+  'https://github.com/vitejs/vite/pull/7098',
 ])
 
 export const lineChangeThresholds = {
@@ -166,5 +166,5 @@ export const lineChangeThresholds = {
   'histoire-dev/histoire': 80,
   'vikejs/vike': 80,
 
-  'vuejs/composition-api': 10
+  'vuejs/composition-api': 10,
 }
