@@ -4,7 +4,7 @@ date: 2025-08-02
 ogpImage: /ogp-image/addressing-source-code-leaks-across-the-ecosystem.png
 ---
 
-*Note: This article took six months to be published for reasons described later, so some parts may seem unnatural to read now.*
+_Note: This article took six months to be published for reasons described later, so some parts may seem unnatural to read now._
 
 My 2025 kicked off with handling vulnerabilities in Vite and reporting it to other tools in the ecosystem.
 This blog post is a retrospective on that experience.
@@ -112,7 +112,9 @@ I hope that my reports have helped improve the security of front-end tools.
 As the [Private Network Access](https://github.com/WICG/private-network-access) proposal progresses, attacks will become more difficult, so I hope this proposal will advance.
 
 ## Timeline
+
 ### Vite
+
 - 2025-01-09: The report was submitted.
 - 2025-01-10: I investigated other tools.
 - 2025-01-14: I finished grasping the full picture of the vulnerabilities and wrote up a fix proposal.
@@ -121,6 +123,7 @@ As the [Private Network Access](https://github.com/WICG/private-network-access) 
 - 2025-01-20: Published the CVE and report.
 
 ### Reporting to other tools
+
 - webpack-dev-server
   - 2025-01-14: I reported via GitHub's private vulnerability reporting feature.
   - 2025-01-20: I sent an email about the report.
