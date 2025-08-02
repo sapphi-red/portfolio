@@ -4,7 +4,11 @@ date: 2025-08-02
 ogpImage: /ogp-image/addressing-source-code-leaks-across-the-ecosystem.png
 ---
 
-_Note: This article took six months to be published for reasons described later, so some parts may seem unnatural to read now._
+::: tip Note
+
+This article took six months to be published for reasons described later, so some parts may seem unnatural to read now.
+
+:::
 
 My 2025 kicked off with handling vulnerabilities in Vite and reporting it to other tools in the ecosystem.
 This blog post is a retrospective on that experience.
