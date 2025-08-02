@@ -27,6 +27,16 @@
   --vp-c-bg: var(--s-dark-bg);
 }
 
+.Layout {
+  .VPNav {
+    width: 100vw;
+
+    .wrapper {
+      margin: 0 16px;
+    }
+  }
+}
+
 .VPNavBarTitle > .title,
 .VPNav .VPLink {
   font-family: var(--s-curly-font);
