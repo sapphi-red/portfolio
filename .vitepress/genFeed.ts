@@ -16,6 +16,9 @@ export async function genFeed(config: SiteConfig) {
   const feed = new Feed({
     title: 'green.sapphi.red',
     description: 'A blog by sapphi-red.',
+    feedLinks: {
+      rss: `${baseUrl}feed.rss`,
+    },
     author: {
       name: 'sapphi-red',
       link: 'https://x.com/sapphi_red',
@@ -23,8 +26,8 @@ export async function genFeed(config: SiteConfig) {
     id: baseUrl,
     link: baseUrl,
     language: 'en',
-    image: 'https://green.sapphi.red/sapphi-red.png',
-    favicon: `${baseUrl}/favicon.ico`,
+    image: `${baseUrl}sapphi-red.png`,
+    favicon: `${baseUrl}favicon.ico`,
     copyright: 'Copyright (c) 2024 sapphi-red',
     updated: lastUpdated,
   })
