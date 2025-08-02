@@ -4,6 +4,12 @@ date: 2025-08-02
 ogpImage: /ogp-image/addressing-source-code-leaks-across-the-ecosystem.png
 ---
 
+<small>
+
+🌐 [この記事を日本語で読む](https://zenn.dev/sapphi_red/articles/49d6493e593200)
+
+</small>
+
 ::: tip Note
 
 This article took six months to be published for reasons described later, so some parts may seem unnatural to read now.
