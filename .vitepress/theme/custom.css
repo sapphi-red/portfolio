@@ -27,12 +27,14 @@
   --vp-c-bg: var(--s-dark-bg);
 }
 
-.Layout {
-  .VPNav {
-    width: 100vw;
+@media (min-width: 960px) {
+  .Layout {
+    .VPNav {
+      width: 100vw;
 
-    .wrapper {
-      margin: 0 16px;
+      .wrapper {
+        margin: 0 16px;
+      }
     }
   }
 }
