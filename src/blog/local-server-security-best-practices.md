@@ -124,67 +124,67 @@ This becomes a problem for bundlers that output a bundle in classic scripts and 
 For example, in Webpack, setting [`output.iife: false`](https://webpack.js.org/configuration/output/#outputiife) can expose the module list in a global variable like `window.webpackChunkSomething`. This allows all module names and their transformed code to be retrieved with code like the following:
 
 ```js
-const script = document.createElement('script');
-script.src = 'http://localhost:3000/path/to/the/entrypoint.js';
+const script = document.createElement('script')
+script.src = 'http://localhost:3000/path/to/the/entrypoint.js'
 script.addEventListener('load', () => {
   for (const page in window.webpackChunkSomething) {
-    const moduleList = window.webpackChunkSomething[page][1];
+    const moduleList = window.webpackChunkSomething[page][1]
     for (const key in moduleList) {
-      console.log('moduleName', key);
-      console.log('moduleCode', moduleList[key].toString()); // Function::toString
+      console.log('moduleName', key)
+      console.log('moduleCode', moduleList[key].toString()) // Function::toString
     }
   }
-});
-document.head.appendChild(script);
+})
+document.head.appendChild(script)
 ```
 
 Even without such a setting, if the module list is held internally, it can sometimes be retrieved by modifying the prototype.
 For instance, with Webpack's default settings, the module list could be obtained by overwriting `Array.prototype.forEach`. Webpack's output includes a function like this:
 
-```js
+```js{13-16}
 function __webpack_require__(moduleId) {
-  var cachedModule = __webpack_module_cache__[moduleId];
+  var cachedModule = __webpack_module_cache__[moduleId]
   if (cachedModule !== undefined) {
-    return cachedModule.exports;
+    return cachedModule.exports
   }
-  var module = (__webpack_module_cache__[moduleId] = { exports: {} });
+  var module = (__webpack_module_cache__[moduleId] = { exports: {} })
   var execOptions = {
     id: moduleId,
     module: module,
     factory: __webpack_modules__[moduleId],
     require: __webpack_require__,
-  };
-  // This call is important! // [!code highlight]
-  __webpack_require__.i.forEach(function (handler) { // [!code highlight]
-    handler(execOptions); // [!code highlight]
-  }); // [!code highlight]
-  module = execOptions.module;
+  }
+  // This call is important!
+  __webpack_require__.i.forEach(function (handler) {
+    handler(execOptions)
+  })
+  module = execOptions.module
   execOptions.factory.call(
     module.exports,
     module,
     module.exports,
     execOptions.require,
-  );
-  return module.exports;
+  )
+  return module.exports
 }
 ```
 
 By wrapping the callback of `__webpack_require__.i.forEach`, you can get `execOptions` and then retrieve the module list from `execOptions.require.m`. Specifically, you can get it with code like this:
 
 ```js
-let moduleList;
+let moduleList
 const onHandlerSet = (handler) => {
-  moduleList = handler.require.m;
-};
+  moduleList = handler.require.m
+}
 
-const originalArrayForEach = Array.prototype.forEach;
+const originalArrayForEach = Array.prototype.forEach
 Array.prototype.forEach = function forEach(callback, thisArg) {
   callback((handler) => {
-    onHandlerSet(handler);
-  });
-  originalArrayForEach.call(this, callback, thisArg);
-  Array.prototype.forEach = originalArrayForEach;
-};
+    onHandlerSet(handler)
+  })
+  originalArrayForEach.call(this, callback, thisArg)
+  Array.prototype.forEach = originalArrayForEach
+}
 
 // After this, execute the script insertion code mentioned earlier
 ```
