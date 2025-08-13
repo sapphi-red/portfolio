@@ -167,3 +167,18 @@ img.dark-bg {
 .inline-block {
   display: inline;
 }
+
+html:not(.dark) {
+  .theme-supported {
+    color-scheme: light;
+  }
+}
+html.dark {
+  .theme-supported {
+    color-scheme: dark;
+  }
+}
+
+.marign-center {
+  margin: 0 auto;
+}
