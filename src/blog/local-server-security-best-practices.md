@@ -13,7 +13,7 @@ https://docs.hugeicons.com/icons-for-web/quick-start#features:~:text=No%20Attrib
 
 <small>
 
-🌐 [この記事を日本語で読む](https://zenn.dev/articles/81f2aa7efbc5c7)
+🌐 [この記事を日本語で読む](https://zenn.dev/sapphi_red/articles/81f2aa7efbc5c7)
 
 </small>
 
