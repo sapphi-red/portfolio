@@ -18,7 +18,7 @@ This article took six months to be published for reasons described later, so som
 
 My 2025 kicked off with handling vulnerabilities in Vite and reporting it to other tools in the ecosystem.
 This blog post is a retrospective on that experience.
-This post primarily focuses on the non-technical side; if you are interested in the technical side, please refer to the post I plan to write next (*Update: [I wrote it](/blog/local-server-security-best-practices).*).
+This post primarily focuses on the non-technical side; if you are interested in the technical side, please refer to the post I plan to write next (_Update: [I wrote it](/blog/local-server-security-best-practices)._).
 
 ## The report to Vite
 
