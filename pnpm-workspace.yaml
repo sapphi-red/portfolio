@@ -5,3 +5,6 @@ onlyBuiltDependencies:
 
 publicHoistPattern:
   - vite # to allow importing vite/client
+
+overrides:
+  vite: npm:rolldown-vite@^7.1.9
