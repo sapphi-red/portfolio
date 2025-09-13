@@ -18,27 +18,46 @@ const PRData = PRDataRaw as CorrectPRDataType
 
 const additional: Record<
   string,
-  Record<number, { title: string; href: string }>
+  Record<number, { title: string; href: string }[]>
 > = {
   'tensorflow/tfjs': {
-    2543: {
-      title:
-        'Related blog post (Japanese): TensorFlow.jsでwasmを使ってみるためにコントリビュートした',
-      href: 'https://trap.jp/post/927/',
-    },
+    2543: [
+      {
+        title:
+          'Related blog post (Japanese): TensorFlow.jsでwasmを使ってみるためにコントリビュートした',
+        href: 'https://trap.jp/post/927/',
+      },
+    ],
   },
   'protobufjs/protobuf.js': {
-    1446: {
-      title: 'Related blog post (Japanese): 裏ハッカソン参加記「Emoine」',
-      href: 'https://trap.jp/post/1093/',
-    },
+    1446: [
+      {
+        title: 'Related blog post (Japanese): 裏ハッカソン参加記「Emoine」',
+        href: 'https://trap.jp/post/1093/',
+      },
+    ],
   },
   'vueuse/vueuse': {
-    468: {
-      title:
-        'Related blog post (Japanese): CPCTF2021を実現させたスコアサーバー',
-      href: 'https://trap.jp/post/1308/',
-    },
+    468: [
+      {
+        title:
+          'Related blog post (Japanese): CPCTF2021を実現させたスコアサーバー',
+        href: 'https://trap.jp/post/1308/',
+      },
+    ],
+  },
+  'vitejs/vite': {
+    19234: [
+      {
+        title:
+          'Related blog post: Addressing Source Code Leaks Across the Ecosystem – A Retrospective',
+        href: '/blog/addressing-source-code-leaks-across-the-ecosystem-a-retrospective',
+      },
+      {
+        title: 'Related blog post: Local Server Security Best Practices',
+        href: '/blog/local-server-security-best-practices',
+      },
+    ],
   },
 }
 
@@ -60,9 +79,12 @@ const lastFetched = computed(() =>
             <span v-html="pr.title"></span>
           </a>
           <ul v-if="additional[repoName]?.[pr.prId]">
-            <li>
-              <a :href="additional[repoName]![pr.prId]!.href">
-                {{ additional[repoName]![pr.prId]!.title }}
+            <li
+              v-for="link in additional[repoName]![pr.prId]!"
+              :key="link.href"
+            >
+              <a :href="link.href">
+                {{ link.title }}
               </a>
             </li>
           </ul>
