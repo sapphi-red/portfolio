@@ -4,29 +4,9 @@
       "oxc-project/oxc",
       [
         {
-          "url": "https://github.com/oxc-project/oxc/pull/13477",
-          "title": "fix(minifier): inline multiple variable declarations at once",
-          "prId": 13477
-        },
-        {
           "url": "https://github.com/oxc-project/oxc/pull/13472",
           "title": "feat(minifier): constant fold <code>RegExp.prototype.source</code>",
           "prId": 13472
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/13470",
-          "title": "fix(regular_expression): detect usage of unsupported syntax recursively",
-          "prId": 13470
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/13468",
-          "title": "refactor(regular_expression): extract <code>has_unsupported_regular_expression_pattern</code>",
-          "prId": 13468
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/13419",
-          "title": "perf(mangler): replace <code>FixedBitSet</code> with <code>BitSet</code> based on Rolldown's implementation",
-          "prId": 13419
         },
         {
           "url": "https://github.com/oxc-project/oxc/pull/13402",
@@ -44,11 +24,6 @@
           "prId": 13361
         },
         {
-          "url": "https://github.com/oxc-project/oxc/pull/13360",
-          "title": "test(minifier): share test helper functions between unit tests and integration tests",
-          "prId": 13360
-        },
-        {
           "url": "https://github.com/oxc-project/oxc/pull/13351",
           "title": "test(codegen): add test that verifies stack traces are correct",
           "prId": 13351
@@ -57,11 +32,6 @@
           "url": "https://github.com/oxc-project/oxc/pull/13280",
           "title": "feat(minifier): support remaining expressions for single use variable inlining",
           "prId": 13280
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/13279",
-          "title": "feat(ecmascript): implement MayHaveSideEffects for AssignmentTarget",
-          "prId": 13279
         },
         {
           "url": "https://github.com/oxc-project/oxc/pull/13277",
@@ -99,19 +69,9 @@
           "prId": 13267
         },
         {
-          "url": "https://github.com/oxc-project/oxc/pull/13115",
-          "title": "feat(minifier): drop <code>var r = [...arguments]</code> if <code>r</code> is not used",
-          "prId": 13115
-        },
-        {
           "url": "https://github.com/oxc-project/oxc/pull/13114",
           "title": "feat(minifier): rewrite <code>arguments</code> copy loops to spread syntax",
           "prId": 13114
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc/pull/12469",
-          "title": "feat(ast): add <code>pife</code> field to <code>Function</code>",
-          "prId": 12469
         },
         {
           "url": "https://github.com/oxc-project/oxc/pull/12353",
@@ -349,54 +309,14 @@
       "rolldown/rolldown",
       [
         {
-          "url": "https://github.com/rolldown/rolldown/pull/5938",
-          "title": "test(hmr): accept outside circular case",
-          "prId": 5938
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/5937",
-          "title": "test(hmr): no accept outside circular dependencies case",
-          "prId": 5937
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/5936",
-          "title": "test(hmr): self accept within circular dependencies case",
-          "prId": 5936
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/5914",
-          "title": "chore: add more tracing instrumentation",
-          "prId": 5914
-        },
-        {
           "url": "https://github.com/rolldown/rolldown/pull/5913",
           "title": "fix: trigger trace subscriber cleanup on Node.js side",
           "prId": 5913
         },
         {
-          "url": "https://github.com/rolldown/rolldown/pull/5843",
-          "title": "fix(hmr): boundary and accept_via was reversed",
-          "prId": 5843
-        },
-        {
           "url": "https://github.com/rolldown/rolldown/pull/5823",
           "title": "fix(hmr): <code>import.meta.hot.accept</code> in patch file should work",
           "prId": 5823
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/5822",
-          "title": "fix(hmr): re-execute the boundary module rather than the accepted module",
-          "prId": 5822
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/5821",
-          "title": "test(hmr): import.meta.hot.accept cases",
-          "prId": 5821
-        },
-        {
-          "url": "https://github.com/rolldown/rolldown/pull/5820",
-          "title": "test(hmr): static import cases",
-          "prId": 5820
         },
         {
           "url": "https://github.com/rolldown/rolldown/pull/5636",
@@ -504,11 +424,6 @@
           "prId": 24
         },
         {
-          "url": "https://github.com/sagemathinc/http-proxy-3/pull/14",
-          "title": "replace functions from <code>awaiting</code> package with builtin functions",
-          "prId": 14
-        },
-        {
           "url": "https://github.com/sagemathinc/http-proxy-3/pull/9",
           "title": "enable typescript strict checks",
           "prId": 9
@@ -521,18 +436,18 @@
       ]
     ],
     [
-      "vitejs/rolldown-vite",
+      "vite-pwa/vite-plugin-pwa",
       [
         {
-          "url": "https://github.com/vitejs/rolldown-vite/pull/389",
-          "title": "feat: update rolldown",
-          "prId": 389
-        },
-        {
-          "url": "https://github.com/vitejs/rolldown-vite/pull/379",
-          "title": "feat: update rolldown",
-          "prId": 379
-        },
+          "url": "https://github.com/vite-pwa/vite-plugin-pwa/pull/877",
+          "title": "perf: add hook filters",
+          "prId": 877
+        }
+      ]
+    ],
+    [
+      "vitejs/rolldown-vite",
+      [
         {
           "url": "https://github.com/vitejs/rolldown-vite/pull/348",
           "title": "refactor: introduce <code>*.rolldownOptions</code> and deprecate <code>*.rollupOptions</code>",
@@ -566,58 +481,73 @@
       ]
     ],
     [
-      "oxc-project/oxc-resolver",
+      "joshwooding/vite-plugin-react-docgen-typescript",
       [
         {
-          "url": "https://github.com/oxc-project/oxc-resolver/pull/654",
-          "title": "test: make tests pass on Windows",
-          "prId": 654
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc-resolver/pull/570",
-          "title": "fix: avoid crash when encountering tsconfig circular extends",
-          "prId": 570
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc-resolver/pull/345",
-          "title": "fix: normalize resolved result on Windows for root",
-          "prId": 345
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc-resolver/pull/310",
-          "title": "fix: don't panic when resolving <code>/</code> with <code>roots</code>",
-          "prId": 310
-        },
-        {
-          "url": "https://github.com/oxc-project/oxc-resolver/pull/306",
-          "title": "fix: use same UNC path normalization logic with libuv",
-          "prId": 306
+          "url": "https://github.com/joshwooding/vite-plugin-react-docgen-typescript/pull/60",
+          "title": "Fix sourcemap generation",
+          "prId": 60
         }
       ]
     ],
     [
-      "vite-pwa/vite-plugin-pwa",
+      "napi-rs/napi-rs",
       [
         {
-          "url": "https://github.com/vite-pwa/vite-plugin-pwa/pull/877",
-          "title": "perf: add hook filters",
-          "prId": 877
+          "url": "https://github.com/napi-rs/napi-rs/pull/2829",
+          "title": "feat(napi): add <code>Error.cause</code> support to <code>napi::Error</code>",
+          "prId": 2829
+        },
+        {
+          "url": "https://github.com/napi-rs/napi-rs/pull/2813",
+          "title": "fix(napi-derive): generate types for threadsafe_function with WEAK=true correctly",
+          "prId": 2813
+        },
+        {
+          "url": "https://github.com/napi-rs/napi-rs/pull/2384",
+          "title": "fix(napi-derive): generate correct types for HashMap with RandomState argument",
+          "prId": 2384
+        },
+        {
+          "url": "https://github.com/napi-rs/napi-rs/pull/2376",
+          "title": "feat(napi-derive): implement <code>#[napi(transparent)]</code>",
+          "prId": 2376
+        },
+        {
+          "url": "https://github.com/napi-rs/napi-rs/pull/2037",
+          "title": "feat(napi): allow <code>&amp;External</code> to be created from napi value",
+          "prId": 2037
+        },
+        {
+          "url": "https://github.com/napi-rs/napi-rs/pull/2028",
+          "title": "feat(target): add support for s390x-unknown-linux-gnu",
+          "prId": 2028
+        },
+        {
+          "url": "https://github.com/napi-rs/napi-rs/pull/2023",
+          "title": "feat(target): add support for powerpc64le-unknown-linux-gnu",
+          "prId": 2023
+        },
+        {
+          "url": "https://github.com/napi-rs/napi-rs/pull/2019",
+          "title": "feat(target): add support for armv7-unknown-linux-muslebihf",
+          "prId": 2019
+        }
+      ]
+    ],
+    [
+      "oxc-project/oxc-browserslist",
+      [
+        {
+          "url": "https://github.com/oxc-project/oxc-browserslist/pull/226",
+          "title": "refactor: reduce binary size further",
+          "prId": 226
         }
       ]
     ],
     [
       "vitejs/vite",
       [
-        {
-          "url": "https://github.com/vitejs/vite/pull/20640",
-          "title": "feat: support long lines in <code>generateCodeFrame</code>",
-          "prId": 20640
-        },
-        {
-          "url": "https://github.com/vitejs/vite/pull/20578",
-          "title": "docs: improve image assets",
-          "prId": 20578
-        },
         {
           "url": "https://github.com/vitejs/vite/pull/20458",
           "title": "fix(dev): incorrect sourcemap when optimized CJS is imported",
@@ -1071,86 +1001,6 @@
       ]
     ],
     [
-      "joshwooding/vite-plugin-react-docgen-typescript",
-      [
-        {
-          "url": "https://github.com/joshwooding/vite-plugin-react-docgen-typescript/pull/60",
-          "title": "Fix sourcemap generation",
-          "prId": 60
-        }
-      ]
-    ],
-    [
-      "oxc-project/oxc-project.github.io",
-      [
-        {
-          "url": "https://github.com/oxc-project/oxc-project.github.io/pull/444",
-          "title": "feat: reduce layout shift caused by banner",
-          "prId": 444
-        }
-      ]
-    ],
-    [
-      "napi-rs/napi-rs",
-      [
-        {
-          "url": "https://github.com/napi-rs/napi-rs/pull/2835",
-          "title": "test(napi): add more tests for <code>Error.cause</code> support",
-          "prId": 2835
-        },
-        {
-          "url": "https://github.com/napi-rs/napi-rs/pull/2829",
-          "title": "feat(napi): add <code>Error.cause</code> support to <code>napi::Error</code>",
-          "prId": 2829
-        },
-        {
-          "url": "https://github.com/napi-rs/napi-rs/pull/2813",
-          "title": "fix(napi-derive): generate types for threadsafe_function with WEAK=true correctly",
-          "prId": 2813
-        },
-        {
-          "url": "https://github.com/napi-rs/napi-rs/pull/2384",
-          "title": "fix(napi-derive): generate correct types for HashMap with RandomState argument",
-          "prId": 2384
-        },
-        {
-          "url": "https://github.com/napi-rs/napi-rs/pull/2376",
-          "title": "feat(napi-derive): implement <code>#[napi(transparent)]</code>",
-          "prId": 2376
-        },
-        {
-          "url": "https://github.com/napi-rs/napi-rs/pull/2037",
-          "title": "feat(napi): allow <code>&amp;External</code> to be created from napi value",
-          "prId": 2037
-        },
-        {
-          "url": "https://github.com/napi-rs/napi-rs/pull/2028",
-          "title": "feat(target): add support for s390x-unknown-linux-gnu",
-          "prId": 2028
-        },
-        {
-          "url": "https://github.com/napi-rs/napi-rs/pull/2023",
-          "title": "feat(target): add support for powerpc64le-unknown-linux-gnu",
-          "prId": 2023
-        },
-        {
-          "url": "https://github.com/napi-rs/napi-rs/pull/2019",
-          "title": "feat(target): add support for armv7-unknown-linux-muslebihf",
-          "prId": 2019
-        }
-      ]
-    ],
-    [
-      "oxc-project/oxc-browserslist",
-      [
-        {
-          "url": "https://github.com/oxc-project/oxc-browserslist/pull/226",
-          "title": "refactor: reduce binary size further",
-          "prId": 226
-        }
-      ]
-    ],
-    [
       "vitejs/vite-plugin-react",
       [
         {
@@ -1202,6 +1052,31 @@
           "url": "https://github.com/vitejs/release-scripts/pull/73",
           "title": "feat: add generateChangelog function",
           "prId": 73
+        }
+      ]
+    ],
+    [
+      "oxc-project/oxc-resolver",
+      [
+        {
+          "url": "https://github.com/oxc-project/oxc-resolver/pull/570",
+          "title": "fix: avoid crash when encountering tsconfig circular extends",
+          "prId": 570
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc-resolver/pull/345",
+          "title": "fix: normalize resolved result on Windows for root",
+          "prId": 345
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc-resolver/pull/310",
+          "title": "fix: don't panic when resolving <code>/</code> with <code>roots</code>",
+          "prId": 310
+        },
+        {
+          "url": "https://github.com/oxc-project/oxc-resolver/pull/306",
+          "title": "fix: use same UNC path normalization logic with libuv",
+          "prId": 306
         }
       ]
     ],
