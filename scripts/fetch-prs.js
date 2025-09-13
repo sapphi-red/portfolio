@@ -261,20 +261,22 @@ const fetchAndWriteAllPRRawData = async () => {
  * @param {(pr: PullRequest) => SimplePullRequest} each
  * @returns {[string, SimplePullRequest[]][]}
  */
-const groupByRepo = (prs, each) => {
-  /** @type {Record<string, SimplePullRequest[]>} */
+const groupByYearAndRepo = (prs, each) => {
+  /** @type {Record<string, Record<string, SimplePullRequest[]>>} */
   const repos = {}
   for (const pr of prs) {
+    const year = pr.mergedAt.slice(0, 4)
     const repo = `${pr.repository.owner}/${pr.repository.name}`
-    if (repos[repo] === undefined) {
-      repos[repo] = []
+    repos[year] ??= {}
+    repos[year][repo] ??= []
+    repos[year][repo].push(each(pr))
+  }
+  for (const year of Object.keys(repos)) {
+    for (const repo of Object.keys(repos[year])) {
+      repos[year][repo].sort((a, b) => b.prId - a.prId)
     }
-    repos[repo].push(each(pr))
   }
-  for (const repo of Object.keys(repos)) {
-    repos[repo].sort((a, b) => b.prId - a.prId)
-  }
-  return Object.entries(repos)
+  return Object.entries(repos).sort(([a], [b]) => +b - +a)
 }
 
 /**
@@ -396,10 +398,10 @@ const rawToData = (pullRequests) => {
     .map(renderTitle)
     .sort((a, b) => Date.parse(b.mergedAt) - Date.parse(a.mergedAt))
 
-  const groupedData = groupByRepo(transformedData, shrinkData)
+  const groupedData = groupByYearAndRepo(transformedData, shrinkData)
 
   return {
-    repos: groupedData,
+    groupedPrs: groupedData,
     fetchedAt: pullRequests[0].updatedAt,
   }
 }

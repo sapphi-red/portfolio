@@ -1,1573 +1,1473 @@
 {
-  "repos": [
+  "groupedPrs": [
     [
-      "oxc-project/oxc",
-      [
-        {
-          "title": "feat(minifier): constant fold <code>RegExp.prototype.source</code>",
-          "prId": 13472
-        },
-        {
-          "title": "feat(ecmascript): support MayHaveSideEffects for Statements",
-          "prId": 13402
-        },
-        {
-          "title": "feat(ecmascript): examine and improve <code>is_literal_value</code>",
-          "prId": 13363
-        },
-        {
-          "title": "feat(minifier): inline top-level variables for module scripts",
-          "prId": 13361
-        },
-        {
-          "title": "test(codegen): add test that verifies stack traces are correct",
-          "prId": 13351
-        },
-        {
-          "title": "feat(minifier): support remaining expressions for single use variable inlining",
-          "prId": 13280
-        },
-        {
-          "title": "feat(minifier): support more statements for single use variable inlining",
-          "prId": 13277
-        },
-        {
-          "title": "feat(minifier): support more expressions for single use variable inlining",
-          "prId": 13276
-        },
-        {
-          "title": "feat(minifier): implement basic single use variable inlining",
-          "prId": 13275
-        },
-        {
-          "title": "feat(minifier): merge assignments in sequence exprs to variable declaration",
-          "prId": 13270
-        },
-        {
-          "title": "feat(minifier): merge assignment to variable declaration",
-          "prId": 13269
-        },
-        {
-          "title": "feat(minifier): remove unnecessary parenthesis from nested optional chaining",
-          "prId": 13268
-        },
-        {
-          "title": "fix(minifier): keep variables that are modified by combined assignments made by minification",
-          "prId": 13267
-        },
-        {
-          "title": "feat(minifier): rewrite <code>arguments</code> copy loops to spread syntax",
-          "prId": 13114
-        },
-        {
-          "title": "feat(codegen): keep arrow function PIFEs",
-          "prId": 12353
-        },
-        {
-          "title": "feat(minifier): inline nested spread object literals",
-          "prId": 10792
-        },
-        {
-          "title": "feat(mangler): support <code>keep_names</code> option",
-          "prId": 9898
-        },
-        {
-          "title": "feat(mangler): collect symbols that is used to set <code>name</code> property",
-          "prId": 9897
-        },
-        {
-          "title": "feat(minifier): support <code>keep_names</code> option",
-          "prId": 9867
-        },
-        {
-          "title": "feat(minifier): compress constant integer index access",
-          "prId": 9604
-        },
-        {
-          "title": "feat(ecmascript): support integer index access for array and string in <code>may_have_side_effects</code>",
-          "prId": 9603
-        },
-        {
-          "title": "feat(minifier): allow compressing computed constructor/prototype keys precisely",
-          "prId": 9594
-        },
-        {
-          "title": "fix(minifier): keep indirect access for <code>delete</code> and <code>typeof</code>",
-          "prId": 9563
-        },
-        {
-          "title": "feat(minifier): keep indirect access more precisely",
-          "prId": 9562
-        },
-        {
-          "title": "feat(minifier): support extracting arguments in pure calls in <code>remove_unused_expression</code>",
-          "prId": 9463
-        },
-        {
-          "title": "feat(minifier): support binary expression in <code>remove_unused_expression</code>",
-          "prId": 9456
-        },
-        {
-          "title": "feat(minifier): support conditional expression in <code>remove_unused_expression</code>",
-          "prId": 9432
-        },
-        {
-          "title": "feat(minifier): support object expression in <code>remove_unused_expression</code>",
-          "prId": 9430
-        },
-        {
-          "title": "feat(minifier): support template literals in <code>remove_unused_expression</code>",
-          "prId": 9426
-        },
-        {
-          "title": "feat(minifier): concatenate strings with template literals",
-          "prId": 9355
-        },
-        {
-          "title": "feat(minifier): inline constant values in template literals",
-          "prId": 9201
-        },
-        {
-          "title": "feat(ecmascript): support more string concatenation",
-          "prId": 9121
-        },
-        {
-          "title": "fix(ecmascript): fix may_have_side_effects for binary expressions",
-          "prId": 8991
-        },
-        {
-          "title": "fix(ecmascript): fix may_have_side_effects for unary expressions",
-          "prId": 8989
-        },
-        {
-          "title": "feat(minifier): remove unnecessary unary <code>+</code> inside numeric binary operators",
-          "prId": 8957
-        },
-        {
-          "title": "fix(ecmascript): fix <code>ValueType::from</code> for numeric binary operators",
-          "prId": 8956
-        },
-        {
-          "title": "test(ecmascript): add test for <code>ValueType</code> and update document",
-          "prId": 8951
-        },
-        {
-          "title": "feat(ecmascript): complete may_have_side_effects",
-          "prId": 8855
-        },
-        {
-          "title": "feat(codegen): prefer backquotes over double / single quotes",
-          "prId": 8839
-        },
-        {
-          "title": "feat(minifier): compress <code>(a = _a) != null ? a : b</code> and <code>(a = _a) != null ? a.b() : undefined</code>",
-          "prId": 8823
-        },
-        {
-          "title": "feat(minifier): merge single var declarations without init into for-in",
-          "prId": 8812
-        },
-        {
-          "title": "feat(minifier): compress <code>a != null ? a.b : undefined</code> to <code>a?.b</code>",
-          "prId": 8802
-        },
-        {
-          "title": "feat(minifier): compress <code>a != null ? a : b</code> into <code>a ?? b</code>",
-          "prId": 8801
-        },
-        {
-          "title": "feat(minifier): compress array of string literals to <code>'str1,str2'.split(',')</code>",
-          "prId": 8786
-        },
-        {
-          "title": "feat(mangler): use characters in the order of their likely frequency",
-          "prId": 8771
-        },
-        {
-          "title": "feat(minifier): compress <code>a == null &amp;&amp; b</code> to <code>a ?? b</code> when return value is ignored",
-          "prId": 8749
-        },
-        {
-          "title": "feat(minifier): replace <code>const</code> with <code>let</code> for non-exported read-only variables",
-          "prId": 8733
-        },
-        {
-          "title": "feat(minifier): replace <code>Number.*_SAFE_INTEGER</code>/<code>Number.EPSILON</code>",
-          "prId": 8682
-        },
-        {
-          "title": "feat(minifier): compress <code>typeof foo === 'object' &amp;&amp; foo !== null</code> to <code>typeof foo == 'object' &amp;&amp; !!foo</code>",
-          "prId": 8638
-        },
-        {
-          "title": "feat(minifier): compress <code>(a = b) === null || a === undefined</code> to <code>(a = b) == null</code>",
-          "prId": 8637
-        },
-        {
-          "title": "feat(mangler): reuse variable names",
-          "prId": 8562
-        },
-        {
-          "title": "feat(minifier): minify <code>String::concat</code> into template literal",
-          "prId": 8443
-        },
-        {
-          "title": "feat(minifier): fold <code>Array::concat</code> into literal",
-          "prId": 8442
-        },
-        {
-          "title": "feat(minifier): fold array concat chaining",
-          "prId": 8440
-        },
-        {
-          "title": "feat(minifier): compress <code>a.b = a.b + c</code> to <code>a.b += c</code>",
-          "prId": 8367
-        },
-        {
-          "title": "feat(minifier): merge assign expression in conditional expression",
-          "prId": 8345
-        },
-        {
-          "title": "feat(minifier): compress <code>a || (a = b)</code> to <code>a ||= b</code>",
-          "prId": 8315
-        },
-        {
-          "title": "feat(minifier): compress <code>a = a + b</code> to <code>a += b</code>",
-          "prId": 8314
-        },
-        {
-          "title": "feat(minifier): fold <code>foo === undefined || foo === null</code>",
-          "prId": 8063
-        },
-        {
-          "title": "feat(minifier): fold bitwise operation",
-          "prId": 7908
-        }
-      ]
+      "2025",
+      {
+        "oxc-project/oxc": [
+          {
+            "title": "feat(minifier): constant fold <code>RegExp.prototype.source</code>",
+            "prId": 13472
+          },
+          {
+            "title": "feat(ecmascript): support MayHaveSideEffects for Statements",
+            "prId": 13402
+          },
+          {
+            "title": "feat(ecmascript): examine and improve <code>is_literal_value</code>",
+            "prId": 13363
+          },
+          {
+            "title": "feat(minifier): inline top-level variables for module scripts",
+            "prId": 13361
+          },
+          {
+            "title": "test(codegen): add test that verifies stack traces are correct",
+            "prId": 13351
+          },
+          {
+            "title": "feat(minifier): support remaining expressions for single use variable inlining",
+            "prId": 13280
+          },
+          {
+            "title": "feat(minifier): support more statements for single use variable inlining",
+            "prId": 13277
+          },
+          {
+            "title": "feat(minifier): support more expressions for single use variable inlining",
+            "prId": 13276
+          },
+          {
+            "title": "feat(minifier): implement basic single use variable inlining",
+            "prId": 13275
+          },
+          {
+            "title": "feat(minifier): merge assignments in sequence exprs to variable declaration",
+            "prId": 13270
+          },
+          {
+            "title": "feat(minifier): merge assignment to variable declaration",
+            "prId": 13269
+          },
+          {
+            "title": "feat(minifier): remove unnecessary parenthesis from nested optional chaining",
+            "prId": 13268
+          },
+          {
+            "title": "fix(minifier): keep variables that are modified by combined assignments made by minification",
+            "prId": 13267
+          },
+          {
+            "title": "feat(minifier): rewrite <code>arguments</code> copy loops to spread syntax",
+            "prId": 13114
+          },
+          {
+            "title": "feat(codegen): keep arrow function PIFEs",
+            "prId": 12353
+          },
+          {
+            "title": "feat(minifier): inline nested spread object literals",
+            "prId": 10792
+          },
+          {
+            "title": "feat(mangler): support <code>keep_names</code> option",
+            "prId": 9898
+          },
+          {
+            "title": "feat(mangler): collect symbols that is used to set <code>name</code> property",
+            "prId": 9897
+          },
+          {
+            "title": "feat(minifier): support <code>keep_names</code> option",
+            "prId": 9867
+          },
+          {
+            "title": "feat(minifier): compress constant integer index access",
+            "prId": 9604
+          },
+          {
+            "title": "feat(ecmascript): support integer index access for array and string in <code>may_have_side_effects</code>",
+            "prId": 9603
+          },
+          {
+            "title": "feat(minifier): allow compressing computed constructor/prototype keys precisely",
+            "prId": 9594
+          },
+          {
+            "title": "fix(minifier): keep indirect access for <code>delete</code> and <code>typeof</code>",
+            "prId": 9563
+          },
+          {
+            "title": "feat(minifier): keep indirect access more precisely",
+            "prId": 9562
+          },
+          {
+            "title": "feat(minifier): support extracting arguments in pure calls in <code>remove_unused_expression</code>",
+            "prId": 9463
+          },
+          {
+            "title": "feat(minifier): support binary expression in <code>remove_unused_expression</code>",
+            "prId": 9456
+          },
+          {
+            "title": "feat(minifier): support conditional expression in <code>remove_unused_expression</code>",
+            "prId": 9432
+          },
+          {
+            "title": "feat(minifier): support object expression in <code>remove_unused_expression</code>",
+            "prId": 9430
+          },
+          {
+            "title": "feat(minifier): support template literals in <code>remove_unused_expression</code>",
+            "prId": 9426
+          },
+          {
+            "title": "feat(minifier): concatenate strings with template literals",
+            "prId": 9355
+          },
+          {
+            "title": "feat(minifier): inline constant values in template literals",
+            "prId": 9201
+          },
+          {
+            "title": "feat(ecmascript): support more string concatenation",
+            "prId": 9121
+          },
+          {
+            "title": "fix(ecmascript): fix may_have_side_effects for binary expressions",
+            "prId": 8991
+          },
+          {
+            "title": "fix(ecmascript): fix may_have_side_effects for unary expressions",
+            "prId": 8989
+          },
+          {
+            "title": "feat(minifier): remove unnecessary unary <code>+</code> inside numeric binary operators",
+            "prId": 8957
+          },
+          {
+            "title": "fix(ecmascript): fix <code>ValueType::from</code> for numeric binary operators",
+            "prId": 8956
+          },
+          {
+            "title": "test(ecmascript): add test for <code>ValueType</code> and update document",
+            "prId": 8951
+          },
+          {
+            "title": "feat(ecmascript): complete may_have_side_effects",
+            "prId": 8855
+          },
+          {
+            "title": "feat(codegen): prefer backquotes over double / single quotes",
+            "prId": 8839
+          },
+          {
+            "title": "feat(minifier): compress <code>(a = _a) != null ? a : b</code> and <code>(a = _a) != null ? a.b() : undefined</code>",
+            "prId": 8823
+          },
+          {
+            "title": "feat(minifier): merge single var declarations without init into for-in",
+            "prId": 8812
+          },
+          {
+            "title": "feat(minifier): compress <code>a != null ? a.b : undefined</code> to <code>a?.b</code>",
+            "prId": 8802
+          },
+          {
+            "title": "feat(minifier): compress <code>a != null ? a : b</code> into <code>a ?? b</code>",
+            "prId": 8801
+          },
+          {
+            "title": "feat(minifier): compress array of string literals to <code>'str1,str2'.split(',')</code>",
+            "prId": 8786
+          },
+          {
+            "title": "feat(mangler): use characters in the order of their likely frequency",
+            "prId": 8771
+          },
+          {
+            "title": "feat(minifier): compress <code>a == null &amp;&amp; b</code> to <code>a ?? b</code> when return value is ignored",
+            "prId": 8749
+          },
+          {
+            "title": "feat(minifier): replace <code>const</code> with <code>let</code> for non-exported read-only variables",
+            "prId": 8733
+          },
+          {
+            "title": "feat(minifier): replace <code>Number.*_SAFE_INTEGER</code>/<code>Number.EPSILON</code>",
+            "prId": 8682
+          },
+          {
+            "title": "feat(minifier): compress <code>typeof foo === 'object' &amp;&amp; foo !== null</code> to <code>typeof foo == 'object' &amp;&amp; !!foo</code>",
+            "prId": 8638
+          },
+          {
+            "title": "feat(minifier): compress <code>(a = b) === null || a === undefined</code> to <code>(a = b) == null</code>",
+            "prId": 8637
+          },
+          {
+            "title": "feat(mangler): reuse variable names",
+            "prId": 8562
+          },
+          {
+            "title": "feat(minifier): minify <code>String::concat</code> into template literal",
+            "prId": 8443
+          },
+          {
+            "title": "feat(minifier): fold <code>Array::concat</code> into literal",
+            "prId": 8442
+          },
+          {
+            "title": "feat(minifier): fold array concat chaining",
+            "prId": 8440
+          },
+          {
+            "title": "feat(minifier): compress <code>a.b = a.b + c</code> to <code>a.b += c</code>",
+            "prId": 8367
+          },
+          {
+            "title": "feat(minifier): merge assign expression in conditional expression",
+            "prId": 8345
+          },
+          {
+            "title": "feat(minifier): compress <code>a || (a = b)</code> to <code>a ||= b</code>",
+            "prId": 8315
+          },
+          {
+            "title": "feat(minifier): compress <code>a = a + b</code> to <code>a += b</code>",
+            "prId": 8314
+          }
+        ],
+        "rolldown/rolldown": [
+          {
+            "title": "fix: trigger trace subscriber cleanup on Node.js side",
+            "prId": 5913
+          },
+          {
+            "title": "fix(hmr): <code>import.meta.hot.accept</code> in patch file should work",
+            "prId": 5823
+          },
+          {
+            "title": "feat: include plugin name in the message of UNHANDLEABLE_ERRORs that happened in plugins",
+            "prId": 5636
+          },
+          {
+            "title": "feat: pass plugin name to log",
+            "prId": 5635
+          },
+          {
+            "title": "feat: use PIFE for callbacks passed to <code>__esmMin</code> wrapper",
+            "prId": 5319
+          },
+          {
+            "title": "feat: use same option object reference",
+            "prId": 5114
+          },
+          {
+            "title": "feat(plugin/vite-resolve): support tsconfig paths",
+            "prId": 5004
+          },
+          {
+            "title": "feat(pluginutils): add <code>makeIdFiltersToMatchWithQuery</code> function",
+            "prId": 4469
+          },
+          {
+            "title": "feat(pluginutils): add <code>exactRegex</code> and <code>prefixRegex</code>",
+            "prId": 4458
+          },
+          {
+            "title": "feat(plugin/vite-resolve): port changes after Vite 6",
+            "prId": 4269
+          },
+          {
+            "title": "docs: add performance guide",
+            "prId": 4265
+          }
+        ],
+        "sagemathinc/http-proxy-3": [
+          {
+            "title": "feat: support empty <code>req.url</code>",
+            "prId": 24
+          },
+          {
+            "title": "enable typescript strict checks",
+            "prId": 9
+          },
+          {
+            "title": "Improve types to have more compatibility with <code>@types/http-proxy</code>",
+            "prId": 7
+          }
+        ],
+        "vite-pwa/vite-plugin-pwa": [
+          {
+            "title": "perf: add hook filters",
+            "prId": 877
+          }
+        ],
+        "vitejs/rolldown-vite": [
+          {
+            "title": "refactor: introduce <code>*.rolldownOptions</code> and deprecate <code>*.rollupOptions</code>",
+            "prId": 348
+          },
+          {
+            "title": "feat: make oxc runtime helpers name mangle-able",
+            "prId": 306
+          },
+          {
+            "title": "feat: plugin legacy",
+            "prId": 293
+          },
+          {
+            "title": "feat: add <code>resolve.tsconfigPaths</code> option to resolve with tsconfig paths",
+            "prId": 277
+          },
+          {
+            "title": "feat: moduleType support in dev",
+            "prId": 172
+          },
+          {
+            "title": "feat: enable all native plugins by default",
+            "prId": 168
+          }
+        ],
+        "joshwooding/vite-plugin-react-docgen-typescript": [
+          {
+            "title": "Fix sourcemap generation",
+            "prId": 60
+          }
+        ],
+        "napi-rs/napi-rs": [
+          {
+            "title": "feat(napi): add <code>Error.cause</code> support to <code>napi::Error</code>",
+            "prId": 2829
+          },
+          {
+            "title": "fix(napi-derive): generate types for threadsafe_function with WEAK=true correctly",
+            "prId": 2813
+          }
+        ],
+        "oxc-project/oxc-browserslist": [
+          {
+            "title": "refactor: reduce binary size further",
+            "prId": 226
+          }
+        ],
+        "vitejs/vite": [
+          {
+            "title": "fix(dev): incorrect sourcemap when optimized CJS is imported",
+            "prId": 20458
+          },
+          {
+            "title": "feat(legacy): add rolldown-vite support",
+            "prId": 20417
+          },
+          {
+            "title": "feat(ssr): resolve externalized packages with <code>resolve.externalConditions</code> and add <code>module-sync</code> to default external condition",
+            "prId": 20409
+          },
+          {
+            "title": "fix(hmr): register css deps as <code>type: asset</code>",
+            "prId": 20391
+          },
+          {
+            "title": "feat(ssr): support <code>import.meta.resolve</code> in module runner",
+            "prId": 20260
+          },
+          {
+            "title": "fix(optimizer): show error when <code>computeEntries</code> failed",
+            "prId": 20079
+          },
+          {
+            "title": "fix(css): should not wrap with double quote when the url rebase feature bailed out",
+            "prId": 20068
+          },
+          {
+            "title": "fix: importing an optional peer dep should throw an runtime error",
+            "prId": 20029
+          },
+          {
+            "title": "feat!: bump <code>build.target</code> and name it <code>baseline-widely-available</code>",
+            "prId": 20007
+          },
+          {
+            "title": "fix: check static serve file inside sirv",
+            "prId": 19965
+          },
+          {
+            "title": "feat: make PluginContext available for Vite-specific hooks",
+            "prId": 19936
+          },
+          {
+            "title": "fix(hmr): avoid infinite loop happening with <code>hot.invalidate</code> in circular deps",
+            "prId": 19870
+          },
+          {
+            "title": "fix: reject requests with <code>#</code> in request-target",
+            "prId": 19830
+          },
+          {
+            "title": "fix(hmr): run HMR handler sequentially",
+            "prId": 19793
+          },
+          {
+            "title": "docs: plugin authors guide for rolldown-vite",
+            "prId": 19759
+          },
+          {
+            "title": "feat: implement hook filters",
+            "prId": 19602
+          },
+          {
+            "title": "feat(css): allow scoping css to importers exports",
+            "prId": 19418
+          },
+          {
+            "title": "feat: show hosts in cert in CLI",
+            "prId": 19317
+          },
+          {
+            "title": "fix!: fix GHSA-vg6x-rcgg-rjx6",
+            "prId": 19234
+          },
+          {
+            "title": "feat(css): support preprocessor with lightningcss",
+            "prId": 19071
+          },
+          {
+            "title": "feat(client): ping from SharedWorker",
+            "prId": 19057
+          },
+          {
+            "title": "fix: skip the plugin if it has been called before with the same id and importer",
+            "prId": 19016
+          },
+          {
+            "title": "fix(hmr): register inlined assets as a dependency of CSS file",
+            "prId": 18979
+          },
+          {
+            "title": "feat: support log related functions in dev",
+            "prId": 18922
+          }
+        ],
+        "vitejs/vite-plugin-react": [
+          {
+            "title": "feat: merge <code>plugin-react-oxc</code> into <code>plugin-react</code>",
+            "prId": 609
+          },
+          {
+            "title": "refactor!: bump required node version to 20.19+, 22.12+ and drop CJS build",
+            "prId": 583
+          },
+          {
+            "title": "feat(react): add raw rolldown support",
+            "prId": 513
+          },
+          {
+            "title": "refactor: extract common code in common package",
+            "prId": 443
+          },
+          {
+            "title": "feat: add plugin-react-oxc",
+            "prId": 439
+          },
+          {
+            "title": "refactor: merge vite plugin react swc in",
+            "prId": 423
+          }
+        ],
+        "davidmyersdev/vite-plugin-node-polyfills": [
+          {
+            "title": "Add rolldown-vite support",
+            "prId": 128
+          }
+        ],
+        "vitejs/release-scripts": [
+          {
+            "title": "feat: add generateChangelog function",
+            "prId": 73
+          }
+        ],
+        "oxc-project/oxc-resolver": [
+          {
+            "title": "fix: avoid crash when encountering tsconfig circular extends",
+            "prId": 570
+          }
+        ],
+        "rollup/plugins": [
+          {
+            "title": "feat(pluginutils): add <code>exactRegex</code> and <code>prefixRegex</code>",
+            "prId": 1865
+          }
+        ],
+        "vitejs/vite-ecosystem-ci": [
+          {
+            "title": "feat: show expected failures for rolldown-vite runs",
+            "prId": 395
+          },
+          {
+            "title": "feat: run with rolldown-vite regularly",
+            "prId": 379
+          }
+        ],
+        "DefinitelyTyped/DefinitelyTyped": [
+          {
+            "title": "[node] Update typings to v20.19.0",
+            "prId": 72938
+          },
+          {
+            "title": "[node] buffer: allow <code>ArrayBuffer | string</code> to be passed to <code>Buffer.from</code>",
+            "prId": 72097
+          }
+        ],
+        "vitejs/vite-plugin-vue": [
+          {
+            "title": "refactor!: bump required node version to 20.19+, 22.12+ and drop CJS build",
+            "prId": 596
+          },
+          {
+            "title": "feat(vue)!: separate include and exclude from <code>api.options</code> and add filter",
+            "prId": 582
+          }
+        ],
+        "SchemaStore/schemastore": [
+          {
+            "title": "Use lowercase for TypeScript module / target options",
+            "prId": 4732
+          },
+          {
+            "title": "Allow external package mappings in <code>imports</code> field in <code>package.json</code>",
+            "prId": 4340
+          }
+        ],
+        "antfu-collective/vite-plugin-inspect": [
+          {
+            "title": "feat: generate module relationship for build",
+            "prId": 149
+          },
+          {
+            "title": "feat: add multi-env support for build",
+            "prId": 148
+          }
+        ],
+        "vitest-dev/vitest": [
+          {
+            "title": "fix: replace <code>micromatch</code> with <code>picomatch</code>",
+            "prId": 7951
+          }
+        ],
+        "publint/publint": [
+          {
+            "title": "Support warning fallback arrays in exports / imports",
+            "prId": 180
+          }
+        ],
+        "parcel-bundler/lightningcss": [
+          {
+            "title": "Skip generating unnecessary <code>@supports</code>",
+            "prId": 878
+          },
+          {
+            "title": "Call StyleSheet / StyleSheetExit / Rule.custom.* in visitors passed to composeVisitors",
+            "prId": 875
+          }
+        ],
+        "rollup/rollup": [
+          {
+            "title": "Add support for hook filters",
+            "prId": 5882
+          }
+        ],
+        "antfu/vscode-pnpm-catalog-lens": [
+          {
+            "title": "feat: jump to workspace file with built-in go-to-definition feature",
+            "prId": 9
+          }
+        ],
+        "vuejs/vitepress": [
+          {
+            "title": "feat!: upgrade vite to v6",
+            "prId": 4504
+          }
+        ]
+      }
     ],
     [
-      "rolldown/rolldown",
-      [
-        {
-          "title": "fix: trigger trace subscriber cleanup on Node.js side",
-          "prId": 5913
-        },
-        {
-          "title": "fix(hmr): <code>import.meta.hot.accept</code> in patch file should work",
-          "prId": 5823
-        },
-        {
-          "title": "feat: include plugin name in the message of UNHANDLEABLE_ERRORs that happened in plugins",
-          "prId": 5636
-        },
-        {
-          "title": "feat: pass plugin name to log",
-          "prId": 5635
-        },
-        {
-          "title": "feat: use PIFE for callbacks passed to <code>__esmMin</code> wrapper",
-          "prId": 5319
-        },
-        {
-          "title": "feat: use same option object reference",
-          "prId": 5114
-        },
-        {
-          "title": "feat(plugin/vite-resolve): support tsconfig paths",
-          "prId": 5004
-        },
-        {
-          "title": "feat(pluginutils): add <code>makeIdFiltersToMatchWithQuery</code> function",
-          "prId": 4469
-        },
-        {
-          "title": "feat(pluginutils): add <code>exactRegex</code> and <code>prefixRegex</code>",
-          "prId": 4458
-        },
-        {
-          "title": "feat(plugin/vite-resolve): port changes after Vite 6",
-          "prId": 4269
-        },
-        {
-          "title": "docs: add performance guide",
-          "prId": 4265
-        },
-        {
-          "title": "feat(plugin/json): support <code>stringify: 'auto'</code>",
-          "prId": 3103
-        },
-        {
-          "title": "feat(plugin/vite-resolve): implement fileUrl properly",
-          "prId": 3040
-        },
-        {
-          "title": "feat(plugin/vite-resolve): support Regex in noExternal",
-          "prId": 3039
-        },
-        {
-          "title": "feat: <code>names</code> / <code>originalFileNames</code> support",
-          "prId": 3024
-        },
-        {
-          "title": "perf: use fxhash for <code>HashMap</code>s",
-          "prId": 2988
-        },
-        {
-          "title": "refactor(plugin/vite-resolve): use oxc-resolver to resolve optional peer dep value from package.json",
-          "prId": 2970
-        },
-        {
-          "title": "feat(plugin/vite-resolve): implement more logics for <code>createIdResolver</code>",
-          "prId": 2869
-        },
-        {
-          "title": "feat: vite-resolve-plugin dev support",
-          "prId": 2739
-        },
-        {
-          "title": "feat: implement vite resolve plugin",
-          "prId": 2658
-        },
-        {
-          "title": "feat: support running Js plugin in parallel via Worker",
-          "prId": 825
-        }
-      ]
+      "2024",
+      {
+        "sxzz/ast-explorer": [
+          {
+            "title": "feat: add lightningcss",
+            "prId": 110
+          }
+        ],
+        "oxc-project/oxc": [
+          {
+            "title": "feat(minifier): fold <code>foo === undefined || foo === null</code>",
+            "prId": 8063
+          },
+          {
+            "title": "feat(minifier): fold bitwise operation",
+            "prId": 7908
+          }
+        ],
+        "Rich-Harris/magic-string": [
+          {
+            "title": "fix: missing mapping after a line break with <code>hires: 'boundary'</code>",
+            "prId": 298
+          },
+          {
+            "title": "perf: skip line break mappings",
+            "prId": 284
+          }
+        ],
+        "oxc-project/oxc-resolver": [
+          {
+            "title": "fix: normalize resolved result on Windows for root",
+            "prId": 345
+          },
+          {
+            "title": "fix: don't panic when resolving <code>/</code> with <code>roots</code>",
+            "prId": 310
+          },
+          {
+            "title": "fix: use same UNC path normalization logic with libuv",
+            "prId": 306
+          }
+        ],
+        "rolldown/rolldown": [
+          {
+            "title": "feat(plugin/json): support <code>stringify: 'auto'</code>",
+            "prId": 3103
+          },
+          {
+            "title": "feat(plugin/vite-resolve): implement fileUrl properly",
+            "prId": 3040
+          },
+          {
+            "title": "feat(plugin/vite-resolve): support Regex in noExternal",
+            "prId": 3039
+          },
+          {
+            "title": "feat: <code>names</code> / <code>originalFileNames</code> support",
+            "prId": 3024
+          },
+          {
+            "title": "perf: use fxhash for <code>HashMap</code>s",
+            "prId": 2988
+          },
+          {
+            "title": "refactor(plugin/vite-resolve): use oxc-resolver to resolve optional peer dep value from package.json",
+            "prId": 2970
+          },
+          {
+            "title": "feat(plugin/vite-resolve): implement more logics for <code>createIdResolver</code>",
+            "prId": 2869
+          },
+          {
+            "title": "feat: vite-resolve-plugin dev support",
+            "prId": 2739
+          },
+          {
+            "title": "feat: implement vite resolve plugin",
+            "prId": 2658
+          },
+          {
+            "title": "feat: support running Js plugin in parallel via Worker",
+            "prId": 825
+          }
+        ],
+        "vitejs/vite": [
+          {
+            "title": "fix: <code>this.resolve</code> skipSelf should not skip for different <code>id</code> or <code>import</code>",
+            "prId": 18903
+          },
+          {
+            "title": "fix(html): externalize <code>rollup.external</code> scripts correctly",
+            "prId": 18618
+          },
+          {
+            "title": "fix: allow nested dependency selector to be used for <code>optimizeDeps.include</code> for SSR",
+            "prId": 18506
+          },
+          {
+            "title": "fix: use picomatch to align with tinyglobby",
+            "prId": 18503
+          },
+          {
+            "title": "feat(resolve)!: allow removing conditions",
+            "prId": 18395
+          },
+          {
+            "title": "feat: use a single transport for fetchModule and HMR support",
+            "prId": 18362
+          },
+          {
+            "title": "docs: env api expand runtime agnostic SSR section",
+            "prId": 18334
+          },
+          {
+            "title": "fix(ssr): <code>this</code> in exported function should be <code>undefined</code>",
+            "prId": 18329
+          },
+          {
+            "title": "docs: try to decouple more information in env api docs",
+            "prId": 18320
+          },
+          {
+            "title": "feat(json)!: add <code>json.stringify: 'auto'</code> and make that the default",
+            "prId": 18303
+          },
+          {
+            "title": "feat: add <code>environment::listen</code>",
+            "prId": 18263
+          },
+          {
+            "title": "fix: asset <code>new URL(,import.meta.url)</code> match",
+            "prId": 18194
+          },
+          {
+            "title": "feat: support originalFilename",
+            "prId": 17867
+          },
+          {
+            "title": "fix: don't add outDirs to watch.ignored if emptyOutDir is false",
+            "prId": 16453
+          },
+          {
+            "title": "feat(hmr): call <code>hotUpdate</code> hook with file create/delete",
+            "prId": 16249
+          },
+          {
+            "title": "docs: add <code>@shikiji/vitepress-twoslash</code>",
+            "prId": 16168
+          },
+          {
+            "title": "fix(worker): throw error when circular worker import is detected and support self referencing worker",
+            "prId": 16103
+          },
+          {
+            "title": "fix: upgrade esbuild to 0.20.x",
+            "prId": 16079
+          },
+          {
+            "title": "fix(css): avoid generating empty JS files when JS files becomes empty but has CSS files imported",
+            "prId": 16078
+          },
+          {
+            "title": "feat: csp nonce support",
+            "prId": 16052
+          },
+          {
+            "title": "fix: empty CSS file was output when only .css?url is used",
+            "prId": 15846
+          },
+          {
+            "title": "fix(css): <code>.css?url</code> support",
+            "prId": 15259
+          },
+          {
+            "title": "perf: use thread for preprocessors",
+            "prId": 13584
+          }
+        ],
+        "SchemaStore/schemastore": [
+          {
+            "title": "Add <code>pnpm.**</code> fields to <code>package.json</code> schema",
+            "prId": 4259
+          },
+          {
+            "title": "Add <code>imports</code> field to <code>package.json</code> schema",
+            "prId": 4258
+          }
+        ],
+        "napi-rs/napi-rs": [
+          {
+            "title": "fix(napi-derive): generate correct types for HashMap with RandomState argument",
+            "prId": 2384
+          },
+          {
+            "title": "feat(napi-derive): implement <code>#[napi(transparent)]</code>",
+            "prId": 2376
+          },
+          {
+            "title": "feat(napi): allow <code>&amp;External</code> to be created from napi value",
+            "prId": 2037
+          },
+          {
+            "title": "feat(target): add support for s390x-unknown-linux-gnu",
+            "prId": 2028
+          },
+          {
+            "title": "feat(target): add support for powerpc64le-unknown-linux-gnu",
+            "prId": 2023
+          },
+          {
+            "title": "feat(target): add support for armv7-unknown-linux-muslebihf",
+            "prId": 2019
+          }
+        ],
+        "marko-js/vite": [
+          {
+            "title": "chore: set <code>build.assetsInlineLimit: 0</code> for SSR tests in dev",
+            "prId": 157
+          }
+        ],
+        "honojs/hono": [
+          {
+            "title": "fix(service-worker): bind fetch to <code>globalThis</code>",
+            "prId": 3500
+          }
+        ],
+        "twoslashes/twoslash": [
+          {
+            "title": "feat: add <code>fsCache</code> option to improve build performance",
+            "prId": 56
+          },
+          {
+            "title": "feat: support spaces before cut comments",
+            "prId": 33
+          }
+        ],
+        "aquaproj/aqua": [
+          {
+            "title": "fix(info): mask username on Windows",
+            "prId": 2902
+          }
+        ],
+        "rollup/rollup": [
+          {
+            "title": "Add linux arm musl build",
+            "prId": 5471
+          },
+          {
+            "title": "docs: add <code>@shikiji/vitepress-twoslash</code>",
+            "prId": 5445
+          },
+          {
+            "title": "fix: escape ids in <code>import.meta.ROLLUP_FILE_URL_referenceId</code> correctly",
+            "prId": 5404
+          }
+        ]
+      }
     ],
     [
-      "sagemathinc/http-proxy-3",
-      [
-        {
-          "title": "feat: support empty <code>req.url</code>",
-          "prId": 24
-        },
-        {
-          "title": "enable typescript strict checks",
-          "prId": 9
-        },
-        {
-          "title": "Improve types to have more compatibility with <code>@types/http-proxy</code>",
-          "prId": 7
-        }
-      ]
+      "2023",
+      {
+        "rollup/plugins": [
+          {
+            "title": "feat(json): add <code>includeArbitraryNames</code> option",
+            "prId": 1641
+          },
+          {
+            "title": "fix(dynamic-import-vars): escape special glob characters",
+            "prId": 1636
+          },
+          {
+            "title": "feat(pluginutils): add <code>includeArbitraryNames: true</code> to <code>dataToEsm</code>",
+            "prId": 1635
+          },
+          {
+            "title": "feat(alias): add warning to avoid unintended duplicate modules",
+            "prId": 1634
+          }
+        ],
+        "rollup/rollup": [
+          {
+            "title": "Add friendly error for missing MSVC redistributable",
+            "prId": 5284
+          },
+          {
+            "title": "Add friendly error for npm bug",
+            "prId": 5267
+          },
+          {
+            "title": "perf: run lint while constructing nodes",
+            "prId": 5207
+          },
+          {
+            "title": "perf: shrink wasm size by avoid importing browserslist",
+            "prId": 5204
+          },
+          {
+            "title": "perf: introduce <code>parseAstAsync</code> and parallelize parsing AST",
+            "prId": 5202
+          },
+          {
+            "title": "Add known globals",
+            "prId": 5072
+          }
+        ],
+        "bluwy/publint": [
+          {
+            "title": "Add a warning for jsnext field",
+            "prId": 85
+          },
+          {
+            "title": "Lint typings field file existence",
+            "prId": 60
+          },
+          {
+            "title": "Improve browser field suggestion",
+            "prId": 59
+          }
+        ],
+        "vitejs/vite": [
+          {
+            "title": "fix: emit <code>vite:preloadError</code> for chunks without deps",
+            "prId": 15203
+          },
+          {
+            "title": "fix: caret position was incorrect",
+            "prId": 14984
+          },
+          {
+            "title": "fix(css): correctly set manifest source name and emit CSS file",
+            "prId": 14945
+          },
+          {
+            "title": "fix(html): import expression in classic script for dev",
+            "prId": 14595
+          },
+          {
+            "title": "fix(html): inline style attribute not working in dev",
+            "prId": 14592
+          },
+          {
+            "title": "fix: esbuild glob resolve error",
+            "prId": 14533
+          },
+          {
+            "title": "feat!: rollup v4",
+            "prId": 14508
+          },
+          {
+            "title": "fix: handle sourcemap correctly when multiple line import exists",
+            "prId": 14232
+          },
+          {
+            "title": "feat(css)!: remove css default export",
+            "prId": 14125
+          },
+          {
+            "title": "fix(css): use single postcss instance",
+            "prId": 13738
+          },
+          {
+            "title": "feat!: update esbuild to 0.18.2",
+            "prId": 13525
+          },
+          {
+            "title": "fix: breakpoints in JS not working",
+            "prId": 13514
+          },
+          {
+            "title": "feat(config): friendly ESM file require error",
+            "prId": 13283
+          },
+          {
+            "title": "feat(legacy)!: bump modern target to support async generator",
+            "prId": 11896
+          },
+          {
+            "title": "fix(ssr): load sourcemaps alongside modules",
+            "prId": 11780
+          }
+        ],
+        "guybedford/es-module-lexer": [
+          {
+            "title": "feat: skip trailing white space in dynamic import",
+            "prId": 162
+          },
+          {
+            "title": "feat: ESM detection support",
+            "prId": 160
+          }
+        ],
+        "postcss/postcss-load-config": [
+          {
+            "title": "feat: support <code>.cts</code>",
+            "prId": 252
+          }
+        ],
+        "vitejs/docs-ja": [
+          {
+            "title": "docs: docs: v4 to v5 migration guide",
+            "prId": 1161
+          }
+        ],
+        "unjs/unbuild": [
+          {
+            "title": "feat!: update to rollup 4",
+            "prId": 327
+          }
+        ],
+        "nodejs/node": [
+          {
+            "title": "fs: add stacktrace to fs/promises",
+            "prId": 49849
+          },
+          {
+            "title": "lib: add api to detect whether source-maps are enabled",
+            "prId": 46391
+          }
+        ],
+        "egoist/tsup": [
+          {
+            "title": "feat!: update to rollup v4",
+            "prId": 1018
+          },
+          {
+            "title": "fix: preserve top-level when running terser for IIFE",
+            "prId": 900
+          }
+        ],
+        "Rich-Harris/magic-string": [
+          {
+            "title": "fix: correct mappings for update containing new line",
+            "prId": 261
+          }
+        ],
+        "antfu-collective/vite-ssg": [
+          {
+            "title": "chore!: migrate to @unhead/vue from @vueuse/head",
+            "prId": 348
+          }
+        ],
+        "vuejs/language-tools": [
+          {
+            "title": "test: strict template unknown props",
+            "prId": 3284
+          }
+        ],
+        "unocss/unocss": [
+          {
+            "title": "fix(vscode): attributify auto complete",
+            "prId": 2661
+          },
+          {
+            "title": "fix(preset-attributify): autocomplete with prefix",
+            "prId": 2643
+          },
+          {
+            "title": "feat(preset-mini): add webkit vendor prefix to <code>user-select</code>",
+            "prId": 2408
+          }
+        ],
+        "vuejs/vitepress": [
+          {
+            "title": "fix(theme): support custom target and rel in navbar links for mobile",
+            "prId": 2400
+          },
+          {
+            "title": "fix: take &lt;a&gt; in SVG into account",
+            "prId": 1850
+          }
+        ],
+        "antfu-collective/taze": [
+          {
+            "title": "feat: support aliased deps (<code>npm:</code>)",
+            "prId": 65
+          }
+        ],
+        "vitest-dev/vitest": [
+          {
+            "title": "chore: replace source-map with trace-mapping",
+            "prId": 3236
+          }
+        ]
+      }
     ],
     [
-      "vite-pwa/vite-plugin-pwa",
-      [
-        {
-          "title": "perf: add hook filters",
-          "prId": 877
-        }
-      ]
+      "2022",
+      {
+        "DefinitelyTyped/DefinitelyTyped": [
+          {
+            "title": "update convert-source-map to v2",
+            "prId": 63573
+          },
+          {
+            "title": "pica: updated to v9",
+            "prId": 58609
+          }
+        ],
+        "vitejs/vite": [
+          {
+            "title": "fix: preview fallback",
+            "prId": 11312
+          },
+          {
+            "title": "fix: derive <code>useDefineForClassFields</code> value from <code>tsconfig.compilerOptions.target</code> (fixes #10296)",
+            "prId": 11301
+          },
+          {
+            "title": "fix(importGlob): preserve line count for sourcemap",
+            "prId": 11122
+          },
+          {
+            "title": "fix(importGlob): don't warn when CSS default import is not used",
+            "prId": 11121
+          },
+          {
+            "title": "fix(ssr): preserve require for external node",
+            "prId": 11057
+          },
+          {
+            "title": "perf: regexp perf issues, refactor regexp stylistic issues",
+            "prId": 10905
+          },
+          {
+            "title": "fix(config): resolve externalized specifier with internal resolver",
+            "prId": 10683
+          },
+          {
+            "title": "fix(config): don't use module condition (<code>import.meta.resolve</code>) (fixes #10430)",
+            "prId": 10528
+          },
+          {
+            "title": "fix: preserve default export from externalized packages (fixes #10258)",
+            "prId": 10406
+          },
+          {
+            "title": "fix: respect <code>mainFields</code> when resolving browser/module field (fixes #8659)",
+            "prId": 10071
+          },
+          {
+            "title": "feat(css): format error",
+            "prId": 9909
+          },
+          {
+            "title": "fix(ssr): rename objectPattern dynamic key (fixes #9585)",
+            "prId": 9609
+          },
+          {
+            "title": "fix: allow tree-shake glob eager css in js",
+            "prId": 9547
+          },
+          {
+            "title": "fix: avoid using <code>import.meta.url</code> for relative assets if output is not ESM (fixes #9297)",
+            "prId": 9381
+          },
+          {
+            "title": "perf: bundle create-vite",
+            "prId": 9034
+          },
+          {
+            "title": "feat: show ws connection error and don't reload if ws connection did not success",
+            "prId": 9007
+          },
+          {
+            "title": "fix(react): sourcemap incorrect warning and classic runtime sourcemap",
+            "prId": 9006
+          },
+          {
+            "title": "fix(ssr): fix sourcemap content (fixes #8657)",
+            "prId": 8997
+          },
+          {
+            "title": "docs: update WSL2 watch limitation explanation",
+            "prId": 8939
+          },
+          {
+            "title": "fix: infer hmr ws target by client location",
+            "prId": 8650
+          },
+          {
+            "title": "feat: print resolved address for localhost",
+            "prId": 8647
+          },
+          {
+            "title": "fix: default host to <code>localhost</code> instead of <code>127.0.0.1</code>",
+            "prId": 8543
+          },
+          {
+            "title": "fix(optimizer): external require-import conversion (fixes #2492, #3409, #5308)",
+            "prId": 8459
+          },
+          {
+            "title": "fix: missing types for <code>es-module-lexer</code> (fixes #8349)",
+            "prId": 8352
+          },
+          {
+            "title": "feat(wasm): new wasm plugin (<code>.wasm?init</code>)",
+            "prId": 8219
+          },
+          {
+            "title": "fix: add direct query to html-proxy css (fixes #8091)",
+            "prId": 8094
+          },
+          {
+            "title": "feat: css sourcemap support during dev",
+            "prId": 7173
+          },
+          {
+            "title": "fix: import with query with exports/browser field",
+            "prId": 7098
+          }
+        ],
+        "kekee000/fonteditor-core": [
+          {
+            "title": "Fix parsing cmap subtable format 14",
+            "prId": 47
+          }
+        ],
+        "vitejs/vite-ecosystem-ci": [
+          {
+            "title": "feat: group command output in GitHub Actions",
+            "prId": 139
+          },
+          {
+            "title": "feat: run from PR comment",
+            "prId": 122
+          },
+          {
+            "title": "feat: vite repo",
+            "prId": 120
+          },
+          {
+            "title": "Custom discord integration ",
+            "prId": 102
+          }
+        ],
+        "antfu/strip-literal": [
+          {
+            "title": "feat: introduce <code>createIsLiteralPositionAcorn</code> function",
+            "prId": 2
+          }
+        ],
+        "fb55/entities": [
+          {
+            "title": "feat: Smaller encode/decode maps",
+            "prId": 909
+          }
+        ],
+        "vitejs/docs-ja": [
+          {
+            "title": "docs: add troubleshooting page, docs: ESM is always strict mode",
+            "prId": 674
+          },
+          {
+            "title": "docs: update api-javascript",
+            "prId": 647
+          },
+          {
+            "title": "docs: cleanup changes",
+            "prId": 646
+          },
+          {
+            "title": "docs: migration from v2 guide",
+            "prId": 474
+          }
+        ],
+        "yyx990803/launch-editor": [
+          {
+            "title": "perf: use <code>Get-CimInstance</code> to guess editor on windows",
+            "prId": 42
+          }
+        ],
+        "vikejs/vike": [
+          {
+            "title": "Some changes to make vite-ecosystem-ci pass",
+            "prId": 371
+          }
+        ],
+        "vuejs/create-vue": [
+          {
+            "title": "perf: exclude transpiled prompts code",
+            "prId": 121
+          }
+        ],
+        "Rich-Harris/magic-string": [
+          {
+            "title": "perf: delay guess encoded",
+            "prId": 216
+          }
+        ],
+        "vitest-dev/vitest": [
+          {
+            "title": "fix: handle error from pool.run",
+            "prId": 1348
+          },
+          {
+            "title": "fix: passing non array to reporters option did not effect",
+            "prId": 878
+          },
+          {
+            "title": "fix: unhandled error handler",
+            "prId": 876
+          },
+          {
+            "title": "fix: handle error during global setup",
+            "prId": 875
+          }
+        ],
+        "sindresorhus/log-update": [
+          {
+            "title": "Fix <code>fitTerminalHeight</code> is not working correctly with color text",
+            "prId": 57
+          }
+        ],
+        "bcoe/c8": [
+          {
+            "title": "fix(perf): cache <code>this.exclude.shouldInstrument</code> for improved performance",
+            "prId": 388
+          }
+        ],
+        "antfu-collective/vite-plugin-inspect": [
+          {
+            "title": "feat: show total latency of each plugins",
+            "prId": 21
+          },
+          {
+            "title": "perf: Improve diff performance",
+            "prId": 19
+          }
+        ],
+        "prettier/prettier": [
+          {
+            "title": "Improved performance with large HTML files",
+            "prId": 11696
+          }
+        ]
+      }
     ],
     [
-      "vitejs/rolldown-vite",
-      [
-        {
-          "title": "refactor: introduce <code>*.rolldownOptions</code> and deprecate <code>*.rollupOptions</code>",
-          "prId": 348
-        },
-        {
-          "title": "feat: make oxc runtime helpers name mangle-able",
-          "prId": 306
-        },
-        {
-          "title": "feat: plugin legacy",
-          "prId": 293
-        },
-        {
-          "title": "feat: add <code>resolve.tsconfigPaths</code> option to resolve with tsconfig paths",
-          "prId": 277
-        },
-        {
-          "title": "feat: moduleType support in dev",
-          "prId": 172
-        },
-        {
-          "title": "feat: enable all native plugins by default",
-          "prId": 168
-        }
-      ]
+      "2021",
+      {
+        "DefinitelyTyped/DefinitelyTyped": [
+          {
+            "title": "[styled-components] Fix union type of props being lost",
+            "prId": 57684
+          }
+        ],
+        "evanw/esbuild": [
+          {
+            "title": "feat: Shorten &quot;top&quot;, &quot;right&quot;... properties into &quot;inset&quot; property",
+            "prId": 1758
+          },
+          {
+            "title": "feat: minify <code>font</code>/<code>font-family</code>/<code>font-weight</code> CSS property",
+            "prId": 1756
+          },
+          {
+            "title": "feat: drop catch binding when optional catch binding is supported",
+            "prId": 1660
+          }
+        ],
+        "vuejs/language-tools": [
+          {
+            "title": "Improve v-for type",
+            "prId": 546
+          }
+        ],
+        "vueuse/vueuse": [
+          {
+            "title": "feat(toRefs): new function",
+            "prId": 468
+          },
+          {
+            "title": "feat(autoResetRef): new function",
+            "prId": 444
+          }
+        ],
+        "windicss/windicss": [
+          {
+            "title": "fix: apply --tw-space-*-reverse to child",
+            "prId": 211
+          }
+        ],
+        "microsoft/vscode-html-languageservice": [
+          {
+            "title": "Remove existing attribute from autocomplete suggestions",
+            "prId": 99
+          }
+        ],
+        "OpenAPITools/openapi-generator": [
+          {
+            "title": "[typescript-axios] reduce file size",
+            "prId": 8283
+          }
+        ],
+        "vuejs/vetur": [
+          {
+            "title": "Dont include used attributes in suggestions",
+            "prId": 2565
+          },
+          {
+            "title": "Custom event auto complete",
+            "prId": 2558
+          }
+        ],
+        "vuejs/eslint-plugin-vue": [
+          {
+            "title": "Add composition api's computed function support to vue/no-side-effects-in-computed-properties close #1393",
+            "prId": 1407
+          },
+          {
+            "title": "Add composition api's computed function support to vue/return-in-computed-property refs #1393",
+            "prId": 1406
+          },
+          {
+            "title": "Add composition api's computed function support to vue/no-async-in-computed-properties refs #1393",
+            "prId": 1398
+          },
+          {
+            "title": "Make no-ref-as-operand fixable close #1394",
+            "prId": 1396
+          }
+        ]
+      }
     ],
     [
-      "joshwooding/vite-plugin-react-docgen-typescript",
-      [
-        {
-          "title": "Fix sourcemap generation",
-          "prId": 60
-        }
-      ]
+      "2020",
+      {
+        "eslint/eslint-release": [
+          {
+            "title": "Update: group commits by types in release log (fixes #46)",
+            "prId": 47
+          }
+        ],
+        "OpenAPITools/openapi-generator": [
+          {
+            "title": "[typescript-axios] rename query parameters to avoid collision",
+            "prId": 7475
+          },
+          {
+            "title": "[typescript-axios] switched to new URL API",
+            "prId": 6960
+          }
+        ],
+        "vuejs/composition-api": [
+          {
+            "title": "fix PropType",
+            "prId": 446
+          },
+          {
+            "title": "reapply #352 and fix test: Remove Function type from PropType type",
+            "prId": 371
+          }
+        ]
+      }
     ],
     [
-      "napi-rs/napi-rs",
-      [
-        {
-          "title": "feat(napi): add <code>Error.cause</code> support to <code>napi::Error</code>",
-          "prId": 2829
-        },
-        {
-          "title": "fix(napi-derive): generate types for threadsafe_function with WEAK=true correctly",
-          "prId": 2813
-        },
-        {
-          "title": "fix(napi-derive): generate correct types for HashMap with RandomState argument",
-          "prId": 2384
-        },
-        {
-          "title": "feat(napi-derive): implement <code>#[napi(transparent)]</code>",
-          "prId": 2376
-        },
-        {
-          "title": "feat(napi): allow <code>&amp;External</code> to be created from napi value",
-          "prId": 2037
-        },
-        {
-          "title": "feat(target): add support for s390x-unknown-linux-gnu",
-          "prId": 2028
-        },
-        {
-          "title": "feat(target): add support for powerpc64le-unknown-linux-gnu",
-          "prId": 2023
-        },
-        {
-          "title": "feat(target): add support for armv7-unknown-linux-muslebihf",
-          "prId": 2019
-        }
-      ]
-    ],
-    [
-      "oxc-project/oxc-browserslist",
-      [
-        {
-          "title": "refactor: reduce binary size further",
-          "prId": 226
-        }
-      ]
-    ],
-    [
-      "vitejs/vite",
-      [
-        {
-          "title": "fix(dev): incorrect sourcemap when optimized CJS is imported",
-          "prId": 20458
-        },
-        {
-          "title": "feat(legacy): add rolldown-vite support",
-          "prId": 20417
-        },
-        {
-          "title": "feat(ssr): resolve externalized packages with <code>resolve.externalConditions</code> and add <code>module-sync</code> to default external condition",
-          "prId": 20409
-        },
-        {
-          "title": "fix(hmr): register css deps as <code>type: asset</code>",
-          "prId": 20391
-        },
-        {
-          "title": "feat(ssr): support <code>import.meta.resolve</code> in module runner",
-          "prId": 20260
-        },
-        {
-          "title": "fix(optimizer): show error when <code>computeEntries</code> failed",
-          "prId": 20079
-        },
-        {
-          "title": "fix(css): should not wrap with double quote when the url rebase feature bailed out",
-          "prId": 20068
-        },
-        {
-          "title": "fix: importing an optional peer dep should throw an runtime error",
-          "prId": 20029
-        },
-        {
-          "title": "feat!: bump <code>build.target</code> and name it <code>baseline-widely-available</code>",
-          "prId": 20007
-        },
-        {
-          "title": "fix: check static serve file inside sirv",
-          "prId": 19965
-        },
-        {
-          "title": "feat: make PluginContext available for Vite-specific hooks",
-          "prId": 19936
-        },
-        {
-          "title": "fix(hmr): avoid infinite loop happening with <code>hot.invalidate</code> in circular deps",
-          "prId": 19870
-        },
-        {
-          "title": "fix: reject requests with <code>#</code> in request-target",
-          "prId": 19830
-        },
-        {
-          "title": "fix(hmr): run HMR handler sequentially",
-          "prId": 19793
-        },
-        {
-          "title": "docs: plugin authors guide for rolldown-vite",
-          "prId": 19759
-        },
-        {
-          "title": "feat: implement hook filters",
-          "prId": 19602
-        },
-        {
-          "title": "feat(css): allow scoping css to importers exports",
-          "prId": 19418
-        },
-        {
-          "title": "feat: show hosts in cert in CLI",
-          "prId": 19317
-        },
-        {
-          "title": "fix!: fix GHSA-vg6x-rcgg-rjx6",
-          "prId": 19234
-        },
-        {
-          "title": "feat(css): support preprocessor with lightningcss",
-          "prId": 19071
-        },
-        {
-          "title": "feat(client): ping from SharedWorker",
-          "prId": 19057
-        },
-        {
-          "title": "fix: skip the plugin if it has been called before with the same id and importer",
-          "prId": 19016
-        },
-        {
-          "title": "fix(hmr): register inlined assets as a dependency of CSS file",
-          "prId": 18979
-        },
-        {
-          "title": "feat: support log related functions in dev",
-          "prId": 18922
-        },
-        {
-          "title": "fix: <code>this.resolve</code> skipSelf should not skip for different <code>id</code> or <code>import</code>",
-          "prId": 18903
-        },
-        {
-          "title": "fix(html): externalize <code>rollup.external</code> scripts correctly",
-          "prId": 18618
-        },
-        {
-          "title": "fix: allow nested dependency selector to be used for <code>optimizeDeps.include</code> for SSR",
-          "prId": 18506
-        },
-        {
-          "title": "fix: use picomatch to align with tinyglobby",
-          "prId": 18503
-        },
-        {
-          "title": "feat(resolve)!: allow removing conditions",
-          "prId": 18395
-        },
-        {
-          "title": "feat: use a single transport for fetchModule and HMR support",
-          "prId": 18362
-        },
-        {
-          "title": "docs: env api expand runtime agnostic SSR section",
-          "prId": 18334
-        },
-        {
-          "title": "fix(ssr): <code>this</code> in exported function should be <code>undefined</code>",
-          "prId": 18329
-        },
-        {
-          "title": "docs: try to decouple more information in env api docs",
-          "prId": 18320
-        },
-        {
-          "title": "feat(json)!: add <code>json.stringify: 'auto'</code> and make that the default",
-          "prId": 18303
-        },
-        {
-          "title": "feat: add <code>environment::listen</code>",
-          "prId": 18263
-        },
-        {
-          "title": "fix: asset <code>new URL(,import.meta.url)</code> match",
-          "prId": 18194
-        },
-        {
-          "title": "feat: support originalFilename",
-          "prId": 17867
-        },
-        {
-          "title": "fix: don't add outDirs to watch.ignored if emptyOutDir is false",
-          "prId": 16453
-        },
-        {
-          "title": "feat(hmr): call <code>hotUpdate</code> hook with file create/delete",
-          "prId": 16249
-        },
-        {
-          "title": "docs: add <code>@shikiji/vitepress-twoslash</code>",
-          "prId": 16168
-        },
-        {
-          "title": "fix(worker): throw error when circular worker import is detected and support self referencing worker",
-          "prId": 16103
-        },
-        {
-          "title": "fix: upgrade esbuild to 0.20.x",
-          "prId": 16079
-        },
-        {
-          "title": "fix(css): avoid generating empty JS files when JS files becomes empty but has CSS files imported",
-          "prId": 16078
-        },
-        {
-          "title": "feat: csp nonce support",
-          "prId": 16052
-        },
-        {
-          "title": "fix: empty CSS file was output when only .css?url is used",
-          "prId": 15846
-        },
-        {
-          "title": "fix(css): <code>.css?url</code> support",
-          "prId": 15259
-        },
-        {
-          "title": "fix: emit <code>vite:preloadError</code> for chunks without deps",
-          "prId": 15203
-        },
-        {
-          "title": "fix: caret position was incorrect",
-          "prId": 14984
-        },
-        {
-          "title": "fix(css): correctly set manifest source name and emit CSS file",
-          "prId": 14945
-        },
-        {
-          "title": "fix(html): import expression in classic script for dev",
-          "prId": 14595
-        },
-        {
-          "title": "fix(html): inline style attribute not working in dev",
-          "prId": 14592
-        },
-        {
-          "title": "fix: esbuild glob resolve error",
-          "prId": 14533
-        },
-        {
-          "title": "feat!: rollup v4",
-          "prId": 14508
-        },
-        {
-          "title": "fix: handle sourcemap correctly when multiple line import exists",
-          "prId": 14232
-        },
-        {
-          "title": "feat(css)!: remove css default export",
-          "prId": 14125
-        },
-        {
-          "title": "fix(css): use single postcss instance",
-          "prId": 13738
-        },
-        {
-          "title": "perf: use thread for preprocessors",
-          "prId": 13584
-        },
-        {
-          "title": "feat!: update esbuild to 0.18.2",
-          "prId": 13525
-        },
-        {
-          "title": "fix: breakpoints in JS not working",
-          "prId": 13514
-        },
-        {
-          "title": "feat(config): friendly ESM file require error",
-          "prId": 13283
-        },
-        {
-          "title": "feat(legacy)!: bump modern target to support async generator",
-          "prId": 11896
-        },
-        {
-          "title": "fix(ssr): load sourcemaps alongside modules",
-          "prId": 11780
-        },
-        {
-          "title": "fix: preview fallback",
-          "prId": 11312
-        },
-        {
-          "title": "fix: derive <code>useDefineForClassFields</code> value from <code>tsconfig.compilerOptions.target</code> (fixes #10296)",
-          "prId": 11301
-        },
-        {
-          "title": "fix(importGlob): preserve line count for sourcemap",
-          "prId": 11122
-        },
-        {
-          "title": "fix(importGlob): don't warn when CSS default import is not used",
-          "prId": 11121
-        },
-        {
-          "title": "fix(ssr): preserve require for external node",
-          "prId": 11057
-        },
-        {
-          "title": "perf: regexp perf issues, refactor regexp stylistic issues",
-          "prId": 10905
-        },
-        {
-          "title": "fix(config): resolve externalized specifier with internal resolver",
-          "prId": 10683
-        },
-        {
-          "title": "fix(config): don't use module condition (<code>import.meta.resolve</code>) (fixes #10430)",
-          "prId": 10528
-        },
-        {
-          "title": "fix: preserve default export from externalized packages (fixes #10258)",
-          "prId": 10406
-        },
-        {
-          "title": "fix: respect <code>mainFields</code> when resolving browser/module field (fixes #8659)",
-          "prId": 10071
-        },
-        {
-          "title": "feat(css): format error",
-          "prId": 9909
-        },
-        {
-          "title": "fix(ssr): rename objectPattern dynamic key (fixes #9585)",
-          "prId": 9609
-        },
-        {
-          "title": "fix: allow tree-shake glob eager css in js",
-          "prId": 9547
-        },
-        {
-          "title": "fix: avoid using <code>import.meta.url</code> for relative assets if output is not ESM (fixes #9297)",
-          "prId": 9381
-        },
-        {
-          "title": "perf: bundle create-vite",
-          "prId": 9034
-        },
-        {
-          "title": "feat: show ws connection error and don't reload if ws connection did not success",
-          "prId": 9007
-        },
-        {
-          "title": "fix(react): sourcemap incorrect warning and classic runtime sourcemap",
-          "prId": 9006
-        },
-        {
-          "title": "fix(ssr): fix sourcemap content (fixes #8657)",
-          "prId": 8997
-        },
-        {
-          "title": "docs: update WSL2 watch limitation explanation",
-          "prId": 8939
-        },
-        {
-          "title": "fix: infer hmr ws target by client location",
-          "prId": 8650
-        },
-        {
-          "title": "feat: print resolved address for localhost",
-          "prId": 8647
-        },
-        {
-          "title": "fix: default host to <code>localhost</code> instead of <code>127.0.0.1</code>",
-          "prId": 8543
-        },
-        {
-          "title": "fix(optimizer): external require-import conversion (fixes #2492, #3409, #5308)",
-          "prId": 8459
-        },
-        {
-          "title": "fix: missing types for <code>es-module-lexer</code> (fixes #8349)",
-          "prId": 8352
-        },
-        {
-          "title": "feat(wasm): new wasm plugin (<code>.wasm?init</code>)",
-          "prId": 8219
-        },
-        {
-          "title": "fix: add direct query to html-proxy css (fixes #8091)",
-          "prId": 8094
-        },
-        {
-          "title": "feat: css sourcemap support during dev",
-          "prId": 7173
-        },
-        {
-          "title": "fix: import with query with exports/browser field",
-          "prId": 7098
-        }
-      ]
-    ],
-    [
-      "vitejs/vite-plugin-react",
-      [
-        {
-          "title": "feat: merge <code>plugin-react-oxc</code> into <code>plugin-react</code>",
-          "prId": 609
-        },
-        {
-          "title": "refactor!: bump required node version to 20.19+, 22.12+ and drop CJS build",
-          "prId": 583
-        },
-        {
-          "title": "feat(react): add raw rolldown support",
-          "prId": 513
-        },
-        {
-          "title": "refactor: extract common code in common package",
-          "prId": 443
-        },
-        {
-          "title": "feat: add plugin-react-oxc",
-          "prId": 439
-        },
-        {
-          "title": "refactor: merge vite plugin react swc in",
-          "prId": 423
-        }
-      ]
-    ],
-    [
-      "davidmyersdev/vite-plugin-node-polyfills",
-      [
-        {
-          "title": "Add rolldown-vite support",
-          "prId": 128
-        }
-      ]
-    ],
-    [
-      "vitejs/release-scripts",
-      [
-        {
-          "title": "feat: add generateChangelog function",
-          "prId": 73
-        }
-      ]
-    ],
-    [
-      "oxc-project/oxc-resolver",
-      [
-        {
-          "title": "fix: avoid crash when encountering tsconfig circular extends",
-          "prId": 570
-        },
-        {
-          "title": "fix: normalize resolved result on Windows for root",
-          "prId": 345
-        },
-        {
-          "title": "fix: don't panic when resolving <code>/</code> with <code>roots</code>",
-          "prId": 310
-        },
-        {
-          "title": "fix: use same UNC path normalization logic with libuv",
-          "prId": 306
-        }
-      ]
-    ],
-    [
-      "rollup/plugins",
-      [
-        {
-          "title": "feat(pluginutils): add <code>exactRegex</code> and <code>prefixRegex</code>",
-          "prId": 1865
-        },
-        {
-          "title": "feat(json): add <code>includeArbitraryNames</code> option",
-          "prId": 1641
-        },
-        {
-          "title": "fix(dynamic-import-vars): escape special glob characters",
-          "prId": 1636
-        },
-        {
-          "title": "feat(pluginutils): add <code>includeArbitraryNames: true</code> to <code>dataToEsm</code>",
-          "prId": 1635
-        },
-        {
-          "title": "feat(alias): add warning to avoid unintended duplicate modules",
-          "prId": 1634
-        }
-      ]
-    ],
-    [
-      "vitejs/vite-ecosystem-ci",
-      [
-        {
-          "title": "feat: show expected failures for rolldown-vite runs",
-          "prId": 395
-        },
-        {
-          "title": "feat: run with rolldown-vite regularly",
-          "prId": 379
-        },
-        {
-          "title": "feat: group command output in GitHub Actions",
-          "prId": 139
-        },
-        {
-          "title": "feat: run from PR comment",
-          "prId": 122
-        },
-        {
-          "title": "feat: vite repo",
-          "prId": 120
-        },
-        {
-          "title": "Custom discord integration ",
-          "prId": 102
-        }
-      ]
-    ],
-    [
-      "DefinitelyTyped/DefinitelyTyped",
-      [
-        {
-          "title": "[node] Update typings to v20.19.0",
-          "prId": 72938
-        },
-        {
-          "title": "[node] buffer: allow <code>ArrayBuffer | string</code> to be passed to <code>Buffer.from</code>",
-          "prId": 72097
-        },
-        {
-          "title": "update convert-source-map to v2",
-          "prId": 63573
-        },
-        {
-          "title": "pica: updated to v9",
-          "prId": 58609
-        },
-        {
-          "title": "[styled-components] Fix union type of props being lost",
-          "prId": 57684
-        },
-        {
-          "title": "Update KaTeX to v0.11.1",
-          "prId": 40647
-        }
-      ]
-    ],
-    [
-      "vitejs/vite-plugin-vue",
-      [
-        {
-          "title": "refactor!: bump required node version to 20.19+, 22.12+ and drop CJS build",
-          "prId": 596
-        },
-        {
-          "title": "feat(vue)!: separate include and exclude from <code>api.options</code> and add filter",
-          "prId": 582
-        }
-      ]
-    ],
-    [
-      "SchemaStore/schemastore",
-      [
-        {
-          "title": "Use lowercase for TypeScript module / target options",
-          "prId": 4732
-        },
-        {
-          "title": "Allow external package mappings in <code>imports</code> field in <code>package.json</code>",
-          "prId": 4340
-        },
-        {
-          "title": "Add <code>pnpm.**</code> fields to <code>package.json</code> schema",
-          "prId": 4259
-        },
-        {
-          "title": "Add <code>imports</code> field to <code>package.json</code> schema",
-          "prId": 4258
-        }
-      ]
-    ],
-    [
-      "antfu-collective/vite-plugin-inspect",
-      [
-        {
-          "title": "feat: generate module relationship for build",
-          "prId": 149
-        },
-        {
-          "title": "feat: add multi-env support for build",
-          "prId": 148
-        },
-        {
-          "title": "feat: show total latency of each plugins",
-          "prId": 21
-        },
-        {
-          "title": "perf: Improve diff performance",
-          "prId": 19
-        }
-      ]
-    ],
-    [
-      "vitest-dev/vitest",
-      [
-        {
-          "title": "fix: replace <code>micromatch</code> with <code>picomatch</code>",
-          "prId": 7951
-        },
-        {
-          "title": "chore: replace source-map with trace-mapping",
-          "prId": 3236
-        },
-        {
-          "title": "fix: handle error from pool.run",
-          "prId": 1348
-        },
-        {
-          "title": "fix: passing non array to reporters option did not effect",
-          "prId": 878
-        },
-        {
-          "title": "fix: unhandled error handler",
-          "prId": 876
-        },
-        {
-          "title": "fix: handle error during global setup",
-          "prId": 875
-        }
-      ]
-    ],
-    [
-      "publint/publint",
-      [
-        {
-          "title": "Support warning fallback arrays in exports / imports",
-          "prId": 180
-        }
-      ]
-    ],
-    [
-      "parcel-bundler/lightningcss",
-      [
-        {
-          "title": "Skip generating unnecessary <code>@supports</code>",
-          "prId": 878
-        },
-        {
-          "title": "Call StyleSheet / StyleSheetExit / Rule.custom.* in visitors passed to composeVisitors",
-          "prId": 875
-        }
-      ]
-    ],
-    [
-      "rollup/rollup",
-      [
-        {
-          "title": "Add support for hook filters",
-          "prId": 5882
-        },
-        {
-          "title": "Add linux arm musl build",
-          "prId": 5471
-        },
-        {
-          "title": "docs: add <code>@shikiji/vitepress-twoslash</code>",
-          "prId": 5445
-        },
-        {
-          "title": "fix: escape ids in <code>import.meta.ROLLUP_FILE_URL_referenceId</code> correctly",
-          "prId": 5404
-        },
-        {
-          "title": "Add friendly error for missing MSVC redistributable",
-          "prId": 5284
-        },
-        {
-          "title": "Add friendly error for npm bug",
-          "prId": 5267
-        },
-        {
-          "title": "perf: run lint while constructing nodes",
-          "prId": 5207
-        },
-        {
-          "title": "perf: shrink wasm size by avoid importing browserslist",
-          "prId": 5204
-        },
-        {
-          "title": "perf: introduce <code>parseAstAsync</code> and parallelize parsing AST",
-          "prId": 5202
-        },
-        {
-          "title": "Add known globals",
-          "prId": 5072
-        }
-      ]
-    ],
-    [
-      "antfu/vscode-pnpm-catalog-lens",
-      [
-        {
-          "title": "feat: jump to workspace file with built-in go-to-definition feature",
-          "prId": 9
-        }
-      ]
-    ],
-    [
-      "vuejs/vitepress",
-      [
-        {
-          "title": "feat!: upgrade vite to v6",
-          "prId": 4504
-        },
-        {
-          "title": "fix(theme): support custom target and rel in navbar links for mobile",
-          "prId": 2400
-        },
-        {
-          "title": "fix: take &lt;a&gt; in SVG into account",
-          "prId": 1850
-        }
-      ]
-    ],
-    [
-      "sxzz/ast-explorer",
-      [
-        {
-          "title": "feat: add lightningcss",
-          "prId": 110
-        }
-      ]
-    ],
-    [
-      "Rich-Harris/magic-string",
-      [
-        {
-          "title": "fix: missing mapping after a line break with <code>hires: 'boundary'</code>",
-          "prId": 298
-        },
-        {
-          "title": "perf: skip line break mappings",
-          "prId": 284
-        },
-        {
-          "title": "fix: correct mappings for update containing new line",
-          "prId": 261
-        },
-        {
-          "title": "perf: delay guess encoded",
-          "prId": 216
-        }
-      ]
-    ],
-    [
-      "marko-js/vite",
-      [
-        {
-          "title": "chore: set <code>build.assetsInlineLimit: 0</code> for SSR tests in dev",
-          "prId": 157
-        }
-      ]
-    ],
-    [
-      "honojs/hono",
-      [
-        {
-          "title": "fix(service-worker): bind fetch to <code>globalThis</code>",
-          "prId": 3500
-        }
-      ]
-    ],
-    [
-      "twoslashes/twoslash",
-      [
-        {
-          "title": "feat: add <code>fsCache</code> option to improve build performance",
-          "prId": 56
-        },
-        {
-          "title": "feat: support spaces before cut comments",
-          "prId": 33
-        }
-      ]
-    ],
-    [
-      "aquaproj/aqua",
-      [
-        {
-          "title": "fix(info): mask username on Windows",
-          "prId": 2902
-        }
-      ]
-    ],
-    [
-      "bluwy/publint",
-      [
-        {
-          "title": "Add a warning for jsnext field",
-          "prId": 85
-        },
-        {
-          "title": "Lint typings field file existence",
-          "prId": 60
-        },
-        {
-          "title": "Improve browser field suggestion",
-          "prId": 59
-        }
-      ]
-    ],
-    [
-      "guybedford/es-module-lexer",
-      [
-        {
-          "title": "feat: skip trailing white space in dynamic import",
-          "prId": 162
-        },
-        {
-          "title": "feat: ESM detection support",
-          "prId": 160
-        }
-      ]
-    ],
-    [
-      "postcss/postcss-load-config",
-      [
-        {
-          "title": "feat: support <code>.cts</code>",
-          "prId": 252
-        }
-      ]
-    ],
-    [
-      "vitejs/docs-ja",
-      [
-        {
-          "title": "docs: docs: v4 to v5 migration guide",
-          "prId": 1161
-        },
-        {
-          "title": "docs: add troubleshooting page, docs: ESM is always strict mode",
-          "prId": 674
-        },
-        {
-          "title": "docs: update api-javascript",
-          "prId": 647
-        },
-        {
-          "title": "docs: cleanup changes",
-          "prId": 646
-        },
-        {
-          "title": "docs: migration from v2 guide",
-          "prId": 474
-        }
-      ]
-    ],
-    [
-      "unjs/unbuild",
-      [
-        {
-          "title": "feat!: update to rollup 4",
-          "prId": 327
-        }
-      ]
-    ],
-    [
-      "nodejs/node",
-      [
-        {
-          "title": "fs: add stacktrace to fs/promises",
-          "prId": 49849
-        },
-        {
-          "title": "lib: add api to detect whether source-maps are enabled",
-          "prId": 46391
-        }
-      ]
-    ],
-    [
-      "egoist/tsup",
-      [
-        {
-          "title": "feat!: update to rollup v4",
-          "prId": 1018
-        },
-        {
-          "title": "fix: preserve top-level when running terser for IIFE",
-          "prId": 900
-        }
-      ]
-    ],
-    [
-      "antfu-collective/vite-ssg",
-      [
-        {
-          "title": "chore!: migrate to @unhead/vue from @vueuse/head",
-          "prId": 348
-        }
-      ]
-    ],
-    [
-      "vuejs/language-tools",
-      [
-        {
-          "title": "test: strict template unknown props",
-          "prId": 3284
-        },
-        {
-          "title": "Improve v-for type",
-          "prId": 546
-        }
-      ]
-    ],
-    [
-      "unocss/unocss",
-      [
-        {
-          "title": "fix(vscode): attributify auto complete",
-          "prId": 2661
-        },
-        {
-          "title": "fix(preset-attributify): autocomplete with prefix",
-          "prId": 2643
-        },
-        {
-          "title": "feat(preset-mini): add webkit vendor prefix to <code>user-select</code>",
-          "prId": 2408
-        }
-      ]
-    ],
-    [
-      "antfu-collective/taze",
-      [
-        {
-          "title": "feat: support aliased deps (<code>npm:</code>)",
-          "prId": 65
-        }
-      ]
-    ],
-    [
-      "kekee000/fonteditor-core",
-      [
-        {
-          "title": "Fix parsing cmap subtable format 14",
-          "prId": 47
-        }
-      ]
-    ],
-    [
-      "antfu/strip-literal",
-      [
-        {
-          "title": "feat: introduce <code>createIsLiteralPositionAcorn</code> function",
-          "prId": 2
-        }
-      ]
-    ],
-    [
-      "fb55/entities",
-      [
-        {
-          "title": "feat: Smaller encode/decode maps",
-          "prId": 909
-        }
-      ]
-    ],
-    [
-      "yyx990803/launch-editor",
-      [
-        {
-          "title": "perf: use <code>Get-CimInstance</code> to guess editor on windows",
-          "prId": 42
-        }
-      ]
-    ],
-    [
-      "vikejs/vike",
-      [
-        {
-          "title": "Some changes to make vite-ecosystem-ci pass",
-          "prId": 371
-        }
-      ]
-    ],
-    [
-      "vuejs/create-vue",
-      [
-        {
-          "title": "perf: exclude transpiled prompts code",
-          "prId": 121
-        }
-      ]
-    ],
-    [
-      "sindresorhus/log-update",
-      [
-        {
-          "title": "Fix <code>fitTerminalHeight</code> is not working correctly with color text",
-          "prId": 57
-        }
-      ]
-    ],
-    [
-      "bcoe/c8",
-      [
-        {
-          "title": "fix(perf): cache <code>this.exclude.shouldInstrument</code> for improved performance",
-          "prId": 388
-        }
-      ]
-    ],
-    [
-      "prettier/prettier",
-      [
-        {
-          "title": "Improved performance with large HTML files",
-          "prId": 11696
-        }
-      ]
-    ],
-    [
-      "evanw/esbuild",
-      [
-        {
-          "title": "feat: Shorten &quot;top&quot;, &quot;right&quot;... properties into &quot;inset&quot; property",
-          "prId": 1758
-        },
-        {
-          "title": "feat: minify <code>font</code>/<code>font-family</code>/<code>font-weight</code> CSS property",
-          "prId": 1756
-        },
-        {
-          "title": "feat: drop catch binding when optional catch binding is supported",
-          "prId": 1660
-        }
-      ]
-    ],
-    [
-      "vueuse/vueuse",
-      [
-        {
-          "title": "feat(toRefs): new function",
-          "prId": 468
-        },
-        {
-          "title": "feat(autoResetRef): new function",
-          "prId": 444
-        }
-      ]
-    ],
-    [
-      "windicss/windicss",
-      [
-        {
-          "title": "fix: apply --tw-space-*-reverse to child",
-          "prId": 211
-        }
-      ]
-    ],
-    [
-      "microsoft/vscode-html-languageservice",
-      [
-        {
-          "title": "Remove existing attribute from autocomplete suggestions",
-          "prId": 99
-        }
-      ]
-    ],
-    [
-      "OpenAPITools/openapi-generator",
-      [
-        {
-          "title": "[typescript-axios] reduce file size",
-          "prId": 8283
-        },
-        {
-          "title": "[typescript-axios] rename query parameters to avoid collision",
-          "prId": 7475
-        },
-        {
-          "title": "[typescript-axios] switched to new URL API",
-          "prId": 6960
-        }
-      ]
-    ],
-    [
-      "vuejs/vetur",
-      [
-        {
-          "title": "Dont include used attributes in suggestions",
-          "prId": 2565
-        },
-        {
-          "title": "Custom event auto complete",
-          "prId": 2558
-        }
-      ]
-    ],
-    [
-      "vuejs/eslint-plugin-vue",
-      [
-        {
-          "title": "Add composition api's computed function support to vue/no-side-effects-in-computed-properties close #1393",
-          "prId": 1407
-        },
-        {
-          "title": "Add composition api's computed function support to vue/return-in-computed-property refs #1393",
-          "prId": 1406
-        },
-        {
-          "title": "Add composition api's computed function support to vue/no-async-in-computed-properties refs #1393",
-          "prId": 1398
-        },
-        {
-          "title": "Make no-ref-as-operand fixable close #1394",
-          "prId": 1396
-        }
-      ]
-    ],
-    [
-      "eslint/eslint-release",
-      [
-        {
-          "title": "Update: group commits by types in release log (fixes #46)",
-          "prId": 47
-        }
-      ]
-    ],
-    [
-      "vuejs/composition-api",
-      [
-        {
-          "title": "fix PropType",
-          "prId": 446
-        },
-        {
-          "title": "reapply #352 and fix test: Remove Function type from PropType type",
-          "prId": 371
-        }
-      ]
-    ],
-    [
-      "tensorflow/tfjs",
-      [
-        {
-          "title": "[WASM] Add Greater, GreaterEqual kernels",
-          "prId": 2543
-        },
-        {
-          "title": "[wasm] Add Minimum, Maximum kernels",
-          "prId": 2528
-        }
-      ]
+      "2019",
+      {
+        "tensorflow/tfjs": [
+          {
+            "title": "[WASM] Add Greater, GreaterEqual kernels",
+            "prId": 2543
+          },
+          {
+            "title": "[wasm] Add Minimum, Maximum kernels",
+            "prId": 2528
+          }
+        ],
+        "DefinitelyTyped/DefinitelyTyped": [
+          {
+            "title": "Update KaTeX to v0.11.1",
+            "prId": 40647
+          }
+        ]
+      }
     ]
   ],
   "fetchedAt": "2025-09-01T10:10:37Z"

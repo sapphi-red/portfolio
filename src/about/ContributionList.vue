@@ -5,7 +5,7 @@ import { dateToDateTimeString } from '../../common/date'
 
 type PRDataType = typeof PRDataRaw
 type CorrectPRDataType = {
-  [K in keyof PRDataType]: K extends 'repos'
+  [K in keyof PRDataType]: K extends 'groupedPrs'
     ? CorrectPRsType<PRDataType[K]>
     : PRDataType[K]
 }
@@ -67,35 +67,45 @@ const lastFetched = computed(() =>
 </script>
 
 <template>
-  <ul>
-    <li v-for="[repoName, repo] in PRData.repos" :key="repoName">
-      {{ repoName }}
-      <ul>
-        <li v-for="pr in repo" :key="pr.prId">
-          <a :href="`https://github.com/${repoName}/pull/${pr.prId}`">
-            <i>#{{ pr.prId }}</i
-            >:
-            <!-- eslint-disable-next-line vue/no-v-html -->
-            <span v-html="pr.title"></span>
-          </a>
-          <ul v-if="additional[repoName]?.[pr.prId]">
-            <li
-              v-for="link in additional[repoName]![pr.prId]!"
-              :key="link.href"
-            >
-              <a :href="link.href">
-                {{ link.title }}
-              </a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
-  <p class="lastFetched">Last Fetched: {{ lastFetched }}</p>
+  <template v-for="[year, repos] in PRData.groupedPrs" :key="year">
+    <h2>{{ year }}</h2>
+    <ul>
+      <li v-for="[repoName, repo] in Object.entries(repos)" :key="repoName">
+        {{ repoName }}
+        <ul>
+          <li v-for="pr in repo" :key="pr.prId">
+            <a :href="`https://github.com/${repoName}/pull/${pr.prId}`">
+              <i>#{{ pr.prId }}</i
+              >:
+              <!-- eslint-disable-next-line vue/no-v-html -->
+              <span v-html="pr.title"></span>
+            </a>
+            <ul v-if="additional[repoName]?.[pr.prId]">
+              <li
+                v-for="link in additional[repoName]![pr.prId]!"
+                :key="link.href"
+              >
+                <a :href="link.href">
+                  {{ link.title }}
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </template>
+  <hr class="divider" />
+  <section>
+    <p class="lastFetched">Last Fetched: {{ lastFetched }}</p>
+  </section>
 </template>
 
 <style scoped>
+.divider {
+  margin-top: 48px;
+}
+
 .lastFetched {
   margin-top: 1rem;
   font-size: 0.8rem;
