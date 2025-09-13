@@ -53,7 +53,7 @@ const lastFetched = computed(() =>
       {{ repoName }}
       <ul>
         <li v-for="pr in repo" :key="pr.prId">
-          <a :href="pr.url">
+          <a :href="`https://github.com/${repoName}/pull/${pr.prId}`">
             <i>#{{ pr.prId }}</i
             >:
             <!-- eslint-disable-next-line vue/no-v-html -->

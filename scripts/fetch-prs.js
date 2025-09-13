@@ -283,7 +283,6 @@ const groupByRepo = (prs, each) => {
  */
 const shrinkData = (pr) => {
   return {
-    url: `https://github.com/${pr.repository.owner}/${pr.repository.name}/pull/${pr.number}`,
     title: pr.title,
     prId: pr.number,
   }
