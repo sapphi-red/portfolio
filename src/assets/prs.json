@@ -5,6 +5,58 @@
       {
         "oxc-project/oxc": [
           {
+            "title": "feat(minifier): inline single-use variable past read-only variables",
+            "prId": 14184
+          },
+          {
+            "title": "feat(mangler): mangle private class members",
+            "prId": 14027
+          },
+          {
+            "title": "feat(minifier): remove unused private class members",
+            "prId": 14026
+          },
+          {
+            "title": "feat(compat): implement <code>Display</code> for <code>EngineTargets</code>",
+            "prId": 13995
+          },
+          {
+            "title": "feat(minifier): inline single use variables within the same variable declarations",
+            "prId": 13959
+          },
+          {
+            "title": "feat(minifier): only apply <code>arguments</code> copy loop transformation in functions",
+            "prId": 13952
+          },
+          {
+            "title": "docs(minifier): clarify assumptions",
+            "prId": 13950
+          },
+          {
+            "title": "fix(minifier)!: receive supported engines instead of ecmascript versions",
+            "prId": 13933
+          },
+          {
+            "title": "feat(compat): extract compatibility data to oxc_compat crate",
+            "prId": 13932
+          },
+          {
+            "title": "feat(tasks/coverage): add node compat table tests for minifier",
+            "prId": 13925
+          },
+          {
+            "title": "perf(codegen): unroll loop in <code>SourcemapBuilder::update_generated_line_and_column</code>",
+            "prId": 13903
+          },
+          {
+            "title": "fix(minifier): don't inline single use variables that are not literals to for statement initializers",
+            "prId": 13769
+          },
+          {
+            "title": "feat(minifier): support ForStatements for single use variable inlining",
+            "prId": 13755
+          },
+          {
             "title": "feat(minifier): constant fold <code>RegExp.prototype.source</code>",
             "prId": 13472
           },
@@ -237,7 +289,45 @@
             "prId": 8314
           }
         ],
+        "oxc-project/oxc-project.github.io": [
+          {
+            "title": "feat: expand transformer docs",
+            "prId": 519
+          }
+        ],
         "rolldown/rolldown": [
+          {
+            "title": "perf(dev): avoid frequent <code>setTimeout</code> -&gt; <code>clearTimeout</code>",
+            "prId": 6375
+          },
+          {
+            "title": "test(hmr): include generated bundle for full reloads in snapshots",
+            "prId": 6374
+          },
+          {
+            "title": "fix(dev): add <code>hasLatestBuildOutput</code> instead of <code>scheduleBuildIfStale</code> and add edit-reload test",
+            "prId": 6321
+          },
+          {
+            "title": "test(dev): support full reload in tests",
+            "prId": 6259
+          },
+          {
+            "title": "test: add class like cases for empty function optimizations",
+            "prId": 6248
+          },
+          {
+            "title": "refactor: wait <code>this.load</code> using futures instead of callbacks",
+            "prId": 6222
+          },
+          {
+            "title": "ci: extract wasi build to reusable workflow",
+            "prId": 6188
+          },
+          {
+            "title": "feat: add native react-refresh-wrapper plugin",
+            "prId": 6144
+          },
           {
             "title": "fix: trigger trace subscriber cleanup on Node.js side",
             "prId": 5913
@@ -257,6 +347,10 @@
           {
             "title": "feat: use PIFE for callbacks passed to <code>__esmMin</code> wrapper",
             "prId": 5319
+          },
+          {
+            "title": "test(hmr): hmr patch file generation for <code>this.addWatchFile</code>",
+            "prId": 5219
           },
           {
             "title": "feat: use same option object reference",
@@ -283,27 +377,27 @@
             "prId": 4265
           }
         ],
-        "sagemathinc/http-proxy-3": [
-          {
-            "title": "feat: support empty <code>req.url</code>",
-            "prId": 24
-          },
-          {
-            "title": "enable typescript strict checks",
-            "prId": 9
-          },
-          {
-            "title": "Improve types to have more compatibility with <code>@types/http-proxy</code>",
-            "prId": 7
-          }
-        ],
-        "vite-pwa/vite-plugin-pwa": [
-          {
-            "title": "perf: add hook filters",
-            "prId": 877
-          }
-        ],
         "vitejs/rolldown-vite": [
+          {
+            "title": "feat: update rolldown",
+            "prId": 435
+          },
+          {
+            "title": "feat: update rolldown",
+            "prId": 423
+          },
+          {
+            "title": "feat: update rolldown",
+            "prId": 415
+          },
+          {
+            "title": "wip: use dev api",
+            "prId": 401
+          },
+          {
+            "title": "feat: update rolldown",
+            "prId": 400
+          },
           {
             "title": "refactor: introduce <code>*.rolldownOptions</code> and deprecate <code>*.rollupOptions</code>",
             "prId": 348
@@ -329,29 +423,73 @@
             "prId": 168
           }
         ],
-        "joshwooding/vite-plugin-react-docgen-typescript": [
+        "oxc-project/oxc-sourcemap": [
           {
-            "title": "Fix sourcemap generation",
-            "prId": 60
-          }
-        ],
-        "napi-rs/napi-rs": [
-          {
-            "title": "feat(napi): add <code>Error.cause</code> support to <code>napi::Error</code>",
-            "prId": 2829
+            "title": "fix: take <code>;</code> into account when estimating mappings length",
+            "prId": 167
           },
           {
-            "title": "fix(napi-derive): generate types for threadsafe_function with WEAK=true correctly",
-            "prId": 2813
+            "title": "perf: simplify LineLookupTable structure",
+            "prId": 151
           }
         ],
-        "oxc-project/oxc-browserslist": [
+        "vitejs/vite-plugin-react": [
           {
-            "title": "refactor: reduce binary size further",
-            "prId": 226
+            "title": "perf(react): use native refresh wrapper plugin in rolldown-vite",
+            "prId": 881
+          },
+          {
+            "title": "fix(react): hmr did not work for components imported with queries with rolldown-vite",
+            "prId": 872
+          },
+          {
+            "title": "perf: avoid sourcemap for refresh wrapper injection",
+            "prId": 835
+          },
+          {
+            "title": "feat: merge <code>plugin-react-oxc</code> into <code>plugin-react</code>",
+            "prId": 609
+          },
+          {
+            "title": "refactor!: bump required node version to 20.19+, 22.12+ and drop CJS build",
+            "prId": 583
+          },
+          {
+            "title": "feat(react): add raw rolldown support",
+            "prId": 513
+          },
+          {
+            "title": "refactor: extract common code in common package",
+            "prId": 443
+          },
+          {
+            "title": "feat: add plugin-react-oxc",
+            "prId": 439
+          },
+          {
+            "title": "refactor: merge vite plugin react swc in",
+            "prId": 423
+          }
+        ],
+        "unjs/httpxy": [
+          {
+            "title": "refactor!: code improvements",
+            "prId": 78
           }
         ],
         "vitejs/vite": [
+          {
+            "title": "feat(create-vite): add <code>--interactive</code> / <code>--no-interactive</code>",
+            "prId": 20797
+          },
+          {
+            "title": "feat(create-vite): scaffold with rolldown-vite",
+            "prId": 20739
+          },
+          {
+            "title": "fix: apply <code>fs.strict</code> check to HTML files",
+            "prId": 20736
+          },
           {
             "title": "fix(dev): incorrect sourcemap when optimized CJS is imported",
             "prId": 20458
@@ -449,30 +587,56 @@
             "prId": 18922
           }
         ],
-        "vitejs/vite-plugin-react": [
+        "oxc-project/oxc-resolver": [
           {
-            "title": "feat: merge <code>plugin-react-oxc</code> into <code>plugin-react</code>",
-            "prId": 609
+            "title": "perf: use <code>GetFileAttributesExW</code> for symlink metadata lookup on Windows",
+            "prId": 691
           },
           {
-            "title": "refactor!: bump required node version to 20.19+, 22.12+ and drop CJS build",
-            "prId": 583
+            "title": "fix: avoid crash when encountering tsconfig circular extends",
+            "prId": 570
+          }
+        ],
+        "sagemathinc/http-proxy-3": [
+          {
+            "title": "feat: support empty <code>req.url</code>",
+            "prId": 24
           },
           {
-            "title": "feat(react): add raw rolldown support",
-            "prId": 513
+            "title": "enable typescript strict checks",
+            "prId": 9
           },
           {
-            "title": "refactor: extract common code in common package",
-            "prId": 443
+            "title": "Improve types to have more compatibility with <code>@types/http-proxy</code>",
+            "prId": 7
+          }
+        ],
+        "vite-pwa/vite-plugin-pwa": [
+          {
+            "title": "perf: add hook filters",
+            "prId": 877
+          }
+        ],
+        "joshwooding/vite-plugin-react-docgen-typescript": [
+          {
+            "title": "Fix sourcemap generation",
+            "prId": 60
+          }
+        ],
+        "napi-rs/napi-rs": [
+          {
+            "title": "feat(napi): add <code>Error.cause</code> support to <code>napi::Error</code>",
+            "prId": 2829
           },
           {
-            "title": "feat: add plugin-react-oxc",
-            "prId": 439
-          },
+            "title": "fix(napi-derive): generate types for threadsafe_function with WEAK=true correctly",
+            "prId": 2813
+          }
+        ],
+        "oxc-project/oxc-browserslist": [
           {
-            "title": "refactor: merge vite plugin react swc in",
-            "prId": 423
+            "title": "refactor: reduce binary size further",
+            "prId": 226
           }
         ],
         "davidmyersdev/vite-plugin-node-polyfills": [
@@ -485,12 +649,6 @@
           {
             "title": "feat: add generateChangelog function",
             "prId": 73
-          }
-        ],
-        "oxc-project/oxc-resolver": [
-          {
-            "title": "fix: avoid crash when encountering tsconfig circular extends",
-            "prId": 570
           }
         ],
         "rollup/plugins": [
@@ -1470,5 +1628,5 @@
       }
     ]
   ],
-  "fetchedAt": "2025-09-01T10:10:37Z"
+  "fetchedAt": "2025-10-01T05:22:48Z"
 }
