@@ -3,7 +3,51 @@
     [
       "2025",
       {
+        "cloudflare/workers-sdk": [
+          {
+            "title": "fix(vite-plugin-cloudflare): allow &quot;invoke&quot; other than <code>fetchModule</code>",
+            "prId": 11123
+          }
+        ],
+        "oxc-project/oxc-project.github.io": [
+          {
+            "title": "feat(transformer): expand JSX and global variable replacement content",
+            "prId": 580
+          },
+          {
+            "title": "feat(minifier): add docs for <code>treeshake</code> options",
+            "prId": 579
+          },
+          {
+            "title": "feat: expand minifier docs and transformer global variable replacement docs",
+            "prId": 571
+          },
+          {
+            "title": "feat: expand transformer docs",
+            "prId": 519
+          }
+        ],
         "oxc-project/oxc": [
+          {
+            "title": "feat(parser): add more helps to parser errors",
+            "prId": 15186
+          },
+          {
+            "title": "feat(minifier): handle direct eval calls",
+            "prId": 15067
+          },
+          {
+            "title": "feat(minifier): add <code>drop_labels</code> feature",
+            "prId": 14634
+          },
+          {
+            "title": "fix(minifier): bail out <code>arguments</code> copy loop substitution if the temporary variables are referenced outside the for loop",
+            "prId": 14613
+          },
+          {
+            "title": "feat(allocator): add <code>HashSet</code>",
+            "prId": 14212
+          },
           {
             "title": "feat(minifier): inline single-use variable past read-only variables",
             "prId": 14184
@@ -261,13 +305,39 @@
             "prId": 8314
           }
         ],
-        "oxc-project/oxc-project.github.io": [
-          {
-            "title": "feat: expand transformer docs",
-            "prId": 519
-          }
-        ],
         "rolldown/rolldown": [
+          {
+            "title": "feat: improve <code>EVAL</code> warning message",
+            "prId": 6776
+          },
+          {
+            "title": "feat: improve <code>EMPTY_IMPORT_META</code> warning message",
+            "prId": 6761
+          },
+          {
+            "title": "refactor(dev): receive an interface for DevRuntime rather than WebSocket directly",
+            "prId": 6734
+          },
+          {
+            "title": "refactor(dev): fix types for the runtime file and expose it properly",
+            "prId": 6731
+          },
+          {
+            "title": "chore(deps): update vitest to v4",
+            "prId": 6673
+          },
+          {
+            "title": "feat!: enable <code>output.minifyInternalExports</code> for <code>format: 'es'</code> or <code>minify: true</code>",
+            "prId": 6594
+          },
+          {
+            "title": "fix(dev): <code>should have idx</code> error happens with <code>deferSyncScanData</code> + incremental rebuild",
+            "prId": 6568
+          },
+          {
+            "title": "docs(guide): polish notable features page",
+            "prId": 6535
+          },
           {
             "title": "perf(dev): avoid frequent <code>setTimeout</code> -&gt; <code>clearTimeout</code>",
             "prId": 6375
@@ -325,41 +395,21 @@
             "prId": 4265
           }
         ],
-        "vitejs/vite-plugin-react": [
+        "rollup/plugins": [
           {
-            "title": "perf(react): use native refresh wrapper plugin in rolldown-vite",
-            "prId": 881
+            "title": "feat(commonjs)!: revert #1909 and add <code>requireNodeBuiltins</code> option",
+            "prId": 1937
           },
           {
-            "title": "perf: avoid sourcemap for refresh wrapper injection",
-            "prId": 835
-          },
-          {
-            "title": "feat: merge <code>plugin-react-oxc</code> into <code>plugin-react</code>",
-            "prId": 609
-          },
-          {
-            "title": "refactor!: bump required node version to 20.19+, 22.12+ and drop CJS build",
-            "prId": 583
-          },
-          {
-            "title": "feat(react): add raw rolldown support",
-            "prId": 513
-          },
-          {
-            "title": "refactor: extract common code in common package",
-            "prId": 443
-          },
-          {
-            "title": "feat: add plugin-react-oxc",
-            "prId": 439
-          },
-          {
-            "title": "refactor: merge vite plugin react swc in",
-            "prId": 423
+            "title": "feat(pluginutils): add <code>exactRegex</code> and <code>prefixRegex</code>",
+            "prId": 1865
           }
         ],
         "vitejs/vite": [
+          {
+            "title": "feat: add vite client connect events",
+            "prId": 20978
+          },
           {
             "title": "feat(create-vite): add <code>--interactive</code> / <code>--no-interactive</code>",
             "prId": 20797
@@ -371,6 +421,10 @@
           {
             "title": "fix: apply <code>fs.strict</code> check to HTML files",
             "prId": 20736
+          },
+          {
+            "title": "perf(worker): rebuild only when affected",
+            "prId": 20559
           },
           {
             "title": "fix(dev): incorrect sourcemap when optimized CJS is imported",
@@ -469,43 +523,19 @@
             "prId": 18922
           }
         ],
-        "oxc-project/oxc-sourcemap": [
-          {
-            "title": "perf: simplify LineLookupTable structure",
-            "prId": 151
-          }
-        ],
-        "oxc-project/oxc-resolver": [
-          {
-            "title": "perf: use <code>GetFileAttributesExW</code> for symlink metadata lookup on Windows",
-            "prId": 691
-          },
-          {
-            "title": "fix: avoid crash when encountering tsconfig circular extends",
-            "prId": 570
-          }
-        ],
-        "sagemathinc/http-proxy-3": [
-          {
-            "title": "feat: support empty <code>req.url</code>",
-            "prId": 24
-          },
-          {
-            "title": "enable typescript strict checks",
-            "prId": 9
-          },
-          {
-            "title": "Improve types to have more compatibility with <code>@types/http-proxy</code>",
-            "prId": 7
-          }
-        ],
-        "vite-pwa/vite-plugin-pwa": [
-          {
-            "title": "perf: add hook filters",
-            "prId": 877
-          }
-        ],
         "vitejs/rolldown-vite": [
+          {
+            "title": "feat: update rolldown",
+            "prId": 467
+          },
+          {
+            "title": "feat: update rolldown",
+            "prId": 456
+          },
+          {
+            "title": "fix: resolve default export consistently",
+            "prId": 444
+          },
           {
             "title": "refactor: introduce <code>*.rolldownOptions</code> and deprecate <code>*.rollupOptions</code>",
             "prId": 348
@@ -529,6 +559,118 @@
           {
             "title": "feat: enable all native plugins by default",
             "prId": 168
+          }
+        ],
+        "vitejs/vite-plugin-react": [
+          {
+            "title": "fix(react): compat with newer rolldown",
+            "prId": 930
+          },
+          {
+            "title": "perf(react): use native refresh wrapper plugin in rolldown-vite",
+            "prId": 881
+          },
+          {
+            "title": "perf: avoid sourcemap for refresh wrapper injection",
+            "prId": 835
+          },
+          {
+            "title": "feat: merge <code>plugin-react-oxc</code> into <code>plugin-react</code>",
+            "prId": 609
+          },
+          {
+            "title": "refactor!: bump required node version to 20.19+, 22.12+ and drop CJS build",
+            "prId": 583
+          },
+          {
+            "title": "feat(react): add raw rolldown support",
+            "prId": 513
+          },
+          {
+            "title": "refactor: extract common code in common package",
+            "prId": 443
+          },
+          {
+            "title": "feat: add plugin-react-oxc",
+            "prId": 439
+          },
+          {
+            "title": "refactor: merge vite plugin react swc in",
+            "prId": 423
+          }
+        ],
+        "vite-pwa/vite-plugin-pwa": [
+          {
+            "title": "fix: skip generation if the build errored",
+            "prId": 882
+          },
+          {
+            "title": "perf: add hook filters",
+            "prId": 877
+          }
+        ],
+        "sagemathinc/http-proxy-3": [
+          {
+            "title": "fix: use invalid domain as base in <code>toURL</code>",
+            "prId": 32
+          },
+          {
+            "title": "feat: support empty <code>req.url</code>",
+            "prId": 24
+          },
+          {
+            "title": "enable typescript strict checks",
+            "prId": 9
+          },
+          {
+            "title": "Improve types to have more compatibility with <code>@types/http-proxy</code>",
+            "prId": 7
+          }
+        ],
+        "vitejs/vite-plugin-vue": [
+          {
+            "title": "test: use <code>@rollup/plugin-swc</code> with rolldown-vite for ecma decorators",
+            "prId": 682
+          },
+          {
+            "title": "refactor!: bump required node version to 20.19+, 22.12+ and drop CJS build",
+            "prId": 596
+          },
+          {
+            "title": "feat(vue)!: separate include and exclude from <code>api.options</code> and add filter",
+            "prId": 582
+          }
+        ],
+        "publint/publint": [
+          {
+            "title": "Warn CJS with default export and <code>__esModule</code> marker",
+            "prId": 201
+          },
+          {
+            "title": "Support warning fallback arrays in exports / imports",
+            "prId": 180
+          }
+        ],
+        "notify-rs/notify": [
+          {
+            "title": "fix: debounce events",
+            "prId": 711
+          }
+        ],
+        "oxc-project/oxc-sourcemap": [
+          {
+            "title": "perf: simplify LineLookupTable structure",
+            "prId": 151
+          }
+        ],
+        "oxc-project/oxc-resolver": [
+          {
+            "title": "perf: use <code>GetFileAttributesExW</code> for symlink metadata lookup on Windows",
+            "prId": 691
+          },
+          {
+            "title": "fix: avoid crash when encountering tsconfig circular extends",
+            "prId": 570
           }
         ],
         "joshwooding/vite-plugin-react-docgen-typescript": [
@@ -565,12 +707,6 @@
             "prId": 73
           }
         ],
-        "rollup/plugins": [
-          {
-            "title": "feat(pluginutils): add <code>exactRegex</code> and <code>prefixRegex</code>",
-            "prId": 1865
-          }
-        ],
         "vitejs/vite-ecosystem-ci": [
           {
             "title": "feat: show expected failures for rolldown-vite runs",
@@ -589,16 +725,6 @@
           {
             "title": "[node] buffer: allow <code>ArrayBuffer | string</code> to be passed to <code>Buffer.from</code>",
             "prId": 72097
-          }
-        ],
-        "vitejs/vite-plugin-vue": [
-          {
-            "title": "refactor!: bump required node version to 20.19+, 22.12+ and drop CJS build",
-            "prId": 596
-          },
-          {
-            "title": "feat(vue)!: separate include and exclude from <code>api.options</code> and add filter",
-            "prId": 582
           }
         ],
         "SchemaStore/schemastore": [
@@ -625,12 +751,6 @@
           {
             "title": "fix: replace <code>micromatch</code> with <code>picomatch</code>",
             "prId": 7951
-          }
-        ],
-        "publint/publint": [
-          {
-            "title": "Support warning fallback arrays in exports / imports",
-            "prId": 180
           }
         ],
         "parcel-bundler/lightningcss": [
@@ -1542,5 +1662,5 @@
       }
     ]
   ],
-  "fetchedAt": "2025-10-01T05:22:48Z"
+  "fetchedAt": "2025-11-01T08:17:07Z"
 }
