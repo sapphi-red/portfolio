@@ -60,7 +60,7 @@ jobs:
             });
             return deployment.id;
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0 # to obtain last blog update date
       - uses: pnpm/action-setup@41ff72655975bd51cab0327fa583b6e92b6d3061 # v4
