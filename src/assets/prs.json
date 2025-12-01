@@ -3,7 +3,357 @@
     [
       "2025",
       {
+        "rolldown/rolldown": [
+          {
+            "title": "test(watch): close watcher when an error occured in the test cases",
+            "prId": 7225
+          },
+          {
+            "title": "test: add test262 integration tests",
+            "prId": 7196
+          },
+          {
+            "title": "feat(rolldown_binding): add context to errors thrown by plugin hooks",
+            "prId": 6964
+          },
+          {
+            "title": "refactor!: remove deprecated top-level <code>define</code> and <code>inject</code> options",
+            "prId": 6912
+          },
+          {
+            "title": "feat: improve <code>EVAL</code> warning message",
+            "prId": 6776
+          },
+          {
+            "title": "feat: improve <code>EMPTY_IMPORT_META</code> warning message",
+            "prId": 6761
+          },
+          {
+            "title": "refactor(dev): receive an interface for DevRuntime rather than WebSocket directly",
+            "prId": 6734
+          },
+          {
+            "title": "refactor(dev): fix types for the runtime file and expose it properly",
+            "prId": 6731
+          },
+          {
+            "title": "chore(deps): update vitest to v4",
+            "prId": 6673
+          },
+          {
+            "title": "feat!: enable <code>output.minifyInternalExports</code> for <code>format: 'es'</code> or <code>minify: true</code>",
+            "prId": 6594
+          },
+          {
+            "title": "fix(dev): <code>should have idx</code> error happens with <code>deferSyncScanData</code> + incremental rebuild",
+            "prId": 6568
+          },
+          {
+            "title": "docs(guide): polish notable features page",
+            "prId": 6535
+          },
+          {
+            "title": "perf(dev): avoid frequent <code>setTimeout</code> -&gt; <code>clearTimeout</code>",
+            "prId": 6375
+          },
+          {
+            "title": "refactor: wait <code>this.load</code> using futures instead of callbacks",
+            "prId": 6222
+          },
+          {
+            "title": "feat: add native react-refresh-wrapper plugin",
+            "prId": 6144
+          },
+          {
+            "title": "fix: trigger trace subscriber cleanup on Node.js side",
+            "prId": 5913
+          },
+          {
+            "title": "fix(hmr): <code>import.meta.hot.accept</code> in patch file should work",
+            "prId": 5823
+          },
+          {
+            "title": "feat: include plugin name in the message of UNHANDLEABLE_ERRORs that happened in plugins",
+            "prId": 5636
+          },
+          {
+            "title": "feat: pass plugin name to log",
+            "prId": 5635
+          },
+          {
+            "title": "feat: use PIFE for callbacks passed to <code>__esmMin</code> wrapper",
+            "prId": 5319
+          },
+          {
+            "title": "feat: use same option object reference",
+            "prId": 5114
+          },
+          {
+            "title": "feat(plugin/vite-resolve): support tsconfig paths",
+            "prId": 5004
+          },
+          {
+            "title": "feat(pluginutils): add <code>makeIdFiltersToMatchWithQuery</code> function",
+            "prId": 4469
+          },
+          {
+            "title": "feat(pluginutils): add <code>exactRegex</code> and <code>prefixRegex</code>",
+            "prId": 4458
+          },
+          {
+            "title": "feat(plugin/vite-resolve): port changes after Vite 6",
+            "prId": 4269
+          },
+          {
+            "title": "docs: add performance guide",
+            "prId": 4265
+          }
+        ],
+        "vitejs/vite": [
+          {
+            "title": "docs: clarify manifest.json <code>imports</code> field is JS chunks only",
+            "prId": 21136
+          },
+          {
+            "title": "fix(proxy): set host header for requests from HTTP2",
+            "prId": 21134
+          },
+          {
+            "title": "feat: add vite client connect events",
+            "prId": 20978
+          },
+          {
+            "title": "feat(create-vite): add <code>--interactive</code> / <code>--no-interactive</code>",
+            "prId": 20797
+          },
+          {
+            "title": "feat(create-vite): scaffold with rolldown-vite",
+            "prId": 20739
+          },
+          {
+            "title": "fix: apply <code>fs.strict</code> check to HTML files",
+            "prId": 20736
+          },
+          {
+            "title": "perf(worker): rebuild only when affected",
+            "prId": 20559
+          },
+          {
+            "title": "fix(dev): incorrect sourcemap when optimized CJS is imported",
+            "prId": 20458
+          },
+          {
+            "title": "feat(legacy): add rolldown-vite support",
+            "prId": 20417
+          },
+          {
+            "title": "feat(ssr): resolve externalized packages with <code>resolve.externalConditions</code> and add <code>module-sync</code> to default external condition",
+            "prId": 20409
+          },
+          {
+            "title": "fix(hmr): register css deps as <code>type: asset</code>",
+            "prId": 20391
+          },
+          {
+            "title": "feat(ssr): support <code>import.meta.resolve</code> in module runner",
+            "prId": 20260
+          },
+          {
+            "title": "fix(optimizer): show error when <code>computeEntries</code> failed",
+            "prId": 20079
+          },
+          {
+            "title": "fix(css): should not wrap with double quote when the url rebase feature bailed out",
+            "prId": 20068
+          },
+          {
+            "title": "fix: importing an optional peer dep should throw an runtime error",
+            "prId": 20029
+          },
+          {
+            "title": "feat!: bump <code>build.target</code> and name it <code>baseline-widely-available</code>",
+            "prId": 20007
+          },
+          {
+            "title": "fix: check static serve file inside sirv",
+            "prId": 19965
+          },
+          {
+            "title": "feat: make PluginContext available for Vite-specific hooks",
+            "prId": 19936
+          },
+          {
+            "title": "fix(hmr): avoid infinite loop happening with <code>hot.invalidate</code> in circular deps",
+            "prId": 19870
+          },
+          {
+            "title": "fix: reject requests with <code>#</code> in request-target",
+            "prId": 19830
+          },
+          {
+            "title": "fix(hmr): run HMR handler sequentially",
+            "prId": 19793
+          },
+          {
+            "title": "docs: plugin authors guide for rolldown-vite",
+            "prId": 19759
+          },
+          {
+            "title": "feat: implement hook filters",
+            "prId": 19602
+          },
+          {
+            "title": "feat(css): allow scoping css to importers exports",
+            "prId": 19418
+          },
+          {
+            "title": "feat: show hosts in cert in CLI",
+            "prId": 19317
+          },
+          {
+            "title": "fix!: fix GHSA-vg6x-rcgg-rjx6",
+            "prId": 19234
+          },
+          {
+            "title": "feat(css): support preprocessor with lightningcss",
+            "prId": 19071
+          },
+          {
+            "title": "feat(client): ping from SharedWorker",
+            "prId": 19057
+          },
+          {
+            "title": "fix: skip the plugin if it has been called before with the same id and importer",
+            "prId": 19016
+          },
+          {
+            "title": "fix(hmr): register inlined assets as a dependency of CSS file",
+            "prId": 18979
+          },
+          {
+            "title": "feat: support log related functions in dev",
+            "prId": 18922
+          }
+        ],
+        "sagemathinc/http-proxy-3": [
+          {
+            "title": "fix: set host header for requests from HTTP2 to HTTP1",
+            "prId": 43
+          },
+          {
+            "title": "chore: update to Vitest v4",
+            "prId": 38
+          },
+          {
+            "title": "fix: use invalid domain as base in <code>toURL</code>",
+            "prId": 32
+          },
+          {
+            "title": "feat: support empty <code>req.url</code>",
+            "prId": 24
+          },
+          {
+            "title": "enable typescript strict checks",
+            "prId": 9
+          },
+          {
+            "title": "Improve types to have more compatibility with <code>@types/http-proxy</code>",
+            "prId": 7
+          }
+        ],
         "oxc-project/oxc": [
+          {
+            "title": "fix(minifier): avoid merging side effectful expressions to next assignment statement if the side effect may change the left hand side reference",
+            "prId": 16165
+          },
+          {
+            "title": "test(all): check parse errors existence",
+            "prId": 15865
+          },
+          {
+            "title": "test(tasks/coverage/typescript): collect more error files",
+            "prId": 15496
+          },
+          {
+            "title": "fix(semantic): allow reserved keywords in typescript ambient contexts",
+            "prId": 15495
+          },
+          {
+            "title": "test(tasks/coverage/typescript): Update <code>1xxx</code> error codes handling",
+            "prId": 15493
+          },
+          {
+            "title": "test(tasks/coverage/typescript): Update <code>2541-2999</code> error codes handling",
+            "prId": 15492
+          },
+          {
+            "title": "feat(minifier): rotate binary expressions to remove parentheses",
+            "prId": 15473
+          },
+          {
+            "title": "feat(parser): improve error messages for missing closing parentheses",
+            "prId": 15446
+          },
+          {
+            "title": "feat(parser): improve error message for missing block closing tokens",
+            "prId": 15445
+          },
+          {
+            "title": "feat(parser): improve error message for missing closing tokens that may be followed by a rest element",
+            "prId": 15444
+          },
+          {
+            "title": "feat(parser): show allowed modifiers in invalid modifier error messages",
+            "prId": 15442
+          },
+          {
+            "title": "feat(parser,semantic): add TS1274 error",
+            "prId": 15441
+          },
+          {
+            "title": "feat(parser): add more help messages to diagnostics",
+            "prId": 15440
+          },
+          {
+            "title": "docs(linter): always refer as &quot;ES2015&quot; instead of &quot;ES6&quot;",
+            "prId": 15411
+          },
+          {
+            "title": "feat(parser): improve error message for missing closing tokens",
+            "prId": 15269
+          },
+          {
+            "title": "fix(linter/plugins): resolve JS plugins only with conditions Node.js supports",
+            "prId": 15248
+          },
+          {
+            "title": "fix(parser): reject <code>using</code> / <code>await using</code> in a switch <code>case</code> / <code>default</code> clause",
+            "prId": 15225
+          },
+          {
+            "title": "fix(parser): reject <code>using</code> / <code>await using</code> in single statement contexts",
+            "prId": 15224
+          },
+          {
+            "title": "feat(parser): add more helps to parser errors",
+            "prId": 15186
+          },
+          {
+            "title": "feat(minifier): handle direct eval calls",
+            "prId": 15067
+          },
+          {
+            "title": "feat(minifier): add <code>drop_labels</code> feature",
+            "prId": 14634
+          },
+          {
+            "title": "fix(minifier): bail out <code>arguments</code> copy loop substitution if the temporary variables are referenced outside the for loop",
+            "prId": 14613
+          },
+          {
+            "title": "feat(allocator): add <code>HashSet</code>",
+            "prId": 14212
+          },
           {
             "title": "feat(minifier): inline single-use variable past read-only variables",
             "prId": 14184
@@ -261,71 +611,289 @@
             "prId": 8314
           }
         ],
+        "rolldown/metric": [
+          {
+            "title": "fix: set variant commits correctly",
+            "prId": 280
+          }
+        ],
         "oxc-project/oxc-project.github.io": [
+          {
+            "title": "feat(minifier): add more content",
+            "prId": 655
+          },
+          {
+            "title": "feat: add <code>await</code> before async functions",
+            "prId": 628
+          },
+          {
+            "title": "feat(transformer): add decorator metadata limitation warning",
+            "prId": 609
+          },
+          {
+            "title": "feat(transformer): expand JSX and global variable replacement content",
+            "prId": 580
+          },
+          {
+            "title": "feat(minifier): add docs for <code>treeshake</code> options",
+            "prId": 579
+          },
+          {
+            "title": "feat: expand minifier docs and transformer global variable replacement docs",
+            "prId": 571
+          },
           {
             "title": "feat: expand transformer docs",
             "prId": 519
           }
         ],
-        "rolldown/rolldown": [
+        "rolldown/notify": [
           {
-            "title": "perf(dev): avoid frequent <code>setTimeout</code> -&gt; <code>clearTimeout</code>",
-            "prId": 6375
+            "title": "refactor(file-id): reduce unsafe block range and add safety comment",
+            "prId": 52
           },
           {
-            "title": "refactor: wait <code>this.load</code> using futures instead of callbacks",
-            "prId": 6222
+            "title": "refactor: enable more clippy rules",
+            "prId": 50
           },
           {
-            "title": "feat: add native react-refresh-wrapper plugin",
-            "prId": 6144
+            "title": "feat: add tracing logs to remaining files",
+            "prId": 48
           },
           {
-            "title": "fix: trigger trace subscriber cleanup on Node.js side",
-            "prId": 5913
+            "title": "feat: add tracing logs for fsevent backend",
+            "prId": 47
           },
           {
-            "title": "fix(hmr): <code>import.meta.hot.accept</code> in patch file should work",
-            "prId": 5823
+            "title": "feat: add tracing logs for kqueue backend",
+            "prId": 46
           },
           {
-            "title": "feat: include plugin name in the message of UNHANDLEABLE_ERRORs that happened in plugins",
-            "prId": 5636
+            "title": "feat: add tracing logs for Windows backend",
+            "prId": 45
           },
           {
-            "title": "feat: pass plugin name to log",
-            "prId": 5635
+            "title": "feat: add tracing logs for inotify backend",
+            "prId": 44
           },
           {
-            "title": "feat: use PIFE for callbacks passed to <code>__esmMin</code> wrapper",
-            "prId": 5319
+            "title": "refactor: use tracing instead of log",
+            "prId": 43
           },
           {
-            "title": "feat: use same option object reference",
-            "prId": 5114
+            "title": "test: add <code>upgrade_to_recursive</code> tests",
+            "prId": 40
           },
           {
-            "title": "feat(plugin/vite-resolve): support tsconfig paths",
-            "prId": 5004
+            "title": "fix: filter out unrelated events for inotify &amp; kqueue backend",
+            "prId": 38
           },
           {
-            "title": "feat(pluginutils): add <code>makeIdFiltersToMatchWithQuery</code> function",
-            "prId": 4469
+            "title": "test: add <code>TargetMode</code> related tests for polling watcher",
+            "prId": 30
+          },
+          {
+            "title": "test: wait a short period before checking whether no events were received",
+            "prId": 29
+          },
+          {
+            "title": "feat: implement <code>TargetMode::TrackPath</code> for fsevent",
+            "prId": 27
+          },
+          {
+            "title": "feat: implement <code>TargetMode::TrackPath</code> for kqueue",
+            "prId": 25
+          },
+          {
+            "title": "refactor: merge adjacent <code>if</code> and <code>match</code> statements",
+            "prId": 24
+          },
+          {
+            "title": "feat: implement <code>TargetMode::TrackPath</code> for Windows",
+            "prId": 23
+          },
+          {
+            "title": "feat: implement <code>TargetMode::TrackPath</code> for inotify",
+            "prId": 22
+          },
+          {
+            "title": "feat!: change <code>Watcher::watch</code> to take <code>WatchMode</code> instead of <code>RecursiveMode</code>",
+            "prId": 21
+          },
+          {
+            "title": "fix: watch hardlinks correctly for inotify backend",
+            "prId": 20
+          },
+          {
+            "title": "fix: prevent hanging on file additions in recursive watches for inotify backend",
+            "prId": 18
+          },
+          {
+            "title": "fix: align the behavior of kqueue backend more with others",
+            "prId": 16
+          },
+          {
+            "title": "fix: remove watch handles after file deletion for inotify",
+            "prId": 15
+          },
+          {
+            "title": "fix: avoid watching file under a directory that is watched for inotify backend",
+            "prId": 14
+          },
+          {
+            "title": "test: verify watch handles for kqueue",
+            "prId": 13
+          },
+          {
+            "title": "test: verify watch handles for Windows backend",
+            "prId": 12
+          },
+          {
+            "title": "test: verify watch handles for inotify",
+            "prId": 11
+          },
+          {
+            "title": "refactor: separate watch_handles from watchers for inotify backend",
+            "prId": 9
+          },
+          {
+            "title": "fix: emit <code>remove</code> event if add watch fails due to non-existing path for kqueue watcher",
+            "prId": 6
+          },
+          {
+            "title": "test: add kqueue tests",
+            "prId": 5
+          },
+          {
+            "title": "fix: throw fsevents stream start error properly",
+            "prId": 4
+          },
+          {
+            "title": "perf: reuse the same <code>ReadDirectoryChangesW</code> handle for watching a file in the same directory",
+            "prId": 3
+          },
+          {
+            "title": "refactor: migrate to rust edition 2024",
+            "prId": 2
+          },
+          {
+            "title": "chore: add benchmark for <code>.paths_mut</code>",
+            "prId": 1
+          }
+        ],
+        "notify-rs/notify": [
+          {
+            "title": "test: add kqueue tests",
+            "prId": 734
+          },
+          {
+            "title": "fix: debounce events",
+            "prId": 711
+          }
+        ],
+        "vitejs/rolldown-vite": [
+          {
+            "title": "refactor: runtime deprecate <code>optimizeDeps.rollupOptions</code>",
+            "prId": 507
+          },
+          {
+            "title": "feat: update rolldown",
+            "prId": 502
+          },
+          {
+            "title": "feat: update rolldown",
+            "prId": 488
+          },
+          {
+            "title": "fix(optimizer): sync <code>optimizeDeps.rollupOptions</code> and <code>optimizeDeps.rolldownOptions</code>",
+            "prId": 482
+          },
+          {
+            "title": "docs: migration guide",
+            "prId": 469
+          },
+          {
+            "title": "feat: update rolldown",
+            "prId": 467
+          },
+          {
+            "title": "feat: update rolldown",
+            "prId": 456
+          },
+          {
+            "title": "fix: resolve default export consistently",
+            "prId": 444
+          },
+          {
+            "title": "refactor: introduce <code>*.rolldownOptions</code> and deprecate <code>*.rollupOptions</code>",
+            "prId": 348
+          },
+          {
+            "title": "feat: make oxc runtime helpers name mangle-able",
+            "prId": 306
+          },
+          {
+            "title": "feat: plugin legacy",
+            "prId": 293
+          },
+          {
+            "title": "feat: add <code>resolve.tsconfigPaths</code> option to resolve with tsconfig paths",
+            "prId": 277
+          },
+          {
+            "title": "feat: moduleType support in dev",
+            "prId": 172
+          },
+          {
+            "title": "feat: enable all native plugins by default",
+            "prId": 168
+          }
+        ],
+        "oxc-project/bench-transformer": [
+          {
+            "title": "feat: add async and promise.all async",
+            "prId": 66
+          }
+        ],
+        "oxc-project/oxc-resolver": [
+          {
+            "title": "fix: skip loading tsconfig.json from virtual module paths",
+            "prId": 809
+          },
+          {
+            "title": "fix: don't drop canonicalized path by cache clear",
+            "prId": 791
+          },
+          {
+            "title": "perf: use <code>GetFileAttributesExW</code> for symlink metadata lookup on Windows",
+            "prId": 691
+          },
+          {
+            "title": "fix: avoid crash when encountering tsconfig circular extends",
+            "prId": 570
+          }
+        ],
+        "cloudflare/workers-sdk": [
+          {
+            "title": "fix(vite-plugin-cloudflare): allow &quot;invoke&quot; other than <code>fetchModule</code>",
+            "prId": 11123
+          }
+        ],
+        "rollup/plugins": [
+          {
+            "title": "feat(commonjs)!: revert #1909 and add <code>requireNodeBuiltins</code> option",
+            "prId": 1937
           },
           {
             "title": "feat(pluginutils): add <code>exactRegex</code> and <code>prefixRegex</code>",
-            "prId": 4458
-          },
-          {
-            "title": "feat(plugin/vite-resolve): port changes after Vite 6",
-            "prId": 4269
-          },
-          {
-            "title": "docs: add performance guide",
-            "prId": 4265
+            "prId": 1865
           }
         ],
         "vitejs/vite-plugin-react": [
+          {
+            "title": "fix(react): compat with newer rolldown",
+            "prId": 930
+          },
           {
             "title": "perf(react): use native refresh wrapper plugin in rolldown-vite",
             "prId": 881
@@ -359,176 +927,44 @@
             "prId": 423
           }
         ],
-        "vitejs/vite": [
+        "vite-pwa/vite-plugin-pwa": [
           {
-            "title": "feat(create-vite): add <code>--interactive</code> / <code>--no-interactive</code>",
-            "prId": 20797
+            "title": "fix: skip generation if the build errored",
+            "prId": 882
           },
           {
-            "title": "feat(create-vite): scaffold with rolldown-vite",
-            "prId": 20739
+            "title": "perf: add hook filters",
+            "prId": 877
+          }
+        ],
+        "vitejs/vite-plugin-vue": [
+          {
+            "title": "test: use <code>@rollup/plugin-swc</code> with rolldown-vite for ecma decorators",
+            "prId": 682
           },
           {
-            "title": "fix: apply <code>fs.strict</code> check to HTML files",
-            "prId": 20736
+            "title": "refactor!: bump required node version to 20.19+, 22.12+ and drop CJS build",
+            "prId": 596
           },
           {
-            "title": "fix(dev): incorrect sourcemap when optimized CJS is imported",
-            "prId": 20458
+            "title": "feat(vue)!: separate include and exclude from <code>api.options</code> and add filter",
+            "prId": 582
+          }
+        ],
+        "publint/publint": [
+          {
+            "title": "Warn CJS with default export and <code>__esModule</code> marker",
+            "prId": 201
           },
           {
-            "title": "feat(legacy): add rolldown-vite support",
-            "prId": 20417
-          },
-          {
-            "title": "feat(ssr): resolve externalized packages with <code>resolve.externalConditions</code> and add <code>module-sync</code> to default external condition",
-            "prId": 20409
-          },
-          {
-            "title": "fix(hmr): register css deps as <code>type: asset</code>",
-            "prId": 20391
-          },
-          {
-            "title": "feat(ssr): support <code>import.meta.resolve</code> in module runner",
-            "prId": 20260
-          },
-          {
-            "title": "fix(optimizer): show error when <code>computeEntries</code> failed",
-            "prId": 20079
-          },
-          {
-            "title": "fix(css): should not wrap with double quote when the url rebase feature bailed out",
-            "prId": 20068
-          },
-          {
-            "title": "fix: importing an optional peer dep should throw an runtime error",
-            "prId": 20029
-          },
-          {
-            "title": "feat!: bump <code>build.target</code> and name it <code>baseline-widely-available</code>",
-            "prId": 20007
-          },
-          {
-            "title": "fix: check static serve file inside sirv",
-            "prId": 19965
-          },
-          {
-            "title": "feat: make PluginContext available for Vite-specific hooks",
-            "prId": 19936
-          },
-          {
-            "title": "fix(hmr): avoid infinite loop happening with <code>hot.invalidate</code> in circular deps",
-            "prId": 19870
-          },
-          {
-            "title": "fix: reject requests with <code>#</code> in request-target",
-            "prId": 19830
-          },
-          {
-            "title": "fix(hmr): run HMR handler sequentially",
-            "prId": 19793
-          },
-          {
-            "title": "docs: plugin authors guide for rolldown-vite",
-            "prId": 19759
-          },
-          {
-            "title": "feat: implement hook filters",
-            "prId": 19602
-          },
-          {
-            "title": "feat(css): allow scoping css to importers exports",
-            "prId": 19418
-          },
-          {
-            "title": "feat: show hosts in cert in CLI",
-            "prId": 19317
-          },
-          {
-            "title": "fix!: fix GHSA-vg6x-rcgg-rjx6",
-            "prId": 19234
-          },
-          {
-            "title": "feat(css): support preprocessor with lightningcss",
-            "prId": 19071
-          },
-          {
-            "title": "feat(client): ping from SharedWorker",
-            "prId": 19057
-          },
-          {
-            "title": "fix: skip the plugin if it has been called before with the same id and importer",
-            "prId": 19016
-          },
-          {
-            "title": "fix(hmr): register inlined assets as a dependency of CSS file",
-            "prId": 18979
-          },
-          {
-            "title": "feat: support log related functions in dev",
-            "prId": 18922
+            "title": "Support warning fallback arrays in exports / imports",
+            "prId": 180
           }
         ],
         "oxc-project/oxc-sourcemap": [
           {
             "title": "perf: simplify LineLookupTable structure",
             "prId": 151
-          }
-        ],
-        "oxc-project/oxc-resolver": [
-          {
-            "title": "perf: use <code>GetFileAttributesExW</code> for symlink metadata lookup on Windows",
-            "prId": 691
-          },
-          {
-            "title": "fix: avoid crash when encountering tsconfig circular extends",
-            "prId": 570
-          }
-        ],
-        "sagemathinc/http-proxy-3": [
-          {
-            "title": "feat: support empty <code>req.url</code>",
-            "prId": 24
-          },
-          {
-            "title": "enable typescript strict checks",
-            "prId": 9
-          },
-          {
-            "title": "Improve types to have more compatibility with <code>@types/http-proxy</code>",
-            "prId": 7
-          }
-        ],
-        "vite-pwa/vite-plugin-pwa": [
-          {
-            "title": "perf: add hook filters",
-            "prId": 877
-          }
-        ],
-        "vitejs/rolldown-vite": [
-          {
-            "title": "refactor: introduce <code>*.rolldownOptions</code> and deprecate <code>*.rollupOptions</code>",
-            "prId": 348
-          },
-          {
-            "title": "feat: make oxc runtime helpers name mangle-able",
-            "prId": 306
-          },
-          {
-            "title": "feat: plugin legacy",
-            "prId": 293
-          },
-          {
-            "title": "feat: add <code>resolve.tsconfigPaths</code> option to resolve with tsconfig paths",
-            "prId": 277
-          },
-          {
-            "title": "feat: moduleType support in dev",
-            "prId": 172
-          },
-          {
-            "title": "feat: enable all native plugins by default",
-            "prId": 168
           }
         ],
         "joshwooding/vite-plugin-react-docgen-typescript": [
@@ -565,12 +1001,6 @@
             "prId": 73
           }
         ],
-        "rollup/plugins": [
-          {
-            "title": "feat(pluginutils): add <code>exactRegex</code> and <code>prefixRegex</code>",
-            "prId": 1865
-          }
-        ],
         "vitejs/vite-ecosystem-ci": [
           {
             "title": "feat: show expected failures for rolldown-vite runs",
@@ -589,16 +1019,6 @@
           {
             "title": "[node] buffer: allow <code>ArrayBuffer | string</code> to be passed to <code>Buffer.from</code>",
             "prId": 72097
-          }
-        ],
-        "vitejs/vite-plugin-vue": [
-          {
-            "title": "refactor!: bump required node version to 20.19+, 22.12+ and drop CJS build",
-            "prId": 596
-          },
-          {
-            "title": "feat(vue)!: separate include and exclude from <code>api.options</code> and add filter",
-            "prId": 582
           }
         ],
         "SchemaStore/schemastore": [
@@ -625,12 +1045,6 @@
           {
             "title": "fix: replace <code>micromatch</code> with <code>picomatch</code>",
             "prId": 7951
-          }
-        ],
-        "publint/publint": [
-          {
-            "title": "Support warning fallback arrays in exports / imports",
-            "prId": 180
           }
         ],
         "parcel-bundler/lightningcss": [
@@ -1542,5 +1956,5 @@
       }
     ]
   ],
-  "fetchedAt": "2025-10-01T05:22:48Z"
+  "fetchedAt": "2025-12-01T07:49:51Z"
 }
