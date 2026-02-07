@@ -5,14 +5,6 @@
       {
         "rolldown/rolldown": [
           {
-            "title": "feat: add <code>inputMap</code> option to <code>minify</code> / <code>minifySync</code> functions",
-            "prId": 8138
-          },
-          {
-            "title": "feat: consolidate same tsconfig errors",
-            "prId": 8119
-          },
-          {
             "title": "perf: run inline-const pass for modules that are affected by inlining",
             "prId": 8064
           },
@@ -21,68 +13,12 @@
             "prId": 8054
           },
           {
-            "title": "fix: <code>output.generatedCode.preset: 'es2015'</code> was not set by default",
-            "prId": 8026
-          },
-          {
-            "title": "refactor(node): add type checks that ensures validator schema is up to date with types",
-            "prId": 8024
-          },
-          {
-            "title": "fix(node): align option validator to types",
-            "prId": 8023
-          },
-          {
             "title": "docs(in-depth): add dead code elimination page",
             "prId": 8007
           },
           {
-            "title": "feat: skip unused external modules from IIFE parameter list",
-            "prId": 7978
-          },
-          {
-            "title": "docs: add minor comments to multiple types",
-            "prId": 7930
-          },
-          {
-            "title": "docs(apis): restructure plugin API related docs",
-            "prId": 7924
-          },
-          {
             "title": "docs: add plugin API docs",
             "prId": 7923
-          },
-          {
-            "title": "docs(apis): add docs to important APIs",
-            "prId": 7913
-          },
-          {
-            "title": "docs(apis): add more content to CLI documentation",
-            "prId": 7911
-          },
-          {
-            "title": "docs(apis): generate CLI docs from --help output",
-            "prId": 7910
-          },
-          {
-            "title": "feat: stablize <code>strictExecutionOrder</code> and move to <code>output.strictExecutionOrder</code> from <code>experimental.strictExecutionOrder</code>",
-            "prId": 7901
-          },
-          {
-            "title": "docs: remove options pages and redirect to reference pages",
-            "prId": 7834
-          },
-          {
-            "title": "docs(options): inline types to option property pages",
-            "prId": 7831
-          },
-          {
-            "title": "docs(options): use <code>@linkcode</code> where possible",
-            "prId": 7824
-          },
-          {
-            "title": "docs(options): port content from options page to reference page",
-            "prId": 7822
           },
           {
             "title": "docs(options): add descriptions for output options",
@@ -101,32 +37,6 @@
             "prId": 7671
           }
         ],
-        "oxc-project/playground": [
-          {
-            "title": "feat: align colors in header with oxc.rs",
-            "prId": 261
-          },
-          {
-            "title": "ci: add copilot setup steps",
-            "prId": 259
-          }
-        ],
-        "oxc-project/website": [
-          {
-            "title": "feat(transformer): add workaround explanation for decorator metadata edgecase",
-            "prId": 847
-          },
-          {
-            "title": "feat(transformer): add partial TS namespace support section",
-            "prId": 846
-          }
-        ],
-        "oxc-project/estree-conformance": [
-          {
-            "title": "fix: choose <code>ModuleKind</code> similarly to tsc",
-            "prId": 160
-          }
-        ],
         "vitejs/vite-plugin-registry": [
           {
             "title": "feat: add badge endpoint",
@@ -135,42 +45,12 @@
           {
             "title": "feat: put plugin list data in a separate route",
             "prId": 15
-          },
-          {
-            "title": "feat: use voidzero theme",
-            "prId": 11
-          }
-        ],
-        "oxc-project/oxc": [
-          {
-            "title": "chore(infra): fix <code>just submodules</code> on Windows",
-            "prId": 18285
-          }
-        ],
-        "vitejs/vite": [
-          {
-            "title": "feat: update rolldown to 1.0.0-rc.1",
-            "prId": 21463
-          },
-          {
-            "title": "docs: rebrand (#21339)",
-            "prId": 21399
-          },
-          {
-            "title": "fix(deps): update esbuild peerDependency version",
-            "prId": 21398
           }
         ],
         "notify-rs/notify": [
           {
             "title": "Fix: throw fsevents stream start error properly",
             "prId": 733
-          }
-        ],
-        "oxc-project/.github": [
-          {
-            "title": "Update logo",
-            "prId": 3
           }
         ],
         "vitejs/vite-plugin-basic-ssl": [
@@ -190,188 +70,6 @@
             "prId": 120
           }
         ],
-        "rolldown/rolldown": [
-          {
-            "title": "docs: tweak auto-generated reference output",
-            "prId": 7654
-          },
-          {
-            "title": "feat: add <code>CANNOT_CALL_NAMESPACE</code> warning",
-            "prId": 7636
-          },
-          {
-            "title": "chore(deps): update rollup submodule for tests to v4.54.0",
-            "prId": 7630
-          },
-          {
-            "title": "ci: fix &quot;update-test-dependencies&quot; workflow",
-            "prId": 7628
-          },
-          {
-            "title": "feat: add import path for unresolved import diagnostics",
-            "prId": 7625
-          },
-          {
-            "title": "fix(rolldown_plugin_replace): avoid crashing with invalid delimiters",
-            "prId": 7621
-          },
-          {
-            "title": "chore: move some tests in ignored-by-unsupported-features that are passing",
-            "prId": 7569
-          },
-          {
-            "title": "feat: set log and pos properties for logs",
-            "prId": 7567
-          },
-          {
-            "title": "feat: add <code>id</code> property to <code>PARSE_ERROR</code> error",
-            "prId": 7563
-          },
-          {
-            "title": "chore: normalize error object to make some Rollup tests pass",
-            "prId": 7562
-          },
-          {
-            "title": "fix: handle <code>__proto__</code> export for module namespace correctly",
-            "prId": 7534
-          },
-          {
-            "title": "fix: handle <code>__proto__</code> export correctly",
-            "prId": 7533
-          },
-          {
-            "title": "chore: <code>dce/dce_of_decorators</code> esbuild test is now passing",
-            "prId": 7531
-          },
-          {
-            "title": "test: port Rollup JSX tests to <code>crates/rolldown/tests/rollup</code>",
-            "prId": 7480
-          },
-          {
-            "title": "test: re-triage some esbuild JSX preserve tests",
-            "prId": 7479
-          },
-          {
-            "title": "feat: apply merge CJS namespace optimizations more generally",
-            "prId": 7475
-          },
-          {
-            "title": "chore: run cargo-test for esbuild script changes and update esbuild snapshot",
-            "prId": 7440
-          },
-          {
-            "title": "ci: update test dependencies automatically",
-            "prId": 7432
-          },
-          {
-            "title": "test: triage new esbuild tests",
-            "prId": 7405
-          },
-          {
-            "title": "test: triage esbuild failed reasons",
-            "prId": 7391
-          },
-          {
-            "title": "chore: hide oxc runtime in snapshots",
-            "prId": 7388
-          },
-          {
-            "title": "test: change esbuild tests stats and diff generation",
-            "prId": 7379
-          },
-          {
-            "title": "chore: improve esbuild tests to download snapshots automatically",
-            "prId": 7378
-          },
-          {
-            "title": "refactor: rewrite gen-esbuild-test in TypeScript",
-            "prId": 7376
-          },
-          {
-            "title": "test: add new esbuild tests",
-            "prId": 7353
-          },
-          {
-            "title": "chore: update rollup-tests results",
-            "prId": 7333
-          },
-          {
-            "title": "chore: update rollup-tests Rollup version",
-            "prId": 7332
-          },
-          {
-            "title": "docs(deps): bump vitepress to fix build",
-            "prId": 7307
-          },
-          {
-            "title": "test: add test262 integration tests",
-            "prId": 7196
-          },
-          {
-            "title": "perf(dev): avoid frequent <code>setTimeout</code> -&gt; <code>clearTimeout</code>",
-            "prId": 6375
-          },
-          {
-            "title": "refactor: wait <code>this.load</code> using futures instead of callbacks",
-            "prId": 6222
-          },
-          {
-            "title": "feat: add native react-refresh-wrapper plugin",
-            "prId": 6144
-          },
-          {
-            "title": "test(hmr): delete file used",
-            "prId": 5933
-          },
-          {
-            "title": "test(hmr): delete file not used anymore",
-            "prId": 5932
-          },
-          {
-            "title": "fix: trigger trace subscriber cleanup on Node.js side",
-            "prId": 5913
-          },
-          {
-            "title": "fix(hmr): <code>import.meta.hot.accept</code> in patch file should work",
-            "prId": 5823
-          },
-          {
-            "title": "feat: include plugin name in the message of UNHANDLEABLE_ERRORs that happened in plugins",
-            "prId": 5636
-          },
-          {
-            "title": "feat: pass plugin name to log",
-            "prId": 5635
-          },
-          {
-            "title": "feat: use PIFE for callbacks passed to <code>__esmMin</code> wrapper",
-            "prId": 5319
-          },
-          {
-            "title": "feat: use same option object reference",
-            "prId": 5114
-          },
-          {
-            "title": "feat(plugin/vite-resolve): support tsconfig paths",
-            "prId": 5004
-          },
-          {
-            "title": "feat(pluginutils): add <code>makeIdFiltersToMatchWithQuery</code> function",
-            "prId": 4469
-          },
-          {
-            "title": "feat(pluginutils): add <code>exactRegex</code> and <code>prefixRegex</code>",
-            "prId": 4458
-          },
-          {
-            "title": "feat(plugin/vite-resolve): port changes after Vite 6",
-            "prId": 4269
-          },
-          {
-            "title": "docs: add performance guide",
-            "prId": 4265
-          }
-        ],
         "rolldown/notify": [
           {
             "title": "feat: align poll watcher behavior with other backends",
@@ -380,14 +78,6 @@
           {
             "title": "perf: only watch the top-most path for fsevents watcher",
             "prId": 59
-          },
-          {
-            "title": "refactor: use <code>objc2-core-*</code> instead of <code>fsevent-sys</code>",
-            "prId": 57
-          },
-          {
-            "title": "refactor: use vec to collect events to emit in kqueue watcher",
-            "prId": 53
           },
           {
             "title": "fix: filter out unrelated events for inotify &amp; kqueue backend",
@@ -450,20 +140,12 @@
             "prId": 16953
           },
           {
-            "title": "test(regular_expression): add tests for diagnostics",
-            "prId": 16951
-          },
-          {
             "title": "feat(minfier): support <code>.</code> separated values for <code>compress.treeshake.manualPureFunctions</code>",
             "prId": 16529
           },
           {
             "title": "fix(minifier): avoid merging side effectful expressions to next assignment statement if the side effect may change the left hand side reference",
             "prId": 16165
-          },
-          {
-            "title": "feat(semantic): add TS2309 error for export assignment with other exports",
-            "prId": 15992
           },
           {
             "title": "feat(parser): improve error message for missing closing tokens that may be followed by a rest element",
@@ -746,6 +428,72 @@
             "prId": 8314
           }
         ],
+        "rolldown/rolldown": [
+          {
+            "title": "feat: apply merge CJS namespace optimizations more generally",
+            "prId": 7475
+          },
+          {
+            "title": "test: add test262 integration tests",
+            "prId": 7196
+          },
+          {
+            "title": "perf(dev): avoid frequent <code>setTimeout</code> -&gt; <code>clearTimeout</code>",
+            "prId": 6375
+          },
+          {
+            "title": "refactor: wait <code>this.load</code> using futures instead of callbacks",
+            "prId": 6222
+          },
+          {
+            "title": "feat: add native react-refresh-wrapper plugin",
+            "prId": 6144
+          },
+          {
+            "title": "fix: trigger trace subscriber cleanup on Node.js side",
+            "prId": 5913
+          },
+          {
+            "title": "fix(hmr): <code>import.meta.hot.accept</code> in patch file should work",
+            "prId": 5823
+          },
+          {
+            "title": "feat: include plugin name in the message of UNHANDLEABLE_ERRORs that happened in plugins",
+            "prId": 5636
+          },
+          {
+            "title": "feat: pass plugin name to log",
+            "prId": 5635
+          },
+          {
+            "title": "feat: use PIFE for callbacks passed to <code>__esmMin</code> wrapper",
+            "prId": 5319
+          },
+          {
+            "title": "feat: use same option object reference",
+            "prId": 5114
+          },
+          {
+            "title": "feat(plugin/vite-resolve): support tsconfig paths",
+            "prId": 5004
+          },
+          {
+            "title": "feat(pluginutils): add <code>makeIdFiltersToMatchWithQuery</code> function",
+            "prId": 4469
+          },
+          {
+            "title": "feat(pluginutils): add <code>exactRegex</code> and <code>prefixRegex</code>",
+            "prId": 4458
+          },
+          {
+            "title": "feat(plugin/vite-resolve): port changes after Vite 6",
+            "prId": 4269
+          },
+          {
+            "title": "docs: add performance guide",
+            "prId": 4265
+          }
+        ],
         "oxc-project/oxc-resolver": [
           {
             "title": "fix: fix <code>clone_with_options</code> + <code>yarn_pnp: true</code> not working",
@@ -776,14 +524,6 @@
           {
             "title": "fix: don't strip base from imports",
             "prId": 21221
-          },
-          {
-            "title": "docs: vite8 beta announcement v7 backport",
-            "prId": 21203
-          },
-          {
-            "title": "docs: vite 8 beta announcement",
-            "prId": 21196
           },
           {
             "title": "feat!: the epic <code>rolldown-vite</code> merge",
@@ -890,28 +630,10 @@
             "prId": 18922
           }
         ],
-        "vitest-dev/vitest": [
-          {
-            "title": "refactor: avoid using <code>isFileServingAllowed</code> from Vite",
-            "prId": 9160
-          },
-          {
-            "title": "fix: replace <code>micromatch</code> with <code>picomatch</code>",
-            "prId": 7951
-          }
-        ],
         "vitejs/rolldown-vite": [
-          {
-            "title": "test: remove failure expected cases",
-            "prId": 536
-          },
           {
             "title": "docs: update content for beta",
             "prId": 529
-          },
-          {
-            "title": "docs: remove rolldown page",
-            "prId": 528
           },
           {
             "title": "docs: migration guide",
@@ -988,18 +710,6 @@
           {
             "title": "feat: expand transformer docs",
             "prId": 519
-          }
-        ],
-        "oxc-project/bench-transformer": [
-          {
-            "title": "feat: add async and promise.all async",
-            "prId": 66
-          }
-        ],
-        "cloudflare/workers-sdk": [
-          {
-            "title": "fix(vite-plugin-cloudflare): allow &quot;invoke&quot; other than <code>fetchModule</code>",
-            "prId": 11123
           }
         ],
         "rollup/plugins": [
@@ -1168,6 +878,12 @@
           {
             "title": "feat: add multi-env support for build",
             "prId": 148
+          }
+        ],
+        "vitest-dev/vitest": [
+          {
+            "title": "fix: replace <code>micromatch</code> with <code>picomatch</code>",
+            "prId": 7951
           }
         ],
         "parcel-bundler/lightningcss": [
