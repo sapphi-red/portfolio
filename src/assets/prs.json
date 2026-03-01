@@ -5,6 +5,106 @@
       {
         "rolldown/rolldown": [
           {
+            "title": "docs: add some diagrams using graphviz",
+            "prId": 8499
+          },
+          {
+            "title": "docs: use <code>vitepress-plugin-graphviz</code>",
+            "prId": 8498
+          },
+          {
+            "title": "fix: parse <code>.cjs</code> / <code>.cts</code> / <code>.js</code> within <code>&quot;type&quot;: &quot;commonjs&quot;</code> as CommonJS",
+            "prId": 8455
+          },
+          {
+            "title": "docs: mention execution order issue in <code>output.codeSplitting</code> docs",
+            "prId": 8452
+          },
+          {
+            "title": "feat: validate bundle stays within output dir",
+            "prId": 8441
+          },
+          {
+            "title": "test: execute <code>_test.mjs</code> even if <code>executeOutput</code> is false",
+            "prId": 8398
+          },
+          {
+            "title": "docs: add JSDocs for APIs exposed from subpath exports",
+            "prId": 8393
+          },
+          {
+            "title": "chore: enable lint for <code>_config.ts</code> files",
+            "prId": 8386
+          },
+          {
+            "title": "fix: <code>deferred_scan_data.rs &quot;Should have resolved id: NotFound&quot;</code> error",
+            "prId": 8379
+          },
+          {
+            "title": "test: use <code>vi.waitFor</code> and <code>expect.poll</code> instead of custom <code>waitUtil</code> function",
+            "prId": 8369
+          },
+          {
+            "title": "fix: align <code>minify.compress: true</code> and <code>minify.mangle: true</code> with <code>minify: true</code>",
+            "prId": 8367
+          },
+          {
+            "title": "refactor: introduce <code>RawMangleOptions</code> and <code>RawCompressOptions</code>",
+            "prId": 8366
+          },
+          {
+            "title": "refactor: ban holding DashMap refs across awaits",
+            "prId": 8362
+          },
+          {
+            "title": "chore: format more files",
+            "prId": 8360
+          },
+          {
+            "title": "feat(rolldown_utils): add <code>IndexBitSet</code>",
+            "prId": 8343
+          },
+          {
+            "title": "feat(rolldown_utils): add more methods and trait impls to BitSet",
+            "prId": 8342
+          },
+          {
+            "title": "test: add watch file tests",
+            "prId": 8330
+          },
+          {
+            "title": "feat(rolldown_plugin_vite_build_import_analysis): add support for <code>await import().then((m) =&gt; m.prop)</code>",
+            "prId": 8328
+          },
+          {
+            "title": "test(rolldown_plugin_vite_build_import_analysis): add test for dynamic import treeshaking",
+            "prId": 8327
+          },
+          {
+            "title": "feat: add hidden <code>resolve_tsconfig</code> function for Vite",
+            "prId": 8257
+          },
+          {
+            "title": "refactor: expose <code>parse</code> / <code>minify</code> / <code>transform</code> from <code>rolldown/utils</code>",
+            "prId": 8214
+          },
+          {
+            "title": "feat: support tsconfig loading &amp; inputMap for <code>transform</code>",
+            "prId": 8180
+          },
+          {
+            "title": "feat: warn unsupported combination of <code>preserveValueImports</code> and <code>importsNotUsedAsValues</code> in tsconfig.json",
+            "prId": 8169
+          },
+          {
+            "title": "refactor: extract tsconfig option and transform options merging logic",
+            "prId": 8168
+          },
+          {
+            "title": "feat: sophisticated watch tracking for load dependencies",
+            "prId": 8092
+          },
+          {
             "title": "perf: run inline-const pass for modules that are affected by inlining",
             "prId": 8064
           },
@@ -35,6 +135,70 @@
           {
             "title": "docs(apis): add hook graph",
             "prId": 7671
+          }
+        ],
+        "oxc-project/oxc-resolver": [
+          {
+            "title": "fix: resolve normalized path on Windows even for <code>symlinks: false</code>",
+            "prId": 1036
+          }
+        ],
+        "rolldown/plugins": [
+          {
+            "title": "feat(babel): allow preset to specify optimize deps",
+            "prId": 5
+          },
+          {
+            "title": "feat(babel): format babel errors",
+            "prId": 3
+          },
+          {
+            "title": "feat(babel): add <code>include</code> option by default",
+            "prId": 2
+          }
+        ],
+        "cacjs/cac": [
+          {
+            "title": "feat: throw error on unused args",
+            "prId": 135
+          }
+        ],
+        "vitest-dev/vitest": [
+          {
+            "title": "docs: add warning for clearMocks option in async tests",
+            "prId": 9697
+          }
+        ],
+        "parcel-bundler/lightningcss": [
+          {
+            "title": "Mark import as external",
+            "prId": 880
+          }
+        ],
+        "preactjs/preset-vite": [
+          {
+            "title": "perf: avoid babel in dev by using magic string for hook names injection",
+            "prId": 183
+          }
+        ],
+        "oxc-project/oxc": [
+          {
+            "title": "perf(syntax): optimize <code>is_identifier_name_patched</code>",
+            "prId": 19386
+          },
+          {
+            "title": "docs(transformer): update links to use Oxc docs",
+            "prId": 18722
+          }
+        ],
+        "vitejs/vite": [
+          {
+            "title": "ci: run template check and clarity label applier",
+            "prId": 21630
+          },
+          {
+            "title": "docs: add acknowledgements page",
+            "prId": 21186
           }
         ],
         "vitejs/vite-plugin-registry": [
@@ -1795,5 +1959,5 @@
       }
     ]
   ],
-  "fetchedAt": "2026-01-30T12:04:18Z"
+  "fetchedAt": "2026-03-01T06:47:41Z"
 }
