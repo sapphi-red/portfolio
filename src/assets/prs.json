@@ -3,25 +3,125 @@
     [
       "2026",
       {
-        "oxc-project/oxc-resolver": [
-          {
-            "title": "fix: resolve normalized path on Windows even for <code>symlinks: false</code>",
-            "prId": 1036
-          }
-        ],
         "rolldown/plugins": [
+          {
+            "title": "test(oxc-unshadowed-visitor): add unit tests for internal functions",
+            "prId": 45
+          },
+          {
+            "title": "feat(oxc-unshadowed-visitor): allow <code>oxc-parser</code> as peer deps",
+            "prId": 43
+          },
+          {
+            "title": "chore: prepare for publishing oxc-unshadowed-visitor",
+            "prId": 42
+          },
+          {
+            "title": "fix(babel): suppress type errors when <code>@types/babel__core</code> is not installed",
+            "prId": 31
+          },
+          {
+            "title": "feat(jsx-remove-attributes): add jsx-remove-attributes plugin",
+            "prId": 22
+          },
+          {
+            "title": "chore: add issue and pr templates",
+            "prId": 18
+          },
+          {
+            "title": "feat(emotion): add emotion plugin",
+            "prId": 15
+          },
+          {
+            "title": "feat(babel): add <code>runtimeVersion</code> option for deduplicating Babel helpers",
+            "prId": 8
+          },
+          {
+            "title": "fix: add proper babel 7 support",
+            "prId": 6
+          },
           {
             "title": "feat(babel): allow preset to specify optimize deps",
             "prId": 5
           }
         ],
-        "cacjs/cac": [
+        "napi-rs/napi-rs": [
           {
-            "title": "feat: throw error on unused args",
-            "prId": 135
+            "title": "fix: wasi template output",
+            "prId": 3164
+          },
+          {
+            "title": "feat: allow emitting error happened in worker",
+            "prId": 3153
+          },
+          {
+            "title": "fix: ensure emnapi version is synced",
+            "prId": 3151
+          }
+        ],
+        "voidzero-dev/oxc-angular-compiler": [
+          {
+            "title": "fix(compiler): remove type-only exports",
+            "prId": 174
+          }
+        ],
+        "vitejs/vite": [
+          {
+            "title": "fix(module-runner): skip re-import if the runner is closed",
+            "prId": 22020
+          },
+          {
+            "title": "fix(html): cache unfiltered CSS list to prevent missing styles across entries",
+            "prId": 22017
+          },
+          {
+            "title": "docs: show old document warning",
+            "prId": 21972
+          },
+          {
+            "title": "ci: add pr template check workflow",
+            "prId": 21931
+          },
+          {
+            "title": "docs: vite 8 post",
+            "prId": 21792
+          },
+          {
+            "title": "fix(optimizer): avoid error happening with a package with asset entrypoint",
+            "prId": 21766
+          },
+          {
+            "title": "docs: add some graphs",
+            "prId": 21734
+          },
+          {
+            "title": "docs: add acknowledgements page",
+            "prId": 21186
+          }
+        ],
+        "oxc-project/oxc-sourcemap": [
+          {
+            "title": "fix: escape <code>file</code> and <code>sourceRoot</code> fields",
+            "prId": 294
+          },
+          {
+            "title": "feat: omit <code>sourcesContent</code> if all of the values are null",
+            "prId": 287
           }
         ],
         "rolldown/rolldown": [
+          {
+            "title": "feat: support <code>output.sourcemapExcludeSources</code> option",
+            "prId": 8828
+          },
+          {
+            "title": "fix: pass <code>yarn_pnp</code> option where needed",
+            "prId": 8736
+          },
+          {
+            "title": "docs: explain how external modules work in rolldown",
+            "prId": 8457
+          },
           {
             "title": "docs: add JSDocs for APIs exposed from subpath exports",
             "prId": 8393
@@ -75,6 +175,52 @@
             "prId": 7671
           }
         ],
+        "rolldown/repl": [
+          {
+            "title": "feat: allow using local rolldown for development",
+            "prId": 42
+          }
+        ],
+        "rolldown/notify": [
+          {
+            "title": "fix(windows): normalize event paths",
+            "prId": 74
+          },
+          {
+            "title": "Port changes from upstream",
+            "prId": 71
+          },
+          {
+            "title": "test: add wasi tests",
+            "prId": 69
+          },
+          {
+            "title": "feat: support wasm build",
+            "prId": 67
+          }
+        ],
+        "vitejs/vite-plugin-react": [
+          {
+            "title": "refactor(react)!: drop Vite 7 and below support",
+            "prId": 1124
+          },
+          {
+            "title": "feat(react)!: remove babel",
+            "prId": 1123
+          }
+        ],
+        "oxc-project/oxc-resolver": [
+          {
+            "title": "fix: resolve normalized path on Windows even for <code>symlinks: false</code>",
+            "prId": 1036
+          }
+        ],
+        "cacjs/cac": [
+          {
+            "title": "feat: throw error on unused args",
+            "prId": 135
+          }
+        ],
         "parcel-bundler/lightningcss": [
           {
             "title": "Mark import as external",
@@ -85,12 +231,6 @@
           {
             "title": "perf: avoid babel in dev by using magic string for hook names injection",
             "prId": 183
-          }
-        ],
-        "vitejs/vite": [
-          {
-            "title": "docs: add acknowledgements page",
-            "prId": 21186
           }
         ],
         "vitejs/vite-plugin-registry": [
@@ -1851,5 +1991,5 @@
       }
     ]
   ],
-  "fetchedAt": "2026-03-01T06:47:41Z"
+  "fetchedAt": "2026-03-31T02:52:14Z"
 }
