@@ -13,10 +13,6 @@
             "prId": 3267
           },
           {
-            "title": "fix: wasi template output",
-            "prId": 3164
-          },
-          {
             "title": "feat: allow emitting error happened in worker",
             "prId": 3153
           },
@@ -25,30 +21,86 @@
             "prId": 3151
           }
         ],
+        "rolldown/plugins": [
+          {
+            "title": "feat: add transform-imports plugin",
+            "prId": 51
+          },
+          {
+            "title": "feat(styled-jsx): add styled-jsx plugin",
+            "prId": 48
+          },
+          {
+            "title": "feat(jsx-remove-attributes): add jsx-remove-attributes plugin",
+            "prId": 22
+          },
+          {
+            "title": "feat(emotion): add emotion plugin",
+            "prId": 15
+          },
+          {
+            "title": "feat(babel): add <code>runtimeVersion</code> option for deduplicating Babel helpers",
+            "prId": 8
+          },
+          {
+            "title": "fix: add proper babel 7 support",
+            "prId": 6
+          }
+        ],
+        "vitejs/vite": [
+          {
+            "title": "fix(bundled-dev): reject requests to HMR patch files in non potentially trustworthy origins",
+            "prId": 22269
+          },
+          {
+            "title": "fix: apply server.fs check to env transport (#22159)",
+            "prId": 22163
+          },
+          {
+            "title": "fix: check <code>server.fs</code> after stripping query as well",
+            "prId": 22160
+          },
+          {
+            "title": "fix: apply server.fs check to env transport",
+            "prId": 22159
+          },
+          {
+            "title": "fix: disallow referencing files outside the package from sourcemap",
+            "prId": 22158
+          },
+          {
+            "title": "ci: add pr template check workflow",
+            "prId": 21931
+          },
+          {
+            "title": "fix(optimizer): avoid error happening with a package with asset entrypoint",
+            "prId": 21766
+          },
+          {
+            "title": "docs: add acknowledgements page",
+            "prId": 21186
+          }
+        ],
+        "oxc-project/oxc": [
+          {
+            "title": "fix(ecmascript): treat <code>this</code> as potentially having side effects",
+            "prId": 21297
+          }
+        ],
+        "oxc-project/oxc-sourcemap": [
+          {
+            "title": "fix: escape <code>file</code> and <code>sourceRoot</code> fields",
+            "prId": 294
+          },
+          {
+            "title": "feat: omit <code>sourcesContent</code> if all of the values are null",
+            "prId": 287
+          }
+        ],
         "rolldown/rolldown": [
-          {
-            "title": "chore: add more tracing instrumentations",
-            "prId": 9220
-          },
-          {
-            "title": "chore(esbuild-tests): remove some tests from ignored list as enum inline is now supported",
-            "prId": 9184
-          },
-          {
-            "title": "chore(deps): update esbuild for tests to 0.28.0",
-            "prId": 9172
-          },
-          {
-            "title": "fix(esbuild-tests): handle 0.28.0 test cases",
-            "prId": 9149
-          },
           {
             "title": "feat: support <code>output.sourcemapExcludeSources</code> option",
             "prId": 8828
-          },
-          {
-            "title": "fix: pass <code>yarn_pnp</code> option where needed",
-            "prId": 8736
           },
           {
             "title": "docs: explain how external modules work in rolldown",
@@ -107,174 +159,6 @@
             "prId": 7671
           }
         ],
-        "vitejs/release-scripts": [
-          {
-            "title": "build: use rolldown",
-            "prId": 101
-          },
-          {
-            "title": "chore: use oxfmt",
-            "prId": 99
-          },
-          {
-            "title": "build: use type stripping",
-            "prId": 97
-          }
-        ],
-        "rolldown/plugins": [
-          {
-            "title": "feat: add transform-imports plugin",
-            "prId": 51
-          },
-          {
-            "title": "feat(styled-jsx): add styled-jsx plugin",
-            "prId": 48
-          },
-          {
-            "title": "test(oxc-unshadowed-visitor): add unit tests for internal functions",
-            "prId": 45
-          },
-          {
-            "title": "feat(oxc-unshadowed-visitor): allow <code>oxc-parser</code> as peer deps",
-            "prId": 43
-          },
-          {
-            "title": "chore: prepare for publishing oxc-unshadowed-visitor",
-            "prId": 42
-          },
-          {
-            "title": "fix(babel): suppress type errors when <code>@types/babel__core</code> is not installed",
-            "prId": 31
-          },
-          {
-            "title": "feat(jsx-remove-attributes): add jsx-remove-attributes plugin",
-            "prId": 22
-          },
-          {
-            "title": "chore: add issue and pr templates",
-            "prId": 18
-          },
-          {
-            "title": "feat(emotion): add emotion plugin",
-            "prId": 15
-          },
-          {
-            "title": "feat(babel): add <code>runtimeVersion</code> option for deduplicating Babel helpers",
-            "prId": 8
-          },
-          {
-            "title": "fix: add proper babel 7 support",
-            "prId": 6
-          },
-          {
-            "title": "feat(babel): allow preset to specify optimize deps",
-            "prId": 5
-          }
-        ],
-        "vitejs/vite": [
-          {
-            "title": "fix(bundled-dev): reject requests to HMR patch files in non potentially trustworthy origins",
-            "prId": 22269
-          },
-          {
-            "title": "fix: apply server.fs check to env transport (#22159)",
-            "prId": 22163
-          },
-          {
-            "title": "fix: backport #22159, apply server.fs check to env transport",
-            "prId": 22162
-          },
-          {
-            "title": "fix: check <code>server.fs</code> after stripping query as well",
-            "prId": 22160
-          },
-          {
-            "title": "fix: apply server.fs check to env transport",
-            "prId": 22159
-          },
-          {
-            "title": "fix: disallow referencing files outside the package from sourcemap",
-            "prId": 22158
-          },
-          {
-            "title": "fix(optimize-deps): hoist CJS interop assignment",
-            "prId": 22156
-          },
-          {
-            "title": "fix(module-runner): skip re-import if the runner is closed",
-            "prId": 22020
-          },
-          {
-            "title": "fix(html): cache unfiltered CSS list to prevent missing styles across entries",
-            "prId": 22017
-          },
-          {
-            "title": "docs: show old document warning",
-            "prId": 21972
-          },
-          {
-            "title": "ci: add pr template check workflow",
-            "prId": 21931
-          },
-          {
-            "title": "docs: vite 8 post",
-            "prId": 21792
-          },
-          {
-            "title": "fix(optimizer): avoid error happening with a package with asset entrypoint",
-            "prId": 21766
-          },
-          {
-            "title": "docs: add some graphs",
-            "prId": 21734
-          },
-          {
-            "title": "docs: add acknowledgements page",
-            "prId": 21186
-          }
-        ],
-        "oxc-project/oxc": [
-          {
-            "title": "fix(ecmascript): treat <code>this</code> as potentially having side effects",
-            "prId": 21297
-          }
-        ],
-        "vitejs/vite-plugin-react": [
-          {
-            "title": "refactor: remove plugin-react-oxc",
-            "prId": 1180
-          },
-          {
-            "title": "refactor(react)!: drop Vite 7 and below support",
-            "prId": 1124
-          },
-          {
-            "title": "feat(react)!: remove babel",
-            "prId": 1123
-          }
-        ],
-        "vitejs/vite-plugin-vue": [
-          {
-            "title": "chore(deps): update vite to v8",
-            "prId": 759
-          }
-        ],
-        "voidzero-dev/oxc-angular-compiler": [
-          {
-            "title": "fix(compiler): remove type-only exports",
-            "prId": 174
-          }
-        ],
-        "oxc-project/oxc-sourcemap": [
-          {
-            "title": "fix: escape <code>file</code> and <code>sourceRoot</code> fields",
-            "prId": 294
-          },
-          {
-            "title": "feat: omit <code>sourcesContent</code> if all of the values are null",
-            "prId": 287
-          }
-        ],
         "rolldown/repl": [
           {
             "title": "feat: allow using local rolldown for development",
@@ -287,16 +171,18 @@
             "prId": 74
           },
           {
-            "title": "Port changes from upstream",
-            "prId": 71
-          },
-          {
-            "title": "test: add wasi tests",
-            "prId": 69
-          },
-          {
             "title": "feat: support wasm build",
             "prId": 67
+          }
+        ],
+        "vitejs/vite-plugin-react": [
+          {
+            "title": "refactor(react)!: drop Vite 7 and below support",
+            "prId": 1124
+          },
+          {
+            "title": "feat(react)!: remove babel",
+            "prId": 1123
           }
         ],
         "oxc-project/oxc-resolver": [
