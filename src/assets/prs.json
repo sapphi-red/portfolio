@@ -3,51 +3,27 @@
     [
       "2026",
       {
-        "napi-rs/napi-rs": [
-          {
-            "title": "perf(napi): skip duplicate validation",
-            "prId": 3268
-          },
-          {
-            "title": "docs(napi): clarify unsafe function invariants",
-            "prId": 3267
-          },
-          {
-            "title": "feat: allow emitting error happened in worker",
-            "prId": 3153
-          },
-          {
-            "title": "fix: ensure emnapi version is synced",
-            "prId": 3151
-          }
-        ],
-        "rolldown/plugins": [
-          {
-            "title": "feat: add transform-imports plugin",
-            "prId": 51
-          },
-          {
-            "title": "feat(styled-jsx): add styled-jsx plugin",
-            "prId": 48
-          },
-          {
-            "title": "feat(jsx-remove-attributes): add jsx-remove-attributes plugin",
-            "prId": 22
-          },
-          {
-            "title": "feat(emotion): add emotion plugin",
-            "prId": 15
-          },
-          {
-            "title": "feat(babel): add <code>runtimeVersion</code> option for deduplicating Babel helpers",
-            "prId": 8
-          },
-          {
-            "title": "fix: add proper babel 7 support",
-            "prId": 6
-          }
-        ],
         "vitejs/vite": [
+          {
+            "title": "fix: backport #22572, reject windows alternate paths",
+            "prId": 22576
+          },
+          {
+            "title": "fix: backport #22572, reject windows alternate paths",
+            "prId": 22574
+          },
+          {
+            "title": "fix: reject windows alternate paths",
+            "prId": 22572
+          },
+          {
+            "title": "fix(dev): handle errors when sending messages to vite server",
+            "prId": 22450
+          },
+          {
+            "title": "fix: avoid destructure lowering for newer safari",
+            "prId": 22346
+          },
           {
             "title": "fix(bundled-dev): reject requests to HMR patch files in non potentially trustworthy origins",
             "prId": 22269
@@ -77,27 +53,85 @@
             "prId": 21766
           },
           {
+            "title": "feat(bundled-dev): add lazy bundling support",
+            "prId": 21406
+          },
+          {
             "title": "docs: add acknowledgements page",
             "prId": 21186
           }
         ],
+        "vitejs/launch-editor": [
+          {
+            "title": "fix: reject UNC paths",
+            "prId": 138
+          },
+          {
+            "title": "test: add some tests for launch-editor package",
+            "prId": 135
+          },
+          {
+            "title": "chore: add README",
+            "prId": 134
+          },
+          {
+            "title": "ci: run test ci",
+            "prId": 127
+          },
+          {
+            "title": "chore: add oxlint",
+            "prId": 126
+          },
+          {
+            "title": "ci: add zizmor",
+            "prId": 125
+          },
+          {
+            "title": "chore: add oxfmt",
+            "prId": 123
+          }
+        ],
+        "rollup/plugins": [
+          {
+            "title": "perf(yaml)!: use hook filters",
+            "prId": 1996
+          },
+          {
+            "title": "perf(graphql)!: use hook filters",
+            "prId": 1995
+          },
+          {
+            "title": "perf(dsv)!: use hook filters",
+            "prId": 1994
+          }
+        ],
         "oxc-project/oxc": [
+          {
+            "title": "feat(parser): more friendly error messages for rest assignment target and rest binding element",
+            "prId": 22719
+          },
           {
             "title": "fix(ecmascript): treat <code>this</code> as potentially having side effects",
             "prId": 21297
           }
         ],
-        "oxc-project/oxc-sourcemap": [
+        "rolldown/rolldown": [
           {
-            "title": "fix: escape <code>file</code> and <code>sourceRoot</code> fields",
-            "prId": 294
+            "title": "refactor: distinguish <code>map: null</code> vs <code>map: undefined</code> in transform hook output",
+            "prId": 9497
           },
           {
-            "title": "feat: omit <code>sourcesContent</code> if all of the values are null",
-            "prId": 287
-          }
-        ],
-        "rolldown/rolldown": [
+            "title": "fix: call <code>codeSplitting.groups[].name</code> in deterministic order",
+            "prId": 9457
+          },
+          {
+            "title": "test: enable <code>legal_comments_inline</code> test",
+            "prId": 9394
+          },
+          {
+            "title": "ci: replace some actions with gh commands",
+            "prId": 9367
+          },
           {
             "title": "feat: support <code>output.sourcemapExcludeSources</code> option",
             "prId": 8828
@@ -159,13 +193,23 @@
             "prId": 7671
           }
         ],
-        "rolldown/repl": [
-          {
-            "title": "feat: allow using local rolldown for development",
-            "prId": 42
-          }
-        ],
         "rolldown/notify": [
+          {
+            "title": "perf: batch path changes via <code>PathsMut</code> on Windows",
+            "prId": 94
+          },
+          {
+            "title": "perf: consolidate watch paths via <code>ConsolidatingPathTrie</code> on Windows",
+            "prId": 93
+          },
+          {
+            "title": "feat: consolidate paths further more for fsevents backend if needed",
+            "prId": 91
+          },
+          {
+            "title": "Port changes from upstream",
+            "prId": 85
+          },
           {
             "title": "fix(windows): normalize event paths",
             "prId": 74
@@ -175,7 +219,55 @@
             "prId": 67
           }
         ],
+        "rolldown/plugins": [
+          {
+            "title": "chore: use pnpm catalog for some packages",
+            "prId": 82
+          },
+          {
+            "title": "test: benchmark smoke test",
+            "prId": 81
+          },
+          {
+            "title": "fix(emotion): <code>label:</code> was missing for some <code>css</code> calls",
+            "prId": 69
+          },
+          {
+            "title": "feat: add transform-imports plugin",
+            "prId": 51
+          },
+          {
+            "title": "feat(styled-jsx): add styled-jsx plugin",
+            "prId": 48
+          },
+          {
+            "title": "feat(jsx-remove-attributes): add jsx-remove-attributes plugin",
+            "prId": 22
+          },
+          {
+            "title": "feat(emotion): add emotion plugin",
+            "prId": 15
+          },
+          {
+            "title": "feat(babel): add <code>runtimeVersion</code> option for deduplicating Babel helpers",
+            "prId": 8
+          },
+          {
+            "title": "fix: add proper babel 7 support",
+            "prId": 6
+          }
+        ],
+        "davidmyersdev/vite-plugin-node-polyfills": [
+          {
+            "title": "fix!: use inject plugin instead of <code>esbuild.banner</code>",
+            "prId": 152
+          }
+        ],
         "vitejs/vite-plugin-react": [
+          {
+            "title": "perf(react): improve react compiler preset so that slightly more modules are filtered out",
+            "prId": 1138
+          },
           {
             "title": "refactor(react)!: drop Vite 7 and below support",
             "prId": 1124
@@ -183,6 +275,50 @@
           {
             "title": "feat(react)!: remove babel",
             "prId": 1123
+          }
+        ],
+        "napi-rs/napi-rs": [
+          {
+            "title": "feat(napi): add <code>ThreadsafeFunction::call_async_catch</code> to handle errors in callback functions",
+            "prId": 3291
+          },
+          {
+            "title": "perf(napi): skip duplicate validation",
+            "prId": 3268
+          },
+          {
+            "title": "docs(napi): clarify unsafe function invariants",
+            "prId": 3267
+          },
+          {
+            "title": "feat: allow emitting error happened in worker",
+            "prId": 3153
+          },
+          {
+            "title": "fix: ensure emnapi version is synced",
+            "prId": 3151
+          }
+        ],
+        "vitejs/vite-plugin-vue": [
+          {
+            "title": "chore: migrate to Oxfmt",
+            "prId": 773
+          }
+        ],
+        "oxc-project/oxc-sourcemap": [
+          {
+            "title": "fix: escape <code>file</code> and <code>sourceRoot</code> fields",
+            "prId": 294
+          },
+          {
+            "title": "feat: omit <code>sourcesContent</code> if all of the values are null",
+            "prId": 287
+          }
+        ],
+        "rolldown/repl": [
+          {
+            "title": "feat: allow using local rolldown for development",
+            "prId": 42
           }
         ],
         "oxc-project/oxc-resolver": [
@@ -1967,5 +2103,5 @@
       }
     ]
   ],
-  "fetchedAt": "2026-04-28T05:28:35Z"
+  "fetchedAt": "2026-06-01T10:34:42Z"
 }
