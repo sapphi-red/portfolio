@@ -96,3 +96,11 @@ tags = [
   type = "video"
   url = "https://www.youtube.com/live/VbM_o0adyoc?si=ENLeno2G2lRIdR66&t=28795"
 
+[[talks]]
+title = "(Upcoming) TBD"
+date = 2026-09-12
+eventName = "Frontend Conference Fukuoka 2026"
+tags = [
+  "Type: Talk",
+  "Language: Japanese",
+]
