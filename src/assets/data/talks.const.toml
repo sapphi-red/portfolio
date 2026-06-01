@@ -59,6 +59,10 @@ tags = [
   url = "https://pre-vue-fes-2024-environment-api-slide.sapphi.red/"
 
   [[talks.links]]
+  type = "video"
+  url = "https://www.youtube.com/live/GH2IzSHPXCQ?si=7MtbbVZPW9QzAq8I&t=1934"
+
+  [[talks.links]]
   type = "article"
   title = "Article (English)"
   url = "/blog/increasing-vites-potential-with-the-environment-api"
