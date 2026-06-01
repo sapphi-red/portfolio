@@ -81,3 +81,18 @@ tags = [
   [[talks.links]]
   type = "slides"
   url = "https://slide.meguro-es-29-minification-puzzles.sapphi.red/"
+
+[[talks]]
+title = "パネルディスカッション：Laravel × VoidZero — Web開発の未来を語る"
+date = 2026-05-28
+eventName = "Laravel Live Japan"
+tags = [
+  "Content: Vite",
+  "Type: Panel",
+  "Language: English",
+]
+
+  [[talks.links]]
+  type = "video"
+  url = "https://www.youtube.com/live/VbM_o0adyoc?si=ENLeno2G2lRIdR66&t=28795"
+
