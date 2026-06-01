@@ -20,3 +20,4 @@ import RssLink from './RssLink.vue'
 
 - [traP blog (Japanese)](https://trap.jp/author/sappi_red) (old posts)
 - [OSS貢献を「依頼」から「協力」に変える、Issueとプルリクエストの書き方 - Findy](https://findy-code.io/media/articles/codesidechat-sapphi_red_ja)
+- [ep.188『コアチームと語るvite 8 - 再構築されるフロントエンドツールチェーン』 | UIT INSIDE](https://uit-inside.linecorp.com/episode/188) (ポッドキャスト)
