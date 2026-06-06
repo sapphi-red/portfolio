@@ -14,7 +14,6 @@
     "noUncheckedIndexedAccess": true,
     "verbatimModuleSyntax": true,
     "jsx": "preserve",
-    "baseUrl": ".",
     "lib": ["esnext", "dom"],
     "skipLibCheck": true,
     "noEmit": true,
@@ -23,14 +22,13 @@
     "plugins": [{ "name": "typescript-plugin-toml" }],
     "types": ["vite/client"],
     "paths": {
-      "/@/*": ["src/*"]
+      "/@/*": ["./src/*"]
     }
   },
   "vueCompilerOptions": {
-    "experimentalResolveStyleCssClasses": "always",
     "strictTemplates": true,
     "dataAttributes": ["data-*"],
     "vitePressExtensions": [".md"]
   },
-  "include": ["src/**/*.ts", "src/**/*.vue", "src/**/*.md"]
+  "include": ["src/**/*.ts", "src/**/*.vue", "src/**/*.md", ".vitepress/**/*"]
 }

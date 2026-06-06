@@ -10,6 +10,7 @@ export default {
   extends: DefaultTheme,
   Layout: CustomLayout,
   enhanceApp({ app }) {
+    // update ./shims.d.ts when adding new global components
     app.component('TopLayout', TopLayout)
     app.component('EmbedXPost', EmbedXPost)
   },

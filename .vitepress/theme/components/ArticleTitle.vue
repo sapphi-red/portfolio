@@ -11,14 +11,14 @@ function findCurrentIndex() {
   return posts.findIndex((p) => p.url === route.path)
 }
 
-const date = computed(() => posts[findCurrentIndex()].date)
+const date = computed(() => posts[findCurrentIndex()]!.date)
 </script>
 
 <template>
   <header>
     <time :datetime="date.datetimeString">{{ date.string }}</time>
     <h1 class="style article-title-text">
-      {{ data.title }}
+      {{ data['title'] }}
     </h1>
   </header>
 </template>
