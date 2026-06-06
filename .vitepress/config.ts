@@ -53,7 +53,7 @@ export default defineConfig({
     ],
   },
   transformPageData(pageData) {
-    const head: HeadConfig[] = (pageData.frontmatter.head ??= [])
+    const head: HeadConfig[] = (pageData.frontmatter['head'] ??= [])
 
     head.push(['meta', { property: 'og:title', content: pageData.title }])
     head.push([
@@ -71,7 +71,7 @@ export default defineConfig({
 
     if (pageData.filePath.startsWith('blog/')) {
       head.push(['meta', { property: 'og:type', content: 'article' }])
-      const published: Date = pageData.frontmatter.date
+      const published: Date = pageData.frontmatter['date']
       head.push([
         'meta',
         {
@@ -81,7 +81,7 @@ export default defineConfig({
       ])
 
       const image = (
-        pageData.frontmatter.ogpImage || '/ogp-image/fallback.png'
+        pageData.frontmatter['ogpImage'] || '/ogp-image/fallback.png'
       ).replace(/^\//, '')
       head.push([
         'meta',

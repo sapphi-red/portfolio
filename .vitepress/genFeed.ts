@@ -39,18 +39,18 @@ export async function genFeed(config: SiteConfig) {
 
   posts.sort(
     (a, b) =>
-      +new Date(b.frontmatter.date as string) -
-      +new Date(a.frontmatter.date as string),
+      +new Date(b.frontmatter['date'] as string) -
+      +new Date(a.frontmatter['date'] as string),
   )
 
   for (const { url, excerpt, frontmatter } of posts) {
     feed.addItem({
-      title: frontmatter.title,
+      title: frontmatter['title'],
       id: `${baseUrl.replace(/\/$/, '')}${url}`,
       link: `${baseUrl.replace(/\/$/, '')}${url}`,
       description: excerpt,
-      date: frontmatter.date,
-      image: baseUrl + frontmatter.ogpImage.replace(/^\//, ''),
+      date: frontmatter['date'],
+      image: baseUrl + frontmatter['ogpImage'].replace(/^\//, ''),
     })
   }
 
