@@ -3,7 +3,131 @@
     [
       "2026",
       {
+        "javascript-compiler-hints/compiler-notations-spec": [
+          {
+            "title": "Add test cases",
+            "prId": 14
+          }
+        ],
+        "rolldown/rolldown": [
+          {
+            "title": "test(dev): error in lazy module should be catchable",
+            "prId": 9975
+          },
+          {
+            "title": "feat: add option named for invalid return type errors for more places",
+            "prId": 9822
+          },
+          {
+            "title": "feat: add option names for invalid return type errors",
+            "prId": 9821
+          },
+          {
+            "title": "fix: cache ESM evaluation errors",
+            "prId": 9784
+          },
+          {
+            "title": "chore: clarify <code>rolldown_plugin_vite_*</code> is compatible for the same minor",
+            "prId": 9774
+          },
+          {
+            "title": "test: use <code>assert.deepStrictEqual</code> instead of <code>assert.deepEqual</code> by using <code>assert/strict</code> instead of <code>assert</code>",
+            "prId": 9724
+          },
+          {
+            "title": "test: add more <code>moduleSideEffects</code> precedence tests",
+            "prId": 9689
+          },
+          {
+            "title": "test: add unit test for collapsing module sourcemap",
+            "prId": 9626
+          },
+          {
+            "title": "feat: add <code>SOURCEMAP_BROKEN</code> warning for renderChunk hook",
+            "prId": 9601
+          },
+          {
+            "title": "feat: add <code>SOURCEMAP_BROKEN</code> warning for transform hook",
+            "prId": 9600
+          },
+          {
+            "title": "perf: avoid unnecessary intermediate sourcemaps",
+            "prId": 9599
+          },
+          {
+            "title": "feat: support <code>output.sourcemapExcludeSources</code> option",
+            "prId": 8828
+          },
+          {
+            "title": "docs: explain how external modules work in rolldown",
+            "prId": 8457
+          },
+          {
+            "title": "docs: add JSDocs for APIs exposed from subpath exports",
+            "prId": 8393
+          },
+          {
+            "title": "fix: <code>deferred_scan_data.rs &quot;Should have resolved id: NotFound&quot;</code> error",
+            "prId": 8379
+          },
+          {
+            "title": "refactor: ban holding DashMap refs across awaits",
+            "prId": 8362
+          },
+          {
+            "title": "feat(rolldown_plugin_vite_build_import_analysis): add support for <code>await import().then((m) =&gt; m.prop)</code>",
+            "prId": 8328
+          },
+          {
+            "title": "feat: support tsconfig loading &amp; inputMap for <code>transform</code>",
+            "prId": 8180
+          },
+          {
+            "title": "perf: run inline-const pass for modules that are affected by inlining",
+            "prId": 8064
+          },
+          {
+            "title": "docs: add more examples and details",
+            "prId": 8054
+          },
+          {
+            "title": "docs(in-depth): add dead code elimination page",
+            "prId": 8007
+          },
+          {
+            "title": "docs: add plugin API docs",
+            "prId": 7923
+          },
+          {
+            "title": "docs(options): add descriptions for output options",
+            "prId": 7821
+          },
+          {
+            "title": "docs(options): add description for input options",
+            "prId": 7802
+          },
+          {
+            "title": "docs(options): add description for <code>checks.*</code>",
+            "prId": 7801
+          },
+          {
+            "title": "docs(apis): add hook graph",
+            "prId": 7671
+          }
+        ],
         "vitejs/vite": [
+          {
+            "title": "docs: vite 8.1 post",
+            "prId": 22704
+          },
+          {
+            "title": "feat(create-vite): use Oxlint for react templates and add ESLint option",
+            "prId": 22638
+          },
+          {
+            "title": "ci: rewrite issue-helper with JS script",
+            "prId": 22584
+          },
           {
             "title": "fix: reject windows alternate paths",
             "prId": 22572
@@ -41,12 +165,72 @@
             "prId": 21766
           },
           {
+            "title": "feat(css): support lightningcss plugin dependency",
+            "prId": 21748
+          },
+          {
+            "title": "feat(build): chunk importmap",
+            "prId": 21580
+          },
+          {
             "title": "feat(bundled-dev): add lazy bundling support",
             "prId": 21406
           },
           {
+            "title": "feat: rename <code>server.hmr</code> options to <code>server.ws</code> options",
+            "prId": 21357
+          },
+          {
             "title": "docs: add acknowledgements page",
             "prId": 21186
+          }
+        ],
+        "vitejs/vite-plugin-react": [
+          {
+            "title": "test(react): bundled-dev playground",
+            "prId": 1268
+          },
+          {
+            "title": "perf(react): improve react compiler preset so that slightly more modules are filtered out",
+            "prId": 1138
+          },
+          {
+            "title": "refactor(react)!: drop Vite 7 and below support",
+            "prId": 1124
+          },
+          {
+            "title": "feat(react)!: remove babel",
+            "prId": 1123
+          }
+        ],
+        "rolldown/zarara": [
+          {
+            "title": "fix: rolldown 1.1.2 update",
+            "prId": 35
+          },
+          {
+            "title": "feat: add test for rolldown#9754",
+            "prId": 32
+          },
+          {
+            "title": "fix: exclude <code>ERR_REQUIRE_CYCLE_MODULE</code> cases",
+            "prId": 31
+          }
+        ],
+        "vitejs/vite-ecosystem-ci": [
+          {
+            "title": "chore: change oxfmt options",
+            "prId": 478
+          },
+          {
+            "title": "chore: migrate to oxfmt",
+            "prId": 477
+          }
+        ],
+        "pmndrs/jotai": [
+          {
+            "title": "feat(website): add <code>jotai-rolldown</code>",
+            "prId": 3328
           }
         ],
         "rollup/plugins": [
@@ -99,20 +283,6 @@
           {
             "title": "fix!: use inject plugin instead of <code>esbuild.banner</code>",
             "prId": 152
-          }
-        ],
-        "vitejs/vite-plugin-react": [
-          {
-            "title": "perf(react): improve react compiler preset so that slightly more modules are filtered out",
-            "prId": 1138
-          },
-          {
-            "title": "refactor(react)!: drop Vite 7 and below support",
-            "prId": 1124
-          },
-          {
-            "title": "feat(react)!: remove babel",
-            "prId": 1123
           }
         ],
         "napi-rs/napi-rs": [
@@ -175,68 +345,6 @@
           {
             "title": "feat: omit <code>sourcesContent</code> if all of the values are null",
             "prId": 287
-          }
-        ],
-        "rolldown/rolldown": [
-          {
-            "title": "feat: support <code>output.sourcemapExcludeSources</code> option",
-            "prId": 8828
-          },
-          {
-            "title": "docs: explain how external modules work in rolldown",
-            "prId": 8457
-          },
-          {
-            "title": "docs: add JSDocs for APIs exposed from subpath exports",
-            "prId": 8393
-          },
-          {
-            "title": "fix: <code>deferred_scan_data.rs &quot;Should have resolved id: NotFound&quot;</code> error",
-            "prId": 8379
-          },
-          {
-            "title": "refactor: ban holding DashMap refs across awaits",
-            "prId": 8362
-          },
-          {
-            "title": "feat(rolldown_plugin_vite_build_import_analysis): add support for <code>await import().then((m) =&gt; m.prop)</code>",
-            "prId": 8328
-          },
-          {
-            "title": "feat: support tsconfig loading &amp; inputMap for <code>transform</code>",
-            "prId": 8180
-          },
-          {
-            "title": "perf: run inline-const pass for modules that are affected by inlining",
-            "prId": 8064
-          },
-          {
-            "title": "docs: add more examples and details",
-            "prId": 8054
-          },
-          {
-            "title": "docs(in-depth): add dead code elimination page",
-            "prId": 8007
-          },
-          {
-            "title": "docs: add plugin API docs",
-            "prId": 7923
-          },
-          {
-            "title": "docs(options): add descriptions for output options",
-            "prId": 7821
-          },
-          {
-            "title": "docs(options): add description for input options",
-            "prId": 7802
-          },
-          {
-            "title": "docs(options): add description for <code>checks.*</code>",
-            "prId": 7801
-          },
-          {
-            "title": "docs(apis): add hook graph",
-            "prId": 7671
           }
         ],
         "rolldown/repl": [
@@ -2027,5 +2135,5 @@
       }
     ]
   ],
-  "fetchedAt": "2026-06-01T10:34:42Z"
+  "fetchedAt": "2026-07-01T07:02:19Z"
 }
