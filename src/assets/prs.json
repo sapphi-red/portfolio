@@ -9,47 +9,85 @@
             "prId": 14
           }
         ],
+        "vitejs/vite": [
+          {
+            "title": "docs: vite 8.1 post",
+            "prId": 22704
+          },
+          {
+            "title": "fix: reject windows alternate paths",
+            "prId": 22572
+          },
+          {
+            "title": "fix: avoid destructure lowering for newer safari",
+            "prId": 22346
+          },
+          {
+            "title": "fix(bundled-dev): reject requests to HMR patch files in non potentially trustworthy origins",
+            "prId": 22269
+          },
+          {
+            "title": "fix: apply server.fs check to env transport (#22159)",
+            "prId": 22163
+          },
+          {
+            "title": "fix: check <code>server.fs</code> after stripping query as well",
+            "prId": 22160
+          },
+          {
+            "title": "fix: apply server.fs check to env transport",
+            "prId": 22159
+          },
+          {
+            "title": "fix: disallow referencing files outside the package from sourcemap",
+            "prId": 22158
+          },
+          {
+            "title": "ci: add pr template check workflow",
+            "prId": 21931
+          },
+          {
+            "title": "fix(optimizer): avoid error happening with a package with asset entrypoint",
+            "prId": 21766
+          },
+          {
+            "title": "feat(css): support lightningcss plugin dependency",
+            "prId": 21748
+          },
+          {
+            "title": "feat(build): chunk importmap",
+            "prId": 21580
+          },
+          {
+            "title": "feat(bundled-dev): add lazy bundling support",
+            "prId": 21406
+          },
+          {
+            "title": "docs: add acknowledgements page",
+            "prId": 21186
+          }
+        ],
+        "rolldown/zarara": [
+          {
+            "title": "fix: rolldown 1.1.2 update",
+            "prId": 35
+          },
+          {
+            "title": "feat: add test for rolldown#9754",
+            "prId": 32
+          },
+          {
+            "title": "fix: exclude <code>ERR_REQUIRE_CYCLE_MODULE</code> cases",
+            "prId": 31
+          }
+        ],
+        "pmndrs/jotai": [
+          {
+            "title": "feat(website): add <code>jotai-rolldown</code>",
+            "prId": 3328
+          }
+        ],
         "rolldown/rolldown": [
-          {
-            "title": "test(dev): error in lazy module should be catchable",
-            "prId": 9975
-          },
-          {
-            "title": "feat: add option named for invalid return type errors for more places",
-            "prId": 9822
-          },
-          {
-            "title": "feat: add option names for invalid return type errors",
-            "prId": 9821
-          },
-          {
-            "title": "fix: cache ESM evaluation errors",
-            "prId": 9784
-          },
-          {
-            "title": "chore: clarify <code>rolldown_plugin_vite_*</code> is compatible for the same minor",
-            "prId": 9774
-          },
-          {
-            "title": "test: use <code>assert.deepStrictEqual</code> instead of <code>assert.deepEqual</code> by using <code>assert/strict</code> instead of <code>assert</code>",
-            "prId": 9724
-          },
-          {
-            "title": "test: add more <code>moduleSideEffects</code> precedence tests",
-            "prId": 9689
-          },
-          {
-            "title": "test: add unit test for collapsing module sourcemap",
-            "prId": 9626
-          },
-          {
-            "title": "feat: add <code>SOURCEMAP_BROKEN</code> warning for renderChunk hook",
-            "prId": 9601
-          },
-          {
-            "title": "feat: add <code>SOURCEMAP_BROKEN</code> warning for transform hook",
-            "prId": 9600
-          },
           {
             "title": "perf: avoid unnecessary intermediate sourcemaps",
             "prId": 9599
@@ -115,124 +153,6 @@
             "prId": 7671
           }
         ],
-        "vitejs/vite": [
-          {
-            "title": "docs: vite 8.1 post",
-            "prId": 22704
-          },
-          {
-            "title": "feat(create-vite): use Oxlint for react templates and add ESLint option",
-            "prId": 22638
-          },
-          {
-            "title": "ci: rewrite issue-helper with JS script",
-            "prId": 22584
-          },
-          {
-            "title": "fix: reject windows alternate paths",
-            "prId": 22572
-          },
-          {
-            "title": "fix: avoid destructure lowering for newer safari",
-            "prId": 22346
-          },
-          {
-            "title": "fix(bundled-dev): reject requests to HMR patch files in non potentially trustworthy origins",
-            "prId": 22269
-          },
-          {
-            "title": "fix: apply server.fs check to env transport (#22159)",
-            "prId": 22163
-          },
-          {
-            "title": "fix: check <code>server.fs</code> after stripping query as well",
-            "prId": 22160
-          },
-          {
-            "title": "fix: apply server.fs check to env transport",
-            "prId": 22159
-          },
-          {
-            "title": "fix: disallow referencing files outside the package from sourcemap",
-            "prId": 22158
-          },
-          {
-            "title": "ci: add pr template check workflow",
-            "prId": 21931
-          },
-          {
-            "title": "fix(optimizer): avoid error happening with a package with asset entrypoint",
-            "prId": 21766
-          },
-          {
-            "title": "feat(css): support lightningcss plugin dependency",
-            "prId": 21748
-          },
-          {
-            "title": "feat(build): chunk importmap",
-            "prId": 21580
-          },
-          {
-            "title": "feat(bundled-dev): add lazy bundling support",
-            "prId": 21406
-          },
-          {
-            "title": "feat: rename <code>server.hmr</code> options to <code>server.ws</code> options",
-            "prId": 21357
-          },
-          {
-            "title": "docs: add acknowledgements page",
-            "prId": 21186
-          }
-        ],
-        "vitejs/vite-plugin-react": [
-          {
-            "title": "test(react): bundled-dev playground",
-            "prId": 1268
-          },
-          {
-            "title": "perf(react): improve react compiler preset so that slightly more modules are filtered out",
-            "prId": 1138
-          },
-          {
-            "title": "refactor(react)!: drop Vite 7 and below support",
-            "prId": 1124
-          },
-          {
-            "title": "feat(react)!: remove babel",
-            "prId": 1123
-          }
-        ],
-        "rolldown/zarara": [
-          {
-            "title": "fix: rolldown 1.1.2 update",
-            "prId": 35
-          },
-          {
-            "title": "feat: add test for rolldown#9754",
-            "prId": 32
-          },
-          {
-            "title": "fix: exclude <code>ERR_REQUIRE_CYCLE_MODULE</code> cases",
-            "prId": 31
-          }
-        ],
-        "vitejs/vite-ecosystem-ci": [
-          {
-            "title": "chore: change oxfmt options",
-            "prId": 478
-          },
-          {
-            "title": "chore: migrate to oxfmt",
-            "prId": 477
-          }
-        ],
-        "pmndrs/jotai": [
-          {
-            "title": "feat(website): add <code>jotai-rolldown</code>",
-            "prId": 3328
-          }
-        ],
         "rollup/plugins": [
           {
             "title": "perf(yaml)!: use hook filters",
@@ -283,6 +203,20 @@
           {
             "title": "fix!: use inject plugin instead of <code>esbuild.banner</code>",
             "prId": 152
+          }
+        ],
+        "vitejs/vite-plugin-react": [
+          {
+            "title": "perf(react): improve react compiler preset so that slightly more modules are filtered out",
+            "prId": 1138
+          },
+          {
+            "title": "refactor(react)!: drop Vite 7 and below support",
+            "prId": 1124
+          },
+          {
+            "title": "feat(react)!: remove babel",
+            "prId": 1123
           }
         ],
         "napi-rs/napi-rs": [
