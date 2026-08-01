@@ -3,16 +3,72 @@
     [
       "2026",
       {
-        "javascript-compiler-hints/compiler-notations-spec": [
+        "napi-rs/napi-rs": [
           {
-            "title": "Add test cases",
-            "prId": 14
+            "title": "build(wasm-runtime): use Rolldown",
+            "prId": 3429
+          },
+          {
+            "title": "feat(napi): add <code>ThreadsafeFunction::call_async_catch</code> to handle errors in callback functions",
+            "prId": 3291
+          },
+          {
+            "title": "perf(napi): skip duplicate validation",
+            "prId": 3268
+          },
+          {
+            "title": "docs(napi): clarify unsafe function invariants",
+            "prId": 3267
+          },
+          {
+            "title": "feat: allow emitting error happened in worker",
+            "prId": 3153
+          },
+          {
+            "title": "fix: ensure emnapi version is synced",
+            "prId": 3151
           }
         ],
         "vitejs/vite": [
           {
+            "title": "fix: support resolving top-level input option with plugins",
+            "prId": 23101
+          },
+          {
+            "title": "fix: handle shebang ending with uncommon line terminators",
+            "prId": 23038
+          },
+          {
+            "title": "fix(hmr): remove hot data after prune",
+            "prId": 23002
+          },
+          {
+            "title": "fix(optimizer): respect importer module format for dynamic import interop with CJS deps",
+            "prId": 22951
+          },
+          {
+            "title": "fix(optimizer): avoid optimizer run for transform request before init",
+            "prId": 22852
+          },
+          {
+            "title": "feat(config): warn features incompatible with native loader in bundle loader",
+            "prId": 22850
+          },
+          {
+            "title": "fix: strip pure CSS chunk imports when chunkImportMap is enabled",
+            "prId": 22841
+          },
+          {
+            "title": "fix(ssr): align named export function call stacktrace column with Node",
+            "prId": 22829
+          },
+          {
             "title": "docs: vite 8.1 post",
             "prId": 22704
+          },
+          {
+            "title": "feat: add <code>input</code> option",
+            "prId": 22642
           },
           {
             "title": "fix: reject windows alternate paths",
@@ -67,27 +123,107 @@
             "prId": 21186
           }
         ],
-        "rolldown/zarara": [
+        "vitejs/vite-plugin-react": [
           {
-            "title": "fix: rolldown 1.1.2 update",
-            "prId": 35
+            "title": "ci: setup PR-driven release",
+            "prId": 1357
           },
           {
-            "title": "feat: add test for rolldown#9754",
-            "prId": 32
+            "title": "feat(react-swc): bundled-dev compat",
+            "prId": 1352
           },
           {
-            "title": "fix: exclude <code>ERR_REQUIRE_CYCLE_MODULE</code> cases",
-            "prId": 31
+            "title": "fix(react): <code>$RefreshSig$ is not defined</code>  with NODE_ENV=production vite dev",
+            "prId": 1283
+          },
+          {
+            "title": "perf(react): improve react compiler preset so that slightly more modules are filtered out",
+            "prId": 1138
+          },
+          {
+            "title": "refactor(react)!: drop Vite 7 and below support",
+            "prId": 1124
+          },
+          {
+            "title": "feat(react)!: remove babel",
+            "prId": 1123
           }
         ],
-        "pmndrs/jotai": [
+        "vitejs/deployment-metadata": [
           {
-            "title": "feat(website): add <code>jotai-rolldown</code>",
-            "prId": 3328
+            "title": "feat: make <code>DeploymentMetadata</code> the union of all metadata types",
+            "prId": 16
+          },
+          {
+            "title": "normative(VDM0000): revise the spec",
+            "prId": 14
+          },
+          {
+            "title": "ci: add workflows",
+            "prId": 4
+          },
+          {
+            "title": "docs: add README",
+            "prId": 3
+          },
+          {
+            "title": "docs: add scope",
+            "prId": 1
           }
         ],
         "rolldown/rolldown": [
+          {
+            "title": "refactor(rollup-tests): avoid relying on <code>NODE_PATH</code> env var resolution",
+            "prId": 10496
+          },
+          {
+            "title": "refactor(dev): make it easier to customize the runtime",
+            "prId": 10338
+          },
+          {
+            "title": "fix: call <code>resolveFileUrl</code> in a deterministic order",
+            "prId": 10330
+          },
+          {
+            "title": "feat: <code>import.meta.ROLLDOWN_FILE_URL_&lt;referenceId&gt;_&lt;urlId&gt;</code> support to pass context to <code>resolveFileUrl</code> hook",
+            "prId": 10297
+          },
+          {
+            "title": "feat: support <code>import.meta.ROLLDOWN_FILE_URL_*</code>",
+            "prId": 10296
+          },
+          {
+            "title": "feat: implement <code>resolveFileUrl</code> plugin hook",
+            "prId": 10291
+          },
+          {
+            "title": "feat: rewrite <code>import.meta['url']</code>",
+            "prId": 10251
+          },
+          {
+            "title": "fix: add EMPTY_IMPORT_META warning for non-node CJS output",
+            "prId": 10222
+          },
+          {
+            "title": "feat: add <code>FILE_NOT_FOUND</code> error",
+            "prId": 10220
+          },
+          {
+            "title": "docs: show plugin kinds in JSDoc and each hook's description",
+            "prId": 10218
+          },
+          {
+            "title": "fix(rolldown_plugin_vite_import_glob): support tsconfig paths with <code>import.meta.glob</code>",
+            "prId": 10167
+          },
+          {
+            "title": "feat: add <code>--configLoader=native</code> option",
+            "prId": 10118
+          },
+          {
+            "title": "feat: add descriptive metadata to plugin API",
+            "prId": 10106
+          },
           {
             "title": "perf: avoid unnecessary intermediate sourcemaps",
             "prId": 9599
@@ -153,6 +289,132 @@
             "prId": 7671
           }
         ],
+        "jotaijs/jotai-rolldown": [
+          {
+            "title": "fix: avoid transforming non-jotai functions",
+            "prId": 3
+          },
+          {
+            "title": "feat: add more default atom names supported by jotai-babel",
+            "prId": 2
+          },
+          {
+            "title": "refactor!: remove <code>abortableAtom</code> from default atom names",
+            "prId": 1
+          }
+        ],
+        "vitejs/vite-plugin-vue": [
+          {
+            "title": "chore: replace native config loader incompatible code",
+            "prId": 822
+          }
+        ],
+        "oxc-project/oxc": [
+          {
+            "title": "fix(minifier): avoid incorrect logical assignment transformation when base object may be mutated",
+            "prId": 24718
+          },
+          {
+            "title": "feat(minifier): merge combined assign expression in conditional expression",
+            "prId": 24707
+          },
+          {
+            "title": "feat(minifier): merge assign expression against member expression in conditional expression",
+            "prId": 24706
+          },
+          {
+            "title": "feat(parser): more friendly error for spread element in dynamic imports",
+            "prId": 24705
+          },
+          {
+            "title": "feat(parser): more friendly error messages for rest assignment target and rest binding element",
+            "prId": 22719
+          },
+          {
+            "title": "fix(ecmascript): treat <code>this</code> as potentially having side effects",
+            "prId": 21297
+          }
+        ],
+        "oxc-project/oxc-sourcemap": [
+          {
+            "title": "perf: add encode mappings fast path for 4 / 5 segments",
+            "prId": 421
+          },
+          {
+            "title": "perf: add decode mapping fast path for 4 / 5 segments",
+            "prId": 420
+          },
+          {
+            "title": "fix: escape <code>file</code> and <code>sourceRoot</code> fields",
+            "prId": 294
+          },
+          {
+            "title": "feat: omit <code>sourcesContent</code> if all of the values are null",
+            "prId": 287
+          }
+        ],
+        "oxc-project/oxc-resolver": [
+          {
+            "title": "feat: expose tsconfig paths resolve method without file existence check",
+            "prId": 1282
+          },
+          {
+            "title": "fix: resolve normalized path on Windows even for <code>symlinks: false</code>",
+            "prId": 1036
+          }
+        ],
+        "rolldown/repl": [
+          {
+            "title": "feat: set input in the config when downloading the project",
+            "prId": 61
+          },
+          {
+            "title": "feat: handle malformed shared URLs with an in-app recovery state",
+            "prId": 59
+          },
+          {
+            "title": "feat: allow using local rolldown for development",
+            "prId": 42
+          }
+        ],
+        "paulmillr/chokidar": [
+          {
+            "title": "fix: unwatch deleted watched directory on Windows",
+            "prId": 1467
+          }
+        ],
+        "oxc-project/website": [
+          {
+            "title": "refactor: put stackblitz templates in the repo",
+            "prId": 1073
+          }
+        ],
+        "javascript-compiler-hints/compiler-notations-spec": [
+          {
+            "title": "Add test cases",
+            "prId": 14
+          }
+        ],
+        "rolldown/zarara": [
+          {
+            "title": "fix: rolldown 1.1.2 update",
+            "prId": 35
+          },
+          {
+            "title": "feat: add test for rolldown#9754",
+            "prId": 32
+          },
+          {
+            "title": "fix: exclude <code>ERR_REQUIRE_CYCLE_MODULE</code> cases",
+            "prId": 31
+          }
+        ],
+        "pmndrs/jotai": [
+          {
+            "title": "feat(website): add <code>jotai-rolldown</code>",
+            "prId": 3328
+          }
+        ],
         "rollup/plugins": [
           {
             "title": "perf(yaml)!: use hook filters",
@@ -165,16 +427,6 @@
           {
             "title": "perf(dsv)!: use hook filters",
             "prId": 1994
-          }
-        ],
-        "oxc-project/oxc": [
-          {
-            "title": "feat(parser): more friendly error messages for rest assignment target and rest binding element",
-            "prId": 22719
-          },
-          {
-            "title": "fix(ecmascript): treat <code>this</code> as potentially having side effects",
-            "prId": 21297
           }
         ],
         "rolldown/notify": [
@@ -205,42 +457,6 @@
             "prId": 152
           }
         ],
-        "vitejs/vite-plugin-react": [
-          {
-            "title": "perf(react): improve react compiler preset so that slightly more modules are filtered out",
-            "prId": 1138
-          },
-          {
-            "title": "refactor(react)!: drop Vite 7 and below support",
-            "prId": 1124
-          },
-          {
-            "title": "feat(react)!: remove babel",
-            "prId": 1123
-          }
-        ],
-        "napi-rs/napi-rs": [
-          {
-            "title": "feat(napi): add <code>ThreadsafeFunction::call_async_catch</code> to handle errors in callback functions",
-            "prId": 3291
-          },
-          {
-            "title": "perf(napi): skip duplicate validation",
-            "prId": 3268
-          },
-          {
-            "title": "docs(napi): clarify unsafe function invariants",
-            "prId": 3267
-          },
-          {
-            "title": "feat: allow emitting error happened in worker",
-            "prId": 3153
-          },
-          {
-            "title": "fix: ensure emnapi version is synced",
-            "prId": 3151
-          }
-        ],
         "rolldown/plugins": [
           {
             "title": "fix(emotion): <code>label:</code> was missing for some <code>css</code> calls",
@@ -269,28 +485,6 @@
           {
             "title": "fix: add proper babel 7 support",
             "prId": 6
-          }
-        ],
-        "oxc-project/oxc-sourcemap": [
-          {
-            "title": "fix: escape <code>file</code> and <code>sourceRoot</code> fields",
-            "prId": 294
-          },
-          {
-            "title": "feat: omit <code>sourcesContent</code> if all of the values are null",
-            "prId": 287
-          }
-        ],
-        "rolldown/repl": [
-          {
-            "title": "feat: allow using local rolldown for development",
-            "prId": 42
-          }
-        ],
-        "oxc-project/oxc-resolver": [
-          {
-            "title": "fix: resolve normalized path on Windows even for <code>symlinks: false</code>",
-            "prId": 1036
           }
         ],
         "cacjs/cac": [
@@ -2069,5 +2263,5 @@
       }
     ]
   ],
-  "fetchedAt": "2026-07-01T07:02:19Z"
+  "fetchedAt": "2026-08-01T10:43:02Z"
 }
