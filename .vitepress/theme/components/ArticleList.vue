@@ -4,7 +4,7 @@ import { data as posts } from './posts.data.ts'
 
 <template>
   <ul>
-    <li v-for="{ title, url, date, excerpt } of posts" :key="url">
+    <li v-for="{ title, url, date } of posts" :key="url">
       <article>
         <time :datetime="date.datetimeString" class="date">{{
           date.string
@@ -13,8 +13,6 @@ import { data as posts } from './posts.data.ts'
           <h2 class="title">
             <a :href="url">{{ title }}</a>
           </h2>
-          <!-- eslint-disable-next-line vue/no-v-html -->
-          <div v-if="excerpt" v-html="excerpt"></div>
         </div>
       </article>
     </li>
