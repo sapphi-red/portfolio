@@ -9,20 +9,17 @@ interface Post {
     datetimeString: string
     string: string
   }
-  excerpt: string | undefined
 }
 
 declare const data: Post[]
 export { data }
 
 export default createContentLoader('blog/*.md', {
-  excerpt: true,
   transform(raw): Post[] {
     return raw
-      .map(({ url, frontmatter, excerpt }) => ({
+      .map(({ url, frontmatter }) => ({
         title: frontmatter['title'],
         url,
-        excerpt,
         date: formatDate(frontmatter['date']),
       }))
       .sort((a, b) => b.date.time - a.date.time)
