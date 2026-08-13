@@ -1,7 +1,7 @@
 ---
 title: How Variable Mangling Works in Oxc Minifier
 date: 2026-08-13
-ogpImage: /ogp-image/addressing-source-code-leaks-across-the-ecosystem.png
+ogpImage: /ogp-image/how-variable-mangling-works-in-oxc-minifier.png
 ---
 
 <small>
