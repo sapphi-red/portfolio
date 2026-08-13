@@ -126,7 +126,7 @@ The characters are used in the following order (digits are only used from the se
 ```
 etnriaoscludfpmhg_vybxSCwTEDOkAjMNPFILRzBVHUWGKqJYXZQ$1024368579
 ```
-This ordering is based on the frequency of each character in a corpus created by concatenating the minified output of bundles from several libraries.
+This ordering is based on the frequency of each character in a corpus created by concatenating the minified output of bundles from several libraries. The goal is to approximate the character frequency of minified code and improve the compression efficiency of the final code.
 
 Next, the number of characters to use for each slot's variable name is determined based on how frequently the variables in that slot appear in the code. For example, the most frequently occurring slot gets a one-character name, while the 100th most frequently occurring slot gets a two-character name.
 
