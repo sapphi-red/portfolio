@@ -21,18 +21,18 @@ Variable mangling is a type of minification that reduces code size by replacing 
 For example, it transforms this code:
 
 ```js
-const foo = 1;
+const foo = 1
 export function bar(baz) {
-  return foo + baz;
+  return foo + baz
 }
 ```
 
 into:
 
 ```js
-const a = 1;
+const a = 1
 export function bar(b) {
-  return a + b;
+  return a + b
 }
 ```
 
@@ -46,14 +46,14 @@ The most important requirement for variable mangling is that it must not change 
 
 ```js
 // Input
-const foo = 1;
-const bar = 2;
-export const baz = foo + bar;
+const foo = 1
+const bar = 2
+export const baz = foo + bar
 
 // Output
-const a = 1;
-const a = 2; // !
-export const baz = a + a;
+const a = 1
+const a = 2 // !
+export const baz = a + a
 ```
 
 At the same time, the purpose of variable mangling is to make the code shorter. Oxc Minifier places particular emphasis on reducing the size after compression with gzip or similar compression algorithms.
@@ -65,20 +65,24 @@ To achieve this while preserving the meaning of the code, variable mangling foll
 
 From here on, we'll use the following code as an example to explain how Oxc Minifier achieves these goals:
 
+<!-- prettier-ignore-start -->
+
 ```js
 export function demo(input, flag) { // Scope: SA
-  let total = input;
+  let total = input
   if (flag) { // Scope: SB1
-    let left = total + 1;
-    use(left);
+    let left = total + 1
+    use(left)
   }
   if (!flag) { // Scope: SB2
-    let right = total + 2;
-    use(right);
+    let right = total + 2
+    use(right)
   }
-  return total;
+  return total
 }
 ```
+
+<!-- prettier-ignore-end -->
 
 Here, SA is the scope of the `demo` function body, while SB1 and SB2 are the scopes of the two `if` blocks.
 
@@ -88,8 +92,8 @@ First, we calculate the liveness of each symbol. A symbol's liveness is the set 
 
 The liveness of each symbol in the example is as follows:
 
-| Variable | Liveness       |
-| :------- | :------------- |
+| Variable | Liveness        |
+| :------- | :-------------- |
 | `input`  | \{SA}           |
 | `flag`   | \{SA}           |
 | `total`  | \{SA, SB1, SB2} |
@@ -123,9 +127,11 @@ Next, we generate a variable name for each slot. This achieves the second strate
 Variable names use alphabets, digits, `_`, and `$`. Among the characters that can be used in variable names, these can all be represented with a single byte in UTF-8. Other characters require two or more bytes in UTF-8, so in terms of code size, there is no advantage over using multiple single-byte characters. Also, alphabets and digits already appear frequently in JavaScript code, so using these characters tends to work better when the code is compressed with gzip or similar algorithms.
 
 The characters are used in the following order (digits are only used from the second character onward):
+
 ```
 etnriaoscludfpmhg_vybxSCwTEDOkAjMNPFILRzBVHUWGKqJYXZQ$1024368579
 ```
+
 This ordering is based on the frequency of each character in a corpus created by concatenating the minified output of bundles from several libraries. The goal is to approximate the character frequency of minified code and improve the compression efficiency of the final code.
 
 Next, the number of characters to use for each slot's variable name is determined based on how frequently the variables in that slot appear in the code. For example, the most frequently occurring slot gets a one-character name, while the 100th most frequently occurring slot gets a two-character name.
@@ -144,16 +150,16 @@ This gives us the following final code:
 
 ```js
 export function demo(e, t) {
-  let n = e;
+  let n = e
   if (t) {
-    let e = n + 1;
-    use(e);
+    let e = n + 1
+    use(e)
   }
   if (!t) {
-    let e = n + 2;
-    use(e);
+    let e = n + 2
+    use(e)
   }
-  return n;
+  return n
 }
 ```
 
@@ -168,7 +174,7 @@ JavaScript scopes form a tree structure. There is a module scope, and the scopes
 The liveness of a variable forms a subtree of this scope tree. If a variable can be referenced from two scopes, it can also be referenced from every scope on the path between them in the scope tree.
 
 ```js
-let foo = 0;
+let foo = 0
 {
   // foo can also be referenced here.
   // If foo were declared here instead,
@@ -188,11 +194,11 @@ The goal of slot assignment is to assign all variables using as few slots as pos
 It turns out that this can be viewed as a graph coloring problem where we want to color the vertices using the minimum number of colors. We construct a graph where each vertex represents a variable, and an edge connects two variables if their liveness overlaps. Each color then corresponds to a slot. For the example, the graph looks like this:
 ![](./assets/oxc-minifier-variable-liveness-graph.svg)
 
-Furthermore, this graph is an intersection graph of subtrees. The liveness of each variable is a subtree, and an edge represents an intersection between two such subtrees. It is known that intersection graphs of subtrees are *chordal graphs*.
+Furthermore, this graph is an intersection graph of subtrees. The liveness of each variable is a subtree, and an edge represents an intersection between two such subtrees. It is known that intersection graphs of subtrees are _chordal graphs_.
 
 For general graphs, finding an optimal coloring is NP-hard. However, it is known that chordal graphs can be optimally colored in polynomial time. For a chordal graph, the minimum number of colors required is also equal to the size of its maximum clique. In this case, that corresponds to the maximum number of variables that are live at the same time in any single scope.
 
-The order in which Oxc Minifier processes variables, from variables declared in shallower scopes to those declared in deeper scopes, is the reverse of a *Perfect Elimination Ordering* of this graph. It is known that greedily coloring a chordal graph in this order produces a coloring using the minimum number of colors.
+The order in which Oxc Minifier processes variables, from variables declared in shallower scopes to those declared in deeper scopes, is the reverse of a _Perfect Elimination Ordering_ of this graph. It is known that greedily coloring a chordal graph in this order produces a coloring using the minimum number of colors.
 
 In other words, under this model, Oxc Minifier's slot assignment algorithm achieves the minimum possible number of slots.
 
