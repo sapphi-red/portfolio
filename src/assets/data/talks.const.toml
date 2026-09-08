@@ -97,10 +97,20 @@ tags = [
   url = "https://www.youtube.com/live/VbM_o0adyoc?si=ENLeno2G2lRIdR66&t=28795"
 
 [[talks]]
-title = "(Upcoming) TBD"
+title = "(Upcoming) ツールチェーンから見た新JS仕様の難所"
 date = 2026-09-12
 eventName = "Frontend Conference Fukuoka 2026"
 tags = [
+  "Content: JavaScript",
   "Type: Talk",
   "Language: Japanese",
+]
+
+[[talks]]
+title = "(Upcoming) TBD"
+date = 2026-10-15
+eventName = "ViteConf 2026"
+tags = [
+  "Type: Talk",
+  "Language: English",
 ]
