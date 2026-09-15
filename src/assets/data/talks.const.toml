@@ -42,7 +42,7 @@ tags = [
 
   [[talks.links]]
   type = "video"
-  url = "https://youtu.be/mVGz5-F7_hY?si=HBQBvr7yHY_N3vKQ&t=10805"
+  url = "https://youtu.be/mVGz5-F7_hY?t=10805"
 
 [[talks]]
 title = "Environment API で広げる Vite の可能性"
@@ -60,7 +60,7 @@ tags = [
 
   [[talks.links]]
   type = "video"
-  url = "https://www.youtube.com/live/GH2IzSHPXCQ?si=7MtbbVZPW9QzAq8I&t=1934"
+  url = "https://www.youtube.com/live/GH2IzSHPXCQ?t=1934"
 
   [[talks.links]]
   type = "article"
@@ -94,10 +94,10 @@ tags = [
 
   [[talks.links]]
   type = "video"
-  url = "https://www.youtube.com/live/VbM_o0adyoc?si=ENLeno2G2lRIdR66&t=28795"
+  url = "https://www.youtube.com/live/VbM_o0adyoc?t=28795"
 
 [[talks]]
-title = "(Upcoming) ツールチェーンから見た新JS仕様の難所"
+title = "ツールチェーンから見た新JS仕様の難所"
 date = 2026-09-12
 eventName = "Frontend Conference Fukuoka 2026"
 tags = [
@@ -105,6 +105,14 @@ tags = [
   "Type: Talk",
   "Language: Japanese",
 ]
+
+  [[talks.links]]
+  type = "slides"
+  url = "https://fecfukuoka2026-the-hard-parts-of-new-js-specs.sapphi.red/"
+
+  [[talks.links]]
+  type = "video"
+  url = "https://www.youtube.com/watch?v=r4JCSTBeze4&t=12388s"
 
 [[talks]]
 title = "(Upcoming) TBD"
