@@ -115,10 +115,11 @@ tags = [
   url = "https://www.youtube.com/watch?v=r4JCSTBeze4&t=12388s"
 
 [[talks]]
-title = "(Upcoming) TBD"
+title = "Unifying the Asset URL Generation"
 date = 2026-10-15
 eventName = "ViteConf 2026"
 tags = [
+  "Content: Vite",
   "Type: Talk",
   "Language: English",
 ]
